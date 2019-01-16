@@ -112,7 +112,56 @@ from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 from termcolor import colored, cprint
 
+def read_file_to_dict(file_name):
+    try:
+        with open(file_name, "r") as file:
+            string = file.read()
+            file.close()
+            #print('File content:\n' + string)
+            dictionary = eval(string)
+            # Store the first three lines of the dictionary
+            buf = string.split('\n')
+            preamble = ''
+            for i in range(0,len(buf)):
+                if buf[i][:1] == '#':
+                    preamble += buf[i] + '\n'
+                else:
+                    break
+            return preamble, dictionary
+    except Exception as ex:
+        print('Could not read dictionary from file {0}. Error: '.format(file_name) + str(ex))
+        return '', {}
+
+def write_dict_to_file(preamble, dictionary, file_name):
+    try:
+        with open(file_name, "w") as file:
+            file.write(preamble)
+            file.write(str(dictionary))
+            file.close()
+            return True
+    except Exception as ex:
+        print("Could not write dictionary to file. Error: " + str(ex))
+        return False
+
+def load_dictionary(FILENAME):
+    print("Enter subroutine")
+    # Load a sequence_dictionary if it exists
+    if os.path.isfile(FILENAME):
+        try:
+            preamble, dictionary = read_file_to_dict(FILENAME)
+            print("\nReading in the dictionary " + FILENAME + ":\n")
+            for key, value in dictionary.items():
+                print(key, value)
+        except Exception as e:
+            dictionary = {}
+            print('Could not read taxon dictionary {0}'.format(FILENAME))
+    else:
+        dictionary = {}
+    return preamble, dictionary
+
 def drawtree(TREEFILE):
+    TAXON_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
+    preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
     print('\nLoading tree file {0}:\n'.format(TREEFILE))
     # Display tree file
@@ -236,8 +285,22 @@ def drawtree(TREEFILE):
     for node in t.traverse():
         if node.is_leaf():
             animal_class_name = node.name
+            # Get the common name for this animal class if it exists
+            try:
+                number_of_animal_species = ' ' + str(taxon_dictionary[animal_class_name][1])
+                animal_class_name_common = taxon_dictionary[animal_class_name][2]
+            except Exception as ex:
+                print('Could get common animal class name for {0} dictionary from file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
+            # Number of animal species in this class in the NCBI protein sequence database
+            textFace = TextFace(number_of_animal_species, fsize = 16)
+            (t & animal_class_name).add_face(textFace, 0, "aligned")
             # TEXT
-            textFace = TextFace(animal_class_name, fsize = 16)
+            # Do not display anything if there is no common animal class name
+            if animal_class_name_common == '?' or animal_class_name_common == '':
+                description = '{0}'.format(animal_class_name)
+            else:
+                description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
+            textFace = TextFace(description, fsize = 16)
             (t & animal_class_name).add_face(textFace, 2, "aligned")
             #textFace.margin_left = 10
             # IMAGE
