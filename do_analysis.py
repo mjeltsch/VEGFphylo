@@ -98,6 +98,10 @@
 #
 
 import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random
+from functools import wraps
+import errno
+import signal
+import os
 from Bio import Entrez
 from Bio import SeqIO
 from Bio import Phylo
@@ -112,6 +116,27 @@ from termcolor import colored, cprint
 parser = argparse.ArgumentParser()
 parser.add_argument("local_remote", help = "local, remote or test")
 args = parser.parse_args()
+
+class TimeoutError(Exception):
+    pass
+
+def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
+    def decorator(func):
+        def _handle_timeout(signum, frame):
+            raise TimeoutError(error_message)
+
+        def wrapper(*args, **kwargs):
+            signal.signal(signal.SIGALRM, _handle_timeout)
+            signal.alarm(seconds)
+            try:
+                result = func(*args, **kwargs)
+            finally:
+                signal.alarm(0)
+            return result
+
+        return wraps(func)(wrapper)
+
+    return decorator
 
 if args.local_remote == 'local':
     REMOTE = 'local'
@@ -236,6 +261,7 @@ def parse_blast_result(PROTEIN, LIST, TAXON):
                 #    print("\n" + str(i) + ".\n " + str(attribut) + "\n")
         print("Parsing Blast XML file completed.\n")
 
+@timeout(30)
 def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
     # Database
     BLAST_DATABASE = 'nr'
