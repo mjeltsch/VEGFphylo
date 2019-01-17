@@ -94,6 +94,7 @@ def run():
         new_taxon_dictionary[taxon] = [new_taxon_id, new_species_number, taxon_data[2]]
         time.sleep(1)
     print(new_taxon_dictionary)
+    os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
     write_dict_to_file(preamble, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
 
 if __name__ == '__main__':
