@@ -112,6 +112,16 @@ from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 from termcolor import colored, cprint
 
+def execute_subprocess(comment, bash_command, working_directory='.'):
+    print("\n" + comment, bash_command)
+    process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
+    output, error = process.communicate()
+    process_status = process.wait()
+    if output.decode('utf-8') != '':
+        print("Output: " + str(output))
+    if error.decode('UTF-8') != '':
+        print("Error: " + str(error))
+
 def read_file_to_dict(file_name):
     try:
         with open(file_name, "r") as file:
@@ -287,29 +297,49 @@ def drawtree(TREEFILE):
             animal_class_name = node.name
             # Get the common name for this animal class if it exists
             try:
-                number_of_animal_species = ' ' + str(taxon_dictionary[animal_class_name][1])
+                number_of_animal_species = taxon_dictionary[animal_class_name][1]
+                number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
+                if number_of_protein_sequences < 1000:
+                    number_of_protein_sequences = ' ' + str(number_of_protein_sequences)
+                elif number_of_protein_sequences < 1000000:
+                    number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000, 0))) + 'k'
+                elif number_of_protein_sequences < 1000000000:
+                    number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000000, 0))) + 'M'
                 animal_class_name_common = taxon_dictionary[animal_class_name][2]
+
+                if animal_class_name == 'ctenophora':
+                    textFace = TextFace('# animal\nspecies', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 0, "aligned")
+                    textFace = TextFace(' #\n sequences', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 1, "aligned")
+                    textFace = TextFace(' ', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 2, "aligned")
+                    textFace = TextFace(' ', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 3, "aligned")
+
+                # Number of animal species in this class in the NCBI protein sequence database
+                textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16)
+                (t & animal_class_name).add_face(textFace, 0, "aligned")
+                textFace = TextFace(number_of_protein_sequences, fsize = 16)
+                (t & animal_class_name).add_face(textFace, 1, "aligned")
+                # TEXT
+                # Do not display anything if there is no common animal class name
+                if animal_class_name_common == '?' or animal_class_name_common == '':
+                    description = '{0}'.format(animal_class_name)
+                else:
+                    description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
+                textFace = TextFace(description, fsize = 16)
+                (t & animal_class_name).add_face(textFace, 3, "aligned")
+                #textFace.margin_left = 10
+                # IMAGE
+                svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
+                (t & animal_class_name).add_face(svgFace, 2, "aligned")
+                svgFace.margin_right = 10
+                svgFace.margin_left = 10
+                svgFace.hzalign = 2
+                print('Adding svg image for {0}.'.format(animal_class_name))
             except Exception as ex:
-                print('Could get common animal class name for {0} dictionary from file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
-            # Number of animal species in this class in the NCBI protein sequence database
-            textFace = TextFace(number_of_animal_species, fsize = 16)
-            (t & animal_class_name).add_face(textFace, 0, "aligned")
-            # TEXT
-            # Do not display anything if there is no common animal class name
-            if animal_class_name_common == '?' or animal_class_name_common == '':
-                description = '{0}'.format(animal_class_name)
-            else:
-                description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
-            textFace = TextFace(description, fsize = 16)
-            (t & animal_class_name).add_face(textFace, 2, "aligned")
-            #textFace.margin_left = 10
-            # IMAGE
-            svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
-            (t & animal_class_name).add_face(svgFace, 1, "aligned")
-            svgFace.margin_right = 10
-            svgFace.margin_left = 10
-            svgFace.hzalign = 2
-            print('Adding svg image for {0}.'.format(animal_class_name))
+                print('Could not get common animal class name for {0} dictionary from file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
 
     # ROTATING SOME NODES CAN BE DONE HERE:
     # MOVE ACTINOPTERYGII NEXT TO THE OTHER FISH
@@ -354,6 +384,8 @@ def run():
 
     if os.path.isfile(TREEFILE):
         drawtree(TREEFILE)
+        command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
+        execute_subprocess("Generating PDF file with the following command:\n", command)
     else:
         print('Not drawing tree since tree file {0} does not exist.'.format(TREEFILE))
 

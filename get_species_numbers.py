@@ -68,6 +68,12 @@ def load_dictionary(FILENAME):
         dictionary = {}
     return preamble, dictionary
 
+def how_many_sequences(FILENAME):
+    with open(FILENAME) as file:
+        for i, l in enumerate(file):
+            pass
+    return i + 1
+
 def run():
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
@@ -80,7 +86,7 @@ def run():
         URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(taxon)
         r = requests.get(URL)
         text = r.text
-        print(text)
+        #print(text)
         new_species_number = int(text.split("Count>")[1][:-2])
         print(str(new_species_number))
         print('Retrieving taxon id for {0}... -> '.format(taxon), end='')
@@ -91,7 +97,10 @@ def run():
         list = text.split("Id>")
         new_taxon_id = int(list[1][:-2])
         print(str(new_taxon_id))
-        new_taxon_dictionary[taxon] = [new_taxon_id, new_species_number, taxon_data[2]]
+        # Get number of sequences for this taxon
+        SEQUENCE_GI_LIST = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, taxon)
+        new_sequence_number = how_many_sequences(SEQUENCE_GI_LIST)
+        new_taxon_dictionary[taxon] = [new_taxon_id, new_species_number, taxon_data[2], new_sequence_number]
         time.sleep(1)
     print(new_taxon_dictionary)
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
