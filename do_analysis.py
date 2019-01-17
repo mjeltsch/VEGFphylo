@@ -118,16 +118,16 @@ parser.add_argument("local_remote", help = "local, remote or test")
 args = parser.parse_args()
 
 class TimeoutError(Exception):
-    pass
+    print("No data received within 30 seconds.")
 
-def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
+def timeout(error_message=os.strerror(errno.ETIME)):
     def decorator(func):
         def _handle_timeout(signum, frame):
             raise TimeoutError(error_message)
 
         def wrapper(*args, **kwargs):
             signal.signal(signal.SIGALRM, _handle_timeout)
-            signal.alarm(seconds)
+            signal.alarm(SECONDS)
             try:
                 result = func(*args, **kwargs)
             finally:
@@ -233,7 +233,7 @@ def parse_blast_result(PROTEIN, LIST, TAXON):
         #print(os.getcwd() + " " + BLAST_XMLFILE)
         with open(BLAST_XMLFILE) as blastresults:
             blast_records = NCBIXML.parse(blastresults)
-            print("Parsing...")
+            print("Parsing XML file...", end = '')
             blast_records = list(blast_records)
             for blast_record in blast_records:
                 how_many_hits = len(blast_record.descriptions)
@@ -259,9 +259,8 @@ def parse_blast_result(PROTEIN, LIST, TAXON):
                 #for i in range(0, len(attrs)):
                 #    attribut = getattr(blast_record, attrs[i])
                 #    print("\n" + str(i) + ".\n " + str(attribut) + "\n")
-        print("Parsing Blast XML file completed.\n")
+        print(" completed.\n")
 
-@timeout(30)
 def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
     # Database
     BLAST_DATABASE = 'nr'
@@ -291,10 +290,11 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
             # Write blast result to HTML file
             with open(BLAST_HTMLFILE, "w") as out_handle:
                 out_handle.write(result_handle.read())
+                return True
             result_handle.close()
-
         except Exception as ex:
-            print("Something went wrong with the blasting. Most likely the Blast server did not respond. Just restart the script. More about the error: " + str(ex))
+            print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+            return False
     elif REMOTE == 'local':
         START_SEQUENCE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, PROTEIN)
         PHYLUMFILE = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, TAXON)
@@ -311,16 +311,21 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
         print("Retrieving HTML file.")
         try:
             stdout, stderr = blastp_cline()
+            return True
         except Exception as ex:
             print("\nSomething went wrong with the local blastp. Most likely the local standalone blast server did not respond. More about the error:\n" + str(ex))
+            return False
     else:
         # Use blast result files from the test directory
         pass
     how_long = execution_time_str(time.time()-start_time)
     print('Blasting completed in {0}.\n'.format(how_long))
 
+# Wrapping blastp in a timeout function
+blastp = timeout()(blastp)
+
 def run():
-    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE
+    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -369,8 +374,20 @@ def run():
             print('Analyzing {0}:'.format(taxon), end='')
             BLAST_XMLFILE = 'blast_results_{0}.xml'.format(taxon)
             BLAST_HTMLFILE = 'blast_results_{0}.html'.format(taxon)
-            blastp(protein, protein_data, taxon, taxon_data)
-            parse_blast_result(protein, protein_data, taxon)
+            # Loop as long as the blasting succeeds
+            while True:
+                try:
+                    SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
+                    #SECONDS = 30
+                    print(' Timeout = {0} seconds.'.format(str(SECONDS)))
+                    if blastp(protein, protein_data, taxon, taxon_data) == True:
+                        parse_blast_result(protein, protein_data, taxon)
+                        print('Blasting succeeded.')
+                        break
+                except Exception: # Replace Exception with something more specific.
+                    print('Blasting failed. Trying again after a break...')
+                    time.sleep(random.randint(120, 240))
+                    continue
             # Wait between taxa not to upset the server
             if REMOTE == 'test':
                 pass
