@@ -170,7 +170,7 @@ def load_dictionary(FILENAME):
     return preamble, dictionary
 
 def drawtree(TREEFILE):
-    TAXON_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
+    TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
     print('\nLoading tree file {0}:\n'.format(TREEFILE))
@@ -296,7 +296,9 @@ def drawtree(TREEFILE):
         if node.is_leaf():
             animal_class_name = node.name
             # Get the common name for this animal class if it exists
+            #print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
             try:
+                number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
                 number_of_animal_species = taxon_dictionary[animal_class_name][1]
                 number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
                 if number_of_protein_sequences < 1000:
@@ -307,33 +309,56 @@ def drawtree(TREEFILE):
                     number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000000, 0))) + 'M'
                 animal_class_name_common = taxon_dictionary[animal_class_name][2]
 
+                # Add a "fake" header (is actually part of the first phylum row)
                 if animal_class_name == 'ctenophora':
-                    textFace = TextFace('# animal\nspecies', fsize = 16)
+                    textFace = TextFace('# animal\n species', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 0, "aligned")
-                    textFace = TextFace(' #\n sequences', fsize = 16)
+                    textFace = TextFace(' # se-\n quences', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 1, "aligned")
-                    textFace = TextFace(' ', fsize = 16)
+                    textFace = TextFace(' # compl.\n genomes', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 2, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
+                    textFace = TextFace(' ', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 4, "aligned")
+                    protein_dict = taxon_dictionary[animal_class_name][4]
+                    i = 5
+                    for protein, value in protein_dict.items():
+                        textFace = TextFace(' '+protein, fsize = 16)
+                        (t & animal_class_name).add_face(textFace, i, "aligned")
+                        i += 1
 
                 # Number of animal species in this class in the NCBI protein sequence database
                 textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16)
                 (t & animal_class_name).add_face(textFace, 0, "aligned")
-                textFace = TextFace(number_of_protein_sequences, fsize = 16)
+                textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16)
                 (t & animal_class_name).add_face(textFace, 1, "aligned")
+                textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16)
+                (t & animal_class_name).add_face(textFace, 2, "aligned")
+
                 # TEXT
+                print('Adding text for {0}'.format(animal_class_name))
                 # Do not display anything if there is no common animal class name
                 if animal_class_name_common == '?' or animal_class_name_common == '':
                     description = '{0}'.format(animal_class_name)
                 else:
                     description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
                 textFace = TextFace(description, fsize = 16)
-                (t & animal_class_name).add_face(textFace, 3, "aligned")
+                (t & animal_class_name).add_face(textFace, 4, "aligned")
                 #textFace.margin_left = 10
+
+                # PROTEIN HITS
+                protein_dict = taxon_dictionary[animal_class_name][4]
+                i = 5
+                for protein, value in protein_dict.items():
+                    textFace = TextFace(' '+str(value), fsize = 16)
+                    (t & animal_class_name).add_face(textFace, i, "aligned")
+                    i += 1
+
                 # IMAGE
+                print("Adding image")
                 svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
-                (t & animal_class_name).add_face(svgFace, 2, "aligned")
+                (t & animal_class_name).add_face(svgFace, 3, "aligned")
                 svgFace.margin_right = 10
                 svgFace.margin_left = 10
                 svgFace.hzalign = 2
