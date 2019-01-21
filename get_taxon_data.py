@@ -63,7 +63,7 @@ def insert_line_breaks(file_name):
         with open(file_name, "r") as file:
             content = file.read()
             file.close()
-        content = content.replace("}], '","}],\n '")
+        content = content.replace("], '","],\n '")
         with open(file_name, "w") as file:
             file.write(content)
             file.close()
@@ -133,29 +133,36 @@ def get_fully_sequenced_genomes(CSV_FILE):
 
     # Download list of all fully sequences animal genomes:
     # https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on
-
-    reader = csv.DictReader(open(CSV_FILE))
     full_genome_dictionary = {}
     for taxon, taxon_data in taxon_dictionary.items():
         full_genome_dictionary[taxon] = 0
-    for line in reader:
-        dictionary = eval(str(line))
-        species_name = dictionary['#Organism Name']
-        print('Retrieving taxon id for {0}... -> '.format(species_name), end='')
-        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-        r = requests.get(URL)
-        text = r.text
-        list = text.split("Id>")
-        TAXON_ID = list[1][:-2]
-        URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        for taxon, taxon_data in taxon_dictionary.items():
-            if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                print('Adding {0} to {1}'.format(species_name, taxon))
-                full_genome_dictionary[taxon] += 1
-        time.sleep(1)
+    with open(CSV_FILE, newline='') as csvfile:
+        # csv.DictReader stopped working with python 3.6 since it switched from reading into a dictionary
+        # to reading into an ordered dictionary (which is not accepted as input for "eval")
+        reader = csv.reader(csvfile, delimiter=',', quotechar='|')
+        # Skip the first (header) line of the CSV file
+        next(reader, None)
+        for line in reader:
+            #print('line: {0}'.format(line))
+            # str removed from eval(line)
+            list = eval(str(line))
+            #print('list: {0}'.format(list))
+            species_name = list[0]
+            print('Retrieving taxon id for {0}... -> '.format(species_name), end='')
+            URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+            r = requests.get(URL)
+            text = r.text
+            list = text.split("Id>")
+            TAXON_ID = list[1][:-2]
+            URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+            r = requests.get(URL)
+            text = r.text
+            #print(text)
+            for taxon, taxon_data in taxon_dictionary.items():
+                if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
+                    print('Adding {0} to {1}'.format(species_name, taxon))
+                    full_genome_dictionary[taxon] += 1
+            time.sleep(1)
     print(str(full_genome_dictionary))
     return full_genome_dictionary
 
@@ -186,25 +193,6 @@ def run():
             for protein, proteindata in protein_dictionary.items():
                 new_protein_data[protein] = get_protein_data(protein, taxon)
                 print('new_protein_data for taxon {0}: {1} => {2}'.format(taxon, protein, new_protein_data[protein]))
-            # Replace old data if new data is available
-            try:
-                new_taxon_id
-            except NameError:
-                pass
-            else:
-                new_taxon_dictionary[taxon][0] = new_taxon_id
-            try:
-                new_species_number
-            except NameError:
-                pass
-            else:
-                new_taxon_dictionary[taxon][1] = new_species_number
-            try:
-                new_sequence_number
-            except NameError:
-                pass
-            else:
-                new_taxon_dictionary[taxon][3] = new_sequence_number
             try:
                 new_protein_data
             except NameError:
@@ -212,9 +200,29 @@ def run():
             else:
                 print('taxon: {0}'.format(taxon))
                 new_taxon_dictionary[taxon][4] = new_protein_data
-            # Wait in order not to overload the server
-            time.sleep(1)
+        # Replace old data if new data is available
+        try:
+            new_taxon_id
+        except NameError:
+            pass
+        else:
+            new_taxon_dictionary[taxon][0] = new_taxon_id
+        try:
+            new_species_number
+        except NameError:
+            pass
+        else:
+            new_taxon_dictionary[taxon][1] = new_species_number
+        try:
+            new_sequence_number
+        except NameError:
+            pass
+        else:
+            new_taxon_dictionary[taxon][3] = new_sequence_number
+        # Wait in order not to overload the server
+        time.sleep(1)
     # Add the number of fully sequenced genomes to the new taxon dictionary
+    print('Getting list of fully sequenced genomes...')
     full_genome_dictionary = get_fully_sequenced_genomes(CSV_FILE)
     for taxon, number in full_genome_dictionary.items():
         new_taxon_dictionary[taxon][5] = number
