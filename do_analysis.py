@@ -325,6 +325,7 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
 blastp = timeout()(blastp)
 
 def run():
+    blacklist = ['ctenophora', 'porifera', 'placozoa', 'xenacoelomorpha', 'cyclostomata', 'onychophora', 'pycnogonida', 'myriapoda', 'nematomorpha', 'loricifera', 'kinorhyncha', 'chaetognatha', 'bryozoa', 'entoprocta', 'cycliophora', 'nemertea', 'phoroniformea', 'gastrotricha', 'platyhelminthes', 'gnathostomulida', 'micrognathozoa', 'orthonectida', 'dicyemida']
     global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS
 
     # This enables simultaneous output to the terminal and a logfile
@@ -344,7 +345,7 @@ def run():
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     # Loading data file
     master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
-    taxon_dictionary = load_dictionary('{0}/data/taxon_ids.py'.format(APPLICATION_PATH))
+    taxon_dictionary = load_dictionary('{0}/data/taxon_data.py'.format(APPLICATION_PATH))
     LOGFILE = 'logfile.txt'
     if REMOTE == 'test':
         DATA_DIR = 'test'
@@ -371,28 +372,29 @@ def run():
         create_subdirectory(protein)
         os.chdir(protein)
         for taxon, taxon_data in taxon_dictionary.items():
-            print('Analyzing {0}:'.format(taxon), end='')
-            BLAST_XMLFILE = 'blast_results_{0}.xml'.format(taxon)
-            BLAST_HTMLFILE = 'blast_results_{0}.html'.format(taxon)
-            # Loop as long as the blasting succeeds
-            while True:
-                try:
-                    SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
-                    #SECONDS = 30
-                    print(' Timeout = {0} seconds.'.format(str(SECONDS)))
-                    if blastp(protein, protein_data, taxon, taxon_data) == True:
-                        parse_blast_result(protein, protein_data, taxon)
-                        print('Blasting succeeded.')
-                        break
-                except Exception: # Replace Exception with something more specific.
-                    print('Blasting failed. Trying again after a break...')
-                    time.sleep(random.randint(120, 240))
-                    continue
-            # Wait between taxa not to upset the server
-            if REMOTE == 'test':
-                pass
-            else:
-                time.sleep(random.randint(5, 15))
+            if taxon not in blacklist:
+                print('Analyzing {0}:'.format(taxon), end='')
+                BLAST_XMLFILE = 'blast_results_{0}.xml'.format(taxon)
+                BLAST_HTMLFILE = 'blast_results_{0}.html'.format(taxon)
+                # Loop as long as the blasting succeeds
+                while True:
+                    try:
+                        SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
+                        #SECONDS = 30
+                        print(' Timeout = {0} seconds.'.format(str(SECONDS)))
+                        if blastp(protein, protein_data, taxon, taxon_data) == True:
+                            parse_blast_result(protein, protein_data, taxon)
+                            print('Blasting succeeded.')
+                            break
+                    except Exception: # Replace Exception with something more specific.
+                        print('Blasting failed. Trying again after a break...')
+                        time.sleep(random.randint(120, 240))
+                        continue
+                # Wait between taxa not to upset the server
+                if REMOTE == 'test':
+                    pass
+                else:
+                    time.sleep(random.randint(5, 15))
         # Go back one directory (otherwise every new analysis will be a subdirectory in the previous diretory)
         os.chdir('..')
 
