@@ -97,7 +97,7 @@
 # Both should be git-cloned into ~/bin/
 #
 
-import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib
+import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib, collections
 #from Bio.Blast import NCBIWWW
 #from Bio.Blast import NCBIXML
 #from Bio.Blast.Applications import NcbipsiblastCommandline
@@ -340,10 +340,12 @@ def drawtree(TREEFILE):
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
                     protein_dict = taxon_dictionary[animal_class_name][4]
+                    # Convert dictionary into ordered dictionary
+                    ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
                     #(t & animal_class_name).add_face(textFace, 13, "aligned")
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 5
-                    for protein, value in protein_dict.items():
+                    for protein, value in ordered_protein_dict.items():
                         textFace = TextFace(' '+protein, fsize = 16)
                         (t & animal_class_name).add_face(textFace, i, "aligned")
                         i += 1
@@ -371,9 +373,8 @@ def drawtree(TREEFILE):
                 #textFace.margin_left = 10
 
                 # PROTEIN HITS
-                protein_dict = taxon_dictionary[animal_class_name][4]
                 i = 5
-                for protein, value in protein_dict.items():
+                for protein, value in ordered_protein_dict.items():
                     textFace = TextFace(' '+str(value), fsize = 16)
                     (t & animal_class_name).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
