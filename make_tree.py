@@ -97,7 +97,7 @@
 # Both should be git-cloned into ~/bin/
 #
 
-import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math
+import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib
 #from Bio.Blast import NCBIWWW
 #from Bio.Blast import NCBIXML
 #from Bio.Blast.Applications import NcbipsiblastCommandline
@@ -110,7 +110,6 @@ from Bio.Blast.Applications import NcbipsiblastCommandline
 from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
-from termcolor import colored, cprint
 
 def execute_subprocess(comment, bash_command, working_directory='.'):
     print("\n" + comment, bash_command)
