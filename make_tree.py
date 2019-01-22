@@ -360,9 +360,9 @@ def drawtree(TREEFILE):
                 print('Adding text for {0}'.format(animal_class_name))
                 # Do not display anything if there is no common animal class name
                 if animal_class_name_common == '?' or animal_class_name_common == '':
-                    description = '{0}'.format(animal_class_name)
+                    description = '{0}  '.format(animal_class_name)
                 else:
-                    description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
+                    description = '{0} ({1})  '.format(animal_class_name, animal_class_name_common)
                 textFace = TextFace(description, fsize = 16)
                 (t & animal_class_name).add_face(textFace, 4, "aligned")
                 # Reliability measure

@@ -63,7 +63,7 @@ def insert_line_breaks(file_name):
         with open(file_name, "r") as file:
             content = file.read()
             file.close()
-        content = content.replace("}], '","}],\n '")
+        content = content.replace("], '","],\n '")
         with open(file_name, "w") as file:
             file.write(content)
             file.close()
