@@ -327,6 +327,11 @@ def drawtree(TREEFILE):
                     number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000000, 0))) + 'M'
                 animal_class_name_common = taxon_dictionary[animal_class_name][2]
 
+                protein_dict = taxon_dictionary[animal_class_name][4]
+                #print(str(protein_dict))
+                # Convert dictionary into ordered dictionary
+                ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
+
                 # Add a "fake" header (is actually part of the first phylum row)
                 if animal_class_name == 'ctenophora':
                     textFace = TextFace('# animal\n species', fsize = 16)
@@ -339,9 +344,6 @@ def drawtree(TREEFILE):
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
-                    protein_dict = taxon_dictionary[animal_class_name][4]
-                    # Convert dictionary into ordered dictionary
-                    ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
                     #(t & animal_class_name).add_face(textFace, 13, "aligned")
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 5
@@ -359,7 +361,7 @@ def drawtree(TREEFILE):
                 (t & animal_class_name).add_face(textFace, 2, "aligned")
 
                 # TEXT
-                print('Adding text for {0}'.format(animal_class_name))
+                #print('Adding text for {0}'.format(animal_class_name))
                 # Do not display anything if there is no common animal class name
                 if animal_class_name_common == '?' or animal_class_name_common == '':
                     description = '{0}  '.format(animal_class_name)
@@ -375,13 +377,13 @@ def drawtree(TREEFILE):
                 # PROTEIN HITS
                 i = 5
                 for protein, value in ordered_protein_dict.items():
+                    #print('{0} - {1}'.format(protein, value))
                     textFace = TextFace(' '+str(value), fsize = 16)
                     (t & animal_class_name).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
                     i += 1
 
                 # IMAGE
-                print("Adding image")
                 svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
                 (t & animal_class_name).add_face(svgFace, 3, "aligned")
                 svgFace.margin_right = 10
