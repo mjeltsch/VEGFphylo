@@ -97,7 +97,7 @@
 # Both should be git-cloned into ~/bin/
 #
 
-import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket
+import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math
 #from Bio.Blast import NCBIWWW
 #from Bio.Blast import NCBIXML
 #from Bio.Blast.Applications import NcbipsiblastCommandline
@@ -170,6 +170,18 @@ def load_dictionary(FILENAME):
     return preamble, dictionary
 
 def drawtree(TREEFILE):
+    color_dict = {  '-':"White",
+                    '0':"#FF0000",
+                    '1':"#FF1111",
+                    '2':"#FF4444",
+                    '3':"#FF8888",
+                    '4':"#FFBBBB",
+                    '5':"#FFDDDD",
+                    '6':"#FFEEEE",
+                    '7':"#FFFFFF",
+                    '8':"#FFFFFF",
+                    '9':"#FFFFFF",
+                    '10':"#FFFFFF"}
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
@@ -301,6 +313,13 @@ def drawtree(TREEFILE):
                 number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
                 number_of_animal_species = taxon_dictionary[animal_class_name][1]
                 number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
+
+                # Heuristic number for reliability
+                reliability = number_of_fully_sequenced_genomes**2/number_of_animal_species*number_of_protein_sequences+1
+                reliability = math.log10(reliability)*1.25
+                reliability = str(int(round(reliability, 0)))
+                #print('reliability for {0} is {1}'.format(animal_class_name, reliability))
+
                 if number_of_protein_sequences < 1000:
                     number_of_protein_sequences = ' ' + str(number_of_protein_sequences)
                 elif number_of_protein_sequences < 1000000:
@@ -322,6 +341,8 @@ def drawtree(TREEFILE):
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
                     protein_dict = taxon_dictionary[animal_class_name][4]
+                    #(t & animal_class_name).add_face(textFace, 13, "aligned")
+                    #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 5
                     for protein, value in protein_dict.items():
                         textFace = TextFace(' '+protein, fsize = 16)
@@ -345,6 +366,9 @@ def drawtree(TREEFILE):
                     description = '{0} ({1})'.format(animal_class_name, animal_class_name_common)
                 textFace = TextFace(description, fsize = 16)
                 (t & animal_class_name).add_face(textFace, 4, "aligned")
+                # Reliability measure
+                #textFace = TextFace(reliability, fsize = 16)
+                #(t & animal_class_name).add_face(textFace, 13, "aligned")
                 #textFace.margin_left = 10
 
                 # PROTEIN HITS
@@ -353,6 +377,7 @@ def drawtree(TREEFILE):
                 for protein, value in protein_dict.items():
                     textFace = TextFace(' '+str(value), fsize = 16)
                     (t & animal_class_name).add_face(textFace, i, "aligned")
+                    textFace.background.color = color_dict[reliability]
                     i += 1
 
                 # IMAGE
