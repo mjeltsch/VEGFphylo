@@ -114,7 +114,7 @@ def get_sequence_number_local(taxon):
             pass
     return i + 1
 
-def get_protein_data(protein, taxon):
+def get_protein_data(protein, protein_data, taxon):
     if args.directory == '':
         return []
     else:
@@ -123,11 +123,31 @@ def get_protein_data(protein, taxon):
             print("Parsing...")
             blast_records = NCBIXML.parse(blastresults)
             blast_records = list(blast_records)
+            # Initialize list
+            negative_dict = {}
+            for related_protein in protein_data[10]:
+                if isinstance(related_protein, list):
+                    for related_protein2 in related_protein:
+                        negative_dict[related_protein2] = 0
+                else:
+                    negative_dict[related_protein] = 0
+            # Populate list
             for blast_record in blast_records:
                 number = len(blast_record.descriptions)
+                # Get extended information about the matching sequences
+                for description in blast_record.descriptions:
+                    print('description: {0}'.format(description))
+                    for related_protein in protein_data[10]:
+                        if isinstance(related_protein, list):
+                            for related_protein2 in related_protein:
+                                if related_protein2 in str(description):
+                                    negative_dict[related_protein2] += 1
+                        elif related_protein in str(description):
+                            negative_dict[related_protein] += 1
+            #results_summary.write("\t\t\t\t\t\t" + str(description.num_alignments) + "\t" + str(description.score) + "\t" + str(description.e) + "\t" + description.title + "\n")
             print(" completed.\n")
         print('number of hits: {0}'.format(str(number)))
-        return number
+        return number, negative_dict
 
 def get_fully_sequenced_genomes(CSV_FILE):
 
@@ -168,14 +188,17 @@ def run():
     PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
+    print('preamble1: {0}'.format(preamble1))
+    print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
     preamble2, protein_dictionary = load_dictionary(PROTEIN_DICTIONARY_FILE)
     print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
     print('new_taxon_dictionary: {0}'.format(str(new_taxon_dictionary)))
     blacklist = load_blacklist()
     for taxon, taxon_data in taxon_dictionary.items():
+        print("Enter recursion")
         if taxon not in blacklist:
-            #print("Enter recursion")
+            print("Passed blacklist loading")
             #new_species_number = get_species_number(taxon)
             #print(str(new_species_number))
             #new_taxon_id = get_taxon_id(taxon)
@@ -183,8 +206,8 @@ def run():
             #new_sequence_number = get_sequence_number_local(taxon)
             #print(str(new_sequence_number))
             new_protein_data = {}
-            for protein, proteindata in protein_dictionary.items():
-                new_protein_data[protein] = get_protein_data(protein, taxon)
+            for protein, protein_data in protein_dictionary.items():
+                new_protein_data[protein], related_protein_list = get_protein_data(protein, protein_data, taxon)
                 print('new_protein_data for taxon {0}: {1} => {2}'.format(taxon, protein, new_protein_data[protein]))
             # Replace old data if new data is available
             try:
@@ -211,7 +234,7 @@ def run():
                 pass
             else:
                 print('taxon: {0}'.format(taxon))
-                new_taxon_dictionary[taxon][4] = new_protein_data
+                new_taxon_dictionary[taxon][4] = [new_protein_data, related_protein_list]
             # Wait in order not to overload the server
             time.sleep(1)
     # Add the number of fully sequenced genomes to the new taxon dictionary
