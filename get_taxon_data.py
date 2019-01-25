@@ -161,21 +161,33 @@ def get_fully_sequenced_genomes(CSV_FILE):
     for line in reader:
         dictionary = eval(str(line))
         species_name = dictionary['#Organism Name']
-        print('Retrieving taxon id for {0}... -> '.format(species_name), end='')
-        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-        r = requests.get(URL)
-        text = r.text
-        list = text.split("Id>")
-        TAXON_ID = list[1][:-2]
+        # If the server responds with an error message or other unexpected data
+        # the commands to extract the TAXON_ID will fail and we have to repeat
+        # the request
+        while True:
+            try:
+                print('Retrieving taxon id for {0} '.format(species_name), end='')
+                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+                r = requests.get(URL, timeout=20)
+                text = r.text
+                list = text.split("Id>")
+                TAXON_ID = list[1][:-2]
+            except Exception as ex:
+                print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
+                time.sleep(100)
+                continue
+            else:
+                break
+        print('and number of sequenced genomes -> ', end='')
         URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
         r = requests.get(URL)
         text = r.text
         #print(text)
         for taxon, taxon_data in taxon_dictionary.items():
             if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                print('Adding {0} to {1}'.format(species_name, taxon))
+                print('Adding to {0}'.format(taxon))
                 full_genome_dictionary[taxon] += 1
-        time.sleep(1)
+        time.sleep(10)
     print(str(full_genome_dictionary))
     return full_genome_dictionary
 
