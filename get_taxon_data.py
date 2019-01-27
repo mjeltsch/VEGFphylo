@@ -155,6 +155,7 @@ def get_fully_sequenced_genomes(CSV_FILE):
     # https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on
 
     reader = csv.DictReader(open(CSV_FILE))
+    preamble, taxon_id_dict = load_dictionary(TAXON_ID_DICTIONARY_FILE)
     full_genome_dictionary = {}
     for taxon, taxon_data in taxon_dictionary.items():
         full_genome_dictionary[taxon] = 0
@@ -166,18 +167,26 @@ def get_fully_sequenced_genomes(CSV_FILE):
         # the request
         while True:
             try:
-                print('Retrieving taxon id for {0} '.format(species_name), end='')
-                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-                r = requests.get(URL, timeout=20)
-                text = r.text
-                list = text.split("Id>")
-                TAXON_ID = list[1][:-2]
-            except Exception as ex:
-                print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
-                time.sleep(100)
-                continue
-            else:
+                # Check whether the species is in the lcoal dictionary
+                TAXON_ID = taxon_id_dict[species_name]
                 break
+            except Exception as ex:
+                print("Species not in local dictionary. Getting id from NCBI...")
+                try:
+                    print('Retrieving taxon id for {0} '.format(species_name), end='')
+                    URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+                    r = requests.get(URL, timeout=20)
+                    text = r.text
+                    list = text.split("Id>")
+                    TAXON_ID = list[1][:-2]
+                    # Add new taxon_id to dictionary
+                    taxon_id_dict[species_name] = int(TAXON_ID)
+                except Exception as ex:
+                    print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
+                    time.sleep(100)
+                    continue
+                else:
+                    break
         print('and number of sequenced genomes -> ', end='')
         URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
         r = requests.get(URL)
@@ -189,14 +198,16 @@ def get_fully_sequenced_genomes(CSV_FILE):
                 full_genome_dictionary[taxon] += 1
         time.sleep(10)
     print(str(full_genome_dictionary))
+    write_dict_to_file(preamble, taxon_id_dict, TAXON_ID_DICTIONARY_FILE)
     return full_genome_dictionary
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary
+    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
+    TAXON_ID_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
     PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
