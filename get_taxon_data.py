@@ -63,6 +63,7 @@ def insert_line_breaks(file_name):
         with open(file_name, "r") as file:
             content = file.read()
             file.close()
+        content = content.replace("}], '","}],\n     '")
         content = content.replace("], '","],\n '")
         with open(file_name, "w") as file:
             file.write(content)
@@ -83,9 +84,11 @@ def load_dictionary(FILENAME):
                 print(key, value)
             print("Done reading dictionary.")
         except Exception as e:
+            preamble = '#'
             dictionary = {}
             print('Could not read taxon dictionary {0}'.format(FILENAME))
     else:
+        preamble = '#'
         dictionary = {}
     return preamble, dictionary
 
@@ -97,7 +100,7 @@ def get_species_number(taxon):
     #print(text)
     return int(text.split("Count>")[1][:-2])
 
-def get_taxon_id(taxon):
+def get_taxon_id_online(taxon):
     print('Retrieving taxon id for {0}... -> '.format(taxon), end='')
     URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(taxon)
     r = requests.get(URL)
@@ -105,6 +108,63 @@ def get_taxon_id(taxon):
     #print(text)
     list = text.split("Id>")
     return int(list[1][:-2])
+
+def get_taxon_id(species_name):
+    while True:
+        # Check whether the species is in the local dictionary
+        try:
+            print('Getting id for \'{0}\', checking local taxon_id_dictionary first.'.format(species_name))
+            #print('taxon_id_dict: {0}'.format(taxon_id_dict))
+            #print('taxon_id_dict[species_name]: {0}'.format(taxon_id_dict[species_name]))
+            # print(taxon_id_dict[species_name][0])
+            TAXON_ID = taxon_id_dict[species_name][0]
+            break
+        # If the species is not in the local dictionary, get the data from NCBI
+        except Exception as ex:
+            print("Species not in local dictionary. Getting id from NCBI...")
+            try:
+                print('Retrieving taxon id for {0} '.format(species_name), end='')
+                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+                r = requests.get(URL, timeout=20)
+                # Extract taxon_id
+                list = r.text.split("Id>")
+                TAXON_ID = list[1][:-2]
+                # Add new taxon_id to dictionary
+                taxon_id_dict[species_name][0] = int(TAXON_ID)
+                # Sleep for online requests (otherwise you'll be blocked after a while!)
+                time.sleep(2)
+            except Exception as ex:
+                print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
+                # Wait one minute if server returns an error (mostly because you are blocked or the network is down)
+                time.sleep(60)
+                continue
+            # If there were no exceptions, break out of the while loop
+            else:
+                break
+    print('=> {0}'.format(TAXON_ID))
+    return TAXON_ID
+
+def get_phylum(species_name, TAXON_ID):
+    # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
+    # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
+    # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
+    try:
+        phylum = taxon_id_dict[species_name][1]
+        if phylum == None:
+            raise Exception('Phylum for {0} was None'.format(species_name))
+        else:
+            return phylum
+    except Exception as err:
+        print('Phylum info for {0} not available from local dictionary. Getting from NCBI...'.format(species_name))
+        URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+        r = requests.get(URL)
+        text = r.text
+        #print(text)
+        for phylum, phylum_data in taxon_dictionary.items():
+            if '<TaxId>{0}</TaxId>'.format(phylum_data[0]) in text:
+                print('Adding phylum info "{0}" for {1} to local dictionary'.format(phylum, species_name))
+                taxon_id_dict[species_name][1] = phylum
+                return phylum
 
 def get_sequence_number_local(taxon):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
@@ -114,160 +174,134 @@ def get_sequence_number_local(taxon):
             pass
     return i + 1
 
-def get_protein_data(protein, protein_data, taxon):
+def get_protein_data(taxon):
     if args.directory == '':
         return []
     else:
-        # Open the individual results file for a protein and a phylum
-        XML_RESULTS_FILE = '{0}/{1}/blast_results_{2}.xml'.format(args.directory, protein, taxon)
-        with open(XML_RESULTS_FILE) as blastresults:
-            print("Parsing...")
-            blast_records = NCBIXML.parse(blastresults)
-            blast_records = list(blast_records)
-            # Initialize list of related proteins
-            negative_dict = {}
-            for related_protein in protein_data[10]:
-                negative_dict[related_protein] = 0
-            # Populate list
-            for blast_record in blast_records:
-                number = len(blast_record.descriptions)
+        new_protein_data = {}
+        print('\n---------------')
+        print('Analysing TAXON {0}'.format(taxon))
+        print('---------------\n')
+        for protein, protein_data in protein_dictionary.items():
+            # Here we analyze the blasts hits for each TAXON/PROTEIN pair:
+            # a) number of blast hits
+            # b) number of false positive according to the description (categorized in a list)
+            #
+            # Open the individual results file for a protein and a phylum
+            XML_RESULTS_FILE = '{0}{1}/blast_results_{2}.xml'.format(args.directory, protein, taxon)
+            with open(XML_RESULTS_FILE) as blastresults:
+                print('Parsing {0}'.format(XML_RESULTS_FILE))
+                blast_records = NCBIXML.parse(blastresults)
+                blast_records = list(blast_records)
+                print('Analysing {0}:'.format(protein))
+                negative_dict = {}
                 # Get extended information about the matching sequences
-                for description in blast_record.descriptions:
-                    print('description: {0}'.format(description))
-                    for related_protein in protein_data[10]:
-                        if related_protein in str(description):
-                            negative_dict[related_protein] += 1
-                            print('False-positive found: {0}'.format(related_protein))
-            #results_summary.write("\t\t\t\t\t\t" + str(description.num_alignments) + "\t" + str(description.score) + "\t" + str(description.e) + "\t" + description.title + "\n")
-            print("Parsing completed.\n")
-        print('Number of hits: {0}'.format(str(number)))
-        print('Number of false-positives: {0}'.format(str(negative_dict)))
-        return number, negative_dict
+                for related_protein in protein_data[10]:
+                    i = 0
+                    for blast_record in blast_records:
+                        number = len(blast_record.descriptions)
+                        print('Checking for group of false positives \"{0}\"'.format(related_protein))
+                        for description in blast_record.descriptions:
+                            #print('description: {0}'.format(description))
+                            if related_protein in str(description):
+                                i += 1
+                                print('Potential false-positive found: {0}'.format(related_protein))
+                    negative_dict[related_protein] = i
+                print('Analysis for {0}/{1} completed.'.format(taxon, protein))
+                print('Number of hits: {0}'.format(number))
+                print('Number of false-positives: {0}\n'.format(negative_dict))
+            new_protein_data[protein] = [number, negative_dict]
+        print('Analysis for taxon {0} completed.'.format(taxon))
+        print('new_protein_data: {0}'.format(new_protein_data))
+        return new_protein_data
 
 def get_fully_sequenced_genomes(CSV_FILE):
-
-    # Download list of all fully sequences animal genomes:
-    # https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on
-
-    input_csv_file = csv.DictReader(open(CSV_FILE))
-    preamble, taxon_id_dict = load_dictionary(TAXON_ID_DICTIONARY_FILE)
+    # Open/download the list of fully sequenced genomes
+    try:
+        input_csv_file = csv.DictReader(open(CSV_FILE))
+    except FileNotFoundError as err:
+        print(err)
+        # Download list of all fully sequences animal genomes:
+        URL = 'https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on'
+        r = requests.get(URL)
+        with open('CSV_FILE', 'wb') as file:
+            file.write(r.content)
+        input_csv_file = csv.DictReader(open(CSV_FILE))
+    # Initialize dictionary with zeros
     full_genome_dictionary = {}
     for taxon, taxon_data in taxon_dictionary.items():
         full_genome_dictionary[taxon] = 0
     for line in input_csv_file:
         species_name = line['#Organism Name']
-        # If the server responds with an error message or other unexpected data
-        # the commands to extract the TAXON_ID will fail and we have to repeat
-        # the request
-        while True:
-            # Check whether the species is in the local dictionary
-            try:
-                TAXON_ID = taxon_id_dict[species_name]
-                print('Getting species/taxon id for {0} from local dictionary ({1}) '.format(species_name, TAXON_ID), end='')
-                break
-            # If the species is not in the local dictionary, get the data from NCBI
-            except Exception as ex:
-                print("Species/taxon not in local dictionary. Getting id from NCBI...")
-                try:
-                    print('Retrieving taxon id for {0} '.format(species_name), end='')
-                    URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-                    r = requests.get(URL, timeout=20)
-                    # Extract taxon_id
-                    list = r.text.split("Id>")
-                    TAXON_ID = list[1][:-2]
-                    # Add new taxon_id to dictionary
-                    taxon_id_dict[species_name] = int(TAXON_ID)
-                    # Sleep for online requests (otherwise you'll be blocked after a while!)
-                    time.sleep(2)
-                except Exception as ex:
-                    print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
-                    # Wait one minute if server returns an error (mostly because you are blocked or the network is down)
-                    time.sleep(60)
-                    continue
-                else:
-                    break
-        print('sequenced genome +1 -> ', end='')
-        # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
-        # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
-        # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
-        URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        for taxon, taxon_data in taxon_dictionary.items():
-            if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                print('Adding to {0}'.format(taxon))
-                full_genome_dictionary[taxon] += 1
+        TAXON_ID = get_taxon_id(species_name)
+        phylum = get_phylum(species_name, TAXON_ID)]
+        full_genome_dictionary[phylum] += 1
+        print('Adding +1 to fully sequenced {0}'.format(phylum))
     print(str(full_genome_dictionary))
-    write_dict_to_file(preamble, taxon_id_dict, TAXON_ID_DICTIONARY_FILE)
     return full_genome_dictionary
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE
+    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
-    print('\nThe script is located in {0}'.format(APPLICATION_PATH))
+    #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     TAXON_ID_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
     PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
+
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
-    print('preamble1: {0}'.format(preamble1))
-    print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
-    preamble2, protein_dictionary = load_dictionary(PROTEIN_DICTIONARY_FILE)
-    print("Populating new taxon dictionary")
+    #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
+    #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
-    print('new_taxon_dictionary: {0}'.format(str(new_taxon_dictionary)))
+
+    preamble2, protein_dictionary = load_dictionary(PROTEIN_DICTIONARY_FILE)
+    #print('protein_dictionary: {0}\n'.format(protein_dictionary))
+
+    preamble3, taxon_id_dict = load_dictionary(TAXON_ID_DICTIONARY_FILE)
+    #print('taxon_id_dict: {0}\n'.format(taxon_id_dict))
+
     blacklist = load_blacklist()
     for taxon, taxon_data in taxon_dictionary.items():
-        print("Enter recursion")
+        #print("Enter recursion")
         if taxon not in blacklist:
-            print("Passed blacklist loading")
-            #new_species_number = get_species_number(taxon)
-            #print(str(new_species_number))
-            #new_taxon_id = get_taxon_id(taxon)
-            #print(str(new_taxon_id))
-            #new_sequence_number = get_sequence_number_local(taxon)
-            #print(str(new_sequence_number))
-            new_protein_data = {}
-            for protein, protein_data in protein_dictionary.items():
-                # Here we analyze the blasts hits and catagorize them according to the description
-                number, related_protein_list = get_protein_data(protein, protein_data, taxon)
-                new_protein_data[protein] = [number, related_protein_list]
-                print('new_protein_data for taxon {0}: {1} => {2}'.format(taxon, protein, new_protein_data[protein]))
+            #print("Passed blacklist loading")
             # Replace old data if new data is available
+            # PROTEIN DATA (how many hits, false-positive list)
+            try:
+                new_protein_data = get_protein_data(taxon)
+            except:
+                pass
+            else:
+                new_taxon_dictionary[taxon][4] = new_protein_data
+            # TAXON_ID
             try:
                 new_taxon_id
             except NameError:
                 pass
             else:
                 new_taxon_dictionary[taxon][0] = new_taxon_id
+            # NUMBER OF SPECIES IN NCBI DATABASE
             try:
                 new_species_number
             except NameError:
                 pass
             else:
                 new_taxon_dictionary[taxon][1] = new_species_number
+            # NUMBER OF SEQUENCES IN NCBI DATABASE
             try:
                 new_sequence_number
             except NameError:
                 pass
             else:
                 new_taxon_dictionary[taxon][3] = new_sequence_number
-            try:
-                new_protein_data
-            except NameError:
-                pass
-            else:
-                print('taxon: {0}'.format(taxon))
-                new_taxon_dictionary[taxon][4] = [new_protein_data, related_protein_list]
             # Wait in order not to overload the server
             time.sleep(1)
     # Add the number of fully sequenced genomes to the new taxon dictionary
     full_genome_dictionary = get_fully_sequenced_genomes(CSV_FILE)
     for taxon, number in full_genome_dictionary.items():
         new_taxon_dictionary[taxon][5] = number
-    print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
+    #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     # Make backup file before overwriting
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
     # Write new data to file
