@@ -224,6 +224,9 @@ def get_protein_data(taxon):
         print('new_protein_data: {0}'.format(new_protein_data))
         return new_protein_data
 
+def add_phylum_to_taxon_id_file(species_name, phylum):
+    taxon_id_dict[species_name][1] = phylum
+
 def get_fully_sequenced_genomes(CSV_FILE):
     # Open/download the list of fully sequenced genomes
     try:
@@ -242,6 +245,7 @@ def get_fully_sequenced_genomes(CSV_FILE):
         full_genome_dictionary[taxon] = 0
     for line in input_csv_file:
         species_name = line['#Organism Name']
+        print('species_name = {0}'.format(species_name))
         TAXON_ID = get_taxon_id(species_name)
         phylum = get_phylum(species_name, TAXON_ID)
         full_genome_dictionary[phylum] += 1
@@ -313,8 +317,10 @@ def run():
     #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     # Make backup file before overwriting
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
-    # Write new data to file
+    os.rename(TAXON_ID_DICTIONARY_FILE, TAXON_ID_DICTIONARY_FILE+'~')
+    # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
+    write_dict_to_file(preamble3, taxon_id_dict, TAXON_ID_DICTIONARY_FILE)
     if insert_line_breaks(TAXON_DICTIONARY_FILE) == True:
         print('Successfully formatted the taxon data file.')
     else:
