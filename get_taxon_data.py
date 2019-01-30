@@ -234,7 +234,7 @@ def get_fully_sequenced_genomes(CSV_FILE):
     for line in input_csv_file:
         species_name = line['#Organism Name']
         TAXON_ID = get_taxon_id(species_name)
-        phylum = get_phylum(species_name, TAXON_ID)]
+        phylum = get_phylum(species_name, TAXON_ID)
         full_genome_dictionary[phylum] += 1
         print('Adding +1 to fully sequenced {0}'.format(phylum))
     print(str(full_genome_dictionary))
