@@ -113,7 +113,7 @@ def get_taxon_id(species_name):
     while True:
         # Check whether the species is in the local dictionary
         try:
-            print('Getting id for \'{0}\', checking local taxon_id_dictionary first.'.format(species_name))
+            print('Getting id for \'{0}\', checking local taxon_id_dictionary first.'.format(species_name), end = '')
             #print('taxon_id_dict: {0}'.format(taxon_id_dict))
             #print('taxon_id_dict[species_name]: {0}'.format(taxon_id_dict[species_name]))
             # print(taxon_id_dict[species_name][0])
@@ -152,19 +152,28 @@ def get_phylum(species_name, TAXON_ID):
         phylum = taxon_id_dict[species_name][1]
         if phylum == None:
             raise Exception('Phylum for {0} was None'.format(species_name))
-        else:
-            return phylum
     except Exception as err:
         print('Phylum info for {0} not available from local dictionary. Getting from NCBI...'.format(species_name))
         URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        for phylum, phylum_data in taxon_dictionary.items():
-            if '<TaxId>{0}</TaxId>'.format(phylum_data[0]) in text:
-                print('Adding phylum info "{0}" for {1} to local dictionary'.format(phylum, species_name))
-                taxon_id_dict[species_name][1] = phylum
-                return phylum
+        while True:
+            r = requests.get(URL)
+            text = r.text
+            print(text)
+            for taxon, taxon_data in taxon_dictionary.items():
+                print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
+                if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
+                    print('Adding phylum info "{0}" for {1} to local dictionary'.format(taxon, species_name))
+                    phylum = taxon
+                    taxon_id_dict[species_name][1] = phylum
+            try:
+                phylum
+                # break applies to both while and for and therefore cannot be inside the for loop
+                break
+            except NameError as err:
+                print("Sleeping due to server error. Will retry in 30 seconds.")
+                time.sleep(30)
+                continue
+    return phylum
 
 def get_sequence_number_local(taxon):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
@@ -241,7 +250,7 @@ def get_fully_sequenced_genomes(CSV_FILE):
     return full_genome_dictionary
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict
+    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict, blacklist
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
