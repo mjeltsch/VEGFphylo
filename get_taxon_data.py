@@ -159,7 +159,9 @@ def get_phylum(species_name, TAXON_ID):
             r = requests.get(URL)
             text = r.text
             print(text)
+            i = 0
             for taxon, taxon_data in taxon_dictionary.items():
+                i += 1
                 print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
                 if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
                     print('Adding phylum info "{0}" for {1} to local dictionary'.format(taxon, species_name))
@@ -167,6 +169,8 @@ def get_phylum(species_name, TAXON_ID):
                     taxon_id_dict[species_name][1] = phylum
             try:
                 phylum
+                # The following line will be only executed if calling 'phylum' does not give a NameError
+                print('{0} phyla (of 51) checked before hit was found.'.format(i))
                 # break applies to both while and for and therefore cannot be inside the for loop
                 break
             except NameError as err:
@@ -223,9 +227,6 @@ def get_protein_data(taxon):
         print('Analysis for taxon {0} completed.'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
         return new_protein_data
-
-def add_phylum_to_taxon_id_file(species_name, phylum):
-    taxon_id_dict[species_name][1] = phylum
 
 def get_fully_sequenced_genomes(CSV_FILE):
     # Open/download the list of fully sequenced genomes
