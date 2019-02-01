@@ -97,7 +97,7 @@
 # Both should be git-cloned into ~/bin/
 #
 
-import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib, collections
+import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib, collections, string
 #from Bio.Blast import NCBIWWW
 #from Bio.Blast import NCBIXML
 #from Bio.Blast.Applications import NcbipsiblastCommandline
@@ -170,27 +170,41 @@ def load_dictionary(FILENAME):
 
 # This takes a list (as shown below) and returns a formatted string which is displayed on the tree
 # {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0, 'vascular endothelial growth factor A': 0, 'vascular endothelial growth factor B': 0, 'vascular endothelial growth factor C': 0, 'vascular endothelial growth factor D': 0, 'placenta growth factor': 0}
-def format_false_positives(list_of_categories):
+def format_false_positives(protein, list_of_categories):
+    total_hits = list_of_categories[0]
+    # simplify protein name (remove numbers from end)
+    protein = protein.rstrip(string.digits).rstrip('-')
     # Go through false positives
     uncharacterized_hypothetical = 0
     PDGF = 0
     PVF = 0
     other_VEGFs = 0
+    total = 0
     for category, number in list_of_categories[1].items():
         if category in ['uncharacterized protein', 'hypothetical protein']:
             uncharacterized_hypothetical += number
+            total += number
         elif category == 'platelet-derived growth factor':
             PDGF += number
+            total += number
         elif category == 'PDGF and VEGF related factor':
             PVF += number
+            total += number
         else:
             other_VEGFs += number
+            total += number
     # Go through true positives
     true_positives = 0
     for category, number in list_of_categories[2].items():
         true_positives += number
-    false_potitive_string = ' (true:{0}, PDGF:{1}, PVF:{2}, VEGF:{3}, ?:{4})'.format(true_positives, PDGF, PVF, other_VEGFs, uncharacterized_hypothetical)
-    return false_potitive_string
+        total += number
+    unknown = total_hits - true_positives - PDGF - other_VEGFs
+    #false_positive_string = ' true:{0}, PDGF:{1}, PVF:{2}, VEGF:{3}, ?:{4}'.format(true_positives, PDGF, PVF, other_VEGFs, uncharacterized_hypothetical)
+    if total == 0:
+        false_positive_string = ''
+    else:
+        false_positive_string = ' {0} (PDGF:{1}, VEGF:{2}, ?:{3}) '.format(true_positives, PDGF, other_VEGFs, unknown)
+    return false_positive_string
 
 def drawtree(TREEFILE):
     color_dict = {  '-':"White",
@@ -205,6 +219,18 @@ def drawtree(TREEFILE):
                     '8':"#FFFFFF",
                     '9':"#FFFFFF",
                     '10':"#FFFFFF"}
+    color_dict = {  '-': "White",
+                    '0':"#FF8888",
+                    '1': "#FF9F88",
+                    '2': "#FFB788",
+                    '3': "#FFCF88",
+                    '4': "#FFE788",
+                    '5': "#FFFF88",
+                    '6': "#E7FF88",
+                    '7': "#CFFF88",
+                    '8': "#B7FF88",
+                    '9': "#9FFF88",
+                    '10': "#88FF88"}
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
@@ -358,11 +384,11 @@ def drawtree(TREEFILE):
 
                 # Add a "fake" header (is actually part of the first phylum row)
                 if animal_class_name == 'ctenophora':
-                    textFace = TextFace('# animal\n species', fsize = 16)
+                    textFace = TextFace('# animal\n species', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 0, "aligned")
-                    textFace = TextFace(' # se-\n quences', fsize = 16)
+                    textFace = TextFace(' # se-\n quences', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 1, "aligned")
-                    textFace = TextFace(' # compl.\n genomes', fsize = 16)
+                    textFace = TextFace(' # compl.\n genomes', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 2, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
@@ -372,8 +398,11 @@ def drawtree(TREEFILE):
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 5
                     for protein, value in ordered_protein_dict.items():
-                        textFace = TextFace(' '+protein, fsize = 16)
+                        textFace = TextFace('', fsize = 16)
                         (t & animal_class_name).add_face(textFace, i, "aligned")
+                        i += 1
+                        textFace2 = TextFace(' '+protein, fsize = 24, tight_text = True, fstyle = "italic")
+                        (t & animal_class_name).add_face(textFace2, i, "aligned")
                         i += 1
 
                 # Number of animal species in this class in the NCBI protein sequence database
@@ -405,9 +434,13 @@ def drawtree(TREEFILE):
 
                 for protein, value in ordered_protein_dict.items():
                     #print('{0} - {1}'.format(protein, value[0]))
-                    textFace = TextFace(' '+str(value[0])+format_false_positives(value), fsize = 16)
+                    textFace = TextFace(str(value[0]), fsize = 16, bold = True)
                     (t & animal_class_name).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
+                    i += 1
+                    textFace2 = TextFace(format_false_positives(protein, value), fsize = 16, tight_text = True)
+                    (t & animal_class_name).add_face(textFace2, i, "aligned")
+                    textFace2.background.color = color_dict[reliability]
                     i += 1
 
                 # IMAGE
