@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv
+import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv, sqlite3
 from Bio import Entrez
 from Bio import SeqIO
 from Bio import Phylo
+from Bio import SearchIO
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbiblastpCommandline
@@ -202,40 +203,42 @@ def get_protein_data(taxon):
             #
             # Open the individual results file for a protein and a phylum
             XML_RESULTS_FILE = '{0}{1}/blast_results_{2}.xml'.format(args.directory, protein, taxon)
-            with open(XML_RESULTS_FILE) as blastresults:
-                print('Parsing {0}'.format(XML_RESULTS_FILE))
-                blast_records = NCBIXML.parse(blastresults)
-                blast_records = list(blast_records)
-                print('Analysing {0}:'.format(protein))
-                # Get extended information about the false-positive hits
-                negative_dict = {}
+            # Create database connection
+            conn = create_connection(DATABASE_FILE)
+
+            # Get extended information about the false-positive hits
+            negative_dict = {}
+            for related_protein in protein_data[10]:
+                negative_dict[related_protein] = 0
+            # Get extended information about the true-positive hits
+            positive_dict = {}
+            for synonym in protein_data[9]:
+                positive_dict[synonym] = 0
+
+            print('Analysing {0}:'.format(protein))
+            blastp_result = SearchIO.read(XML_RESULTS_FILE, "blast-xml")
+            number = len(blastp_result)
+            for hit in blastp_result:
+                # get gid and protein_id
+                hitident = hit.id.split('|')
+                print('hit: {0} - {1}'.format(hitident[1], hitident[3]))
+                # Extract species name
+                species = re.search(r'\[(.*?)\]',hit.description).group(1)
+                BLASTHIT = [hitident[1], hitident[3], species, hit.description]
+                print('Checking false- or true-positivity.')
                 for related_protein in protein_data[10]:
-                    i = 0
-                    for blast_record in blast_records:
-                        number = len(blast_record.descriptions)
-                        print('Checking for group of false positives \"{0}\"'.format(related_protein))
-                        for description in blast_record.descriptions:
-                            #print('description: {0}'.format(description))
-                            if related_protein in str(description):
-                                i += 1
-                                print('Potential false-positive found: {0}'.format(related_protein))
-                    negative_dict[related_protein] = i
-                # Get extended information about the true-positive hits
-                positive_dict = {}
+                    if related_protein in str(hit.description):
+                        negative_dict[related_protein] += 1
+                        print('Potential false-positive found: {0}'.format(related_protein))
                 for synonym in protein_data[9]:
-                    j = 0
-                    for blast_record in blast_records:
-                        #number = len(blast_record.descriptions)
-                        print('Checking for group of true positives \"{0}\"'.format(synonym))
-                        for description in blast_record.descriptions:
-                            #print('description: {0}'.format(description))
-                            if synonym in str(description):
-                                j += 1
-                                print('True positives found: {0}'.format(synonym))
-                    positive_dict[synonym] = j
-                print('Analysis for {0}/{1} completed.'.format(taxon, protein))
-                print('Number of hits: {0}'.format(number))
-                print('Number of true-/false-positives: {0}/{1}\n'.format(negative_dict, positive_dict))
+                    if synonym in str(hit.description):
+                        positive_dict[synonym] += 1
+                        print('True positive found: {0}'.format(synonym))
+                with conn:
+                    print(insert_protein(conn, BLASTHIT))
+            print('Analysis for {0}/{1} completed.'.format(taxon, protein))
+            print('Number of hits: {0}'.format(number))
+            print('Number of true-/false-positives: {0}/{1}\n'.format(negative_dict, positive_dict))
             new_protein_data[protein] = [number, negative_dict, positive_dict]
         print('Analysis for taxon {0} completed.'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
@@ -268,8 +271,24 @@ def get_fully_sequenced_genomes(CSV_FILE):
     print(str(full_genome_dictionary))
     return full_genome_dictionary
 
+def create_connection(DATABASE_FILE):
+    try:
+        conn = sqlite3.connect(DATABASE_FILE)
+        return conn
+    except Error as e:
+        print(e)
+    return None
+
+def insert_protein(CONNECTION, BLASTHIT):
+    print('Trying to execute SQL insertion...')
+    query = 'INSERT INTO protein(gid, protein_id, fasta_description, species) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3])
+    print('query: {0}'.format(query))
+    cur = CONNECTION.cursor()
+    cur.execute(query)
+    return cur.lastrowid
+
 def run():
-    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict, blacklist
+    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict, blacklist, DATABASE_FILE
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
@@ -277,6 +296,7 @@ def run():
     TAXON_ID_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
     PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
+    DATABASE_FILE = '{0}/data/database.sql'.format(APPLICATION_PATH)
 
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
