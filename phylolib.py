@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 
-import os
+import os, sqlite3
 
 def load_blacklist():
     # All the phyla in the list below have been found in the first screen not to have any VEGF-like molecules
@@ -76,3 +76,29 @@ def read_file_to_dict(file_name):
     except Exception as ex:
         print('Could not read dictionary from file {0}. Error: '.format(file_name) + str(ex))
         return '', {}
+
+def create_database():
+    pass
+#     BEGIN TRANSACTION;
+# CREATE TABLE IF NOT EXISTS `species` (
+# 	`scientific_name`	TEXT NOT NULL,
+# 	`taxon_id`	INTEGER NOT NULL,
+# 	`phylum`	TEXT NOT NULL,
+# 	PRIMARY KEY(`taxon_id`)
+# );
+# CREATE TABLE IF NOT EXISTS `protein` (
+# 	`gid`	INTEGER NOT NULL,
+# 	`protein_id`	TEXT,
+# 	`fasta_description`	TEXT NOT NULL,
+# 	`species`	TEXT NOT NULL,
+# 	`ortholog_group`	TEXT,
+# 	`curated_manually_by`	TEXT DEFAULT ('NULL'),
+# 	PRIMARY KEY(`gid`)
+# );
+# CREATE TABLE IF NOT EXISTS `ortholog_groups` (
+# 	`ortholog_group`	TEXT NOT NULL
+# );
+# CREATE TABLE IF NOT EXISTS `curator` (
+# 	`curator`	TEXT NOT NULL
+# );
+# COMMIT;
