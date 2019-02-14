@@ -2,17 +2,12 @@
 # -*- coding: utf-8 -*-
 #
 import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv, sqlite3
-#from Bio import Entrez
 from Bio import SeqIO
 from Bio import Phylo
 from Bio import SearchIO
-#from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
-#from Bio.Blast.Applications import NcbiblastpCommandline
-#from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
-#from termcolor import colored, cprint
 import xml.etree.ElementTree as ET
 from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict
 
@@ -28,71 +23,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument("directory", help = "Specify the subdirectory where the data is!", default = '')
 args = parser.parse_args()
 
-# def read_file_to_dict(file_name):
-#     try:
-#         with open(file_name, "r") as file:
-#             string = file.read()
-#             file.close()
-#             #print('File content:\n' + string)
-#             dictionary = eval(string)
-#             # Store the first three lines of the dictionary
-#             buf = string.split('\n')
-#             preamble = ''
-#             for i in range(0,len(buf)):
-#                 if buf[i][:1] == '#':
-#                     preamble += buf[i] + '\n'
-#                 else:
-#                     break
-#             return preamble, dictionary
-#     except Exception as ex:
-#         print('Could not read dictionary from file {0}. Error: '.format(file_name) + str(ex))
-#         return '', {}
-
-# def write_dict_to_file(preamble, dictionary, file_name):
-#     try:
-#         with open(file_name, "w") as file:
-#             file.write(preamble)
-#             file.write(str(dictionary))
-#             file.close()
-#             return True
-#     except Exception as ex:
-#         print("Could not write dictionary to file. Error: " + str(ex))
-#         return False
-
-# def insert_line_breaks(file_name):
-#     try:
-#         with open(file_name, "r") as file:
-#             content = file.read()
-#             file.close()
-#         content = content.replace("}], '","}],\n     '")
-#         content = content.replace("], '","],\n '")
-#         with open(file_name, "w") as file:
-#             file.write(content)
-#             file.close()
-#             return True
-#     except Exception as ex:
-#         print('Could not insert line breaks into file {0} Error: {1}'.format(filename, str(ex)))
-#         return False
-
-# def load_dictionary(FILENAME):
-#     #print("Enter subroutine")
-#     # Load a sequence_dictionary if it exists
-#     if os.path.isfile(FILENAME):
-#         try:
-#             preamble, dictionary = read_file_to_dict(FILENAME)
-#             print("\nReading in the dictionary " + FILENAME + ":\n")
-#             for key, value in dictionary.items():
-#                 print(key, value)
-#             print("Done reading dictionary.")
-#         except Exception as e:
-#             preamble = '#'
-#             dictionary = {}
-#             print('Could not read taxon dictionary {0}'.format(FILENAME))
-#     else:
-#         preamble = '#'
-#         dictionary = {}
-#     return preamble, dictionary
-
 def get_species_number(taxon):
     print('Retrieving species number for {0}... -> '.format(taxon), end='')
     URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(taxon)
@@ -102,27 +32,24 @@ def get_species_number(taxon):
     return int(text.split("Count>")[1][:-2])
 
 def get_taxon_id_and_phylum(species_name):
-    while True:
-        # Check whether the species is in the local dictionary
-        try:
-            print('Getting id for \'{0}\', checking local taxon_id_dictionary first.'.format(species_name), end = '')
-            #print('taxon_id_dict: {0}'.format(taxon_id_dict))
-            #print('taxon_id_dict[species_name]: {0}'.format(taxon_id_dict[species_name]))
-            # print(taxon_id_dict[species_name][0])
-            TAXON_ID = taxon_id_dict[species_name][0]
-            break
-        # If the species is not in the local dictionary, get the data from NCBI
-        except Exception as ex:
-            print("Species not in local dictionary. Getting id from NCBI...")
+    # Check whether the species is in the local sqlite database
+    try:
+        print('Getting id for \'{0}\', checking local sqlite database first.'.format(species_name), end = '')
+        data = db_retrieve_species(conn, species_name, True)
+        if data != 0:
+            TAXON_ID = data[1]
+            phylum = data[2]
+    # If the species is not in the local dictionary, get the data from NCBI
+    except Exception as ex:
+        print("Species not in local sqlite database. Getting id from NCBI...")
+        while True:
             try:
-                print('Retrieving taxon id for {0} '.format(species_name), end='')
+                print('Retrieving taxon id and phylum for {0} '.format(species_name), end='')
                 URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
                 r = requests.get(URL, timeout=20)
                 # Extract taxon_id
                 list = r.text.split("Id>")
                 TAXON_ID = list[1][:-2]
-                # Add new taxon_id to dictionary
-                taxon_id_dict[species_name][0] = int(TAXON_ID)
                 # Sleep for online requests (otherwise you'll be blocked after a while!)
                 time.sleep(2)
             except Exception as ex:
@@ -133,41 +60,34 @@ def get_taxon_id_and_phylum(species_name):
             # If there were no exceptions (= we got the taxon_id), break out of the while loop
             else:
                 break
-    print('=> {0}'.format(TAXON_ID))
-    # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
-    # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
-    # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
-    try:
-        phylum = taxon_id_dict[species_name][1]
-        if phylum == None:
-            raise Exception('Phylum for {0} was None'.format(species_name))
-    except Exception as err:
-        print('Phylum info for {0} not available from local dictionary. Getting from NCBI...'.format(species_name))
-        URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+        print('=> {0}'.format(TAXON_ID))
+        # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
+        # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
+        # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
         while True:
-            r = requests.get(URL)
-            text = r.text
-            print(text)
-            i = 0
-            for taxon, taxon_data in taxon_dictionary.items():
-                i += 1
-                print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
-                if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                    print('Adding phylum info "{0}" for {1} to local dictionary'.format(taxon, species_name))
-                    phylum = taxon
-                    taxon_id_dict[species_name][1] = phylum
             try:
+                URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+                r = requests.get(URL)
+                text = r.text
+                print(text)
+                i = 0
+                for taxon, taxon_data in taxon_dictionary.items():
+                    i += 1
+                    print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
+                    if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
+                        print('Adding phylum info "{0}" for {1} to local dictionary'.format(taxon, species_name))
+                        phylum = taxon
                 phylum
                 # The following line will be only executed if calling 'phylum' does not give a NameError
                 print('{0} phyla (of 51) checked before hit was found.'.format(i))
             except NameError as err:
                 print("Sleeping due to server error. Will retry in 30 seconds.")
-                time.sleep(30)
+                time.sleep(60)
                 continue
             # If there were no exceptions (= we got the phylum), break out of the while loop
             else:
-                db_insert_species(conn, species_name, TAXON_ID, phylum)
-                # break applies to both while and for and therefore cannot be inside the for loop
+                if db_insert_species(conn, species_name, TAXON_ID, phylum, False) != 0:
+                    print('New species {0} inserted into database.'.format(species_name))
                 break
     return TAXON_ID, phylum
 
@@ -230,7 +150,7 @@ def get_protein_data(taxon):
                         print('True positive found: {0}'.format(synonym))
                 with conn:
                     # If the gid is already in the database, the insertion fails
-                    print(db_insert_protein(conn, BLASTHIT))
+                    print(db_insert_protein(conn, BLASTHIT, False))
             print('Analysis for {0}/{1} completed.'.format(taxon, protein))
             print('Number of hits: {0}'.format(number))
             print('Number of true-/false-positives: {0}/{1}\n'.format(negative_dict, positive_dict))
@@ -260,7 +180,6 @@ def get_fully_sequenced_genomes(CSV_FILE):
         species_name = line['#Organism Name']
         print('species_name = {0}'.format(species_name))
         TAXON_ID, phylum = get_taxon_id_and_phylum(species_name)
-        db_insert_species(conn, species_name, TAXON_ID, phylum)
         full_genome_dictionary[phylum] += 1
         print('Adding +1 to fully sequenced {0}'.format(phylum))
     print(str(full_genome_dictionary))
@@ -275,53 +194,67 @@ def create_connection(DATABASE_FILE):
         print(err)
     return None
 
-def db_insert_protein(CONNECTION, BLASTHIT):
-    print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
+def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE):
+    if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
     # In some fasta descriptions one can really find this char: ' !!!!
     BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
     query = 'INSERT INTO protein (gid, protein_id, fasta_description, species) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3])
-    print('query: {0}'.format(query))
+    if VERBOSE: print('query: {0}'.format(query))
     try:
         cur = CONNECTION.cursor()
         cur.execute(query)
         result = cur.lastrowid
+    except sqlite3.Error as err:
+        if VERBOSE: print('Database error: {0}'.format(err))
+        result = 0
     except Exception as err:
-        print('SQL insertion failed. Error was: {0}'.format(err))
+        if VERBOSE: print('Unknown error: {0}'.format(err))
         result = 0
     return result
 
 # Give a list of scientific_name, taxon_id and phylum to insert into SQLite database
-def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM):
-    print('Trying to execute SQL insertion ({0})...'.format(SPECIES_NAME))
+# There should never be the need to update any entry from this table, only to insert
+def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE):
+    if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(SPECIES_NAME))
     query = 'INSERT INTO species (scientific_name, taxon_id, phylum) VALUES (\'{0}\', {1}, \'{2}\')'.format(SPECIES_NAME, TAXON_ID, PHYLUM)
-    print('query: {0}'.format(query))
+    if VERBOSE: print('query: {0}'.format(query))
     try:
         cur = CONNECTION.cursor()
         cur.execute(query)
         result = cur.lastrowid
-        print('SQL insertion successful.')
+        if VERBOSE: print('SQL insertion successful.')
+    except sqlite3.Error as err:
+        if VERBOSE: print('Database error: {0}'.format(err))
+        result = 0
     except Exception as err:
-        print('SQL insertion failed. Error was: {0}'.format(err))
+        if VERBOSE: print('Unknown error: {0}'.format(err))
         result = 0
     return result
 
 # Return a list of scientific_name, taxon_id and phylum when queried by scientific_name
-def db_retrieve_species(CONNECTION, SPECIES_NAME):
-    print('Trying to retrieve SQLite data for {0}'.format(SPECIES_NAME))
-    query = 'SELECT * FROM species WHERE scientific_name = \'{0}\')'.format(SPECIES_NAME)
-    print('query: {0}'.format(query))
-    cur = CONNECTION.cursor()
-    cur.execute(query)
+def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE):
+    if VERBOSE: print('Trying to retrieve SQLite data for {0}'.format(SPECIES_NAME))
+    query = 'SELECT * FROM species WHERE scientific_name = \'{0}\''.format(SPECIES_NAME)
+    if VERBOSE: print('query: {0}'.format(query))
+    try:
+        cur = CONNECTION.cursor()
+        cur.execute(query)
+        result = cur.fetchone()
+    except sqlite3.Error as err:
+        if VERBOSE: print('Database error: {0}'.format(err))
+        result = 0
+    except Exception as err:
+        if VERBOSE: print('Unknown error: {0}'.format(err))
+        result = 0
     # There should be only one row!
-    return cur.fetchone()
+    return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, TAXON_ID_DICTIONARY_FILE, protein_dictionary, taxon_id_dict, blacklist, DATABASE_FILE
+    global APPLICATION_PATH, taxon_dictionary, protein_dictionary, blacklist, DATABASE_FILE
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
-    TAXON_ID_DICTIONARY_FILE = '{0}/data/taxon_ids.py'.format(APPLICATION_PATH)
     PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sql'.format(APPLICATION_PATH)
@@ -333,9 +266,6 @@ def run():
 
     preamble2, protein_dictionary = load_dictionary(PROTEIN_DICTIONARY_FILE)
     #print('protein_dictionary: {0}\n'.format(protein_dictionary))
-
-    preamble3, taxon_id_dict = load_dictionary(TAXON_ID_DICTIONARY_FILE)
-    #print('taxon_id_dict: {0}\n'.format(taxon_id_dict))
 
     blacklist = load_blacklist()
     for taxon, taxon_data in taxon_dictionary.items():
@@ -382,10 +312,8 @@ def run():
     #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     # Make backup file before overwriting
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
-    os.rename(TAXON_ID_DICTIONARY_FILE, TAXON_ID_DICTIONARY_FILE+'~')
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
-    write_dict_to_file(preamble3, taxon_id_dict, TAXON_ID_DICTIONARY_FILE)
     if insert_line_breaks(TAXON_DICTIONARY_FILE) == True:
         print('Successfully formatted the taxon data file.')
     else:
