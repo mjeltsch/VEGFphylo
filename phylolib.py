@@ -77,28 +77,34 @@ def read_file_to_dict(file_name):
         print('Could not read dictionary from file {0}. Error: '.format(file_name) + str(ex))
         return '', {}
 
-def create_database():
-    pass
-#     BEGIN TRANSACTION;
-# CREATE TABLE IF NOT EXISTS `species` (
-# 	`scientific_name`	TEXT NOT NULL,
-# 	`taxon_id`	INTEGER NOT NULL,
-# 	`phylum`	TEXT NOT NULL,
-# 	PRIMARY KEY(`taxon_id`)
-# );
-# CREATE TABLE IF NOT EXISTS `protein` (
-# 	`gid`	INTEGER NOT NULL,
-# 	`protein_id`	TEXT,
-# 	`fasta_description`	TEXT NOT NULL,
-# 	`species`	TEXT NOT NULL,
-# 	`ortholog_group`	TEXT,
-# 	`curated_manually_by`	TEXT DEFAULT ('NULL'),
-# 	PRIMARY KEY(`gid`)
-# );
-# CREATE TABLE IF NOT EXISTS `ortholog_groups` (
-# 	`ortholog_group`	TEXT NOT NULL
-# );
-# CREATE TABLE IF NOT EXISTS `curator` (
-# 	`curator`	TEXT NOT NULL
-# );
-# COMMIT;
+def create_sqlite_file(FILE_NAME):
+    try:
+        conn = sqlite3.connect(FILE_NAME)
+        print(sqlite3.version)
+        commands = '''CREATE TABLE IF NOT EXISTS `species` (
+        	`scientific_name`	TEXT NOT NULL,
+        	`taxon_id`	INTEGER NOT NULL,
+        	`phylum`	TEXT NOT NULL,
+        	PRIMARY KEY(`taxon_id`));
+        CREATE TABLE IF NOT EXISTS `protein` (
+        	`gid`	INTEGER NOT NULL,
+        	`protein_id`	TEXT,
+        	`fasta_description`	TEXT NOT NULL,
+        	`species`	TEXT NOT NULL,
+        	`ortholog_group`	TEXT,
+        	`curated_manually_by`	TEXT DEFAULT ('NULL'),
+        	PRIMARY KEY(`gid`));
+        CREATE TABLE IF NOT EXISTS `ortholog_groups` (
+        	`ortholog_group`	TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS `curator` (
+        	`curator`	TEXT NOT NULL);'''
+        cur = conn.cursor()
+        cur.execute(commands)
+        conn.commit()
+    except Error as err:
+        print(err)
+        return False
+    else:
+        return True
+    finally:
+        conn.close()
