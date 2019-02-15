@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv, sqlite3
+import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv, sqlite3, types
 from Bio import SeqIO
 from Bio import Phylo
 from Bio import SearchIO
@@ -34,62 +34,27 @@ def get_species_number(taxon):
 def get_taxon_id_and_phylum(species_name):
     # Check whether the species is in the local sqlite database
     try:
-        print('Getting id for \'{0}\', checking local sqlite database first.'.format(species_name), end = '')
+        print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
         data = db_retrieve_species(conn, species_name, True)
-        if data != 0:
+        # Check that the database answer is a list with 3 elements
+        if data is list and len(data) == 3:
             TAXON_ID = data[1]
-            phylum = data[2]
+            PHYLUM = data[2]
+        else:
+            raise Exception('{0} not in local sqlite database.'.format(species_name))
     # If the species is not in the local dictionary, get the data from NCBI
     except Exception as ex:
-        print("Species not in local sqlite database. Getting id from NCBI...")
-        while True:
-            try:
-                print('Retrieving taxon id and phylum for {0} '.format(species_name), end='')
-                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-                r = requests.get(URL, timeout=20)
-                # Extract taxon_id
-                list = r.text.split("Id>")
-                TAXON_ID = list[1][:-2]
-                # Sleep for online requests (otherwise you'll be blocked after a while!)
-                time.sleep(2)
-            except Exception as ex:
-                print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
-                # Wait one minute if server returns an error (mostly because you are blocked or the network is down)
-                time.sleep(60)
-                continue
-            # If there were no exceptions (= we got the taxon_id), break out of the while loop
-            else:
-                break
+        print("Species not in local sqlite database. Getting data from NCBI... ")
+        TAXON_ID = get_taxon_id_from_NCBI(species_name)
         print('=> {0}'.format(TAXON_ID))
         # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
         # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
         # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
-        while True:
-            try:
-                URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
-                r = requests.get(URL)
-                text = r.text
-                print(text)
-                i = 0
-                for taxon, taxon_data in taxon_dictionary.items():
-                    i += 1
-                    print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
-                    if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                        print('Adding phylum info "{0}" for {1} to local dictionary'.format(taxon, species_name))
-                        phylum = taxon
-                phylum
-                # The following line will be only executed if calling 'phylum' does not give a NameError
-                print('{0} phyla (of 51) checked before hit was found.'.format(i))
-            except NameError as err:
-                print("Sleeping due to server error. Will retry in 30 seconds.")
-                time.sleep(60)
-                continue
-            # If there were no exceptions (= we got the phylum), break out of the while loop
-            else:
-                if db_insert_species(conn, species_name, TAXON_ID, phylum, False) != 0:
-                    print('New species {0} inserted into database.'.format(species_name))
-                break
-    return TAXON_ID, phylum
+        PHYLUM = get_phylum_from_NCBI(TAXON_ID)
+        print('=> {0}'.format(PHYLUM))
+        if db_insert_species(conn, species_name, TAXON_ID, PHYLUM) != 0:
+            print('New species {0} inserted into database.'.format(species_name))
+    return TAXON_ID, PHYLUM
 
 # How many sequences are in the local database for this taxon? The gi files were manually downloaded from
 # NCBI. There should be smarted way to get these!
@@ -100,6 +65,66 @@ def get_sequence_number(taxon):
         for i, l in enumerate(file):
             pass
     return i + 1
+
+def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
+    # Counter to increase waiting period upon incresing number of unsuccesful trials
+    i = 0
+    while True:
+        try:
+            if VERBOSE: print('Retrieving taxon id for {0} '.format(species_name), end='')
+            URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+            r = requests.get(URL, timeout=20)
+            # Extract taxon_id
+            list = r.text.split("Id>")
+            TAXON_ID = list[1][:-2]
+            # Sleep for online requests (otherwise you'll be blocked after a while!)
+            time.sleep(2)
+        except Exception as ex:
+            i += 6
+            if VERBOSE: print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
+            # Wait if server returns an error (mostly because you are blocked or the network is down)
+            time.sleep(i**2)
+            continue
+        # If there were no exceptions (= we got the taxon_id), break out of the while loop
+        else:
+            break
+    return TAXON_ID
+
+def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
+    # Counter to increase waiting period upon incresing number of unsuccesful trials
+    i = 0
+    while True:
+        try:
+            URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+            r = requests.get(URL)
+            text = r.text
+            if VERBOSE: print(text)
+            i = 0
+            for taxon, taxon_data in taxon_dictionary.items():
+                if VERBOSE: print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
+                if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
+                    if VERBOSE: print('Adding phylum info {0} to taxon_id {1}'.format(taxon, TAXON_ID))
+                    phylum = taxon
+                    break
+                i += 1
+            print(phylum)
+            # The following line will be only executed if calling 'phylum' does not give a NameError
+            # When i = 51, none of the 51 phyla was in the text that was received from NCBI.
+            if i == 51:
+                if VERBOSE: print('{0} does not belong to any phylum in the phylum list'.format(species_name))
+            elif i < 51:
+                i += 1
+                if VERBOSE: print('{0} phyla (of 51) checked before hit was found.'.format(i))
+            else:
+                if VERBOSE: print('Unknown error when trying to identify phylum for {0}.'.format(species_name))
+        except NameError as err:
+            if VERBOSE: print("Sleeping due to server error. Will retry in 60 seconds.")
+            time.sleep(60)
+            continue
+        # If there were no exceptions (= we got the phylum), break out of the while loop
+        else:
+            break
+    return phylum
 
 def get_protein_data(taxon):
     if args.directory == '':
@@ -194,7 +219,7 @@ def create_connection(DATABASE_FILE):
         print(err)
     return None
 
-def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE):
+def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE=True):
     if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
     # In some fasta descriptions one can really find this char: ' !!!!
     BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
@@ -204,6 +229,7 @@ def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE):
         cur = CONNECTION.cursor()
         cur.execute(query)
         result = cur.lastrowid
+        CONNECTION.commit()
     except sqlite3.Error as err:
         if VERBOSE: print('Database error: {0}'.format(err))
         result = 0
@@ -214,7 +240,7 @@ def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE):
 
 # Give a list of scientific_name, taxon_id and phylum to insert into SQLite database
 # There should never be the need to update any entry from this table, only to insert
-def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE):
+def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE=True):
     if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(SPECIES_NAME))
     query = 'INSERT INTO species (scientific_name, taxon_id, phylum) VALUES (\'{0}\', {1}, \'{2}\')'.format(SPECIES_NAME, TAXON_ID, PHYLUM)
     if VERBOSE: print('query: {0}'.format(query))
@@ -223,6 +249,7 @@ def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE):
         cur.execute(query)
         result = cur.lastrowid
         if VERBOSE: print('SQL insertion successful.')
+        CONNECTION.commit()
     except sqlite3.Error as err:
         if VERBOSE: print('Database error: {0}'.format(err))
         result = 0
@@ -232,8 +259,8 @@ def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE):
     return result
 
 # Return a list of scientific_name, taxon_id and phylum when queried by scientific_name
-def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE):
-    if VERBOSE: print('Trying to retrieve SQLite data for {0}'.format(SPECIES_NAME))
+def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
+    if VERBOSE: print('Trying to retrieve SQLite data for {0}...'.format(SPECIES_NAME))
     query = 'SELECT * FROM species WHERE scientific_name = \'{0}\''.format(SPECIES_NAME)
     if VERBOSE: print('query: {0}'.format(query))
     try:
