@@ -134,7 +134,7 @@ def get_protein_data(taxon):
         print('\n---------------')
         print('Analysing TAXON {0}'.format(taxon))
         print('---------------\n')
-        for protein, protein_data in protein_dictionary.items():
+        for protein, protein_data in master_dictionary.items():
             # Here we analyze the blasts hits for each TAXON/PROTEIN pair:
             # a) number of blast hits
             # b) number of false positive according to the description (categorized in a list)
@@ -146,11 +146,11 @@ def get_protein_data(taxon):
 
             # Get extended information about the false-positive hits
             negative_dict = {}
-            for related_protein in protein_data[10]:
+            for related_protein in protein_data[4]:
                 negative_dict[related_protein] = 0
             # Get extended information about the true-positive hits
             positive_dict = {}
-            for synonym in protein_data[9]:
+            for synonym in protein_data[3]:
                 positive_dict[synonym] = 0
 
             print('Analysing {0}:'.format(protein))
@@ -165,11 +165,11 @@ def get_protein_data(taxon):
                 # BLASTHIT = [gid, protein_id, species, fasta_description]
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description]
                 print('Checking false- or true-positivity.')
-                for related_protein in protein_data[10]:
+                for related_protein in protein_data[4]:
                     if related_protein in str(hit.description):
                         negative_dict[related_protein] += 1
                         print('Potential false-positive found: {0}'.format(related_protein))
-                for synonym in protein_data[9]:
+                for synonym in protein_data[3]:
                     if synonym in str(hit.description):
                         positive_dict[synonym] += 1
                         print('True positive found: {0}'.format(synonym))
@@ -277,23 +277,18 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, protein_dictionary, blacklist, DATABASE_FILE
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
-    PROTEIN_DICTIONARY_FILE = '{0}/data/master_dictionary.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sql'.format(APPLICATION_PATH)
-
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
-
-    preamble2, protein_dictionary = load_dictionary(PROTEIN_DICTIONARY_FILE)
-    #print('protein_dictionary: {0}\n'.format(protein_dictionary))
-
+    preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     blacklist = load_blacklist()
     for taxon, taxon_data in taxon_dictionary.items():
         #print("Enter recursion")

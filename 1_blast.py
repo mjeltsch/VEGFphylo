@@ -227,7 +227,7 @@ def read_file_to_dict(file_name):
         return {}
 
 def parse_blast_result(PROTEIN, LIST, TAXON):
-    SVG_FILENAME, COMMON_NAME, SCIENTIFIC_NAME, ANIMAL_CLASS, PROTEIN_ID, OUTGROUP, ALIGNMENT_TRIMMING, OPTIONAL_SEQUENCE, OPTIONAL_BLAST_NO = LIST
+    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, ALIASES, FALSE_FRIENDS = LIST
     # Parse Blastp result and write results to SEQUENCE_LIST
     with open(SUMMARY_FILE, "a") as results_summary:
         #print(os.getcwd() + " " + BLAST_XMLFILE)
@@ -265,11 +265,11 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
     # Database
     BLAST_DATABASE = 'nr'
     EVALUE = 0.1
-    SVG_FILENAME, COMMON_NAME, SCIENTIFIC_NAME, ANIMAL_CLASS, PROTEIN_ID, OUTGROUP, ALIGNMENT_TRIMMING, OPTIONAL_SEQUENCE, OPTIONAL_BLAST_NO = LIST
+    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, ALIASES, FALSE_FRIENDS = LIST
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
     if REMOTE == 'remote':
-        print('\nRunning remote blastp against {0} (subsection {1} ({2}), requesting {3} results) with the following query sequence: {4} {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], str(OPTIONAL_BLAST_NO), COMMON_NAME, PROTEIN, str(datetime.datetime.now())[:-7]))
+        print('\nRunning remote blastp against {0} (subsection {1} ({2}), requesting {3} results) with the following query sequence: {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], str(OPTIONAL_BLAST_NO), PROTEIN, str(datetime.datetime.now())[:-7]))
         try:
             # The hitlist_size seems to be ignored by the wrapper/service????
             # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
@@ -279,14 +279,18 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
             # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
             # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
             ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
-            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "XML")
+            if SUBRANGE != None:
+                SUBRANGE = ', query_loc = ' + SUBRANGE
+            else:
+                SUBRANGE = ''
+            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID, hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "XML"SUBRANGE)
             # Write blast result to xml file
             with open(BLAST_XMLFILE, "w") as out_handle:
                 out_handle.write(result_handle.read())
             # Repeat for HTML output (how else to do this easily???)
             # Converting XML to html?
             # xsltproc --novalid blast2html.xsl blast.xml
-            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "HTML")
+            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID, hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "HTML"SUBRANGE)
             # Write blast result to HTML file
             with open(BLAST_HTMLFILE, "w") as out_handle:
                 out_handle.write(result_handle.read())
@@ -381,8 +385,10 @@ def run():
                     try:
                         SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
                         #SECONDS = 30
-                        print(' Timeout = {0} seconds.'.format(str(SECONDS)))
+                        print(' Timeout = {0} seconds.'.format(SECONDS))
+                        print('protein: {0}\nprotein_data: {1}\ntaxon: {2}\ntaxon_data: {3}'.format(protein, protein_data, taxon, taxon_data))
                         if blastp(protein, protein_data, taxon, taxon_data) == True:
+                            print('ready')
                             parse_blast_result(protein, protein_data, taxon)
                             print('Blasting succeeded.')
                             break
