@@ -300,6 +300,7 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
             print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
             return False
     elif REMOTE == 'local':
+        # The local blast branch is not kept up-to-date with the remote blast branch!!!! The protein sequences in data/proteins are only needed for the local blast search. 
         START_SEQUENCE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, PROTEIN)
         PHYLUMFILE = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, TAXON)
         blastp_cline = NcbiblastpCommandline(cmd='blastp', query=START_SEQUENCE, db=BLAST_DATABASE, gilist=PHYLUMFILE, evalue=EVALUE, remote=False, outfmt=5, max_target_seqs=OPTIONAL_BLAST_NO, out=BLAST_XMLFILE, num_threads=4)
