@@ -126,11 +126,23 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             break
     return phylum
 
+def write_to_html_scrutinize_file(list_to_scrutinize):
+    sorted_list = list_to_scrutinize.sort(key=lambda x: x[1])
+    lineitem = '<html>\n<head><title>To scrutinize</title></head>\n<body>\n<table border="1">\n'
+    print('Writing to HTML file...')
+    #for item in sorted_list:
+    for item in list_to_scrutinize:
+            lineitem += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><a href="https://www.ncbi.nlm.nih.gov/protein/{3}/">{5}</a></td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], item[5])
+    lineitem += '\n</table>\n</body>\n</html>\n'
+    with open(HTML_SCRUTINIZE_FILE, 'a') as file:
+        file.write(lineitem)
+
 def get_protein_data(taxon):
     if args.directory == '':
         return []
     else:
         new_protein_data = {}
+        list_to_scrutinize = []
         print('\n---------------')
         print('Analysing TAXON {0}'.format(taxon))
         print('---------------\n')
@@ -157,6 +169,7 @@ def get_protein_data(taxon):
             blastp_result = SearchIO.read(XML_RESULTS_FILE, "blast-xml")
             number = len(blastp_result)
             for hit in blastp_result:
+                found = False
                 # get gid and protein_id
                 hitident = hit.id.split('|')
                 print('hit: {0} - {1}'.format(hitident[1], hitident[3]))
@@ -169,10 +182,16 @@ def get_protein_data(taxon):
                     if related_protein in str(hit.description):
                         negative_dict[related_protein] += 1
                         print('Potential false-positive found: {0}'.format(related_protein))
+                        found = True
+                        list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
                 for synonym in protein_data[3]:
                     if synonym in str(hit.description):
                         positive_dict[synonym] += 1
                         print('True positive found: {0}'.format(synonym))
+                        list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
+                        found = True
+                if found == False:
+                    list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                 with conn:
                     # If the gid is already in the database, the insertion fails
                     print(db_insert_protein(conn, BLASTHIT, False))
@@ -182,6 +201,7 @@ def get_protein_data(taxon):
             new_protein_data[protein] = [number, negative_dict, positive_dict]
         print('Analysis for taxon {0} completed.'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
+        write_to_html_scrutinize_file(list_to_scrutinize)
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
         return new_protein_data
 
@@ -277,13 +297,14 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sql'.format(APPLICATION_PATH)
+    HTML_SCRUTINIZE_FILE = '{0}/data/check_manually.html'.format(APPLICATION_PATH)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
