@@ -36,8 +36,9 @@ def get_taxon_id_and_phylum(species_name):
     try:
         print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
         data = db_retrieve_species(conn, species_name, True)
-        # Check that the database answer is a list with 3 elements
-        if data is list and len(data) == 3:
+        print('\nDATABASE RESULT: {0}\n'.format(data))
+        # Check that the database answer is a tuple with 3 elements (fetchone gives a tuple, fetchall a list of tuples)
+        if isinstance(data, tuple) and len(data) == 3:
             TAXON_ID = data[1]
             PHYLUM = data[2]
         else:
@@ -127,13 +128,51 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
     return phylum
 
 def write_to_html_scrutinize_file(list_to_scrutinize):
-    sorted_list = list_to_scrutinize.sort(key=lambda x: x[1])
-    lineitem = '<html>\n<head><title>To scrutinize</title></head>\n<body>\n<table border="1">\n'
+    # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
+    list_to_scrutinize.sort(key=lambda x: x[2])
+    lineitem = '''
+<html>
+<head>
+<title>To scrutinize</title>
+<style>
+body { font-family: "Open Sans", Arial; }
+</style>
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+</head>
+<body>
+'''
     print('Writing to HTML file...')
     #for item in sorted_list:
+    new_type = ''
     for item in list_to_scrutinize:
-            lineitem += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><a href="https://www.ncbi.nlm.nih.gov/protein/{3}/">{5}</a></td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], item[5])
-    lineitem += '\n</table>\n</body>\n</html>\n'
+        # Make a heading row if the type of hit changes
+        if item[2] != new_type:
+            if item[2] != '':
+                # End of toggle visibility section
+                lineitem += '</table>\n</div>\n\n'
+            # Start of toggle visibility section
+            lineitem += '<h4><a href="#" onclick="toggle_visibility(\'{0}-{1}-{2}\');">Section {0}-{1}-{2}</a></h4>\n'.format(item[0], item[1], item[2])
+            lineitem += '<div id="{0}-{1}-{2}" style="display:none">'.format(item[0], item[1], item[2])
+            # New table
+            #lineitem += '<table border="1">\n<tr><td><h5>{0}</h5></td><td><h5>{1}</h5></td><td colspan="5"><h2>{2}</h2></td></tr>\n'.format(item[0], item[1], item[2])
+            lineitem += '<table border="1">\n'.format()
+        link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/">{1}</a>'.format(item[3], item[5])
+        link_to_blast = '<a href="/" target="_blank">blastp</a>'
+        #                                                                                                                    taxon    protein  type_of  gid      prot_id
+        #                                                                                                                                      _hit
+        lineitem += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], link_to_protein, link_to_blast)
+        new_type = item[2]
+    lineitem += '\n</body>\n</html>\n'
     with open(HTML_SCRUTINIZE_FILE, 'a') as file:
         file.write(lineitem)
 
@@ -243,7 +282,7 @@ def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE=True):
     if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
     # In some fasta descriptions one can really find this char: ' !!!!
     BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
-    query = 'INSERT INTO protein (gid, protein_id, fasta_description, species) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3])
+    query = 'INSERT INTO protein (gid, protein_id, species, fasta_description) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3])
     if VERBOSE: print('query: {0}'.format(query))
     try:
         cur = CONNECTION.cursor()
@@ -287,6 +326,7 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
         cur = CONNECTION.cursor()
         cur.execute(query)
         result = cur.fetchone()
+        #print('\nRESULT: {0}\n'.format(result))
     except sqlite3.Error as err:
         if VERBOSE: print('Database error: {0}'.format(err))
         result = 0
@@ -303,8 +343,11 @@ def run():
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
-    DATABASE_FILE = '{0}/data/database.sql'.format(APPLICATION_PATH)
+    DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
     HTML_SCRUTINIZE_FILE = '{0}/data/check_manually.html'.format(APPLICATION_PATH)
+    # Delete the old HTML file
+    if os.path.isfile(HTML_SCRUTINIZE_FILE):
+        os.remove(HTML_SCRUTINIZE_FILE)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
