@@ -5,6 +5,7 @@ import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, r
 from Bio import SeqIO
 from Bio import Phylo
 from Bio import SearchIO
+from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
@@ -239,8 +240,12 @@ def get_protein_data(taxon):
                         list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
                         found = True
                 if found == False:
-                    run_backcheck_blast(hitident[1])
-                    list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
+                    if run_backcheck_blast(hitident[1], protein_data[3]) == protein_data[3][0]:
+                        positive_dict[synonym] += 1
+                        print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
+                        time.sleep(30)
+                    else:
+                        list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                 with conn:
                     # If the gid is already in the database, the insertion fails
                     print(db_insert_protein(conn, BLASTHIT, False))
@@ -255,8 +260,27 @@ def get_protein_data(taxon):
         return new_protein_data
 
 # This function should return the most common string in the hit description list
-def run_backcheck_blast(hitident[1])
-    pass
+def run_backcheck_blast(GID, proteindata):
+    try:
+        print('\nExecuting backcheck blast for gid {0}'.format(GID))
+        result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
+        with open("data/tmp_blast.xml", "w") as out_handle:
+            out_handle.write(result_handle.read())
+        result_handle.close()
+    except Exception as ex:
+        print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+    blastp_result = SearchIO.read("data/tmp_blast.xml", "blast-xml")
+    how_many = len(blastp_result)
+    i = 0
+    for hit in blastp_result:
+        for synonym in proteindata:
+            if synonym.lower() in str(hit.description).lower():
+                i += 1
+    print('{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[0]))
+    if i/how_many > 0.5:
+        return proteindata[0]
+    else:
+        return 'unknown'
 
 def get_fully_sequenced_genomes(CSV_FILE):
     # Open/download the list of fully sequenced genomes
