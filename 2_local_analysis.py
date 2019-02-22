@@ -130,8 +130,7 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
 def write_to_html_scrutinize_file(list_to_scrutinize):
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
     list_to_scrutinize.sort(key=lambda x: x[2])
-    lineitem = '''
-<html>
+    preamble = '''<html>
 <head>
 <title>To scrutinize</title>
 <style>
@@ -149,32 +148,42 @@ body { font-family: "Open Sans", Arial; }
 //-->
 </script>
 </head>
-<body>
-'''
+<body>'''
     print('Writing to HTML file...')
     #for item in sorted_list:
     new_type = ''
+    i = 1
+    j = 1
+    html_text = ''
     for item in list_to_scrutinize:
-        # Make a heading row if the type of hit changes
+        # Make a heading row if the type of hit changes and color unknown stuff red
         if item[2] != new_type:
+            if item[2] in ['hypothetical protein', 'uncharacterized protein', 'unknown']:
+                red_color = ' style="color:Red;"'
+            else:
+                red_color = ''
             if item[2] != '':
                 # End of toggle visibility section
-                lineitem += '</table>\n</div>\n\n'
+                html_text += '</table>\n</div>\n\n'
+            html_text += '<p{0}><a href="#"{0} onclick="toggle_visibility(\'{1}-{2}-{3}\');">{4}. {1}-{2}-{3}</a></p>\n'.format(red_color, item[0], item[1], item[2], i)
             # Start of toggle visibility section
-            lineitem += '<h4><a href="#" onclick="toggle_visibility(\'{0}-{1}-{2}\');">Section {0}-{1}-{2}</a></h4>\n'.format(item[0], item[1], item[2])
-            lineitem += '<div id="{0}-{1}-{2}" style="display:none">'.format(item[0], item[1], item[2])
+            html_text += '<div id="{0}-{1}-{2}" style="display:none">\n'.format(item[0], item[1], item[2])
             # New table
             #lineitem += '<table border="1">\n<tr><td><h5>{0}</h5></td><td><h5>{1}</h5></td><td colspan="5"><h2>{2}</h2></td></tr>\n'.format(item[0], item[1], item[2])
-            lineitem += '<table border="1">\n'.format()
-        link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/">{1}</a>'.format(item[3], item[5])
-        link_to_blast = '<a href="/" target="_blank">blastp</a>'
+            html_text += '<table border="1">\n'.format()
+        link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{1}</a>'.format(item[3], item[5])
+        link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(item[3])
         #                                                                                                                    taxon    protein  type_of  gid      prot_id
         #                                                                                                                                      _hit
-        lineitem += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], link_to_protein, link_to_blast)
+        html_text += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], link_to_protein, link_to_blast)
         new_type = item[2]
-    lineitem += '\n</body>\n</html>\n'
+        i += 1
+    #lineitem += '\n</body>\n</html>\n'
+    if not os.path.isfile(HTML_SCRUTINIZE_FILE):
+        with open(HTML_SCRUTINIZE_FILE, 'w') as file:
+            file.write(preamble)
     with open(HTML_SCRUTINIZE_FILE, 'a') as file:
-        file.write(lineitem)
+        file.write(html_text)
 
 def get_protein_data(taxon):
     if args.directory == '':
@@ -218,18 +227,19 @@ def get_protein_data(taxon):
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description]
                 print('Checking false- or true-positivity.')
                 for related_protein in protein_data[4]:
-                    if related_protein in str(hit.description):
+                    if related_protein.lower() in str(hit.description).lower():
                         negative_dict[related_protein] += 1
                         print('Potential false-positive found: {0}'.format(related_protein))
                         found = True
                         list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
                 for synonym in protein_data[3]:
-                    if synonym in str(hit.description):
+                    if synonym.lower() in str(hit.description).lower():
                         positive_dict[synonym] += 1
                         print('True positive found: {0}'.format(synonym))
                         list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
                         found = True
                 if found == False:
+                    run_backcheck_blast(hitident[1])
                     list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                 with conn:
                     # If the gid is already in the database, the insertion fails
@@ -243,6 +253,10 @@ def get_protein_data(taxon):
         write_to_html_scrutinize_file(list_to_scrutinize)
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
         return new_protein_data
+
+# This function should return the most common string in the hit description list
+def run_backcheck_blast(hitident[1])
+    pass
 
 def get_fully_sequenced_genomes(CSV_FILE):
     # Open/download the list of fully sequenced genomes
