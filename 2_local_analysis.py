@@ -262,14 +262,18 @@ def get_protein_data(taxon):
 # This function should return the most common string in the hit description list
 def run_backcheck_blast(GID, proteindata):
     try:
-        print('\nExecuting backcheck blast for gid {0}'.format(GID))
-        result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
-        with open("data/tmp_blast.xml", "w") as out_handle:
-            out_handle.write(result_handle.read())
-        result_handle.close()
+        blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     except Exception as ex:
-        print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
-    blastp_result = SearchIO.read("data/tmp_blast.xml", "blast-xml")
+        print("No local backcheck blast results. Need to run remote blast. Error was: " + str(ex))
+        try:
+            print('\nExecuting backcheck blast for gid {0}'.format(GID))
+            result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
+            with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
+                out_handle.write(result_handle.read())
+            result_handle.close()
+        except Exception as ex:
+            print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+    blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     how_many = len(blastp_result)
     i = 0
     for hit in blastp_result:
