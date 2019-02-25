@@ -10,7 +10,7 @@ from Bio.Blast import NCBIXML
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
-from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict
+from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str
 
 # Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
@@ -243,7 +243,6 @@ def get_protein_data(taxon):
                     if run_backcheck_blast(hitident[1], protein_data[3]) == protein_data[3][0]:
                         positive_dict[synonym] += 1
                         print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
-                        time.sleep(30)
                     else:
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                 with conn:
@@ -261,18 +260,34 @@ def get_protein_data(taxon):
 
 # This function should return the most common string in the hit description list
 def run_backcheck_blast(GID, proteindata):
+    # We need to define that this function should use the global variable LAST_BLAST_REPLY_TIME,
+    # because we are changing LAST_BLAST_REPLY_TIME inside the function!
+    global LAST_BLAST_REPLY_TIME
     try:
         blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     except Exception as ex:
-        print("No local backcheck blast results. Need to run remote blast. Error was: " + str(ex))
+        print('No local backcheck blast results for GID {0}. Need to run remote blast.'.format(GID))
         try:
-            print('\nExecuting backcheck blast for gid {0}'.format(GID))
+            # Sleep if the last blast request was answered less than 60 seconds ago
+            # This is necessary in order not to overload the server and become blocked.
+            SECONDS_SINCE_LAST_BLAST = time.time()-LAST_BLAST_REPLY_TIME
+            if SECONDS_SINCE_LAST_BLAST < 60:
+                print('Waiting for {0} seconds before initiating new blast request...'.format(round(60-SECONDS_SINCE_LAST_BLAST)))
+                time.sleep(60-SECONDS_SINCE_LAST_BLAST)
+            else:
+                print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
+                # remove this after checking
+                time.sleep(2)
+            print('\nExecuting backcheck blast for gid {0}. Waiting for results...'.format(GID))
             result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
             with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
                 out_handle.write(result_handle.read())
             result_handle.close()
+            LAST_BLAST_REPLY_TIME = time.time()
         except Exception as ex:
             print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+    else:
+        print('Using local backcheck blast results (data/backcheck/{0}.xml).'.format(GID))
     blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     how_many = len(blastp_result)
     i = 0
@@ -379,7 +394,9 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME
+    LAST_BLAST_REPLY_TIME = time.time()
+    print(LAST_BLAST_REPLY_TIME)
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))

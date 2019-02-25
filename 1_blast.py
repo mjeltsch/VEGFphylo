@@ -112,6 +112,7 @@ from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SV
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 from termcolor import colored, cprint
+from phylolib import execution_time_str
 
 parser = argparse.ArgumentParser()
 parser.add_argument("local_remote", help = "local, remote or test")
@@ -148,13 +149,6 @@ else:
     REMOTE = 'test'
     print("Simulated blast:")
 
-# Converts the number of seconds into a days/hours/minutes/seconds string
-def execution_time_str(elapsed_time_seconds):
-    min, sec = divmod(elapsed_time_seconds, 60)
-    hours, min = divmod(min, 60)
-    days, hours = divmod(hours, 24)
-
-    return (str(days) + " days " if days != 0 else '') + (str(hours) + " hours " if hours != 0 else '') + str(min)[:-2] + " min " + str(round(sec, 1)) + " sec"
 
 def create_subdirectory(PROTEIN):
     if not os.path.exists(PROTEIN):
@@ -300,7 +294,7 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
             print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
             return False
     elif REMOTE == 'local':
-        # The local blast branch is not kept up-to-date with the remote blast branch!!!! The protein sequences in data/proteins are only needed for the local blast search. 
+        # The local blast branch is not kept up-to-date with the remote blast branch!!!! The protein sequences in data/proteins are only needed for the local blast search.
         START_SEQUENCE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, PROTEIN)
         PHYLUMFILE = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, TAXON)
         blastp_cline = NcbiblastpCommandline(cmd='blastp', query=START_SEQUENCE, db=BLAST_DATABASE, gilist=PHYLUMFILE, evalue=EVALUE, remote=False, outfmt=5, max_target_seqs=OPTIONAL_BLAST_NO, out=BLAST_XMLFILE, num_threads=4)

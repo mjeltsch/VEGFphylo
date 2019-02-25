@@ -108,3 +108,10 @@ def create_sqlite_file(FILE_NAME):
         return True
     finally:
         conn.close()
+
+# Converts the number of seconds into a days/hours/minutes/seconds string
+def execution_time_str(elapsed_time_seconds):
+    min, sec = divmod(elapsed_time_seconds, 60)
+    hours, min = divmod(min, 60)
+    days, hours = divmod(hours, 24)
+    return (str(days) + " days " if days != 0 else '') + (str(hours) + " hours " if hours != 0 else '') + str(min)[:-2] + " min " + str(round(sec, 1)) + " sec"
