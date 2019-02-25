@@ -268,12 +268,12 @@ def run_backcheck_blast(GID, proteindata):
     except Exception as ex:
         print('No local backcheck blast results for GID {0}. Need to run remote blast.'.format(GID))
         try:
-            # Sleep if the last blast request was answered less than 60 seconds ago
+            # Sleep if the last blast request was answered less than BLAST_WAITING_TIME (default = 60) seconds ago
             # This is necessary in order not to overload the server and become blocked.
             SECONDS_SINCE_LAST_BLAST = time.time()-LAST_BLAST_REPLY_TIME
-            if SECONDS_SINCE_LAST_BLAST < 60:
-                print('Waiting for {0} seconds before initiating new blast request...'.format(round(60-SECONDS_SINCE_LAST_BLAST)))
-                time.sleep(60-SECONDS_SINCE_LAST_BLAST)
+            if SECONDS_SINCE_LAST_BLAST < BLAST_WAITING_TIME:
+                print('Waiting for {0} seconds before initiating new blast request...'.format(round(BLAST_WAITING_TIME-SECONDS_SINCE_LAST_BLAST)))
+                time.sleep(BLAST_WAITING_TIME-SECONDS_SINCE_LAST_BLAST)
             else:
                 print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
                 # remove this after checking
@@ -394,8 +394,9 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME
-    LAST_BLAST_REPLY_TIME = time.time()
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME
+    BLAST_WAITING_TIME = 60
+    LAST_BLAST_REPLY_TIME = time.time()-BLAST_WAITING_TIME
     print(LAST_BLAST_REPLY_TIME)
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
