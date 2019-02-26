@@ -232,27 +232,33 @@ def get_protein_data(taxon):
                         negative_dict[related_protein] += 1
                         print('Potential false-positive found: {0}'.format(related_protein))
                         found = True
-                        list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
+                        #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
                 for synonym in protein_data[3]:
                     if synonym.lower() in str(hit.description).lower():
                         positive_dict[synonym] += 1
                         print('True positive found: {0}'.format(synonym))
-                        list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
+                        #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
                         found = True
                 if found == False:
-                    if run_backcheck_blast(hitident[1], protein_data[3]) == protein_data[3][0]:
+                    what_kind_of_protein = run_backcheck_blast(hitident[1], protein_data)
+                    if what_kind_of_protein == 'synonym':
                         positive_dict[synonym] += 1
                         print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
+                    elif what_kind_of_protein == 'related_protein':
+                        negative_dict[related_protein] += 1
+                        #print('Potential false-positive found: {0}'.format(related_protein))
+                        print('Potential false-positive found.')
                     else:
+                        # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                 with conn:
-                    # If the gid is already in the database, the insertion fails
-                    print(db_insert_protein(conn, BLASTHIT, False))
-            print('Analysis for {0}/{1} completed.'.format(taxon, protein))
+                    # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
+                    print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
+            print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
             print('Number of hits: {0}'.format(number))
             print('Number of true-/false-positives: {0}/{1}\n'.format(negative_dict, positive_dict))
             new_protein_data[protein] = [number, negative_dict, positive_dict]
-        print('Analysis for taxon {0} completed.'.format(taxon))
+        print('Analysis for taxon {0} completed.\n'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
         write_to_html_scrutinize_file(list_to_scrutinize)
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
@@ -278,7 +284,7 @@ def run_backcheck_blast(GID, proteindata):
                 print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
                 # remove this after checking
                 time.sleep(2)
-            print('\nExecuting backcheck blast for gid {0}. Waiting for results...'.format(GID))
+            print('Executing backcheck blast for gid {0}. Waiting for results...'.format(GID))
             result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
             with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
                 out_handle.write(result_handle.read())
@@ -290,14 +296,29 @@ def run_backcheck_blast(GID, proteindata):
         print('Using local backcheck blast results (data/backcheck/{0}.xml).'.format(GID))
     blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     how_many = len(blastp_result)
-    i = 0
+    i = 0 # count synonyms
+    j = 0 # count related proteins
+    k = 1 # count 50 rounds
     for hit in blastp_result:
-        for synonym in proteindata:
+        if k == 1:
+            print('Checking blast result {0}'.format(k), end=' ')
+        else:
+            print('{0}'.format(k), end = ' ')
+        for synonym in proteindata[3]:
             if synonym.lower() in str(hit.description).lower():
                 i += 1
-    print('{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[0]))
+                break
+        for related_protein in proteindata[4]:
+            if related_protein.lower() in str(hit.description).lower():
+                j += 1
+                break
+        k += 1
+    print('\n{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[1]))
+    print('{0} from {1} results confirm that {2} is a related protein'.format(j, how_many, GID))
     if i/how_many > 0.5:
-        return proteindata[0]
+        return 'synonym'
+    elif j/how_many > 0.5:
+        return 'related_protein'
     else:
         return 'unknown'
 
