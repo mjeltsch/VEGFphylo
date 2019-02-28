@@ -193,7 +193,7 @@ def get_protein_data(taxon):
         new_protein_data = {}
         list_to_scrutinize = []
         print('\n---------------')
-        print('Analysing TAXON {0}'.format(taxon))
+        print('Analysing taxon {0}'.format(taxon).upper())
         print('---------------\n')
         for protein, protein_data in master_dictionary.items():
             # Here we analyze the blasts hits for each TAXON/PROTEIN pair:
@@ -214,14 +214,18 @@ def get_protein_data(taxon):
             for synonym in protein_data[3]:
                 positive_dict[synonym] = 0
 
-            print('Analysing {0}:'.format(protein))
+            print('\nAnalysing {0} ({1}):'.format(protein, taxon).upper())
             blastp_result = SearchIO.read(XML_RESULTS_FILE, "blast-xml")
             number = len(blastp_result)
+            # counter for hits
+            i = 0
+            # counter for unknown proteins
+            u = 0
             for hit in blastp_result:
                 found = False
                 # get gid and protein_id
                 hitident = hit.id.split('|')
-                print('hit: {0} - {1}'.format(hitident[1], hitident[3]))
+                print('{0}. (from {1} {2} hits): {3} - {4}'.format(i+1, number, protein_data[3][0], hitident[1], hitident[3]))
                 # Extract species name
                 species = re.search(r'\[(.*?)\]',hit.description).group(1)
                 # BLASTHIT = [gid, protein_id, species, fasta_description]
@@ -233,12 +237,14 @@ def get_protein_data(taxon):
                         print('Potential false-positive found: {0}'.format(related_protein))
                         found = True
                         #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
+                        #break
                 for synonym in protein_data[3]:
                     if synonym.lower() in str(hit.description).lower():
                         positive_dict[synonym] += 1
                         print('True positive found: {0}'.format(synonym))
                         #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
                         found = True
+                        #break
                 if found == False:
                     what_kind_of_protein = run_backcheck_blast(hitident[1], protein_data)
                     if what_kind_of_protein == 'synonym':
@@ -251,12 +257,24 @@ def get_protein_data(taxon):
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
+                        u += 1
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
                     print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
+                i += 1
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
-            print('Number of hits: {0}'.format(number))
-            print('Number of true-/false-positives: {0}/{1}\n'.format(negative_dict, positive_dict))
+            print('Number of true-positives:'.format())
+            control_counter = 0
+            for key, value in positive_dict.items():
+                print('                         '+key, str(value))
+                control_counter += value
+            print('Number of false-positives:'.format())
+            for key, value in negative_dict.items():
+                print('                         '+key, str(value))
+                control_counter += value
+            print('Number of unidentified homologous proteins: {0}\n'.format(u))
+            control_counter += u
+            print('{0} out of {1} hits were analyzed and {2} could be assigned into categories.\n\n'.format(i, number, control_counter))
             new_protein_data[protein] = [number, negative_dict, positive_dict]
         print('Analysis for taxon {0} completed.\n'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
@@ -284,12 +302,14 @@ def run_backcheck_blast(GID, proteindata):
                 print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
                 # remove this after checking
                 time.sleep(2)
+            blast_start_time = time.time()
             print('Executing backcheck blast for gid {0}. Waiting for results...'.format(GID))
             result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
             with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
                 out_handle.write(result_handle.read())
             result_handle.close()
             LAST_BLAST_REPLY_TIME = time.time()
+            print('The remote blasting took {}.'.format(execution_time_str(blast_start_time - LAST_BLAST_REPLY_TIME))
         except Exception as ex:
             print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
     else:
@@ -313,7 +333,7 @@ def run_backcheck_blast(GID, proteindata):
                 j += 1
                 break
         k += 1
-    print('\n{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[1]))
+    print('\n{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[3][0]))
     print('{0} from {1} results confirm that {2} is a related protein'.format(j, how_many, GID))
     if i/how_many > 0.5:
         return 'synonym'
