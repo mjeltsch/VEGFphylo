@@ -225,12 +225,12 @@ def get_protein_data(taxon):
                 found = False
                 # get gid and protein_id
                 hitident = hit.id.split('|')
-                print('{0}. (from {1} {2} hits): {3} - {4}'.format(i+1, number, protein_data[3][0], hitident[1], hitident[3]))
+                print('Analyzing #{0} (from {1} {2} {3} homologs): {4} - {5}'.format(i+1, number, taxon, protein_data[3][0], hitident[1], hitident[3]))
                 # Extract species name
                 species = re.search(r'\[(.*?)\]',hit.description).group(1)
                 # BLASTHIT = [gid, protein_id, species, fasta_description]
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description]
-                print('Checking false- or true-positivity.')
+                #print('Checking false- or true-positivity.')
                 for related_protein in protein_data[4]:
                     if related_protein.lower() in str(hit.description).lower():
                         negative_dict[related_protein] += 1
@@ -291,31 +291,42 @@ def run_backcheck_blast(GID, proteindata):
         blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     except Exception as ex:
         print('No local backcheck blast results for GID {0}. Need to run remote blast.'.format(GID))
+        success = False
         try:
-            # Sleep if the last blast request was answered less than BLAST_WAITING_TIME (default = 60) seconds ago
-            # This is necessary in order not to overload the server and become blocked.
-            SECONDS_SINCE_LAST_BLAST = time.time()-LAST_BLAST_REPLY_TIME
-            if SECONDS_SINCE_LAST_BLAST < BLAST_WAITING_TIME:
-                print('Waiting for {0} seconds before initiating new blast request...'.format(round(BLAST_WAITING_TIME-SECONDS_SINCE_LAST_BLAST)))
-                time.sleep(BLAST_WAITING_TIME-SECONDS_SINCE_LAST_BLAST)
-            else:
-                print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
-                # remove this after checking
-                time.sleep(2)
-            blast_start_time = time.time()
-            print('Executing backcheck blast for gid {0}. Waiting for results...'.format(GID))
-            result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
-            with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
-                out_handle.write(result_handle.read())
-            result_handle.close()
-            LAST_BLAST_REPLY_TIME = time.time()
-            print('The remote blasting took {}.'.format(execution_time_str(blast_start_time - LAST_BLAST_REPLY_TIME))
+            # Make maximally 5 tries for any protein with increasing waiting time
+            i = 0
+            while success == False or i < 5:
+                # Sleep if the last blast request was answered less than BLAST_WAITING_TIME (default = 60) seconds ago
+                # This is necessary in order not to overload the server and become blocked.
+                SECONDS_SINCE_LAST_BLAST = time.time()-LAST_BLAST_REPLY_TIME
+                if SECONDS_SINCE_LAST_BLAST < BLAST_WAITING_TIME*(i+1):
+                    print('Waiting for {0} seconds before initiating new blast request...'.format(round(BLAST_WAITING_TIME*(i+1)-SECONDS_SINCE_LAST_BLAST)))
+                    time.sleep(BLAST_WAITING_TIME*(i+1)-SECONDS_SINCE_LAST_BLAST)
+                else:
+                    print('{0} seconds since last blast result was received. Continue without waiting...'.format(round(SECONDS_SINCE_LAST_BLAST)))
+                    # remove this after checking
+                    time.sleep(2)
+                blast_start_time = time.time()
+                print('Executing backcheck blast for gid {0}. Waiting for results...'.format(GID))
+                result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
+                i += 1
+                print('result_handle:\n{0}'.format(result_handle))
+                # The database was not searched. Sometimes there is no other error message,
+                # but all query results contain this string if there is no result
+                if '<Statistics_db-num>0</Statistics_db-num>' not in result_handle:
+                    success = True
+                with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
+                    out_handle.write(result_handle.read())
+                result_handle.close()
+                LAST_BLAST_REPLY_TIME = time.time()
+                print('The remote blasting took {0}.'.format(execution_time_str(LAST_BLAST_REPLY_TIME-blast_start_time)))
         except Exception as ex:
             print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
     else:
         print('Using local backcheck blast results (data/backcheck/{0}.xml).'.format(GID))
     blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
     how_many = len(blastp_result)
+    print('blastp result should equal 50: {0}'.format(how_many))
     i = 0 # count synonyms
     j = 0 # count related proteins
     k = 1 # count 50 rounds
@@ -333,12 +344,17 @@ def run_backcheck_blast(GID, proteindata):
                 j += 1
                 break
         k += 1
-    print('\n{0} from {1} results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[3][0]))
-    print('{0} from {1} results confirm that {2} is a related protein'.format(j, how_many, GID))
-    if i/how_many > 0.5:
-        return 'synonym'
-    elif j/how_many > 0.5:
-        return 'related_protein'
+    print('\n{0} from {1} backblast results confirm that {2} is {3}'.format(i, how_many, GID, proteindata[3][0]))
+    print('{0} from {1} backblast results confirm that {2} is a related protein'.format(j, how_many, GID))
+    # THRESHOLD needs to be adjusted after manually scrutinizing the results- Maybe 0.3 is sufficient!
+    THRESHOLD = 0.5
+    if how_many > 0:
+        if i/how_many >= THRESHOLD:
+            return 'synonym'
+        elif j/how_many >= THRESHOLD:
+            return 'related_protein'
+        else:
+            return 'unknown'
     else:
         return 'unknown'
 
