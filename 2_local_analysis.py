@@ -310,14 +310,18 @@ def run_backcheck_blast(GID, proteindata):
                 print('Executing backcheck blast for gid {0}. Waiting for results...'.format(GID))
                 result_handle = NCBIWWW.qblast("blastp", "nr", GID , hitlist_size = 50, expect = 0.01, format_type = "XML")
                 i += 1
-                print('result_handle:\n{0}'.format(result_handle))
-                # The database was not searched. Sometimes there is no other error message,
-                # but all query results contain this string if there is no result
-                if '<Statistics_db-num>0</Statistics_db-num>' not in result_handle:
-                    success = True
                 with open('data/backcheck/{0}.xml'.format(GID), 'w') as out_handle:
                     out_handle.write(result_handle.read())
                 result_handle.close()
+                # Read in the data again to check that they contain really blast results
+                with open('data/backcheck/{0}.xml'.format(GID)) as xml_file:
+                    data = xml_file.read()
+                    print('data:\n{0}'.format(data))
+                    # The database was not searched. Sometimes there is no other error message,
+                    # but all query results contain this string if there is no result
+                    if '<Statistics_db-num>0</Statistics_db-num>' not in data:
+                        success = True
+                xml_file.close()
                 LAST_BLAST_REPLY_TIME = time.time()
                 print('The remote blasting took {0}.'.format(execution_time_str(LAST_BLAST_REPLY_TIME-blast_start_time)))
         except Exception as ex:
