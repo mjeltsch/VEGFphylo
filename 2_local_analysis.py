@@ -295,7 +295,7 @@ def run_backcheck_blast(GID, proteindata):
         try:
             # Make maximally 5 tries for any protein with increasing waiting time
             i = 0
-            while success == False or i < 5:
+            while success == False and i < 5:
                 # Sleep if the last blast request was answered less than BLAST_WAITING_TIME (default = 60) seconds ago
                 # This is necessary in order not to overload the server and become blocked.
                 SECONDS_SINCE_LAST_BLAST = time.time()-LAST_BLAST_REPLY_TIME
@@ -314,13 +314,17 @@ def run_backcheck_blast(GID, proteindata):
                     out_handle.write(result_handle.read())
                 result_handle.close()
                 # Read in the data again to check that they contain really blast results
-                with open('data/backcheck/{0}.xml'.format(GID)) as xml_file:
-                    data = xml_file.read()
-                    print('data:\n{0}'.format(data))
+                with open('data/backcheck/{0}.xml'.format(GID), 'r') as xml_file:
+                    xml_string = xml_file.read()
+                    # This print command will print lots of lines...
+                    #print('data:\n{0}'.format(data))
                     # The database was not searched. Sometimes there is no other error message,
                     # but all query results contain this string if there is no result
-                    if '<Statistics_db-num>0</Statistics_db-num>' not in data:
+                    if '<Statistics_db-num>0</Statistics_db-num>' not in xml_string:
                         success = True
+                        print('The blast search Was successful. Continuing...')
+                    else:
+                        print('No sequences were returned from blast server, repeating query...')
                 xml_file.close()
                 LAST_BLAST_REPLY_TIME = time.time()
                 print('The remote blasting took {0}.'.format(execution_time_str(LAST_BLAST_REPLY_TIME-blast_start_time)))
