@@ -277,14 +277,18 @@ def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
                 SUBRANGE = ', query_loc = ' + SUBRANGE
             else:
                 SUBRANGE = ''
-            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID, hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "XML"SUBRANGE)
+            query = '\"blastp\", {0}, {1}, hitlist_size = {2}, expect = {3}, entrez_query = {4}, format_type = \"XML\" {5}'.format(BLAST_DATABASE, PROTEIN_ID, OPTIONAL_BLAST_NO, EVALUE, ENTREZ_QUERY, SUBRANGE)
+            print('blastp query is: {0}'.format(query)) 
+            result_handle = NCBIWWW.qblast(query)
             # Write blast result to xml file
             with open(BLAST_XMLFILE, "w") as out_handle:
                 out_handle.write(result_handle.read())
             # Repeat for HTML output (how else to do this easily???)
             # Converting XML to html?
             # xsltproc --novalid blast2html.xsl blast.xml
-            result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID, hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = "HTML"SUBRANGE)
+            query = '\"blastp\", {0}, {1}, hitlist_size = {2}, expect = {3}, entrez_query = {4}, format_type = \"HTML\" {5}'.format(BLAST_DATABASE, PROTEIN_ID, OPTIONAL_BLAST_NO, EVALUE, ENTREZ_QUERY, SUBRANGE)
+            print('blastp query is: {0}'.format(query)) 
+            result_handle = NCBIWWW.qblast(query)
             # Write blast result to HTML file
             with open(BLAST_HTMLFILE, "w") as out_handle:
                 out_handle.write(result_handle.read())
