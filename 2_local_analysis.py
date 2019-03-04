@@ -129,6 +129,7 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
     return phylum
 
 def write_to_html_scrutinize_file(list_to_scrutinize):
+    global TOTAL_UNKNOWN_COUNT_HTML_CHECK
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
     list_to_scrutinize.sort(key=lambda x: x[2])
     preamble = '''<html>
@@ -156,6 +157,7 @@ body { font-family: "Open Sans", Arial; }
     i = 1
     j = 1
     html_text = ''
+    TOTAL_UNKNOWN_COUNT_HTML_CHECK += len(list_to_scrutinize)
     for item in list_to_scrutinize:
         # Make a heading row if the type of hit changes and color unknown stuff red
         if item[2] != new_type:
@@ -227,8 +229,13 @@ def get_protein_data(taxon):
                 # get gid and protein_id
                 hitident = hit.id.split('|')
                 print('Analyzing #{0} (from {1} {2} {3} homologs): {4} - {5}'.format(i+1, number, taxon, protein_data[3][0], hitident[1], hitident[3]))
-                # Extract species name
-                species = re.search(r'\[(.*?)\]',hit.description).group(1)
+                # Extract species name; some entries are not according to the specs
+                # and we need to handle that...
+                try:
+                    species = re.search(r'\[(.*?)\]',hit.description).group(1)
+                except Exception as err:
+                    print('Non-standard protein description, species could not be determined. Error was: {0}'.format(err))
+                    species = 'unknown'
                 # BLASTHIT = [gid, protein_id, species, fasta_description]
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description]
                 #print('Checking false- or true-positivity.')
@@ -466,9 +473,10 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
+    TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
     BLAST_WAITING_TIME = 60
     LAST_BLAST_REPLY_TIME = time.time()-BLAST_WAITING_TIME
     print(LAST_BLAST_REPLY_TIME)
@@ -538,7 +546,8 @@ def run():
         print('Successfully formatted the taxon data file.')
     else:
         print('Formating the taxon data file failed.')
-    print('From a total of {0} analyzed sequences, {1} were not classified and need to be manually checked.'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT))
+    print('From a total of {0} analyzed sequences, {1} were not classified.'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT))
+    print('{0} of these unclassified proteins were written to the HTML file {1}.'.format(TOTAL_UNKNOWN_COUNT_HTML_CHECK, HTML_SCRUTINIZE_FILE))
 
 if __name__ == '__main__':
     run()
