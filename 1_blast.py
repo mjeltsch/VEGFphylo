@@ -112,7 +112,7 @@ from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SV
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 from termcolor import colored, cprint
-from phylolib import execution_time_str
+from phylolib import execution_time_str, load_dictionary
 
 parser = argparse.ArgumentParser()
 parser.add_argument("local_remote", help = "local, remote or test")
@@ -165,20 +165,6 @@ def page_break(section_name, protein):
     print("\n\n-------------------------------------\n-------------------------------------\n-------------------------------------\n\n")
     print("ENTERING ANALYSIS STAGE \"" + section_name + "\" FOR " + protein)
     print("\n\n-------------------------------------\n-------------------------------------\n-------------------------------------\n\n")
-
-def load_dictionary(FILENAME):
-    # Load a sequence_dictionary if it exists
-    if os.path.isfile(FILENAME):
-        try:
-            dictionary = read_file_to_dict(FILENAME)
-            print("\nReading in the dictionary " + FILENAME + ":\n")
-            for key, value in dictionary.items():
-                print(key, value)
-        except Exception as e:
-            dictionary = {}
-    else:
-        dictionary = {}
-    return dictionary
 
 # The remove_extension function removes the extension from a filepath, e.g.
 # /home/user/bioinformatics/data/sequence.fasta -> /home/user/bioinformatics/data/sequence
@@ -329,7 +315,7 @@ blastp = timeout()(blastp)
 
 def run():
     blacklist = ['ctenophora', 'porifera', 'placozoa', 'xenacoelomorpha', 'cyclostomata', 'onychophora', 'pycnogonida', 'myriapoda', 'nematomorpha', 'loricifera', 'kinorhyncha', 'chaetognatha', 'bryozoa', 'entoprocta', 'cycliophora', 'nemertea', 'phoroniformea', 'gastrotricha', 'platyhelminthes', 'gnathostomulida', 'micrognathozoa', 'orthonectida', 'dicyemida']
-    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS
+    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS, FIRST_BLAST
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -344,11 +330,12 @@ def run():
             pass
 
     # Determine directory of script (in order to load the data files)
-    APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
+    APPLICATION_PATH = os.path.abspath(os.path.dirname(__file__))
+    FIRST_BLAST = True
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     # Loading data file
-    master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
-    taxon_dictionary = load_dictionary('{0}/data/taxon_data.py'.format(APPLICATION_PATH))
+    preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    preamble2, taxon_dictionary = load_dictionary('{0}/data/taxon_data.py'.format(APPLICATION_PATH))
     LOGFILE = 'logfile.txt'
     if REMOTE == 'test':
         DATA_DIR = 'test'
@@ -369,8 +356,8 @@ def run():
         results_summary.write("PROTEIN\tTAXON\tsequences in db\tletters in db\tavrg length\thits\talignments\tscore\te-value\tdescription\n")
     for protein, protein_data in master_dictionary.items():
         # Default number to return from blast search
-        if protein_data[8] == None:
-            protein_data[8] = 50
+        if protein_data[2] == None:
+            protein_data[2] = 50
         # Create a subdirectory named according to the protein and change cwd into it
         create_subdirectory(protein)
         os.chdir(protein)
@@ -382,8 +369,13 @@ def run():
                 # Loop as long as the blasting succeeds
                 while True:
                     try:
-                        SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
-                        #SECONDS = 30
+                        # Customize waiting period before starting a new blastp request
+                        # taxon_data[3] is the amount of protein sequences for that taxon in the nr protein database
+                        if FIRST_BLAST == True:
+                            SECONDS = 0
+                            FIRST_BLAST = False
+                        else:
+                            SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
                         print(' Timeout = {0} seconds.'.format(SECONDS))
                         print('protein: {0}\nprotein_data: {1}\ntaxon: {2}\ntaxon_data: {3}'.format(protein, protein_data, taxon, taxon_data))
                         if blastp(protein, protein_data, taxon, taxon_data) == True:
