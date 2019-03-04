@@ -187,6 +187,7 @@ body { font-family: "Open Sans", Arial; }
         file.write(html_text)
 
 def get_protein_data(taxon):
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT
     if args.directory == '':
         return []
     else:
@@ -236,6 +237,7 @@ def get_protein_data(taxon):
                         negative_dict[related_protein] += 1
                         print('Potential false-positive found: {0}'.format(related_protein))
                         found = True
+                        TOTAL_COUNT += 1
                         #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
                         #break
                 for synonym in protein_data[3]:
@@ -244,20 +246,25 @@ def get_protein_data(taxon):
                         print('True positive found: {0}'.format(synonym))
                         #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
                         found = True
+                        TOTAL_COUNT += 1
                         #break
                 if found == False:
                     what_kind_of_protein = run_backcheck_blast(hitident[1], protein_data)
                     if what_kind_of_protein == 'synonym':
                         positive_dict[synonym] += 1
+                        TOTAL_COUNT += 1
                         print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
                     elif what_kind_of_protein == 'related_protein':
                         negative_dict[related_protein] += 1
+                        TOTAL_COUNT += 1
                         #print('Potential false-positive found: {0}'.format(related_protein))
                         print('Potential false-positive found.')
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
                         u += 1
+                        TOTAL_COUNT += 1
+                        TOTAL_UNKNOWN_COUNT += 1
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
                     print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
@@ -459,7 +466,9 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT
+    TOTAL_COUNT = 0
+    TOTAL_UNKNOWN_COUNT = 0
     BLAST_WAITING_TIME = 60
     LAST_BLAST_REPLY_TIME = time.time()-BLAST_WAITING_TIME
     print(LAST_BLAST_REPLY_TIME)
@@ -529,6 +538,7 @@ def run():
         print('Successfully formatted the taxon data file.')
     else:
         print('Formating the taxon data file failed.')
+    print('From a total of {0} analyzed sequences, {1} were not classified and need to be manually checked.'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT))
 
 if __name__ == '__main__':
     run()
