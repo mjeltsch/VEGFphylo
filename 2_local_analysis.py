@@ -239,23 +239,25 @@ def get_protein_data(taxon):
                 # BLASTHIT = [gid, protein_id, species, fasta_description]
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description]
                 #print('Checking false- or true-positivity.')
-                for related_protein in protein_data[4]:
-                    if related_protein.lower() in str(hit.description).lower():
-                        negative_dict[related_protein] += 1
-                        print('Potential false-positive found: {0}'.format(related_protein))
-                        found = True
-                        TOTAL_COUNT += 1
-                        #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
-                        #break
-                for synonym in protein_data[3]:
-                    if synonym.lower() in str(hit.description).lower():
-                        positive_dict[synonym] += 1
-                        print('True positive found: {0}'.format(synonym))
-                        #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
-                        found = True
-                        TOTAL_COUNT += 1
-                        #break
-                if found == False:
+                # If one protein category matches, we need to abort searching to avoid items being counted twice or more often if
+                # their description contains a repetition like "VEGF-A (Vacular endothelial growth factor-A)".
+                # The Try statement is simply for escaping both for-loops
+                try:
+                    # Try synonyms first (more likely to find a category?)
+                    for synonym in protein_data[3]:
+                        if synonym.lower() in str(hit.description).lower():
+                            positive_dict[synonym] += 1
+                            print('True positive found: {0}'.format(synonym))
+                            #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
+                            raise category_found
+                    for related_protein in protein_data[4]:
+                        if related_protein.lower() in str(hit.description).lower():
+                            negative_dict[related_protein] += 1
+                            print('Potential false-positive found: {0}'.format(related_protein))
+                            #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
+                            raise category_found
+                    # This part of the Try block gets only executed when both for-loops are finshing without
+                    # raising a category_found exception
                     what_kind_of_protein = run_backcheck_blast(hitident[1], protein_data)
                     if what_kind_of_protein == 'synonym':
                         positive_dict[synonym] += 1
@@ -272,6 +274,8 @@ def get_protein_data(taxon):
                         u += 1
                         TOTAL_COUNT += 1
                         TOTAL_UNKNOWN_COUNT += 1
+                except category_found:
+                    TOTAL_COUNT += 1
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
                     print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
@@ -477,7 +481,9 @@ def run():
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
-    BLAST_WAITING_TIME = 60
+    # You can adjust this down until you see that the blat server starts blocking your requests!
+    # 60 (seconds) is a very conservative (but slow) estimate, that does not result in blocking 
+    BLAST_WAITING_TIME = 30
     LAST_BLAST_REPLY_TIME = time.time()-BLAST_WAITING_TIME
     print(LAST_BLAST_REPLY_TIME)
     # Determine directory of script (in order to load the data files)
