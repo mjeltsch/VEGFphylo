@@ -19,6 +19,10 @@ from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_
 # https://www.ncbi.nlm.nih.gov/taxonomy/
 # Sample query via the web form: porifera [subtree] AND specified [prop] NOT subspecies [rank]
 
+
+class category_found(Exception):
+    pass
+
 # Parse command line
 parser = argparse.ArgumentParser()
 parser.add_argument("directory", help = "Specify the subdirectory where the data is!", default = '')
@@ -482,7 +486,7 @@ def run():
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
     # You can adjust this down until you see that the blat server starts blocking your requests!
-    # 60 (seconds) is a very conservative (but slow) estimate, that does not result in blocking 
+    # 60 (seconds) is a very conservative (but slow) estimate, that does not result in blocking
     BLAST_WAITING_TIME = 30
     LAST_BLAST_REPLY_TIME = time.time()-BLAST_WAITING_TIME
     print(LAST_BLAST_REPLY_TIME)
