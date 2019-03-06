@@ -171,40 +171,60 @@ def load_dictionary(FILENAME):
 # This takes a list (as shown below) and returns a formatted string which is displayed on the tree
 # {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0, 'vascular endothelial growth factor A': 0, 'vascular endothelial growth factor B': 0, 'vascular endothelial growth factor C': 0, 'vascular endothelial growth factor D': 0, 'placenta growth factor': 0}
 def format_false_positives(protein, list_of_categories):
+    print('PROTEIN: {0}'.format(protein))
+    print('list of categories: {0}'.format(list_of_categories))
     total_hits = list_of_categories[0]
-    # simplify protein name (remove numbers from end)
-    protein = protein.rstrip(string.digits).rstrip('-')
-    # Go through false positives
-    uncharacterized_hypothetical = 0
-    PDGF = 0
-    PVF = 0
-    other_VEGFs = 0
-    total = 0
+    # Do NOT simplify protein name (remove numbers from end)!!!
+    #protein = protein.rstrip(string.digits).rstrip('-')
+    # Initialize counters for catagories
+    # for unknown proteins
+    uncharacterized_hypothetical_counter = 0
+    # for related proteins
+    related_protein_counter = {}
+    # for synonyms
+    synonym_counter = 0
+    # for related proteins
+    for item in master_dictionary[protein][4]:
+        related_protein_counter[item] = 0
+    total_counter = 0
+    other_counter = 0
+    # This iterates through the negative_dict (false positives, related_protein)
     for category, number in list_of_categories[1].items():
+        # This section is the same for all proteins
         if category in ['uncharacterized protein', 'hypothetical protein']:
-            uncharacterized_hypothetical += number
-            total += number
-        elif category == 'platelet-derived growth factor':
-            PDGF += number
-            total += number
-        elif category == 'PDGF and VEGF related factor':
-            PVF += number
-            total += number
+            uncharacterized_hypothetical_counter += number
+            total_counter += number
+        # This section needs be dynamically created based on the content of the master_dictionary!!!
+        # check if synonym
+        elif category in master_dictionary[protein][3]:
+            synonym_counter += number
+            total_counter += number
+        # check if related_protein
+        elif category in master_dictionary[protein][4]:
+            related_protein_counter[category] += number
+            total_counter += number
         else:
-            other_VEGFs += number
-            total += number
+            # other should never increment!!!!
+            other_counter += number
+            total_counter += number
     # Go through true positives
-    true_positives = 0
+    true_positive_counter = 0
+    # This iterates through the positive dict
     for category, number in list_of_categories[2].items():
-        true_positives += number
-        total += number
-    unknown = total_hits - true_positives - PDGF - other_VEGFs
+        true_positive_counter += number
+        total_counter += number
+    # Calculate total of related proteins
+    total_related_counter = 0
+    for item, value in related_protein_counter.items():
+        total_related_counter += value
+    unknown_count = total_hits - true_positive_counter - total_related_counter
+    print('Counting results:\ntotal (from len(list)): {0}\ntotal (from counting): {1}\ntrue positives: {2}\nrelated proteins: {3}\nuncharacterized_hypothetical_counter: {4}\nunknown_count: {5}\nsynonym_counter: {6}\nother: {7}'.format(total_hits, total_counter, true_positive_counter, total_related_counter, uncharacterized_hypothetical_counter, unknown_count, synonym_counter, other_counter))
     #false_positive_string = ' true:{0}, PDGF:{1}, PVF:{2}, VEGF:{3}, ?:{4}'.format(true_positives, PDGF, PVF, other_VEGFs, uncharacterized_hypothetical)
-    if total == 0:
-        false_positive_string = ''
+    if total_hits == 0:
+        formatted_text_strings = '',''
     else:
-        false_positive_string = ' {0} (PDGF:{1}, VEGF:{2}, ?:{3}) '.format(true_positives, PDGF, other_VEGFs, unknown)
-    return false_positive_string
+        formatted_text_strings = str(true_positive_counter), '(paralogs: {0}, ?: {1}, total: {2}) '.format(total_related_counter, unknown_count, total_hits)
+    return formatted_text_strings
 
 def drawtree(TREEFILE):
     color_dict = {  '-':"White",
@@ -381,6 +401,7 @@ def drawtree(TREEFILE):
                 #print(str(protein_dict))
                 # Convert dictionary into ordered dictionary
                 ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
+                #print('Ordered protein dict:\n{0}'.format(ordered_protein_dict))
 
                 # Add a "fake" header (is actually part of the first phylum row)
                 if animal_class_name == 'ctenophora':
@@ -433,12 +454,21 @@ def drawtree(TREEFILE):
                 # [0, {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0}]
 
                 for protein, value in ordered_protein_dict.items():
-                    #print('{0} - {1}'.format(protein, value[0]))
-                    textFace = TextFace(str(value[0]), fsize = 16, bold = True)
+                    #print('animal_class_name: {0}'.format(animal_class_name))
+                    #print('formatted_text_string: {0}'.format(formatted_text_string))
+                    # The format_false_positives is a function to specify the looks of the numbers that are visible in the final PDF table
+                    # It also does some calculation (of the unknown proteins)
+                    formatted_text_strings = format_false_positives(protein, value)
+                    #print('protein, value:\n{0}\n{1}'.format(protein, value))
+                    #
+                    # IN BOLDFACE
+                    textFace = TextFace(formatted_text_strings[0], fsize = 16, bold = True)
                     (t & animal_class_name).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
                     i += 1
-                    textFace2 = TextFace(format_false_positives(protein, value), fsize = 16, tight_text = True)
+                    #
+                    # IN NORMAL FONT
+                    textFace2 = TextFace(' '+formatted_text_strings[1], fsize = 16, tight_text = True)
                     (t & animal_class_name).add_face(textFace2, i, "aligned")
                     textFace2.background.color = color_dict[reliability]
                     i += 1
@@ -472,7 +502,7 @@ def drawtree(TREEFILE):
     print('Drawing tree completed.')
 
 def run():
-    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE
+    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -493,6 +523,7 @@ def run():
     SVGFILE = '{0}/animalia.svg'.format(APPLICATION_PATH)
     IMG_BASENAME = '{0}/images/'.format(APPLICATION_PATH)
     LOGFILE = 'logfile.txt'
+    preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
 
     if os.path.isfile(TREEFILE):
         drawtree(TREEFILE)
