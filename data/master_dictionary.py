@@ -8,7 +8,7 @@
 # 0 protein_id [fasta]
 # 1 subrange
 # 2 number of blasts hist to return (default is 50 if None is given)
-# 3 list of alternative names
+# 3 list of alternative names/synonyms
 # 4 list of close relatives that can result in blast hits
 #
 {'VEGF-C': ["NP_005420.1", None, 20000, ['VEGF-C', 'vascular endothelial growth factor C'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor B', 'vascular endothelial growth factor D', 'placenta growth factor']],
@@ -18,9 +18,5 @@
  'VEGF-A121': ["NP_001165099.1", None, 20000, ['VEGF-A', 'vascular endothelial growth factor A'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor B', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D', 'placenta growth factor']],
  'VEGF-B186': ["NP_003368.1", None, 20000, ['VEGF-B', 'vascular endothelial growth factor B'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D', 'placenta growth factor']],
  'VEGF-B167': ["NP_001230662.1", None, 20000, ['VEGF-B', 'vascular endothelial growth factor B'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D', 'placenta growth factor']],
- 'PlGF-1': ["NP_001280572.1", None, 20000, ['PlGF', 'placenta growth factor'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor B', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D']],
- 'VEGF-F': ["APB93447.1", None, 20000, ['VEGF-F', 'toxin'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor B', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D', 'placenta growth factor']],
- 'PDGF-A': ["NP_002598.4", None, 20000, ['PDGF-A', 'platelet-derived growth factor A'], ['platelet-derived growth factor B', 'platelet-derived growth factor C', 'platelet-derived growth factor D', 'PDGF and VEGF related factor', 'vascular endothelial growth factor', 'placenta growth factor']],
- 'PDGF-B': ["NP_002599.1", None, 20000, ['PDGF-B', 'platelet-derived growth factor B'], ['platelet-derived growth factor A', 'platelet-derived growth factor C', 'platelet-derived growth factor D', 'PDGF and VEGF related factor', 'vascular endothelial growth factor', 'placenta growth factor']],
- 'PDGF-C': ["NP_057289.1", None, 20000, ['PDGF-C', 'platelet-derived growth factor C'], ['platelet-derived growth factor A', 'platelet-derived growth factor B', 'platelet-derived growth factor D', 'PDGF and VEGF related factor', 'vascular endothelial growth factor', 'placenta growth factor']],
- 'PDGF-D': ["NP_079484.1", None, 20000, ['PDGF-D', 'platelet-derived growth factor D'], ['platelet-derived growth factor A', 'platelet-derived growth factor B', 'platelet-derived growth factor C', 'PDGF and VEGF related factor', 'vascular endothelial growth factor', 'placenta growth factor']]}
+ 'PlGF-1': ["NP_001280572.1", None, 20000, ['PlGF', 'placenta growth factor'], ['platelet-derived growth factor', 'PDGF and VEGF related factor', 'vascular endothelial growth factor A', 'vascular endothelial growth factor B', 'vascular endothelial growth factor C', 'vascular endothelial growth factor D']]}
+

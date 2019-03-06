@@ -206,8 +206,8 @@ def read_file_to_dict(file_name):
         print('Could not read dictionary from file {0}. Error: '.format(file_name) + str(ex))
         return {}
 
-def parse_blast_result(PROTEIN, LIST, TAXON):
-    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, ALIASES, FALSE_FRIENDS = LIST
+def parse_blast_result(PROTEIN, PROTEIN_DATA, TAXON):
+    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
     # Parse Blastp result and write results to SEQUENCE_LIST
     with open(SUMMARY_FILE, "a") as results_summary:
         #print(os.getcwd() + " " + BLAST_XMLFILE)
@@ -241,72 +241,45 @@ def parse_blast_result(PROTEIN, LIST, TAXON):
                 #    print("\n" + str(i) + ".\n " + str(attribut) + "\n")
         print(" completed.\n")
 
-def blastp(PROTEIN, LIST, TAXON, TAXON_DATA):
+def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA):
     # Database
     BLAST_DATABASE = 'nr'
     EVALUE = 0.1
-    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, ALIASES, FALSE_FRIENDS = LIST
+    PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
-    if REMOTE == 'remote':
-        print('\nRunning remote blastp against {0} (subsection {1} ({2}), requesting {3} results) with the following query sequence: {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], str(OPTIONAL_BLAST_NO), PROTEIN, str(datetime.datetime.now())[:-7]))
-        try:
-            # The hitlist_size seems to be ignored by the wrapper/service????
-            # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
-            # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
-            # Check here whether the sequence_id is and entry in the local sequence_disctionary and get the sequence for blasting
-            #result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, query_from = ALIGNMENT_TRIMMING[0], query_to = ALIGNMENT_TRIMMING[1], entrez_query='NOT '+EXCLUDE+'[organism]')
-            # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
-            # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
-            ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
-            if SUBRANGE != None:
-                SUBRANGE = ', query_loc = ' + SUBRANGE
-            else:
-                SUBRANGE = ''
-            query = '\"blastp\", {0}, {1}, hitlist_size = {2}, expect = {3}, entrez_query = {4}, format_type = \"XML\" {5}'.format(BLAST_DATABASE, PROTEIN_ID, OPTIONAL_BLAST_NO, EVALUE, ENTREZ_QUERY, SUBRANGE)
-            print('blastp query is: {0}'.format(query)) 
-            result_handle = NCBIWWW.qblast(query)
-            # Write blast result to xml file
-            with open(BLAST_XMLFILE, "w") as out_handle:
-                out_handle.write(result_handle.read())
-            # Repeat for HTML output (how else to do this easily???)
-            # Converting XML to html?
-            # xsltproc --novalid blast2html.xsl blast.xml
-            query = '\"blastp\", {0}, {1}, hitlist_size = {2}, expect = {3}, entrez_query = {4}, format_type = \"HTML\" {5}'.format(BLAST_DATABASE, PROTEIN_ID, OPTIONAL_BLAST_NO, EVALUE, ENTREZ_QUERY, SUBRANGE)
-            print('blastp query is: {0}'.format(query)) 
-            result_handle = NCBIWWW.qblast(query)
-            # Write blast result to HTML file
-            with open(BLAST_HTMLFILE, "w") as out_handle:
-                out_handle.write(result_handle.read())
-                return True
-            result_handle.close()
-        except Exception as ex:
-            print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
-            return False
-    elif REMOTE == 'local':
-        # The local blast branch is not kept up-to-date with the remote blast branch!!!! The protein sequences in data/proteins are only needed for the local blast search.
-        START_SEQUENCE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, PROTEIN)
-        PHYLUMFILE = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, TAXON)
-        blastp_cline = NcbiblastpCommandline(cmd='blastp', query=START_SEQUENCE, db=BLAST_DATABASE, gilist=PHYLUMFILE, evalue=EVALUE, remote=False, outfmt=5, max_target_seqs=OPTIONAL_BLAST_NO, out=BLAST_XMLFILE, num_threads=4)
-        print("\nRunning local blastp with the following query:")
-        print(blastp_cline)
-        print("\nPlease be patient. Retrieving XML file. ", end ='')
-        try:
-            stdout, stderr = blastp_cline()
-        except Exception as ex:
-            print("\nSomething went wrong with the local blastp. Most likely the local standalone blast server did not respond. More about the error:\n" + str(ex))
+    print('\nRunning remote blastp against {0}, subsection {1} ({2}), requesting {3} results, with the following query sequence: {4}. Blast job started at {5}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], OPTIONAL_BLAST_NO, PROTEIN, str(datetime.datetime.now())[:-7]))
+    try:
+        # The hitlist_size seems to be ignored by the wrapper/service????
+        # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
+        # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
+        # Check here whether the sequence_id is and entry in the local sequence_disctionary and get the sequence for blasting
+        #result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, query_from = ALIGNMENT_TRIMMING[0], query_to = ALIGNMENT_TRIMMING[1], entrez_query='NOT '+EXCLUDE+'[organism]')
+        # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
+        # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
+        ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
+        if SUBRANGE == None:
+            STARTPOS = ''
+            ENDPOS = ''
+        else:
+            STARTPOS = SUBRANGE.split('-')[0]
+            ENDPOS = SUBRANGE.split('-')[1]
+        result_handle = NCBIWWW.qblast('blastp', BLAST_DATABASE, PROTEIN_ID, hitlist_size = OPTIONAL_BLAST_NO, expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = 'XML', query_from = STARTPOS, query_to = ENDPOS)
+        # Write blast result to xml file
+        with open(BLAST_XMLFILE, "w") as out_handle:
+            out_handle.write(result_handle.read())
         # Repeat for HTML output (how else to do this easily???)
-        blastp_cline = NcbiblastpCommandline(cmd='blastp', query=START_SEQUENCE, db=BLAST_DATABASE, gilist=PHYLUMFILE, evalue=EVALUE, remote=False, html=True, num_descriptions=OPTIONAL_BLAST_NO, num_alignments=OPTIONAL_BLAST_NO, out=BLAST_HTMLFILE, num_threads=4)
-        print("Retrieving HTML file.")
-        try:
-            stdout, stderr = blastp_cline()
+        # Converting XML to html?
+        # xsltproc --novalid blast2html.xsl blast.xml
+        result_handle = NCBIWWW.qblast('blastp', BLAST_DATABASE, PROTEIN_ID, hitlist_size = OPTIONAL_BLAST_NO, expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = 'HTML', query_from = STARTPOS, query_to = ENDPOS)
+        # Write blast result to HTML file
+        with open(BLAST_HTMLFILE, "w") as out_handle:
+            out_handle.write(result_handle.read())
             return True
-        except Exception as ex:
-            print("\nSomething went wrong with the local blastp. Most likely the local standalone blast server did not respond. More about the error:\n" + str(ex))
-            return False
-    else:
-        # Use blast result files from the test directory
-        pass
+        result_handle.close()
+    except Exception as ex:
+        print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+        return False
     how_long = execution_time_str(time.time()-start_time)
     print('Blasting completed in {0}.\n'.format(how_long))
 
@@ -315,7 +288,7 @@ blastp = timeout()(blastp)
 
 def run():
     blacklist = ['ctenophora', 'porifera', 'placozoa', 'xenacoelomorpha', 'cyclostomata', 'onychophora', 'pycnogonida', 'myriapoda', 'nematomorpha', 'loricifera', 'kinorhyncha', 'chaetognatha', 'bryozoa', 'entoprocta', 'cycliophora', 'nemertea', 'phoroniformea', 'gastrotricha', 'platyhelminthes', 'gnathostomulida', 'micrognathozoa', 'orthonectida', 'dicyemida']
-    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS, FIRST_BLAST
+    global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -363,21 +336,18 @@ def run():
         os.chdir(protein)
         for taxon, taxon_data in taxon_dictionary.items():
             if taxon not in blacklist:
-                print('Analyzing {0}:'.format(taxon), end='')
+                print('Analyzing {0}:'.format(taxon))
                 BLAST_XMLFILE = 'blast_results_{0}.xml'.format(taxon)
                 BLAST_HTMLFILE = 'blast_results_{0}.html'.format(taxon)
-                # Loop as long as the blasting succeeds
+                # Loop as long until the blasting succeeds
                 while True:
                     try:
-                        # Customize waiting period before starting a new blastp request
-                        # taxon_data[3] is the amount of protein sequences for that taxon in the nr protein database
-                        if FIRST_BLAST == True:
-                            SECONDS = 0
-                            FIRST_BLAST = False
-                        else:
-                            SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
-                        print(' Timeout = {0} seconds.'.format(SECONDS))
-                        print('protein: {0}\nprotein_data: {1}\ntaxon: {2}\ntaxon_data: {3}'.format(protein, protein_data, taxon, taxon_data))
+                        # Customize timeout period before starting a new blastp request
+                        # taxon_data[3] is the number of protein sequences for that taxon in the nr protein database
+                        SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
+                        print('If no results are received within {0} seconds, the blast will be cancelled'.format(SECONDS))
+                        print('Protein: {0}\nProtein_data: {1}'.format(protein, protein_data))
+                        print('Taxon: {0}\nTaxon_data: {1}'.format(taxon, taxon_data))
                         if blastp(protein, protein_data, taxon, taxon_data) == True:
                             print('ready')
                             parse_blast_result(protein, protein_data, taxon)
