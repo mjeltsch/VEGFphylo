@@ -248,10 +248,10 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     try:
         WHATFORMAT += '+ '+FORMAT[1][0]
     except NameError:
-        pass
+        print('Only {} format will be retrived.'.format(FORMAT[0][0]))
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
-    print('\nRunning remote blastp against {0}, subsection {1} ({2}), requesting {3} results in {4} format, with the following query sequence: {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], OPTIONAL_BLAST_NO, WHAT_FORMAT, PROTEIN, str(datetime.datetime.now())[:-7]))
+    print('\nRunning remote blastp against {0}, subsection {1} ({2}), requesting {3} results in {4} format, with the following query sequence: {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], OPTIONAL_BLAST_NO, WHATFORMAT, PROTEIN, str(datetime.datetime.now())[:-7]))
     # The hitlist_size seems to be ignored by the wrapper/service????
     # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
     # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
