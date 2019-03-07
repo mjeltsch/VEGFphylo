@@ -112,10 +112,10 @@ from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SV
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 from termcolor import colored, cprint
-from phylolib import execution_time_str, load_dictionary
+from phylolib import execution_time_str, load_dictionary, load_blacklist
 
 parser = argparse.ArgumentParser()
-parser.add_argument("local_remote", help = "local, remote or test")
+parser.add_argument("local_remote", help = "local (tries to use local - previously received - data and only does remote blast searches if necessary), remote (do all new blast searches)")
 args = parser.parse_args()
 
 class TimeoutError(Exception):
@@ -141,14 +141,12 @@ def timeout(error_message=os.strerror(errno.ETIME)):
 
 if args.local_remote == 'local':
     REMOTE = 'local'
-    print("Remote blast:")
+    print('This run uses - if available - blastp search results from previous runs to save time.')
 elif args.local_remote == 'remote':
     REMOTE = 'remote'
-    print("Local blast:")
+    print('This run does execute a new remote blastp search for every protein. This will take a long time!')
 else:
-    REMOTE = 'test'
-    print("Simulated blast:")
-
+    pass
 
 def create_subdirectory(PROTEIN):
     if not os.path.exists(PROTEIN):
@@ -241,53 +239,58 @@ def parse_blast_result(PROTEIN, PROTEIN_DATA, TAXON):
                 #    print("\n" + str(i) + ".\n " + str(attribut) + "\n")
         print(" completed.\n")
 
-def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA):
+def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     # Database
     BLAST_DATABASE = 'nr'
     EVALUE = 0.1
     PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
+    WHATFORMAT = FORMAT[0][0]
+    try:
+        WHATFORMAT += '+ '+FORMAT[1][0]
+    except NameError:
+        pass
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
-    print('\nRunning remote blastp against {0}, subsection {1} ({2}), requesting {3} results, with the following query sequence: {4}. Blast job started at {5}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], OPTIONAL_BLAST_NO, PROTEIN, str(datetime.datetime.now())[:-7]))
+    print('\nRunning remote blastp against {0}, subsection {1} ({2}), requesting {3} results in {4} format, with the following query sequence: {5}. Blast job started at {6}'.format(BLAST_DATABASE, TAXON, TAXON_DATA[2], OPTIONAL_BLAST_NO, WHAT_FORMAT, PROTEIN, str(datetime.datetime.now())[:-7]))
+    # The hitlist_size seems to be ignored by the wrapper/service????
+    # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
+    # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
+    # Check here whether the sequence_id is and entry in the local sequence_disctionary and get the sequence for blasting
+    #result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, query_from = ALIGNMENT_TRIMMING[0], query_to = ALIGNMENT_TRIMMING[1], entrez_query='NOT '+EXCLUDE+'[organism]')
+    # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
+    # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
+    ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
+    if SUBRANGE == None:
+        STARTPOS = ''
+        ENDPOS = ''
+    else:
+        STARTPOS = SUBRANGE.split('-')[0]
+        ENDPOS = SUBRANGE.split('-')[1]
     try:
-        # The hitlist_size seems to be ignored by the wrapper/service????
-        # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
-        # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
-        # Check here whether the sequence_id is and entry in the local sequence_disctionary and get the sequence for blasting
-        #result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, query_from = ALIGNMENT_TRIMMING[0], query_to = ALIGNMENT_TRIMMING[1], entrez_query='NOT '+EXCLUDE+'[organism]')
-        # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
-        # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
-        ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
-        if SUBRANGE == None:
-            STARTPOS = ''
-            ENDPOS = ''
-        else:
-            STARTPOS = SUBRANGE.split('-')[0]
-            ENDPOS = SUBRANGE.split('-')[1]
-        result_handle = NCBIWWW.qblast('blastp', BLAST_DATABASE, PROTEIN_ID, hitlist_size = OPTIONAL_BLAST_NO, expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = 'XML', query_from = STARTPOS, query_to = ENDPOS)
-        # Write blast result to xml file
-        with open(BLAST_XMLFILE, "w") as out_handle:
-            out_handle.write(result_handle.read())
         # Repeat for HTML output (how else to do this easily???)
         # Converting XML to html?
         # xsltproc --novalid blast2html.xsl blast.xml
-        result_handle = NCBIWWW.qblast('blastp', BLAST_DATABASE, PROTEIN_ID, hitlist_size = OPTIONAL_BLAST_NO, expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = 'HTML', query_from = STARTPOS, query_to = ENDPOS)
-        # Write blast result to HTML file
-        with open(BLAST_HTMLFILE, "w") as out_handle:
-            out_handle.write(result_handle.read())
-            return True
-        result_handle.close()
+        for return_format in FORMAT:
+            result_handle = NCBIWWW.qblast('blastp', BLAST_DATABASE, PROTEIN_ID, hitlist_size = OPTIONAL_BLAST_NO, expect = EVALUE, entrez_query = ENTREZ_QUERY, format_type = return_format[0], query_from = STARTPOS, query_to = ENDPOS)
+            # Write blast result to xml or html file
+            with open(return_format[1], "w") as out_handle:
+                out_handle.write(result_handle.read())
+                print('{0}/{1} written to disk.'.format(PROTEIN, return_format[1]))
+            result_handle.close()
     except Exception as ex:
-        print("Something went wrong with the blasting. Perhaps the Blast server did not respond? More about the error: " + str(ex))
+        how_long = execution_time_str(time.time()-start_time)
+        print('Blasting failed. It took {0}. The error was: '.format(how_long, ex))
         return False
-    how_long = execution_time_str(time.time()-start_time)
-    print('Blasting completed in {0}.\n'.format(how_long))
+    else:
+        how_long = execution_time_str(time.time()-start_time)
+        print('Blasting completed successfully in {0}.\n'.format(how_long))
+        return True
 
 # Wrapping blastp in a timeout function
 blastp = timeout()(blastp)
 
 def run():
-    blacklist = ['ctenophora', 'porifera', 'placozoa', 'xenacoelomorpha', 'cyclostomata', 'onychophora', 'pycnogonida', 'myriapoda', 'nematomorpha', 'loricifera', 'kinorhyncha', 'chaetognatha', 'bryozoa', 'entoprocta', 'cycliophora', 'nemertea', 'phoroniformea', 'gastrotricha', 'platyhelminthes', 'gnathostomulida', 'micrognathozoa', 'orthonectida', 'dicyemida']
+    blacklist = load_blacklist()
     global DATA_DIR, BLAST_XMLFILE, BLAST_HTMLFILE, APPLICATION_PATH, SUMMARY_FILE, REMOTE, SECONDS
 
     # This enables simultaneous output to the terminal and a logfile
@@ -310,12 +313,14 @@ def run():
     preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     preamble2, taxon_dictionary = load_dictionary('{0}/data/taxon_data.py'.format(APPLICATION_PATH))
     LOGFILE = 'logfile.txt'
-    if REMOTE == 'test':
-        DATA_DIR = 'test'
-        print('Using data from directory {0}/{1} (skipping local/remote blast).'.format(os.getcwd(), DATA_DIR))
-    else:
-        DATA_DIR = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
-        print('\nCreating new directory {0} to store results.\n'.format(DATA_DIR))
+    DATA_DIR = 'data/primary_blast_results'
+    if REMOTE == 'local':
+        print('Using .xml blast result files from directory {0}/{1} (skipping remote blasts whenever possible).'.format(os.getcwd(), DATA_DIR))
+    elif REMOTE == 'remote':
+        # Rename old results and create a new result directory
+        OLD_DATA_DIR = 'data/'+datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+        os.rename(DATA_DIR, OLD_DATA_DIR)
+        print('\nCreating new directory {0} to store primary blast results.\n'.format(DATA_DIR))
     # Create directory for the downloaded and generated data
     if not os.path.exists(DATA_DIR):
         os.mkdir(DATA_DIR)
@@ -339,29 +344,37 @@ def run():
                 print('Analyzing {0}:'.format(taxon))
                 BLAST_XMLFILE = 'blast_results_{0}.xml'.format(taxon)
                 BLAST_HTMLFILE = 'blast_results_{0}.html'.format(taxon)
-                # Loop as long until the blasting succeeds
-                while True:
-                    try:
-                        # Customize timeout period before starting a new blastp request
-                        # taxon_data[3] is the number of protein sequences for that taxon in the nr protein database
-                        SECONDS = int(round(taxon_data[3]**(1/9)*600, 0))
-                        print('If no results are received within {0} seconds, the blast will be cancelled'.format(SECONDS))
-                        print('Protein: {0}\nProtein_data: {1}'.format(protein, protein_data))
-                        print('Taxon: {0}\nTaxon_data: {1}'.format(taxon, taxon_data))
-                        if blastp(protein, protein_data, taxon, taxon_data) == True:
-                            print('ready')
-                            parse_blast_result(protein, protein_data, taxon)
-                            print('Blasting succeeded.')
-                            break
-                    except Exception: # Replace Exception with something more specific.
-                        print('Blasting failed. Trying again after a break...')
-                        time.sleep(random.randint(120, 240))
-                        continue
-                # Wait between taxa not to upset the server
-                if REMOTE == 'test':
-                    pass
+                # Check whether we have both XMl and HTML version of a previous blast result file for the protein
+                if not os.path.isfile(BLAST_XMLFILE) or not os.path.isfile(BLAST_HTMLFILE):
+                    # Do only request the format that is not locally available
+                    if not os.path.isfile(BLAST_XMLFILE) and not os.path.isfile(BLAST_HTMLFILE):
+                        format = [['XML', BLAST_XMLFILE], ['HTML', BLAST_HTMLFILE]]
+                    else:
+                        if not os.path.isfile(BLAST_HTMLFILE):
+                            format = [['HTML', BLAST_HTMLFILE]]
+                        if not os.path.isfile(BLAST_XMLFILE):
+                            format = [['XML', BLAST_XMLFILE]]
+                    # If no local results are found, loop as long until the blasting succeeds or for maximally MAX_ITER tries
+                    iteration = 0
+                    MAX_ITER = 10
+                    while True and iteration < MAX_ITER:
+                        try:
+                            # Customize timeout period before starting a new blastp request
+                            # taxon_data[3] is the number of protein sequences for that taxon in the nr protein database
+                            SECONDS = int(round(taxon_data[3]**(1/9)*1000, 0))
+                            print('If no results are received within {0} seconds, the blast will be cancelled'.format(SECONDS))
+                            print('Protein: {0}\nProtein_data: {1}'.format(protein, protein_data))
+                            print('Taxon: {0}\nTaxon_data: {1}'.format(taxon, taxon_data))
+                            if blastp(protein, protein_data, taxon, taxon_data, format) == True:
+                                parse_blast_result(protein, protein_data, taxon)
+                                break
+                        except Exception: # Replace Exception with something more specific.
+                            iteration += 1
+                            print('{0}. blast attempt failed. Trying again after a break of {1} seconds.'.format(iteration, iteration**1.5*30))
+                            time.sleep(iteration**1.5*30)
+                            continue
                 else:
-                    time.sleep(random.randint(5, 15))
+                    print('Checking for {0}/{1} -> ok, checking for {0}{2} -> ok.'.format(protein, BLAST_XMLFILE, BLAST_HTMLFILE))
         # Go back one directory (otherwise every new analysis will be a subdirectory in the previous diretory)
         os.chdir('..')
 
