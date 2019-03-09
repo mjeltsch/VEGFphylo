@@ -245,9 +245,12 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     EVALUE = 0.1
     PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
     WHATFORMAT = FORMAT[0][0]
+    # Check whether both formats (XML and HTML) need to be retrieved
+    # This is only necessary if previous runs have been interrupted and
+    # only one format was retrieved
     try:
         WHATFORMAT += '+'+FORMAT[1][0]
-    except NameError:
+    except IndexError:
         print('Only {} format will be retrived.'.format(FORMAT[0][0]))
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
@@ -365,6 +368,7 @@ def run():
                             print('If no results are received within {0} seconds, the blast will be cancelled'.format(SECONDS))
                             print('Protein: {0}\nProtein_data: {1}'.format(protein, protein_data))
                             print('Taxon: {0}\nTaxon_data: {1}'.format(taxon, taxon_data))
+                            print('Format: {0}'.format(format))
                             if blastp(protein, protein_data, taxon, taxon_data, format) == True:
                                 parse_blast_result(protein, protein_data, taxon)
                                 break
