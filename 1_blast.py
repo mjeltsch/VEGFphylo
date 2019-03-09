@@ -246,7 +246,7 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
     WHATFORMAT = FORMAT[0][0]
     try:
-        WHATFORMAT += '+ '+FORMAT[1][0]
+        WHATFORMAT += '+'+FORMAT[1][0]
     except NameError:
         print('Only {} format will be retrived.'.format(FORMAT[0][0]))
     # Memorize start time to figure out how long the whole script execution takes

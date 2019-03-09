@@ -25,7 +25,7 @@ class category_found(Exception):
 
 # Parse command line
 parser = argparse.ArgumentParser()
-parser.add_argument("directory", help = "Specify the subdirectory where the data is!", default = '')
+parser.add_argument("--directory", nargs='?', help = "Specify the subdirectory where the data is!", default = 'data/primary_blast_results/')
 args = parser.parse_args()
 
 def get_species_number(taxon):
