@@ -240,8 +240,6 @@ def get_protein_data(taxon):
                 except Exception as err:
                     print('Non-standard protein description, species could not be determined. Error was: {0}'.format(err))
                     species = 'unknown'
-                # BLASTHIT = [gid, protein_id, species, fasta_description]
-                BLASTHIT = [hitident[1], hitident[3], species, hit.description]
                 #print('Checking false- or true-positivity.')
                 # If one protein category matches, we need to abort searching to avoid items being counted twice or more often if
                 # their description contains a repetition like "VEGF-A (Vacular endothelial growth factor-A)".
@@ -253,12 +251,14 @@ def get_protein_data(taxon):
                             positive_dict[synonym] += 1
                             print('True positive found: {0}'.format(synonym))
                             #list_to_scrutinize.append([taxon, protein, synonym, hitident[1], hitident[3], hit.description])
+                            ortholog_group = protein_data[3][0]
                             raise category_found
                     for related_protein in protein_data[4]:
                         if related_protein.lower() in str(hit.description).lower():
                             negative_dict[related_protein] += 1
                             print('Potential false-positive found: {0}'.format(related_protein))
                             #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
+                            ortholog_group = None
                             raise category_found
                     # This part of the Try block gets only executed when both for-loops are finshing without
                     # raising a category_found exception
@@ -267,19 +267,24 @@ def get_protein_data(taxon):
                         positive_dict[synonym] += 1
                         TOTAL_COUNT += 1
                         print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
+                        ortholog_group = protein_data[3][0]
                     elif what_kind_of_protein == 'related_protein':
                         negative_dict[related_protein] += 1
                         TOTAL_COUNT += 1
                         #print('Potential false-positive found: {0}'.format(related_protein))
                         print('Potential false-positive found.')
+                        ortholog_group = None
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
+                        ortholog_group = None
                         u += 1
                         TOTAL_COUNT += 1
                         TOTAL_UNKNOWN_COUNT += 1
                 except category_found:
                     TOTAL_COUNT += 1
+                # BLASTHIT = [gid, protein_id, species, fasta_description, ortholog group (only if determined with high probability)]
+                BLASTHIT = [hitident[1], hitident[3], species, hit.description, ortholog_group]
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
                     print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
@@ -426,7 +431,7 @@ def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE=True):
     if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
     # In some fasta descriptions one can really find this char: ' !!!!
     BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
-    query = 'INSERT INTO protein (gid, protein_id, species, fasta_description) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3])
+    query = 'INSERT INTO protein (gid, protein_id, species, fasta_description, ortholog_groups) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
     if VERBOSE: print('query: {0}'.format(query))
     try:
         cur = CONNECTION.cursor()
