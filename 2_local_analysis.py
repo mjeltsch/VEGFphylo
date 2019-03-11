@@ -79,7 +79,7 @@ def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
         try:
             if VERBOSE: print('Retrieving taxon id for {0} '.format(species_name), end='')
             URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-            r = requests.get(URL, timeout=20)
+            r = requests.get(URL, timeout=60)
             # Extract taxon_id
             list = r.text.split("Id>")
             TAXON_ID = list[1][:-2]
@@ -287,7 +287,8 @@ def get_protein_data(taxon):
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description, ortholog_group]
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
-                    print(str(db_insert_protein(conn, BLASTHIT, False))+'\n')
+                    #print('\n\n\n\n\n\n\nINSERT PROTEIN\n\n\n\n\n\n\n')
+                    print(str(db_insert_protein(conn, BLASTHIT, True))+'\n')
                 i += 1
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
             print('Number of true-positives:'.format())
@@ -427,23 +428,57 @@ def create_connection(DATABASE_FILE):
         print(err)
     return None
 
-def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE=True):
-    if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(BLASTHIT[1]))
-    # In some fasta descriptions one can really find this char: ' !!!!
-    BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
-    query = 'INSERT INTO protein (gid, protein_id, species, fasta_description, ortholog_groups) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
+def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE = True):
+    # Check whether an entry exists already
+    if VERBOSE: print('Checking whether en entry with gid {0} exists already in the SQLite database...'.format(BLASTHIT[0]))
+    query = 'SELECT gid, ortholog_group FROM protein WHERE gid = \'{0}\''.format(BLASTHIT[0])
     if VERBOSE: print('query: {0}'.format(query))
     try:
         cur = CONNECTION.cursor()
         cur.execute(query)
-        result = cur.lastrowid
-        CONNECTION.commit()
+        result = cur.fetchone()
+        #print('\nRESULT: {0}\n'.format(result))
     except sqlite3.Error as err:
-        if VERBOSE: print('Database error: {0}'.format(err))
-        result = 0
+        if VERBOSE: print('No entry with gid = {0}. Trying to insert {1}.'.format(BLASTHIT[0], BLASTHIT[1]))
+        # This is a full database insertion
+        # In some fasta descriptions one can really find this char: ' !!!!
+        BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
+        query = 'INSERT INTO protein (gid, protein_id, species, fasta_description, ortholog_group) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
+        if VERBOSE: print('query: {0}'.format(query))
+        try:
+            cur = CONNECTION.cursor()
+            cur.execute(query)
+            result = cur.lastrowid
+            CONNECTION.commit()
+        except sqlite3.Error as err:
+            if VERBOSE: print('Database error during insertion: {0}'.format(err))
+            result = 0
+        except Exception as err:
+            if VERBOSE: print('Unknown error during insertion: {0}'.format(err))
+            result = 0
     except Exception as err:
-        if VERBOSE: print('Unknown error: {0}'.format(err))
+        if VERBOSE: print('Unknown error during checking (sql retrieval): {0}'.format(err))
         result = 0
+    # There should be only one row!
+    # If no error occurs, there is already an entry with that gid (unique key)
+    else:
+        # Check whether the entry has already the ortholog group set
+        if result[1] == None:
+            # Update database entry to include ortholog group
+            if VERBOSE: print('Entry with gid = {0} has no ortholog group information. Trying to update with \"{1}\".'.format(BLASTHIT[0], BLASTHIT[4]))
+            query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE gid = {1}'.format(BLASTHIT[4], BLASTHIT[0])
+            if VERBOSE: print('query: {0}'.format(query))
+            try:
+                cur = CONNECTION.cursor()
+                cur.execute(query)
+                result = cur.lastrowid
+                CONNECTION.commit()
+            except sqlite3.Error as err:
+                if VERBOSE: print('Database error during update: {0}'.format(err))
+                result = 0
+            except Exception as err:
+                if VERBOSE: print('Unknown error during update: {0}'.format(err))
+                result = 0
     return result
 
 # Give a list of scientific_name, taxon_id and phylum to insert into SQLite database
