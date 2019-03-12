@@ -13,6 +13,19 @@ def load_blacklist():
     blacklist = []
     return blacklist
 
+def make_synonym_dictionary(master_dictionary):
+    #print('master_dictionary:\n{0}'.format(master_dictionary))
+    synonym_dictionary = {}
+    for key, value in master_dictionary.items():
+        #print('key:\n{0}'.format(key))
+        #print('value:\n{0}'.format(value))
+        #print('value[3][0]:\n{0}'.format(value[3][0]))
+        canonical_ortholog_group_name = value[3][0]
+        print('canonical_ortholog_group_name: {0}'.format(canonical_ortholog_group_name))
+        for item in value[3]:
+            synonym_dictionary[item] = canonical_ortholog_group_name
+    return synonym_dictionary
+
 def load_dictionary(FILENAME):
     #print("Enter subroutine")
     # Load a sequence_dictionary if it exists
