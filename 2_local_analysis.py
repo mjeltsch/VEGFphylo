@@ -10,7 +10,7 @@ from Bio.Blast import NCBIXML
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
-from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str
+from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary
 
 # Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
@@ -258,7 +258,12 @@ def get_protein_data(taxon):
                             negative_dict[related_protein] += 1
                             print('Potential false-positive found: {0}'.format(related_protein))
                             #list_to_scrutinize.append([taxon, protein, related_protein, hitident[1], hitident[3], hit.description])
-                            ortholog_group = None
+                            # related_protein should always give the same name!!!!
+                            # This is why we need the synonym dictionary
+                            try:
+                                ortholog_group = synonym_dictionary[related_protein]
+                            except Exception as err:
+                                ortholog_group = None
                             raise category_found
                     # This part of the Try block gets only executed when both for-loops are finshing without
                     # raising a category_found exception
@@ -287,7 +292,7 @@ def get_protein_data(taxon):
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description, ortholog_group]
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
-                    #print('\n\n\n\n\n\n\nINSERT PROTEIN\n\n\n\n\n\n\n')
+                    print('\n\nINSERT PROTEIN\n\n')
                     print(str(db_insert_protein(conn, BLASTHIT, True))+'\n')
                 i += 1
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
@@ -463,7 +468,7 @@ def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE = True):
     # If no error occurs, there is already an entry with that gid (unique key)
     else:
         # Check whether the entry has already the ortholog group set
-        if result[1] == None:
+        if result[1] == 'None':
             # Update database entry to include ortholog group
             if VERBOSE: print('Entry with gid = {0} has no ortholog group information. Trying to update with \"{1}\".'.format(BLASTHIT[0], BLASTHIT[4]))
             query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE gid = {1}'.format(BLASTHIT[4], BLASTHIT[0])
@@ -521,7 +526,7 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     return result
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
@@ -545,6 +550,8 @@ def run():
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    synonym_dictionary = make_synonym_dictionary(master_dictionary)
+    print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
     for taxon, taxon_data in taxon_dictionary.items():
         #print("Enter recursion")
