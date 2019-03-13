@@ -378,7 +378,7 @@ def run():
                             time.sleep(iteration**1.5*30)
                             continue
                 else:
-                    print('Checking for {0}/{1} -> ok, checking for {0}{2} -> ok.'.format(protein, BLAST_XMLFILE, BLAST_HTMLFILE))
+                    print('Checking for {0}/{1} -> ok, checking for {0}/{2} -> ok.'.format(protein, BLAST_XMLFILE, BLAST_HTMLFILE))
         # Go back one directory (otherwise every new analysis will be a subdirectory in the previous diretory)
         os.chdir('..')
 

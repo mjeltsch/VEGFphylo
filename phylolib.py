@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 
-import os, sqlite3
+import os, sqlite3, subprocess
 
 def load_blacklist():
     # All the phyla in the list below have been found in the first screen not to have any VEGF-like molecules
@@ -12,6 +12,16 @@ def load_blacklist():
     #blacklist = ['kinorhyncha']
     blacklist = []
     return blacklist
+
+def execute_subprocess(comment, bash_command):
+    print("\n" + comment, bash_command)
+    process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    output, error = process.communicate()
+    process_status = process.wait()
+    if output.decode('utf-8') != '':
+        print("Output: " + str(output))
+    if error.decode('UTF-8') != '':
+        print("Error: " + str(error))
 
 def make_synonym_dictionary(master_dictionary):
     #print('master_dictionary:\n{0}'.format(master_dictionary))
