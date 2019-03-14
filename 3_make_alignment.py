@@ -6,6 +6,7 @@ from Bio import SeqIO
 from Bio import Entrez
 from pathlib import Path
 from phylolib import execute_subprocess
+from shutil import copyfile
 
 def create_connection(DATABASE_FILE):
     global conn
@@ -128,9 +129,9 @@ def concatenate_files(wildcard_path):
 
 def do_alignment(file):
     aligned_fasta_file = '{0}.aligned'.format(file)
-        execute_subprocess(
-            "Generating multiple sequence alignment with the following command:",
-            "t_coffee " + file + " -outfile " + aligned_fasta_file + " -output=fasta_aln -mode mcoffee")
+    execute_subprocess(
+        'Generating multiple sequence alignment with the following command:',
+        't_coffee {0} -outfile {1} -output=fasta_aln -mode mcoffee'.format(file, aligned_fasta_file))
 
 def trim_difficult_streches(file):
     execute_subprocess(
@@ -153,7 +154,7 @@ def convert_into_phylip(file):
     phylip_file = '{0}.phylip'.format(file)
     execute_subprocess(
         'Convert into phylip using the following command:',
-        't_coffee -other_pg seq_reformat -in {0} -output phylip_aln > {1}'.format(file, phylip_file)
+        't_coffee -other_pg seq_reformat -in {0} -output phylip_aln > {1}'.format(file, phylip_file))
 
 def make_tree(file):
     # Detect whether parallel bootstrapping should be performed
@@ -169,7 +170,7 @@ def make_tree(file):
         phylo_command)
 
     # phyml adds or doesn't add the .txt extension to the output file (depending on the version) and we need to check for this!
-    phyml_output_file = '{0}_phyml_tree"
+    phyml_output_file = '{0}_phyml_tree'.format(file)
     if os.path.isfile(phyml_output_file):
         os.rename(phyml_output_file, '{0}.txt'.format(phyml_output_file))
     return phyml_output_file
@@ -214,20 +215,31 @@ def run():
     os.chdir(MULTISEQUENCE_FASTA_DIR)
     NUMBER = 4
     for filename_in in os.listdir(MULTISEQUENCE_FASTA_DIR):
+        # Count how many sequences are in the file
+        with open(filename_in, "r") as fasta_file:
+            n = 0
+            for line in fasta_file:
+                if line.startswith(">"):
+                    n += 1
         print('filename_in: {0}'.format(filename_in))
         filename_out = '../informative_multifasta_files/{0}'.format(filename_in)
         print('filename_out: {0}'.format(filename_out))
-        limit_to_most_informative_sequences(NUMBER, filename_in, filename_out)
+        if n < 5:
+            print('{0} contains 4 or less sequences. Only copying...'.format(filename_in))
+            copyfile(filename_in, filename_out)
+        else:
+            print('{0} contains more than 4 sequences ({1}). Identifying the {2} most informative ones...'.format(filename_in, n, NUMBER))
+            limit_to_most_informative_sequences(NUMBER, filename_in, filename_out)
         directory = '../informative_multifasta_files'
 
     for ortholog in ortholog_group_list:
-        concatenate_files('{0}/*{1}.fasta'.format(directory, ortholog))
-        fasta_file_name = '{0}/all_{1}.fasta'.format(directory, ortholog))
+        concatenate_files('{0}/{1}-*.fasta'.format(directory, ortholog))
+        fasta_file_name = '{0}/{1}-all.fasta'.format(directory, ortholog)
         do_alignment(fasta_file_name)
         trim_difficult_streches(fasta_file_name)
-        list_file_name = '{0}/all_{1}.lst'.format(directory, ortholog))
-        encoded_aligned_fasta_file = '{0}/all_{1}.encoded'.format(directory, ortholog))
-        final_result = '{0}/final_{1}.fasta'.format(directory, ortholog))
+        list_file_name = '{0}/{1}-all.lst'.format(directory, ortholog)
+        encoded_aligned_fasta_file = '{0}/{1}-all.encoded'.format(directory, ortholog)
+        final_result = '{0}/{1}-final.fasta'.format(directory, ortholog)
         encode_fasta_descriptions(fasta_file_name, list_file_name, encoded_aligned_fasta_file)
         convert_into_phylip(encoded_aligned_fasta_file)
         output_file = make_tree(encoded_aligned_fasta_file)
