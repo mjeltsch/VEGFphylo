@@ -38,18 +38,11 @@ def get_species_number(taxon):
 
 def get_taxon_id_and_phylum(species_name):
     # Check whether the species is in the local sqlite database
-    try:
-        print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
-        data = db_retrieve_species(conn, species_name, True)
-        print('\nDATABASE RESULT: {0}\n'.format(data))
-        # Check that the database answer is a tuple with 3 elements (fetchone gives a tuple, fetchall a list of tuples)
-        if isinstance(data, tuple) and len(data) == 3:
-            TAXON_ID = data[1]
-            PHYLUM = data[2]
-        else:
-            raise Exception('{0} not in local sqlite database.'.format(species_name))
-    # If the species is not in the local dictionary, get the data from NCBI
-    except Exception as ex:
+    print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
+    if species_name in sqlite_species_dict:
+        TAXON_ID = sqlite_species_dict[species_name][1]
+        PHYLUM = sqlite_species_dict[species_name][2]
+    else:
         print("Species not in local sqlite database. Getting data from NCBI... ")
         TAXON_ID = get_taxon_id_from_NCBI(species_name)
         print('=> {0}'.format(TAXON_ID))
@@ -58,7 +51,7 @@ def get_taxon_id_and_phylum(species_name):
         # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
         PHYLUM = get_phylum_from_NCBI(TAXON_ID)
         print('=> {0}'.format(PHYLUM))
-        if db_insert_species(conn, species_name, TAXON_ID, PHYLUM) != 0:
+        if db_insert_species(species_name, TAXON_ID, PHYLUM) != 0:
             print('New species {0} inserted into database.'.format(species_name))
     return TAXON_ID, PHYLUM
 
@@ -193,7 +186,7 @@ body { font-family: "Open Sans", Arial; }
         file.write(html_text)
 
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn
     if args.directory == '':
         return []
     else:
@@ -203,6 +196,9 @@ def get_protein_data(taxon):
         print('Analysing taxon {0}'.format(taxon).upper())
         print('---------------\n')
         for protein, protein_data in master_dictionary.items():
+            print('\n\nSTART\nPROTEIN: {0}\nTAXON: {1}\n\n'.format(protein, taxon))
+            #print('master_dictionary:\n{0}\n\n'.format(master_dictionary))
+            #time.sleep(2)
             # Here we analyze the blasts hits for each TAXON/PROTEIN pair:
             # a) number of blast hits
             # b) number of false positive according to the description (categorized in a list)
@@ -210,7 +206,7 @@ def get_protein_data(taxon):
             # Open the individual results file for a protein and a phylum
             XML_RESULTS_FILE = '{0}{1}/blast_results_{2}.xml'.format(args.directory, protein, taxon)
             # Create database connection
-            conn = create_connection(DATABASE_FILE)
+            #conn = create_connection(DATABASE_FILE)
 
             # Get extended information about the false-positive hits
             negative_dict = {}
@@ -244,6 +240,7 @@ def get_protein_data(taxon):
                 # If one protein category matches, we need to abort searching to avoid items being counted twice or more often if
                 # their description contains a repetition like "VEGF-A (Vacular endothelial growth factor-A)".
                 # The Try statement is simply for escaping both for-loops
+                ortholog_group = 'None'
                 try:
                     # Try synonyms first (more likely to find a category?)
                     for synonym in protein_data[3]:
@@ -263,7 +260,7 @@ def get_protein_data(taxon):
                             try:
                                 ortholog_group = synonym_dictionary[related_protein]
                             except Exception as err:
-                                ortholog_group = None
+                                ortholog_group = 'None'
                             raise category_found
                     # This part of the Try block gets only executed when both for-loops are finshing without
                     # raising a category_found exception
@@ -278,11 +275,11 @@ def get_protein_data(taxon):
                         TOTAL_COUNT += 1
                         #print('Potential false-positive found: {0}'.format(related_protein))
                         print('Potential false-positive found.')
-                        ortholog_group = None
+                        ortholog_group = 'None'
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize.append([taxon, protein, 'unknown', hitident[1], hitident[3], hit.description])
-                        ortholog_group = None
+                        ortholog_group = 'None'
                         u += 1
                         TOTAL_COUNT += 1
                         TOTAL_UNKNOWN_COUNT += 1
@@ -292,8 +289,8 @@ def get_protein_data(taxon):
                 BLASTHIT = [hitident[1], hitident[3], species, hit.description, ortholog_group]
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
-                    print('\n\nINSERT PROTEIN\n\n')
-                    print(str(db_insert_protein(conn, BLASTHIT, True))+'\n')
+                    print('\n\nINSERT PROTEIN:\n{0}\n\n'.format(BLASTHIT))
+                    print(str(db_insert_protein(BLASTHIT, True))+'\n')
                 i += 1
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
             print('Number of true-positives:'.format())
@@ -313,6 +310,9 @@ def get_protein_data(taxon):
         print('new_protein_data: {0}'.format(new_protein_data))
         write_to_html_scrutinize_file(list_to_scrutinize)
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
+        print('\nRETURNED PROTEIN_DATA FOR TAXON {0}:\n{1}'.format(taxon))
+        for protein, value in new_protein_data.items():
+            print('{0}:\n{1}'.format(protein, value))
         return new_protein_data
 
 # This function should return the most common string in the hit description list
@@ -433,71 +433,62 @@ def create_connection(DATABASE_FILE):
         print(err)
     return None
 
-def db_insert_protein(CONNECTION, BLASTHIT, VERBOSE = True):
+def db_insert_protein(BLASTHIT, VERBOSE = True):
+    global conn
     # Check whether an entry exists already
     if VERBOSE: print('Checking whether en entry with gid {0} exists already in the SQLite database...'.format(BLASTHIT[0]))
-    query = 'SELECT gid, ortholog_group FROM protein WHERE gid = \'{0}\''.format(BLASTHIT[0])
-    if VERBOSE: print('query: {0}'.format(query))
-    try:
-        cur = CONNECTION.cursor()
-        cur.execute(query)
-        result = cur.fetchone()
-        #print('\nRESULT: {0}\n'.format(result))
-    except sqlite3.Error as err:
-        if VERBOSE: print('No entry with gid = {0}. Trying to insert {1}.'.format(BLASTHIT[0], BLASTHIT[1]))
-        # This is a full database insertion
-        # In some fasta descriptions one can really find this char: ' !!!!
-        BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
-        query = 'INSERT INTO protein (gid, protein_id, species, fasta_description, ortholog_group) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
-        if VERBOSE: print('query: {0}'.format(query))
-        try:
-            cur = CONNECTION.cursor()
-            cur.execute(query)
-            result = cur.lastrowid
-            CONNECTION.commit()
-        except sqlite3.Error as err:
-            if VERBOSE: print('Database error during insertion: {0}'.format(err))
-            result = 0
-        except Exception as err:
-            if VERBOSE: print('Unknown error during insertion: {0}'.format(err))
-            result = 0
-    except Exception as err:
-        if VERBOSE: print('Unknown error during checking (sql retrieval): {0}'.format(err))
-        result = 0
-    # There should be only one row!
-    # If no error occurs, there is already an entry with that gid (unique key)
-    else:
+    if BLASTHIT[0] in sqlite_protein_dict.keys():
         # Check whether the entry has already the ortholog group set
-        if result[1] == 'None':
+        print('ortholog group: {0}'.format(sqlite_protein_dict[BLASTHIT[4]]))
+        if sqlite_protein_dict[BLASTHIT[4]] == 'None':
             # Update database entry to include ortholog group
             if VERBOSE: print('Entry with gid = {0} has no ortholog group information. Trying to update with \"{1}\".'.format(BLASTHIT[0], BLASTHIT[4]))
             query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE gid = {1}'.format(BLASTHIT[4], BLASTHIT[0])
             if VERBOSE: print('query: {0}'.format(query))
             try:
-                cur = CONNECTION.cursor()
+                cur = conn.cursor()
                 cur.execute(query)
                 result = cur.lastrowid
-                CONNECTION.commit()
+                conn.commit()
             except sqlite3.Error as err:
                 if VERBOSE: print('Database error during update: {0}'.format(err))
                 result = 0
             except Exception as err:
                 if VERBOSE: print('Unknown error during update: {0}'.format(err))
                 result = 0
+    else:
+        if VERBOSE: print('No entry with gid = {0}. Trying to insert.'.format(BLASTHIT[0]))
+        # This is a full database insertion
+        # In some fasta descriptions one can really find this char: ' !!!!
+        BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
+        query = 'INSERT INTO protein (gid, protein_id, species, fasta_description, ortholog_group) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\', \'{4}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
+        if VERBOSE: print('query: {0}'.format(query))
+        try:
+            cur = conn.cursor()
+            cur.execute(query)
+            result = cur.lastrowid
+            conn.commit()
+        except sqlite3.Error as err:
+            if VERBOSE: print('Database error during insertion: {0}'.format(err))
+            result = 0
+        except Exception as err:
+            if VERBOSE: print('Unknown error during insertion: {0}'.format(err))
+            result = 0
     return result
 
 # Give a list of scientific_name, taxon_id and phylum to insert into SQLite database
 # There should never be the need to update any entry from this table, only to insert
-def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE=True):
+def db_insert_species(SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE=True):
+    global conn
     if VERBOSE: print('Trying to execute SQL insertion ({0})...'.format(SPECIES_NAME))
     query = 'INSERT INTO species (scientific_name, taxon_id, phylum) VALUES (\'{0}\', {1}, \'{2}\')'.format(SPECIES_NAME, TAXON_ID, PHYLUM)
     if VERBOSE: print('query: {0}'.format(query))
     try:
-        cur = CONNECTION.cursor()
+        cur = conn.cursor()
         cur.execute(query)
         result = cur.lastrowid
         if VERBOSE: print('SQL insertion successful.')
-        CONNECTION.commit()
+        conn.commit()
     except sqlite3.Error as err:
         if VERBOSE: print('Database error: {0}'.format(err))
         result = 0
@@ -507,12 +498,13 @@ def db_insert_species(CONNECTION, SPECIES_NAME, TAXON_ID, PHYLUM, VERBOSE=True):
     return result
 
 # Return a list of scientific_name, taxon_id and phylum when queried by scientific_name
-def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
+def db_retrieve_species(SPECIES_NAME, VERBOSE=True):
+    global conn
     if VERBOSE: print('Trying to retrieve SQLite data for {0}...'.format(SPECIES_NAME))
     query = 'SELECT * FROM species WHERE scientific_name = \'{0}\''.format(SPECIES_NAME)
     if VERBOSE: print('query: {0}'.format(query))
     try:
-        cur = CONNECTION.cursor()
+        cur = conn.cursor()
         cur.execute(query)
         result = cur.fetchone()
         #print('\nRESULT: {0}\n'.format(result))
@@ -525,8 +517,29 @@ def db_retrieve_species(CONNECTION, SPECIES_NAME, VERBOSE=True):
     # There should be only one row!
     return result
 
+def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
+    global conn
+    if VERBOSE: print('\n\nLoading table {0} from SQLite database...'.format(TABLENAME))
+    query = 'SELECT * FROM {0}'.format(TABLENAME)
+    if VERBOSE: print('query: {0}'.format(query))
+    try:
+        cur = conn.cursor()
+        cur.execute(query)
+        results = cur.fetchall()
+    except sqlite3.Error as err:
+        if VERBOSE: print('Database error: {0}'.format(err))
+    except Exception as err:
+        if VERBOSE: print('Unknown error: {0}'.format(err))
+    else:
+        sqlite_dict = {}
+        for row in results:
+            sqlite_dict[row[0]] = row
+        print('Loading of table {0} from SQLite database was successful:\n'.format(TABLENAME))
+        print('table {0}:\n{1}\n\n'.format(TABLENAME, sqlite_dict))
+    return sqlite_dict
+
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
@@ -553,6 +566,9 @@ def run():
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
+    conn = create_connection(DATABASE_FILE)
+    sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
+    sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
     for taxon, taxon_data in taxon_dictionary.items():
         #print("Enter recursion")
         if taxon not in blacklist:
