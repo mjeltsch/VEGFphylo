@@ -117,9 +117,11 @@ def download_and_append_to_fasta_file(PHYLUM, ORTHOLOG, sequence_dictionary):
     multiple_fasta_file.close()
 
 def limit_to_most_informative_sequences(NUMBER, FASTA_FILE_IN, FASTA_FILE_OUT):
-    execute_subprocess(
-        'Reducing the complexity to the most informative {} sequences:'.format(NUMBER),
-        't_coffee -other_pg seq_reformat -in {0} -action +trim _seq_n{1} -output fasta_seq > {2}'.format(FASTA_FILE_IN, NUMBER, FASTA_FILE_OUT))
+    # Only do this if the output file is not present or if its size is below 50 bytes
+    if not os.path.isfile(FASTA_FILE_OUT) or os.stat(FASTA_FILE_OUT).st_size < 50:
+        execute_subprocess(
+            'Reducing the complexity to the most informative {} sequences:'.format(NUMBER),
+            't_coffee -other_pg seq_reformat -in {0} -action +trim _seq_n{1} -output fasta_seq > {2}'.format(FASTA_FILE_IN, NUMBER, FASTA_FILE_OUT))
 
 def concatenate_files(wildcard_path):
     concatenated_file_name = wildcard_path.replace('*', 'all_')
@@ -221,14 +223,14 @@ def run():
             for line in fasta_file:
                 if line.startswith(">"):
                     n += 1
-        print('filename_in: {0}'.format(filename_in))
+        #print('filename_in: {0}'.format(filename_in))
         filename_out = '../informative_multifasta_files/{0}'.format(filename_in)
-        print('filename_out: {0}'.format(filename_out))
+        #print('filename_out: {0}'.format(filename_out))
         if n < 5:
             print('{0} contains 4 or less sequences. Only copying...'.format(filename_in))
             copyfile(filename_in, filename_out)
         else:
-            print('{0} contains more than 4 sequences ({1}). Identifying the {2} most informative ones...'.format(filename_in, n, NUMBER))
+            print('\n{0} contains more than 4 sequences ({1}). Identifying the {2} most informative ones...'.format(filename_in, n, NUMBER), end='')
             limit_to_most_informative_sequences(NUMBER, filename_in, filename_out)
         directory = '../informative_multifasta_files'
 
