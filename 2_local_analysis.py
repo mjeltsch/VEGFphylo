@@ -155,6 +155,7 @@ body { font-family: "Open Sans", Arial; }
     j = 1
     html_text = ''
     TOTAL_UNKNOWN_COUNT_HTML_CHECK += len(list_to_scrutinize)
+    print('list_to_scrutinize:\n{0}'.format(list_to_scrutinize))
     for item in list_to_scrutinize:
         # Make a heading row if the type of hit changes and color unknown stuff red
         if item[2] != new_type:
@@ -234,7 +235,8 @@ def get_protein_data(taxon):
                 try:
                     species = re.search(r'\[(.*?)\]',hit.description).group(1)
                 except Exception as err:
-                    print('Non-standard protein description, species could not be determined. Error was: {0}'.format(err))
+                    print('Non-standard protein description ({0}). Continuing without species information...'.format(hit.description))
+                    #print('Error was: {0}'.format(err))
                     species = 'unknown'
                 #print('Checking false- or true-positivity.')
                 # If one protein category matches, we need to abort searching to avoid items being counted twice or more often if
@@ -286,7 +288,8 @@ def get_protein_data(taxon):
                 except category_found:
                     TOTAL_COUNT += 1
                 # BLASTHIT = [gid, protein_id, species, fasta_description, ortholog group (only if determined with high probability)]
-                BLASTHIT = [hitident[1], hitident[3], species, hit.description, ortholog_group]
+                # gid is an integer! Convert the string into integer here.
+                BLASTHIT = [int(hitident[1]), hitident[3], species, hit.description, ortholog_group]
                 with conn:
                     # If the gid is already in the database, the insertion fails and 0 is returned (otherwise the GID)
                     print('\n\nINSERT PROTEIN:\n{0}\n\n'.format(BLASTHIT))
@@ -308,9 +311,12 @@ def get_protein_data(taxon):
             new_protein_data[protein] = [number, negative_dict, positive_dict]
         print('Analysis for taxon {0} completed.\n'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
-        write_to_html_scrutinize_file(list_to_scrutinize)
+        if len(list_to_scrutinize) > 0:
+            write_to_html_scrutinize_file(list_to_scrutinize)
+        else:
+            print('Nothing to write to HTML file...')
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
-        print('\nRETURNED PROTEIN_DATA FOR TAXON {0}:\n{1}'.format(taxon))
+        print('\nRETURNED PROTEIN_DATA FOR TAXON {0}:\n'.format(taxon))
         for protein, value in new_protein_data.items():
             print('{0}:\n{1}'.format(protein, value))
         return new_protein_data
@@ -436,11 +442,15 @@ def create_connection(DATABASE_FILE):
 def db_insert_protein(BLASTHIT, VERBOSE = True):
     global conn
     # Check whether an entry exists already
-    if VERBOSE: print('Checking whether en entry with gid {0} exists already in the SQLite database...'.format(BLASTHIT[0]))
+    if VERBOSE: print('Checking whether an entry with gid {0} exists already in the SQLite database... '.format(BLASTHIT[0]), end='')
+    #for key in sqlite_protein_dict:
+    #    print(key, end=' ')
     if BLASTHIT[0] in sqlite_protein_dict.keys():
+        print('Yes')
         # Check whether the entry has already the ortholog group set
-        print('ortholog group: {0}'.format(sqlite_protein_dict[BLASTHIT[4]]))
-        if sqlite_protein_dict[BLASTHIT[4]] == 'None':
+        print('ortholog group: {0}'.format(sqlite_protein_dict[BLASTHIT[0]]))
+        # Only try to update if the new ortholog_group is not 'None' and the old one is 'None'
+        if BLASTHIT[4] != 'None' and sqlite_protein_dict[BLASTHIT[0]][4] == 'None':
             # Update database entry to include ortholog group
             if VERBOSE: print('Entry with gid = {0} has no ortholog group information. Trying to update with \"{1}\".'.format(BLASTHIT[0], BLASTHIT[4]))
             query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE gid = {1}'.format(BLASTHIT[4], BLASTHIT[0])
@@ -456,7 +466,13 @@ def db_insert_protein(BLASTHIT, VERBOSE = True):
             except Exception as err:
                 if VERBOSE: print('Unknown error during update: {0}'.format(err))
                 result = 0
+            else:
+                print('Ortholog group of gid {0} updated to {1}.'.format(BLASTHIT[0], BLASTHIT[4]))
+        else:
+            print('Ortholog group is already set ({0}).'.format(BLASTHIT[4]))
+            result = 0
     else:
+        print('No')
         if VERBOSE: print('No entry with gid = {0}. Trying to insert.'.format(BLASTHIT[0]))
         # This is a full database insertion
         # In some fasta descriptions one can really find this char: ' !!!!
