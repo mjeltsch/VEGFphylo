@@ -368,6 +368,7 @@ def run_backcheck_blast(GID, proteindata):
                 LAST_BLAST_REPLY_TIME = time.time()
                 print('The remote blasting took {0}.'.format(execution_time_str(LAST_BLAST_REPLY_TIME-blast_start_time)))
         except Exception as ex:
+            print("Something went wrong with the backcheck blast. Perhaps the Blast server did not respond? More about the error: " + str(ex))
     else:
         print('Using local backcheck blast results (data/backcheck/{0}.xml).'.format(GID))
     blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(GID), 'blast-xml')
