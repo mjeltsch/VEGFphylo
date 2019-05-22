@@ -321,7 +321,7 @@ def run():
         print('Using .xml blast result files from directory {0}/{1} (skipping remote blasts whenever possible).'.format(os.getcwd(), DATA_DIR))
     elif REMOTE == 'remote':
         # Rename old results and create a new result directory
-        OLD_DATA_DIR = 'data/'+datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+        OLD_DATA_DIR = 'data/primary_blast_results_{0}'.format(datetime.datetime.now().strftime("%y%m%d_%H%M%S"))
         os.rename(DATA_DIR, OLD_DATA_DIR)
         print('\nCreating new directory {0} to store primary blast results.\n'.format(DATA_DIR))
     # Create directory for the downloaded and generated data
