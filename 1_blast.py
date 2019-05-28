@@ -96,6 +96,15 @@
 # Also git clone https://github.com/smirarab/sate-tools-linux.git
 # Both should be git-cloned into ~/bin/
 #
+#
+# WHAT DOES THIS SCRIPT DO?
+#
+# This script takes all sequence ids from the master_dictionary.py and performs pblasts requesting both html and xml
+# files seperately for each taxon that is mentioned in the taxon_data.py file. The results are saved under the
+# primary_blast_results directory (in protein-specific subdirectories).
+# The master_dictionary.py file contains also a list of all aliases of the protein names and a list of all false friends.
+# The taxon_dictionary.py file also stores the statistical data associated with each taxon that is later generated with
+# the 2_analysis.py script.
 
 import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random
 from functools import wraps
@@ -308,30 +317,31 @@ def run():
             #For python 3 compatibility
             pass
 
-    # Determine directory of script (in order to load the data files)
+    # Determine directories of script (in order to load & save the data & log files)
     APPLICATION_PATH = os.path.abspath(os.path.dirname(__file__))
-    FIRST_BLAST = True
+    DATA_DIR = '{0}/data/primary_blast_results'.format(APPLICATION_PATH)
+    LOGFILE = '{0}/logfile.txt'.format(DATA_DIR)
+    SUMMARY_FILE = '{0}/summary.csv'.format(DATA_DIR)
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     # Loading data file
     preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     preamble2, taxon_dictionary = load_dictionary('{0}/data/taxon_data.py'.format(APPLICATION_PATH))
-    LOGFILE = 'logfile.txt'
-    DATA_DIR = 'data/primary_blast_results'
+    # If commandline argument 'remote' is given, rename old results and execute new pblast requests
+    # instead of recycling existing ones
     if REMOTE == 'local':
-        print('Using .xml blast result files from directory {0}/{1} (skipping remote blasts whenever possible).'.format(os.getcwd(), DATA_DIR))
+        print('Using .xml blast result files from directory {0} (skipping remote blasts whenever possible).'.format(DATA_DIR))
     elif REMOTE == 'remote':
         # Rename old results and create a new result directory
-        OLD_DATA_DIR = 'data/primary_blast_results_{0}'.format(datetime.datetime.now().strftime("%y%m%d_%H%M%S"))
+        OLD_DATA_DIR = '{0}_{1}'.format(DATA_DIR, datetime.datetime.now().strftime("%y%m%d_%H%M%S"))
         os.rename(DATA_DIR, OLD_DATA_DIR)
-        print('\nCreating new directory {0} to store primary blast results.\n'.format(DATA_DIR))
+        print('\nMoving old data to {0}.\n'.format(OLD_DATA_DIR))
     # Create directory for the downloaded and generated data
     if not os.path.exists(DATA_DIR):
         os.mkdir(DATA_DIR)
     # Direct all terminal output additionally into a logfile
-    sys.stdout = logfile(DATA_DIR + "/" + LOGFILE)
+    sys.stdout = logfile(LOGFILE)
     # Change the current working directory
     os.chdir(DATA_DIR)
-    SUMMARY_FILE = '{0}/{1}/summary.csv'.format(APPLICATION_PATH, DATA_DIR)
     # Create summary file
     with open(SUMMARY_FILE, 'w') as results_summary:
         results_summary.write("PROTEIN\tTAXON\tsequences in db\tletters in db\tavrg length\thits\talignments\tscore\te-value\tdescription\n")
@@ -379,6 +389,7 @@ def run():
                             continue
                 else:
                     print('Checking for {0}/{1} -> ok, checking for {0}/{2} -> ok.'.format(protein, BLAST_XMLFILE, BLAST_HTMLFILE))
+                    parse_blast_result(protein, protein_data, taxon)
         # Go back one directory (otherwise every new analysis will be a subdirectory in the previous diretory)
         os.chdir('..')
 

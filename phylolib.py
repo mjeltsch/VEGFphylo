@@ -105,27 +105,16 @@ def create_sqlite_file(FILE_NAME):
     try:
         conn = sqlite3.connect(FILE_NAME)
         print(sqlite3.version)
-        commands = '''CREATE TABLE IF NOT EXISTS `species` (
-        	`scientific_name`	TEXT NOT NULL,
-        	`taxon_id`	INTEGER NOT NULL,
-        	`phylum`	TEXT NOT NULL,
-        	PRIMARY KEY(`taxon_id`));
-        CREATE TABLE IF NOT EXISTS `protein` (
-        	`gid`	INTEGER NOT NULL,
-        	`protein_id`	TEXT,
-        	`fasta_description`	TEXT NOT NULL,
-        	`species`	TEXT NOT NULL,
-        	`ortholog_group`	TEXT,
-        	`curated_manually_by`	TEXT DEFAULT ('NULL'),
-        	PRIMARY KEY(`gid`));
-        CREATE TABLE IF NOT EXISTS `ortholog_groups` (
-        	`ortholog_group`	TEXT NOT NULL);
-        CREATE TABLE IF NOT EXISTS `curator` (
-        	`curator`	TEXT NOT NULL);'''
+        commands = ['''CREATE TABLE IF NOT EXISTS `species` (`scientific_name` TEXT NOT NULL, `taxon_id` INTEGER NOT NULL, `phylum` TEXT NOT NULL, PRIMARY KEY(`taxon_id`))''',
+        '''CREATE TABLE IF NOT EXISTS `protein` (`id` VARCHAR NOT NULL, `accession_no` TEXT, `fasta_description` TEXT NOT NULL, `species` TEXT NOT NULL, `ortholog_group` TEXT, `curated_manually_by` TEXT, PRIMARY KEY(`id`))''',
+        '''CREATE TABLE IF NOT EXISTS `ortholog_groups` (`ortholog_group` TEXT NOT NULL)''',
+        '''CREATE TABLE IF NOT EXISTS `curator` (`curator` TEXT NOT NULL)''']
         cur = conn.cursor()
-        cur.execute(commands)
-        conn.commit()
-    except Error as err:
+        for command in commands:
+            print('Executing command: {0}'.format(command))
+            cur.execute(command)
+            conn.commit()
+    except Exception as err:
         print(err)
         return False
     else:
