@@ -492,7 +492,11 @@ def drawtree(TREEFILE):
 
     # Add description to treefile
     description_text = "Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
-    # Add stuff
+    # Add statistics to description
+    with open(LOGFILE, 'r') as log_file:
+        lines = log_file.read().splitlines()
+        description_text += lines[-2]
+    # Add other stuff to description
     description_text += " ";
 
     # Add legend
@@ -522,7 +526,7 @@ def run():
     TREEFILE = '{0}/data/animalia.newick'.format(APPLICATION_PATH)
     SVGFILE = '{0}/animalia.svg'.format(APPLICATION_PATH)
     IMG_BASENAME = '{0}/images/'.format(APPLICATION_PATH)
-    LOGFILE = 'logfile.txt'
+    LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
 
     if os.path.isfile(TREEFILE):

@@ -215,7 +215,7 @@ def run():
     print('proteins: {0}'.format(counter_proteins))
 
     # Reduce the number of sequences for each phylum/ortholog group combinbation to the most
-    # informative NUMBER of sequences. Don't use to high NUMBER as the alignment and tree
+    # informative NUMBER of sequences. Don't use a too high NUMBER as the alignment and tree
     # generation will take too long!
     # Changing directory is necessary because t_coffee chockes if the file path gets too long
     os.chdir(MULTISEQUENCE_FASTA_DIR)
