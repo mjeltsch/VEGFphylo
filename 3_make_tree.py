@@ -171,8 +171,8 @@ def load_dictionary(FILENAME):
 # This takes a list (as shown below) and returns a formatted string which is displayed on the tree
 # {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0, 'vascular endothelial growth factor A': 0, 'vascular endothelial growth factor B': 0, 'vascular endothelial growth factor C': 0, 'vascular endothelial growth factor D': 0, 'placenta growth factor': 0}
 def format_false_positives(protein, list_of_categories):
-    print('PROTEIN: {0}'.format(protein))
-    print('list of categories: {0}'.format(list_of_categories))
+    #print('PROTEIN: {0}'.format(protein))
+    #print('list of categories: {0}'.format(list_of_categories))
     total_hits = list_of_categories[0]
     # Do NOT simplify protein name (remove numbers from end)!!!
     #protein = protein.rstrip(string.digits).rstrip('-')
@@ -218,7 +218,7 @@ def format_false_positives(protein, list_of_categories):
     for item, value in related_protein_counter.items():
         total_related_counter += value
     unknown_count = total_hits - true_positive_counter - total_related_counter
-    print('Counting results:\ntotal (from len(list)): {0}\ntotal (from counting): {1}\ntrue positives: {2}\nrelated proteins: {3}\nuncharacterized_hypothetical_counter: {4}\nunknown_count: {5}\nsynonym_counter: {6}\nother: {7}'.format(total_hits, total_counter, true_positive_counter, total_related_counter, uncharacterized_hypothetical_counter, unknown_count, synonym_counter, other_counter))
+    #print('Counting results:\ntotal (from len(list)): {0}\ntotal (from counting): {1}\ntrue positives: {2}\nrelated proteins: {3}\nuncharacterized_hypothetical_counter: {4}\nunknown_count: {5}\nsynonym_counter: {6}\nother: {7}'.format(total_hits, total_counter, true_positive_counter, total_related_counter, uncharacterized_hypothetical_counter, unknown_count, synonym_counter, other_counter))
     #false_positive_string = ' true:{0}, PDGF:{1}, PVF:{2}, VEGF:{3}, ?:{4}'.format(true_positives, PDGF, PVF, other_VEGFs, uncharacterized_hypothetical)
     if total_hits == 0:
         formatted_text_strings = '',''
@@ -276,6 +276,11 @@ def drawtree(TREEFILE):
     print(t)
 
     # Define node styles for different animal classes
+    #
+    # Toxicofera
+    toxicofera = NodeStyle()
+    toxicofera["hz_line_type"] = 1
+    toxicofera["hz_line_color"] = "#cccccc"
     # Mammals
     mammalia = NodeStyle()
     mammalia["bgcolor"] = "Chocolate"
@@ -302,8 +307,9 @@ def drawtree(TREEFILE):
     myxini["bgcolor"] = "LightBlue"
 
     general_leaf_style = NodeStyle()
-    # size of the blue ball
+    # size ansd shape of the blue symbol for the leaves
     general_leaf_style["size"] = 15
+    general_leaf_style["shape"] = "sphere"
 
     # Draws nodes as small red spheres of diameter equal to 10 pixels
     nstyle = NodeStyle()
@@ -338,6 +344,9 @@ def drawtree(TREEFILE):
                 node.set_style(amphibia)
             elif animal_class_name == 'Myxini':
                 node.set_style(myxini)
+            # Line styles for paraphyletic branch
+            elif animal_class_name == 'toxicofera':
+                node.set_style(toxicofera)
             else:
                 node.set_style(nstyle)
             # Set general leaf attributes
@@ -372,12 +381,23 @@ def drawtree(TREEFILE):
     #     else:
     #         print("key " + key + " is not present in the tree file. Skipping...")
 
-    # ADD SVG IMAGES
+    # ADD NODE STYLE & INFORMATION (TEXT, IMAGES)
     for node in t.traverse():
         if node.is_leaf():
             animal_class_name = node.name
+            print('-----------------------\nProcessing leaf node {0}:\n-----------------------\n'.format(node.name))
             # Get the common name for this animal class if it exists
             #print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
+            #
+            # For display and refering to the taxon_ditionary, the aninal class name needs to be without qutes
+            animal_class_name = animal_class_name.strip('\'')
+            # For the tree drawing, complex animal class names (with spaces) need to be in single quotes
+            animal_class_name_with = node.name
+            # Testing of match condiitons
+            for klasse in taxon_dictionary:
+                print('Animal group: {0}'.format(klasse))
+                if klasse == animal_class_name:
+                    print('Match!')
             try:
                 number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
                 number_of_animal_species = taxon_dictionary[animal_class_name][1]
@@ -428,11 +448,11 @@ def drawtree(TREEFILE):
 
                 # Number of animal species in this class in the NCBI protein sequence database
                 textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16)
-                (t & animal_class_name).add_face(textFace, 0, "aligned")
+                (t & animal_class_name_with).add_face(textFace, 0, "aligned")
                 textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16)
-                (t & animal_class_name).add_face(textFace, 1, "aligned")
+                (t & animal_class_name_with).add_face(textFace, 1, "aligned")
                 textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16)
-                (t & animal_class_name).add_face(textFace, 2, "aligned")
+                (t & animal_class_name_with).add_face(textFace, 2, "aligned")
 
                 # TEXT
                 #print('Adding text for {0}'.format(animal_class_name))
@@ -442,7 +462,7 @@ def drawtree(TREEFILE):
                 else:
                     description = '{0} ({1})  '.format(animal_class_name, animal_class_name_common)
                 textFace = TextFace(description, fsize = 16)
-                (t & animal_class_name).add_face(textFace, 4, "aligned")
+                (t & animal_class_name_with).add_face(textFace, 4, "aligned")
                 # Reliability measure
                 #textFace = TextFace(reliability, fsize = 16)
                 #(t & animal_class_name).add_face(textFace, 13, "aligned")
@@ -463,32 +483,58 @@ def drawtree(TREEFILE):
                     #
                     # IN BOLDFACE
                     textFace = TextFace(formatted_text_strings[0], fsize = 16, bold = True)
-                    (t & animal_class_name).add_face(textFace, i, "aligned")
+                    (t & animal_class_name_with).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
                     i += 1
                     #
                     # IN NORMAL FONT
                     textFace2 = TextFace(' '+formatted_text_strings[1], fsize = 16, tight_text = True)
-                    (t & animal_class_name).add_face(textFace2, i, "aligned")
+                    (t & animal_class_name_with).add_face(textFace2, i, "aligned")
                     textFace2.background.color = color_dict[reliability]
                     i += 1
 
                 # IMAGE
                 svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
-                (t & animal_class_name).add_face(svgFace, 3, "aligned")
+                print('SVG filename: {0}'.format('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name)))
+                (t & animal_class_name_with).add_face(svgFace, 3, "aligned")
                 svgFace.margin_right = 10
                 svgFace.margin_left = 10
                 svgFace.hzalign = 2
                 print('Adding svg image for {0}.'.format(animal_class_name))
             except Exception as ex:
-                print('Could not get common animal class name for {0} dictionary from file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
+                print('Could not get common animal class name for {0} from  dictionary file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
 
     # ROTATING SOME NODES CAN BE DONE HERE:
     # MOVE ACTINOPTERYGII NEXT TO THE OTHER FISH
-
     # spotted gar and coelacant
     #n1 = t.get_common_ancestor("XP_006632034.2", "XP_006006690.1")
     #n1.swap_children()
+
+    # COLOR PARAPHYLETIC GROUPS DIFFERENTLY
+    # lepidosauria excl. toxicofera and toxicofera
+    #
+    # Set formating of internal nodes
+    n1style = NodeStyle()
+    n1style["hz_line_type"] = 1
+    n1style["hz_line_color"] = "Red"
+    n1style["vt_line_color"] = "Red"
+    n1style["shape"] = "sphere"
+    n1style["fgcolor"] = "darkred"
+    n1style["size"] = 15
+    n1 = t.get_common_ancestor("toxicofera", "'lepidosauria excl. toxicofera'")
+    n1.set_style(n1style)
+    for item in n1:
+        # Set formating of leaves
+        if item.is_leaf():
+            leafstyle = NodeStyle()
+            leafstyle["hz_line_type"] = 1
+            leafstyle["hz_line_color"] = "Red"
+            leafstyle["vt_line_color"] = "Red"
+            leafstyle["shape"] = "sphere"
+            leafstyle["fgcolor"] = "blue"
+            leafstyle["size"] = 15
+            print('Setting leaf style for node {0}.'.format(n1))
+            item.set_style(leafstyle)
 
     # Add description to treefile
     description_text = "Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"

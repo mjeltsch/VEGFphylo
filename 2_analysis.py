@@ -10,7 +10,7 @@ from Bio.Blast import NCBIXML
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
-from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file
+from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa
 
 # Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
@@ -47,42 +47,92 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--directory", nargs='?', help = "Specify the subdirectory where the data is!", default = 'data/primary_blast_results/')
 args = parser.parse_args()
 
-# This function is not used anywhere!
-def get_species_number(taxon):
+def get_species_number_from_ncbi(taxon, taxon_data):
     print('Retrieving species number for {0}... -> '.format(taxon), end='')
-    URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(taxon)
+    # Determine, whether a taxon is to be excluded from the request
+    TAXON, SUBTRACT_TAXA = expand_complex_taxa(taxon_data[0])
+    URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(TAXON)
     r = requests.get(URL)
     text = r.text
     #print(text)
-    return int(text.split("Count>")[1][:-2])
+    number = int(text.split("Count>")[1][:-2])
+    for item in SUBTRACT_TAXA:
+        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item)
+        r = requests.get(URL)
+        text = r.text
+        #print(text)
+        number -= int(text.split("Count>")[1][:-2])
+    return number
+
+# This takes complex taxon data string and returns a tuple of two lists (a list of taxa to add and a list of taxa to be subtracted)
+# E.g. '8504-1329911' -> 8504, [1329911]
+def expand_complex_taxa_string_to_lists(taxon_data):
+    TAXON = taxon_data
+    SUBTRACT_TAXA = []
+    try:
+        print('Expanding complex taxon data to tuple: {0} -> '.format(taxon_data), end = '')
+        taxon_list = taxon_data.split('-')
+        TAXON = taxon_list[0]
+        SUBTRACT_TAXA = taxon_list[1:]
+    except Exception as err:
+        print('Nothing to expand from {0} or error expanding. Error: {1}'.format(taxon_data, err))
+    print('{0}, {1}'.format(TAXON, SUBTRACT_TAXA))
+    return TAXON, SUBTRACT_TAXA
+
+def get_species_number_from_ncbi_for_string_of_taxa(string_of_taxa):
+    print('Retrieving species number for {0}... -> '.format(string_of_taxa), end='')
+    # Determine, whether a taxon is to be excluded from the request
+    ADD_TAXA, SUBTRACT_TAXA = expand_complex_taxa_string_to_lists(string_of_taxa)
+    number = 0
+    for item in ADD_TAXA:
+        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(TAXON)
+        r = requests.get(URL)
+        text = r.text
+        #print(text)
+        number += int(text.split("Count>")[1][:-2])
+    for item in SUBTRACT_TAXA:
+        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item)
+        r = requests.get(URL)
+        text = r.text
+        #print(text)
+        number -= int(text.split("Count>")[1][:-2])
+    return number
 
 def get_taxon_id_and_phylum(species_name):
     # Check whether the species is in the local sqlite database
     print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
-    if species_name in sqlite_species_dict:
-        TAXON_ID = sqlite_species_dict[species_name][1]
-        PHYLUM = sqlite_species_dict[species_name][2]
-    else:
-        print("Species not in local sqlite database. Getting data from NCBI... ")
-        TAXON_ID = get_taxon_id_from_NCBI(species_name)
-        print('=> {0}'.format(TAXON_ID))
-        # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
-        # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
-        # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
-        PHYLUM = get_phylum_from_NCBI(TAXON_ID)
-        print('=> {0}'.format(PHYLUM))
-        if db_insert_species(species_name, TAXON_ID, PHYLUM) != 0:
-            print('New species {0} inserted into database.'.format(species_name))
+    #if species_name in sqlite_species_dict:
+    #    TAXON_ID = sqlite_species_dict[species_name][1]
+    #    PHYLUM = sqlite_species_dict[species_name][2]
+    #else:
+    print("Species not in local sqlite database. Getting data from NCBI... ")
+    TAXON_ID = get_taxon_id_from_NCBI(species_name)
+    print('=> {0}'.format(TAXON_ID))
+    # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
+    # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
+    # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
+    PHYLUM = get_phylum_from_NCBI(TAXON_ID)
+    print('=> {0}'.format(PHYLUM))
+    if db_insert_species(species_name, TAXON_ID, PHYLUM) != 0:
+        print('New species {0} inserted into database.'.format(species_name))
     return TAXON_ID, PHYLUM
 
 # How many sequences are in the local database for this taxon? The gi files were manually downloaded from
-# NCBI. There should be smarted way to get these!
-def get_sequence_number(taxon):
+# NCBI. E.g. https://www.ncbi.nlm.nih.gov/protein/?term=txid7777%5Borganism%5D and then "Send to file" -> "Format: GI List" -> "Create File"
+# There should be smarter way to get these!
+def get_sequence_number(taxon, taxon_data):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
-    SEQUENCE_GI_LIST = '{0}/data/gi_lists/{1}.gi'.format(APPLICATION_PATH, taxon)
+    TAXON, SUBTRACT_TAXA = expand_complex_taxa(taxon_data[0])
+    SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, TAXON)
     with open(SEQUENCE_GI_LIST) as file:
         for i, l in enumerate(file):
             pass
+    for item in SUBTRACT_TAXA:
+        SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, item)
+        with open(SEQUENCE_GI_LIST) as file:
+            for j, m in enumerate(file):
+                pass
+        i -= j
     return i + 1
 
 def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
@@ -92,9 +142,22 @@ def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
         try:
             if VERBOSE: print('Retrieving taxon id for {0} '.format(species_name), end='')
             URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
+            print('Primary request URL: {}'.format(URL))
             r = requests.get(URL, timeout=60)
-            # Extract taxon_id
-            list = r.text.split("Id>")
+            if '<OutputMessage>No items found.</OutputMessage>' not in r.text and '<ERROR>' not in r.text:
+                # Extract taxon_id
+                list = r.text.split("Id>")
+            else:
+                # Alternative (less stringent) request
+                # https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=Carassius auratus
+                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}'.format(species_name)
+                print('Secondary request URL: {}'.format(URL))
+                r = requests.get(URL, timeout=60)
+                if '<OutputMessage>No items found.</OutputMessage>' not in r.text and '<ERROR>' not in r.text:
+                    # Extract taxon_id
+                    list = r.text.split("Id>")
+                else:
+                    TAXON_ID = None
             print('list:')
             for item in list:
                 print(item)
@@ -130,9 +193,15 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             if VERBOSE: print(text)
             i = 0
             for taxon, taxon_data in taxon_dictionary.items():
-                if VERBOSE: print('Looking for TAXON_ID {0}'.format(taxon_data[0]))
-                if '<TaxId>{0}</TaxId>'.format(taxon_data[0]) in text:
-                    if VERBOSE: print('Adding phylum info {0} to taxon_id {1}'.format(taxon, TAXON_ID))
+                # Determine, whether a taxon is complex (with some branches to exclude)
+                try:
+                    TAXON = taxon_data[0].split('-')[0]
+                    SUBTRACT_TAXON = taxon_data[0].split('-')[1]
+                except Exception as err:
+                    SUBTRACT_TAXON = '-'
+                if VERBOSE: print('Looking for TAXON_ID {0}, exluding TAXON_ID {1}'.format(TAXON, SUBTRACT_TAXON))
+                if '<TaxId>{0}</TaxId>'.format(TAXON) in text and '<TaxId>{0}</TaxId>'.format(SUBTRACT_TAXON) not in text:
+                    if VERBOSE: print('Adding phylum info {0} to species {1}'.format(taxon, TAXON_ID))
                     phylum = taxon
                     print(phylum)
                     break
@@ -140,13 +209,13 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             # The following line will be only executed if calling 'phylum' does not give a NameError
             # When i = 51, none of the 51 phyla was in the text that was received from NCBI.
             if i == 51:
-                if VERBOSE: print('TAXON_ID {0} does not belong to any phylum in the phylum list'.format(TAXON_ID))
+                if VERBOSE: print('Species {0} does not belong to any phylum in the phylum list'.format(TAXON_ID))
                 phylum = 'unknown'
             elif i < 51:
                 i += 1
                 if VERBOSE: print('{0} phyla (of 51) checked before hit was found.'.format(i))
             else:
-                if VERBOSE: print('Unknown error when trying to identify phylum for TAXON_ID {0}.'.format(TAXON_ID))
+                if VERBOSE: print('Unknown error when trying to identify phylum for species {0}.'.format(TAXON_ID))
                 phylum = 'unknown'
         except NameError as err:
             if VERBOSE: print('Sleeping due to server error. Will retry in 60 seconds. Error: {0}'.format(err))
@@ -449,6 +518,9 @@ def run_backcheck_blast(ID, proteindata):
         return 'unknown'
 
 def get_fully_sequenced_genomes(CSV_FILE):
+    print('------------------------------------------------ ---------')
+    print('--------\nGET NUMBERS OF FULLY SEQUENCED GENOMES\n--------')
+    print('------------------------------------------------- --------')
     # Open/download the list of fully sequenced genomes
     try:
         input_csv_file = csv.DictReader(open(CSV_FILE))
@@ -508,7 +580,7 @@ def db_insert_protein(BLASTHIT, VERBOSE = True):
         if BLASTHIT[4] != 'None' and sqlite_protein_dict[BLASTHIT[0]][4] == 'None':
             # Update database entry to include ortholog group
             if VERBOSE: print('Entry with id = {0} has no ortholog group information. Trying to update with \"{1}\".'.format(BLASTHIT[0], BLASTHIT[4]))
-            query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE id = {1}'.format(BLASTHIT[4], BLASTHIT[0])
+            query = 'UPDATE protein SET ortholog_group = \'{0}\' WHERE id = \'{1}\''.format(BLASTHIT[4], BLASTHIT[0])
             if VERBOSE: print('query: {0}'.format(query))
             try:
                 cur = conn.cursor()
@@ -532,7 +604,7 @@ def db_insert_protein(BLASTHIT, VERBOSE = True):
         # This is a full database insertion
         # In some fasta descriptions one can really find this char: ' !!!!
         BLASTHIT[2] = BLASTHIT[2].replace('\'', '')
-        query = 'INSERT INTO protein (id, accession_no, species, fasta_description, ortholog_group) VALUES ({0}, \'{1}\', \'{2}\', \'{3}\', \'{4}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
+        query = 'INSERT INTO protein (id, accession_no, species, fasta_description, ortholog_group) VALUES (\'{0}\', \'{1}\', \'{2}\', \'{3}\', \'{4}\')'.format(BLASTHIT[0], BLASTHIT[1], BLASTHIT[2], BLASTHIT[3], BLASTHIT[4])
         if VERBOSE: print('query: {0}'.format(query))
         try:
             cur = conn.cursor()
@@ -656,23 +728,27 @@ def run():
             else:
                 new_taxon_dictionary[taxon][4] = new_protein_data
             # TAXON_ID
-            try:
-                new_taxon_id, phylum = get_taxon_id_and_phylum(taxon)
-            except Exception as err:
-                print('Could not get new taxon id and phylum. Error was: {0}',value(err))
+            # Get taxon_id if a new taxon was added manually to taxon_data.py, but no taxon_id was given
+            # This is not necessary if the taxon_id is always manually assigned when adding a new taxon
+            # and it also fails when adding a complex taxon
+            #try:
+            #    new_taxon_id, phylum = get_taxon_id_and_phylum(taxon)
+            #except Exception as err:
+            #    print('Could not get new taxon id and phylum. Error was: {0}',value(err))
             # execute if no exceptions have occured
-            else:
-                new_taxon_dictionary[taxon][0] = new_taxon_id
+            #else:
+            #    new_taxon_dictionary[taxon][0] = new_taxon_id
+            #
             # NUMBER OF SPECIES IN NCBI DATABASE
             try:
-                new_species_number = get_species_number(taxon)
+                new_species_number = get_species_number_from_ncbi(taxon, taxon_data)
             except Exception as err:
                 print('Could not get new species number. Error was: {0}',value(err))
             else:
                 new_taxon_dictionary[taxon][1] = new_species_number
             # NUMBER OF SEQUENCES IN NCBI DATABASE
             try:
-                new_sequence_number = get_sequence_number(taxon)
+                new_sequence_number = get_sequence_number(taxon, taxon_data)
             except Exception as err:
                 print('Could not get new sequence number. Error was: {0}',value(err))
             else:

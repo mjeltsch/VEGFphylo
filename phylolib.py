@@ -4,6 +4,21 @@
 
 import os, sqlite3, subprocess
 
+# This takes complex taxon data and returns a tuple (a string of the main taxon and a list of all taxons to be subtracted)
+# E.g. '8504-1329911' -> 8504, [1329911]
+def expand_complex_taxa(taxon_data):
+    TAXON = taxon_data
+    SUBTRACT_TAXA = []
+    try:
+        print('Expanding complex taxon data to tuple: {0} -> '.format(taxon_data), end = '')
+        taxon_list = taxon_data.split('-')
+        TAXON = taxon_list[0]
+        SUBTRACT_TAXA = taxon_list[1:]
+    except Exception as err:
+        print('Nothing to expand from {0} or error expanding. Error: {1}'.format(taxon_data, err))
+    print('{0}, {1}'.format(TAXON, SUBTRACT_TAXA))
+    return TAXON, SUBTRACT_TAXA
+
 def load_blacklist():
     # All the phyla in the list below have been found in the first screen not to have any VEGF-like molecules
     #blacklist = ['ctenophora', 'porifera', 'placozoa', 'xenacoelomorpha', 'cyclostomata', 'onychophora', 'pycnogonida', 'myriapoda', 'nematomorpha', 'loricifera', 'kinorhyncha', 'chaetognatha', 'bryozoa', 'entoprocta', 'cycliophora', 'nemertea', 'phoroniformea', 'gastrotricha', 'platyhelminthes', 'gnathostomulida', 'micrognathozoa', 'orthonectida', 'dicyemida']

@@ -254,6 +254,12 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     EVALUE = 0.1
     PROTEIN_ID, SUBRANGE, OPTIONAL_BLAST_NO, SYNONYMS, RELATED_PROTEINS = PROTEIN_DATA
     WHATFORMAT = FORMAT[0][0]
+    # Determine, whether a taxon is to be excluded from the blastp search
+    try:
+        TAXON_ = TAXON_DATA[0].split('-')[0]
+        SUBTRACT_TAXON = ' NOT (txid{0}[organism])'.format(TAXON_DATA[0].split('-')[1])
+    except Exception as err:
+        SUBTRACT_TAXON = ''
     # Check whether both formats (XML and HTML) need to be retrieved
     # This is only necessary if previous runs have been interrupted and
     # only one format was retrieved
@@ -271,7 +277,8 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA, FORMAT):
     #result_handle = NCBIWWW.qblast("blastp", BLAST_DATABASE, PROTEIN_ID[0], hitlist_size = str(OPTIONAL_BLAST_NO), expect = EVALUE, query_from = ALIGNMENT_TRIMMING[0], query_to = ALIGNMENT_TRIMMING[1], entrez_query='NOT '+EXCLUDE+'[organism]')
     # Alternatively to the taxon name, the taxon id can be specified like e.g. "txid9606"[organism]
     # When selecting the format ("Format_type"), please remember that HTML cannot be easily parsed. Use XML instead!
-    ENTREZ_QUERY = '\"' + TAXON +'\"[organism]'
+    ENTREZ_QUERY = '(txid{0}[organism]){1}'.format(TAXON_, SUBTRACT_TAXON)
+    print('ENTREZ_QUERY = {0}'.format(ENTREZ_QUERY))
     if SUBRANGE == None:
         STARTPOS = ''
         ENDPOS = ''
