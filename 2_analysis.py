@@ -11,6 +11,7 @@ from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
 from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa
+from ete3 import NCBITaxa
 
 # Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
@@ -135,50 +136,19 @@ def get_sequence_number(taxon, taxon_data):
         i -= j
     return i + 1
 
+# This should be replaced by the corresponding function from ETE3
 def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
-    # Counter to increase waiting period upon incresing number of unsuccesful trials
-    i = 0
-    while True:
-        try:
-            if VERBOSE: print('Retrieving taxon id for {0} '.format(species_name), end='')
-            URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}[Scientific Name]'.format(species_name)
-            print('Primary request URL: {}'.format(URL))
-            r = requests.get(URL, timeout=60)
-            if '<OutputMessage>No items found.</OutputMessage>' not in r.text and '<ERROR>' not in r.text:
-                # Extract taxon_id
-                list = r.text.split("Id>")
-            else:
-                # Alternative (less stringent) request
-                # https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=Carassius auratus
-                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term={0}'.format(species_name)
-                print('Secondary request URL: {}'.format(URL))
-                r = requests.get(URL, timeout=60)
-                if '<OutputMessage>No items found.</OutputMessage>' not in r.text and '<ERROR>' not in r.text:
-                    # Extract taxon_id
-                    list = r.text.split("Id>")
-                else:
-                    TAXON_ID = None
-            print('list:')
-            for item in list:
-                print(item)
-            # This does return also a value if the request result is empty!!!
-            # In that case, the program crashes.
-            TAXON_ID = list[1][:-2]
-            if not TAXON_ID.isdigit():
-                print('{0} not found in NCBI species database'.format(species_name))
-                TAXON_ID = None
-            # Sleep for online requests (otherwise you'll be blocked after a while!)
-            time.sleep(2)
-        except Exception as ex:
-            i += 6
-            if VERBOSE: print('Unexpected server response:\n{0}\n\nError: {1}\n\nTrying again...\n'.format(text, str(ex)))
-            # Wait if server returns an error (mostly because you are blocked or the network is down)
-            time.sleep(i**2)
-            continue
-        # If there were no exceptions (= we got the taxon_id), break out of the while loop
-        else:
-            break
-    return TAXON_ID
+    ncbi = NCBITaxa()
+    taxon_id_list = ncbi.get_name_translator([species_name])
+    taxon_id = taxon_id_list[species_name][0]
+    # Check that something sensinble was returned
+    if isinstance(taxon_id, int) and taxon_id > 0:
+        print('taxon_id for {0}: {1}'.format(species_name, taxon_id))
+    else:
+        taxon_id = None
+        print('No taxon_id for {0}. NCBI returned: {1}'.format(species_name, taxon_id_list))
+    #return TAXON_ID
+    return taxon_id
 
 # This sends a species id to NCBI and returns to which of the phyla within taxon_dictionary.py
 # this species belongs to.
@@ -543,7 +513,10 @@ def get_fully_sequenced_genomes(CSV_FILE):
         print('species_name = {0}'.format(species_name))
         TAXON_ID, phylum = get_taxon_id_and_phylum(species_name)
         print('TAXON_ID: {0}, phylum: {1}'.format(TAXON_ID, phylum))
-        full_genome_dictionary[phylum] += 1
+        # If phylum cannot be resolved via NBI, this would give an error when trying to increment the
+        # number of fully sequenced genomes!
+        if phylum != 'unknown':
+            full_genome_dictionary[phylum] += 1
         print('Adding +1 to fully sequenced {0}'.format(phylum))
     print(str(full_genome_dictionary))
     return full_genome_dictionary
