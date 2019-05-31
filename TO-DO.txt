@@ -1,0 +1,7 @@
+When adding a new synonym, it needs to added to two files!!! To the master_dictionary.py and taxon_data.py. And it needs to added at multiple places (for each taxon once in the taxon_data.py file)
+It should only be necessary to add it once to one file!
+
+Automatic downloading of GI list files!
+
+When a species cannot be found from NCBI taxonomy database, amn error is generated (the renaming of e.g. Achalarus lyciades does this at the moment).
+The fix is to add the species data (scientific name, taxon_id and phylum) manually to the sqlite3 database.
