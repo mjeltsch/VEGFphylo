@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.8.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>NP_004460.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>vascular endothelial growth factor D preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>354</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>NP_004460.1</Iteration_query-ID>
+  <Iteration_query-def>vascular endothelial growth factor D preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>354</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1536046601|ref|XP_027211553.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Penaeus vannamei]</Hit_def>
+  <Hit_accession>XP_027211553</Hit_accession>
+  <Hit_len>292</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>5.96783e-06</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>245</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>279</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>SRSASHRSTRFAATFYDIETLKVIDEEWQRTQ-------CSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCS----HSKKLCPIDMLWDSNKCKCVLQEENPLAG</Hsp_qseq>
+      <Hsp_hseq>THASRARERRDANMGGGKQFFGLTPKEWKKIGKLITKMCCKPIKTMVELPT--GGDLNVQLKPSCVAVRRCSGCCDSPLFECRPTK---VTEKKFKVIAMGSEVPSR-KIWVDEHKACEC---SCREREEHCNKTIHFYDAATCSCKCLSGMKNCSNDKVWDEKRCACVCKKEKKCRG</Hsp_hseq>
+      <Hsp_midline>+ ++  R  R A      +   +  +EW++         C P +T VE+ +  G   N   KP CV V RC GCC+     C  T    ++++ F++    + VP    + V  H  C+C   + R       ++I   +   CS       K C  D +WD  +C CV ++E    G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|321474551|gb|EFX85516.1|</Hit_id>
+  <Hit_def>hypothetical protein DAPPUDRAFT_98897 [Daphnia pulex]</Hit_def>
+  <Hit_accession>EFX85516</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>7.29552e-05</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>TQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNT--STSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>ADCKPRKIPVEIPKE----PNVSWLPTCALVERCGGCCKHERLHCVPVPEDITMMKKKVIAVNNKGVYV-NVTHVSIEKHNKCKC----------------------QCKVKASDCNALQHYDKDNCRCVCKQ---TAGSKPGSKPKQPT-CKSPLYWDERSCKCRC</Hsp_hseq>
+      <Hsp_midline>  C PR+  VE+  E     N  + P C  V RCGGCC  E L C+      + + K++  ++     V  +  V +  H  CKC                      +C      C     +D + C+CV ++    AG++  S  ++P  C   + +DE  C+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1022773834|gb|KZS17872.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor C-like protein [Daphnia magna]</Hit_def>
+  <Hit_accession>KZS17872</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>9.01604e-05</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>185</Hsp_hit-from>
+      <Hsp_hit-to>334</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>DIETLKVIDE--EWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVP-VKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>DPEVLQKANEIIKDRSADCKPRKIPVEIPKE----PNITWLPACALVERCGGCCKHESLQCVPVPEDITMMKKKVVAVNNKGVYLNVKHVNIEKHNKCRC----------------------QCKVKASDCNPQQIYDKNNCRCVCKQN----GSKSGRSMQQ--TCKAPLYWDERSCKCRC</Hsp_hseq>
+      <Hsp_midline>D E L+  +E  + +   C PR+  VE+  E     N  + P C  V RCGGCC  ESL C+         +   ++V    V   V  V +  H  C+C                      +C      C    ++D N C+CV ++     G++    +Q+   C   + +DE  C+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1232017981|gb|ASU10867.1|</Hit_id>
+  <Hit_def>PDGF and VEGF related factor 1 [Pacifastacus leniusculus]</Hit_def>
+  <Hit_accession>ASU10867</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000904011</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>236</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>QRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI---SVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCS-----HSKKLCPIDMLWDSNKCKCV</Hsp_qseq>
+      <Hsp_hseq>KKVQCNPKKVVVELTNSDPHAVT--LRPSCVYIKQCGGCCDSHHLECRPIQTKNKRFKVLAIDKRTTALAGPQAFRTVIVQEHKKCRC-ECKVRAEHCT---GSQMYNGDACSCYCSPETRGNCPSGQVWDEKQCGCV</Hsp_hseq>
+      <Hsp_midline>++ QC+P++  VE+ +    +     +P CV + +CGGCC+   L C    T     ++  I   +  L        V V  H  C+C     R  +       Q+   D CS      ++  CP   +WD  +C CV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|290462927|gb|ADD24511.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor toxin [Lepeophtheirus salmonis]</Hit_def>
+  <Hit_accession>ADD24511</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00304506</Hsp_evalue>
+      <Hsp_query-from>111</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>CSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKC</Hsp_qseq>
+      <Hsp_hseq>CETELTTIELDIE-KKDPNSFYYPTCVRVERCNGCCSHNLLSCQAKESGTIDITIMRANQRTNSV-EYLKIPVIQHKTCSC</Hsp_hseq>
+      <Hsp_midline>C    T +E+  E  K  N+F+ P CV V RC GCC+   L C    +  I   +   +    SV E + + V  H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|321460513|gb|EFX71555.1|</Hit_id>
+  <Hit_def>hypothetical protein DAPPUDRAFT_308843 [Daphnia pulex]</Hit_def>
+  <Hit_accession>EFX71555</Hit_accession>
+  <Hit_len>392</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.00344756</Hsp_evalue>
+      <Hsp_query-from>111</Hsp_query-from>
+      <Hsp_query-to>271</Hsp_query-to>
+      <Hsp_hit-from>152</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>CSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELV---PVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCS----HSKKLCPID---MLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCEC</Hsp_qseq>
+      <Hsp_hseq>CMPELTTVPLMPNTDSSV--LFYPTCTRIERCGGCCSSDLLVCEPIRTEIVHFQVLKTQYAGGSRMKFAGKESVPVEKHTACKCQCKVKESDCTI--NQAYVPNACRCECSNIDDRRKCESDNQTRYWDSRNCMCRCR--------DDGYNKQ----CSTGFYFNEEICKC</Hsp_hseq>
+      <Hsp_midline>C P  T V +      S    F P C  + RCGGCC+ + L+C    T  +  Q+ +      S  +      V V  HT CKC         +I      +P   RC       ++ C  D     WDS  C C  +        +D  + Q    C     F+E+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1022767853|gb|KZS12684.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A precursor [Daphnia magna]</Hit_def>
+  <Hit_accession>KZS12684</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00634297</Hsp_evalue>
+      <Hsp_query-from>127</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>231</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>STNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELV---PVKVANHTGCKC</Hsp_qseq>
+      <Hsp_hseq>DSSVLFYPTCTRVERCGGCCSSDLLVCEPIKTEIVHFQVLKTQYAGGSRMKFAGKESVPVEKHTACKC</Hsp_hseq>
+      <Hsp_midline> ++  F P C  V RCGGCC+ + L+C    T  +  Q+ +      S  +      V V  HT CKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1516444105|gb|ROT77078.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A [Penaeus vannamei]</Hit_def>
+  <Hit_accession>ROT77078</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00820057</Hsp_evalue>
+      <Hsp_query-from>111</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>243</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>CSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKC---LPTAPRHPYSIIRRSI</Hsp_qseq>
+      <Hsp_hseq>CKPIKTMVELPT--GGDLNVQLKPSCVAVRRCSGCCDSPLFECRPTK---VTEKKFKVIAMGSEVPSR-KIWVDEHKACECSCRLQVSLRHEELLERQGM</Hsp_hseq>
+      <Hsp_midline>C P +T VE+ +  G   N   KP CV V RC GCC+     C  T    ++++ F++    + VP    + V  H  C+C   L  + RH   + R+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1483245294|gb|AYD41604.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 2, partial [Procambarus clarkii]</Hit_def>
+  <Hit_accession>AYD41604</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.0194055</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>LEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISV</Hsp_qseq>
+      <Hsp_hseq>IENLHRLNAVSDINDFMAMFNLSKPKDKEEEKPS-ITTRFG------NSGEIPAEDAVMANCKPELTTV--ALDLPVEPSTLFFPTCVRLEQCGGCCYGPLLTCRPTVTKLVKYKVLKTSL</Hsp_hseq>
+      <Hsp_midline>+E L R+    D   +     L      +    S  +TRF        + ++  E+     C P  T V  A +L    +T F P CV + +CGGCC    L C  T T  +  ++ + S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1067091838|ref|XP_018007711.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC108665467 [Hyalella azteca]</Hit_def>
+  <Hit_accession>XP_018007711</Hit_accession>
+  <Hit_len>887</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.0225422</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>349</Hsp_hit-from>
+      <Hsp_hit-to>472</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>SMDSRSASHRSTRFAATFYDIETLKVIDEEWQ----RTQCS-PRETCVEVASELGKSTNTFFKPPCVNVFRCG---GCCNEESLICMNTSTSYISKQLFEISVPL--TSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>SLKNRKTSHRILQQSLVSKDARLVRLASENVRFVMANAQCATPVRRCVDLSANQTTSGKTYW-PRCAIVYRCGEDAGCCYSPEHVCSVKESHDIDLHFFYMTFGTEKTGVDKLT---FENHTSCECRP</Hsp_hseq>
+      <Hsp_midline>S+ +R  SHR  + +    D   +++  E  +      QC+ P   CV++++    S  T++ P C  V+RCG   GCC     +C    +  I    F ++     T V +L      NHT C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1516444104|gb|ROT77077.1|</Hit_id>
+  <Hit_def>hypothetical protein C7M84_004292 [Penaeus vannamei]</Hit_def>
+  <Hit_accession>ROT77077</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0349964</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>QRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI---------SVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>KNVQCKPKKAVVELPND--EKPLVMLKPSCVYIKQCGGCCDSPLLEC---RPEVVKNRKFKVLAFEKKVNNKLRFESVQTLKTITVQEHKKCKC----------------------QCKEREEHCTEHQVYDASACRCTCPADVSKS-------------CSDGKIWDERKCACVC</Hsp_hseq>
+      <Hsp_midline>+  QC P++  VE+ ++  +      KP CV + +CGGCC+   L C       +  + F++          +   SV  L  + V  H  CKC                      +C   ++ C    ++D++ C+C    +   +             C    ++DE +C CVC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1536046599|ref|XP_027211552.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: vascular endothelial growth factor D-like [Penaeus vannamei]</Hit_def>
+  <Hit_accession>XP_027211552</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0531459</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>QRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI---------SVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>KNVQCKPKKAVVELPND--EKPLVMLKPSCVYIKQCGGCCDSPLLEC---RPEVVKNRKFKVLAFEKKVNNKLRFESVQTLKTITVQEHKKCKC----------------------QCKEREEHCTEHQVYDASACRCTCPADVSKS-------------CSDGKIWDERKCACVC</Hsp_hseq>
+      <Hsp_midline>+  QC P++  VE+ ++  +      KP CV + +CGGCC+   L C       +  + F++          +   SV  L  + V  H  CKC                      +C   ++ C    ++D++ C+C    +   +             C    ++DE +C CVC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1495855477|gb|AYN64310.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 5 [Penaeus vannamei]</Hit_def>
+  <Hit_accession>AYN64310</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0566322</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>160</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>QRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI---------SVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>KNVQCKPKKAVVELPND--EKPLVMLKPSCVYIKQCGGCCDSPLLEC---RPEVVKNRKFKVLAFEKKVNNKLRFESVQTLKTITVQEHKKCKC----------------------QCKEREEHCTEHQVYDASACRCTCPADVSKS-------------CSDGKIWDERKCACVC</Hsp_hseq>
+      <Hsp_midline>+  QC P++  VE+ ++  +      KP CV + +CGGCC+   L C       +  + F++          +   SV  L  + V  H  CKC                      +C   ++ C    ++D++ C+C    +   +             C    ++DE +C CVC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1536093389|ref|XP_027236575.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC113827841 [Penaeus vannamei]</Hit_def>
+  <Hit_accession>XP_027236575</Hit_accession>
+  <Hit_len>336</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0741651</Hsp_evalue>
+      <Hsp_query-from>134</Hsp_query-from>
+      <Hsp_query-to>269</Hsp_query-to>
+      <Hsp_hit-from>202</Hsp_hit-from>
+      <Hsp_hit-to>327</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>PPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHS----KKLC-PIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRC</Hsp_qseq>
+      <Hsp_hseq>PTCIERKVCGGCCSVGRL-CVATKTHPISQQVIQLGTN-SATPVLLNVTEDEECECVCKVKASDCPNTQRQEYDQEHCMCRCKSSLREEKAKCESVGNFWDYNSCRCVCRS---LAGRE----------CSSGYFFDELSC</Hsp_hseq>
+      <Hsp_midline>P C+    CGGCC+   L C+ T T  IS+Q+ ++    ++ P L+ V       C C   A   P +  +   Q     RC  S    K  C  +   WD N C+CV +    LAG E          C     FDE  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|321457316|gb|EFX68405.1|</Hit_id>
+  <Hit_def>hypothetical protein DAPPUDRAFT_260184 [Daphnia pulex]</Hit_def>
+  <Hit_accession>EFX68405</Hit_accession>
+  <Hit_len>153</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0955118</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>ASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFE</Hsp_qseq>
+      <Hsp_hseq>ANMLNTDSSVLFYPSCTRIERCGGCCSSDLLVCEPIQTEIVHFQALK</Hsp_hseq>
+      <Hsp_midline>A+ L   ++  F P C  + RCGGCC+ + L+C    T  +  Q  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>229006</Statistics_db-num>
+      <Statistics_db-len>89169370</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
