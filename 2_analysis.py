@@ -55,7 +55,7 @@ def get_species_number_from_ncbi(taxon, taxon_data):
     URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(TAXON)
     r = requests.get(URL)
     text = r.text
-    #print(text)
+    print('species_number_text:\n{0}'.format(text))
     number = int(text.split("Count>")[1][:-2])
     for item in SUBTRACT_TAXA:
         URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item)
@@ -102,9 +102,9 @@ def get_species_number_from_ncbi_for_string_of_taxa(string_of_taxa):
 def get_taxon_id_and_phylum(species_name):
     # Check whether the species is in the local sqlite database
     print('Getting id & phylum for \'{0}\', checking local sqlite database first.\n'.format(species_name), end = '')
-    #if species_name in sqlite_species_dict:
-    #    TAXON_ID = sqlite_species_dict[species_name][1]
-    #    PHYLUM = sqlite_species_dict[species_name][2]
+    if species_name in sqlite_species_dict:
+        TAXON_ID = sqlite_species_dict[species_name][1]
+        PHYLUM = sqlite_species_dict[species_name][2]
     #else:
     print("Species not in local sqlite database. Getting data from NCBI... ")
     TAXON_ID = get_taxon_id_from_NCBI(species_name)
@@ -196,7 +196,7 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             break
     return phylum
 
-def write_to_html_scrutinize_file(list_to_scrutinize):
+def write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize):
     global TOTAL_UNKNOWN_COUNT_HTML_CHECK
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
     list_to_scrutinize.sort(key=lambda x: x[2])
@@ -219,7 +219,6 @@ body { font-family: "Open Sans", Arial; }
 </script>
 </head>
 <body>'''
-    print('Writing to HTML file...')
     #for item in sorted_list:
     new_type = ''
     i = 1
@@ -251,11 +250,17 @@ body { font-family: "Open Sans", Arial; }
         new_type = item[2]
         i += 1
     #lineitem += '\n</body>\n</html>\n'
-    if not os.path.isfile(HTML_SCRUTINIZE_FILE):
-        with open(HTML_SCRUTINIZE_FILE, 'w') as file:
+    HTML_DIR = '{0}/data/analysis_results/{1}'.format(APPLICATION_PATH, protein)
+    HTML_FILE = '{0}/{1}.html'.format(HTML_DIR, taxon)
+    if not os.path.isdir(HTML_DIR):
+        os.mkdir(HTML_DIR)
+    if not os.path.isfile(HTML_FILE):
+        with open(HTML_FILE, 'w') as file:
             file.write(preamble)
-    with open(HTML_SCRUTINIZE_FILE, 'a') as file:
+            print('\nCreated file {}.'.format(HTML_FILE))
+    with open(HTML_FILE, 'a') as file:
         file.write(html_text)
+        print('\nWrote HTML file {0}.'.format(HTML_FILE))
 
 def get_protein_data(taxon):
     global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn
@@ -263,11 +268,13 @@ def get_protein_data(taxon):
         return []
     else:
         new_protein_data = {}
-        list_to_scrutinize = []
         print('\n---------------')
         print('Analyzing taxon {0}'.format(taxon).upper())
         print('---------------\n')
         for protein, protein_data in master_dictionary.items():
+            list_to_scrutinize_ortholog = []
+            list_to_scrutinize_paralog = []
+            list_to_scrutinize_unknown = []
             #print('\n\nSTART\nPROTEIN: {0}\nTAXON: {1}\n\n'.format(protein, taxon))
             #print('master_dictionary:\n{0}\n\n'.format(master_dictionary))
             #time.sleep(2)
@@ -328,6 +335,7 @@ def get_protein_data(taxon):
                             print('True positive found: {0}'.format(synonym))
                             #list_to_scrutinize.append([taxon, protein, synonym, hit_id, hit_accession_no, hit.description])
                             ortholog_group = protein_data[3][0]
+                            list_to_scrutinize_ortholog.append([taxon, protein, 'ortholog', hit_id, hit_accession_no, hit.description])
                             raise category_found
                     for related_protein in protein_data[4]:
                         if related_protein.lower() in str(hit.description).lower():
@@ -338,8 +346,10 @@ def get_protein_data(taxon):
                             # This is why we need the synonym dictionary
                             try:
                                 ortholog_group = synonym_dictionary[related_protein]
+                                list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
                             except Exception as err:
                                 ortholog_group = 'None'
+                                list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
                             raise category_found
                     # This part of the Try block gets only executed when both for-loops are finshing without
                     # raising a category_found exception
@@ -349,15 +359,17 @@ def get_protein_data(taxon):
                         TOTAL_COUNT += 1
                         print('True positive found after backcheck blast: {0}'.format(protein_data[3][0]))
                         ortholog_group = protein_data[3][0]
+                        list_to_scrutinize_ortholog.append([taxon, protein, 'ortholog', hit_id, hit_accession_no, hit.description])
                     elif what_kind_of_protein == 'related_protein':
                         negative_dict[related_protein] += 1
                         TOTAL_COUNT += 1
                         #print('Potential false-positive found: {0}'.format(related_protein))
                         print('Potential false-positive found.')
                         ortholog_group = 'None'
+                        list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
-                        list_to_scrutinize.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
+                        list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
                         ortholog_group = 'None'
                         u += 1
                         TOTAL_COUNT += 1
@@ -372,6 +384,20 @@ def get_protein_data(taxon):
                     print('\n\nINSERT PROTEIN:\n{0}\n\n'.format(BLASTHIT))
                     print(str(db_insert_protein(BLASTHIT, True))+'\n')
                 i += 1
+            # Write ortholog, paralog and unknown lists individually for each protein/taxon
+            if len(list_to_scrutinize_ortholog) > 0:
+                write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_ortholog)
+            else:
+                print('No orthologs to write to HTML file.')
+            if len(list_to_scrutinize_paralog) > 0:
+                write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_paralog)
+            else:
+                print('No paralogs to write to HTML file.')
+            if len(list_to_scrutinize_unknown) > 0:
+                write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_unknown)
+            else:
+                print('No unknown proteins to write to HTML file.')
+
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
             print('Number of true-positives:'.format())
             control_counter = 0
@@ -386,12 +412,9 @@ def get_protein_data(taxon):
             control_counter += u
             print('{0} out of {1} hits were analyzed and {2} could be assigned into categories.\n\n'.format(i, number, control_counter))
             new_protein_data[protein] = [number, negative_dict, positive_dict]
-        print('Analysis for taxon {0} completed.\n'.format(taxon))
+        print('Analysis for all proteins in taxon {0} completed.\n'.format(taxon))
         print('new_protein_data: {0}'.format(new_protein_data))
-        if len(list_to_scrutinize) > 0:
-            write_to_html_scrutinize_file(list_to_scrutinize)
-        else:
-            print('Nothing to write to HTML file...')
+
         # Returns a dictionary with related proteins and the number of hits for them (according to fasta description)
         print('\nRETURNED PROTEIN_DATA FOR TAXON {0}:\n'.format(taxon))
         for protein, value in new_protein_data.items():
@@ -649,14 +672,16 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
         if VERBOSE: print('Unknown error: {0}'.format(err))
     else:
         sqlite_dict = {}
+        i = 0
         for row in results:
             sqlite_dict[row[0]] = row
-        print('Loading of table {0} from SQLite database was successful:\n'.format(TABLENAME))
+            i += 1
+        print('Loading of table {0} from SQLite database was successful ({1} entries):\n'.format(TABLENAME, i))
         print('table {0}:\n{1}\n\n'.format(TABLENAME, sqlite_dict))
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, HTML_SCRUTINIZE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
@@ -671,11 +696,7 @@ def run():
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
-    HTML_SCRUTINIZE_FILE = '{0}/data/check_manually.html'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
-    # Delete the old HTML file
-    if os.path.isfile(HTML_SCRUTINIZE_FILE):
-        os.remove(HTML_SCRUTINIZE_FILE)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
@@ -742,7 +763,7 @@ def run():
         print('Successfully formatted the taxon data file.')
     else:
         print('Formating the taxon data file failed.')
-    save_stats = '\nAnalyzed sequences: {0} (out of which unclassified: {1})\nUnclassified sequences written to {2}: {3}'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, HTML_SCRUTINIZE_FILE, TOTAL_UNKNOWN_COUNT_HTML_CHECK)
+    save_stats = '\nAnalyzed sequences: {0} (out of which unclassified: {1})\nUnclassified sequences written to {2}: {3}'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, '/data/primary_blast_results/unknown/multiple_scrutinize.html', TOTAL_UNKNOWN_COUNT_HTML_CHECK)
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)
     print(save_stats)
