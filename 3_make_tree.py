@@ -227,6 +227,7 @@ def format_false_positives(protein, list_of_categories):
     return formatted_text_strings
 
 def drawtree(TREEFILE):
+    # Red to White
     color_dict = {  '-':"White",
                     '0':"#FF0000",
                     '1':"#FF1111",
@@ -239,18 +240,19 @@ def drawtree(TREEFILE):
                     '8':"#FFFFFF",
                     '9':"#FFFFFF",
                     '10':"#FFFFFF"}
-    color_dict = {  '-': "White",
-                    '0':"#FF8888",
-                    '1': "#FF9F88",
-                    '2': "#FFB788",
-                    '3': "#FFCF88",
-                    '4': "#FFE788",
-                    '5': "#FFFF88",
-                    '6': "#E7FF88",
-                    '7': "#CFFF88",
-                    '8': "#B7FF88",
-                    '9': "#9FFF88",
-                    '10': "#88FF88"}
+    # Red to Green (via Yellow)
+    #color_dict = {  '-': "White",
+    #                '0':"#FF8888",
+    #                '1': "#FF9F88",
+    #                '2': "#FFB788",
+    #                '3': "#FFCF88",
+    #                '4': "#FFE788",
+    #                '5': "#FFFF88",
+    #                '6': "#E7FF88",
+    #                '7': "#CFFF88",
+    #                '8': "#B7FF88",
+    #                '9': "#9FFF88",
+    #                '10': "#88FF88"}
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
@@ -438,11 +440,37 @@ def drawtree(TREEFILE):
                     #(t & animal_class_name).add_face(textFace, 13, "aligned")
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 5
+
+                    # Protein colors
+                    zero_color = '#FFFFE0' # LightYellow
+                    first_color = '#98FB98' # PaleGreen
+                    second_color = '#FFE4E1' # MistyRose
+                    third_color = '#D8BFD8' # Thistle
+                    # Make them darker
+                    zero_color = '#00AAAA' # Cyan ->darker
+                    first_color = '#03BA03' # PaleGreen
+                    second_color = '#AD78AD' # Thistle
+                    third_color = '#808080' # Grey
+                    prot_color_dict = {    'PDGF-A':first_color,
+                                            'PDGF-B':first_color,
+                                            'PDGF-C':first_color,
+                                            'PDGF-D':first_color,
+                                            'PlGF-1':second_color,
+                                            'VEGF-A121':first_color,
+                                            'VEGF-A165':first_color,
+                                            'VEGF-A206':first_color,
+                                            'VEGF-B167':second_color,
+                                            'VEGF-B186':second_color,
+                                            'VEGF-C':zero_color,
+                                            'VEGF-D':second_color,
+                                            'VEGF-F':third_color}
+
                     for protein, value in ordered_protein_dict.items():
                         textFace = TextFace('', fsize = 16)
                         (t & animal_class_name).add_face(textFace, i, "aligned")
                         i += 1
-                        textFace2 = TextFace(' '+protein, fsize = 24, tight_text = True, fstyle = "italic")
+                        font_color = prot_color_dict[protein]
+                        textFace2 = TextFace(' '+protein, fsize = 24, tight_text = True, fgcolor=prot_color_dict[protein], fstyle = "italic", bold= True)
                         (t & animal_class_name).add_face(textFace2, i, "aligned")
                         i += 1
 
@@ -536,6 +564,32 @@ def drawtree(TREEFILE):
             print('Setting leaf style for node {0}.'.format(n1))
             item.set_style(leafstyle)
 
+    # Define background colors for parts of the tree
+    nst1 = NodeStyle()
+    nst1["bgcolor"] = "LightYellow"
+    nst1 = NodeStyle()
+    nst1["bgcolor"] = "LightCyan"
+    nst2 = NodeStyle()
+    nst2["bgcolor"] = "PaleGreen"
+    nst3 = NodeStyle()
+    nst3["bgcolor"] = "Thistle"
+    nst4 = NodeStyle()
+    nst4["bgcolor"] = "LightGrey"
+
+
+    n_vegfc = t.get_common_ancestor("porifera", "placozoa")
+    n_vegfc.set_style(nst1)
+    n_vegfa_pdgf = t.get_common_ancestor("cnidaria", "xenacoelomorpha")
+    n_vegfa_pdgf.set_style(nst2)
+    n_vegfb = t.get_common_ancestor("cyclostomata", "chondrichthyes")
+    n_vegfb.set_style(nst3)
+    n_vegff = t.get_common_ancestor("aves", "toxicofera")
+    n_vegff.set_style(nst4)
+#    n3 = t.get_common_ancestor("c1", "c2", "c3")
+#    n3.set_style(nst3)
+#    n4 = t.get_common_ancestor("b3", "b4")
+#    n4.set_style(nst4)
+
     # Add description to treefile
     description_text = "Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
     # Add statistics to description
@@ -543,7 +597,7 @@ def drawtree(TREEFILE):
         lines = log_file.read().splitlines()
         description_text += lines[-2]
     # Add other stuff to description
-    description_text += " ";
+    description_text += "\nRed dotted lines in the tree indicate paraphyletic relationships.";
 
     # Add legend
     textFaceLegend = TextFace(description_text, fsize = 11)
