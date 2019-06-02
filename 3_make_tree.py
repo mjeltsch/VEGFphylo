@@ -442,11 +442,11 @@ def drawtree(TREEFILE):
                     i = 5
 
                     # Protein colors
-                    zero_color = '#FFFFE0' # LightYellow
-                    first_color = '#98FB98' # PaleGreen
-                    second_color = '#FFE4E1' # MistyRose
-                    third_color = '#D8BFD8' # Thistle
-                    # Make them darker
+                    #zero_color = '#FFFFE0' # LightYellow
+                    #first_color = '#98FB98' # PaleGreen
+                    #second_color = '#FFE4E1' # MistyRose
+                    #third_color = '#D8BFD8' # Thistle
+                    # Protein colors corresponding to the tree background color
                     zero_color = '#00AAAA' # Cyan ->darker
                     first_color = '#03BA03' # PaleGreen
                     second_color = '#AD78AD' # Thistle
@@ -597,10 +597,10 @@ def drawtree(TREEFILE):
         lines = log_file.read().splitlines()
         description_text += lines[-2]
     # Add other stuff to description
-    description_text += "\nRed dotted lines in the tree indicate paraphyletic relationships.";
+    description_text += "\nRed dotted lines in the tree indicate paraphyletic relationships.\nThe tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n ";
 
     # Add legend
-    textFaceLegend = TextFace(description_text, fsize = 11)
+    textFaceLegend = TextFace(description_text, fsize = 18)
     ts.legend.add_face(textFaceLegend, column = 0)
     t.render(SVGFILE, tree_style = ts, units = "mm", h = 600)
     print('Drawing tree completed.')
