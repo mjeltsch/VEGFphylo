@@ -43,60 +43,46 @@ from ete3 import NCBITaxa
 class category_found(Exception):
     pass
 
+class species_number_error(Exception):
+    pass
+
+
 # Parse command line
 parser = argparse.ArgumentParser()
 parser.add_argument("--directory", nargs='?', help = "Specify the subdirectory where the data is!", default = 'data/primary_blast_results/')
 args = parser.parse_args()
 
+# This will conenct to NCBI taxonomy database and retrieve the number of species for a given phylum
+# If the NCBI database is down, this will loop forever!
 def get_species_number_from_ncbi(taxon, taxon_data):
     print('Retrieving species number for {0}... -> '.format(taxon), end='')
     # Determine, whether a taxon is to be excluded from the request
-    TAXON, SUBTRACT_TAXA = expand_complex_taxa(taxon_data[0])
-    URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(TAXON)
-    r = requests.get(URL)
-    text = r.text
-    print('species_number_text:\n{0}'.format(text))
-    number = int(text.split("Count>")[1][:-2])
-    for item in SUBTRACT_TAXA:
-        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        number -= int(text.split("Count>")[1][:-2])
-    return number
-
-# This takes complex taxon data string and returns a tuple of two lists (a list of taxa to add and a list of taxa to be subtracted)
-# E.g. '8504-1329911' -> 8504, [1329911]
-def expand_complex_taxa_string_to_lists(taxon_data):
-    TAXON = taxon_data
-    SUBTRACT_TAXA = []
-    try:
-        print('Expanding complex taxon data to tuple: {0} -> '.format(taxon_data), end = '')
-        taxon_list = taxon_data.split('-')
-        TAXON = taxon_list[0]
-        SUBTRACT_TAXA = taxon_list[1:]
-    except Exception as err:
-        print('Nothing to expand from {0} or error expanding. Error: {1}'.format(taxon_data, err))
-    print('{0}, {1}'.format(TAXON, SUBTRACT_TAXA))
-    return TAXON, SUBTRACT_TAXA
-
-def get_species_number_from_ncbi_for_string_of_taxa(string_of_taxa):
-    print('Retrieving species number for {0}... -> '.format(string_of_taxa), end='')
-    # Determine, whether a taxon is to be excluded from the request
-    ADD_TAXA, SUBTRACT_TAXA = expand_complex_taxa_string_to_lists(string_of_taxa)
-    number = 0
-    for item in ADD_TAXA:
-        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(TAXON)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        number += int(text.split("Count>")[1][:-2])
-    for item in SUBTRACT_TAXA:
-        URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item)
-        r = requests.get(URL)
-        text = r.text
-        #print(text)
-        number -= int(text.split("Count>")[1][:-2])
+    TAXA_LIST = expand_complex_taxa(taxon_data[0])
+    while True:
+        try:
+            number = 0
+            for item in TAXA_LIST:
+                sign = item[0]
+                URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=taxonomy&term=txid{0}[subtree]+AND+specified[prop]+NOT+subspecies[rank]'.format(item[1:])
+                print('URL: {0}'.format(URL))
+                r = requests.get(URL)
+                text = r.text
+                print('species_number_text:\n{0}'.format(text))
+                if "<ERROR>" in text:
+                    raise species_number_error
+                # Add only the first number and substract all following numbers
+                if sign == '+':
+                    number += int(text.split("Count>")[1][:-2])
+                if sign == '-':
+                    number -= int(text.split("Count>")[1][:-2])
+        except species_number_error:
+            print('Remote database error. Waiting 30 seconds and repeating request.')
+            time.sleep(30)
+        except Exception as err:
+            print('Failed to fetch species number. Error: {0}'.format(err))
+        else:
+            # the "else" is only executed if everything under the "try" has completed without error
+            break
     return number
 
 def get_taxon_id_and_phylum(species_name):
@@ -123,17 +109,17 @@ def get_taxon_id_and_phylum(species_name):
 # There should be smarter way to get these!
 def get_sequence_number(taxon, taxon_data):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
-    TAXON, SUBTRACT_TAXA = expand_complex_taxa(taxon_data[0])
-    SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, TAXON)
-    with open(SEQUENCE_GI_LIST) as file:
-        for i, l in enumerate(file):
-            pass
-    for item in SUBTRACT_TAXA:
-        SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, item)
+    TAXA_LIST = expand_complex_taxa(taxon_data[0])
+    i = 0
+    for item in TAXA_LIST:
+        SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, item[1:])
         with open(SEQUENCE_GI_LIST) as file:
             for j, m in enumerate(file):
                 pass
-        i -= j
+        if item[0] == '+':
+            i += j
+        elif item[0] == '-':
+            i -= j
     return i + 1
 
 # This should be replaced by the corresponding function from ETE3
