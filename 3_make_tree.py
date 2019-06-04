@@ -223,10 +223,11 @@ def format_false_positives(protein, list_of_categories):
     if total_hits == 0:
         formatted_text_strings = '',''
     else:
-        formatted_text_strings = str(true_positive_counter), '(paralogs: {0}, ?: {1}, total: {2}) '.format(total_related_counter, unknown_count, total_hits)
+        formatted_text_strings = str(true_positive_counter), '(paral.-{0}, ?-{1}, ∑-{2}) '.format(total_related_counter, unknown_count, total_hits)
     return formatted_text_strings
 
 def drawtree(TREEFILE):
+    global number_dictionary
     # Red to White
     color_dict = {  '-':"White",
                     '0':"#FF0000",
@@ -384,6 +385,11 @@ def drawtree(TREEFILE):
     #         print("key " + key + " is not present in the tree file. Skipping...")
 
     # ADD NODE STYLE & INFORMATION (TEXT, IMAGES)
+
+    # To have a short token that stands in in the SVG file for the phylum/protein combination to make up the link URL
+    number_dictionary = {}
+    counter = 0
+
     for node in t.traverse():
         if node.is_leaf():
             animal_class_name = node.name
@@ -447,7 +453,7 @@ def drawtree(TREEFILE):
                     #second_color = '#FFE4E1' # MistyRose
                     #third_color = '#D8BFD8' # Thistle
                     # Protein colors corresponding to the tree background color
-                    zero_color = '#00AAAA' # Cyan ->darker
+                    zero_color = 'DarkTurquoise' # Cyan ->darker
                     first_color = '#03BA03' # PaleGreen
                     second_color = '#AD78AD' # Thistle
                     third_color = '#808080' # Grey
@@ -516,10 +522,13 @@ def drawtree(TREEFILE):
                     i += 1
                     #
                     # IN NORMAL FONT
-                    textFace2 = TextFace(' '+formatted_text_strings[1], fsize = 16, tight_text = True)
+                    dict_key = str(counter).zfill(4)
+                    number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html">'.format(protein, animal_class_name)
+                    textFace2 = TextFace('£'+dict_key+formatted_text_strings[1]+'£', fsize = 16, fgcolor = "MediumBlue", tight_text = True)
                     (t & animal_class_name_with).add_face(textFace2, i, "aligned")
                     textFace2.background.color = color_dict[reliability]
                     i += 1
+                    counter += 1
 
                 # IMAGE
                 svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
@@ -568,7 +577,7 @@ def drawtree(TREEFILE):
     nst1 = NodeStyle()
     nst1["bgcolor"] = "LightYellow"
     nst1 = NodeStyle()
-    nst1["bgcolor"] = "LightCyan"
+    nst1["bgcolor"] = "PaleTurquoise"
     nst2 = NodeStyle()
     nst2["bgcolor"] = "PaleGreen"
     nst3 = NodeStyle()
@@ -597,7 +606,10 @@ def drawtree(TREEFILE):
         lines = log_file.read().splitlines()
         description_text += lines[-2]
     # Add other stuff to description
-    description_text += "\nRed dotted lines in the tree indicate paraphyletic relationships.\nThe tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n ";
+    description_text += '\nRed dotted lines in the tree indicate paraphyletic relationships.\n'
+    description_text += 'The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
+    description_text += 'The red-to-white background of the table indicates a heuristic reliability of the results, where a brighter color indicates a higher reliability. This is\n'
+    description_text += 'calculated using the number of fully sequenced genomes, the number of species in the phylum and the number of protein sequences available for that phylum.\n'
 
     # Add legend
     textFaceLegend = TextFace(description_text, fsize = 18)
@@ -606,7 +618,7 @@ def drawtree(TREEFILE):
     print('Drawing tree completed.')
 
 def run():
-    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary
+    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary, number_dictionary
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -640,6 +652,15 @@ def run():
 
     if os.path.isfile(TREEFILE):
         drawtree(TREEFILE)
+        # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
+        for key, value in number_dictionary.items():
+            command = 'sed -i -e \'s/£{0}/{1}/g\' animalia.svg'.format(key, value)
+            execute_subprocess("Inserting xlinks:\n", command)
+        print('Opened {0} xlinks'.format(len(number_dictionary)))
+        # Replace all end strings (£)
+        command = 'sed -i -e \'s/£/<\/a>/g\' animalia.svg'
+        execute_subprocess("Inserting xlinks:\n", command)
+        # Generate PDF file
         command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
         execute_subprocess("Generating PDF file with the following command:\n", command)
     else:
