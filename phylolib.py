@@ -2,22 +2,39 @@
 # -*- coding: utf-8 -*-
 #
 
-import os, sqlite3, subprocess
+import os, sqlite3, subprocess, re
 
 # This takes complex taxon data and returns a tuple (a string of the main taxon and a list of all taxons to be subtracted)
 # E.g. '8504-1329911' -> 8504, [1329911]
 def expand_complex_taxa(taxon_data):
-    TAXON = taxon_data
-    SUBTRACT_TAXA = []
+    print('taxon_data to expand: {0}'.format(taxon_data))
+    TAXA_LIST = []
     try:
-        print('Expanding complex taxon data to tuple: {0} -> '.format(taxon_data), end = '')
-        taxon_list = taxon_data.split('-')
-        TAXON = taxon_list[0]
-        SUBTRACT_TAXA = taxon_list[1:]
+        print('Expanding complex taxon data to a list: {0} -> '.format(taxon_data), end = '')
+        try:
+            taxon_list = re.split('(+-)',taxon_data)
+            print('taxon_list: {0}'.format(taxon_list))
+        except Exception as err:
+            taxon_list = [taxon_data]
+        # if taxon list starts with a taxon name without prepended +/-, handle the first element separately
+        if taxon_list[0] not in '+-':
+            TAXA_LIST.append('+'+taxon_list[0])
+            taxon_list.pop(0)
+        # Now iterate through the list
+        for item in taxon_list:
+            if item in '+-':
+                sign = item
+            else:
+                if sign == '+':
+                    TAXA_LIST.append('+'+item)
+                elif sign == '-':
+                    TAXA_LIST.append('-'+item)
+                else:
+                    print('Formating error in taxon_id definition.')
     except Exception as err:
         print('Nothing to expand from {0} or error expanding. Error: {1}'.format(taxon_data, err))
-    print('{0}, {1}'.format(TAXON, SUBTRACT_TAXA))
-    return TAXON, SUBTRACT_TAXA
+    print('taxa_list: {0}'.format(TAXA_LIST))
+    return TAXA_LIST
 
 def load_blacklist():
     # All the phyla in the list below have been found in the first screen not to have any VEGF-like molecules
