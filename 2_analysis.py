@@ -91,17 +91,17 @@ def get_taxon_id_and_phylum(species_name):
     if species_name in sqlite_species_dict:
         TAXON_ID = sqlite_species_dict[species_name][1]
         PHYLUM = sqlite_species_dict[species_name][2]
-    #else:
-    print("Species not in local sqlite database. Getting data from NCBI... ")
-    TAXON_ID = get_taxon_id_from_NCBI(species_name)
-    print('=> {0}'.format(TAXON_ID))
-    # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
-    # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
-    # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
-    PHYLUM = get_phylum_from_NCBI(TAXON_ID)
-    print('=> {0}'.format(PHYLUM))
-    if db_insert_species(species_name, TAXON_ID, PHYLUM) != 0:
-        print('New species {0} inserted into database.'.format(species_name))
+    else:
+        print("Species not in local sqlite database. Getting data from NCBI... ")
+        TAXON_ID = get_taxon_id_from_NCBI(species_name)
+        print('=> {0}'.format(TAXON_ID))
+        # Identify to which phylum the species belongs. For this, we need to download the full taxonomy tree for the species (which
+        # is impossible via the API). Hence, we retrieve the full web page for the taxon and look whether any of the phyla from our
+        # TAXON_DICTIONARY_FILE are part of the full taxonomy tree.
+        PHYLUM = get_phylum_from_NCBI(TAXON_ID)
+        print('=> {0}'.format(PHYLUM))
+        if db_insert_species(species_name, TAXON_ID, PHYLUM) != 0:
+            print('New species {0} inserted into database.'.format(species_name))
     return TAXON_ID, PHYLUM
 
 # How many sequences are in the local database for this taxon? The gi files were manually downloaded from
@@ -683,6 +683,9 @@ def run():
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
+    ANALYSIS_RESULTS_DIR = '{0}/data/analysis_results'.format(APPLICATION_PATH)
+    if not os.path.isdir(ANALYSIS_RESULTS_DIR):
+        os.mkdir(ANALYSIS_RESULTS_DIR)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
