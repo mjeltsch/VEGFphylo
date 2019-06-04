@@ -620,6 +620,15 @@ def run():
             #For python 3 compatibility
             pass
 
+    # Determine whether X server is available
+    try:
+        xserver = os.environ['DISPLAY']
+    except Exception as err:
+        print('No Xserver is running! Please start the program like this: xvfb-run ./3_make_tree.py\nIn order for this script to work on a headless server, you need to install xvfb and inkscape: apt install xvfb inkscape'.format())
+        sys.exit()
+    else:
+        print('Xserver running on {0}.'.format(xserver))
+
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
