@@ -12,7 +12,7 @@ def expand_complex_taxa(taxon_data):
     try:
         print('Expanding complex taxon data to a list: {0} -> '.format(taxon_data), end = '')
         try:
-            taxon_list = re.split('(+-)',taxon_data)
+            taxon_list = re.split('([-\+])',taxon_data)
             print('taxon_list: {0}'.format(taxon_list))
         except Exception as err:
             taxon_list = [taxon_data]
