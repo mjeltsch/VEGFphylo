@@ -752,7 +752,7 @@ def run():
         print('Successfully formatted the taxon data file.')
     else:
         print('Formating the taxon data file failed.')
-    save_stats = '\nAnalyzed sequences: {0} (out of which unclassified: {1})\nUnclassified sequences written to {2}: {3}'.format(TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, '/data/primary_blast_results/unknown/multiple_scrutinize.html', TOTAL_UNKNOWN_COUNT_HTML_CHECK)
+    save_stats = '\nAnalyzed sequences (hits resulting from {0} blast searches, {1} animal groups x {2} query sequences, not uniques!): {3} (out of which unclassified: {4})\nUnclassified sequences written to {5}: {6}'.format(len(taxon_dictionary)*len(master_dictionary), len(taxon_dictionary), len(master_dictionary), TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, '/data/primary_blast_results/unknown/multiple_scrutinize.html', TOTAL_UNKNOWN_COUNT_HTML_CHECK)
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)
     print(save_stats)

@@ -600,11 +600,11 @@ def drawtree(TREEFILE):
 #    n4.set_style(nst4)
 
     # Add description to treefile
-    description_text = "• Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
+    description_text = "• Analysis performed: " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
     # Add statistics to description
     with open(LOGFILE, 'r') as log_file:
         lines = log_file.read().splitlines()
-        description_text += '• '+lines[-2]
+        description_text += '• ' + lines[-2] + '.'
     # Add other stuff to description
     description_text += '\n• Red dotted lines in the tree indicate paraphyletic relationships.\n'
     description_text += '• The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
