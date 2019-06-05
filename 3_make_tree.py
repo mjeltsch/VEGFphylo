@@ -223,11 +223,11 @@ def format_false_positives(protein, list_of_categories):
     if total_hits == 0:
         formatted_text_strings = '',''
     else:
-        formatted_text_strings = str(true_positive_counter), '(paral.-{0}, ?-{1}, ∑-{2}) '.format(total_related_counter, unknown_count, total_hits)
+        formatted_text_strings = str(true_positive_counter), ' P{0}, ?{1}, ∑{2}'.format(total_related_counter, unknown_count, total_hits)
     return formatted_text_strings
 
 def drawtree(TREEFILE):
-    global number_dictionary
+    global number_dictionary, DELIMITER
     # Red to White
     color_dict = {  '-':"White",
                     '0':"#FF0000",
@@ -267,7 +267,7 @@ def drawtree(TREEFILE):
     ts = TreeStyle()
     ts.show_leaf_name = False
     # Zoom in x-axis direction
-    ts.scale = 40
+    ts.scale = 20
     # This makes all branches the same length!!!!!!!
     ts.force_topology = True
     #Tree.render(t, "final_tree_decoded.svg")
@@ -515,16 +515,16 @@ def drawtree(TREEFILE):
                     formatted_text_strings = format_false_positives(protein, value)
                     #print('protein, value:\n{0}\n{1}'.format(protein, value))
                     #
-                    # IN BOLDFACE
-                    textFace = TextFace(formatted_text_strings[0], fsize = 16, bold = True)
+                    # THIS IS THE NUMBER OF ORTHOLOGS FOUND
+                    textFace = TextFace(formatted_text_strings[0], fsize = 16, tight_text = True) #bold = True,
                     (t & animal_class_name_with).add_face(textFace, i, "aligned")
                     textFace.background.color = color_dict[reliability]
                     i += 1
                     #
-                    # IN NORMAL FONT
-                    dict_key = str(counter).zfill(4)
+                    # THESE ARE THE PARALOGS, UNKNOWN PROTEINS AND THE TOTAL NUMBER OF HOMOLOGS FOUND
+                    dict_key = str(counter).zfill(3)
                     number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html">'.format(protein, animal_class_name)
-                    textFace2 = TextFace('£'+dict_key+formatted_text_strings[1]+'£', fsize = 16, fgcolor = "MediumBlue", tight_text = True)
+                    textFace2 = TextFace(DELIMITER+dict_key+formatted_text_strings[1]+DELIMITER, fsize = 16, fgcolor = "MediumBlue", tight_text = True)
                     (t & animal_class_name_with).add_face(textFace2, i, "aligned")
                     textFace2.background.color = color_dict[reliability]
                     i += 1
@@ -600,16 +600,17 @@ def drawtree(TREEFILE):
 #    n4.set_style(nst4)
 
     # Add description to treefile
-    description_text = "Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
+    description_text = "• Analysis performed " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
     # Add statistics to description
     with open(LOGFILE, 'r') as log_file:
         lines = log_file.read().splitlines()
-        description_text += lines[-2]
+        description_text += '• '+lines[-2]
     # Add other stuff to description
-    description_text += '\nRed dotted lines in the tree indicate paraphyletic relationships.\n'
-    description_text += 'The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
-    description_text += 'The red-to-white background of the table indicates a heuristic reliability of the results, where a brighter color indicates a higher reliability. This is\n'
+    description_text += '\n• Red dotted lines in the tree indicate paraphyletic relationships.\n'
+    description_text += '• The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
+    description_text += '• The red-to-white background of the table indicates a heuristic reliability of the results, where a brighter color indicates a higher reliability. This is '
     description_text += 'calculated using the number of fully sequenced genomes, the number of species in the phylum and the number of protein sequences available for that phylum.\n'
+    description_text += '• The numbers in the table denote the number of: orthologs found (black), P = paralogs found, ? = homologs found, whose relationship could not be programmatically determined, ∑ = total homologs found.\n '
 
     # Add legend
     textFaceLegend = TextFace(description_text, fsize = 18)
@@ -618,7 +619,7 @@ def drawtree(TREEFILE):
     print('Drawing tree completed.')
 
 def run():
-    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary, number_dictionary
+    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary, number_dictionary, DELIMITER
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -649,16 +650,18 @@ def run():
     IMG_BASENAME = '{0}/images/'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    # DELIMITER = pipe
+    DELIMITER = '|'
 
     if os.path.isfile(TREEFILE):
         drawtree(TREEFILE)
         # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary.items():
-            command = 'sed -i -e \'s/£{0}/{1}/g\' animalia.svg'.format(key, value)
+            command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER, key, value)
             execute_subprocess("Inserting xlinks:\n", command)
         print('Opened {0} xlinks'.format(len(number_dictionary)))
         # Replace all end strings (£)
-        command = 'sed -i -e \'s/£/<\/a>/g\' animalia.svg'
+        command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER)
         execute_subprocess("Inserting xlinks:\n", command)
         # Generate PDF file
         command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
