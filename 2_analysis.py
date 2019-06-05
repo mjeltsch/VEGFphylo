@@ -684,7 +684,11 @@ def run():
     DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
     ANALYSIS_RESULTS_DIR = '{0}/data/analysis_results'.format(APPLICATION_PATH)
-    if not os.path.isdir(ANALYSIS_RESULTS_DIR):
+    # Remove all old analysis results and recreate the analysis results directory
+    if os.path.isdir(ANALYSIS_RESULTS_DIR):
+        shutil.rmtree(ANALYSIS_RESULTS_DIR)
+        os.mkdir(ANALYSIS_RESULTS_DIR)
+    else:
         os.mkdir(ANALYSIS_RESULTS_DIR)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
