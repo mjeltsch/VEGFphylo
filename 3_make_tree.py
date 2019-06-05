@@ -523,7 +523,7 @@ def drawtree(TREEFILE):
                     #
                     # THESE ARE THE PARALOGS, UNKNOWN PROTEINS AND THE TOTAL NUMBER OF HOMOLOGS FOUND
                     dict_key = str(counter).zfill(3)
-                    number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html">'.format(protein, animal_class_name)
+                    number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html" target="_blank">'.format(protein, animal_class_name)
                     textFace2 = TextFace(DELIMITER+dict_key+formatted_text_strings[1]+DELIMITER, fsize = 16, fgcolor = "MediumBlue", tight_text = True)
                     (t & animal_class_name_with).add_face(textFace2, i, "aligned")
                     textFace2.background.color = color_dict[reliability]
