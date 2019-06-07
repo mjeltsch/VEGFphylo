@@ -3,6 +3,23 @@
 #
 
 import os, sqlite3, subprocess, re
+from Bio import Entrez
+from Bio import SeqIO
+
+# Get all fasta sequences from the master_dictionary via Entrez
+def download_proteins(target_dir, master_dict):
+    Entrez.email = "michael@jeltsch.org"
+    Entrez.tool = "local_script_under_development"
+    for key, value in master_dict.items():
+        FASTA_FILE = '{0}/{1}.fasta'.format(target_dir, key)
+        with open(FASTA_FILE, 'w') as filehandle:
+            print('Retrieving sequence {0} from Entrez...'.format(value[0]))
+            try:
+                with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=value[0]) as seqhandle:
+                    seq_record = SeqIO.read(seqhandle, "fasta")
+                    filehandle.write(seq_record.format("fasta"))
+            except Exception as err:
+                print('Problem contacting Blast server. Skipping {0} - {1}. Error: {2}.'.format(key, value[0], err))
 
 # This takes complex taxon data and returns a tuple (a string of the main taxon and a list of all taxons to be subtracted)
 # E.g. '8504-1329911' -> 8504, [1329911]
@@ -54,6 +71,7 @@ def execute_subprocess(comment, bash_command):
         print("Output: " + str(output))
     if error.decode('UTF-8') != '':
         print("Error: " + str(error))
+    return str(output)
 
 def make_synonym_dictionary(master_dictionary):
     #print('master_dictionary:\n{0}'.format(master_dictionary))
