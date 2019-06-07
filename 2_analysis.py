@@ -10,7 +10,7 @@ from Bio.Blast import NCBIXML
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
-from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa
+from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa, download_proteins, execute_subprocess
 from ete3 import NCBITaxa
 
 # Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
@@ -248,6 +248,38 @@ body { font-family: "Open Sans", Arial; }
         file.write(html_text)
         print('\nWrote HTML file {0}.'.format(HTML_FILE))
 
+def add_to_protein_hitdict(taxon, protein, hit_accession_no, hit_description, ortholog_group):
+    global protein_hitdict
+    # Do not write the same protein twice, but add the protein to the string
+    print('Adding to protein_hitdict...')
+    if hit_accession_no in protein_hitdict:
+        protein_hitdict[hit_accession_no][3] += ' '+ortholog_group
+        print('{0} added to existing protein.'.format(hit_accession_no))
+    else:
+        protein_hitdict[hit_accession_no] = [taxon, protein, hit_description, ortholog_group]
+        print('{0} added as new protein.'.format(hit_accession_no))
+
+def write_protein_hitdict_to_file(protein_hitdict):
+    print('Writing protein files...')
+    for key, value in protein_hitdict.items():
+        print('protein_hitdict:\n{0} -> {1}'.format(key, value))
+        PROT_FILE = '{0}/data/protein_results/{1}.txt'.format(APPLICATION_PATH, value[0])
+        QUERY_FILE1 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
+        if not os.path.isfile(QUERY_FILE1):
+            download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
+            time.sleep(1)
+        QUERY_FILE2 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[1])
+        bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
+        comment = 'Making one-to-one alignment of {0} and {1}'.format(QUERY_FILE1, QUERY_FILE2)
+        alignment = execute_subprocess(comment, bash_command)
+        if os.path.exists(PROT_FILE):
+            append_or_write = 'a' # append if PROT_FILE exists
+        else:
+            append_or_write = 'w' # make a new file if PROT_FILE does not exist
+        with open(PROT_FILE, append_or_write) as handle:
+            handle.write('{0} -> {1}\n{2}'.format(key, value, alignment))
+            print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
+
 def get_protein_data(taxon):
     global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn
     if args.directory == '':
@@ -365,6 +397,7 @@ def get_protein_data(taxon):
                 # BLASTHIT = [id, accession_no, species, fasta_description, ortholog group (only if determined with high probability)]
                 # id is a string (used to be an integer)!
                 BLASTHIT = [hit_id, hit_accession_no, species, hit.description, ortholog_group]
+                add_to_protein_hitdict(taxon, protein, hit_id, hit.description, ortholog_group)
                 with conn:
                     # If the id is already in the database, the insertion fails and 0 is returned (otherwise the id is returned)
                     print('\n\nINSERT PROTEIN:\n{0}\n\n'.format(BLASTHIT))
@@ -667,7 +700,7 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
@@ -684,20 +717,28 @@ def run():
     DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
     ANALYSIS_RESULTS_DIR = '{0}/data/analysis_results'.format(APPLICATION_PATH)
-    # Remove all old analysis results and recreate the analysis results directory
+    PROTEIN_RESULTS_DIR = '{0}/data/protein_results'.format(APPLICATION_PATH)
+    # Remove all old analysis and protein results and recreate the directories
     if os.path.isdir(ANALYSIS_RESULTS_DIR):
         shutil.rmtree(ANALYSIS_RESULTS_DIR)
         os.mkdir(ANALYSIS_RESULTS_DIR)
     else:
         os.mkdir(ANALYSIS_RESULTS_DIR)
+    if os.path.isdir(PROTEIN_RESULTS_DIR):
+        shutil.rmtree(PROTEIN_RESULTS_DIR)
+        os.mkdir(PROTEIN_RESULTS_DIR)
+    else:
+        os.mkdir(PROTEIN_RESULTS_DIR)
     preamble1, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary)
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
+    protein_hitdict = {}
     conn = create_connection(DATABASE_FILE)
     print('{0}'.format(conn))
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
@@ -752,6 +793,7 @@ def run():
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
+    write_protein_hitdict_to_file(protein_hitdict)
     if insert_line_breaks(TAXON_DICTIONARY_FILE) == True:
         print('Successfully formatted the taxon data file.')
     else:
