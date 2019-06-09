@@ -260,7 +260,7 @@ def add_to_protein_hitdict(taxon, protein, hit_accession_no, hit_description, or
         print('{0} added as new protein.'.format(hit_accession_no))
 
 def write_protein_hitdict_to_file(protein_hitdict):
-    print('Writing protein files...')
+    print('Writing protein files and doing needle alignments')
     for key, value in protein_hitdict.items():
         print('protein_hitdict:\n{0} -> {1}'.format(key, value))
         PROT_FILE = '{0}/data/protein_results/{1}.txt'.format(APPLICATION_PATH, value[0])
@@ -269,9 +269,21 @@ def write_protein_hitdict_to_file(protein_hitdict):
             download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
             time.sleep(1)
         QUERY_FILE2 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[1])
-        bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
+        VEGF_signature = '{0}/data/proteins/VEGF_signature.fasta'.format(APPLICATION_PATH)
+        # Simple one-to-one comparison
+        #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
+        # MSA including additonally the VEGF signature uding edialign
+        #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
+        # MSA using emma (clustalx)
+        bash_command = 'cat {0} {1} {2} | emma -filter -osformat2 msf'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
         comment = 'Making one-to-one alignment of {0} and {1}'.format(QUERY_FILE1, QUERY_FILE2)
         alignment = execute_subprocess(comment, bash_command)
+        # Trim comments from the alignment text blob
+        line_list = alignment.split('\n')
+        alignment = ''
+        for line in line_list:
+            if not line.startswith('#'):
+                alignment += line+'\n'
         if os.path.exists(PROT_FILE):
             append_or_write = 'a' # append if PROT_FILE exists
         else:
@@ -734,7 +746,8 @@ def run():
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
-    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary)
+    # Downlaod reference proteins and rename according to the key (human-readable name)
+    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary, True)
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
