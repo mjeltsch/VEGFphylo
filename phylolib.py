@@ -7,7 +7,7 @@ from Bio import Entrez
 from Bio import SeqIO
 
 # Get all fasta sequences from the master_dictionary via Entrez
-def download_proteins(target_dir, master_dict):
+def download_proteins(target_dir, master_dict, rename_after_key=False):
     Entrez.email = "michael@jeltsch.org"
     Entrez.tool = "local_script_under_development"
     for key, value in master_dict.items():
@@ -17,6 +17,8 @@ def download_proteins(target_dir, master_dict):
             try:
                 with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=value[0]) as seqhandle:
                     seq_record = SeqIO.read(seqhandle, "fasta")
+                    if rename_after_key == True:
+                        seq_record.id = key
                     filehandle.write(seq_record.format("fasta"))
             except Exception as err:
                 print('Problem contacting Blast server. Skipping {0} - {1}. Error: {2}.'.format(key, value[0], err))
@@ -67,11 +69,13 @@ def execute_subprocess(comment, bash_command):
     process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     output, error = process.communicate()
     process_status = process.wait()
-    if output.decode('utf-8') != '':
-        print("Output: " + str(output))
-    if error.decode('UTF-8') != '':
-        print("Error: " + str(error))
-    return str(output)
+    output = output.decode('utf-8')
+    error = error.decode('utf-8')
+    if output != '':
+        print('Output: {0}'.format(output))
+    if error != '':
+        print('Error: {0}'.format(error))
+    return output
 
 def make_synonym_dictionary(master_dictionary):
     #print('master_dictionary:\n{0}'.format(master_dictionary))
