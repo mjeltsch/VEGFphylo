@@ -188,7 +188,7 @@ def write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize):
     list_to_scrutinize.sort(key=lambda x: x[2])
     preamble = '''<html>
 <head>
-<title>To scrutinize</title>
+<title>Results</title>
 <style>
 body { font-family: "Open Sans", Arial; }
 </style>
@@ -230,9 +230,10 @@ body { font-family: "Open Sans", Arial; }
             html_text += '<table border="1">\n'.format()
         link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{1}</a>'.format(item[3], item[5])
         link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(item[3])
-        #                                                                                                                    taxon    protein  type_of  id       accesion_no
-        #                                                                                                                                      _hit
-        html_text += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], link_to_protein, link_to_blast)
+        link_to_local_msa = '<a href="../../protein_results/{0}.html#{1}" target="_blank">local MSA</a>'.format(taxon, item[3])
+        #                                                                                                                                 taxon    protein  type_of  id       accesion_no
+        #                                                                                                                                                   _hit
+        html_text += '<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td><td>{7}</td></tr>\n'.format(item[0], item[1], item[2], item[3], item[4], link_to_protein, link_to_blast, link_to_local_msa)
         new_type = item[2]
         i += 1
     #lineitem += '\n</body>\n</html>\n'
@@ -259,11 +260,31 @@ def add_to_protein_hitdict(taxon, protein, hit_accession_no, hit_description, or
         protein_hitdict[hit_accession_no] = [taxon, protein, hit_description, ortholog_group]
         print('{0} added as new protein.'.format(hit_accession_no))
 
+def most_frequent(List):
+    return max(set(List), key = List.count)
+
 def write_protein_hitdict_to_file(protein_hitdict):
     print('Writing protein files and doing needle alignments')
     for key, value in protein_hitdict.items():
         print('protein_hitdict:\n{0} -> {1}'.format(key, value))
-        PROT_FILE = '{0}/data/protein_results/{1}.txt'.format(APPLICATION_PATH, value[0])
+        # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
+        closest_homolog_list = value[3].split()
+        # Delete all "None" elements from the list
+        closest_homolog_list = list(filter(lambda x: x!= 'None', closest_homolog_list))
+        if len(closest_homolog_list) > 0:
+            closest_homolog = most_frequent(closest_homolog_list)
+        else:
+            closest_homolog = ''
+        print('Closest homolog identified as "{0}"'.format(closest_homolog))
+        if closest_homolog == '':
+            CLOSEST_HOMOLOG_FILE = ''
+        elif closest_homolog != value[1]:
+            CLOSEST_HOMOLOG_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, closest_homolog)
+        else:
+            CLOSEST_HOMOLOG_FILE = ''
+        # VEGF-A.fasta needed to be added manually to data/proteins/ as the specific isoforms are stored in value[0] and
+        # this would lead to a file not found error...
+        PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
         QUERY_FILE1 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
         if not os.path.isfile(QUERY_FILE1):
             download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
@@ -275,10 +296,12 @@ def write_protein_hitdict_to_file(protein_hitdict):
         # MSA including additonally the VEGF signature uding edialign
         #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
         # MSA using emma (clustalx)
-        bash_command = 'cat {0} {1} {2} | emma -filter -osformat2 msf'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
-        comment = 'Making one-to-one alignment of {0} and {1}'.format(QUERY_FILE1, QUERY_FILE2)
+        bash_command = 'cat {0} {1} {2} {3}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature, CLOSEST_HOMOLOG_FILE)
+        comment = 'Making alignment of {0} with {1} and {2}:\n'.format(value[1], key, closest_homolog)
         alignment = execute_subprocess(comment, bash_command)
-        # Trim comments from the alignment text blob
+        # Trim header from msf file (necessary for emma)
+        alignment = alignment.split('//')[1]
+        # Trim comments from the alignment text blob (necessary for needle)
         line_list = alignment.split('\n')
         alignment = ''
         for line in line_list:
@@ -288,8 +311,16 @@ def write_protein_hitdict_to_file(protein_hitdict):
             append_or_write = 'a' # append if PROT_FILE exists
         else:
             append_or_write = 'w' # make a new file if PROT_FILE does not exist
+            with open(PROT_FILE, append_or_write) as handle:
+                preamble = '''<html>
+            <head>
+            <title>Individual alignments</title>
+            </head>
+            <body>'''
+                handle.write(preamble)
         with open(PROT_FILE, append_or_write) as handle:
-            handle.write('{0} -> {1}\n{2}'.format(key, value, alignment))
+            handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
+            handle.write('<pre>\n{0}\n</pre>'.format(alignment))
             print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
 def get_protein_data(taxon):
@@ -747,7 +778,7 @@ def run():
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     # Downlaod reference proteins and rename according to the key (human-readable name)
-    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary, True)
+    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary, True, False)
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
