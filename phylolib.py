@@ -2,26 +2,30 @@
 # -*- coding: utf-8 -*-
 #
 
-import os, sqlite3, subprocess, re
+import os, sqlite3, subprocess, re, time
 from Bio import Entrez
 from Bio import SeqIO
 
 # Get all fasta sequences from the master_dictionary via Entrez
-def download_proteins(target_dir, master_dict, rename_after_key=False):
+def download_proteins(target_dir, master_dict, rename_after_key=False, overwrite=False):
     Entrez.email = "michael@jeltsch.org"
     Entrez.tool = "local_script_under_development"
     for key, value in master_dict.items():
         FASTA_FILE = '{0}/{1}.fasta'.format(target_dir, key)
-        with open(FASTA_FILE, 'w') as filehandle:
-            print('Retrieving sequence {0} from Entrez...'.format(value[0]))
-            try:
-                with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=value[0]) as seqhandle:
-                    seq_record = SeqIO.read(seqhandle, "fasta")
-                    if rename_after_key == True:
-                        seq_record.id = key
-                    filehandle.write(seq_record.format("fasta"))
-            except Exception as err:
-                print('Problem contacting Blast server. Skipping {0} - {1}. Error: {2}.'.format(key, value[0], err))
+        if os.path.isfile(FASTA_FILE) and os.path.getsize(FASTA_FILE) > 0:
+            print('Not overwriting existing non-zero-size file {0}.'.format(FASTA_FILE))
+        else:
+            with open(FASTA_FILE, 'w') as filehandle:
+                print('Retrieving sequence {0} ({1}) from Entrez...'.format(value[0], key))
+                try:
+                    with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=value[0]) as seqhandle:
+                        seq_record = SeqIO.read(seqhandle, "fasta")
+                        if rename_after_key == True:
+                            seq_record.id = key
+                        filehandle.write(seq_record.format("fasta"))
+                except Exception as err:
+                    print('Problem contacting Blast server. Skipping {0} - {1}. Error: {2}.'.format(key, value[0], err))
+            time.sleep(2)
 
 # This takes complex taxon data and returns a tuple (a string of the main taxon and a list of all taxons to be subtracted)
 # E.g. '8504-1329911' -> 8504, [1329911]
