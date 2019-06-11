@@ -208,7 +208,7 @@ body { font-family: "Open Sans", Arial; }
     #for item in sorted_list:
     new_type = ''
     i = 1
-    j = 1
+    #j = 1 not needed
     html_text = ''
     TOTAL_UNKNOWN_COUNT_HTML_CHECK += len(list_to_scrutinize)
     print('list_to_scrutinize:\n{0}'.format(list_to_scrutinize))
@@ -266,7 +266,7 @@ def most_frequent(List):
 def write_protein_hitdict_to_file(protein_hitdict):
     print('Writing protein files and doing needle alignments')
     for key, value in protein_hitdict.items():
-        print('protein_hitdict:\n{0} -> {1}'.format(key, value))
+        print('protein_hitdict with {0} unique sequences:\n{1} -> {2}'.format(len(protein_hitdict), key, value))
         # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
         closest_homolog_list = value[3].split()
         # Delete all "None" elements from the list
@@ -324,7 +324,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, number_of_unique_homologs
     if args.directory == '':
         return []
     else:
@@ -332,6 +332,7 @@ def get_protein_data(taxon):
         print('\n---------------')
         print('Analyzing taxon {0}'.format(taxon).upper())
         print('---------------\n')
+        number_of_unique_homologs[taxon] = 0
         for protein, protein_data in master_dictionary.items():
             list_to_scrutinize_ortholog = []
             list_to_scrutinize_paralog = []
@@ -459,6 +460,7 @@ def get_protein_data(taxon):
                 write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_unknown)
             else:
                 print('No unknown proteins to write to HTML file.')
+            number_of_unique_homologs[taxon] += len(list_to_scrutinize_ortholog)+len(list_to_scrutinize_paralog)+len(list_to_scrutinize_unknown)
 
             print('Analysis for {0}/{1} completed.\n'.format(taxon, protein))
             print('Number of true-positives:'.format())
@@ -743,7 +745,8 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, number_of_unique_homologs
+    number_of_unique_homologs = {}
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
@@ -842,7 +845,16 @@ def run():
         print('Successfully formatted the taxon data file.')
     else:
         print('Formating the taxon data file failed.')
-    save_stats = '\nAnalyzed sequences (hits resulting from {0} blast searches, {1} animal groups x {2} query sequences, not uniques!): {3} (out of which unclassified: {4})\nUnclassified sequences written to {5}: {6}'.format(len(taxon_dictionary)*len(master_dictionary), len(taxon_dictionary), len(master_dictionary), TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, '/data/primary_blast_results/unknown/multiple_scrutinize.html', TOTAL_UNKNOWN_COUNT_HTML_CHECK)
+    total_number_of_unique_homologs = 0
+    number_of_blast_searches = len(taxon_dictionary)*len(master_dictionary)
+    for key, value in number_of_unique_homologs.items():
+        total_number_of_unique_homologs += value
+    #print('number_of_unique_homologs:\n{0}'.format(number_of_unique_homologs))
+    # This works not correct, it adds up unique homologs for each taxon and adds the numbers, but homologs can repeat between taxa!!!
+    save_stats = '\nNumber of unique homologs: {0}\n'.format(number_of_unique_homologs)
+    save_stats += 'Analyzed sequences (hits resulting from {0} blast searches, {1} animal groups x {2} query sequences):'.format(number_of_blast_searches, len(taxon_dictionary), len(master_dictionary))
+    save_stats += '{0} (out of which unique: {1}, unclassified: {2})\n'.format(TOTAL_COUNT, total_number_of_unique_homologs, TOTAL_UNKNOWN_COUNT)
+    save_stats += 'Results written to {0}: {1}'.format('data/analysis_results/', TOTAL_UNKNOWN_COUNT_HTML_CHECK)
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)
     print(save_stats)
