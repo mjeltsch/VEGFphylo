@@ -266,7 +266,7 @@ def most_frequent(List):
 def write_protein_hitdict_to_file(protein_hitdict):
     print('Writing protein files and doing needle alignments')
     for key, value in protein_hitdict.items():
-        print('protein_hitdict with {0} unique sequences:\n{1} -> {2}'.format(len(protein_hitdict), key, value))
+        print('Write cycle for protein_hitdict with {0} unique sequences:\n{1} -> {2}'.format(len(protein_hitdict), key, value))
         # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
         closest_homolog_list = value[3].split()
         # Delete all "None" elements from the list
@@ -841,6 +841,10 @@ def run():
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
     write_protein_hitdict_to_file(protein_hitdict)
+    # Count the total number of unique hits for each taxon and insert it into taxon_dictionary
+    for key, value in taxon_dictionary.items():
+        sum(value2[0] == key for value2 in protein_hitdict.values())
+        new_taxon_dictionary[key][6] = sum
     if insert_line_breaks(TAXON_DICTIONARY_FILE) == True:
         print('Successfully formatted the taxon data file.')
     else:
