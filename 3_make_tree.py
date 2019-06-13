@@ -439,13 +439,15 @@ def drawtree(TREEFILE):
                     (t & animal_class_name).add_face(textFace, 1, "aligned")
                     textFace = TextFace(' # compl.\n genomes', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 2, "aligned")
-                    textFace = TextFace(' ', fsize = 16)
+                    textFace = TextFace(' # unique\n homologs', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
+                    textFace = TextFace(' ', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, 5, "aligned")
                     #(t & animal_class_name).add_face(textFace, 13, "aligned")
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
-                    i = 5
+                    i = 6
 
                     # Protein colors
                     #zero_color = '#FFFFE0' # LightYellow
@@ -480,30 +482,39 @@ def drawtree(TREEFILE):
                         (t & animal_class_name).add_face(textFace2, i, "aligned")
                         i += 1
 
-                # Number of animal species in this class in the NCBI protein sequence database
+                # NUMBERS (#0, #1, #2, #3)
+                # e.g. number of animal species in this class in the NCBI protein sequence database, ...
                 textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16)
                 (t & animal_class_name_with).add_face(textFace, 0, "aligned")
                 textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16)
                 (t & animal_class_name_with).add_face(textFace, 1, "aligned")
                 textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16)
                 (t & animal_class_name_with).add_face(textFace, 2, "aligned")
+                tot_unique = taxon_dictionary[animal_class_name][6]
+                textFace = TextFace(tot_unique, fsize = 16)
+                (t & animal_class_name_with).add_face(textFace, 3, "aligned")
 
-                # TEXT
-                #print('Adding text for {0}'.format(animal_class_name))
+                # IMAGE (#4, animal silouette)
+                svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
+                print('SVG filename: {0}'.format('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name)))
+                (t & animal_class_name_with).add_face(svgFace, 4, "aligned")
+                svgFace.margin_right = 10
+                svgFace.margin_left = 10
+                svgFace.hzalign = 2
+                print('Adding svg image for {0}.'.format(animal_class_name))
+
+                # TEXT (#5, animal class name)
                 # Do not display anything if there is no common animal class name
                 if animal_class_name_common == '?' or animal_class_name_common == '':
                     description = '{0}  '.format(animal_class_name)
                 else:
                     description = '{0} ({1})  '.format(animal_class_name, animal_class_name_common)
                 textFace = TextFace(description, fsize = 16)
-                (t & animal_class_name_with).add_face(textFace, 4, "aligned")
-                # Reliability measure
-                #textFace = TextFace(reliability, fsize = 16)
-                #(t & animal_class_name).add_face(textFace, 13, "aligned")
-                #textFace.margin_left = 10
+                (t & animal_class_name_with).add_face(textFace, 5, "aligned")
 
-                # PROTEIN HITS
-                i = 5
+                # PROTEIN HITS (#6 and above)
+                # i continues the numbering of the column from left to right
+                i = 6
                 # value in the next for loop is a compound datatype like this:
                 # [0, {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0}]
 
@@ -530,14 +541,6 @@ def drawtree(TREEFILE):
                     i += 1
                     counter += 1
 
-                # IMAGE
-                svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
-                print('SVG filename: {0}'.format('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name)))
-                (t & animal_class_name_with).add_face(svgFace, 3, "aligned")
-                svgFace.margin_right = 10
-                svgFace.margin_left = 10
-                svgFace.hzalign = 2
-                print('Adding svg image for {0}.'.format(animal_class_name))
             except Exception as ex:
                 print('Could not get common animal class name for {0} from  dictionary file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
 
@@ -604,7 +607,7 @@ def drawtree(TREEFILE):
     # Add statistics to description
     with open(LOGFILE, 'r') as log_file:
         lines = log_file.read().splitlines()
-        description_text += '• ' + lines[-2] + '.'
+        description_text += '• ' + lines[-1] + '.'
     # Add other stuff to description
     description_text += '\n• Red dotted lines in the tree indicate paraphyletic relationships.\n'
     description_text += '• The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
