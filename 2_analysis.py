@@ -183,7 +183,6 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
     return phylum
 
 def write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize):
-    global TOTAL_UNKNOWN_COUNT_HTML_CHECK
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
     list_to_scrutinize.sort(key=lambda x: x[2])
     preamble = '''<html>
@@ -210,7 +209,6 @@ body { font-family: "Open Sans", Arial; }
     i = 1
     #j = 1 not needed
     html_text = ''
-    TOTAL_UNKNOWN_COUNT_HTML_CHECK += len(list_to_scrutinize)
     print('list_to_scrutinize:\n{0}'.format(list_to_scrutinize))
     for item in list_to_scrutinize:
         # Make a heading row if the type of hit changes and color unknown stuff red
@@ -276,28 +274,34 @@ def write_protein_hitdict_to_file(protein_hitdict):
         else:
             closest_homolog = ''
         print('Closest homolog identified as "{0}"'.format(closest_homolog))
-        if closest_homolog == '':
-            CLOSEST_HOMOLOG_FILE = ''
-        elif closest_homolog != value[1]:
-            CLOSEST_HOMOLOG_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, closest_homolog)
-        else:
-            CLOSEST_HOMOLOG_FILE = ''
+        #if closest_homolog == '':
+        #    CLOSEST_HOMOLOG_FILE = ''
+        #elif closest_homolog != value[1]:
+        #    # Still does not work for e.g. VEGF-A165...
+        #    CLOSEST_HOMOLOG_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
+        #else:
+        #    CLOSEST_HOMOLOG_FILE = ''
         # VEGF-A.fasta needed to be added manually to data/proteins/ as the specific isoforms are stored in value[0] and
         # this would lead to a file not found error...
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
         QUERY_FILE1 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
-        if not os.path.isfile(QUERY_FILE1):
+        if not os.path.isfile(QUERY_FILE1) or os.stat(QUERY_FILE1).st_size == 0:
             download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
             time.sleep(1)
-        QUERY_FILE2 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[1])
+        # Maybe not needed?
+        #QUERY_FILE2 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[1])
         VEGF_signature = '{0}/data/proteins/VEGF_signature.fasta'.format(APPLICATION_PATH)
+        # This now only here because there need to be at least 2 sequences. If the query file 1 cannot be
+        # found, this would causean error.
+        VEGFC_file = '{0}/data/proteins/VEGF-C.fasta'.format(APPLICATION_PATH)
         # Simple one-to-one comparison
         #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
         # MSA including additonally the VEGF signature uding edialign
         #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
         # MSA using emma (clustalx)
-        bash_command = 'cat {0} {1} {2} {3}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature, CLOSEST_HOMOLOG_FILE)
-        comment = 'Making alignment of {0} with {1} and {2}:\n'.format(value[1], key, closest_homolog)
+        # Primitive MSA needs to be fixed in the future!!!!
+        bash_command = 'cat {0} {1} {2}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE1, VEGF_signature, VEGFC_file)
+        comment = 'Making alignment of {0} with VEGF signature:\n'.format(value[1])
         alignment = execute_subprocess(comment, bash_command)
         # Trim header from msf file (necessary for emma)
         alignment = alignment.split('//')[1]
@@ -307,24 +311,85 @@ def write_protein_hitdict_to_file(protein_hitdict):
         for line in line_list:
             if not line.startswith('#'):
                 alignment += line+'\n'
-        if os.path.exists(PROT_FILE):
-            append_or_write = 'a' # append if PROT_FILE exists
-        else:
-            append_or_write = 'w' # make a new file if PROT_FILE does not exist
-            with open(PROT_FILE, append_or_write) as handle:
+        # Write html header if the file is newly created
+        if not os.path.exists(PROT_FILE):
+            with open(PROT_FILE, 'w') as handle:
+                print('Writing header of html file {}'.format(PROT_FILE))
                 preamble = '''<html>
-            <head>
-            <title>Individual alignments</title>
-            </head>
-            <body>'''
+                <head>
+                <title>Individual alignments</title>
+                <style>
+                    body { font-family: "Open Sans", Arial; }
+                </style>
+                <script type="text/javascript">
+                <!--
+                    function toggle_visibility(id) {
+                        var e = document.getElementById(id);
+                        if(e.style.display == 'block')
+                            e.style.display = 'none';
+                        else
+                            e.style.display = 'block'; }
+                //-->
+                </script>
+                </head>
+                <body>
+                <table border="1">'''
                 handle.write(preamble)
-        with open(PROT_FILE, append_or_write) as handle:
-            handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
-            handle.write('<pre>\n{0}\n</pre>'.format(alignment))
+        with open(PROT_FILE, 'a') as handle:
+            link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a>'.format(key)
+            link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(key)
+            row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value, link_to_blast)
+            row += '<div id="align_{0}" style="display:none"><pre>\n{1}\n</pre></div></td></tr>\n'.format(key, alignment)
+            #handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
+            #handle.write('<pre>\n{0}\n</pre>'.format(alignment))
+            handle.write(row)
             print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
+    # Make MSA for each taxon (limit by sequence number)
+    for taxon in taxon_dictionary:
+        # The protein_hitdict comprises all (~8666) sequences!!!!
+        # Use list comprehension to extract all sequences of a certain taxon
+        #taxon_specific_protein_hitlist = [key for key, value in protein_hitdict.items() if value[1] == taxon]
+        taxon_specific_protein_hitlist = []
+        for key, value in protein_hitdict.items():
+            print('taxon: {0}'.format(taxon))
+            print('value: {0}'.format(value))
+            if value[0] == taxon:
+                taxon_specific_protein_hitlist.append(key)
+                print('Appending to taxon_specific_protein_hitlist ({0}): {1}.'.format(value[0], key))
+        print('taxon_specific_protein_hitlist:\n{0}'.format(taxon_specific_protein_hitlist))
+        wieviel = len(taxon_specific_protein_hitlist)
+        if 0 < wieviel < 8:
+            print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
+            alignment_file_list = ''
+            for key, value in master_dictionary.items():
+                seqfile = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])
+                if os.path.isfile(seqfile):
+                    alignment_file_list += 'S{0},'.format(seqfile)
+            for id in taxon_specific_protein_hitlist:
+                seqfile = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, id)
+                if os.path.isfile(seqfile):
+                    alignment_file_list += 'S{0},'.format(seqfile)
+            # Using emboss/emma (clustalx)
+            #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
+            # Using m_coffee and html output
+            bash_command = 't_coffee -in {0} -outfile=stdout -output=html -mode mcoffee'.format(alignment_file_list)
+            comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
+            alignment = execute_subprocess(comment, bash_command)
+        else:
+            print('Not generating MSA because number of sequences in taxon {0} is too high ({1}).'.format(taxon, len(taxon_specific_protein_hitlist)))
+            alignment = ''
+        PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
+        with open(PROT_FILE, 'a') as handle:
+            # Don't make alignments for large numbers of proteins
+            end_of_file = '</table>\n'
+            end_of_file += '<pre>\n{0}\n</pre>\n'.format(alignment)
+            end_of_file += '</body>\n</html\n>'
+            handle.write(end_of_file)
+            print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
+
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, false_positive_list
     if args.directory == '':
         return []
     else:
@@ -336,6 +401,7 @@ def get_protein_data(taxon):
             list_to_scrutinize_ortholog = []
             list_to_scrutinize_paralog = []
             list_to_scrutinize_unknown = []
+            list_to_scrutinize_manually_excluded = []
             #print('\n\nSTART\nPROTEIN: {0}\nTAXON: {1}\n\n'.format(protein, taxon))
             #print('master_dictionary:\n{0}\n\n'.format(master_dictionary))
             #time.sleep(2)
@@ -364,7 +430,9 @@ def get_protein_data(taxon):
             # counter for hits
             i = 0
             # counter for unknown proteins
-            u = 0
+            unknown_counter = 0
+            # counter for manually excluded proteins
+            excluded_counter = 0
             for hit in blastp_result:
                 found = False
                 # get id and accession number
@@ -428,11 +496,19 @@ def get_protein_data(taxon):
                         print('Potential false-positive found.')
                         ortholog_group = 'None'
                         list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
+                    elif '{0}.fasta'.format(hit_id) in false_positive_list:
+                        print('Manually as false-positive classified sequence encountered: {0}/{1}'.format(hit_id, hit_accession_no))
+                        list_to_scrutinize_manually_excluded.append([taxon, protein, 'manually_false_positive', hit_id, hit_accession_no, hit.description])
+                        ortholog_group = 'manually_false_positive'
+                        # Subtract manually false-positives (that are not homologous to VEGFs/PDGFs) from the total number of hits
+                        number -= 1
+                        excluded_counter += 1
+                        TOTAL_COUNT += 1
                     else:
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
                         ortholog_group = 'None'
-                        u += 1
+                        unknown_counter+= 1
                         TOTAL_COUNT += 1
                         TOTAL_UNKNOWN_COUNT += 1
                 except category_found:
@@ -455,6 +531,10 @@ def get_protein_data(taxon):
                 write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_paralog)
             else:
                 print('No paralogs to write to HTML file.')
+            if len(list_to_scrutinize_manually_excluded) > 0:
+                write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_manually_excluded)
+            else:
+                print('No manually excluded proteins to write to HTML file.')
             if len(list_to_scrutinize_unknown) > 0:
                 write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize_unknown)
             else:
@@ -469,8 +549,10 @@ def get_protein_data(taxon):
             for key, value in negative_dict.items():
                 print('                         '+key, str(value))
                 control_counter += value
-            print('Number of unidentified homologous proteins: {0}\n'.format(u))
-            control_counter += u
+            print('Number of unidentified homologous proteins: {0}\n'.format(unknown_counter))
+            control_counter += unknown_counter
+            print('Number of excluded proteins: {0}\n'.format(excluded_counter))
+            control_counter += excluded_counter
             print('{0} out of {1} hits were analyzed and {2} could be assigned into categories.\n\n'.format(i, number, control_counter))
             new_protein_data[protein] = [number, negative_dict, positive_dict]
         print('Analysis for all proteins in taxon {0} completed.\n'.format(taxon))
@@ -742,10 +824,9 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, TOTAL_UNKNOWN_COUNT_HTML_CHECK, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, false_positive_list
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
-    TOTAL_UNKNOWN_COUNT_HTML_CHECK = 0
     # You can adjust this down until you see that the blat server starts blocking your requests!
     # 60 (seconds) is a very conservative (but slow) estimate, that does not result in blocking
     BLAST_WAITING_TIME = 30
@@ -776,6 +857,9 @@ def run():
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    # Make a list of all manually identified false-positive hits
+    false_positive_list = os.listdir('{0}/data/proteins_exclude'.format(APPLICATION_PATH))
+    print('False-positive list:\{0}'.format(false_positive_list))
     # Downlaod reference proteins and rename according to the key (human-readable name)
     download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary, True, False)
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
