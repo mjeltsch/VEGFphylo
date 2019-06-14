@@ -227,7 +227,7 @@ def format_false_positives(protein, list_of_categories):
     return formatted_text_strings
 
 def drawtree(TREEFILE):
-    global number_dictionary, DELIMITER
+    global number_dictionary, number_dictionary1, DELIMITER, DELIMITER1
     # Red to White
     color_dict = {  '-':"White",
                     '0':"#FF0000",
@@ -388,7 +388,9 @@ def drawtree(TREEFILE):
 
     # To have a short token that stands in in the SVG file for the phylum/protein combination to make up the link URL
     number_dictionary = {}
+    number_dictionary1 = {}
     counter = 0
+    counter1 = 0
 
     for node in t.traverse():
         if node.is_leaf():
@@ -439,7 +441,7 @@ def drawtree(TREEFILE):
                     (t & animal_class_name).add_face(textFace, 1, "aligned")
                     textFace = TextFace(' # compl.\n genomes', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 2, "aligned")
-                    textFace = TextFace(' # unique\n homologs', fsize = 16, fstyle = "italic")
+                    textFace = TextFace(' # unique\n blasthits', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
@@ -484,14 +486,18 @@ def drawtree(TREEFILE):
 
                 # NUMBERS (#0, #1, #2, #3)
                 # e.g. number of animal species in this class in the NCBI protein sequence database, ...
-                textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16)
+                textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 0, "aligned")
-                textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16)
+                textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 1, "aligned")
-                textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16)
+                textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 2, "aligned")
                 tot_unique = taxon_dictionary[animal_class_name][6]
-                textFace = TextFace(tot_unique, fsize = 16)
+                # Create links for the whole taxon
+                dict_key1 = str(counter1).zfill(3)
+                number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
+                counter1 += 1
+                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 3, "aligned")
 
                 # IMAGE (#4, animal silouette)
@@ -622,7 +628,7 @@ def drawtree(TREEFILE):
     print('Drawing tree completed.')
 
 def run():
-    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary, number_dictionary, DELIMITER
+    global APPLICATION_PATH, TREEFILE, SVGFILE, IMG_BASENAME, LOGFILE, master_dictionary, number_dictionary, number_dictionary1, DELIMITER, DELIMITER1
 
     # This enables simultaneous output to the terminal and a logfile
     class logfile(object):
@@ -655,10 +661,11 @@ def run():
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     # DELIMITER = pipe
     DELIMITER = '|'
+    DELIMITER1 = '£'
 
     if os.path.isfile(TREEFILE):
         drawtree(TREEFILE)
-        # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
+        # Replace the special string (|XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary.items():
             command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER, key, value)
             execute_subprocess("Inserting xlinks:\n", command)
@@ -666,6 +673,16 @@ def run():
         # Replace all end strings (£)
         command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER)
         execute_subprocess("Inserting xlinks:\n", command)
+
+        # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
+        for key, value in number_dictionary1.items():
+            command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER1, key, value)
+            execute_subprocess("Inserting xlinks:\n", command)
+        print('Opened {0} xlinks'.format(len(number_dictionary1)))
+        # Replace all end strings (£)
+        command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER1)
+        execute_subprocess("Inserting xlinks:\n", command)
+
         # Generate PDF file
         command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
         execute_subprocess("Generating PDF file with the following command:\n", command)
