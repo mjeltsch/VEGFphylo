@@ -7,11 +7,14 @@ from Bio import Entrez
 from Bio import SeqIO
 
 # Get all fasta sequences from the master_dictionary via Entrez
-def download_proteins(target_dir, master_dict, rename_after_key=False, overwrite=False):
+def download_proteins(target_dir, master_dict, rename_fasta_description_after_key=False, overwrite=False, filename='after_key'):
     Entrez.email = "michael@jeltsch.org"
     Entrez.tool = "local_script_under_development"
     for key, value in master_dict.items():
-        FASTA_FILE = '{0}/{1}.fasta'.format(target_dir, key)
+        if filename == 'after_key':
+            FASTA_FILE = '{0}/{1}.fasta'.format(target_dir, key)
+        elif filename == 'after_value[0]':
+            FASTA_FILE = '{0}/{1}.fasta'.format(target_dir, value[0])
         if os.path.isfile(FASTA_FILE) and os.path.getsize(FASTA_FILE) > 0:
             print('Not overwriting existing non-zero-size file {0}.'.format(FASTA_FILE))
         else:
@@ -20,7 +23,7 @@ def download_proteins(target_dir, master_dict, rename_after_key=False, overwrite
                 try:
                     with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=value[0]) as seqhandle:
                         seq_record = SeqIO.read(seqhandle, "fasta")
-                        if rename_after_key == True:
+                        if rename_fasta_description_after_key == True:
                             seq_record.id = key
                         filehandle.write(seq_record.format("fasta"))
                 except Exception as err:
@@ -68,9 +71,9 @@ def load_blacklist():
     blacklist = []
     return blacklist
 
-def execute_subprocess(comment, bash_command):
+def execute_subprocess(comment, bash_command, working_directory='.'):
     print("\n" + comment, bash_command)
-    process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
     output, error = process.communicate()
     process_status = process.wait()
     output = output.decode('utf-8')
