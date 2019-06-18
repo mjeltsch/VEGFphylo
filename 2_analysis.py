@@ -262,45 +262,39 @@ def most_frequent(List):
     return max(set(List), key = List.count)
 
 def write_protein_hitdict_to_file(protein_hitdict):
-    print('Writing protein files and doing needle alignments')
+    print('Writing protein files and doing multiple sequence alignments based on protein_hidict with {0} unique sequences.'.format(len(protein_hitdict)))
     for key, value in protein_hitdict.items():
-        print('Write cycle for protein_hitdict with {0} unique sequences:\n{1} -> {2}'.format(len(protein_hitdict), key, value))
+        print('{0} -> {1}'.format(key, value))
         # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
         closest_homolog_list = value[3].split()
         # Delete all "None" elements from the list
         closest_homolog_list = list(filter(lambda x: x!= 'None', closest_homolog_list))
         if len(closest_homolog_list) > 0:
             closest_homolog = most_frequent(closest_homolog_list)
+            print('Closest homolog: {0}'.format(closest_homolog))
+            if closest_homolog != 'manually_excluded':
+                QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
+            else:
+                print('{0} was manually excluded from analysis'.format(key))
+                # Default comparison to VEGF-C
+                QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
         else:
-            closest_homolog = ''
-        print('Closest homolog identified as "{0}"'.format(closest_homolog))
-        #if closest_homolog == '':
-        #    CLOSEST_HOMOLOG_FILE = ''
-        #elif closest_homolog != value[1]:
-        #    # Still does not work for e.g. VEGF-A165...
-        #    CLOSEST_HOMOLOG_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
-        #else:
-        #    CLOSEST_HOMOLOG_FILE = ''
-        # VEGF-A.fasta needed to be added manually to data/proteins/ as the specific isoforms are stored in value[0] and
-        # this would lead to a file not found error...
+            #closest_homolog = ''
+            print('No closest homolog identified.')
+            # Default comparison to VEGF-C
+            QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
-        QUERY_FILE1 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
-        if not os.path.isfile(QUERY_FILE1) or os.stat(QUERY_FILE1).st_size == 0:
+        QUERY_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
+        if not os.path.isfile(QUERY_FILE) or os.stat(QUERY_FILE).st_size == 0:
             download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
             time.sleep(1)
-        # Maybe not needed?
-        #QUERY_FILE2 = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[1])
-        VEGF_signature = '{0}/data/proteins/VEGF_signature.fasta'.format(APPLICATION_PATH)
-        # This now only here because there need to be at least 2 sequences. If the query file 1 cannot be
-        # found, this would causean error.
-        VEGFC_file = '{0}/data/proteins/VEGF-C.fasta'.format(APPLICATION_PATH)
+        VEGF_signature = '{0}/data/reference_proteins/VEGF_signature.fasta'.format(APPLICATION_PATH)
         # Simple one-to-one comparison
         #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
         # MSA including additonally the VEGF signature uding edialign
         #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
         # MSA using emma (clustalx)
-        # Primitive MSA needs to be fixed in the future!!!!
-        bash_command = 'cat {0} {1} {2}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE1, VEGF_signature, VEGFC_file)
+        bash_command = 'cat {0} {1} {2}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGF_signature, QUERY_FILE_CLOSEST_HOMOLOG)
         comment = 'Making alignment of {0} with VEGF signature:\n'.format(value[1])
         alignment = execute_subprocess(comment, bash_command)
         # Trim header from msf file (necessary for emma)
@@ -343,7 +337,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             #handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
             #handle.write('<pre>\n{0}\n</pre>'.format(alignment))
             handle.write(row)
-            print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
+            #print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
     # Make MSA for each taxon (limit by sequence number)
     for taxon in taxon_dictionary:
@@ -351,33 +345,46 @@ def write_protein_hitdict_to_file(protein_hitdict):
         # Use list comprehension to extract all sequences of a certain taxon
         #taxon_specific_protein_hitlist = [key for key, value in protein_hitdict.items() if value[1] == taxon]
         taxon_specific_protein_hitlist = []
+        print('\nAppending to taxon_specific_protein_hitlist:')
         for key, value in protein_hitdict.items():
-            print('taxon: {0}'.format(taxon))
-            print('value: {0}'.format(value))
+            #print('taxon: {0}'.format(taxon))
+            #print('value: {0}'.format(value))
             if value[0] == taxon:
                 taxon_specific_protein_hitlist.append(key)
-                print('Appending to taxon_specific_protein_hitlist ({0}): {1}.'.format(value[0], key))
-        print('taxon_specific_protein_hitlist:\n{0}'.format(taxon_specific_protein_hitlist))
-        wieviel = len(taxon_specific_protein_hitlist)
-        if 0 < wieviel < 8:
-            print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
+                print('{0}-{1} '.format(value[0], key), end = '')
+        how_many_specific = len(taxon_specific_protein_hitlist)
+        print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
+        # If LIMIT or more sequences are present, the MSA is skipped
+        LIMIT = 8
+        if how_many_specific < LIMIT:
+            for i in range(1, how_many_specific+1):
+                print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
+        else:
+            # Might need fixing for the exact numbers
+            print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT))
+            for i in range(how_many_specific-LIMIT+1, how_many_specific+1):
+                print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
+        if 0 < how_many_specific < LIMIT:
+            #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
             alignment_file_list = ''
             for key, value in master_dictionary.items():
-                seqfile = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])
-                if os.path.isfile(seqfile):
+                seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
+                if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
                     alignment_file_list += 'S{0},'.format(seqfile)
             for id in taxon_specific_protein_hitlist:
-                seqfile = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, id)
-                if os.path.isfile(seqfile):
+                seqfile = '{0}.fasta'.format(id)
+                if os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
                     alignment_file_list += 'S{0},'.format(seqfile)
+                else:
+                    print('{0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
             # Using emboss/emma (clustalx)
             #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
             # Using m_coffee and html output
             bash_command = 't_coffee -in {0} -outfile=stdout -output=html -mode mcoffee'.format(alignment_file_list)
             comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
-            alignment = execute_subprocess(comment, bash_command)
+            alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
         else:
-            print('Not generating MSA because number of sequences in taxon {0} is too high ({1}).'.format(taxon, len(taxon_specific_protein_hitlist)))
+            print('Not generating MSA since number of sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
             alignment = ''
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
@@ -389,7 +396,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
 
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, false_positive_list
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list
     if args.directory == '':
         return []
     else:
@@ -496,10 +503,10 @@ def get_protein_data(taxon):
                         print('Potential false-positive found.')
                         ortholog_group = 'None'
                         list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
-                    elif '{0}.fasta'.format(hit_id) in false_positive_list:
-                        print('Manually as false-positive classified sequence encountered: {0}/{1}'.format(hit_id, hit_accession_no))
-                        list_to_scrutinize_manually_excluded.append([taxon, protein, 'manually_false_positive', hit_id, hit_accession_no, hit.description])
-                        ortholog_group = 'manually_false_positive'
+                    elif '{0}.fasta'.format(hit_id) in excluded_list:
+                        print('Manually excluded sequence encountered: {0}/{1}'.format(hit_id, hit_accession_no))
+                        list_to_scrutinize_manually_excluded.append([taxon, protein, 'manually_excluded', hit_id, hit_accession_no, hit.description])
+                        ortholog_group = 'manually_excluded'
                         # Subtract manually false-positives (that are not homologous to VEGFs/PDGFs) from the total number of hits
                         number -= 1
                         excluded_counter += 1
@@ -824,7 +831,7 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, false_positive_list
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     # You can adjust this down until you see that the blat server starts blocking your requests!
@@ -858,13 +865,14 @@ def run():
     new_taxon_dictionary = taxon_dictionary
     preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     # Make a list of all manually identified false-positive hits
-    false_positive_list = os.listdir('{0}/data/proteins_exclude'.format(APPLICATION_PATH))
-    print('False-positive list:\{0}'.format(false_positive_list))
-    # Downlaod reference proteins and rename according to the key (human-readable name)
-    download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), master_dictionary, True, False)
+    excluded_list = os.listdir('{0}/data/proteins_exclude'.format(APPLICATION_PATH))
+    print('Excluded list:\{0}'.format(excluded_list))
+    # Downlaod reference proteins and rename fasta description according to the key (human-readable name)
+    download_proteins('{0}/data/reference_proteins'.format(APPLICATION_PATH), master_dictionary, rename_fasta_description_after_key=True, overwrite=False, filename='after_value[0]')
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
+    # {hit_accession_no: [taxon, protein, hit_description, ortholog_group]}
     protein_hitdict = {}
     conn = create_connection(DATABASE_FILE)
     print('{0}'.format(conn))
