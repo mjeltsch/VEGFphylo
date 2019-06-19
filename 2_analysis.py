@@ -295,7 +295,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
         #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
         # MSA using emma (clustalx)
         bash_command = 'cat {0} {1} {2}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGF_signature, QUERY_FILE_CLOSEST_HOMOLOG)
-        comment = 'Making alignment of {0} with VEGF signature:\n'.format(value[1])
+        comment = 'Making alignment of {0}, {1} and VEGF signature:\n'.format(key, value[1])
         alignment = execute_subprocess(comment, bash_command)
         # Trim header from msf file (necessary for emma)
         alignment = alignment.split('//')[1]
@@ -355,7 +355,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
         how_many_specific = len(taxon_specific_protein_hitlist)
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT or more sequences are present, the MSA is skipped
-        LIMIT = 8
+        LIMIT = 40
         if how_many_specific < LIMIT:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
@@ -370,17 +370,24 @@ def write_protein_hitdict_to_file(protein_hitdict):
             for key, value in master_dictionary.items():
                 seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
                 if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
-                    alignment_file_list += 'S{0},'.format(seqfile)
+                    alignment_file_list += '{0} '.format(seqfile)
             for id in taxon_specific_protein_hitlist:
                 seqfile = '{0}.fasta'.format(id)
                 if os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
-                    alignment_file_list += 'S{0},'.format(seqfile)
+                    alignment_file_list += '{0} '.format(seqfile)
                 else:
                     print('{0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
             # Using emboss/emma (clustalx)
             #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
             # Using m_coffee and html output
-            bash_command = 't_coffee -in {0} -outfile=stdout -output=html -mode mcoffee'.format(alignment_file_list)
+            #
+            # Concatenate all fasta files (t_coffe crashes when using too many direct input files)
+            concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon)
+            bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
+            comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
+            result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+            # Do alignment
+            bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode mcoffee'.format(concat_fasta_file)
             comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
             alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
         else:
