@@ -355,7 +355,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
         how_many_specific = len(taxon_specific_protein_hitlist)
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT or more sequences are present, the MSA is skipped
-        LIMIT = 40
+        LIMIT = 70
         if how_many_specific < LIMIT:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
@@ -390,9 +390,10 @@ def write_protein_hitdict_to_file(protein_hitdict):
             bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode mcoffee'.format(concat_fasta_file)
             comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
             alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+            # Delete all guide trees
         else:
             print('Not generating MSA since number of sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
-            alignment = ''
+            alignment = 'MSA was not generated since number of sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT)
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
