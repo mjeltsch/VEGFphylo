@@ -345,7 +345,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
         # Use list comprehension to extract all sequences of a certain taxon
         #taxon_specific_protein_hitlist = [key for key, value in protein_hitdict.items() if value[1] == taxon]
         taxon_specific_protein_hitlist = []
-        print('\nAppending to taxon_specific_protein_hitlist:')
+        print('\nAppending to taxon_specific_protein_hitlist ({0}):'.format(taxon))
         for key, value in protein_hitdict.items():
             #print('taxon: {0}'.format(taxon))
             #print('value: {0}'.format(value))
@@ -390,7 +390,6 @@ def write_protein_hitdict_to_file(protein_hitdict):
             bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode mcoffee'.format(concat_fasta_file)
             comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
             alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-            # Delete all guide trees
         else:
             print('Not generating MSA since number of sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
             alignment = 'MSA was not generated since number of sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT)
@@ -956,6 +955,10 @@ def run():
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)
     print(save_stats)
+    # Delete all guide trees
+    bash_command = 'rm *_all.dnd'
+    comment = 'Deleting all guide tree files...'
+    alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
 
 if __name__ == '__main__':
     run()
