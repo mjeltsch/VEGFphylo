@@ -109,7 +109,6 @@ from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbipsiblastCommandline
 from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node
 from os.path import basename, dirname, splitext, split
-# To print some terminal output in color
 
 def execute_subprocess(comment, bash_command, working_directory='.'):
     print("\n" + comment, bash_command)

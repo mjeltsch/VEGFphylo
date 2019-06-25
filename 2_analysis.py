@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa, download_proteins, execute_subprocess
 from ete3 import NCBITaxa
 
-# Puropose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
+# Purpose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
 #
 # Database:
@@ -39,6 +39,28 @@ from ete3 import NCBITaxa
 # The results of all tasks that require to connect to a remote service or database (NCBI, Entrez) already
 # cached in order for subsequent runs to be faster. Only after deleting the local cache (manually by deleting
 # the files), new remote requests are initiated.
+
+
+# PREREQUISITS
+# Ubuntu 16.04 or 18.04
+#
+# sudo apt -y --show-progress installpython3-pip t-coffee inkscape python3-setuptools python3-pyqt4 python3-pyqt4.qtopengl python3-pip autoconf imagemagick build-essential libblas-dev liblapack-dev zlib1g-dev libcairo2-dev libcurl4-openssl-dev python3-numpy python3-lxml python3-six
+# sudo pip3 install biopython xmltodict ete3
+#
+# These links need to be set:
+# sudo ln -s /usr/bin/dialign-tx /bin/dialign-t
+# sudo ln -s /usr/bin/clustalw /bin/clustalw2
+#
+# The pcma executable needs to be installed manually as follows:
+# wget http://prodata.swmed.edu/download/pub/PCMA/pcma.tar.gz
+# tar -xvzf pcma.tar.gz
+# cd pcma
+# make
+# sudo cp pcma /bin
+#
+# If you do not install the pygt4 packages, you get a really
+# uninformative error message:
+# "ImportError: cannot import name 'TreeStyle':"
 
 class category_found(Exception):
     pass
@@ -355,7 +377,8 @@ def write_protein_hitdict_to_file(protein_hitdict):
         how_many_specific = len(taxon_specific_protein_hitlist)
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT or more sequences are present, the MSA is skipped
-        LIMIT = 70
+        # with LIMIT = 103, 102 (= crocodylia) works ok, but arachnida (=103) skipped)
+        LIMIT = 104
         if how_many_specific < LIMIT:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
@@ -381,8 +404,10 @@ def write_protein_hitdict_to_file(protein_hitdict):
             #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
             # Using m_coffee and html output
             #
+            # Fix filenames with whitespaces (because t_coffe cannot handle them)
+            taxon_sanitized = "_".join(taxon.split())
             # Concatenate all fasta files (t_coffe crashes when using too many direct input files)
-            concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon)
+            concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
             bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
             comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
             result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
@@ -391,8 +416,12 @@ def write_protein_hitdict_to_file(protein_hitdict):
             comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
             alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
         else:
-            print('Not generating MSA since number of sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
-            alignment = 'MSA was not generated since number of sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT)
+            if how_many_specific == 0:
+                print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
+                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
+            else:
+                print('Not generating MSA since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
+                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT)
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
