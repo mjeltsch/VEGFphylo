@@ -284,85 +284,97 @@ def most_frequent(List):
     return max(set(List), key = List.count)
 
 def write_protein_hitdict_to_file(protein_hitdict):
+    global UNIQUES_WITHOUT_MANUALLY_EXCLUDED
     print('Writing protein files and doing multiple sequence alignments based on protein_hidict with {0} unique sequences.'.format(len(protein_hitdict)))
     for key, value in protein_hitdict.items():
-        print('{0} -> {1}'.format(key, value))
-        # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
-        closest_homolog_list = value[3].split()
-        # Delete all "None" elements from the list
-        closest_homolog_list = list(filter(lambda x: x!= 'None', closest_homolog_list))
-        if len(closest_homolog_list) > 0:
-            closest_homolog = most_frequent(closest_homolog_list)
-            print('Closest homolog: {0}'.format(closest_homolog))
-            if closest_homolog != 'manually_excluded':
-                QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
+        # Do not deal with excluded proteins at all!
+        if os.path.isfile('{0}/data/proteins_excluded/{1}.fasta'.format(APPLICATION_PATH, key)):
+            print('Protein {0} was manually excluded. Skipping...'.format(key))
+        else:
+            print('{0} -> {1}'.format(key, value))
+            # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
+            closest_homolog_list = value[3].split()
+            # Delete all "None" elements from the list
+            closest_homolog_list = list(filter(lambda x: x!= 'None', closest_homolog_list))
+            if len(closest_homolog_list) > 0:
+                closest_homolog = most_frequent(closest_homolog_list)
+                print('Closest homolog: {0}'.format(closest_homolog))
+                if closest_homolog != 'manually_excluded':
+                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
+                else:
+                    print('{0} was manually excluded from analysis'.format(key))
+                    # Default comparison to VEGF-C
+                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
             else:
-                print('{0} was manually excluded from analysis'.format(key))
+                #closest_homolog = ''
+                print('No closest homolog identified.')
                 # Default comparison to VEGF-C
                 QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
-        else:
-            #closest_homolog = ''
-            print('No closest homolog identified.')
-            # Default comparison to VEGF-C
-            QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
-        PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
-        QUERY_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
-        if not os.path.isfile(QUERY_FILE) or os.stat(QUERY_FILE).st_size == 0:
-            download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
-            time.sleep(1)
-        VEGF_signature = '{0}/data/reference_proteins/VEGF_signature.fasta'.format(APPLICATION_PATH)
-        # Simple one-to-one comparison
-        #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
-        # MSA including additonally the VEGF signature uding edialign
-        #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGF_signature)
-        # MSA using emma (clustalx)
-        bash_command = 'cat {0} {1} {2}| emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGF_signature, QUERY_FILE_CLOSEST_HOMOLOG)
-        comment = 'Making alignment of {0}, {1} and VEGF signature:\n'.format(key, value[1])
-        alignment = execute_subprocess(comment, bash_command)
-        # Trim header from msf file (necessary for emma)
-        alignment = alignment.split('//')[1]
-        # Trim comments from the alignment text blob (necessary for needle)
-        line_list = alignment.split('\n')
-        alignment = ''
-        for line in line_list:
-            if not line.startswith('#'):
-                alignment += line+'\n'
-        # Write html header if the file is newly created
-        if not os.path.exists(PROT_FILE):
-            with open(PROT_FILE, 'w') as handle:
-                print('Writing header of html file {}'.format(PROT_FILE))
-                preamble = '''<html>
-                <head>
-                <title>Individual alignments</title>
-                <style>
-                    body { font-family: "Open Sans", Arial; }
-                </style>
-                <script type="text/javascript">
-                <!--
-                    function toggle_visibility(id) {
-                        var e = document.getElementById(id);
-                        if(e.style.display == 'block')
-                            e.style.display = 'none';
-                        else
-                            e.style.display = 'block'; }
-                //-->
-                </script>
-                </head>
-                <body>
-                <table border="1">'''
-                handle.write(preamble)
-        with open(PROT_FILE, 'a') as handle:
-            link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a>'.format(key)
-            link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(key)
-            row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value, link_to_blast)
-            row += '<div id="align_{0}" style="display:none"><pre>\n{1}\n</pre></div></td></tr>\n'.format(key, alignment)
-            #handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
-            #handle.write('<pre>\n{0}\n</pre>'.format(alignment))
-            handle.write(row)
-            #print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
+            PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
+            QUERY_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
+            MATRIX_FILE = '{0}/data/GONNETmod.matrix'.format(APPLICATION_PATH)
+            if not os.path.isfile(QUERY_FILE) or os.stat(QUERY_FILE).st_size == 0:
+                download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
+                time.sleep(1)
+            VEGFC_signature = '{0}/data/reference_proteins/VEGFC_signature.fasta'.format(APPLICATION_PATH)
+            # Simple one-to-one comparison
+            #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
+            # MSA including additonally the VEGF signature uding edialign
+            #bash_command = 'cat {0} {1} {2} | edialign -filter'.format(QUERY_FILE1, QUERY_FILE2, VEGFC_signature)
+            # MSA using emma (clustalx)
+            #
+            # COMMAND TO USE FOR CUSTOM MATRIX THAT OVEREMPHASIZES CYSTEIN ALIGNMENTS:
+            bash_command = 'cat {0} {1} {2}| emma -filter -slowalign Yes -pwmatrix o -pairwisedatafile {3} -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGFC_signature, QUERY_FILE_CLOSEST_HOMOLOG, MATRIX_FILE)
+            #bash_command = 'cat {0} {1} {2}| emma -filter -slowalign Yes -pwmatrix g -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGFC_signature, QUERY_FILE_CLOSEST_HOMOLOG)
+            comment = 'Making alignment of {0}, {1} and VEGF-C signature:\n'.format(key, value[1])
+            alignment = execute_subprocess(comment, bash_command)
+            # Trim header from msf file (necessary for emma)
+            alignment = alignment.split('//')[1]
+            # Trim comments from the alignment text blob (necessary for needle)
+            line_list = alignment.split('\n')
+            alignment = ''
+            for line in line_list:
+                if not line.startswith('#'):
+                    alignment += line+'\n'
+            # Write html header if the file is newly created
+            if not os.path.exists(PROT_FILE):
+                with open(PROT_FILE, 'w') as handle:
+                    print('Writing header of html file {}'.format(PROT_FILE))
+                    preamble = '''<html>
+                    <head>
+                    <title>Individual alignments</title>
+                    <style>
+                        body { font-family: "Open Sans", Arial; }
+                    </style>
+                    <script type="text/javascript">
+                    <!--
+                        function toggle_visibility(id) {
+                            var e = document.getElementById(id);
+                            if(e.style.display == 'block')
+                                e.style.display = 'none';
+                            else
+                                e.style.display = 'block'; }
+                    //-->
+                    </script>
+                    </head>
+                    <body>
+                    <table border="1">'''
+                    handle.write(preamble)
+            with open(PROT_FILE, 'a') as handle:
+                link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a>'.format(key)
+                link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(key)
+                row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value, link_to_blast)
+                row += '<div id="align_{0}" style="display:none"><pre>\n{1}\n</pre></div></td></tr>\n'.format(key, alignment)
+                #handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
+                #handle.write('<pre>\n{0}\n</pre>'.format(alignment))
+                handle.write(row)
+                #print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
     # Make MSA for each taxon (limit by sequence number)
+    count_taxa = 0
+    number_of_taxa = len(taxon_dictionary)
     for taxon in taxon_dictionary:
+        count_taxa += 1
         # The protein_hitdict comprises all (~8666) sequences!!!!
         # Use list comprehension to extract all sequences of a certain taxon
         #taxon_specific_protein_hitlist = [key for key, value in protein_hitdict.items() if value[1] == taxon]
@@ -376,44 +388,61 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 print('{0}-{1} '.format(value[0], key), end = '')
         how_many_specific = len(taxon_specific_protein_hitlist)
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
-        # If LIMIT or more sequences are present, the MSA is skipped
-        # with LIMIT = 103, 102 (= crocodylia) works ok, but arachnida (=103) skipped)
-        LIMIT = 104
-        if how_many_specific < LIMIT:
+        # If LIMIT_MAX or more sequences are present, the MSA is skipped
+        # with LIMIT_MAX = 103, 102 (= crocodylia) works ok, but arachnida (=103) is skipped)
+        LIMIT_ACCURATE = 2 #DEFAULT 25
+        LIMIT_SEMIACCURATE = 5 # DEFAULT = 104
+        LIMIT_MAX = 50 # DEFAULT = 200
+        if how_many_specific < LIMIT_MAX:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
         else:
             # Might need fixing for the exact numbers
-            print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT))
-            for i in range(how_many_specific-LIMIT+1, how_many_specific+1):
+            print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT_MAX))
+            for i in range(how_many_specific-LIMIT_MAX+1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
-        if 0 < how_many_specific < LIMIT:
+        if 0 < how_many_specific < LIMIT_MAX:
             #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
             alignment_file_list = ''
+            # Add only sequences to the MSA list that exist and that are not in the excluded list!
+            UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
+            for id in taxon_specific_protein_hitlist:
+                seqfile = '{0}.fasta'.format(id)
+                if os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)) and not os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)):
+                    alignment_file_list += '{0} '.format(seqfile)
+                    UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] += 1
+                    print('414 UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+                else:
+                    print('{0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
+            print('417 FINAL UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+            print('Real number of homologs included in the MSA: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
+            # This adds all the reference proteins to the MSA list
             for key, value in master_dictionary.items():
                 seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
                 if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
                     alignment_file_list += '{0} '.format(seqfile)
-            for id in taxon_specific_protein_hitlist:
-                seqfile = '{0}.fasta'.format(id)
-                if os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
-                    alignment_file_list += '{0} '.format(seqfile)
-                else:
-                    print('{0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
             # Using emboss/emma (clustalx)
             #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
             # Using m_coffee and html output
             #
-            # Fix filenames with whitespaces (because t_coffe cannot handle them)
+            # Fix filenames with whitespaces (because t_coffee cannot handle them)
             taxon_sanitized = "_".join(taxon.split())
-            # Concatenate all fasta files (t_coffe crashes when using too many direct input files)
+            # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
             concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
             bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
             comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
             result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-            # Do alignment
-            bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode mcoffee'.format(concat_fasta_file)
-            comment = 'Making MSA of all {0} VEGFs/PDGFs\n'.format(taxon)
+            if how_many_specific < LIMIT_ACCURATE:
+                # Do alignment using the slow mcoffee option
+                MODE = 'mcoffee'
+            elif how_many_specific < LIMIT_SEMIACCURATE:
+                # Do alignment using the faster fmcoffee option
+                MODE = 'fmcoffee'
+            else:
+                # Do alignment using the even faster quickaln option
+                MODE = 'quickaln'
+            bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
+            comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
             alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
         else:
             if how_many_specific == 0:
@@ -421,7 +450,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
             else:
                 print('Not generating MSA since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
-                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT)
+                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT_MAX)
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
@@ -432,7 +461,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
 
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list, UNIQUES_WITHOUT_MANUALLY_EXCLUDED
     if args.directory == '':
         return []
     else:
@@ -867,7 +896,8 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list, UNIQUES_WITHOUT_MANUALLY_EXCLUDED
+    UNIQUES_WITHOUT_MANUALLY_EXCLUDED = {}
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     # You can adjust this down until you see that the blat server starts blocking your requests!
@@ -915,6 +945,8 @@ def run():
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
     sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
     for taxon, taxon_data in taxon_dictionary.items():
+        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
+        print('949 After initializing: UNIQUES_WITHOUT_MANUALLY_EXCLUDED[{0}]: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
         #print("Enter recursion")
         if taxon not in blacklist:
             #print("Passed blacklist loading")
@@ -970,9 +1002,20 @@ def run():
     #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     # Make backup file before overwriting
     os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
+    # This used to be after line 1016
+    write_protein_hitdict_to_file(protein_hitdict)
+    # Add the real number of homologs (considering the manually excluded sequences)
+    try:
+        print('1009 UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+        new_taxon_dictionary[taxon][7] = UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]
+    except Exception as err:
+        print('1012 Error: UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}; err: {2}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED, err))
+        # The UNIQUES_WITHOUT_MANUALLY_EXCLUDED number is only calculated until LIMIT_MAX, which is by default 200)
+        new_taxon_dictionary[taxon][7] = '-'
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
-    write_protein_hitdict_to_file(protein_hitdict)
+
+
     # Format the taxon_data.py file
     if insert_line_breaks(TAXON_DICTIONARY_FILE) == True:
         print('Successfully formatted the taxon data file.')
