@@ -496,6 +496,7 @@ def drawtree(TREEFILE):
                 dict_key1 = str(counter1).zfill(3)
                 number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
                 counter1 += 1
+                # Total unique blast hits
                 textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 3, "aligned")
 
