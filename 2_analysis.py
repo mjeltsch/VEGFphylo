@@ -390,9 +390,9 @@ def write_protein_hitdict_to_file(protein_hitdict):
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT_MAX or more sequences are present, the MSA is skipped
         # with LIMIT_MAX = 103, 102 (= crocodylia) works ok, but arachnida (=103) is skipped)
-        LIMIT_ACCURATE = 2 #DEFAULT 25
-        LIMIT_SEMIACCURATE = 5 # DEFAULT = 104
-        LIMIT_MAX = 50 # DEFAULT = 200
+        LIMIT_ACCURATE = 25 #DEFAULT 25
+        LIMIT_SEMIACCURATE = 104 # DEFAULT = 104
+        LIMIT_MAX = 200 # DEFAULT = 200
         if how_many_specific < LIMIT_MAX:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
@@ -945,7 +945,7 @@ def run():
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
     sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
     for taxon, taxon_data in taxon_dictionary.items():
-        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
+        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = '-'
         print('949 After initializing: UNIQUES_WITHOUT_MANUALLY_EXCLUDED[{0}]: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
         #print("Enter recursion")
         if taxon not in blacklist:
@@ -1005,13 +1005,14 @@ def run():
     # This used to be after line 1016
     write_protein_hitdict_to_file(protein_hitdict)
     # Add the real number of homologs (considering the manually excluded sequences)
-    try:
-        print('1009 UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
-        new_taxon_dictionary[taxon][7] = UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]
-    except Exception as err:
-        print('1012 Error: UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}; err: {2}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED, err))
-        # The UNIQUES_WITHOUT_MANUALLY_EXCLUDED number is only calculated until LIMIT_MAX, which is by default 200)
-        new_taxon_dictionary[taxon][7] = '-'
+    for taxon in taxon_dictionary:
+        try:
+            print('1009 UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+            new_taxon_dictionary[taxon][7] = UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]
+        except Exception as err:
+            print('1012 Error: UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}; err: {2}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED, err))
+            # The UNIQUES_WITHOUT_MANUALLY_EXCLUDED number is only calculated until LIMIT_MAX, which is by default 200)
+            new_taxon_dictionary[taxon][7] = '-'
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
 
