@@ -398,7 +398,7 @@ def drawtree(TREEFILE):
             # Get the common name for this animal class if it exists
             #print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
             #
-            # For display and refering to the taxon_ditionary, the aninal class name needs to be without qutes
+            # For display and refering to the taxon_dictionary, the aninal class name needs to be without qutes
             animal_class_name = animal_class_name.strip('\'')
             # For the tree drawing, complex animal class names (with spaces) need to be in single quotes
             animal_class_name_with = node.name
@@ -438,9 +438,9 @@ def drawtree(TREEFILE):
                     (t & animal_class_name).add_face(textFace, 0, "aligned")
                     textFace = TextFace(' # se-\n quences', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 1, "aligned")
-                    textFace = TextFace(' # compl.\n genomes', fsize = 16, fstyle = "italic")
+                    textFace = TextFace(' # compl.\n genomes ', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 2, "aligned")
-                    textFace = TextFace(' # unique\n blasthits', fsize = 16, fstyle = "italic")
+                    textFace = TextFace(' # unique blasthits\n(excl. false pos.)', fsize = 16, fstyle = "italic")
                     (t & animal_class_name).add_face(textFace, 3, "aligned")
                     textFace = TextFace(' ', fsize = 16)
                     (t & animal_class_name).add_face(textFace, 4, "aligned")
@@ -496,8 +496,15 @@ def drawtree(TREEFILE):
                 dict_key1 = str(counter1).zfill(3)
                 number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
                 counter1 += 1
-                # Total unique blast hits
-                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+                # Total unique blast hits (in parenthesis unique true homologs , i.e. after subtracting those, that where
+                # manually identified as false positives)
+                #
+                # An alignment is also created if there are 0 true homologs after removing false positives! => FIX!
+                if taxon_dictionary[animal_class_name][7] != '-':
+                    true_homologs = ' ({0})'.format(taxon_dictionary[animal_class_name][7])
+                    textFace = TextFace(str(tot_unique)+DELIMITER1+dict_key1+true_homologs+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+                else:
+                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 3, "aligned")
 
                 # IMAGE (#4, animal silouette)
