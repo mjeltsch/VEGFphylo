@@ -449,6 +449,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
                 alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
             else:
+                UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 'n.a.'
                 print('Not generating MSA since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
                 alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT_MAX)
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
@@ -662,6 +663,7 @@ def run_backcheck_blast(ID, proteindata):
                     time.sleep(2)
                 blast_start_time = time.time()
                 print('Executing backcheck blast for accession no {0}. Waiting for results...'.format(ID))
+                # Maybe hitlist-Size should be increased to 100 and expect to 10?
                 result_handle = NCBIWWW.qblast("blastp", "nr", ID , hitlist_size = 50, expect = 0.01, format_type = "XML")
                 i += 1
                 with open('data/backcheck/{0}.xml'.format(ID), 'w') as out_handle:
@@ -945,7 +947,8 @@ def run():
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
     sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
     for taxon, taxon_data in taxon_dictionary.items():
-        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = '-'
+        # populate the field with"not analyzed"
+        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
         print('949 After initializing: UNIQUES_WITHOUT_MANUALLY_EXCLUDED[{0}]: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
         #print("Enter recursion")
         if taxon not in blacklist:

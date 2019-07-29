@@ -500,10 +500,17 @@ def drawtree(TREEFILE):
                 # manually identified as false positives)
                 #
                 # An alignment is also created if there are 0 true homologs after removing false positives! => FIX!
-                if taxon_dictionary[animal_class_name][7] != '-':
+                if taxon_dictionary[animal_class_name][7] == 'n.a.':
+                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (n.a.)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+                elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique != 0:
+                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (0)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+                elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique == 0:
+                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+                elif taxon_dictionary[animal_class_name][7] != 'n.a.':
                     true_homologs = ' ({0})'.format(taxon_dictionary[animal_class_name][7])
                     textFace = TextFace(str(tot_unique)+DELIMITER1+dict_key1+true_homologs+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
                 else:
+                    # This option should never occur!
                     textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
                 (t & animal_class_name_with).add_face(textFace, 3, "aligned")
 
