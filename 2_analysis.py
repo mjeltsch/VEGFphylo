@@ -417,33 +417,41 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('417 FINAL UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
             print('Real number of homologs included in the MSA: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
             # This adds all the reference proteins to the MSA list
+            # Also count reference sequences!
+            ref_seq_count = 0
             for key, value in master_dictionary.items():
                 seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
                 if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
                     alignment_file_list += '{0} '.format(seqfile)
-            # Using emboss/emma (clustalx)
-            #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
-            # Using m_coffee and html output
-            #
-            # Fix filenames with whitespaces (because t_coffee cannot handle them)
-            taxon_sanitized = "_".join(taxon.split())
-            # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
-            concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
-            bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
-            comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
-            result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-            if how_many_specific < LIMIT_ACCURATE:
-                # Do alignment using the slow mcoffee option
-                MODE = 'mcoffee'
-            elif how_many_specific < LIMIT_SEMIACCURATE:
-                # Do alignment using the faster fmcoffee option
-                MODE = 'fmcoffee'
+                    ref_seq_count += 1
+            # Only execute MSA if there are non-reference sequences in the alignment_file_list
+            if len(alignment_file_list) > ref_seq_count:
+                # Using emboss/emma (clustalx)
+                #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
+                # Using m_coffee and html output
+                #
+                # Fix filenames with whitespaces (because t_coffee cannot handle them)
+                taxon_sanitized = "_".join(taxon.split())
+                # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
+                concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
+                bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
+                comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
+                result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                if how_many_specific < LIMIT_ACCURATE:
+                    # Do alignment using the slow mcoffee option
+                    MODE = 'mcoffee'
+                elif how_many_specific < LIMIT_SEMIACCURATE:
+                    # Do alignment using the faster fmcoffee option
+                    MODE = 'fmcoffee'
+                else:
+                    # Do alignment using the even faster quickaln option
+                    MODE = 'quickaln'
+                bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
+                comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
+                alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
             else:
-                # Do alignment using the even faster quickaln option
-                MODE = 'quickaln'
-            bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
-            comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
-            alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
+                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
         else:
             if how_many_specific == 0:
                 print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
