@@ -287,10 +287,15 @@ def write_protein_hitdict_to_file(protein_hitdict):
     global UNIQUES_WITHOUT_MANUALLY_EXCLUDED
     print('Writing protein files and doing multiple sequence alignments based on protein_hidict with {0} unique sequences.'.format(len(protein_hitdict)))
     for key, value in protein_hitdict.items():
+        print('Ecluding proteins. value = {0}'.format(value))
         # Do not deal with excluded proteins at all!
-        if os.path.isfile('{0}/data/proteins_excluded/{1}.fasta'.format(APPLICATION_PATH, key)):
+        if os.path.isfile('{0}/data/proteins_exclude/{1}.fasta'.format(APPLICATION_PATH, key)):
             print('Protein {0} was manually excluded. Skipping...'.format(key))
+        # Check also in the taxon-specific subfolder
+        elif os.path.isfile('{0}/data/proteins_exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, value[0], key)):
+            print('Protein {0} was found in subfolder {1} and manually excluded. Skipping...'.format(key, value[0]))
         else:
+            print('Including protein {0} as it was not found in {1}/data/proteins_exclude or {1}/data/proteins_exclude/{2}'.format(key, APPLICATION_PATH, value[0]))
             print('{0} -> {1}'.format(key, value))
             # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
             closest_homolog_list = value[3].split()
@@ -390,9 +395,9 @@ def write_protein_hitdict_to_file(protein_hitdict):
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT_MAX or more sequences are present, the MSA is skipped
         # with LIMIT_MAX = 103, 102 (= crocodylia) works ok, but arachnida (=103) is skipped)
-        LIMIT_ACCURATE = 25 #DEFAULT 25
-        LIMIT_SEMIACCURATE = 104 # DEFAULT = 104
-        LIMIT_MAX = 200 # DEFAULT = 200
+        LIMIT_ACCURATE = 5 #DEFAULT 25
+        LIMIT_SEMIACCURATE = 10 # DEFAULT = 104
+        LIMIT_MAX = 50 # DEFAULT = 200
         if how_many_specific < LIMIT_MAX:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
@@ -408,13 +413,15 @@ def write_protein_hitdict_to_file(protein_hitdict):
             UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
             for id in taxon_specific_protein_hitlist:
                 seqfile = '{0}.fasta'.format(id)
-                if os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)) and not os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)):
+                if os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
+                    print('Sequence {0} was manually excluded. Omitting from MSA for {1}'.format(seqfile, taxon))
+                elif os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
                     alignment_file_list += '{0} '.format(seqfile)
                     UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] += 1
-                    print('414 UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+                    print('UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
                 else:
-                    print('{0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
-            print('417 FINAL UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+                    print('Sequence {0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
+            print('FINAL UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
             print('Real number of homologs included in the MSA: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
             # This adds all the reference proteins to the MSA list
             # Also count reference sequences!
@@ -446,7 +453,8 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 else:
                     # Do alignment using the even faster quickaln option
                     MODE = 'quickaln'
-                bash_command = 't_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
+                # The nice -n 19 is because I have to work on the same computer!
+                bash_command = 'nice -n 19 t_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
                 comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
                 alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
             else:
