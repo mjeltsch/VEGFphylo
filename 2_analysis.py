@@ -396,7 +396,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
         # If LIMIT['MAX'] or more sequences are present, the MSA is skipped
         # with LIMIT['MAX'] = 103, 102 (= crocodylia) works ok, but arachnida (= 103) is skipped)
         LIMIT = {'ACCURATE': 25, 'SEMIACCURATE': 104, 'MAX': 200}
-        LIMIT = {'ACCURATE': 5, 'SEMIACCURATE': 10, 'MAX': 50}
+        #LIMIT = {'ACCURATE': 5, 'SEMIACCURATE': 10, 'MAX': 50}
         # Only printing
         if how_many_specific < LIMIT['MAX']:
             for i in range(1, how_many_specific+1):
