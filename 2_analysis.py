@@ -284,7 +284,7 @@ def most_frequent(List):
     return max(set(List), key = List.count)
 
 def write_protein_hitdict_to_file(protein_hitdict):
-    global UNIQUES_WITHOUT_MANUALLY_EXCLUDED
+    global TRUE_UNIQUES
     print('Writing protein files and doing multiple sequence alignments based on protein_hidict with {0} unique sequences.'.format(len(protein_hitdict)))
     for key, value in protein_hitdict.items():
         print('Ecluding proteins. value = {0}'.format(value))
@@ -393,46 +393,47 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 print('{0}-{1} '.format(value[0], key), end = '')
         how_many_specific = len(taxon_specific_protein_hitlist)
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
-        # If LIMIT_MAX or more sequences are present, the MSA is skipped
-        # with LIMIT_MAX = 103, 102 (= crocodylia) works ok, but arachnida (=103) is skipped)
-        LIMIT_ACCURATE = 5 #DEFAULT 25
-        LIMIT_SEMIACCURATE = 10 # DEFAULT = 104
-        LIMIT_MAX = 50 # DEFAULT = 200
-        if how_many_specific < LIMIT_MAX:
+        # If LIMIT['MAX'] or more sequences are present, the MSA is skipped
+        # with LIMIT['MAX'] = 103, 102 (= crocodylia) works ok, but arachnida (= 103) is skipped)
+        LIMIT = {'ACCURATE': 25, 'SEMIACCURATE': 104, 'MAX': 200}
+        LIMIT = {'ACCURATE': 5, 'SEMIACCURATE': 10, 'MAX': 50}
+        # Only printing
+        if how_many_specific < LIMIT['MAX']:
             for i in range(1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
         else:
             # Might need fixing for the exact numbers
-            print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT_MAX))
-            for i in range(how_many_specific-LIMIT_MAX+1, how_many_specific+1):
+            print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT['MAX']))
+            for i in range(how_many_specific-LIMIT['MAX']+1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
-        if 0 < how_many_specific < LIMIT_MAX:
+        if 0 < how_many_specific < LIMIT['MAX']:
             #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
-            alignment_file_list = ''
+            alignment_file_list = []
             # Add only sequences to the MSA list that exist and that are not in the excluded list!
-            UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
+            TRUE_UNIQUES[taxon] = 0
             for id in taxon_specific_protein_hitlist:
                 seqfile = '{0}.fasta'.format(id)
                 if os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
                     print('Sequence {0} was manually excluded. Omitting from MSA for {1}'.format(seqfile, taxon))
                 elif os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
-                    alignment_file_list += '{0} '.format(seqfile)
-                    UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] += 1
-                    print('UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
+                    alignment_file_list.append(seqfile)
+                    TRUE_UNIQUES[taxon] += 1
+                    print('TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
                 else:
                     print('Sequence {0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
-            print('FINAL UNIQUES_WITHOUT_MANUALLY_EXCLUDED: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
-            print('Real number of homologs included in the MSA: {0}'.format(UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
+            print('Final TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
+            print('Number of homologs included in the MSA: {0}'.format(TRUE_UNIQUES[taxon]))
             # This adds all the reference proteins to the MSA list
             # Also count reference sequences!
             ref_seq_count = 0
             for key, value in master_dictionary.items():
                 seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
                 if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
-                    alignment_file_list += '{0} '.format(seqfile)
+                    alignment_file_list.append(seqfile)
                     ref_seq_count += 1
             # Only execute MSA if there are non-reference sequences in the alignment_file_list
             if len(alignment_file_list) > ref_seq_count:
+                print('FOR taxon {0}: len(alignment_file_list) = {1} > ref_seq_count = {2}'.format(taxon, len(alignment_file_list), ref_seq_count))
                 # Using emboss/emma (clustalx)
                 #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
                 # Using m_coffee and html output
@@ -441,13 +442,15 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 taxon_sanitized = "_".join(taxon.split())
                 # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
                 concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
-                bash_command = 'cat {0} > {1}'.format(alignment_file_list, concat_fasta_file)
+                # Convert list of files into space-separated string
+                alignment_file_list_str = ' '.join(alignment_file_list)
+                bash_command = 'cat {0} > {1}'.format(alignment_file_list_str, concat_fasta_file)
                 comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
                 result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-                if how_many_specific < LIMIT_ACCURATE:
+                if how_many_specific < LIMIT['ACCURATE']:
                     # Do alignment using the slow mcoffee option
                     MODE = 'mcoffee'
-                elif how_many_specific < LIMIT_SEMIACCURATE:
+                elif how_many_specific < LIMIT['SEMIACCURATE']:
                     # Do alignment using the faster fmcoffee option
                     MODE = 'fmcoffee'
                 else:
@@ -465,9 +468,9 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
                 alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
             else:
-                UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 'n.a.'
+                TRUE_UNIQUES[taxon] = 'n.a.'
                 print('Not generating MSA since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
-                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT_MAX)
+                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT['MAX'])
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
@@ -478,7 +481,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
 
 def get_protein_data(taxon):
-    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list, UNIQUES_WITHOUT_MANUALLY_EXCLUDED
+    global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list, TRUE_UNIQUES
     if args.directory == '':
         return []
     else:
@@ -914,8 +917,8 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list, UNIQUES_WITHOUT_MANUALLY_EXCLUDED
-    UNIQUES_WITHOUT_MANUALLY_EXCLUDED = {}
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list, TRUE_UNIQUES
+    TRUE_UNIQUES = {}
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
     # You can adjust this down until you see that the blat server starts blocking your requests!
@@ -963,9 +966,9 @@ def run():
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
     sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
     for taxon, taxon_data in taxon_dictionary.items():
-        # populate the field with"not analyzed"
-        UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon] = 0
-        print('949 After initializing: UNIQUES_WITHOUT_MANUALLY_EXCLUDED[{0}]: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]))
+        # populate the field with "0"
+        TRUE_UNIQUES[taxon] = 0
+        print('949 After initializing: TRUE_UNIQUES[{0}]: {1}'.format(taxon, TRUE_UNIQUES[taxon]))
         #print("Enter recursion")
         if taxon not in blacklist:
             #print("Passed blacklist loading")
@@ -1026,11 +1029,11 @@ def run():
     # Add the real number of homologs (considering the manually excluded sequences)
     for taxon in taxon_dictionary:
         try:
-            print('1009 UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED))
-            new_taxon_dictionary[taxon][7] = UNIQUES_WITHOUT_MANUALLY_EXCLUDED[taxon]
+            print('TRUE_UNIQUES for taxon {0}: {1}'.format(taxon, TRUE_UNIQUES))
+            new_taxon_dictionary[taxon][7] = TRUE_UNIQUES[taxon]
         except Exception as err:
-            print('1012 Error: UNIQUES_WITHOUT_MANUALLY_EXCLUDED for taxon {0}: {1}; err: {2}'.format(taxon, UNIQUES_WITHOUT_MANUALLY_EXCLUDED, err))
-            # The UNIQUES_WITHOUT_MANUALLY_EXCLUDED number is only calculated until LIMIT_MAX, which is by default 200)
+            print('Error: TRUE_UNIQUES for taxon {0}: {1}; err: {2}'.format(taxon, TRUE_UNIQUES, err))
+            # The TRUE_UNIQUES number is only calculated until LIMIT['MAX'], which is by default 200)
             new_taxon_dictionary[taxon][7] = '-'
     # Write new taxon data to file
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
