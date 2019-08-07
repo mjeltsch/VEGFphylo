@@ -5,8 +5,10 @@ import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, r
 from Bio import SeqIO
 from Bio import Phylo
 from Bio import SearchIO
+from Bio import Entrez
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
+from Bio.Blast.Applications import NcbirpsblastCommandline
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
@@ -480,6 +482,22 @@ def write_protein_hitdict_to_file(protein_hitdict):
             handle.write(end_of_file)
             print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
 
+def download(sequence_list, save_in_file_or_folder):
+    # Get all fasta sequences from the SEQUENCE_LIST via Entrez
+    Entrez.email = "michael@jeltsch.org"
+    Entrez.tool = "local_script_under_development"
+    file = open(save_in_file_or_folder,"w")
+    print("Retrieving sequences from Entrez:\n")
+    for item in sequence_list:
+        print("Retrieving " + item)
+        try:
+            with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=item) as handle:
+                seq_record = SeqIO.read(handle, "fasta")
+                file.write(seq_record.format("fasta"))
+        except Exception as ex:
+            print("Problem contacting Blast server. Skipping " + item + ". Error: " + str(ex))
+    file.close()
+
 def get_protein_data(taxon):
     global TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, excluded_list, TRUE_UNIQUES
     if args.directory == '':
@@ -597,12 +615,62 @@ def get_protein_data(taxon):
                         excluded_counter += 1
                         TOTAL_COUNT += 1
                     else:
+                        print("rpsblast pathway")
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
-                        list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
-                        ortholog_group = 'None'
-                        unknown_counter+= 1
-                        TOTAL_COUNT += 1
-                        TOTAL_UNKNOWN_COUNT += 1
+                        # Do an RPS BLAST searching for the PDGF signature and classify as related protein if found
+                        # Get the profile database from ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/cdd.tar.gz
+                        # Make a file "pdgf.pn", which contains the filenames of the profiles that you want to search for.
+                        # In our case (PDGF domain) that is smart00141.smp and cd00135.smp
+                        # makeprofiledb -title PDGF_V1.0 -in pdgf.pn -out PDGF -threshold 9.82 -scale 100.0 -dbtype rps -index true
+                        # rpsblast -query NP_079484.1.fasta -db PDGF -evalue 0.00001 -outfmt 5 -out out.xml
+                        # Download the sequence from Entrez
+                        query_filename = '{0}/rpsblast/data/{1}.fasta'.format(APPLICATION_PATH, hit_accession_no)
+                        download([hit_accession_no], query_filename)
+                        xml_result_filename = '{0}/rpsblast/data/{1}.xml'.format(APPLICATION_PATH, hit_accession_no)
+                        # Adjust the file locations:
+                        rpsblast_database = "rpsblast/PDGF"
+                        rpsblast_executable = '/home/mjeltsch/bin/ncbi-blast-2.9.0+/bin/rpsblast'
+                        #Adjust the expectation cut-off here
+                        E_VALUE_THRESHOLD = 0.00001
+                        # THIS DOES NOT WORK IF THE Ubuntu-provided blast version is used!
+                        # rpsblast_cline = NcbirpsblastCommandline(cmd=rpsblast_executable, query=query_filename, db=rpsblast_database, evalue=E_VALUE_THRESHOLD, outfmt=5, out=xml_result_filename)
+                        # try:
+                        #     stdout, stderr = rpsblast_cline()
+                        # except Exception as ex:
+                        #     print("\nSomething went wrong with the local rpsblast. More about the error:\n" + str(ex))
+                        bash_command = '{0} -query {1} -db {2} -evalue {3} -outfmt 5 -out {4}'.format(rpsblast_executable, query_filename, rpsblast_database, E_VALUE_THRESHOLD, xml_result_filename)
+                        comment = 'Executing rpsblast...'
+                        result = execute_subprocess(comment, bash_command, working_directory='.')
+                        print('rpsblast result: {0}'.format(result))
+
+                        # Open XML results for analysis
+                        for record in NCBIXML.parse(open(xml_result_filename)):
+                            #We want to ignore any queries with no search results:
+                            if record.alignments:
+                                print('rpsblast found at least one PDGF homology domain:')
+                                print('QUERY: {0}...'.format(record.query[:60]))
+                                for align in record.alignments :
+                                    for hsp in align.hsps :
+                                        print('{0} HSP, e={1}, from position {2} to {3}'.format(align.hit_id, hsp.expect, hsp.query_start, hsp.query_end))
+                                        assert hsp.expect <= E_VALUE_THRESH
+                                #negative_dict[related_protein] += 1
+                                #TOTAL_COUNT += 1
+                                #print('Potential false-positive found.')
+                                #ortholog_group = 'None'
+                                #list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
+                                # Above 5 lines were disabled for debugging and replaced by below 5 lines
+                                list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
+                                ortholog_group = 'None'
+                                unknown_counter+= 1
+                                TOTAL_COUNT += 1
+                                TOTAL_UNKNOWN_COUNT += 1
+                            else:
+                                print('rpsblast did not find any PDGF homology domains.')
+                                list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
+                                ortholog_group = 'None'
+                                unknown_counter+= 1
+                                TOTAL_COUNT += 1
+                                TOTAL_UNKNOWN_COUNT += 1
                 except category_found:
                     TOTAL_COUNT += 1
                 # BLASTHIT = [id, accession_no, species, fasta_description, ortholog group (only if determined with high probability)]
