@@ -615,7 +615,7 @@ def get_protein_data(taxon):
                         excluded_counter += 1
                         TOTAL_COUNT += 1
                     else:
-                        print("rpsblast pathway")
+                        print('rpsblast pathway')
                         # These are all the unknown proteins, that even a backcheck blast cannot identify
                         # Do an RPS BLAST searching for the PDGF signature and classify as related protein if found
                         # Get the profile database from ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/cdd.tar.gz
@@ -625,7 +625,8 @@ def get_protein_data(taxon):
                         # rpsblast -query NP_079484.1.fasta -db PDGF -evalue 0.00001 -outfmt 5 -out out.xml
                         # Download the sequence from Entrez
                         query_filename = '{0}/rpsblast/data/{1}.fasta'.format(APPLICATION_PATH, hit_accession_no)
-                        download([hit_accession_no], query_filename)
+                        if not os.path.isfile(query_filename):
+                            download([hit_accession_no], query_filename)
                         xml_result_filename = '{0}/rpsblast/data/{1}.xml'.format(APPLICATION_PATH, hit_accession_no)
                         # Adjust the file locations:
                         rpsblast_database = "rpsblast/PDGF"
@@ -652,20 +653,22 @@ def get_protein_data(taxon):
                                 for align in record.alignments :
                                     for hsp in align.hsps :
                                         print('{0} HSP, e={1}, from position {2} to {3}'.format(align.hit_id, hsp.expect, hsp.query_start, hsp.query_end))
-                                        assert hsp.expect <= E_VALUE_THRESH
-                                #negative_dict[related_protein] += 1
+                                        assert hsp.expect <= E_VALUE_THRESHOLD
+                                #negative_dict[related_protein] +=after_value 1
                                 #TOTAL_COUNT += 1
                                 #print('Potential false-positive found.')
                                 #ortholog_group = 'None'
                                 #list_to_scrutinize_paralog.append([taxon, protein, 'paralog', hit_id, hit_accession_no, hit.description])
                                 # Above 5 lines were disabled for debugging and replaced by below 5 lines
+                                hit.description += ', PDGF signature programmatically detected'
                                 list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
                                 ortholog_group = 'None'
                                 unknown_counter+= 1
                                 TOTAL_COUNT += 1
                                 TOTAL_UNKNOWN_COUNT += 1
                             else:
-                                print('rpsblast did not find any PDGF homology domains.')
+                                print('rpsblast found no PDGF homology domains.')
+                                hit.description += ', no PDGF signature programmatically detected'
                                 list_to_scrutinize_unknown.append([taxon, protein, 'unknown', hit_id, hit_accession_no, hit.description])
                                 ortholog_group = 'None'
                                 unknown_counter+= 1
