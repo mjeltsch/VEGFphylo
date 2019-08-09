@@ -450,13 +450,13 @@ def drawtree(TREEFILE):
                     #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                     i = 6
 
-                    # Protein colors
+                    # Protein colors (Fonts, not background)
                     #zero_color = '#FFFFE0' # LightYellow
                     #first_color = '#98FB98' # PaleGreen
                     #second_color = '#FFE4E1' # MistyRose
                     #third_color = '#D8BFD8' # Thistle
                     # Protein colors corresponding to the tree background color
-                    zero_color = 'DarkTurquoise' # Cyan ->darker
+                    zero_color = "Black" # Cyan ->darker
                     first_color = '#03BA03' # PaleGreen
                     second_color = '#AD78AD' # Thistle
                     third_color = '#808080' # Grey
@@ -598,9 +598,7 @@ def drawtree(TREEFILE):
 
     # Define background colors for parts of the tree
     nst1 = NodeStyle()
-    nst1["bgcolor"] = "LightYellow"
-    nst1 = NodeStyle()
-    nst1["bgcolor"] = "PaleTurquoise"
+    nst1["bgcolor"] = "White"
     nst2 = NodeStyle()
     nst2["bgcolor"] = "PaleGreen"
     nst3 = NodeStyle()
