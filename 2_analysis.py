@@ -468,7 +468,8 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 bash_command = 'nice -n 19 t_coffee -seq {0} -output=[html,phylip] -mode {1}'.format(concat_fasta_file, MODE)
                 comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
                 result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-                outputfile = '../protein_results/{0}.html'.format(taxon_sanitized)
+                # name of the output file from t_coffee
+                outputfile = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon_sanitized)
                 with open(outputfile, 'r') as file:
                     alignment = file.read()
                 #make_tree()
