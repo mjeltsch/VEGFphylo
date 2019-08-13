@@ -206,6 +206,10 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             break
     return phylum
 
+def make_tree(alignment_file):
+    treedir = '{0}/data/trees'.format(APPLICATION_PATH)
+    os.chdir(treedir)
+
 def write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize):
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
     list_to_scrutinize.sort(key=lambda x: x[2])
@@ -271,16 +275,16 @@ body { font-family: "Open Sans", Arial; }
         file.write(html_text)
         print('\nWrote HTML file {0}.'.format(HTML_FILE))
 
-def add_to_protein_hitdict(taxon, protein, hit_accession_no, hit_description, ortholog_group):
+def add_to_protein_hitdict(taxon, protein, hit_id, hit_description, ortholog_group, hit_accession_no):
     global protein_hitdict
     # Do not write the same protein twice, but add the protein to the string
     print('Adding to protein_hitdict...')
     if hit_accession_no in protein_hitdict:
-        protein_hitdict[hit_accession_no][3] += ' '+ortholog_group
-        print('{0} added to existing protein.'.format(hit_accession_no))
+        protein_hitdict[hit_id][3] += ' '+ortholog_group
+        print('{0} added to existing protein.'.format(hit_id))
     else:
-        protein_hitdict[hit_accession_no] = [taxon, protein, hit_description, ortholog_group]
-        print('{0} added as new protein.'.format(hit_accession_no))
+        protein_hitdict[hit_id] = [taxon, protein, hit_description, ortholog_group, hit_accession_no]
+        print('{0} added as new protein.'.format(hit_id))
 
 def most_frequent(List):
     return max(set(List), key = List.count)
@@ -368,7 +372,8 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     <table border="1">'''
                     handle.write(preamble)
             with open(PROT_FILE, 'a') as handle:
-                link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a>'.format(key)
+                # The value does not contain the Acc no....
+                link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a> {1}'.format(key, value[4])
                 link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(key)
                 row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value, link_to_blast)
                 row += '<div id="align_{0}" style="display:none"><pre>\n{1}\n</pre></div></td></tr>\n'.format(key, alignment)
@@ -459,9 +464,14 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     # Do alignment using the even faster quickaln option
                     MODE = 'quickaln'
                 # The nice -n 19 is because I have to work on the same computer!
-                bash_command = 'nice -n 19 t_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
+                #bash_command = 'nice -n 19 t_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
+                bash_command = 'nice -n 19 t_coffee -seq {0} -output=[html,phylip] -mode {1}'.format(concat_fasta_file, MODE)
                 comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
-                alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                outputfile = '../protein_results/{0}.html'.format(taxon_sanitized)
+                with open(outputfile, 'r') as file:
+                    alignment = file.read()
+                #make_tree()
             else:
                 print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
                 alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
@@ -679,7 +689,7 @@ def get_protein_data(taxon):
                 # BLASTHIT = [id, accession_no, species, fasta_description, ortholog group (only if determined with high probability)]
                 # id is a string (used to be an integer)!
                 BLASTHIT = [hit_id, hit_accession_no, species, hit.description, ortholog_group]
-                add_to_protein_hitdict(taxon, protein, hit_id, hit.description, ortholog_group)
+                add_to_protein_hitdict(taxon, protein, hit_id, hit.description, ortholog_group, hit_accession_no)
                 with conn:
                     # If the id is already in the database, the insertion fails and 0 is returned (otherwise the id is returned)
                     print('\n\nINSERT PROTEIN:\n{0}\n\n'.format(BLASTHIT))
