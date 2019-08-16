@@ -574,9 +574,10 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     if node.is_leaf():
                         # Because of the acc_no / id mixup, the SVG_DICT is necessary!
                         print('node.name (taxon): {0} ({1})'.format(node.name, taxon))
-                        if node.name in SVG_DICT[taxon]:
-                            print('node.name: {0}; values: {1}'.format(node.name, SVG_DICT[taxon][node.name]))
-                            textFace = TextFace(SVG_DICT[taxon][node.name], fsize = 10)
+                        sanitized_nodename = node.name.split('.')[0]
+                        if sanitized_nodename in SVG_DICT[taxon]:
+                            print('node.name: {0}; values: {1}'.format(node.name, SVG_DICT[taxon][sanitized_nodename]))
+                            textFace = TextFace(SVG_DICT[taxon][sanitized_nodename], fsize = 10)
                             (t & node.name).add_face(textFace, 0, "aligned")
                 Tree.render(t, TREE_IMAGE_SVG)
                 # Embed tree image to html file
