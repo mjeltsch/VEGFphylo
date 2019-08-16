@@ -97,7 +97,7 @@
 # Both should be git-cloned into ~/bin/
 #
 
-import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, phylolib, collections, string
+import subprocess, Bio, os, sys, shutil, re, time, datetime, socket, math, collections, string
 #from Bio.Blast import NCBIWWW
 #from Bio.Blast import NCBIXML
 #from Bio.Blast.Applications import NcbipsiblastCommandline
@@ -109,16 +109,20 @@ from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbipsiblastCommandline
 from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node
 from os.path import basename, dirname, splitext, split
+from phylolib import execute_subprocess
 
-def execute_subprocess(comment, bash_command, working_directory='.'):
-    print("\n" + comment, bash_command)
-    process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
-    output, error = process.communicate()
-    process_status = process.wait()
-    if output.decode('utf-8') != '':
-        print("Output: " + str(output))
-    if error.decode('UTF-8') != '':
-        print("Error: " + str(error))
+# def execute_subprocess(comment, bash_command, working_directory='.'):
+#     print("\n" + comment, bash_command)
+#     process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
+#     output, error = process.communicate()
+#     process_status = process.wait()
+#     output = output.decode('utf-8')
+#     error = error.decode('utf-8')
+#     if output != '':
+#         print('Output: {0}'.format(output))
+#     if error != '':
+#         print('Error: {0}'.format(error))
+#     return output, error
 
 def read_file_to_dict(file_name):
     try:
@@ -680,24 +684,24 @@ def run():
         # Replace the special string (|XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary.items():
             command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER, key, value)
-            execute_subprocess("Inserting xlinks:\n", command)
+            result = execute_subprocess("Inserting xlinks:\n", command)
         print('Opened {0} xlinks'.format(len(number_dictionary)))
         # Replace all end strings (£)
         command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER)
-        execute_subprocess("Inserting xlinks:\n", command)
+        result = execute_subprocess("Inserting xlinks:\n", command)
 
         # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary1.items():
             command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER1, key, value)
-            execute_subprocess("Inserting xlinks:\n", command)
+            result = execute_subprocess("Inserting xlinks:\n", command)
         print('Opened {0} xlinks'.format(len(number_dictionary1)))
         # Replace all end strings (£)
         command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER1)
-        execute_subprocess("Inserting xlinks:\n", command)
+        result = execute_subprocess("Inserting xlinks:\n", command)
 
         # Generate PDF file
         command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
-        execute_subprocess("Generating PDF file with the following command:\n", command)
+        result = execute_subprocess("Generating PDF file with the following command:\n", command)
     else:
         print('Not drawing tree since tree file {0} does not exist.'.format(TREEFILE))
 

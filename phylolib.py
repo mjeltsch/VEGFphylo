@@ -82,7 +82,7 @@ def execute_subprocess(comment, bash_command, working_directory='.'):
         print('Output: {0}'.format(output))
     if error != '':
         print('Error: {0}'.format(error))
-    return output
+    return output, error
 
 def make_synonym_dictionary(master_dictionary):
     #print('master_dictionary:\n{0}'.format(master_dictionary))
