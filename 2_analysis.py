@@ -6,6 +6,7 @@ from Bio import SeqIO
 from Bio import Phylo
 from Bio import SearchIO
 from Bio import Entrez
+from Bio import AlignIO
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbirpsblastCommandline
@@ -13,7 +14,8 @@ from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
 from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa, download_proteins, execute_subprocess
-from ete3 import NCBITaxa
+# To draw the phylogenetic tree
+from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node, NCBITaxa
 
 # Purpose: To programmatically retrieve the species numbers in the non-redundant NCBI protein Database
 # using e utilities: https://www.ncbi.nlm.nih.gov/books/NBK25500/#chapter1.Searching_a_Database
@@ -206,9 +208,34 @@ def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
             break
     return phylum
 
-def make_tree(alignment_file):
-    treedir = '{0}/data/trees'.format(APPLICATION_PATH)
+def make_tree(ALIGNMENT_FILE, MODE):
+    treedir = '{0}/data/alignments_and_trees'.format(APPLICATION_PATH)
     os.chdir(treedir)
+    # Detect whether parallel bootstrapping should be performed
+    mpirun_path = shutil.which('mpirun')
+    phymlmpi_path = shutil.which('phyml-mpi')
+    if MODE == 'mcoffee':
+        # -5 = approximate Bayes branch supports
+        BRANCH_SUPPORT = '-5'
+        SEARCH_OPERATION = 'BEST'
+    elif MODE == 'fmcoffee':
+        BRANCH_SUPPORT = '-1'
+        SEARCH_OPERATION = 'SPR'
+    else:
+        # for large datasets, do not calculate the branch support (MODE = 'quickaln')
+        BRANCH_SUPPORT = 0
+        SEARCH_OPERATION = 'NNI'
+    if mpirun_path != '' and phymlmpi_path != '':
+        # Run on multiple cores
+        phylo_command = 'mpirun -n 4 phyml-mpi --no_memory_check -s {0} -i {1} -d aa -b {2}'.format(SEARCH_OPERATION, ALIGNMENT_FILE, BRANCH_SUPPORT)
+    else:
+        # Run on single core (do not )
+        phylo_command = 'phyml --no_memory_check -s {0} -i {1} -d aa -b -1'.format(SEARCH_OPERATION, ALIGNMENT_FILE)
+
+    # The gene tree building is actually never used since the species tree is used for the tree drawing.
+    # We anyway calculate it to be able to compare gene and species trees.
+    result, error = execute_subprocess('Make phylogenetic tree with the following command: ', phylo_command)
+    return result, error
 
 def write_to_html_scrutinize_file(protein, taxon, list_to_scrutinize):
     # This sorts the list of lists according to the third element of each list (= type of hit; synonym, related protein, unknown)
@@ -290,15 +317,17 @@ def most_frequent(List):
     return max(set(List), key = List.count)
 
 def write_protein_hitdict_to_file(protein_hitdict):
-    global TRUE_UNIQUES
-    print('Writing protein files and doing multiple sequence alignments based on protein_hidict with {0} unique sequences.'.format(len(protein_hitdict)))
+    global TRUE_UNIQUES, SVG_DICT
+    print('Writing protein files and doing multiple sequence alignments based on protein_hitdict with {0} unique sequences.'.format(len(protein_hitdict)))
     for key, value in protein_hitdict.items():
+        # Get the taxon name from somewhere (all entries in the dictionary should have the same taxon in value[0])
+        taxon = value[0]
         print('Ecluding proteins. value = {0}'.format(value))
         # Do not deal with excluded proteins at all!
         if os.path.isfile('{0}/data/proteins_exclude/{1}.fasta'.format(APPLICATION_PATH, key)):
             print('Protein {0} was manually excluded. Skipping...'.format(key))
         # Check also in the taxon-specific subfolder
-        elif os.path.isfile('{0}/data/proteins_exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, value[0], key)):
+        elif os.path.isfile('{0}/data/proteins_exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, taxon, key)):
             print('Protein {0} was found in subfolder {1} and manually excluded. Skipping...'.format(key, value[0]))
         else:
             print('Including protein {0} as it was not found in {1}/data/proteins_exclude or {1}/data/proteins_exclude/{2}'.format(key, APPLICATION_PATH, value[0]))
@@ -338,7 +367,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
             bash_command = 'cat {0} {1} {2}| emma -filter -slowalign Yes -pwmatrix o -pairwisedatafile {3} -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGFC_signature, QUERY_FILE_CLOSEST_HOMOLOG, MATRIX_FILE)
             #bash_command = 'cat {0} {1} {2}| emma -filter -slowalign Yes -pwmatrix g -osformat2 msf -dendoutfile /dev/zero'.format(QUERY_FILE, VEGFC_signature, QUERY_FILE_CLOSEST_HOMOLOG)
             comment = 'Making alignment of {0}, {1} and VEGF-C signature:\n'.format(key, value[1])
-            alignment = execute_subprocess(comment, bash_command)
+            alignment, error = execute_subprocess(comment, bash_command)
             # Trim header from msf file (necessary for emma)
             alignment = alignment.split('//')[1]
             # Trim comments from the alignment text blob (necessary for needle)
@@ -353,7 +382,9 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     print('Writing header of html file {}'.format(PROT_FILE))
                     preamble = '''<html>
                     <head>
-                    <title>Individual alignments</title>
+                    <title>Individual alignments and phylogenetic tree for taxon '''
+                    preamble += taxon
+                    preamble += '''</title>
                     <style>
                         body { font-family: "Open Sans", Arial; }
                     </style>
@@ -369,18 +400,21 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     </script>
                     </head>
                     <body>
+                    <h1>'''
+                    preamble += taxon
+                    preamble += '''</h1>
                     <table border="1">'''
                     handle.write(preamble)
+            # This writes the actual rows in the table
             with open(PROT_FILE, 'a') as handle:
                 # The value does not contain the Acc no....
-                link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a> {1}'.format(key, value[4])
+                link_to_protein = '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}/" target="_blank">{0}</a>'.format(key)
                 link_to_blast = '<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&CMD=Web&DATABASE=nr&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=yes&QUERY={0}" target="_blank">blastp</a>'.format(key)
-                row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value, link_to_blast)
+                row = '<tr><td><a id={0}>{1}</a></td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td><td><a href="#" onclick="toggle_visibility(\'align_{0}\');">alignment</a>'.format(key, link_to_protein, value[4], value[1], value[2], value[3], link_to_blast)
                 row += '<div id="align_{0}" style="display:none"><pre>\n{1}\n</pre></div></td></tr>\n'.format(key, alignment)
-                #handle.write('<a id={0}>{0} -> {1}</a>\n'.format(key, value))
-                #handle.write('<pre>\n{0}\n</pre>'.format(alignment))
+                SVG_DICT[taxon][value[4]] = value[1], value[2], value[3]
+                print('SVG_DICT creationtime: {0}'.format(SVG_DICT))
                 handle.write(row)
-                #print('Writing {0} -> {1} to {2}'.format(key, value, PROT_FILE))
 
     # Make MSA for each taxon (limit by sequence number)
     count_taxa = 0
@@ -402,8 +436,8 @@ def write_protein_hitdict_to_file(protein_hitdict):
         print('\n\ntaxon_specific_protein_hitlist ({0} proteins):'.format(how_many_specific))
         # If LIMIT['MAX'] or more sequences are present, the MSA is skipped
         # with LIMIT['MAX'] = 103, 102 (= crocodylia) works ok, but arachnida (= 103) is skipped)
-        LIMIT = {'ACCURATE': 25, 'SEMIACCURATE': 104, 'MAX': 200}
-        #LIMIT = {'ACCURATE': 5, 'SEMIACCURATE': 10, 'MAX': 50}
+        #LIMIT = {'ACCURATE': 25, 'SEMIACCURATE': 104, 'MAX': 200}
+        LIMIT = {'ACCURATE': 5, 'SEMIACCURATE': 10, 'MAX': 50}
         # Only printing
         if how_many_specific < LIMIT['MAX']:
             for i in range(1, how_many_specific+1):
@@ -413,82 +447,161 @@ def write_protein_hitdict_to_file(protein_hitdict):
             print('1.\n{0}\n2.-{1}. [...]'.format(taxon_specific_protein_hitlist[0], how_many_specific-LIMIT['MAX']))
             for i in range(how_many_specific-LIMIT['MAX']+1, how_many_specific+1):
                 print('{0}.\n{1}'.format(i, taxon_specific_protein_hitlist[i-1]))
+        #
+        # HERE THE BLOCK STARTS FOR DOING THE ALIGNMENTS AND TREESEARCH
+        #
+        # Set lower computational requirements for large datasets (for both alignment and tree search)
+        if how_many_specific < LIMIT['ACCURATE']:
+            # Do alignment using the slow mcoffee option
+            MODE = 'mcoffee'
+        elif how_many_specific < LIMIT['SEMIACCURATE']:
+            # Do alignment using the faster fmcoffee option
+            MODE = 'fmcoffee'
+        else:
+            # Do alignment using the even faster quickaln option
+            MODE = 'quickaln'
         if 0 < how_many_specific < LIMIT['MAX']:
-            #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
-            alignment_file_list = []
-            # Add only sequences to the MSA list that exist and that are not in the excluded list!
-            TRUE_UNIQUES[taxon] = 0
-            for id in taxon_specific_protein_hitlist:
-                seqfile = '{0}.fasta'.format(id)
-                if os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
-                    print('Sequence {0} was manually excluded. Omitting from MSA for {1}'.format(seqfile, taxon))
-                elif os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
-                    alignment_file_list.append(seqfile)
-                    TRUE_UNIQUES[taxon] += 1
-                    print('TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
+            number_of_reference_sequences = len(master_dictionary)
+            generate_tree = True
+            # Fix filenames with whitespaces (because t_coffee cannot handle them)
+            taxon_sanitized = "_".join(taxon.split())
+            # Name of the html output file from t_coffee
+            outputfile_html = '{0}/data/alignments_and_trees/{1}_all.html'.format(APPLICATION_PATH, taxon_sanitized)
+            # Name of the clustalw output file from t_coffee
+            MSA_outputfile_from_tcoffee = '{0}/data/alignments_and_trees/{1}_all.clustalw'.format(APPLICATION_PATH, taxon_sanitized)
+            # Name of the converted phylip output file from biopython
+            outputfile_phylip = '{0}/data/alignments_and_trees/{1}_all.phylip'.format(APPLICATION_PATH, taxon_sanitized)
+            # Do only (during testing) if the alignment file does not yet exist!
+            if not os.path.isfile(MSA_outputfile_from_tcoffee):
+                #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
+                alignment_file_list = []
+                # Add only sequences to the MSA list that exist and that are not in the excluded list!
+                TRUE_UNIQUES[taxon] = 0
+                for id in taxon_specific_protein_hitlist:
+                    seqfile = '{0}.fasta'.format(id)
+                    if os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
+                        print('Sequence {0} was manually excluded. Omitting from MSA for {1}'.format(seqfile, taxon))
+                    elif os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
+                        alignment_file_list.append(seqfile)
+                        TRUE_UNIQUES[taxon] += 1
+                        print('TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
+                    else:
+                        print('Sequence {0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
+                print('Final TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
+                print('Number of homologs included in the MSA: {0}'.format(TRUE_UNIQUES[taxon]))
+                # This adds all the reference proteins to the MSA list
+                # Also count reference sequences!
+                number_of_reference_sequences = 0
+                for key, value in master_dictionary.items():
+                    seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
+                    if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
+                        alignment_file_list.append(seqfile)
+                        number_of_reference_sequences += 1
+                # Only execute MSA if there are non-reference sequences in the alignment_file_list
+                if len(alignment_file_list) > number_of_reference_sequences:
+                    print('FOR taxon {0}: len(alignment_file_list) = {1} > number_of_reference_sequences = {2}'.format(taxon, len(alignment_file_list), number_of_reference_sequences))
+                    # Using emboss/emma (clustalx)
+                    #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
+                    # Using m_coffee and html output
+                    #
+                    # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
+                    concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
+                    # Convert list of files into space-separated string
+                    alignment_file_list_str = ' '.join(alignment_file_list)
+                    bash_command = 'cat {0} > {1}'.format(alignment_file_list_str, concat_fasta_file)
+                    comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
+                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                    # The nice -n 19 is because I have to work on the same computer!
+                    # Need to output into something different than phylip since t_coffee uses the strict phylip format
+                    # which does not allow for more than 10 characters in the sequence name; try clustalw
+                    bash_command = 'nice -n 19 t_coffee -seq {0} -output=html,clustalw -mode {1}'.format(concat_fasta_file, MODE)
+                    comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
+                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/data/alignments_and_trees'.format(APPLICATION_PATH))
+                    #print('Result of MSA subprocess: {0}'.format(result))
+                    # Convert clustalw format into phylip format for Phyml
+                    input_alignment = open(MSA_outputfile_from_tcoffee, "rU")
+                    output_alignment = open(outputfile_phylip, "w")
+                    alignments = AlignIO.parse(input_alignment, "clustal")
+                    AlignIO.write(alignments, output_alignment, "phylip-relaxed")
+                    output_alignment.close()
+                    input_alignment.close()
                 else:
-                    print('Sequence {0} not found. Omitting from MSA for {1}'.format(seqfile, taxon))
-            print('Final TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
-            print('Number of homologs included in the MSA: {0}'.format(TRUE_UNIQUES[taxon]))
-            # This adds all the reference proteins to the MSA list
-            # Also count reference sequences!
-            ref_seq_count = 0
-            for key, value in master_dictionary.items():
-                seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
-                if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
-                    alignment_file_list.append(seqfile)
-                    ref_seq_count += 1
-            # Only execute MSA if there are non-reference sequences in the alignment_file_list
-            if len(alignment_file_list) > ref_seq_count:
-                print('FOR taxon {0}: len(alignment_file_list) = {1} > ref_seq_count = {2}'.format(taxon, len(alignment_file_list), ref_seq_count))
-                # Using emboss/emma (clustalx)
-                #bash_command = 'cat {0} | emma -filter -osformat2 msf -dendoutfile /dev/zero'.format(alignment_file_list)
-                # Using m_coffee and html output
-                #
-                # Fix filenames with whitespaces (because t_coffee cannot handle them)
-                taxon_sanitized = "_".join(taxon.split())
-                # Concatenate all fasta files (t_coffee crashes when using too many direct input files)
-                concat_fasta_file = '../protein_results/{0}_all.fasta'.format(taxon_sanitized)
-                # Convert list of files into space-separated string
-                alignment_file_list_str = ' '.join(alignment_file_list)
-                bash_command = 'cat {0} > {1}'.format(alignment_file_list_str, concat_fasta_file)
-                comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
-                result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-                if how_many_specific < LIMIT['ACCURATE']:
-                    # Do alignment using the slow mcoffee option
-                    MODE = 'mcoffee'
-                elif how_many_specific < LIMIT['SEMIACCURATE']:
-                    # Do alignment using the faster fmcoffee option
-                    MODE = 'fmcoffee'
-                else:
-                    # Do alignment using the even faster quickaln option
-                    MODE = 'quickaln'
-                # The nice -n 19 is because I have to work on the same computer!
-                #bash_command = 'nice -n 19 t_coffee -seq {0} -outfile=stdout -output=html -mode {1}'.format(concat_fasta_file, MODE)
-                bash_command = 'nice -n 19 t_coffee -seq {0} -output=[html,phylip] -mode {1}'.format(concat_fasta_file, MODE)
-                comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
-                result = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
-                # name of the output file from t_coffee
-                outputfile = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon_sanitized)
-                with open(outputfile, 'r') as file:
-                    alignment = file.read()
-                #make_tree()
+                    print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
+                    generate_tree = False
+                    with open(outputfile_html, 'w') as file:
+                        file.write('MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon))
             else:
-                print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
-                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
+                # Take the number of true uniques from the phylip alignment file (= 1st number in the first row of the phylip file)
+                with open(outputfile_phylip, 'r') as file:
+                    TRUE_UNIQUES[taxon] = int(file.readline().split()[0]) - number_of_reference_sequences
+
+            # Do only (during testing) if the tree file does not yet exist!
+            treefile = '{0}_phyml_tree.txt'.format(outputfile_phylip)
+            if not os.path.isfile('{0}/data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)):
+                if generate_tree == True:
+                    result, error = make_tree(outputfile_phylip, MODE)
+                else:
+                    with open(treefile, 'w') as file:
+                        file.write('Phylogenetic tree was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon))
+                        generate_tree == False
+            # Read tree file and append to 'html_string' string
+            #with open(treefile, 'r') as file:
+            #    html_string += '<p>&nbsp;</p>{0}'.format(file.read())
+
+            # Check that the Newick tree file exists and that it contains a tree!
+            if os.path.isfile('{0}/data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)) and generate_tree == True:
+                #Draw tree
+                print('Drawing phylogenetic tree for taxon {0}'.format(taxon))
+                TREE_IMAGE_SVG = '{0}/data/alignments_and_trees/{1}.svg'.format(APPLICATION_PATH, taxon_sanitized)
+                # Convert phylip into newick format
+
+                t = Tree(treefile)
+                ts = TreeStyle()
+                ts.show_leaf_name = False
+                # Zoom in x-axis direction
+                ts.scale = 20
+                # This makes all branches the same length!!!!!!!
+                ts.force_topology = True
+                #t.set_outgroup(t & OUTGROUP[0])
+                ts.show_branch_support = False
+                ts.show_branch_length = False
+                ts.draw_guiding_lines = True
+                ts.branch_vertical_margin = 10 # 10 pixels between adjacent branches
+                # Put protein description to tree leaves
+                # Phylip limits sequence names to 10 characters, which creates again problems....
+                print('SVG_DICT[taxon] usetime: {0}'.format(SVG_DICT[taxon]))
+                for node in t.traverse():
+                    if node.is_leaf():
+                        # Because of the acc_no / id mixup, the SVG_DICT is necessary!
+                        print('node.name (taxon): {0} ({1})'.format(node.name, taxon))
+                        if node.name in SVG_DICT[taxon]:
+                            print('node.name: {0}; values: {1}'.format(node.name, SVG_DICT[taxon][node.name]))
+                            textFace = TextFace(SVG_DICT[taxon][node.name], fsize = 10)
+                            (t & node.name).add_face(textFace, 0, "aligned")
+                Tree.render(t, TREE_IMAGE_SVG)
+                # Embed tree image to html file
+                with open(treefile, 'a') as file:
+                    html_string = '<p><object type="image/svg+xml" data="../alignments_and_trees/{0}.svg">Here should be the svg tree!</object></p>'.format(taxon_sanitized)
+            else:
+                print('Not drawing phylogenetic tree for taxon {0}'.format(taxon))
+                html_string += '<p>No tree image!</p>'
+            # Add alignment file to html file
+            with open(outputfile_html, 'r') as file:
+                html_string += file.read()
         else:
             if how_many_specific == 0:
-                print('Not generating MSA since number of homologous sequences in taxon {0} is 0.'.format(taxon))
-                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
+                TRUE_UNIQUES[taxon] = '0'
+                print('Not generating MSA/tree since number of homologous sequences in taxon {0} is 0.'.format(taxon))
+                html_string = 'MSA/tree were not generated since number of homologous sequences in taxon {0} is 0.'.format(taxon)
             else:
                 TRUE_UNIQUES[taxon] = 'n.a.'
-                print('Not generating MSA since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
-                alignment = 'MSA was not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT['MAX'])
+                print('Not generating MSA/tree since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
+                html_string = 'MSA/tree were not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT['MAX'])
         PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
             end_of_file = '</table>\n'
-            end_of_file += '<pre>\n{0}\n</pre>\n'.format(alignment)
+            end_of_file += '<pre>\n{0}\n</pre>\n'.format(html_string)
             end_of_file += '</body>\n</html\n>'
             handle.write(end_of_file)
             print('Writing MSA for taxon {0} to {1}'.format(taxon, PROT_FILE))
@@ -652,7 +765,7 @@ def get_protein_data(taxon):
                         #     print("\nSomething went wrong with the local rpsblast. More about the error:\n" + str(ex))
                         bash_command = '{0} -query {1} -db {2} -evalue {3} -outfmt 5 -out {4}'.format(rpsblast_executable, query_filename, rpsblast_database, E_VALUE_THRESHOLD, xml_result_filename)
                         comment = 'Executing rpsblast...'
-                        result = execute_subprocess(comment, bash_command, working_directory='.')
+                        result, error = execute_subprocess(comment, bash_command, working_directory='.')
                         print('rpsblast result: {0}'.format(result))
 
                         # Open XML results for analysis
@@ -999,7 +1112,7 @@ def load_sqlite_table_to_dict(TABLENAME, VERBOSE = True):
     return sqlite_dict
 
 def run():
-    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list, TRUE_UNIQUES
+    global APPLICATION_PATH, taxon_dictionary, master_dictionary, synonym_dictionary, blacklist, DATABASE_FILE, LAST_BLAST_REPLY_TIME, BLAST_WAITING_TIME, TOTAL_COUNT, TOTAL_UNKNOWN_COUNT, conn, sqlite_protein_dict, sqlite_species_dict, protein_hitdict, excluded_list, TRUE_UNIQUES, SVG_DICT
     TRUE_UNIQUES = {}
     TOTAL_COUNT = 0
     TOTAL_UNKNOWN_COUNT = 0
@@ -1047,7 +1160,9 @@ def run():
     print('{0}'.format(conn))
     sqlite_protein_dict = load_sqlite_table_to_dict('protein', VERBOSE = True)
     sqlite_species_dict = load_sqlite_table_to_dict('species', VERBOSE = True)
+    SVG_DICT = {}
     for taxon, taxon_data in taxon_dictionary.items():
+        SVG_DICT[taxon] = {}
         # populate the field with "0"
         TRUE_UNIQUES[taxon] = 0
         print('949 After initializing: TRUE_UNIQUES[{0}]: {1}'.format(taxon, TRUE_UNIQUES[taxon]))
@@ -1105,7 +1220,7 @@ def run():
         total_number_of_unique_homologs += all_uniques
     #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     # Make backup file before overwriting
-    os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'~')
+    os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'.bak')
     # This used to be after line 1016
     write_protein_hitdict_to_file(protein_hitdict)
     # Add the real number of homologs (considering the manually excluded sequences)
@@ -1132,10 +1247,12 @@ def run():
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)
     print(save_stats)
-    # Delete all guide trees
-    bash_command = 'rm *_all.dnd'
-    comment = 'Deleting all guide tree files...'
-    alignment = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+    # Delete all guide trees in tree directory
+    print('Deleting all guide tree files.')
+    treedir = '{0}/data/alignments_and_trees/'.format(APPLICATION_PATH)
+    for file in os.listdir(treedir):
+        if file.endswith('_all.dnd'):
+            os.remove('{0}/{1}'.format(treedir, file))
 
 if __name__ == '__main__':
     run()
