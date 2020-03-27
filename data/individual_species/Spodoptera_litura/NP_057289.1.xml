@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Spodoptera_litura</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1274129154|ref|XP_022829063.1|</Hit_id>
+  <Hit_def>cubilin-like [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022829063</Hit_accession>
+  <Hit_len>3735</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.855</Hsp_bit-score>
+      <Hsp_score>159</Hsp_score>
+      <Hsp_evalue>1.73997e-11</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>849</Hsp_hit-from>
+      <Hsp_hit-to>957</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGT-VPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>SGVIKSPGYPFSYPNNKVCVYIIRTVPGKA-IQLTFQD-FDIEDNRYNGCRYDNVEVRDGHDQNSTLLGRYCGGAAHTPPTQTSTLNYMYIKFTSDLSL-SGTGFYANYTTI</Hsp_hseq>
+      <Hsp_midline>+G I SP +P +YP N V V+ +  V     IQLTF + F +ED   + C+YD VEV +  D   T+LGR+CG     P  Q S  N + I+F SD    S  GF  +Y  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>5.96093e-08</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>267</Hsp_query-to>
+      <Hsp_hit-from>1803</Hsp_hit-from>
+      <Hsp_hit-to>2027</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>238</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEEN-VWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY-----NIVMPQFTEAVSPSVLPPSALPLD------LLNNAITAFSTLEDLIRYLEPE--RWQLDLEDLYRPTWQL-------LGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTD</Hsp_qseq>
+      <Hsp_hseq>TSEEGTIASPNYPGPYPINSDCEWILQASPGNTAYVQF---EQFNLEYSEG--CNDDYVELRETNGAGRLLGVYCSSETPTNH--STASQIYIKFHSNSR-TSGRGFVLHYGFQRENDITGDHGEIASP-LYPTQYLGTGEYTWRVLTTDSATISITIDDLEIYTHSQFNYNKLTIYDGYDTTAPILQELNGVLAERKVIQSSSSVVFMTLTTDE----SNTGSKFHLSWTKSLENYD</Hsp_hseq>
+      <Hsp_midline> S  G+I SP +P  YP N+   W L A   N  ++Q    E+F LE  E   C  D+VE+ E +  G +LG +C S T      S  +QI I+F S+    S  GF +HY     N +     E  SP + P   L         L  ++ T   T++DL  Y   +    +L + D Y  T  +       L +  V    S VV + L T+E    S T   F +S  + L+  D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>2.35941e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>178</Hsp_query-to>
+      <Hsp_hit-from>500</Hsp_hit-from>
+      <Hsp_hit-to>632</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQI-SKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP------------QFTEAVSPSVLPP</Hsp_qseq>
+      <Hsp_hseq>GSIVYPLTNTTYNHNSQCAWVIHTAPDKV-INVTF-SKFNLEASPE---CVYDFLQIHDGRKSASQLIGRFCGNNYPNGGNIVSSHNNLYFWFHSDKTVAKD-GFALHWTSIKPVCGGEVDATTHGHISSPGSPGLYPP</Hsp_hseq>
+      <Hsp_midline>GSI  P    TY  N+   W +    + V I +TF  +F LE  PE   C YDF+++ +   S   ++GR+CG+    G  I S  N +   F SD+    + GF +H+  + P              +   SP + PP</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.57537e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1325</Hsp_hit-from>
+      <Hsp_hit-to>1423</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE----------RFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>GVIESPGYPGNCPLNTNCLWTINVPKGNT-INVTFTHFDIQKSYRFYRPWMRARNQDECHMDYLQIKDISDPNYSRKFCGR-TSPGAITTKGNSLQIKFAT</Hsp_hseq>
+      <Hsp_midline>G I SP +P   P NT  +W +   + N  I +TF            R  +     D C  D++++++ SD     ++CG  T PG   +KGN ++I+F +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000891954</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1207</Hsp_hit-from>
+      <Hsp_hit-to>1315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TSPSGTVTSPNYPNEYTENAECFYRIV-TSEGSRVHISFTE---LDLERTPGCRDDYIEIFDGRDTSANVLGKHCFMSPELSNIQTSSNFAYIKFRSD-IFQGGKGFLFNYNTV</Hsp_hseq>
+      <Hsp_midline> S +G++ SP +P+ Y  N    +R+V   E   + ++F E   L+      C+ D++E+ +  D    +LG+ C          +  N   I+F SD  F    GF  +YN V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00141195</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>992</Hsp_hit-from>
+      <Hsp_hit-to>1077</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT---ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>WLLLA-PEGMHIKLSWN-RFDLEDMPS--CASDYLELLEIDDNNERNLLGKFCGSKSPPALTTST-NRLELRFVSDGSI-RYAGFSVSYTFL</Hsp_hseq>
+      <Hsp_midline>W L+A  E + I+L+++ RF LED     C  D++E+ E  D     +LG++CGS + P    S  N++ +RFVSD       GF + Y  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0159178</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>613</Hsp_hit-from>
+      <Hsp_hit-to>719</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV---EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>VDATTHGHISSPGSPGLYPPDRDCYWHLTTTLGKR-ISLHF---FALDIESHTNCSFDYLALYDGEHTSD-PLINKYCNS-TQPAPVQSAGSDMLIHFHSDAYGAGR-GFQIVY</Hsp_hseq>
+      <Hsp_midline>+  +T+G I SP  P  YP +    W L        I L F   F L+      C +D++ +   E  SD  ++ ++C S T P    S G+ + I F SD Y     GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>8</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0249436</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>1088</Hsp_hit-from>
+      <Hsp_hit-to>1196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKY-DFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>IKSHGFIYSPGWPKQYEPNRDCTWTITVPAGQQIVLNIS---QFNLERPIRDRCNLGDYLEIRNGGNENSPLIGQYCGVFQ-SRRIVSLSNALHLHFHSD-YYLTGSGFKIEWD</Hsp_hseq>
+      <Hsp_midline>+ ++G I+SP +P  Y  N    W + V   + + + ++   +F LE P  D C   D++E+      +  ++G++CG      + +S  N + + F SD Y+ +  GF I ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1274122065|ref|XP_022825173.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 isoform X2 [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022825173</Hit_accession>
+  <Hit_len>1361</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.88711e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>774</Hsp_hit-from>
+      <Hsp_hit-to>889</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVS</Hsp_qseq>
+      <Hsp_hseq>IEVDSTGHLESPNYPDDYQPNKLCIWRL-SVPQDYQVALRF-HSFEVEN--HDTCSYDKVKVRDGDSMDSPLIGMFCGH-KIPPDIRSTSNKLLVIFESDSTV-QKAGFSATF---MKEFDECAS</Hsp_hseq>
+      <Hsp_midline>I V + G + SP +P  Y  N + +WRL +V ++  + L F   F +E+   D C YD V+V +    D  ++G +CG   +P    S  N++ + F SD     + GF   +   M +F E  S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.45784e-05</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>932</Hsp_hit-from>
+      <Hsp_hit-to>1049</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>SPNGTITSPSFPDLYPPSKNCLWEIVAPPQH-RITLNF-THFDLEGNNMYQQECEYDSVTVHSKLGADVLRRHGVFCGSA-LPPPVTSDGSVLRVQFTSDGSV-HRSGFAAAYYIDVDECAE</Hsp_hseq>
+      <Hsp_midline>S NG+I SP FP  YP +   +W +VA  ++  I L F   F LE  +     C+YD V V       +L   G +CGS  +P    S G+ +R++F SD       GF   Y I + +  E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.59269e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1095</Hsp_hit-from>
+      <Hsp_hit-to>1184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>HGTIFSPNYPATYPPRKDCVWQFSTTPGH-RIKLVF-QKFELEPHPE---CAYDYVTLYDGASADEKTLGLFCGN-RLPHPIVASQNQMYVVFKSD</Hsp_hseq>
+      <Hsp_midline>+G+I SP +P TYP     VW+      +  I+L F ++F LE  PE   C YD+V + +   +D   LG +CG+  +P   ++  NQ+ + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1274122063|ref|XP_022825172.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 isoform X1 [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022825172</Hit_accession>
+  <Hit_len>1366</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.04454e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>774</Hsp_hit-from>
+      <Hsp_hit-to>889</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVS</Hsp_qseq>
+      <Hsp_hseq>IEVDSTGHLESPNYPDDYQPNKLCIWRL-SVPQDYQVALRF-HSFEVEN--HDTCSYDKVKVRDGDSMDSPLIGMFCGH-KIPPDIRSTSNKLLVIFESDSTV-QKAGFSATF---MKEFDECAS</Hsp_hseq>
+      <Hsp_midline>I V + G + SP +P  Y  N + +WRL +V ++  + L F   F +E+   D C YD V+V +    D  ++G +CG   +P    S  N++ + F SD     + GF   +   M +F E  S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.59614e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1100</Hsp_hit-from>
+      <Hsp_hit-to>1189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>HGTIFSPNYPATYPPRKDCVWQF-STTPGHRIKLVF-QKFELEPHPE---CAYDYVTLYDGASADEKTLGLFCGN-RLPHPIVASQNQMYVVFKSD</Hsp_hseq>
+      <Hsp_midline>+G+I SP +P TYP     VW+  +      I+L F ++F LE  PE   C YD+V + +   +D   LG +CG+  +P   ++  NQ+ + F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000131557</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>932</Hsp_hit-from>
+      <Hsp_hit-to>1054</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPED-------DICKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>SPNGTITSPSFPDLYPPSKNCLWEIVAPPQH-RITLNF-THFDLEGNNMYQQFMYFQECEYDSVTVHSKLGADVLRRHGVFCGSA-LPPPVTSDGSVLRVQFTSDGSV-HRSGFAAAYYIDVDECAE</Hsp_hseq>
+      <Hsp_midline>S NG+I SP FP  YP +   +W +VA  ++  I L F   F LE             C+YD V V       +L   G +CGS  +P    S G+ +R++F SD       GF   Y I + +  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1274124302|ref|XP_022826397.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1-like [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022826397</Hit_accession>
+  <Hit_len>635</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000253597</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEA</Hsp_qseq>
+      <Hsp_hseq>AHGRLYSPRYPSSYPSNVRCTYHFSA-RHNERIKLVFEESFLQKGDESCLNRADIIKVFDGRTSTAPVLAMLCNEA-VGYEILSTGPDLLVQFTANSDLPGQ-GFKARYQFQMEDDSNA</Hsp_hseq>
+      <Hsp_midline> +G ++SPR+P +YP N    +   A   N  I+L F+E F  +  E  + + D ++V +   S   +L   C    V  + +S G  + ++F ++   P + GF   Y   M   + A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1274131359|ref|XP_022830280.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111359073 [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022830280</Hit_accession>
+  <Hit_len>2636</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0134321</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1064</Hsp_hit-from>
+      <Hsp_hit-to>1166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TSGVLTSPNHPGMY-DNDLDFWVHVVGPEDTRLVFVF-QRIDLEYQKD--CLYDFVELRDPW-SMKSSRYCGS-VGEARWVASTNRAVLYFHSD-YNTQGSGFSVTWRAV</Hsp_hseq>
+      <Hsp_midline>T+G + SP  P  Y  N +  W  V   E+  +   F +R  LE  +D  C YDFVE+ +P       R+CGS     + ++  N+  + F SD Y     GF + +  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1274123371|ref|XP_022825888.1|</Hit_id>
+  <Hit_def>cubilin isoform X1 [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022825888</Hit_accession>
+  <Hit_len>822</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0422723</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>455</Hsp_hit-from>
+      <Hsp_hit-to>594</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>GLLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTN----GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--------EDDICKYDFVE---VEEPSDGTILGRWCGSGTVPGKQIS</Hsp_qseq>
+      <Hsp_hseq>GPRLVMVFSSGELQG----RGFKAKYTFETEYRVPGTAAPGGECAFTYRSEAKKRGEFNSPRYPSNYPSHTNCTYTLAASPSEQ-VTVVFDHFKVRADAWNATAGVYSGATCSEDWVEAWWVGREGARVPLGRWCGLAT-PGPMHS</Hsp_hseq>
+      <Hsp_midline>G  L+    +G+ QG        +K+ F +     G   P  E   T  +     G  +SPR+P  YP +T   + L A      + + FD      D             C  D+VE   V        LGRWCG  T PG   S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1274123373|ref|XP_022825889.1|</Hit_id>
+  <Hit_def>cubilin isoform X2 [Spodoptera litura]</Hit_def>
+  <Hit_accession>XP_022825889</Hit_accession>
+  <Hit_len>798</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0424316</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>455</Hsp_hit-from>
+      <Hsp_hit-to>594</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>GLLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTN----GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--------EDDICKYDFVE---VEEPSDGTILGRWCGSGTVPGKQIS</Hsp_qseq>
+      <Hsp_hseq>GPRLVMVFSSGELQG----RGFKAKYTFETEYRVPGTAAPGGECAFTYRSEAKKRGEFNSPRYPSNYPSHTNCTYTLAASPSEQ-VTVVFDHFKVRADAWNATAGVYSGATCSEDWVEAWWVGREGARVPLGRWCGLAT-PGPMHS</Hsp_hseq>
+      <Hsp_midline>G  L+    +G+ QG        +K+ F +     G   P  E   T  +     G  +SPR+P  YP +T   + L A      + + FD      D             C  D+VE   V        LGRWCG  T PG   S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22488</Statistics_db-num>
+      <Statistics_db-len>13959447</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2834758053</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

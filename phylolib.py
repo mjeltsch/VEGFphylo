@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 #
 
-import os, sqlite3, subprocess, re, time
+import os, sqlite3, subprocess, re, time, requests
 from Bio import Entrez
 from Bio import SeqIO
+from ete3 import NCBITaxa
 
 # Get all fasta sequences from the master_dictionary via Entrez
 def download_proteins(target_dir, master_dict, rename_fasta_description_after_key=False, overwrite=False, filename='after_key'):
@@ -97,15 +98,16 @@ def make_synonym_dictionary(master_dictionary):
             synonym_dictionary[item] = canonical_ortholog_group_name
     return synonym_dictionary
 
-def load_dictionary(FILENAME):
+def load_dictionary(FILENAME, VERBOSE=True):
     #print("Enter subroutine")
     # Load a sequence_dictionary if it exists
     if os.path.isfile(FILENAME):
         try:
             preamble, dictionary = read_file_to_dict(FILENAME)
             print("\nReading in the dictionary " + FILENAME + ":\n")
-            for key, value in dictionary.items():
-                print(key, value)
+            if VERBOSE == True:
+                for key, value in dictionary.items():
+                    print(key, value)
             print("Done reading dictionary.")
         except Exception as e:
             preamble = '#'
@@ -189,3 +191,67 @@ def execution_time_str(elapsed_time_seconds):
     hours, min = divmod(min, 60)
     days, hours = divmod(hours, 24)
     return (str(days) + " days " if days != 0 else '') + (str(hours) + " hours " if hours != 0 else '') + str(min)[:-2] + " min " + str(round(sec, 1)) + " sec"
+
+# This should be replaced by the corresponding function from ETE3
+def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
+    ncbi = NCBITaxa()
+    taxon_id_list = ncbi.get_name_translator([species_name])
+    taxon_id = taxon_id_list[species_name][0]
+    # Check that something sensinble was returned
+    if isinstance(taxon_id, int) and taxon_id > 0:
+        print('taxon_id for {0}: {1}'.format(species_name, taxon_id))
+    else:
+        taxon_id = None
+        print('No taxon_id for {0}. NCBI returned: {1}'.format(species_name, taxon_id_list))
+    #return TAXON_ID
+    return taxon_id
+
+# This sends a species id to NCBI and returns to which of the phyla within taxon_dictionary.py
+# this species belongs to.
+def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
+    preamble, taxon_dictionary = load_dictionary('data/taxon_data.py', VERBOSE)
+    # If a latin species name is given, translate it into a taxonomic id
+    if not TAXON_ID.isdigit():
+        TAXON_ID = get_taxon_id_from_NCBI(TAXON_ID)
+    # Counter to increase waiting period upon incresing number of unsuccesful trials
+    i = 0
+    while True:
+        try:
+            URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
+            r = requests.get(URL)
+            text = r.text
+            if VERBOSE: print(text)
+            i = 0
+            for taxon, taxon_data in taxon_dictionary.items():
+                # Determine, whether a taxon is complex (with some branches to exclude)
+                try:
+                    TAXON = taxon_data[0].split('-')[0]
+                    SUBTRACT_TAXON = taxon_data[0].split('-')[1]
+                except Exception as err:
+                    SUBTRACT_TAXON = '-'
+                if VERBOSE: print('Looking for TAXON_ID {0}, exluding TAXON_ID {1}'.format(TAXON, SUBTRACT_TAXON))
+                if '<TaxId>{0}</TaxId>'.format(TAXON) in text and '<TaxId>{0}</TaxId>'.format(SUBTRACT_TAXON) not in text:
+                    if VERBOSE: print('Adding phylum info {0} to species {1}'.format(taxon, TAXON_ID))
+                    phylum = taxon
+                    print(phylum)
+                    break
+                i += 1
+            # The following line will be only executed if calling 'phylum' does not give a NameError
+            # When i = 51, none of the 51 phyla was in the text that was received from NCBI.
+            if i == 51:
+                if VERBOSE: print('Species {0} does not belong to any phylum in the phylum list'.format(TAXON_ID))
+                phylum = 'unknown'
+            elif i < 51:
+                i += 1
+                if VERBOSE: print('{0} phyla (of 51) checked before hit was found.'.format(i))
+            else:
+                if VERBOSE: print('Unknown error when trying to identify phylum for species {0}.'.format(TAXON_ID))
+                phylum = 'unknown'
+        except NameError as err:
+            if VERBOSE: print('Sleeping due to server error. Will retry in 60 seconds. Error: {0}'.format(err))
+            time.sleep(60)
+            continue
+        # If there were no exceptions (= we got the phylum), break out of the while loop
+        else:
+            break
+    return phylum

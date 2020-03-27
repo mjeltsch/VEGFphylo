@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Python_bivittatus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|602637305|ref|XP_007425501.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007425501</Hit_accession>
+  <Hit_len>154</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.162</Hsp_bit-score>
+      <Hsp_score>422</Hsp_score>
+      <Hsp_evalue>6.94337e-54</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>158</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>154</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>LLAGLALPAVPPQWA-LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKP-ERRRPKGRGKRRREKQRPTD</Hsp_qseq>
+      <Hsp_hseq>FLVALALQMVGAQKKNMVLQNSTTDTAVVSFHDVWNRSSCQPLEKLVSVVSEYPNEVEHVFSPSCVSLRRCCGCCGDEVLQCVPVEIANVTMQLMKINSEDQVPFVELSFIEHRKCACRPRQDALKSGRRRRLKGRSKRKRAKQRPKN</Hsp_hseq>
+      <Hsp_midline> L  LAL  V  Q   +   N +++  VV F +VW RS C+ LE+LV VVSEYP+EVEH+FSPSCVSL RC GCCGDE L CVPVE ANVTMQL+KI S D+  +VEL+F +H +C CRP ++ +K   RRR KGR KR+R KQRP +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|602637307|ref|XP_007425502.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007425502</Hit_accession>
+  <Hit_len>138</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.132</Hsp_bit-score>
+      <Hsp_score>370</Hsp_score>
+      <Hsp_evalue>3.35652e-46</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>LQLLAG----LALPAVPPQWA-LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPER</Hsp_qseq>
+      <Hsp_hseq>MQLLCGFLVALALQMVGAQKKNMVLQNSTTDTAVVSFHDVWNRSSCQPLEKLVSVVSEYPNEVEHVFSPSCVSLRRCCGCCGDEVLQCVPVEIANVTMQLMKINSEDQVPFVELSFIEHRKCACRPRQDALKSGR</Hsp_hseq>
+      <Hsp_midline>+QLL G    LAL  V  Q   +   N +++  VV F +VW RS C+ LE+LV VVSEYP+EVEH+FSPSCVSL RC GCCGDE L CVPVE ANVTMQL+KI S D+  +VEL+F +H +C CRP ++ +K  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|602642631|ref|XP_007428102.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X5 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007428102</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>113.235</Hsp_bit-score>
+      <Hsp_score>282</Hsp_score>
+      <Hsp_evalue>1.02011e-32</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>LLYFHNAKVLQAAPAQ----ADGDRQQGEVISFMKVFERSACRSIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTEVYNVTMEIMRLKPFQSQHINAMSFQQHSKCECRQKKE</Hsp_hseq>
+      <Hsp_midline> L       L A P Q    A     + EV+ F +V+ RS CR++E +VD+  EYP EVE++F PSCV L+RC GCC DE L CVP E  NVTM++++++         ++F QH +CECR  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|602642627|ref|XP_007428100.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007428100</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.005</Hsp_bit-score>
+      <Hsp_score>284</Hsp_score>
+      <Hsp_evalue>1.38492e-32</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERR-RPKGRGKRRREKQRPTDC</Hsp_qseq>
+      <Hsp_hseq>LLYFHNAKVLQAAPAQ----ADGDRQQGEVISFMKVFERSACRSIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTEVYNVTMEIMRLKPFQSQHINAMSFQQHSKCECRQKKEVRIRQENHCEPCSERRKHLYKQDPLTC</Hsp_hseq>
+      <Hsp_midline> L       L A P Q    A     + EV+ F +V+ RS CR++E +VD+  EYP EVE++F PSCV L+RC GCC DE L CVP E  NVTM++++++         ++F QH +CECR  +E +++ E    P    ++   KQ P  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|602642625|ref|XP_007428099.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007428099</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>113.235</Hsp_bit-score>
+      <Hsp_score>282</Hsp_score>
+      <Hsp_evalue>6.32009e-32</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>LLYFHNAKVLQAAPAQ----ADGDRQQGEVISFMKVFERSACRSIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTEVYNVTMEIMRLKPFQSQHINAMSFQQHSKCECRQKKE</Hsp_hseq>
+      <Hsp_midline> L       L A P Q    A     + EV+ F +V+ RS CR++E +VD+  EYP EVE++F PSCV L+RC GCC DE L CVP E  NVTM++++++         ++F QH +CECR  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|602658853|ref|XP_007435125.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007435125</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>6.33739e-21</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>FLQLL--AGLALP----AVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>FLWLLSVATWQFPHGSLTIPEEKGAELKKMLSPTEVISFLEVYNRSICQPKEMMVSVTAEHPSLASHIMLPSCVALMRCTGCCSDDSLDCVPSRSRELIMEVMASLFPHR-YLNQLTFEEHLECMCR</Hsp_hseq>
+      <Hsp_midline>FL LL  A    P     +P +         S  EV+ F EV+ RS C+  E +V V +E+PS   H+  PSCV+L+RCTGCC D++L CVP  +  + M+++      R    +LTF +H+ C CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|602637901|ref|XP_007425787.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C, partial [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007425787</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>4.77974e-11</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>FAAAHYNTEI-LKSIDNEWRKTQCMPREVCVDVGKESGATTNIFFKPPCVSIYRCGGCCNSEGLQCMNVSTSYVSKTLFEITVPLSHGPKPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline> +A + ++E+ +      W ++ C   E  VDV  E  +     F P CVS+ RC GCC  E L C+ V T+ V+  L +I       P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|602651097|ref|XP_007431935.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007431935</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>4.44321e-10</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQRTQCVPRETCVEVAKELGAATNKFFKPPCVNVYRCGGCCNEESLSCMNTSTSYVSKMLFEISVPITNVPDPIQVKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>  E W R+ C   E  V+V  E  +     F P CV++ RC GCC +E+L C+   T+ V+  L +I     + P  +++  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1004668780|ref|XP_015743230.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_015743230</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>2.04283e-05</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRPLRE-----KMKPERRRPKGRGKRRR</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVKLEEHMECTCTSLNSNPDFREEETGRRSQKGKKQRRK</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    +  +++ K   +R   +   V +   +H+ C C  L       + +  RR  KG+ +RR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|602638947|ref|XP_007426296.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007426296</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.000561375</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>132</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRPL</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVKLEEHMECTCTSL</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    +  +++ K   +R   +   V +   +H+ C C  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|602646530|ref|XP_007429696.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Python bivittatus]</Hit_def>
+  <Hit_accession>XP_007429696</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00131661</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVE--LTFSQHVRCECRPLREKMKPERRRPKGRG</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCTGCCNTRAMQCRPTQVRVRHIQVKKIEVVDKRPVFNKAIVALEDHLECRCEAVSPRLPNRANSREHRG</Hsp_hseq>
+      <Hsp_midline>P CV + RCTGCC    + C P +     +Q+ KI   D RP + +  +    H+ C C  +  ++       + RG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>14562</Statistics_db-num>
+      <Statistics_db-len>7628053</Statistics_db-len>
+      <Statistics_hsp-len>89</Statistics_hsp-len>
+      <Statistics_eff-space>506562800</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

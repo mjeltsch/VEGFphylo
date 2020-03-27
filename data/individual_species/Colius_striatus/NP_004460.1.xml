@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Colius_striatus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>354</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>354</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|706119597|ref|XP_010195858.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010195858</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>271.937</Hsp_bit-score>
+      <Hsp_score>694</Hsp_score>
+      <Hsp_evalue>5.17632e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MYREWVVVNVFMMLYVQLVQGSSNEHGPVKRSSQSTLERSEQQIRAASSLEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISK</Hsp_qseq>
+      <Hsp_hseq>MYKPWATVNILIVSFLHLLQGSDYENGSVKRTSLSALERSEQQIRRASSLEELLRITHSEDWKLWKCRLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSK</Hsp_hseq>
+      <Hsp_midline>MY+ W  VN+ ++ ++ L+QGS  E+G VKR+S S LERSEQQIR ASSLEELLRITHSEDWKLW+CRL+LKS  ++DSRSASHRSTRFAA FYDI+TLKVIDEEWQ+TQC PRETCVEVA ELG +TN FFKPPCVNVFRCGGCCNEESL CMNTST+Y+SK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|706115841|ref|XP_010194528.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: vascular endothelial growth factor C, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010194528</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>238.039</Hsp_bit-score>
+      <Hsp_score>606</Hsp_score>
+      <Hsp_evalue>1.44226e-75</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>377</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>141</Hsp_identity>
+      <Hsp_positive>194</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>355</Hsp_align-len>
+      <Hsp_qseq>EQQIRAASSLEELLRITHSEDWKLWRCRLRLKSF------TSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP--TAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQE-------------------------------------------------PALCGPHMMFDEDRCECVCKTPCPKDLIQHPKNCSCFECKESLETCCQKHKLFHPDTCSC-EDRCPFHTRPCASGKTACAKHCR</Hsp_qseq>
+      <Hsp_hseq>EEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGGWQHSREHSSFDTRSDD--SLKFAAAHYNAEILKSIDTEWRKTQCTPREVCVDVGKEFGATTNTFFKPPCVSVYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSNGPKPVTVSFANHTSCRCMSKLDVYRQVHSIIRRSLPA-TQTQCHVANKTCPKNHIWNNQICRCLAQHDFGFSSHLEDSDTSEGFHICGPNKELDEETCQCVCKGGVQPSSCGPHKELDRSSCQCMCKNKLLPASCGPNKEFDEDKCQCVCKKTCPKHQPLNPTKCTC-ECIESPNKCFLKGKRFHHQTCSCYRPPCTVRTKRCEAGLYFSEEVCR</Hsp_hseq>
+      <Hsp_midline>E+Q+R+ SS++EL+ + + E WK+++C+LR   +      +S D+RS    S +FAA  Y+ E LK ID EW++TQC+PRE CV+V  E G +TNTFFKPPCV+V+RCGGCCN E L CMN ST+YISK LFEI+VPL++ P+ V V  ANHT C+C+      R  +SIIRRS+    + +C  + K CP + +W++  C+C+ Q +   +   + S   E                                                 PA CGP+  FDED+C+CVCK  CPK    +P  C+C EC ES   C  K K FH  TCSC    C   T+ C +G     + CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|706148904|ref|XP_010206079.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like, partial [Colius striatus] &gt;gi|677072698|gb|KFP27076.1| Vascular endothelial growth factor D, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010206079</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>216.853</Hsp_bit-score>
+      <Hsp_score>551</Hsp_score>
+      <Hsp_evalue>5.54178e-70</Hsp_evalue>
+      <Hsp_query-from>165</Hsp_query-from>
+      <Hsp_query-to>354</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>190</Hsp_align-len>
+      <Hsp_qseq>LFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVCKTPCPKDLIQHPKNCSCFECKESLETCCQKHKLFHPDTCSCEDRCPFHTRPCASGKTACAKHCRFPKEKRAAQGPHSRKNP</Hsp_qseq>
+      <Hsp_hseq>LFEISVPLTSVPEPVPIKIANHTGCKCLSNTQRHQYTIIRRSVQYPEEDGCPFTNKLCHNGWIWDSDKCECVVDVEHP-NRREGLPPLAELAMCGQHMEFDEENCECTCRQKCPTDFFQSKENCSCYLCRESQESCALKHKIFHAETCSCEDKCPSQPRTCPTAKPTCSRHCRCPKEKRGSHGSQSKETP</Hsp_hseq>
+      <Hsp_midline>LFEISVPLTSVPE VP+K+ANHTGCKCL    RH Y+IIRRS+Q PEED C  + KLC    +WDS+KC+CV+  E+P    E    L E A+CG HM FDE+ CEC C+  CP D  Q  +NCSC+ C+ES E+C  KHK+FH +TCSCED+CP   R C + K  C++HCR PKEKR + G  S++ P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|706128353|ref|XP_010198872.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010198872</Hit_accession>
+  <Hit_len>122</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.3882</Hsp_bit-score>
+      <Hsp_score>150</Hsp_score>
+      <Hsp_evalue>4.01701e-12</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>EIWNRSFCRPLEQLVDVITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVETNTVTMQLLKIK-PNGEAP-YVEMTFTEHKQCECRP</Hsp_hseq>
+      <Hsp_midline>E W R+ C P E  V+V +E        F+P CV++ RCGGCC +E L C+   T+ ++ QL +I  P    P  V +    H  C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|677092201|gb|KFP31159.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Colius striatus]</Hit_def>
+  <Hit_accession>KFP31159</Hit_accession>
+  <Hit_len>93</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>1.1717e-11</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>EEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKC</Hsp_qseq>
+      <Hsp_hseq>EIWNRSFCRPLEQLVDVITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVETNTVTMQLLKIK-PNGEAP-YVEMTFTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>E W R+ C P E  V+V +E        F+P CV++ RCGGCC +E L C+   T+ ++ QL +I  P    P  V +    H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|677065036|gb|KFP25542.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Colius striatus]</Hit_def>
+  <Hit_accession>KFP25542</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>2.36117e-07</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>EVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIK-PHQS-QHIAHMSFLQHSKCDCRP</Hsp_hseq>
+      <Hsp_midline>E ++R+ C   ET V++  E        FKP CV + RC GCC +E L C+      ++ ++  I  P  S   +  +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|706129541|ref|XP_010199294.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010199294</Hit_accession>
+  <Hit_len>176</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>2.58642e-07</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>EVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIK-PHQS-QHIAHMSFLQHSKCDCRP</Hsp_hseq>
+      <Hsp_midline>E ++R+ C   ET V++  E        FKP CV + RC GCC +E L C+      ++ ++  I  P  S   +  +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|706142793|ref|XP_010203910.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C, partial [Colius striatus] &gt;gi|677100217|gb|KFP33242.1| Platelet-derived growth factor C, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010203910</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.07634e-06</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>LERSEQQIRAASSLEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCC</Hsp_qseq>
+      <Hsp_hseq>LDVLNNAVAGFSTVEELIRYLEPDRWQLDLEDLYRPTWQLLGKAYIHGRKSR-------VVDLNLLKEEVRLYSCTPRNFSVSLREEL-KRTDTIFWPLCLLVKRCGGNC</Hsp_hseq>
+      <Hsp_midline>L+     +   S++EEL+R    + W+L    L   ++  +       R +R       +  L ++ EE +   C+PR   V +  EL K T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|677077614|gb|KFP27747.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit B, partial [Colius striatus]</Hit_def>
+  <Hit_accession>KFP27747</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.45149e-05</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>40</Hsp_hit-from>
+      <Hsp_hit-to>101</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>TQCSPRETCVEVASELGKSTNTFFK--PPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI</Hsp_qseq>
+      <Hsp_hseq>AECKTRAVVFEIARNLVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKI</Hsp_hseq>
+      <Hsp_midline> +C  R    E+A  L  STN  F   PPCV V RC GCCN  ++ C  T       Q+ +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|706104296|ref|XP_010196742.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010196742</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>4.58017e-05</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>107</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>TQCSPRETCVEVASELGKSTNTFFK--PPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI</Hsp_qseq>
+      <Hsp_hseq>AECKTRAVVFEIARNLVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKI</Hsp_hseq>
+      <Hsp_midline> +C  R    E+A  L  STN  F   PPCV V RC GCCN  ++ C  T       Q+ +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|706139867|ref|XP_010202879.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A, partial [Colius striatus]</Hit_def>
+  <Hit_accession>XP_010202879</Hit_accession>
+  <Hit_len>106</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0109179</Hsp_evalue>
+      <Hsp_query-from>127</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>86</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>27</Hsp_align-len>
+      <Hsp_qseq>STNTFFKPPCVNVFRCGGCCNEESLIC</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVKC</Hsp_hseq>
+      <Hsp_midline>S N    PPCV V RC GCCN  S+ C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|677068982|gb|KFP26325.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A, partial [Colius striatus]</Hit_def>
+  <Hit_accession>KFP26325</Hit_accession>
+  <Hit_len>102</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0114025</Hsp_evalue>
+      <Hsp_query-from>127</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>88</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>27</Hsp_align-len>
+      <Hsp_qseq>STNTFFKPPCVNVFRCGGCCNEESLIC</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVKC</Hsp_hseq>
+      <Hsp_midline>S N    PPCV V RC GCCN  S+ C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>25778</Statistics_db-num>
+      <Statistics_db-len>11031410</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2147216940</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Apis_florea</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|820835502|ref|XP_003689918.2|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: histone acetyltransferase KAT6B-like [Apis florea]</Hit_def>
+  <Hit_accession>XP_003689918</Hit_accession>
+  <Hit_len>907</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>9.03208e-08</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>691</Hsp_hit-from>
+      <Hsp_hit-to>820</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>IDVYTRATCQ-PREVVVPLTVELMGTVAKQLVPSCVTVQRCG---GCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE-MSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQ-------RPDPRT-CRC</Hsp_qseq>
+      <Hsp_hseq>IKVSREGSCQWPRPRVIPVR-DVYPSPSTTYVPHCAILHRCSDDTGCCRSEALTCVPKHSHRVELSFYTTNVGGGSVVEKLSFYNHTECECRERTEYDASNEKS---VEHRVYRHHQSQPQNMRRAQPRKPCRC</Hsp_hseq>
+      <Hsp_midline>I V    +CQ PR  V+P+  ++  + +   VP C  + RC    GCC  + L CVP   H+V +           + E +S   H++CECR + +  A    S   +  R  +HHQ       R  PR  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|820858913|ref|XP_003696855.2|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC100869681 isoform X1 [Apis florea]</Hit_def>
+  <Hit_accession>XP_003696855</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>2.01723e-07</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>268</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>TRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILM--------IRYPSSQLGEMSLEEHSQ--CECRPKKKDSAVKPDSPRPLCP----------RCTQHHQR-PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRC</Hsp_qseq>
+      <Hsp_hseq>NQASCMPELQTVPLLENDDPSII--YYPTCTRVKRCGGCCTHPFLSCQPTAMETRNFEIFVTALESNNGLRYQGKRI--VPIEEHTQCTCDCKIKETDCNKKQSYIPEECTCACNNVDEKKKCNESNMKMWHPDLCSCFCRE---VRECSTGFYFDQNSCRC</Hsp_hseq>
+      <Hsp_midline> +A+C P    VPL      ++     P+C  V+RCGGCC    L C PT       +I +        +RY   ++  + +EEH+Q  C+C+ K+ D   K       C           +C + + +   P  C C CR    +R    G   + ++CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>10643</Statistics_db-num>
+      <Statistics_db-len>5994846</Statistics_db-len>
+      <Statistics_hsp-len>89</Statistics_hsp-len>
+      <Statistics_eff-space>499714281</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

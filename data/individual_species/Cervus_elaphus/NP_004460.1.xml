@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Cervus_elaphus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>354</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>354</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1207821711|gb|OWJ99603.1|</Hit_id>
+  <Hit_def>hypothetical protein Celaphus_00010129 [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWJ99603</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.487</Hsp_bit-score>
+      <Hsp_score>846</Hsp_score>
+      <Hsp_evalue>1.82667e-114</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>164</Hsp_identity>
+      <Hsp_positive>175</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>204</Hsp_align-len>
+      <Hsp_qseq>KRSSQSTLERSEQQIRAASSLEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYIS-------------------KQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDR</Hsp_qseq>
+      <Hsp_hseq>KRASRSMLERSEQQIRAASGLEELLQITHFEDWKLWRCRLKLKSLTSTDSRSASHRSTRFAATFFDMETLKVIDEEWQRTQCSPRETCVEVASELGSSTDTFFKPPCVNVFRCGGCCNEESLVCVNTSTSILSITPALNLISSILMDNFAKVTTLFEISVPLTSVPELVPVKVANHTGCKCFPTAPRHPFSIIRRSIQIPEEDR</Hsp_hseq>
+      <Hsp_midline>KR+S+S LERSEQQIRAAS LEELL+ITH EDWKLWRCRL+LKS TS DSRSASHRSTRFAATF+D+ETLKVIDEEWQRTQCSPRETCVEVASELG ST+TFFKPPCVNVFRCGGCCNEESL+C+NTSTS +S                     LFEISVPLTSVPELVPVKVANHTGCKC PTAPRHP+SIIRRSIQIPEEDR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1207822410|gb|OWK00301.1|</Hit_id>
+  <Hit_def>hypothetical protein Celaphus_00019232, partial [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK00301</Hit_accession>
+  <Hit_len>400</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>129.798</Hsp_bit-score>
+      <Hsp_score>325</Hsp_score>
+      <Hsp_evalue>1.9756e-34</Hsp_evalue>
+      <Hsp_query-from>141</Hsp_query-from>
+      <Hsp_query-to>341</Hsp_query-to>
+      <Hsp_hit-from>147</Hsp_hit-from>
+      <Hsp_hit-to>387</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>60</Hsp_gaps>
+      <Hsp_align-len>251</Hsp_align-len>
+      <Hsp_qseq>RCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP--TAPRHPYSIIRRSI--QIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEE---NPLAGTED-------------------------------HSHLQE------------PALCGPHMMFDEDRCECVCKTPCPKDLIQHPKNCSCFECKESLETCCQKHKLFHPDTCSCEDRCPFHTRPCASGKTACAKHCRFPKE</Hsp_qseq>
+      <Hsp_hseq>RCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPAALPQ---CQAANKTCPTDYIWNNHVCRCLAQQDFIFSPSAGDDGFHDICGPNKELDEETCQCVCRGGLRASSCGPHKELDRDSCQCVCKNKLFPNSCGANREFDENTCQCVCKRTCPRNQPLNPGKCAC-ECTENPQKCFLKGKKFQHQTCSC------YRRPCTNRVKHCEQGLSFSEE</Hsp_hseq>
+      <Hsp_midline>RCGGCCN E   CMNTSTSY+SK LFEI+VPL+  P+ V +  ANHT C+C+      R  +SIIRRS+   +P+   C  + K CP D +W+++ C+C+ Q++   +P AG +                                H  L              P  CG +  FDE+ C+CVCK  CP++   +P  C+C EC E+ + C  K K F   TCSC      + RPC +    C +   F +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1207832436|gb|OWK09948.1|</Hit_id>
+  <Hit_def>PGF [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK09948</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>3.35162e-12</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>KLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>RLFTCFLQLLTGLALPAVPPQQWALSSGNISSEVEVVP-FQRVWERSYCQPVERLVDIVSEYPSEMEHLFSPSCVSLLRCTGCCSDEKMHCMPLETANITLQLLKYRA--LDLPFFVEMSFSQHISCECRP</Hsp_hseq>
+      <Hsp_midline>+L+ C L+L +  ++ +      +        ++E +      W+R+ C P E  V++ SE        F P CV++ RC GCC++E + CM   T+ I+ QL +       +P  V +  + H  C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1207835596|gb|OWK13100.1|</Hit_id>
+  <Hit_def>VEGFA [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK13100</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>6.32681e-11</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>108</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>ETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEI</Hsp_qseq>
+      <Hsp_hseq>EVVKFMDV-YQRSYCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRI</Hsp_hseq>
+      <Hsp_midline>E +K +D  +QR+ C P ET V++  E        FKP CV + RCGGCCN+ESL C+ T    I+ Q+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1207839962|gb|OWK17446.1|</Hit_id>
+  <Hit_def>VEGFB [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK17446</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>3.79288e-10</Hsp_evalue>
+      <Hsp_query-from>106</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_qseq>
+      <Hsp_hseq>YARATCQPREVVVPLNMELVGTVAKQLVPSCVTVQRCGGCCHDDGLECVPTGQHQVRMQILMIRYPSSQLGEM---SLEEHSQCECRP</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL  +      P CV V RCGGCC+++ L C+ T    +  Q+  I  P + + E+    +  H+ C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1207826155|gb|OWK04036.1|</Hit_id>
+  <Hit_def>PDGFB [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK04036</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>5.25784e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>205</Hsp_align-len>
+      <Hsp_qseq>MYREWVVVNVFMML--YVQLVQGSSNEHGPVKRSSQSTLERSEQQIRAASSLEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLK---VIDEEWQRTQCSPRETCVEVASELGKSTNTFFK--PPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEIS-VPLTSVPELVPVKVANHTGCKCLPTAPR</Hsp_qseq>
+      <Hsp_hseq>MNRCWAL---FLSLCCYLRLV---SAEGDPIPEELYEML--SDHSIR---SFDDLQRLLHGDSVDEDGAELDL-------NLTRSHSGGEFESLSRGRRSLGSPTVAAELAMMAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKVQVKKIEIVRKRKIFKKATVTLVDHLECRCETVVAR</Hsp_hseq>
+      <Hsp_midline>M R W +   F+ L  Y++LV   S E  P+       L  S+  IR   S ++L R+ H +        L L       + + SH    F +      +L    V  E     +C  R    E++  L   TN  F   PPCV V RC GCCN  ++ C  T       Q+ +I  V    + +   V + +H  C+C     R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1207840590|gb|OWK18073.1|</Hit_id>
+  <Hit_def>PDGFD, partial [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK18073</Hit_accession>
+  <Hit_len>367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>5.88062e-05</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>250</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>EWVVVNVFMMLYVQLVQGSSNEHGPVKRSSQSTLERSEQQIRAASSLEELLRITHSEDWKLWRCRLRLKSFTSMDSRSASHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGKSTNTFFKPPCVNVFRCGGCCN</Hsp_qseq>
+      <Hsp_hseq>DYFVAKPGFKIYYSFVGVSY--HSPSVTDPTLTADALDKTIAEFDTVEELLKHFNPESWQ--------EDLENLYLDTPHHRGRSYHDRKSKVD-LDRLNDDVKRYSCTPRNYSVNLREEL-KLTNVVFFPRCLLVQRCGGNCG</Hsp_hseq>
+      <Hsp_midline>++ V      +Y   V  S   H P       T +  ++ I    ++EELL+  + E W+        +   ++   +  HR   +      ++ L  ++++ +R  C+PR   V +  EL K TN  F P C+ V RCGG C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1207833412|gb|OWK10922.1|</Hit_id>
+  <Hit_def>PDGFA, partial [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWK10922</Hit_accession>
+  <Hit_len>133</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.00697779</Hsp_evalue>
+      <Hsp_query-from>127</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>STNTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQL</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVRCQPSRVHHRSVKV</Hsp_hseq>
+      <Hsp_midline>S N    PPCV V RC GCCN  S+ C  +   + S ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>19845</Statistics_db-num>
+      <Statistics_db-len>7065197</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1331299866</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

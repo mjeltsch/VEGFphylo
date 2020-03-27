@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Xiphophorus_maculatus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1316065527|ref|XP_023208065.1|</Hit_id>
+  <Hit_def>placenta growth factor-like [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023208065</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.591</Hsp_bit-score>
+      <Hsp_score>366</Hsp_score>
+      <Hsp_evalue>1.13236e-44</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>PQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAVPRR</Hsp_qseq>
+      <Hsp_hseq>PVQNLPTADTNSTVEVLMFQEVWGRSFCRTMEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTETSNVTMQLLKIRPSEPGEEYVEMTFVEHKTCECRVRKPLMKVGRRRQRGRGRRRKERQKTKDCDRC--QIPRR</Hsp_hseq>
+      <Hsp_midline>P   L   + +S VEV+ FQEVWGRS+CR +E+LV+VV EYP+EVEH++SPSCV L+RC GCCGDENL C P ET+NVTMQLLKIR  +    YVE+TF +H  CECR  +  MK  RRR +GRG+RR+E+Q+  DC  C   +PRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1316053614|ref|XP_023203321.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023203321</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>4.09876e-28</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRR</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCQPREVLVDILQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTAMYNVTMEIKRIKLQRQQNDIFMSFTEHSACECR-----LKTEVREKKEKCDKPR</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S C+  E LVD++ EYP EVEH+F PSCV L RC GCC DE L C P    NVTM++ +I+   + + + ++F++H  CECR     +K E R  K +  + R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1316053611|ref|XP_023203320.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023203320</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>2.57376e-27</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKG</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCQPREVLVDILQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTAMYNVTMEIKRIKLQRQQNDIFMSFTEHSACECRLKTEVREKKEKKPRT</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S C+  E LVD++ EYP EVEH+F PSCV L RC GCC DE L C P    NVTM++ +I+   + + + ++F++H  CECR   E  + + ++P+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|551497516|ref|XP_005800312.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_005800312</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.908</Hsp_bit-score>
+      <Hsp_score>250</Hsp_score>
+      <Hsp_evalue>7.85125e-27</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCQPREVLVDILQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTAMYNVTMEIKRIKLQRQQNDIFMSFTEHSACECR</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S C+  E LVD++ EYP EVEH+F PSCV L RC GCC DE L C P    NVTM++ +I+   + + + ++F++H  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1316084320|ref|XP_005806609.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Xiphophorus maculatus] &gt;gi|1316084322|ref|XP_023184471.1| vascular endothelial growth factor B [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_005806609</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.1225</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>7.87721e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>157</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKP---ERRRPKGRGKRRREKQRPT</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGEIHHLFVPSCVSVKRCGGCCADEALECVPSLTHTLTMELMRT-SFMKHELIELPFVEHSQCECR-LKEQFQPTPTTRLHLKPAGKERKKEGRKS</Hsp_hseq>
+      <Hsp_midline>EV  + EV+ RS C   + LV+V  E P E+ H+F PSCVS+ RC GCC DE L CVP  T  +TM+L++  S  +   +EL F +H +CECR L+E+ +P    R   K  GK R+++ R +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1316053173|ref|XP_023203125.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023203125</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.3294</Hsp_bit-score>
+      <Hsp_score>181</Hsp_score>
+      <Hsp_evalue>5.67191e-17</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>FREVLDKSFCRPIEQHVNVETEFPGGVEDFYIPHCVSLFRCSGCCIDETRECYPVVERNITLEVSR-----SNQVVNLTFVEHQECGVR</Hsp_hseq>
+      <Hsp_midline>F+EV  +S+CR +E+ V+V +E+P  VE  + P CVSL RC+GCC DE   C PV   N+T+++ +         V LTF +H  C  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1316087545|ref|XP_023185762.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023185762</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>2.3988e-10</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>133</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>RSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR--SGDRPSYVELTFSQHVRCEC---RPLREKMK</Hsp_qseq>
+      <Hsp_hseq>RTSCQPREVCVEVAKEYPESTSQLYLPRCVALHRCGGCCGNEAFYCTNMSYSLVNKTLMELSPPRMDR-SVAMVTFVNHTSCECLSKRPLHSIIR</Hsp_hseq>
+      <Hsp_midline>R+ C+  E  V+V  EYP     ++ P CV+L RC GCCG+E  +C  +  + V   L+++     DR S   +TF  H  CEC   RPL   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1316058508|ref|XP_023205366.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC102232368 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023205366</Hit_accession>
+  <Hit_len>520</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.17794e-09</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>LQLLAGLALPAVPPQWALSAGNGSS----EVEVVPFQEVWGRSYCRALERLVDVVSEY--PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>LQLL--LLTDSVDEEEANSAANGGHRLPRSLDAQPAQQ----AQCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYINKRPTYAKAVVSVVDHVECRCQP</Hsp_hseq>
+      <Hsp_midline>LQLL  L   +V  + A SA NG       ++  P Q+    + C+    +V+V       S    +  P CV + RC+GCC  ++L CVPV T    +Q++KI     RP+Y +   S   HV C C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1316092022|ref|XP_023187732.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Xiphophorus maculatus] &gt;gi|1316092024|ref|XP_023187733.1| vascular endothelial growth factor D [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023187732</Hit_accession>
+  <Hit_len>287</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>1.25917e-07</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRR</Hsp_qseq>
+      <Hsp_hseq>IEEEWQSIQCMPRETCIDVAQELDFHTSVFFKPPCVSVHRCGGCCNDEGLTCRNTSTVYVNKTIFSFTPFKLVPEPVLIKVANHTACSC------MEPAIIRRNAQQRRR</Hsp_hseq>
+      <Hsp_midline> +E W    C   E  +DV  E        F P CVS+ RC GCC DE L C    T  V   +         P  V +  + H  C C      M+P   R   + +RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1316095130|ref|XP_023189044.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023189044</Hit_accession>
+  <Hit_len>420</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.87349e-07</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI----RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCPSEDKQCRNISTGYLSKTLFEITVPLTQGTKP--VTISVANHTQCSC</Hsp_hseq>
+      <Hsp_midline>W ++ C   E  VDV  E+ +     + P CVS+ RC GCC  E+  C  + T  ++  L +I      G +P  V ++ + H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1316098143|ref|XP_023190365.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023190365</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000121011</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD----RPSY--VELTFSQHVRCECRPLREKMKPERR</Hsp_qseq>
+      <Hsp_hseq>PTSANFIIWPPCVEVKRCTGCCNTNNMRC---QAAHKQLRAVKVAKVEYVRRRPKLREVEVTLEDHLECTCNTKRHTNQNEDR</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C   + A+  ++ +K+   +    RP    VE+T   H+ C C   R   + E R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1316097031|ref|XP_023189903.1|</Hit_id>
+  <Hit_def>bromodomain-containing protein DDB_G0280777-like [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023189903</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000462804</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>57</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQ---HVRC</Hsp_qseq>
+      <Hsp_hseq>PLCVEVQRCSGCCNSRYMHCAPVVNATRNLEVKKFVFKNEKRFIETAIIQVVDHVSC</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC    +HC PV  A   +++ K    +   ++E    Q   HV C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|551515659|ref|XP_005809335.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_005809335</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00227249</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTF---SQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K+    R   ++  F     H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1316058219|ref|XP_023205246.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Xiphophorus maculatus]</Hit_def>
+  <Hit_accession>XP_023205246</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00246522</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTF---SQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K+    R   ++  F     H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>38469</Statistics_db-num>
+      <Statistics_db-len>30054216</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1837204950</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

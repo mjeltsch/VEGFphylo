@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Oryzias_melastigma</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>232</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>232</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1357720628|ref|XP_024146871.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024146871</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>188.348</Hsp_bit-score>
+      <Hsp_score>477</Hsp_score>
+      <Hsp_evalue>3.50277e-60</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPKEAARGSHDVIPLMEVYNKSLCQPRELLVDILQEYPEEVEHIFIPSCVVLKRCAGCCNDEMLQCTPTETYNITMEIKRIKPQRQQNDIYMSFTEHSACECRLKKEVKEQKEN------------------------VCEPC------------CDRCSEKRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>++A + +   +  H+V+  M+VY +S C P E LVDI QEYP+E+E+IF PSCV L RC GCCNDE L+C PTE  NITM+I RIKP + Q+   MSF +H+ CECR KK+   Q++                         V   C            C  CSE+RK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1357720624|ref|XP_024146869.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024146869</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>185.267</Hsp_bit-score>
+      <Hsp_score>469</Hsp_score>
+      <Hsp_evalue>1.38417e-58</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>209</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR-PKKDRARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPKEAARGSHDVIPLMEVYNKSLCQPRELLVDILQEYPEEVEHIFIPSCVVLKRCAGCCNDEMLQCTPTETYNITMEIKRIKPQRQQNDIYMSFTEHSACECRLKKEVKEQKEKKSRKGKGKGLKRKRKKNSDKTIHDAVCEPC------------CDRCSEKRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>++A + +   +  H+V+  M+VY +S C P E LVDI QEYP+E+E+IF PSCV L RC GCCNDE L+C PTE  NITM+I RIKP + Q+   MSF +H+ CECR  K+ + ++EKKS +GKGKG KRKRKK+  K+    V   C            C  CSE+RK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1357720630|ref|XP_024146872.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024146872</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.102</Hsp_bit-score>
+      <Hsp_score>318</Hsp_score>
+      <Hsp_evalue>8.68879e-37</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPKEAARGSHDVIPLMEVYNKSLCQPRELLVDILQEYPEEVEHIFIPSCVVLKRCAGCCNDEMLQCTPTETYNITMEIKRIKPQRQQNDIYMSFTEHSACECR</Hsp_hseq>
+      <Hsp_midline>++A + +   +  H+V+  M+VY +S C P E LVDI QEYP+E+E+IF PSCV L RC GCCNDE L+C PTE  NITM+I RIKP + Q+   MSF +H+ CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1357720626|ref|XP_024146870.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024146870</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.102</Hsp_bit-score>
+      <Hsp_score>318</Hsp_score>
+      <Hsp_evalue>2.86949e-36</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPKEAARGSHDVIPLMEVYNKSLCQPRELLVDILQEYPEEVEHIFIPSCVVLKRCAGCCNDEMLQCTPTETYNITMEIKRIKPQRQQNDIYMSFTEHSACECR</Hsp_hseq>
+      <Hsp_midline>++A + +   +  H+V+  M+VY +S C P E LVDI QEYP+E+E+IF PSCV L RC GCCNDE L+C PTE  NITM+I RIKP + Q+   MSF +H+ CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1357663448|ref|XP_024130802.1|</Hit_id>
+  <Hit_def>placenta growth factor-like isoform X2 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024130802</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.331</Hsp_bit-score>
+      <Hsp_score>316</Hsp_score>
+      <Hsp_evalue>2.98289e-36</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>HAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQ-GQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>HLLLSPAQSLSLPNTNSTTEVVMFQEVWGRSFCRTIEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTRTTNVTMQLLKIRPSESGQEYVEMTFVEHQTCECRVRK</Hsp_hseq>
+      <Hsp_midline>H   S A  ++     +  EVV F +V+ RS+C  IE LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT  +N+TMQ+++I+P + GQ   EM+F++H  CECR +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1357663444|ref|XP_024130637.1|</Hit_id>
+  <Hit_def>placenta growth factor-like isoform X1 [Oryzias melastigma] &gt;gi|1357663446|ref|XP_024130719.1| placenta growth factor-like isoform X1 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024130637</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.331</Hsp_bit-score>
+      <Hsp_score>316</Hsp_score>
+      <Hsp_evalue>3.07038e-36</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>HAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQ-GQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>HLLLSPAQSLSLPNTNSTTEVVMFQEVWGRSFCRTIEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTRTTNVTMQLLKIRPSESGQEYVEMTFVEHQTCECRVRK</Hsp_hseq>
+      <Hsp_midline>H   S A  ++     +  EVV F +V+ RS+C  IE LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT  +N+TMQ+++I+P + GQ   EM+F++H  CECR +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1357706951|ref|XP_024139643.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024139643</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>109.383</Hsp_bit-score>
+      <Hsp_score>272</Hsp_score>
+      <Hsp_evalue>9.24061e-29</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>228</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>249</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>249</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKK-------DRARQEKKSVRGKGKGQK-RKRKKSRYKSWS-------------VYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCD</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFLLLTRIPTSHAKLAHWRPADSPKSREGREVRRWLEVYSRSGCEPRDTLVEVWREFPEEIHHLFVPSCVSVKRCGGCCTDEAMECVSVLTHTVTMELMRTS-FMKHELVELPFVEHSQCECRLKEHFQSTPSSRPFQQPARQAKKKEGRKSRQRKPGAVRAESHTALTPPTTPLPTSAPSPPSSTVSPTPSPTPRCRPCRGRKWAL---DAASCQCRCTVRVGSCSRKGQRLNPRRCKCE</Hsp_hseq>
+      <Hsp_midline>+  +L    + L   +   HAK +   P      +   EV ++++VY RS C P +TLV++++E+P+EI ++F PSCV + RCGGCC DE +ECV      +TM++MR        + E+ F++H++CECR K+        R  Q+      K +G+K R+RK    ++ S                      +  +      C PC  R+  L   D  +C+C C      C  +   LN R C+C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1357726844|ref|XP_024150161.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024150161</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.6254</Hsp_bit-score>
+      <Hsp_score>161</Hsp_score>
+      <Hsp_evalue>1.63965e-12</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>FMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK-PHQGQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>ILEEIQKTSCLPREVCVEVAKEYPQSTSQFYLPRCVSLHRCGGCCTNEAFYCTNTSFTLVNKTLMELSPPRMDRSVAMVTFINHTSCECLSKR</Hsp_hseq>
+      <Hsp_midline> ++  Q++ C P E  V++ +EYP      + P CV L RCGGCC +E   C  T  + +   +M +  P   + +  ++F+ H  CEC  K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1357729477|ref|XP_024151544.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X6 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151544</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.16748e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCECRPKK--DRARQEKKSVRGKGKGQKRKR</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRCMEPAIIRRHAQPQRSTAFPSAGCRRRR</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C       R  Q ++S      G +R+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1357729475|ref|XP_024151543.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X5 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151543</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.22548e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCECRPKK--DRARQEKKSVRGKGKGQKRKR</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRCMEPAIIRRHAQPQRSTAFPSAGCRRRR</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C       R  Q ++S      G +R+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1357729473|ref|XP_024151542.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X4 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151542</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.30522e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCECRPKK--DRARQEKKSVRGKGKGQKRKR</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRCMEPAIIRRHAQPQRSTAFPSAGCRRRR</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C       R  Q ++S      G +R+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1357729479|ref|XP_024151545.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X7 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151545</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.9055e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCEC</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRC</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1357729467|ref|XP_024151539.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Oryzias melastigma] &gt;gi|1357729469|ref|XP_024151540.1| vascular endothelial growth factor D isoform X2 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151539</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.01069e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCEC</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRC</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1357729471|ref|XP_024151541.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X3 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024151541</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.79912e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCEC</Hsp_qseq>
+      <Hsp_hseq>EILKAIDEEWQRTQCMPREACVDVAKELGTDPSIFFKPPCVSVHRCSGCCNQEGLTCKNTTTVYVNKTIFSVIPF--KFIPEPVLVRVANHTECRC</Hsp_hseq>
+      <Hsp_midline>E++K +D  +QR+ C P E  VD+ +E   +    FKP CV + RC GCCN EGL C  T    +   I  + P   + I E   ++   H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1357717228|ref|XP_024145091.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024145091</Hit_accession>
+  <Hit_len>368</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>9.11929e-09</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLEC--VPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVR</Hsp_qseq>
+      <Hsp_hseq>DVLKSIESEWRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEITVPITQGTKPVTISVANHTQCSCLSKLDIYKQVHSIIR</Hsp_hseq>
+      <Hsp_midline>+V+K ++  ++++ C P E  VD+ +E+       +KP CV + RCGGCC+ E  +C  + T   + T+  + +   QG     +S   H +C C  K D  +Q    +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1357717226|ref|XP_024145090.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024145090</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.3594e-08</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLEC--VPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVR</Hsp_qseq>
+      <Hsp_hseq>DVLKSIESEWRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEITVPITQGTKPVTISVANHTQCSCLSKLDIYKQVHSIIR</Hsp_hseq>
+      <Hsp_midline>+V+K ++  ++++ C P E  VD+ +E+       +KP CV + RCGGCC+ E  +C  + T   + T+  + +   QG     +S   H +C C  K D  +Q    +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1357686482|ref|XP_024128848.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC112146978 isoform X1 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024128848</Hit_accession>
+  <Hit_len>499</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>6.79255e-05</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>EGGGQNHHEVVKFMDV--YQRSYCHPIETLVDIFQEYPD--EIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>ESAANGGHRLPRSLDAQPAQQALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVLKIEYINKRPTYAKAV--VSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>E      H + + +D    Q++ C     +V++ +   D     ++  P CV + RC GCCN + L+CVP       +Q+++I     +P   + +  +S + H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1357740431|ref|XP_024115009.1|</Hit_id>
+  <Hit_def>bromodomain-containing protein 4B-like [Oryzias melastigma] &gt;gi|1357740433|ref|XP_024115010.1| bromodomain-containing protein 4B-like [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024115009</Hit_accession>
+  <Hit_len>550</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000218429</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>FMLWPPCVEVQRCSGCCNSRQWQCVPVVTSSRYLQVIKIQYINRKPHYEKAI--ISVEDHVSCRC</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN    +CVP   S+  +Q+++I     KPH  + I  +S   H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1357686484|ref|XP_024128849.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC112146978 isoform X2 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024128849</Hit_accession>
+  <Hit_len>404</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000301336</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>FLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVLKIEYINKRPTYAKAV--VSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN + L+CVP       +Q+++I     +P   + +  +S + H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1357686559|ref|XP_024128888.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024128888</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0645269</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHYRRVKVAKVE</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   + C P+ +    +++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1357740533|ref|XP_024115065.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Oryzias melastigma] &gt;gi|1357740535|ref|XP_024115066.1| platelet-derived growth factor subunit A-like [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024115065</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0769654</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQVARKHHRTVKVAKVE</Hsp_hseq>
+      <Hsp_midline>Q  P    +I  P CV + RC GCCN   + C    + + T+++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|1357686555|ref|XP_024128886.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Oryzias melastigma]</Hit_def>
+  <Hit_accession>XP_024128886</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0901766</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>154</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHYRRVKVAKVE</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   + C P+ +    +++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>36884</Statistics_db-num>
+      <Statistics_db-len>26984295</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3018876510</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

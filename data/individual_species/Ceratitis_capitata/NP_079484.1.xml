@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Ceratitis_capitata</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|498952599|ref|XP_004523366.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101450953 [Ceratitis capitata] &gt;gi|498952603|ref|XP_004523367.1| uncharacterized protein LOC101450953 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004523366</Hit_accession>
+  <Hit_len>1869</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.0846</Hsp_bit-score>
+      <Hsp_score>157</Hsp_score>
+      <Hsp_evalue>2.90468e-11</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>1593</Hsp_hit-from>
+      <Hsp_hit-to>1681</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNFPDLYPPNADCVWHFSTTPGHRIKLIF-NEFNVESHQE--CAYDNVAVYDGESESSSILGHFCGDK-IPYPISSTTNQLYMVFKTD</Hsp_hseq>
+      <Hsp_midline>G + SP FP+ YP N    W   +    RI+L+F N+F +E  +   C YD V V D    S+ I G +CG K +P  I S TNQ+ + FK+D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>7.08012e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1277</Hsp_hit-from>
+      <Hsp_hit-to>1377</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GRLESPNYPLDYLPSKECVWKITVPRGYQVALKFQS---FEVENHDSCVYDFVEVRDGATEDAQLIGVFCGYKP-PPNMKSSGNAMYVKFLSDSS-VQKAGFSAIF</Hsp_hseq>
+      <Hsp_midline>G ++SP +P  Y  +    W++      ++ L F +    E   +D C YDFVEV D +     + G +CG+K  PP +KS  N + + F SD   V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>6.48842e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>1431</Hsp_hit-from>
+      <Hsp_hit-to>1525</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE---EAENDICRYDFVEV-EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>NGTISSPSFPDPYPVLKECIWEIIAPPKHKISLNF-THFDLEGNTQQQTD-CGYDSVTIYSKLSENRLKRIGTYCG-TAIPPTATSEGNALRVEFHSD</Hsp_hseq>
+      <Hsp_midline>NG + SP FP+ YP      W + +    +I L F   F LE   + + D C YD V +   +SE      G +CG   +PP   S  N +++ F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|499004632|ref|XP_004535380.1|</Hit_id>
+  <Hit_def>cubilin homolog [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004535380</Hit_accession>
+  <Hit_len>3712</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>1.73924e-10</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>632</Hsp_hit-from>
+      <Hsp_hit-to>740</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LDVDSHGTLTSPGSPGNYPKNRDCRWHLKAPNNKRIKLTF---FNLQIEKHDSCNFDYLEIIDAIADTTVV--KYC-NSTAPSPLMLPTNEAIIHFHSDN-IDTDAGFQIYYSTEE</Hsp_hseq>
+      <Hsp_midline>+ V  +G + SP  P +YP+N    W L +  N RI+L F   F L+  ++D C +D++E+ D    +T++  ++C +   P  +   TN+  I F SD+      GF+IYYS  E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.11849e-09</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1101</Hsp_hit-from>
+      <Hsp_hit-to>1201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GRIFSPGYPTNYTNDIDCIWVLNTPENTQIKLDLD-MFELEAS--DDCEHDWLEIRNGGSEQSPLINKYCG-SNIPRQIPSFTHQLRLHFHSNS-FVSARGFQIHW</Hsp_hseq>
+      <Hsp_midline>G + SP +P +Y  ++   W L++ ENT+I+L  D  F LE +  D C +D++E+ +     + +  ++CG   +P +I S T+Q+++ F S+  FV+  GF+I++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>6.97813e-07</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>1792</Hsp_hit-from>
+      <Hsp_hit-to>1892</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>SGKFASPYYPSSYPVNIDCEWYIMANEGNSMVLTIES-FDTEASEG--CNKDYVEVRESTESGRLL-GLYCGN-DIPPPI-TGVQSLWVKFGSDNDGVAN-GFLVSYN</Hsp_hseq>
+      <Hsp_midline>+G   SP +P+SYP N+   W + + E   + L  ++ F  E +E   C  D+VEV + +E+  ++ G +CG+ ++PP I +    + + F SD+  VA  GF + Y+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>6.77874e-05</Hsp_evalue>
+      <Hsp_query-from>68</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>3233</Hsp_hit-from>
+      <Hsp_hit-to>3315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>RFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>KYVNGYANNLDCAY-IFTTPRGRQLLVDFNSFHLEDSEK--CQSDFLEVRDGGGPYGDLIGRFCGHT-LPQRMMSSENALFIRFVSD</Hsp_hseq>
+      <Hsp_midline>++ N Y  NL   + + +    R  LV  N F LE++E   C+ DF+EV D       + GR+CGH  +P R+ S  N + I F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000134304</Hsp_evalue>
+      <Hsp_query-from>89</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>542</Hsp_hit-from>
+      <Hsp_hit-to>619</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>TRIQLVFDNQFGLEEAENDI-CRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKI</Hsp_qseq>
+      <Hsp_hseq>TNVSLVLNVTFNAFELEDSTECRFDWLQINDGRSAAAQIIGRFCGSHKPLGGNIISSSSDLYLWFRSDNS-TAKEGFEL</Hsp_hseq>
+      <Hsp_midline>T + LV +  F   E E+   CR+D++++ D    +  I GR+CG HK +   I S ++ + + F+SD+   AK GF++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000194813</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>1216</Hsp_hit-from>
+      <Hsp_hit-to>1307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>SGVIASPRYPNSYPHNAECDWHVQVPKGSAIHFTIED---LEIEELFECHYDYLEIFNGRTDTHPLLAKLCKLERDEQKHLASTSNEALLRFRTD</Hsp_hseq>
+      <Hsp_midline>+G + SPR+PNSYP N    W +   + + I    ++   LE  E   C YD++E+ +    +  +  + C   ++    + S +N+  + F++D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00479384</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>1435</Hsp_hit-from>
+      <Hsp_hit-to>1538</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>GEFQSPKYPLPYPNDLECLWQIKTIPGQGVELTVTD-MDIEETAN--CTNDALVISS-HAVSTNYKERHCGHQS-NLVITSSSHHLFVRFISNEKNNGK-GFKAAYKILK</Hsp_hseq>
+      <Hsp_midline>G  QSP++P  YP +L   W++ +     ++L   +   +EE  N  C  D + +      ST  + R CGH+     I S ++ + + F S++    K GFK  Y +L+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>8</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0186995</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>2237</Hsp_hit-from>
+      <Hsp_hit-to>2375</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>ALRNANLRRDESNHLTDLYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEND---ICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKP--GFKIYYSL</Hsp_qseq>
+      <Hsp_hseq>SFKAAFYYEEISHECSDVLILDEETLLARTKTITSPNYPNIPNPHSECIWRVQAPTHHVITVEFKDKFDLATSDSQPAGTCDREYIQLNDGATELMPLLGVFCG-KTKPNSLATTSNVLRFKYFTD---ISEPHIGFKAIVSI</Hsp_hseq>
+      <Hsp_midline>+ + A    + S+  +D+   DE   +     + SP +PN    +    WR+ +  +  I + F ++F L  +++     C  +++++ D +     + G +CG K  P  + + +N ++  + +D   +++P  GFK   S+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>9</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0992534</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1549</Hsp_hit-from>
+      <Hsp_hit-to>1659</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTII---RGRW----CGHKEV-PPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>HGVITSPNYPLNYPADAKCEWTIEVTLHHTITLTMDE---IEMENYYSCEMDYVEAYEGANSDSVTPAEEGRQLFKECGASDSQETEWQTKTNTAIVRFETDDSVQSK-GFKLSF</Hsp_hseq>
+      <Hsp_midline>+G + SP +P +YP +    W +    +  I L  D    +E      C  D+VE  + + + ++     GR     CG  +      +++TN   + F++DD   +K GFK+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|807024909|ref|XP_012156142.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid isoform X3 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012156142</Hit_accession>
+  <Hit_len>1022</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>3.35762e-10</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>446</Hsp_hit-from>
+      <Hsp_hit-to>548</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>IDSPNYPLEYLADRECVWRITAPENRQVALKFQS-FELENHDN--CAYDYVEIRDGLSSDYRLMGIYCGNV-VPPNIKTNSNQMYVKFVSDGT-VQKVGFSALF--LQEF</Hsp_hseq>
+      <Hsp_midline>+ SP +P  Y  +    WR+ + EN ++ L F + F LE  +N  C YD+VE+ D   +   + G +CG+  VPP IK+ +NQ+ + F SD   V K GF   +  L++F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>1.40395e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>762</Hsp_hit-from>
+      <Hsp_hit-to>863</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNYPNDYPRNTYCFWRFRTVLGHRVRLTF-HDFELENHQE--CFYDYVALYDGKSENSSTLGTYCGGHQ-PYSVVASTNEMFMVLWTDATLQGK-GFRATYS</Hsp_hseq>
+      <Hsp_midline>G + SP +PN YPRN    WR  +    R++L F + F LE  +   C YD+V + D    ++   G +CG  + P  + + TN++ +   +D     K GF+  YS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.67443e-06</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>840</Hsp_hit-from>
+      <Hsp_hit-to>987</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>SNHLTDLYRRDETIQVKG---------NGYVQS----------PRFPN-SYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR----GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>TNEMFMVLWTDATLQGKGFRATYSTECGGYLRATNDTQVFYSHPRYGSRPYNRRMYCNWRIEADSESSVQIKFL-HFEIENSEH--CEYDSVEIREEIYDEKLRRNSNHGRFCGHRK-PPTITSYTDSLLIRFQTDES-TSLRGFAVTFKAVE</Hsp_hseq>
+      <Hsp_midline>+N +  +   D T+Q KG          GY+++          PR+ +  Y R +   WR+ +   + +Q+ F   F +E +E+  C YD VE+ +      + R    GR+CGH++ PP I S T+ + I F++D+   +  GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0197137</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>600</Hsp_hit-from>
+      <Hsp_hit-to>702</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE--EAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>NGTLNSPSYPDVYPISKECIWEVVAPPNHSVFLNF-THFDMEGNKYQYTECDYDYLLVYSKLRDNRLKKIDIFCG-QDLPPLLKSDDNIMRLEFFSDKN-IQRTGF</Hsp_hseq>
+      <Hsp_midline>NG + SP +P+ YP +    W + +  N  + L F   F +E  + +   C YD++ V      + + +   +CG +++PP +KS  N +++ F SD   + + GF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1184343863|ref|XP_020713717.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid isoform X2 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_020713717</Hit_accession>
+  <Hit_len>1024</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>3.41933e-10</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>448</Hsp_hit-from>
+      <Hsp_hit-to>550</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>IDSPNYPLEYLADRECVWRITAPENRQVALKFQS-FELENHDN--CAYDYVEIRDGLSSDYRLMGIYCGNV-VPPNIKTNSNQMYVKFVSDGT-VQKVGFSALF--LQEF</Hsp_hseq>
+      <Hsp_midline>+ SP +P  Y  +    WR+ + EN ++ L F + F LE  +N  C YD+VE+ D   +   + G +CG+  VPP IK+ +NQ+ + F SD   V K GF   +  L++F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>1.41701e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>764</Hsp_hit-from>
+      <Hsp_hit-to>865</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNYPNDYPRNTYCFWRFRTVLGHRVRLTF-HDFELENHQE--CFYDYVALYDGKSENSSTLGTYCGGHQ-PYSVVASTNEMFMVLWTDATLQGK-GFRATYS</Hsp_hseq>
+      <Hsp_midline>G + SP +PN YPRN    WR  +    R++L F + F LE  +   C YD+V + D    ++   G +CG  + P  + + TN++ +   +D     K GF+  YS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.79487e-06</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>842</Hsp_hit-from>
+      <Hsp_hit-to>989</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>SNHLTDLYRRDETIQVKG---------NGYVQS----------PRFPN-SYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR----GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>TNEMFMVLWTDATLQGKGFRATYSTECGGYLRATNDTQVFYSHPRYGSRPYNRRMYCNWRIEADSESSVQIKFL-HFEIENSEH--CEYDSVEIREEIYDEKLRRNSNHGRFCGHRK-PPTITSYTDSLLIRFQTDES-TSLRGFAVTFKAVE</Hsp_hseq>
+      <Hsp_midline>+N +  +   D T+Q KG          GY+++          PR+ +  Y R +   WR+ +   + +Q+ F   F +E +E+  C YD VE+ +      + R    GR+CGH++ PP I S T+ + I F++D+   +  GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0192138</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>602</Hsp_hit-from>
+      <Hsp_hit-to>704</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE--EAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>NGTLNSPSYPDVYPISKECIWEVVAPPNHSVFLNF-THFDMEGNKYQYTECDYDYLLVYSKLRDNRLKKIDIFCG-QDLPPLLKSDDNIMRLEFFSDKN-IQRTGF</Hsp_hseq>
+      <Hsp_midline>NG + SP +P+ YP +    W + +  N  + L F   F +E  + +   C YD++ V      + + +   +CG +++PP +KS  N +++ F SD   + + GF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|807024907|ref|XP_004523365.2|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid isoform X1 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004523365</Hit_accession>
+  <Hit_len>1213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>4.09773e-10</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>637</Hsp_hit-from>
+      <Hsp_hit-to>739</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>IDSPNYPLEYLADRECVWRITAPENRQVALKFQS-FELENHDN--CAYDYVEIRDGLSSDYRLMGIYCGNV-VPPNIKTNSNQMYVKFVSDGT-VQKVGFSALF--LQEF</Hsp_hseq>
+      <Hsp_midline>+ SP +P  Y  +    WR+ + EN ++ L F + F LE  +N  C YD+VE+ D   +   + G +CG+  VPP IK+ +NQ+ + F SD   V K GF   +  L++F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>1.814e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>953</Hsp_hit-from>
+      <Hsp_hit-to>1054</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNYPNDYPRNTYCFWRFRTVLGHRVRLTF-HDFELENHQE--CFYDYVALYDGKSENSSTLGTYCGGHQ-PYSVVASTNEMFMVLWTDATLQGK-GFRATYS</Hsp_hseq>
+      <Hsp_midline>G + SP +PN YPRN    WR  +    R++L F + F LE  +   C YD+V + D    ++   G +CG  + P  + + TN++ +   +D     K GF+  YS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.25613e-06</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>1070</Hsp_hit-from>
+      <Hsp_hit-to>1178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPN-SYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR----GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>FYSHPRYGSRPYNRRMYCNWRIEADSESSVQIKFLH-FEIENSEH--CEYDSVEIREEIYDEKLRRNSNHGRFCGHRK-PPTITSYTDSLLIRFQTDESTSLR-GFAVTFKAVE</Hsp_hseq>
+      <Hsp_midline>+   PR+ +  Y R +   WR+ +   + +Q+ F + F +E +E+  C YD VE+ +      + R    GR+CGH++ PP I S T+ + I F++D+    + GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0239318</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>791</Hsp_hit-from>
+      <Hsp_hit-to>893</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE--EAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>NGTLNSPSYPDVYPISKECIWEVVAPPNHSVFLNF-THFDMEGNKYQYTECDYDYLLVYSKLRDNRLKKIDIFCG-QDLPPLLKSDDNIMRLEFFSDKN-IQRTGF</Hsp_hseq>
+      <Hsp_midline>NG + SP +P+ YP +    W + +  N  + L F   F +E  + +   C YD++ V      + + +   +CG +++PP +KS  N +++ F SD   + + GF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|807029585|ref|XP_004526238.2|</Hit_id>
+  <Hit_def>cubilin homolog [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004526238</Hit_accession>
+  <Hit_len>3664</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>2.51111e-09</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1338</Hsp_hit-from>
+      <Hsp_hit-to>1438</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GVIESPNFPDNYPPNLNCFWDIHGGQNNKFQLIFSHF--ESEIRNDECSFDYIEIFDLRNDDVLSKQHLCSNPL--KAITTEGNRFQVKFVT-DYSGHAKGFRLEY</Hsp_hseq>
+      <Hsp_midline>G ++SP FP++YP NL   W +H  +N + QL+F +     E  ND C +D++E+ D+     + +   C +      I +  N+ ++ F + DY     GF++ Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>2.13047e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>1106</Hsp_hit-from>
+      <Hsp_hit-to>1211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>GTIKTPSWPQNYGDSLNCTWIIEAPLGHKIEIVARN-FSVETTSKN-CNDDYLEIRNGKSATSPLIGKYCGNT-IPTRIPSFANYLYLNFISDSYLTDK-GFYLTWQQTE</Hsp_hseq>
+      <Hsp_midline>G +++P +P +Y  +L  TW + +    +I++V  N F +E    + C  D++E+ +    ++ + G++CG+  +P RI S  N + + F SD Y   K GF + +   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00148267</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>1775</Hsp_hit-from>
+      <Hsp_hit-to>1849</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRI</Hsp_qseq>
+      <Hsp_hseq>GILTSPYYPQSYPSNIECVWEIKASPGNYLELSI-NELDIVKSEN--CNEDFLEIRQTSALGKILQ-VFCVNEVVTDRI</Hsp_hseq>
+      <Hsp_midline>G + SP +P SYP N+   W + +     ++L   N+  + ++EN  C  DF+E+   S    I++  +C ++ V  RI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|807040172|ref|XP_012160999.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101461583 isoform X2 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012160999</Hit_accession>
+  <Hit_len>1186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>2.77775e-08</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>630</Hsp_hit-from>
+      <Hsp_hit-to>742</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETN</Hsp_qseq>
+      <Hsp_hseq>SPDFPNNYPKNINCTRIITAPPGQIIRLDFRNSFNIEAK--DDCKFDVLEIRNGQYGFSDLIGKFCG-TNFPPEITSKERYLWLHFHSDES-IEYEGFTAVYEYIDRSKEAPSTDLN</Hsp_hseq>
+      <Hsp_midline>SP FPN+YP+N+  T  + +     I+L F N F +E    D C++D +E+ +     + + G++CG    PP I S+   + + F SD+  +   GF   Y  ++  + A +++ N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|807040166|ref|XP_004535395.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101461583 isoform X1 [Ceratitis capitata] &gt;gi|807040168|ref|XP_012160997.1| uncharacterized protein LOC101461583 isoform X1 [Ceratitis capitata] &gt;gi|807040170|ref|XP_012160998.1| uncharacterized protein LOC101461583 isoform X1 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004535395</Hit_accession>
+  <Hit_len>1263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>3.65722e-08</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>630</Hsp_hit-from>
+      <Hsp_hit-to>742</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETN</Hsp_qseq>
+      <Hsp_hseq>SPDFPNNYPKNINCTRIITAPPGQIIRLDFRNSFNIE--AKDDCKFDVLEIRNGQYGFSDLIGKFCG-TNFPPEITSKERYLWLHFHSDES-IEYEGFTAVYEYIDRSKEAPSTDLN</Hsp_hseq>
+      <Hsp_midline>SP FPN+YP+N+  T  + +     I+L F N F +E    D C++D +E+ +     + + G++CG    PP I S+   + + F SD+  +   GF   Y  ++  + A +++ N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|807024453|ref|XP_012156018.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101461827 isoform X1 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012156018</Hit_accession>
+  <Hit_len>1499</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.04101e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>738</Hsp_hit-from>
+      <Hsp_hit-to>820</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0135866</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>1031</Hsp_hit-from>
+      <Hsp_hit-to>1172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEN----------DICRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSI</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLGEPNEQVTIVFDH-FKIKADGNSNATAGAYGSSACFEDWLEMYVVYRDNNDRFLGRYCGLTAPGPVESPRGAVGLRITLHTDQENVAS-GFKARYFFETPRTDVAECGGNFSNLDSGI</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++    + N ++ +VFD+ F ++   N            C  D++E+  +  + +    GR+CG     P    R    ++IT  +D   VA  GFK  Y         A    N+ ++ S I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|498950909|ref|XP_004523092.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101461827 isoform X2 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004523092</Hit_accession>
+  <Hit_len>1458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.04648e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>697</Hsp_hit-from>
+      <Hsp_hit-to>779</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0124309</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>990</Hsp_hit-from>
+      <Hsp_hit-to>1131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEN----------DICRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSI</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLGEPNEQVTIVFDH-FKIKADGNSNATAGAYGSSACFEDWLEMYVVYRDNNDRFLGRYCGLTAPGPVESPRGAVGLRITLHTDQENVAS-GFKARYFFETPRTDVAECGGNFSNLDSGI</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++    + N ++ +VFD+ F ++   N            C  D++E+  +  + +    GR+CG     P    R    ++IT  +D   VA  GFK  Y         A    N+ ++ S I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1314932592|ref|XP_023158944.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101456438 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_023158944</Hit_accession>
+  <Hit_len>945</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000231814</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>241</Hsp_hit-from>
+      <Hsp_hit-to>344</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN-QFGL--EEAENDI-------------CRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITF</Hsp_qseq>
+      <Hsp_hseq>YVQSPAYPGLYPRALNCRYKLHTRQ-PYIKLYLQNEQFAVDGQRCENVMTCPIRPIGSGKEHCPYDWLAVYDGRDEHSPLIGKFCGLGKFPFSIIGTSQYMYVEF</Hsp_hseq>
+      <Hsp_midline>YVQSP +P  YPR L   ++LH+++   I+L   N QF +  +  EN +             C YD++ V D  +  + + G++CG  + P  I   +  + + F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1184343585|ref|XP_012156108.2|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1-like, partial [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012156108</Hit_accession>
+  <Hit_len>323</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000266695</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEN-DICRY----DFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSIS</Hsp_qseq>
+      <Hsp_hseq>SGWFGSPNFPGYYPQNIICHYYFYGEPEERVFI----RFTFFDVEGIGTCEYLTASDYVEFSNFMSTDRKY-GKYCGKRD-KFEIQSDGRFFRVSFYSNDRF-DKTGFRALY----DFQ-GKSSQVENTSMQSYVS</Hsp_hseq>
+      <Hsp_midline>+G+  SP FP  YP+N++  +  + +   R+ +    +F   + E    C Y    D+VE  +   T     G++CG ++    I+S     +++F S+D F  K GF+  Y    DFQ   +S+    S+ S +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|499004391|ref|XP_004535321.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101448652 isoform X2 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_004535321</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000559174</Hsp_evalue>
+      <Hsp_query-from>289</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>NVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>NVVYFPKCTRVKRCGGCCGSQLM-----SCQPTETETINFEVTKYKLGERAFGGREIVV------VEQHTKCKCDC</Hsp_hseq>
+      <Hsp_midline>NVV+FP+C  V+RCGG CG   +     +C   +T     EV +++ G     GR   +      ++ H +C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|807040476|ref|XP_012161104.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101448652 isoform X1 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012161104</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000589974</Hsp_evalue>
+      <Hsp_query-from>289</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>NVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>NVVYFPKCTRVKRCGGCCGSQLM-----SCQPTETETINFEVTKYKLGERAFGGREIVV------VEQHTKCKCDC</Hsp_hseq>
+      <Hsp_midline>NVV+FP+C  V+RCGG CG   +     +C   +T     EV +++ G     GR   +      ++ H +C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1184351407|ref|XP_020715407.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101451820 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_020715407</Hit_accession>
+  <Hit_len>3707</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000693917</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>1732</Hsp_hit-from>
+      <Hsp_hit-to>1806</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>DLYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTI</Hsp_qseq>
+      <Hsp_hseq>DTYSANNVTLTGAEGRLVSPAYPNTYPLNMDYWVHIKTPERTRIILQFQK---IDLEPQDECLYDYVSIQDYELVSHI</Hsp_hseq>
+      <Hsp_midline>D Y  +        G + SP +PN+YP N+     + + E TRI L F     ++    D C YD+V ++D    S I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|807040479|ref|XP_012161105.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012161105</Hit_accession>
+  <Hit_len>290</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000755039</Hsp_evalue>
+      <Hsp_query-from>289</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>NVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>NVVYFPKCTRVKRCGGCCGSQLM-----SCQPTETETINFEVTKYKLGERAFGGREIVV------VEQHTKCKCDC</Hsp_hseq>
+      <Hsp_midline>NVV+FP+C  V+RCGG CG   +     +C   +T     EV +++ G     GR   +      ++ H +C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|807030802|ref|XP_012157984.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC101459716 [Ceratitis capitata]</Hit_def>
+  <Hit_accession>XP_012157984</Hit_accession>
+  <Hit_len>1156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0475105</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>251</Hsp_hit-from>
+      <Hsp_hit-to>364</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLH--------------SQENTRIQLVFDNQFGLEEAENDICRY-------DFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDY</Hsp_qseq>
+      <Hsp_hseq>HLQSPNYPGMYPRNVTCYWTIRQKEVPTSKHAMIAVSQENQHKALVKRSIASFNKTSRSIRAWSDCTGERDHLIFYDGSSTNDPVLAKYCGGDWL-PRVVSRGPEMLVAFHSSPF</Hsp_hseq>
+      <Hsp_midline>++QSP +P  YPRN+   W +               SQEN    LV  +     +    I  +       D +   D S T+  +  ++CG   + PR+ SR  ++ + F S  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>18449</Statistics_db-num>
+      <Statistics_db-len>13453392</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3101187192</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

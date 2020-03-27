@@ -1,0 +1,1666 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Cyprinus_carpio</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1101613993|ref|XP_018971417.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018971417</Hit_accession>
+  <Hit_len>213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.2857</Hsp_bit-score>
+      <Hsp_score>238</Hsp_score>
+      <Hsp_evalue>4.03661e-24</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>103</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>EVVRWLDVYQKSGCHPRETLVEVWREFPWETHHLFLPSCVTLRRCGGCCSDEALECVPSQTHTLVMELMRTSYMKHELVQLPFIEHNQCECRLK</Hsp_hseq>
+      <Hsp_midline>+VV W+DVY ++ C PRE +V +  E         +PSCVT++RCGGCC D+ LECVP+  H + M+++   Y   +L ++   EH+QCECR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1101621811|ref|XP_018974634.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018974634</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>4.8344e-24</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>QLFFAALLHLSAVKAAHIPKEGMKSKNEVIPFMEVYKKSACKTREMLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECR</Hsp_hseq>
+      <Hsp_midline>+L  AALL L+  +A     +    + +V+ +++VY ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1101657462|ref|XP_018953189.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018953189</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.1301</Hsp_bit-score>
+      <Hsp_score>235</Hsp_score>
+      <Hsp_evalue>4.97021e-24</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>LFFAALLHLSAVKAAHIPKEGGKSKNEVIPFMDVFKKSACKTREMLVDIIREYPDEIDHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRQKEEVKSKKEN</Hsp_hseq>
+      <Hsp_midline>L  AALL L+  +A     +    + +V+ ++DV+ ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR K++  + K +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1101657464|ref|XP_018953195.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018953195</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>5.17979e-24</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>QLFFAALLHLSAVKAAHIPKEGGKSKNEVIPFMDVFKKSACKTREMLVDIIREYPDEIDHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECR</Hsp_hseq>
+      <Hsp_midline>+L  AALL L+  +A     +    + +V+ ++DV+ ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1101621813|ref|XP_018974635.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018974635</Hit_accession>
+  <Hit_len>139</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.5893</Hsp_bit-score>
+      <Hsp_score>231</Hsp_score>
+      <Hsp_evalue>6.05449e-24</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>QLFFAALLHLSAVKAAHIPKEGMKSKNEVIPFMEVYKKSACKTREMLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECR</Hsp_hseq>
+      <Hsp_midline>+L  AALL L+  +A     +    + +V+ +++VY ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|966640262|gb|KTF75176.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00036028 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF75176</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.5893</Hsp_bit-score>
+      <Hsp_score>231</Hsp_score>
+      <Hsp_evalue>1.42645e-23</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>QLFFAALLHLSAVKAAHIPKEGGKSKNEVIPFMDVFKKSACKTREMLVDIIREYPDEIDHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRYVSK</Hsp_hseq>
+      <Hsp_midline>+L  AALL L+  +A     +    + +V+ ++DV+ ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR   K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|966709114|gb|KTG41352.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00030577 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG41352</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>3.34332e-21</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>QLFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>+L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|966671957|gb|KTG05338.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00013154, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG05338</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>4.4456e-21</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>103</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>VIPFMEVYKKSACKTREMLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRQK</Hsp_hseq>
+      <Hsp_midline>V+ +++VY ++ C+ RE++V +  E    +    +PSCV + RC GCC D+ LECVPT    V M++L ++   SQ   ++S  EH++CECR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1101568425|ref|XP_018949927.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X7 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949927</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>2.92705e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKKKDSAVKPDRAATP</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCR-EKKDILEKKENQCEP</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR +KKD   K +    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1101568423|ref|XP_018949926.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X6 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949926</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>2.9833e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1101568417|ref|XP_018949923.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X3 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949923</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>3.62513e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1101568419|ref|XP_018949924.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X4 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949924</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>4.25891e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|966713614|gb|KTG45852.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00035774, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG45852</Hit_accession>
+  <Hit_len>117</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>4.96643e-20</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VVPFMEVYNKSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECAPTVTYNITLEIKRLK-PLRHQGDFFMSFAEHSECKCRPRK</Hsp_hseq>
+      <Hsp_midline>VV +++VY ++ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CRP+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1101568421|ref|XP_018949925.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X5 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949925</Hit_accession>
+  <Hit_len>249</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>5.15272e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1101568413|ref|XP_018949921.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949921</Hit_accession>
+  <Hit_len>286</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>5.44045e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1101568415|ref|XP_018949922.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949922</Hit_accession>
+  <Hit_len>285</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>6.32154e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPSEEGRSTYEVVPFMEVYNRSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRVK-PLRHQGDFFMSFVEHSECQCREKK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +      +VV +++VY R+ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1101654361|ref|XP_018938485.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X4 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018938485</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>7.89542e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPREGGRSTYDVVPFMEVYNKSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECAPTVTYNITLEIKRLK-PLRHQGDFFMSFAEHSECKCRPRK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +       VV +++VY ++ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CRP+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1101654359|ref|XP_018938478.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X3 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018938478</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>8.12932e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPREGGRSTYDVVPFMEVYNKSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECAPTVTYNITLEIKRLK-PLRHQGDFFMSFAEHSECKCRPRK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +       VV +++VY ++ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CRP+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1101654355|ref|XP_018938465.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018938465</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>9.08478e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPREGGRSTYDVVPFMEVYNKSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECAPTVTYNITLEIKRLK-PLRHQGDFFMSFAEHSECKCRPRK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +       VV +++VY ++ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CRP+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1101654357|ref|XP_018938471.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018938471</Hit_accession>
+  <Hit_len>249</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>9.2143e-20</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LFLVTLLYFSAVKSAYIPREGGRSTYDVVPFMEVYNKSLCRPREVLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECAPTVTYNITLEIKRLK-PLRHQGDFFMSFAEHSECKCRPRK</Hsp_hseq>
+      <Hsp_midline>L L  LL  +  ++     +       VV +++VY ++ C+PREV+V +  E         +PSCV + RC GCC D+ +EC PT  + + ++I  ++ P    G+  MS  EHS+C+CRP+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1101624322|ref|XP_018975916.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018975916</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>5.85442e-16</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECR---PKKKDSAVKP</Hsp_qseq>
+      <Hsp_hseq>LLQIVAAVQLSLLPAQS--SSLVNVNNTAKVMLFQEVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPACVPLVRCAGCCGDENLECHPTLTSNTTMQLLKIK-PAEQGQEYVEMTFVEHKACECRQRKPTKKQDRLKP</Hsp_hseq>
+      <Hsp_midline>L +++ A  L L PAQ+  S      +  KV+ + +V+ ++ C+  E +V +  E  G V     P+CV + RC GCC D+ LEC PT      MQ+L I+ P+ Q     EM+  EH  CECR   P KK   +KP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|1101626159|ref|XP_018976840.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018976840</Hit_accession>
+  <Hit_len>129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>5.78747e-15</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKKKDSAVKPDR</Hsp_qseq>
+      <Hsp_hseq>EVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPTCVPLVRCAGCCGDENLECHPTLTSNTTMQLLKIK-PAEQGQEYVEMTFVEHKACECRPRK--STTKQDR</Hsp_hseq>
+      <Hsp_midline>+V+ ++ C+  E +V +  E  G V     P+CV + RC GCC D+ LEC PT      MQ+L I+ P+ Q     EM+  EH  CECRP+K  S  K DR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1101560369|ref|XP_018946181.1|</Hit_id>
+  <Hit_def>PREDICTED: snake venom vascular endothelial growth factor toxin barietin-like isoform X3 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018946181</Hit_accession>
+  <Hit_len>110</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.5514</Hsp_bit-score>
+      <Hsp_score>166</Hsp_score>
+      <Hsp_evalue>1.34372e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY-----PSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>NIFVNTLCKPRETLVEVEHEFPEAKLRRVVPSCVLLQRCGGCCSDEAMLCVSVSTHTTVMQLKQFTRNVHGATVEEIIELPFVEHSQCQCRHRSQ</Hsp_hseq>
+      <Hsp_midline>+++    C+PRE +V +  E      +++VPSCV +QRCGGCC D+ + CV    H   MQ+             ++ E+   EHSQC+CR + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|1101560365|ref|XP_018946179.1|</Hit_id>
+  <Hit_def>PREDICTED: snake venom vascular endothelial growth factor toxin VR-1&apos;-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018946179</Hit_accession>
+  <Hit_len>131</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>6.82739e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY-----PSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>NIFVNTLCKPRETLVEVEHEFPEAKLRRVVPSCVLLQRCGGCCSDEAMLCVSVSTHTTVMQLKQFTRNVHGATVEEIIELPFVEHSQCQCRHRSQ</Hsp_hseq>
+      <Hsp_midline>+++    C+PRE +V +  E      +++VPSCV +QRCGGCC D+ + CV    H   MQ+             ++ E+   EHSQC+CR + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|1101560367|ref|XP_018946180.1|</Hit_id>
+  <Hit_def>PREDICTED: snake venom vascular endothelial growth factor toxin VR-1&apos;-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018946180</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>7.40747e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY-----PSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>NIFVNTLCKPRETLVEVEHEFPEAKLRRVVPSCVLLQRCGGCCSDEAMLCVSVSTHTTVMQLKQFTRNVHGATVEEIIELPFVEHSQCQCRHRSQ</Hsp_hseq>
+      <Hsp_midline>+++    C+PRE +V +  E      +++VPSCV +QRCGGCC D+ + CV    H   MQ+             ++ E+   EHSQC+CR + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|966667981|gb|KTG01362.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00006872, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG01362</Hit_accession>
+  <Hit_len>114</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>4.07899e-13</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>KVMLFQEVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPACVPLVRCAGCCGDENLECHPTLTSNTTMQLLKIK-PAEQGQEYVEMTFVEHKACECR</Hsp_hseq>
+      <Hsp_midline>KV+ + +V+ ++ C+  E +V +  E  G V     P+CV + RC GCC D+ LEC PT      MQ+L I+ P+ Q     EM+  EH  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|966711549|gb|KTG43787.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00027054 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG43787</Hit_accession>
+  <Hit_len>764</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>5.30119e-11</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>427</Hsp_hit-from>
+      <Hsp_hit-to>487</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>61</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQ</Hsp_qseq>
+      <Hsp_hseq>NIFVNTLCKPRETLVEVEHEFPEAKLRRVVPSCVLLQRCGGCCSDEAMLCVSVSTHTTVMQ</Hsp_hseq>
+      <Hsp_midline>+++    C+PRE +V +  E      +++VPSCV +QRCGGCC D+ + CV    H   MQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|1101534205|ref|XP_018932902.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC109060204 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018932902</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>3.06837e-10</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVY--TRATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ----LGEMSLEEHSQCECRPKKKDSAVKP-DRAATPHHRPQPRSVPGWDSAPGAPSPADITH</Hsp_qseq>
+      <Hsp_hseq>LQFLLFSESIEFEPD----SQHDNDTSNRLPRSLLDAQPAQQAICKVRTEVIEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVLTHTRYLQVMKIQYVNKQPLYDKAVVSVLDHVECRCQP-----APRPAQRRKSSGHKQEGR------ERSGKPRPKDELH</Hsp_hseq>
+      <Hsp_midline>L+ LL +  ++  P     SQ D     R   S +D     +A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP   H   +Q++ I+Y + Q       +S+ +H +C C+P     A +P  R  +  H+ + R         G P P D  H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|1101566804|ref|XP_018949216.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC109078389 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018949216</Hit_accession>
+  <Hit_len>462</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>3.02603e-09</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ----LGEMSLEEHSQCECRPKKKDSAVKP-DRAATPHHRPQPRSVPGWDSAPGAPSPADITH</Hsp_qseq>
+      <Hsp_hseq>QAICKVRTEVIEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVLTHTRYLQVMKIQYVNKQPLYDKAVVSVLDHVECRCQP-----APRPAQRRKSSGHKQEGR------ERSGKPRPKDELH</Hsp_hseq>
+      <Hsp_midline>+A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP   H   +Q++ I+Y + Q       +S+ +H +C C+P     A +P  R  +  H+ + R         G P P D  H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|966692708|gb|KTG25369.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00042570 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG25369</Hit_accession>
+  <Hit_len>268</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.14419e-08</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG----EMSLEEHSQCECRPK---KKDSAVKPDRAATPHHRPQPRSVPG----WDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALT</Hsp_qseq>
+      <Hsp_hseq>DEWQKTQCMPRETCVDVAKELGTNTAVYFKPPCVSVFRCGGCCNKEGVTCRNTSVTYVNKTILSVSLAPYKSGPEPVLVKIANHTECMCQEHALIRRHVREKHKKSCSPTLKPEDKRLCNKGLIWDWM----AEQCVTYPSSKQGHCKRENNDEHNALT</Hsp_hseq>
+      <Hsp_midline>D + +  C PRE  V +  EL    A    P CV+V RCGGCC  +G+ C  T    V   IL +     + G     + +  H++C C+     ++    K  ++ +P  +P+ + +      WD      +   +T+P+   G          +ALT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|966638175|gb|KTF73279.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00043624, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF73279</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>1.33798e-08</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVY--TRATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>LQFLLFSESIEVEPD----SHHDNDTSNRLPRSLLDAQPAQQAICKVRTEVIEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKTLQCVPILTHTRYLQVMKIQYVNKRPLYDKAVVSVLDHVECRCQP</Hsp_hseq>
+      <Hsp_midline>L+ LL +  +++ P     S  D     R   S +D     +A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP   H   +Q++ I+Y    P      +S+ +H +C C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|1101527340|ref|XP_018929339.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018929339</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>2.20982e-08</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG----EMSLEEHSQCECRPK---KKDSAVKPDRAATPHHRPQPRSVPG----WD</Hsp_qseq>
+      <Hsp_hseq>DEWQKTQCMPRETCVDVAKELGTNTAVFFKPPCVSVFRCGGCCNKEGVTCRNTSVTYVNKTILSVSLAPYKTGPEPVLVKIANHTECMCQEHSLIRRHVREKHKKSCSPTRKPEDKRLCNKGLIWD</Hsp_hseq>
+      <Hsp_midline>D + +  C PRE  V +  EL    A    P CV+V RCGGCC  +G+ C  T    V   IL +     + G     + +  H++C C+     ++    K  ++ +P  +P+ + +      WD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|966654347|gb|KTF89201.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00019392 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF89201</Hit_accession>
+  <Hit_len>574</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>2.74028e-08</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>403</Hsp_hit-from>
+      <Hsp_hit-to>528</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG----EMSLEEHSQCECRPK---KKDSAVKPDRAATPHHRPQPRSVPG----WD</Hsp_qseq>
+      <Hsp_hseq>DEWQKTQCMPRETCVDVAKELGTNTAVFFKPPCVSVFRCGGCCNKEGVTCRNTSVTYVNKTILSVSLAPYKTGPEPVLVKIANHTECMCQEHSLIRRHVREKHKKSCSPTRKPEDKRLCNKGLIWD</Hsp_hseq>
+      <Hsp_midline>D + +  C PRE  V +  EL    A    P CV+V RCGGCC  +G+ C  T    V   IL +     + G     + +  H++C C+     ++    K  ++ +P  +P+ + +      WD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|1101527338|ref|XP_018929338.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018929338</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>4.54129e-08</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG----EMSLEEHSQCECRPK---KKDSAVKPDRAATPHHRPQPRSVPG----WD</Hsp_qseq>
+      <Hsp_hseq>DEWQKTQCMPRETCVDVAKELGTNTAVFFKPPCVSVFRCGGCCNKEGVTCRNTSVTYVNKTILSVSLAPYKTGPEPVLVKIANHTECMCQEHSLIRRHVREKHKKSCSPTRKPEDKRLCNKGLIWD</Hsp_hseq>
+      <Hsp_midline>D + +  C PRE  V +  EL    A    P CV+V RCGGCC  +G+ C  T    V   IL +     + G     + +  H++C C+     ++    K  ++ +P  +P+ + +      WD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|1101536769|ref|XP_018934198.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018934198</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>1.00364e-07</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG----EMSLEEHSQCECRPK---KKDSAVKPDRAATPHHRPQPRSVPG----WD</Hsp_qseq>
+      <Hsp_hseq>DEWQKTQCMPRETCVDVAKELGTNTAVYFKPPCVSVFRCGGCCNKEGVTCRNTSVTYVNKTILSVSLAPYKSGPEPVLVKIANHTECMCQEHALIRRHVREKHKKSCSPTLKPEDKRLCNKGLIWD</Hsp_hseq>
+      <Hsp_midline>D + +  C PRE  V +  EL    A    P CV+V RCGGCC  +G+ C  T    V   IL +     + G     + +  H++C C+     ++    K  ++ +P  +P+ + +      WD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|966672055|gb|KTG05436.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00017754, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG05436</Hit_accession>
+  <Hit_len>124</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.61102e-07</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQ------------------ILMIRY-------PSSQ---LGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>VMLFQEVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPTCVPLVRCAGCCGDENLECHPTLTSNTTMQVRIFPLTRLTIFSTWLGLILILRLFQLLKIKPAEQGQEYVEMTFVEHKACECR</Hsp_hseq>
+      <Hsp_midline>V+ + +V+ ++ C+  E +V +  E  G V     P+CV + RC GCC D+ LEC PT      MQ                  IL++R        P+ Q     EM+  EH  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|1101626204|ref|XP_018976863.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018976863</Hit_accession>
+  <Hit_len>139</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>4.10431e-07</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQ</Hsp_qseq>
+      <Hsp_hseq>KVMLFPEAWGRSQCRSLERMVEVEQEYPGGVEHIYSPGCVPLLRCSGCCNDDKLSCFPASTHNISIQ</Hsp_hseq>
+      <Hsp_midline>KV+ + + + R+ C+  E +V +  E  G V     P CV + RC GCC DD L C P   H + +Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|966638607|gb|KTF73711.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00045581 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF73711</Hit_accession>
+  <Hit_len>446</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.1699e-06</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTR--ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LKRLLDVESVE-EDDEKPENEMHSNGTHRRLPRSLNVQMALPAMCKVRTEVMEVTRSMLDRRNANFLLWPLCVEVQRCSGCCNTRVLQCVPVRTETRHLQMTKIQYINQQPVYEKVVIPVEDHVTCSCQSR</Hsp_hseq>
+      <Hsp_midline>L+RLL    ++    + P ++  + G  R++   ++V     A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP       +Q+  I+Y + Q + E   + +E+H  C C+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|966674083|gb|KTG07464.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00041845 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG07464</Hit_accession>
+  <Hit_len>105</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>6.51938e-06</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>RKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQ</Hsp_qseq>
+      <Hsp_hseq>RTMMLFPEAWGRSQCRSLERMVEVEQEYPGGVEHIYSPGCVPLLRCSGCCNDDKLSCFPVSTRNISIQ</Hsp_hseq>
+      <Hsp_midline>R ++ + + + R+ C+  E +V +  E  G V     P CV + RC GCC DD L C P     + +Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|1101565000|ref|XP_018948425.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Cyprinus carpio] &gt;gi|1101565002|ref|XP_018948426.1| PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Cyprinus carpio] &gt;gi|1101565004|ref|XP_018948427.1| PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018948425</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>1.07529e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AMCKTRTVVYEIPRSQVDPTAANFLIWPSCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  +   ++  T A  L+ PSCV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|1101565006|ref|XP_018948428.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018948428</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>1.12119e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AMCKTRTVVYEIPRSQVDPTAANFLIWPSCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  +   ++  T A  L+ PSCV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|1101565008|ref|XP_018948429.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X3 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018948429</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>1.78752e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AMCKTRTVVYEIPRSQVDPTAANFLIWPSCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  +   ++  T A  L+ PSCV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|966638423|gb|KTF73527.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00027130 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF73527</Hit_accession>
+  <Hit_len>498</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>2.44523e-05</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVY--TRATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQI</Hsp_qseq>
+      <Hsp_hseq>VSAVWQVGEFE-PDSQHDNDTSNRLPRSLLDAQPAQQAICKVRTEVIEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVLTHTRYLQV</Hsp_hseq>
+      <Hsp_midline>++A+ Q+   + P SQ D     R   S +D     +A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP   H   +Q+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|1101642162|ref|XP_018920280.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018920280</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.80864e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCSGCCNTSNMCCHPSKKHHRTVKVAKVEYVRRRPKLREVQVQLEDHLECVCTSK</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +H   +++  + Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|966659880|gb|KTF94734.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00016893, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF94734</Hit_accession>
+  <Hit_len>100</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>3.88441e-05</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>86</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>CKTRTVVYEIPRSQVDPTAANFLIWPSCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>C+ R VV  +   ++  T A  L+ PSCV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|1101614433|ref|XP_018971646.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018971646</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>4.19818e-05</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>225</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRTDAI-FWPSCLLVKRCGGNCACCSHNCYDCQCSPTKVAKKYHEVLMLKHRAGGRGLQKTLTDVHLEHHEECSCVCKN</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    PSC+ V+RCGG   CC  +  +  C PT   +   ++LM+++ +        L ++ LE H +C C  K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|1101641834|ref|XP_018920105.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018920105</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>7.48135e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVRRCSGCCNTSNMRCHPSKKQHRTVKVAKVEYVRRRPKLREVQVQLEDHLECVCTSK</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|1101612697|ref|XP_018970755.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018970755</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.78228e-05</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>222</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRTDAI-FWPSCLLVKRCGGNCACCSHNCYDCQCSPTKVAKKYHEVLMLKHRAGGRGLQKTLTDVPLEHHEECSCVCKN</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    PSC+ V+RCGG   CC  +  +  C PT   +   ++LM+++ +        L ++ LE H +C C  K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|966653581|gb|KTF88483.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00021005, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF88483</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>7.96963e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVRRCSGCCNTSNMRCHPSKKQHRTVKVAKVEYVRRRPKLREVQVQLEDHLECVCTSK</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|1101641836|ref|XP_018920106.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018920106</Hit_accession>
+  <Hit_len>193</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>8.40501e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVRRCSGCCNTSNMRCHPSKKQHRTVKVAKVEYVRRRPKLREVQVQLEDHLECVCTSK</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>gi|966657127|gb|KTF91981.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00018573, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF91981</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000210024</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>152</Hsp_hit-from>
+      <Hsp_hit-to>244</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRTDAI-FWPSCLLVKRCGGNCACCSHNCYDCQCSPTKVAKKYHEVLMLKHRAGGRGLQKTLTDVPLEHHEECSCVCKN</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    PSC+ V+RCGG   CC  +  +  C PT   +   ++LM+++ +        L ++ LE H +C C  K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>gi|1101631643|ref|XP_018979341.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Cyprinus carpio] &gt;gi|966670744|gb|KTG04125.1| hypothetical protein cypCar_00023365 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018979341</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000434512</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>CMPRQVCLDVGKEFGAATNTFYKPPCVSVYRCGGCCNSEEQVCKNMSTSYISKTLFEITVPMKYGAKPVTISFANHTSCSCLSKQ</Hsp_hseq>
+      <Hsp_midline>C PR+V + +  E          P CV+V RCGGCC  +   C       +   +  I  P     +   +S   H+ C C  K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>gi|966655097|gb|KTF89951.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00006351 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF89951</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000777514</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AMCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTGNMCCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECAC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>gi|1101628292|ref|XP_018977912.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018977912</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00100405</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>88</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SHRRKR-SVVEEAVPAMCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTGNMCCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECAC</Hsp_hseq>
+      <Hsp_midline> H+RK  S ++    A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>gi|1101628290|ref|XP_018977911.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>XP_018977911</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00107856</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>89</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMS-----LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SHRRKR-SVVEEAVPAMCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTGNMCCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECAC</Hsp_hseq>
+      <Hsp_midline> H+RK  S ++    A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +    +++  + + S +  ++      LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>gi|966668970|gb|KTG02351.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00037104, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG02351</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00677001</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>102</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYT--RATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQIL</Hsp_qseq>
+      <Hsp_hseq>LKRLLDVESVE-EDDEKPENEVHFNGTHRRLPRSLNVQVAQQAMCKVRTEVMEVTRSMLDKRNANFLLWPPCVEVQRCSGCCNTRILQCTPVTTETRHLQKL</Hsp_hseq>
+      <Hsp_midline>L+RLL    ++    + P ++    G  R++   ++V    +A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+C P       +Q L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>gi|966709800|gb|KTG42038.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00007627, partial [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTG42038</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.015474</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>89</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>58</Hsp_align-len>
+      <Hsp_qseq>IDVYT-------RATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLEC</Hsp_qseq>
+      <Hsp_hseq>LDIFTSIQTEWRNTLCMPRQVCLDVGKEFGAATNTFYKPPCVSVYRCGGCCNSEEQVC</Hsp_hseq>
+      <Hsp_midline>+D++T          C PR+V + +  E          P CV+V RCGGCC  +   C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>gi|966639540|gb|KTF74540.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00044345 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF74540</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0288099</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>96</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQ</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCSGCCNTSNMCCHPSKKHH</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +H </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>106469</Statistics_db-num>
+      <Statistics_db-len>45248269</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3565324048</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

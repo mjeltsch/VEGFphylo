@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Aedes_aegypti</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1218224492|ref|XP_021694739.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC5578728 [Aedes aegypti]</Hit_def>
+  <Hit_accession>XP_021694739</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000177661</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>GLALPAVPPQWALSAGNGSSEVEVVP-------------FQEVWGR---------SYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVET--ANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>GCFYDDIPLELALALGNISSSDDVFNQGLVEEDSIDHRIFSNGYGERSSGEVPKPAGCNTQATIVSLRPENNTDPRLIYSPSCTRVERCSGCCVSKRLSCQPTSTRLRTFSVNVLEYVSGTKTRFKNRDLAVIEEHVGCACQ</Hsp_hseq>
+      <Hsp_midline>G     +P + AL+ GN SS  +V               F   +G          + C     +V +  E  ++   ++SPSC  + RC+GCC  + L C P  T     ++ +L+  SG +  +         +HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|108869666|gb|EAT33891.1|</Hit_id>
+  <Hit_def>AAEL013840-PA [Aedes aegypti]</Hit_def>
+  <Hit_accession>EAT33891</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000477977</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>VPPQWALSAGNGSSEVEVVP-------------FQEVWGR---------SYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVET--ANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>IPLELALALGNISSSDDVFNQGLVEEDSIDHRIFSNGYGERSSGEVPKPAGCNTQATIVSLRPENNTDPRLIYSPSCTRVERCSGCCVSKRLSCQPTSTRLRTFSVNVLEYVSGTKTRFKNRDLAVIEEHVGCACQ</Hsp_hseq>
+      <Hsp_midline>+P + AL+ GN SS  +V               F   +G          + C     +V +  E  ++   ++SPSC  + RC+GCC  + L C P  T     ++ +L+  SG +  +         +HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1218247565|ref|XP_021704072.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC5569758 [Aedes aegypti]</Hit_def>
+  <Hit_accession>XP_021704072</Hit_accession>
+  <Hit_len>592</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0322458</Hsp_evalue>
+      <Hsp_query-from>72</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>426</Hsp_hit-from>
+      <Hsp_hit-to>485</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>61</Hsp_align-len>
+      <Hsp_qseq>FSPSCVSLLRC---TGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>YTPHCTILHRCGDDVGCCLPTQT-CAASKNSTVELYFFVQTVGSRPSIERLSFINHTECAC</Hsp_hseq>
+      <Hsp_midline>++P C  L RC    GCC      C   + + V +       G RPS   L+F  H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|108876137|gb|EAT40362.1|</Hit_id>
+  <Hit_def>AAEL007902-PA [Aedes aegypti]</Hit_def>
+  <Hit_accession>EAT40362</Hit_accession>
+  <Hit_len>178</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.7278</Hsp_bit-score>
+      <Hsp_score>73</Hsp_score>
+      <Hsp_evalue>0.098332</Hsp_evalue>
+      <Hsp_query-from>72</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>71</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>FSPSCVSLLRCTGCCGDENLHCVPVET------ANVTMQLLKIRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>YTPHCTILHRC----GDDVGCCLPTQTCAASKNSTVELYFFVQTVGSRPSIERLSFINHTECSC</Hsp_hseq>
+      <Hsp_midline>++P C  L RC    GD+   C+P +T      + V +       G RPS   L+F  H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>34283</Statistics_db-num>
+      <Statistics_db-len>20836563</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1280813835</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

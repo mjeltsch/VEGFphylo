@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Seriola_dumerili</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1250134847|ref|XP_022606709.1|</Hit_id>
+  <Hit_def>placenta growth factor, partial [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022606709</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>6.25096e-46</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>PQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMKPERRRPKG</Hsp_qseq>
+      <Hsp_hseq>PAQSLPLASINSTTEVLMFQEVWGRSFCRTIEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTHTTNVTMQLLKIRPSEPGQEYVEMTFVEHQTCECRVRKPVVKVERKRQRG</Hsp_hseq>
+      <Hsp_midline>P  +L   + +S  EV+ FQEVWGRS+CR +E+LV+VV EYP+EVEH++SPSCV L+RC GCCGDENL C P  T NVTMQLLKIR  +    YVE+TF +H  CECR  +  +K ER+R +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1250105792|ref|XP_022626120.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022626120</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.997</Hsp_bit-score>
+      <Hsp_score>271</Hsp_score>
+      <Hsp_evalue>1.71569e-30</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE---KMKPERRRPKGRGKRRREKQRPTDCHLC</Hsp_qseq>
+      <Hsp_hseq>FQEVWAKSICHPMEQLVDVEQEFPEEVGYIYMPACVPLKRCAGCCGDENLECHPTLERNITVQMMKI-APVISSHVELTFVEHQQCDCR-LRQTLLKNKSSSESIKNKPRRRKHKKTANGCGKC</Hsp_hseq>
+      <Hsp_midline>FQEVW +S C  +E+LVDV  E+P EV +++ P+CV L RC GCCGDENL C P    N+T+Q++KI +    S+VELTF +H +C+CR LR+   K K      K + +RR+ K+    C  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1250105794|ref|XP_022626121.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022626121</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.227</Hsp_bit-score>
+      <Hsp_score>269</Hsp_score>
+      <Hsp_evalue>3.33533e-30</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>157</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPT</Hsp_qseq>
+      <Hsp_hseq>FQEVWAKSICHPMEQLVDVEQEFPEEVGYIYMPACVPLKRCAGCCGDENLECHPTLERNITVQMMKI-APVISSHVELTFVEHQQCDCR-LRQTLLKNKSSESIKNKPRRRKHKKT</Hsp_hseq>
+      <Hsp_midline>FQEVW +S C  +E+LVDV  E+P EV +++ P+CV L RC GCCGDENL C P    N+T+Q++KI +    S+VELTF +H +C+CR LR+ +   +     + K RR K + T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1250105796|ref|XP_022626122.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X3 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022626122</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.227</Hsp_bit-score>
+      <Hsp_score>269</Hsp_score>
+      <Hsp_evalue>3.96474e-30</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE---KMKPERRRPKGRGKRRREKQRPTDC</Hsp_qseq>
+      <Hsp_hseq>FQEVWAKSICHPMEQLVDVEQEFPEEVGYIYMPACVPLKRCAGCCGDENLECHPTLERNITVQMMKI-APVISSHVELTFVEHQQCDCR-LRQTLLKNKSSSESIKNKPRRRKHKKTANGC</Hsp_hseq>
+      <Hsp_midline>FQEVW +S C  +E+LVDV  E+P EV +++ P+CV L RC GCCGDENL C P    N+T+Q++KI +    S+VELTF +H +C+CR LR+   K K      K + +RR+ K+    C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1250105053|ref|XP_022623619.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022623619</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.679</Hsp_bit-score>
+      <Hsp_score>252</Hsp_score>
+      <Hsp_evalue>2.03268e-27</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCQPRELLVEILQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKRIKPQKQQNDIFMSFTEHSACECRLKKE</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S C+  E LV+++ EYP EVEH+F PSCV L RC GCC DE L C+P  + N+TM++ +I+   + + + ++F++H  CECR  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1250139494|ref|XP_022609254.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022609254</Hit_accession>
+  <Hit_len>138</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>2.41345e-27</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLL--AGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>MNFVVSLVQILLAAVLHLPTVKT-ASINKGVEKSKNDVVLISEVITKSMCQPREVLVDIFQEYPEDTEHHYAPSCVVLKRCGGCCMDEATECVPTETRNITLQVMRFRPMVTQHTIYLSFTEHQNCDCR</Hsp_hseq>
+      <Hsp_midline>M      +Q+L  A L LP V    +++ G   S+ +VV   EV  +S C+  E LVD+  EYP + EH ++PSCV L RC GCC DE   CVP ET N+T+Q+++ R       + L+F++H  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1250105051|ref|XP_022623609.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022623609</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>3.36495e-27</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCQPRELLVEILQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKRIKPQKQQNDIFMSFTEHSACECRLKKE</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S C+  E LV+++ EYP EVEH+F PSCV L RC GCC DE L C+P  + N+TM++ +I+   + + + ++F++H  CECR  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1250139492|ref|XP_022609253.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022609253</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.523</Hsp_bit-score>
+      <Hsp_score>249</Hsp_score>
+      <Hsp_evalue>5.76265e-27</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>LLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR--PLREKMKPERRRPKGRGKRRREKQRPTDC</Hsp_qseq>
+      <Hsp_hseq>LAAVLHLPTVKT-ASINKGVEKSKNDVVLISEVITKSMCQPREVLVDIFQEYPEDTEHHYAPSCVVLKRCGGCCMDEATECVPTETRNITLQVMRFRPMVTQHTIYLSFTEHQNCDCRKKPEVQELNEYHCAPCSERRKRLFVQDPLTC</Hsp_hseq>
+      <Hsp_midline>L A L LP V    +++ G   S+ +VV   EV  +S C+  E LVD+  EYP + EH ++PSCV L RC GCC DE   CVP ET N+T+Q+++ R       + L+F++H  C+CR  P  +++      P    ++R   Q P  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1250152032|ref|XP_022616130.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022616130</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>8.64321e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKM------KPERRRPKGRGKRRREKQR</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGETHHLFVPSCVSVRRCGGCCADEALECVPLLTHTLTMELMRT-SFMKHELIELPFVEHSQCECR-LKEHFQPTPTTRPHLKPPRKDKKRERGKSR</Hsp_hseq>
+      <Hsp_midline>EV  + EV+ RS C   + LV+V  E P E  H+F PSCVS+ RC GCC DE L CVP+ T  +TM+L++  S  +   +EL F +H +CECR L+E        +P  + P+   KR R K R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1250161398|ref|XP_022621251.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022621251</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>2.24436e-10</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR--SGDRPSYVELTFSQHVRCEC---RPLREKMK</Hsp_qseq>
+      <Hsp_hseq>PREEALYKIDGTFEVILEEIQ----RTSCQPREVFVEVAKEYPESTTQFYLPRCVALHRCGGCCTSEAYYCTNTSHSLVNKTLMELSPPRMDR-SVVMVTFVNHTSCECLSKRPLHSIIR</Hsp_hseq>
+      <Hsp_midline>P + AL   +G+ EV +   Q    R+ C+  E  V+V  EYP      + P CV+L RC GCC  E  +C     + V   L+++     DR S V +TF  H  CEC   RPL   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1250146194|ref|XP_022612947.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022612947</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.5328e-08</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTQCMPREVCIDVGREFGAPTNIFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEITVPITQGTRP--VTISVANHTQCSC</Hsp_hseq>
+      <Hsp_midline>W ++ C   E  +DV  E+ +     + P CVS+ RC GCC  E+  C  + T  ++  L +    I  G RP  V ++ + H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1250145853|ref|XP_022612763.1|</Hit_id>
+  <Hit_def>stress response protein nst1-like isoform X1 [Seriola dumerili] &gt;gi|1250145855|ref|XP_022612764.1| stress response protein nst1-like isoform X1 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022612763</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.24522e-07</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>AVPPQWALSAGNGSS----EVEVVPFQEVWGRSYCRALERLVDVVSEY--PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECR</Hsp_qseq>
+      <Hsp_hseq>SVDEEDGTSAANGGHRLPRSLDAQPAQQ----ALCKVRTEVVEITRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYVNKRPTYAKAVVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>+V  +   SA NG       ++  P Q+    + C+    +V++       S    +  P CV + RC+GCC  ++L CVPV T    +Q++KI     RP+Y +   S   HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1250101661|ref|XP_022605224.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022605224</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.30781e-07</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>MPVMRLFPCFLQLLAGLAL-------PAVPPQWALSAGNGSSEVEVV-PFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSYVELTFSQHVRCECRP---LREKMKPER</Hsp_qseq>
+      <Hsp_hseq>FPDWKLWKCRLRLQQPEAQTETLSSPPSVGSHRSTRYAAESYSLEILKAIDEEWQRTQCMPRETCVDVAKELGTDPSMFFKPPCVSIHRCSGCCNQEGVTCRNTTAVYVNKTVLSVIPFKFVPEPVLIKVVNHTECRCMEPAIIRRNAQPHR</Hsp_hseq>
+      <Hsp_midline> P  +L+ C L+L    A        P+V    +      S  +E++    E W R+ C   E  VDV  E  ++    F P CVS+ RC+GCC  E + C       V   +L +      P  V +    H  C C     +R   +P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1250145860|ref|XP_022612766.1|</Hit_id>
+  <Hit_def>stress response protein nst1-like isoform X3 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022612766</Hit_accession>
+  <Hit_len>434</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>1.95851e-07</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECR</Hsp_qseq>
+      <Hsp_hseq>SNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYVNKRPTYAKAVVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>S    +  P CV + RC+GCC  ++L CVPV T    +Q++KI     RP+Y +   S   HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1250106463|ref|XP_022593767.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111216519 [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022593767</Hit_accession>
+  <Hit_len>565</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>4.21544e-06</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>MLWPPCVEVQRCSGCCNTRLLQCVPTVTSSRYLQVIKIQYINRKARYDKAIISVEDHVSCRCQ</Hsp_hseq>
+      <Hsp_midline>M  P CV + RC+GCC    L CVP  T++  +Q++KI+  +R +  +   ++   HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1250137621|ref|XP_022608237.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022608237</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00144883</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTF---SQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K+    R   ++  F     H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1250106475|ref|XP_022593773.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Seriola dumerili]</Hit_def>
+  <Hit_accession>XP_022593773</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00298654</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFIIWPPCVEVKRCTGCCNTSNMRCQASRKHHRTVKVAKVEYVRRRPKLREVQVKLEDHLDCMC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C      + T+++ K   +R   +   V++    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>30054</Statistics_db-num>
+      <Statistics_db-len>18979603</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1193211002</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

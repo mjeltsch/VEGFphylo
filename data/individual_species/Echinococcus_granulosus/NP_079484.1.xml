@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Echinococcus_granulosus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|576699631|gb|EUB63157.1|</Hit_id>
+  <Hit_def>Tolloid-like protein [Echinococcus granulosus]</Hit_def>
+  <Hit_accession>EUB63157</Hit_accession>
+  <Hit_len>1370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>3.33844e-09</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>808</Hsp_hit-from>
+      <Hsp_hit-to>917</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>GNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFK-IYYSLLED</Hsp_qseq>
+      <Hsp_hseq>ANGTIQTPGFPAEYPPNKNCIWKIVAAPKSTIFLNF-THFDL-EGKNKACNYDFINVYSGPQHNQQKIGTFCGNT-LPAPITSHTNELNIEFYTDGS-VQRTGFRAVFFTDLDE</Hsp_hseq>
+      <Hsp_midline> NG +Q+P FP  YP N    W++ +   + I L F   F L E +N  C YDF+ V    + +    G +CG+  +P  I S TN++ I F +D   V + GF+ ++++ L++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.22324e-07</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>618</Hsp_hit-from>
+      <Hsp_hit-to>718</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED-ISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>VQEEGIITSPSYPEFYKPNKECIWKIVVPTGFSVALAFQS-FDIEKHDN--CVYDYLEIRDGLSESSPVLK-KLCG-SNLPTPIKSTNNMMYIKFVSDSS-VEKQGF</Hsp_hseq>
+      <Hsp_midline>V+  G + SP +P  Y  N    W++       + L F + F +E+ +N  C YD++E+ D +SE+S +++ + CG   +P  IKS  N + I F SD   V K GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.91133e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>970</Hsp_hit-from>
+      <Hsp_hit-to>1073</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GEIRTPNWPSEYPARQSCQWKITATPGHRVKVVFD---AFEVESHQQCMYDRVIAYDGLTTDAPQLGRYCGSRKPAP-IISTGATLLLTFNADGS-VQRKGFRAQHSTV</Hsp_hseq>
+      <Hsp_midline>G +++P +P+ YP      W++ +    R+++VFD     E   +  C YD V   D   T     GR+CG ++  P I S    + +TF +D   V + GF+  +S +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000275704</Hsp_evalue>
+      <Hsp_query-from>73</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>1098</Hsp_hit-from>
+      <Hsp_hit-to>1193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>YPRNLLLTWRLHSQ-ENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>YPVNQQCYWTVHSNLKNYTILIRF---LFFEVEEETLCTYDYVKIFDGPDGTAQRLGEYCGRK-LPHDSYAASGSMHIQFYTDDTISGK-GFHAQYQLVPN</Hsp_hseq>
+      <Hsp_midline>YP N    W +HS  +N  I + F      E  E  +C YD+V++ D  + +    G +CG K +P    + +  + I F +DD    K GF   Y L+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|674567265|emb|CDS18613.1|</Hit_id>
+  <Hit_def>Tolloid protein 1 [Echinococcus granulosus]</Hit_def>
+  <Hit_accession>CDS18613</Hit_accession>
+  <Hit_len>1417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>3.60234e-09</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>855</Hsp_hit-from>
+      <Hsp_hit-to>964</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>GNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFK-IYYSLLED</Hsp_qseq>
+      <Hsp_hseq>ANGTIQTPGFPAEYPPNKNCIWKIVAAPKSTIFLNF-THFDL-EGKNKACNYDFINVYSGPQHNQQKIGTFCGNT-LPAPITSHTNELNIEFYTDGS-VQRTGFRAVFFTDLDE</Hsp_hseq>
+      <Hsp_midline> NG +Q+P FP  YP N    W++ +   + I L F   F L E +N  C YDF+ V    + +    G +CG+  +P  I S TN++ I F +D   V + GF+ ++++ L++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.24426e-07</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>698</Hsp_hit-from>
+      <Hsp_hit-to>798</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED-ISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>VQEEGIITSPSYPEFYKPNKECIWKIVVPTGFSVALAFQS-FDIEKHDN--CVYDYLEIRDGLSESSPVLK-KLCG-SNLPTPIKSTNNMMYIKFVSDSS-VEKQGF</Hsp_hseq>
+      <Hsp_midline>V+  G + SP +P  Y  N    W++       + L F + F +E+ +N  C YD++E+ D +SE+S +++ + CG   +P  IKS  N + I F SD   V K GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>2.00593e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1017</Hsp_hit-from>
+      <Hsp_hit-to>1120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GEIRTPNWPSEYPARQSCQWKITATPGHRVKVVFD---AFEVESHQQCMYDRVIAYDGLTTDAPQLGRYCGSRKPAP-IISTGATLLLTFNADGS-VQRKGFRAQHSTV</Hsp_hseq>
+      <Hsp_midline>G +++P +P+ YP      W++ +    R+++VFD     E   +  C YD V   D   T     GR+CG ++  P I S    + +TF +D   V + GF+  +S +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000276785</Hsp_evalue>
+      <Hsp_query-from>73</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>1145</Hsp_hit-from>
+      <Hsp_hit-to>1240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>YPRNLLLTWRLHSQ-ENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>YPVNQQCYWTVHSNLKNYTILIRF---LFFEVEEETLCTYDYVKIFDGPDGTAQRLGEYCGRK-LPHDSYAASGSMHIQFYTDDTISGK-GFHAQYQLVPN</Hsp_hseq>
+      <Hsp_midline>YP N    W +HS  +N  I + F      E  E  +C YD+V++ D  + +    G +CG K +P    + +  + I F +DD    K GF   Y L+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|576698227|gb|EUB61762.1|</Hit_id>
+  <Hit_def>Neuropilin and tolloid-like protein [Echinococcus granulosus]</Hit_def>
+  <Hit_accession>EUB61762</Hit_accession>
+  <Hit_len>547</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>7.58878e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNL-LLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPP----RIKSRTNQIKITFKSDDYFVAKPGFK-IYY</Hsp_qseq>
+      <Hsp_hseq>NYVFQSPNYPRKYPKNIDCFKLIVAPSQDHRIFLQISQPFALE--PDSLCTTDFLEVRDGAFGFSPLIGRFC--SRLPPPENEEIRSTSRYLWLRFRSDNT-LPHDGFRAIFY</Hsp_hseq>
+      <Hsp_midline>N   QSP +P  YP+N+      +   ++ RI L     F LE   + +C  DF+EV D +   + + GR+C    +PP     I+S +  + + F+SD+  +   GF+ I+Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|674561059|emb|CDS24610.1|</Hit_id>
+  <Hit_def>neuropilin nrp and tolloid tll [Echinococcus granulosus]</Hit_def>
+  <Hit_accession>CDS24610</Hit_accession>
+  <Hit_len>1191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000101568</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNL-LLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPP----RIKSRTNQIKITFKSDDYFVAKPGFK-IYY</Hsp_qseq>
+      <Hsp_hseq>NYVFQSPNYPRKYPKNIDCFKLIVAPSQDHRIFLQISQPFALE--PDSLCTTDFLEVRDGAFGFSPLIGRFC--SRLPPPENEEIRSTSRYLWLRFRSDNT-LPHDGFRAIFY</Hsp_hseq>
+      <Hsp_midline>N   QSP +P  YP+N+      +   ++ RI L     F LE   + +C  DF+EV D +   + + GR+C    +PP     I+S +  + + F+SD+  +   GF+ I+Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>21916</Statistics_db-num>
+      <Statistics_db-len>10246323</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2174775210</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

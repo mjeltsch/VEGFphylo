@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Anolis_carolinensis</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1033390332|ref|XP_016854907.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_016854907</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>9.21362e-28</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>LAALLYLNNAELSQAAPAQGNGEKQHSEVISFFVVYNLSACRPLETMVDIFQEYPDEVEFIFKPSCVPLKRCAGCCNDEALECVPTAVHNVTMEIMRIKPFQGQRINQMSFQEHSNCECRPKKE</Hsp_hseq>
+      <Hsp_midline>LAALL L  A   QA  +Q +      +V+S+  VY  + C+P E +V +  E    V     PSCV ++RC GCC D+ LECVPT  H V M+I+ I+ +   ++ +MS +EHS CECRPKK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|637357849|ref|XP_008119589.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008119589</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>5.48182e-27</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVS-QPDAPGH-QRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKK---KDSAVKP</Hsp_qseq>
+      <Hsp_hseq>LLLATAWHLQCCAATMFPRPNNKTHTSEEVVRFLDVYNRSSCQPKEAMVSVTSEHPYMVNHIVMPSCVALKRCAGCCADESLQCVPTRTRELVMEVMLTLFPHHRLNQLTFLEHTQCACRSKKTPYRFNAIRP</Hsp_hseq>
+      <Hsp_midline>LLLA    L    A +  +P+   H   +VV ++DVY R++CQP+E +V +T E    V   ++PSCV ++RC GCC D+ L+CVPT   ++ M++++  +P  +L +++  EH+QC CR KK   + +A++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1033390330|ref|XP_016854903.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_016854903</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.679</Hsp_bit-score>
+      <Hsp_score>252</Hsp_score>
+      <Hsp_evalue>7.0563e-27</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>LAALLYLNNAELSQAAPAQGNGEKQHSEVISFFVVYNLSACRPLETMVDIFQEYPDEVEFIFKPSCVPLKRCAGCCNDEALECVPTAVHNVTMEIMRIKPFQGQRINQMSFQEHSNCECRPKKE</Hsp_hseq>
+      <Hsp_midline>LAALL L  A   QA  +Q +      +V+S+  VY  + C+P E +V +  E    V     PSCV ++RC GCC D+ LECVPT  H V M+I+ I+ +   ++ +MS +EHS CECRPKK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|637256539|ref|XP_008123214.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008123214</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.14943e-26</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>LAALLYLNNAELSQAAPAQGNGEKQHSEVISFFVVYNLSACRPLETMVDIFQEYPDEVEFIFKPSCVPLKRCAGCCNDEALECVPTAVHNVTMEIMRIKPFQGQRINQMSFQEHSNCECRPKKE</Hsp_hseq>
+      <Hsp_midline>LAALL L  A   QA  +Q +      +V+S+  VY  + C+P E +V +  E    V     PSCV ++RC GCC D+ LECVPT  H V M+I+ I+ +   ++ +MS +EHS CECRPKK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|637243496|ref|XP_008121803.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008121803</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.337</Hsp_bit-score>
+      <Hsp_score>194</Hsp_score>
+      <Hsp_evalue>1.21334e-18</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>FFLALLQVLQAQKQDMIPQNSTTEASVVSFHDVWNRSLCQPLEKLVNVVSEYPSEVEHVFSPPCVPLHRCSGCCQDERLQCIPVETANVTMQLVKINSEKPMPYVELSFVEHRKCVCRPRQ</Hsp_hseq>
+      <Hsp_midline>   ALLQ+  AQ     P     +  VVS+ DV+ R+ CQP E +V +  E    V     P CV + RC GCC D+ L+C+P     V MQ++ I         E+S  EH +C CRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|637243508|ref|XP_008121969.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X3 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008121969</Hit_accession>
+  <Hit_len>139</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>1.4614e-18</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>FFLALLQVLQAQKQDMIPQNSTTEASVVSFHDVWNRSLCQPLEKLVNVVSEYPSEVEHVFSPPCVPLHRCSGCCQDERLQCIPVETANVTMQLVKINSEKPMPYVELSFVEHRKCVCRPRQ</Hsp_hseq>
+      <Hsp_midline>   ALLQ+  AQ     P     +  VVS+ DV+ R+ CQP E +V +  E    V     P CV + RC GCC D+ L+C+P     V MQ++ I         E+S  EH +C CRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|637243500|ref|XP_008121866.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Anolis carolinensis] &gt;gi|637243504|ref|XP_008121919.1| PREDICTED: placenta growth factor isoform X2 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008121866</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.7146</Hsp_bit-score>
+      <Hsp_score>182</Hsp_score>
+      <Hsp_evalue>5.81358e-17</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>FFLALLQVLQAQKQDMIPQNSTTEASVVSFHDVWNRSLCQPLEKLVNVVSEYPSEVEHVFSPPCVPLHRCSGCCQDERLQCIPVETANVTMQLVKINSEKPMPYVELSFVEHRKCVCR</Hsp_hseq>
+      <Hsp_midline>   ALLQ+  AQ     P     +  VVS+ DV+ R+ CQP E +V +  E    V     P CV + RC GCC D+ L+C+P     V MQ++ I         E+S  EH +C CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|327268240|ref|XP_003218906.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_003218906</Hit_accession>
+  <Hit_len>351</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>6.90916e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQL---GEMSLEEHSQCECRPK--------KKDSAVKPDRAATPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPG</Hsp_qseq>
+      <Hsp_hseq>WQRTQCVPRETCIEVAKELGAGTNKFFKPPCVNVYRCGGCCNEENLSCMNTSTSYVSKMLFEISVPLTNVPDPIEVKIANHTGCMCLTNIQRQSYSVIRRSVQDPEDDRCPHINRLCHEGWIWDSSK-CECIIDKDHPGRKEG</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  + +  EL     K   P CV V RCGGCC ++ L C+ T    V   +  I  P + +    E+ +  H+ C C            + S   P+    PH          WDS+       D  HP    G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|327273843|ref|XP_003221689.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X2 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_003221689</Hit_accession>
+  <Hit_len>424</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>1.06099e-08</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>218</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>EILKSIDNEWRKTQCMPREVCVDVGKESGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTSYVSKTLFEITVPLSHGPKPITISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>+++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      V   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|637306765|ref|XP_008110046.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X1 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008110046</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>1.1131e-08</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>EILKSIDNEWRKTQCMPREVCVDVGKESGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTSYVSKTLFEITVPLSHGPKPITISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>+++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      V   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|637306774|ref|XP_008110047.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X3 [Anolis carolinensis] &gt;gi|1033406372|ref|XP_016849551.1| PREDICTED: vascular endothelial growth factor C isoform X3 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008110047</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.65024e-08</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>EILKSIDNEWRKTQCMPREVCVDVGKESGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTSYVSKTLFEITVPLSHGPKPITISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>+++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      V   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|637301081|ref|XP_008108917.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Anolis carolinensis] &gt;gi|1033404554|ref|XP_016849184.1| PREDICTED: platelet-derived growth factor subunit B [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008108917</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>1.49223e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELM-GTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQI----LMIRYPSSQLGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>AECKTRIEVFEITRSMVDSTNANFLVWPPCVEVQRCTGCCNTRSMQCRPTQARVRHVQVNKIEIVLRKPVFHKAVVALEDHLECRCEP</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  +T  ++  T A  LV P CV VQRC GCC    ++C PT      +Q+    +++R P      ++LE+H +C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|637346897|ref|XP_008117569.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008117569</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.41423e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS--QLGE--MSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVKLEEHMECTCTSSNSNSDFREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y     +L E  + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|327274027|ref|XP_003221780.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_003221780</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0019982</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>332</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILM------IRYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRT-DTIFWPLCLLVKRCGGNCACCQHSCTECQCVPTKVTKKYHEVLQLKPRNGVRGLHKSLTDVPLDHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T      P C+ V+RCGG   CC     E  CVPT   +   ++L       +R     L ++ L+ H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|637286396|ref|XP_008106250.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_008106250</Hit_accession>
+  <Hit_len>432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00672764</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>324</Hsp_hit-from>
+      <Hsp_hit-to>424</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCG---GCCPDDGLECVPTGQHQVRMQILMIRY--------------PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNIREELKQT-SVVFFPRCLLVQRCGGNCGCSFTRWKSCTCTPGKVVKKYHEVLRFTPEASPTWWRRRTKNNMALIDIQLEHHERCDC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V +  EL  T +    P C+ VQRCG   GC       C  T    V+    ++R+               +  L ++ LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1033383869|ref|XP_003230392.3|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC100563445 [Anolis carolinensis]</Hit_def>
+  <Hit_accession>XP_003230392</Hit_accession>
+  <Hit_len>955</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0520442</Hsp_evalue>
+      <Hsp_query-from>84</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>DDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPGWDSAPGAPSPA------DITHP----TPAPGPSAHAAPSTTS---ALTPGPAAAAADAAASSVAK</Hsp_qseq>
+      <Hsp_hseq>EDGSYCPPVKRERTSS---LTQFPPSQPVTKNNVFMPSSFCEPSAGNSDSEPEEKSTGFRLKPPTLIHGQAPSAGVPSQKPKEQQRSVLRPAVLQAPQPKPFSQTVPSSGTNGVGVCPDPAASASESPTRAAAK</Hsp_hseq>
+      <Hsp_midline>+DG  C P  + +      + ++P SQ    +        C P   +S  +P+  +T      P  + G   + G PS         +  P     P P P +   PS+ +    + P PAA+A+++   + AK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>30512</Statistics_db-num>
+      <Statistics_db-len>19806753</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1833006893</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

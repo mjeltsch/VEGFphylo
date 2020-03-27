@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Caenorhabditis_brenneri</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|341901926|gb|EGT57861.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_01419 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT57861</Hit_accession>
+  <Hit_len>859</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.10296e-05</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>495</Hsp_hit-from>
+      <Hsp_hit-to>580</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ASNGSIASPNFPEMYPNSKTCIWEIEA-PEGYHIFLNF-TKFTVEGMKTE-CAYDYVKIGDSE------KLCGEYDKPLLFTTPRNRVRIEFSSD</Hsp_hseq>
+      <Hsp_midline>++NGSI SP FP  YP +   +W + A  E   I L F  +F +E  + + C YD+V++ +        + CG    P    +  N++RI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000172182</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>335</Hsp_hit-from>
+      <Hsp_hit-to>431</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL--GR-----WCGSGTVPGKQI--SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ANEGVIHSPKYPESYPPNSDCQW-TIHVDENSQVAIEF-VYFHLEQHKE--CIYDRLILTEGSSKTLKKGGKEMSETFCG---LIEKKIVVSKTNQVSLRFFSD</Hsp_hseq>
+      <Hsp_midline>+  G IHSP++P +YP N+   W  + V+EN  + + F   F LE  ++  C YD + + E S  T+   G+     +CG   +  K+I  SK NQ+ +RF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0175797</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>715</Hsp_hit-from>
+      <Hsp_hit-to>827</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSI--HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT---ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>RLSAESTPGHIYSHATFSDSKYGKNQDCSWSVRAKSPGRGVRIQFST-FNIESEEG--CQYDYIEIYDGSEATQESLVGRFCGD-TAPEIITSTGPELLLIMHTDNA-EEEKGFVAEY</Hsp_hseq>
+      <Hsp_midline>R+   ST G I  H+      Y +N    W + A      +++ F   F +E  E   C+YD++E+ + S+ T   ++GR+CG  T P    S G ++ +   +D     E GF   Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0796554</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>648</Hsp_hit-from>
+      <Hsp_hit-to>713</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GDINSPNYPNDYPKGQNCSWHFVTTPGH-RLMLTFST-FQVE--EHAQCKYDSVSVFDGGDDSAQLAVCG</Hsp_hseq>
+      <Hsp_midline>G I+SP +P+ YP+     W  V    +  + LTF   F +E  E   CKYD V V +  D +     CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|341895414|gb|EGT51349.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_22721 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT51349</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00118355</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>238</Hsp_hit-from>
+      <Hsp_hit-to>325</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYF</Hsp_qseq>
+      <Hsp_hseq>ISSPNYPNDYPADVFCTWGVSAPNGGHRLRLTFNA-FNTEKNDDIVRVYDGDSDRAP----LIGVYSDGPFKPWTVYTTGPSIYITFLSDKYY</Hsp_hseq>
+      <Hsp_midline>I SP +P+ YP +    W + A      ++LTF+  F  E  +D +  YD      P    ++G +      P    + G  I I F+SD+Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|341889278|gb|EGT45213.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_28287 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT45213</Hit_accession>
+  <Hit_len>748</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00152236</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>316</Hsp_hit-from>
+      <Hsp_hit-to>457</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>GLLLLTS---ALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD---GTILGRWCGS-GTVPGKQI-SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GLKFVTDKSYAWSSEEAGEARKRNRGFQLAYSINKCGDNIELREGTNLIT-----SISSPAFPLPYAKDLDCVWN-ITTESDRILNIKF-EVLNMEAFTD--CTADFVELFDSSDIIPNKTLGKFCGNMRQIPRYRIASSGPNLLIHMKTD</Hsp_hseq>
+      <Hsp_midline>GL  +T    A + +  G   + N   +  +S NK  + ++  +   +IT     SI SP FP  Y ++   VW  +  E +  + + F E   +E   D  C  DFVE+ + SD      LG++CG+   +P  +I S G  + I   +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|341875251|gb|EGT31186.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_20655 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT31186</Hit_accession>
+  <Hit_len>284</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00369927</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>117</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>HERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>QEHIPYSGKDGVIYSPNYPNDYDNNANIVYT-ITVDTGNYIHLTFLD-FMTED------SYDVLEIENYT--TVSGDKTGFAL-----DIQASQVVLTFTSD-LTTTFRGFAIKYQIV</Hsp_hseq>
+      <Hsp_midline> E I     +G I+SP +P+ Y  N  +V+  + V+   +I LTF + F  ED       YD +E+E  +  T+ G   G          + +Q+ + F SD    +  GF I Y IV</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00553094</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>139</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GIVTSPNYPANYPDNKACAF-LINVDPGHLINLQF-LAFNTEDGYDTLAVYDGMN----QSAALLGTFSGK-KIPAAITSSSNYLYLYFSSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  YP N    + L+ V+    I L F   F  ED  D +  YD +         +LG + G   +P    S  N + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|341893640|gb|EGT49575.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_04543 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT49575</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00567683</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>299</Hsp_hit-from>
+      <Hsp_hit-to>398</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>QDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEE-NVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>KNPSYCNAGVQLTPGVVTSPDYPYQYDNNQNCVYQLATLGSYNVLLRFS---DFGTESKKDIVTVYDGDSVNSPVIGTYSGELNAFSLV-----STGNTMTLSFKSDA</Hsp_hseq>
+      <Hsp_midline>++P +       T G + SP +P+ Y  N   V++L  +   NV ++ +    FG E  +D +  YD   V  P  GT  G       V     S GN + + F SD </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|341883314|gb|EGT39249.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_07461 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT39249</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00880777</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>215</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>272</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEE---NVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG-SGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLN-NAITAFSTLEDLIRY---LEPERWQLDLEDL</Hsp_qseq>
+      <Hsp_hseq>GSIQSPQYPQQYYNKLMCLYYIYAPEGFSINIYFPQINTERY-----------YDFVEIYEKNSTLYPDRIVGLSGNISNYEYRSNGSFLLVVFRTNYVITDIGFYAAWNV------ERIQPPIVSNTTTSGELISPNYPNDYDTFDNQIYYIKVIEEARINVTIDDF</Hsp_hseq>
+      <Hsp_midline>GSI SP++P  Y    + ++ + A E    N++      ER+           YDFVE+ E +      R  G SG +   +        +      Y  ++ GF   +N+      E + P ++  +    +L++ N    + T ++ I Y   +E  R  + ++D </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0174083</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>233</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI---LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TTSGELISPNYPNDYDTFDNQIYYIKVIEE-ARINVTIDDFLTQE-------TFDFLEIFDSMNQTASKRIERLSGNSVAPWNWLSTSNIVSLKFVSDGSYQYK-GWHLMWNMV</Hsp_hseq>
+      <Hsp_midline>+T+G + SP +P+ Y      ++ +  +EE   I +T D+    E        +DF+E+ +  + T    + R  G+   P   +S  N + ++FVSD  +  + G+ + +N+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|341886234|gb|EGT42169.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_21607 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT42169</Hit_accession>
+  <Hit_len>537</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0117908</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>386</Hsp_hit-from>
+      <Hsp_hit-to>498</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TKHTNGKLWSANYPGLYPRNIYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDETTQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFI</Hsp_hseq>
+      <Hsp_midline>T  TNG + S  +P  YPRN    +      + V + + F E F +E  +  D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|341883330|gb|EGT39265.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_28916 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT39265</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0132764</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>204</Hsp_hit-from>
+      <Hsp_hit-to>309</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI---LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>ATTSGELTSPNYPNDYDTFDNQIY-YIEVIEGARINMTIDDFLTQE-------TFDFLEIFDSMNQTASKRIARLSGNSVAPWNWLSTSNVVSLKFVSDGSYQYK-GWHLMWNMV</Hsp_hseq>
+      <Hsp_midline> +T+G + SP +P+ Y      ++  + V E   I +T D+    E        +DF+E+ +  + T    + R  G+   P   +S  N + ++FVSD  +  + G+ + +N+V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0308461</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>154</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEE---NVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG-SGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLN-NAITAFSTLEDLIRYLE</Hsp_qseq>
+      <Hsp_hseq>GSIQSPQYPQQYYNKLMCLYYIYAPEGFSINIYFPQINTERY-----------YDFVEIYEKNSTLYPDRIVGLSGNISDYEYRSNGSFLLVVFRTNYVITDIGFYAAWNV------ERIQPPIVSNATTSGELTSPNYPNDYDTFDNQIYYIE</Hsp_hseq>
+      <Hsp_midline>GSI SP++P  Y    + ++ + A E    N++      ER+           YDFVE+ E +      R  G SG +   +        +      Y  ++ GF   +N+      E + P ++  +    +L + N    + T ++ I Y+E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|341901621|gb|EGT57556.1|</Hit_id>
+  <Hit_def>CBN-EAT-18 protein [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT57556</Hit_accession>
+  <Hit_len>925</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0149473</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>512</Hsp_hit-from>
+      <Hsp_hit-to>614</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-----YDFVEVEEPSDGTILGRWCGSGTVPGKQISK--GNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>RFRFTSSTGFFNSPRYPANYPLDTNCTYYIVG-QPGKEILLHF-EQFALSGDNDNNCNDYLDVYDVFVKNGKEELRLKERYC-SDTFPGPSVSAFGSHEMRVVFTS</Hsp_hseq>
+      <Hsp_midline>R    S+ G  +SPR+P  YP +T   + +V  +    I L F E+F L    D+ C      YD        +  +  R+C S T PG  +S    +++R+ F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|341901739|gb|EGT57674.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_12932 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT57674</Hit_accession>
+  <Hit_len>595</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0156196</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>447</Hsp_hit-from>
+      <Hsp_hit-to>556</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TNGKLWSANYPGLYPRNIYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDETTQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFI</Hsp_hseq>
+      <Hsp_midline>TNG + S  +P  YPRN    +      + V + + F E F +E  +  D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|341882924|gb|EGT38859.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_03103 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT38859</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0321923</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>274</Hsp_hit-from>
+      <Hsp_hit-to>362</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TNGTMVSPNYPNNYDSNDEQKYQ-ISVGFGAQVNLTIDD-FRTESRFDYLNIYN---SSTQSNSTLVATLSGASVAPFNYISPKSYMSMKFVSD</Hsp_hseq>
+      <Hsp_midline>TNG++ SP +P+ Y  N    ++ ++V     + LT D+ F  E   D +  Y+       S+ T++    G+   P   IS  + + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|341893477|gb|EGT49412.1|</Hit_id>
+  <Hit_def>hypothetical protein CAEBREN_18469 [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT49412</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0480407</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>316</Hsp_hit-from>
+      <Hsp_hit-to>400</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>GVITSPNFPNNYDNNVYCTYHLSTIGS-YYISLQF-LAFSTEADFDRVFVYD----GDSTSNTLLATY--SGTSAPLLVSSGNSMTVVFKTDR</Hsp_hseq>
+      <Hsp_midline>G I SP FP+ Y  N    + L  +    +I L F   F  E   D +  YD     + +  T+L  +  SGT     +S GN + + F +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>30726</Statistics_db-num>
+      <Statistics_db-len>12168197</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2228421265</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

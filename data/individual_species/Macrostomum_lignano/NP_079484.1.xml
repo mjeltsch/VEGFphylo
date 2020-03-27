@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Macrostomum_lignano</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1236523969|gb|PAA49385.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig009601g2 [Macrostomum lignano] &gt;gi|1236568318|gb|PAA89968.1| hypothetical protein BOX15_Mlig029509g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA49385</Hit_accession>
+  <Hit_len>432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.47911e-09</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNS-YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>FVSHTDYGNSEYPNNFECTWTITTADDKALEINFE-AFDLEADSS--CRYDYLDVYDGPDSSSKRLGRYCG-SSLPQALKSTTNKLYFRFKTDHSITGR-GFKISWKTVE</Hsp_hseq>
+      <Hsp_midline>+V    + NS YP N   TW + + ++  +++ F+  F LE   +  CRYD+++V D  ++S+   GR+CG   +P  +KS TN++   FK+D     + GFKI +  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1236540636|gb|PAA63958.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig009601g1, partial [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA63958</Hit_accession>
+  <Hit_len>449</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.04319e-09</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNS-YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>FVSHTDYGNSEYPNNFECTWTITTVDDKALEINFE-AFDLEADSS--CRYDYLDVYDGPDSSSKRLGRYCG-SSLPQALKSTTNKLYFRFKTDHSITGR-GFKISWKTVE</Hsp_hseq>
+      <Hsp_midline>+V    + NS YP N   TW + + ++  +++ F+  F LE   +  CRYD+++V D  ++S+   GR+CG   +P  +KS TN++   FK+D     + GFKI +  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1236557266|gb|PAA79425.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig017005g3 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA79425</Hit_accession>
+  <Hit_len>1145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>3.87423e-08</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>708</Hsp_hit-from>
+      <Hsp_hit-to>818</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>VAMRGTVTSPSYPDKYPPNKHCKWHIIAPIGHKILLNF-TAFDIE--GRDRCEYDYLDIFDGVDEATSKRIGRYCG-DQPPESITSENNTMKISFISDGT-VSKGGFSASFMVDRD</Hsp_hseq>
+      <Hsp_midline>V   G V SP +P+ YP N    W + +    +I L F   F +E    D C YD++++ D  + +T  R GR+CG  + P  I S  N +KI+F SD   V+K GF   + +  D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.18138e-07</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>548</Hsp_hit-from>
+      <Hsp_hit-to>653</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>QVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>RISDEGQISSPNYPSAYRGDKECIWKIEVPNGYSVALKF---FSFELETHTQCVYDFVEVLEGWSQDGVSLGKFCG-ETVPKPVKSTGNRMTVRFKSDNS-VNKIGFAATF</Hsp_hseq>
+      <Hsp_midline>++   G + SP +P++Y  +    W++       + L F   F  E   +  C YDFVEV +      +  G++CG + VP  +KS  N++ + FKSD+  V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.40751e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>867</Hsp_hit-from>
+      <Hsp_hit-to>981</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAAS</Hsp_qseq>
+      <Hsp_hseq>SGEFSSPNYPRRYPLEKRCSWNFRTTPGHRIKLVF-KHFEIERHPD--CAYDHVEIRDGPDATSERIGVFCGDAMPPTPVISTGNSMFVGFVSDSSLQRK-GFNADHSSICGGQLIASS</Hsp_hseq>
+      <Hsp_midline>+G   SP +P  YP     +W   +    RI+LVF   F +E   +  C YD VE+ D  + ++   G +CG    P  + S  N + + F SD     K GF   +S +   Q  A+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1236544294|gb|PAA67312.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig017005g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA67312</Hit_accession>
+  <Hit_len>1148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>4.19525e-08</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>711</Hsp_hit-from>
+      <Hsp_hit-to>821</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>VAMRGTVTSPSYPDKYPPNKHCKWHIIAPIGHKILLNF-TTFDIE--GRDRCEYDYLDIFDGVDEATSKRVGRYCG-DQPPESITSENNTMKISFISDGT-VSKGGFSASFMVDRD</Hsp_hseq>
+      <Hsp_midline>V   G V SP +P+ YP N    W + +    +I L F   F +E    D C YD++++ D  + +T  R GR+CG  + P  I S  N +KI+F SD   V+K GF   + +  D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>1.1513e-07</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>551</Hsp_hit-from>
+      <Hsp_hit-to>656</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>QVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>RISDEGQISSPNYPSAYRGDKECIWKIEVPNGYSVALKF---FSFELETHTQCVYDFVEVLEGWSQDGVSLGKFCG-ETVPKPVKSTGNRMTVRFKSDNS-VNKIGFAATF</Hsp_hseq>
+      <Hsp_midline>++   G + SP +P++Y  +    W++       + L F   F  E   +  C YDFVEV +      +  G++CG + VP  +KS  N++ + FKSD+  V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>2.2769e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>870</Hsp_hit-from>
+      <Hsp_hit-to>984</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAAS</Hsp_qseq>
+      <Hsp_hseq>SGEFSSPNYPRRYPLEKRCSWNFLTTPGHRIKLVF-KHFEIERHPD--CAYDHVEIRDGPDATSERIGVFCGDAMPPTPVISTGNSMFVGFVSDSSLQRK-GFNADHSSICGGQLIASS</Hsp_hseq>
+      <Hsp_midline>+G   SP +P  YP     +W   +    RI+LVF   F +E   +  C YD VE+ D  + ++   G +CG    P  + S  N + + F SD     K GF   +S +   Q  A+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1236557220|gb|PAA79380.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig017005g4, partial [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA79380</Hit_accession>
+  <Hit_len>717</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>4.59393e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>284</Hsp_hit-from>
+      <Hsp_hit-to>390</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>GSVTSPSYPDKYPPNKHCKWHIIAPIGHKILLNF-TAFDIE--GRDRCEYDYLDIFDGVDEATSKRIGRYCG-DQPPESITSENNTMKISFISDGT-VSKGGFSASFMVDRD</Hsp_hseq>
+      <Hsp_midline>G V SP +P+ YP N    W + +    +I L F   F +E    D C YD++++ D  + +T  R GR+CG  + P  I S  N +KI+F SD   V+K GF   + +  D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.44372e-07</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>QVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>RISDEGQISSPNYPSAYRGDKECIWKIEVPNGYSVALKF---FSFELETHTQCVYDFVEVLEGWSQDGVSLGKFCG-ETVPKPVKSTGNRMTVRFKSDNS-VNKIGFAATF</Hsp_hseq>
+      <Hsp_midline>++   G + SP +P++Y  +    W++       + L F   F  E   +  C YDFVEV +      +  G++CG + VP  +KS  N++ + FKSD+  V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>2.44234e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>439</Hsp_hit-from>
+      <Hsp_hit-to>553</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAAS</Hsp_qseq>
+      <Hsp_hseq>SGEFSSPNYPRRYPLEKRCSWNFLTTPGHRIKLVF-KHFEIERHPD--CAYDHVEIRDGPDATSERIGVFCGDAMPPTPVISTGNSMFVGFVSDSSLQRK-GFNADHSSICGGQLIASS</Hsp_hseq>
+      <Hsp_midline>+G   SP +P  YP     +W   +    RI+LVF   F +E   +  C YD VE+ D  + ++   G +CG    P  + S  N + + F SD     K GF   +S +   Q  A+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1236559545|gb|PAA81590.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig017019g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA81590</Hit_accession>
+  <Hit_len>596</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00148866</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGYVQ--SPRFPNS-YPRN---LLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED---------ISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESV</Hsp_qseq>
+      <Hsp_hseq>GGYFEFRTPNYGGSGYPRGCDCIKVIKAEHPQQ--VIELDFRGEFHIEESSG--CAADYLEVRDGPYGYSPLLSNQNGGSSNGRYCGAKPPSQRLKSSGRYLWLRFKSDE-VIEHRGVSAVYKFV---RPAAAAAVKQECV</Hsp_hseq>
+      <Hsp_midline> GY +  +P +  S YPR    + +    H Q+   I+L F  +F +EE+    C  D++EV D          ++      GR+CG K    R+KS    + + FKSD+  +   G    Y  +   +PAAA+    E V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1236545218|gb|PAA68157.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig012127g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA68157</Hit_accession>
+  <Hit_len>1021</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00217604</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV------EDISETSTIIRGRWCGH--KEVPPRIKSRTNQIKITFKSDD------------YFVAKPGFKIYYSLL--EDFQPAA---ASETN----WESVTSSISGVSYNSPSVTDPTLIADAL</Hsp_qseq>
+      <Hsp_hseq>FVTSPGWPRPYPEDARCRYKFVAGRNEKVRLNF-LAFNVE-GLGPSCEKDFLDVYTELEQENASLLHSPLLGRFCGHILASVPRTVVSLHSVLVLDFYTDGNTQKVYNNDNHMAMEAALGFKAQYSFVPKADYEPGPRLLAYSGNCSFLMETSSADIDGV-INSPGY--PGLYPDNL</Hsp_hseq>
+      <Hsp_midline>+V SP +P  YP +    ++  +  N +++L F   F +E      C  DF++V      E+ S   + + GR+CGH    VP  + S  + + + F +D                A  GFK  YS +   D++P     A   N     E+ ++ I GV  NSP    P L  D L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1236526283|gb|PAA51278.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig012127g2 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA51278</Hit_accession>
+  <Hit_len>815</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00238124</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV------EDISETSTIIRGRWCGH--KEVPPRIKSRTNQIKITFKSDD------------YFVAKPGFKIYYSLL--EDFQPAA---ASETN----WESVTSSISGVSYNSPSVTDPTLIADAL</Hsp_qseq>
+      <Hsp_hseq>FVTSPGWPRPYPEDARCRYKFVAGRNEKVRLNF-LAFNVE-GLGPSCEKDFLDVYTELEQENASLLHSPLLGRFCGHILASVPRTVVSLHSVLVLDFYTDGNTQKVYNNDNHMAMEAALGFKAQYSFVPKADYEPGPRLLAYSGNCSFLMETSSADIDGV-INSPGY--PGLYPDNL</Hsp_hseq>
+      <Hsp_midline>+V SP +P  YP +    ++  +  N +++L F   F +E      C  DF++V      E+ S   + + GR+CGH    VP  + S  + + + F +D                A  GFK  YS +   D++P     A   N     E+ ++ I GV  NSP    P L  D L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1236558066|gb|PAA80183.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig021742g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA80183</Hit_accession>
+  <Hit_len>588</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00553337</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGYVQ--SPRFPNS-YPRN---LLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED---------ISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESV</Hsp_qseq>
+      <Hsp_hseq>GGYFEFRTPNYAGSGYPRGCDCIKVIKAEHPQQ--VIELDFRGEFHIEESSG--CAADYLEVRDGPYGYSPLLSNQNGGSSNGRYCGAKPPSQRLKSSGRYLWLRFKSDE-VIEHRGVSAVYKFV---RPAAEAAVKQECV</Hsp_hseq>
+      <Hsp_midline> GY +  +P +  S YPR    + +    H Q+   I+L F  +F +EE+    C  D++EV D          ++      GR+CG K    R+KS    + + FKSD+  +   G    Y  +   +PAA +    E V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1236564247|gb|PAA86066.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig023504g2 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA86066</Hit_accession>
+  <Hit_len>244</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00708691</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>40</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>ETIQVKGNGYVQSPRFPN--SYPRNLLLTWRLHSQ---ENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESV</Hsp_qseq>
+      <Hsp_hseq>EIVATRTGGYLTSHKYFNRCTYPIDLKCTWKLVSVPEVNDTRLDFSFD-AYEMPR-ENQPCNDIYLRFHDGHRPTGKVIKALCEGRKIPKPFRSFSNKVFVEFNSGRF--SARGFLLKWQRVRDCRKDDFTCSNGECV</Hsp_hseq>
+      <Hsp_midline>E +  +  GY+ S ++ N  +YP +L  TW+L S     +TR+   FD  + +   EN  C   ++   D    +  +    C  +++P   +S +N++ + F S  +  +  GF + +  + D +    + +N E V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1236542659|gb|PAA65798.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig001529g2 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA65798</Hit_accession>
+  <Hit_len>414</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00922974</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>40</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>ETIQVKGNGYVQSPRFPN--SYPRNLLLTWRLHSQ---ENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESV</Hsp_qseq>
+      <Hsp_hseq>EIVATRTGGYLTSHKYFNRCTYPIDLKCTWKLVSVPEVNDTRLDFSFD-AYEMPR-ENQPCNDIYLRFHDGHRPTGKVIKALCEGRKIPKPFRSFSNKVFVEFNS-GRFSAR-GFLLKWQRVRDCRKDDFTCSNGECV</Hsp_hseq>
+      <Hsp_midline>E +  +  GY+ S ++ N  +YP +L  TW+L S     +TR+   FD  + +   EN  C   ++   D    +  +    C  +++P   +S +N++ + F S   F A+ GF + +  + D +    + +N E V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1236569356|gb|PAA90975.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig012127g3 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA90975</Hit_accession>
+  <Hit_len>1021</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0104441</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV------EDISETSTIIRGRWCGHK--EVPPRIKSRTNQIKITFKSD---------DYFVAKP---GFKIYYSLL--EDFQPAA---ASETN----WESVTSSISGVSYNSPSVTDPTLIADAL</Hsp_qseq>
+      <Hsp_hseq>FVTSPGWPRPYPEDARCRYKFVAGRNEKVRLNF-LAFNVE-GLGPSCEKDFLDVYTELEQENASLLHSPLLGRFCGHSLASVPRTVVSLHSVLVLDFYTDGNTQKVYNNDNHMAMEVALGFKAQYSFVPKADYEPGPRLLAYSGNCSFLMETSSVDIDGV-INSPGY--PGLYPDNL</Hsp_hseq>
+      <Hsp_midline>+V SP +P  YP +    ++  +  N +++L F   F +E      C  DF++V      E+ S   + + GR+CGH    VP  + S  + + + F +D         D  +A     GFK  YS +   D++P     A   N     E+ +  I GV  NSP    P L  D L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1236545280|gb|PAA68214.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig023504g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA68214</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0123371</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>DESNHLTDLYRR----DETIQVKGNGYVQSPRF--PNSYPRNLLLTWRLHSQ---ENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESV</Hsp_qseq>
+      <Hsp_hseq>DEANR-TEFYTEADSCGEIVATRTGGYLTSHKYFYRCTYPIDLKCTWKLVSVPEVNDTRLDFSFD-AYEMPR-ENQPCKNIYLRFHDGHRPTGKVIKALCEGRKIPKPFRSFSNKVLVEFNS-GRFSAR-GFLLKWQRVRDCRKDDFTCSNGECV</Hsp_hseq>
+      <Hsp_midline>DE+N  T+ Y       E +  +  GY+ S ++    +YP +L  TW+L S     +TR+   FD  + +   EN  C+  ++   D    +  +    C  +++P   +S +N++ + F S   F A+ GF + +  + D +    + +N E V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1236532694|gb|PAA56791.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig002999g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA56791</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0314065</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLV---FDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LYETDQTVIASHRLYGRKSYQPNSVCRYIIRAW----SPDYRIEITSVSFDLEYTSE------CTGDSLTVYSGGNDSSPVLGRFCGSLDWS--VLTQSSFVALVFSSDAY-LEKGGFQLRYRFVS</Hsp_hseq>
+      <Hsp_midline>LY  D+T+      Y +    PNS  R ++  W      + RI++    FD ++  E      C  D + V      S+ + GR+CG  +    + ++++ + + F SD Y + K GF++ Y  + </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1236545366|gb|PAA68295.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig024637g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA68295</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0368007</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLV---FDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LYETDQTVIASHRLYGRKSYQPNSVCRYIIRAW----SPDYRIEITSVSFDLEYTSE------CTGDSLTVYSGGNDSSPVLGRFCGSLDWS--VLTQSSFVALVFSSDAY-LEKGGFQLRYRFVS</Hsp_hseq>
+      <Hsp_midline>LY  D+T+      Y +    PNS  R ++  W      + RI++    FD ++  E      C  D + V      S+ + GR+CG  +    + ++++ + + F SD Y + K GF++ Y  + </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1236555229|gb|PAA77490.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig008246g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA77490</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0526856</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENT--RIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>LESPNYPSNYERNTNCIWLFAATNFTELRVNVSF---MQLETGVNGTCK-DFVQVREGSATAPLL-GSLC-SASTAAWLVTLNRYLWIQFRS-DHQVQDRGFQLTVSAADN</Hsp_hseq>
+      <Hsp_midline>++SP +P++Y RN    W   +   T  R+ + F     LE   N  C+ DFV+V + S T+ ++ G  C        + +    + I F+S D+ V   GF++  S  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1236561602|gb|PAA83540.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig029467g2, partial [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA83540</Hit_accession>
+  <Hit_len>1003</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0530154</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>227</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN----QFGLEEAEN-----DICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITF---------------KSDDYFVAKPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>GTVLSATYPGLYPDNMHCVYIFQAKPNQRVRLVFEDLDLYEIAGESIEQSVHVIDSCPVDVIRFYNSREQRQQIQGDFCGSRP-NLTIFSSGSELRLDFISGVGRVSRTRDLSSDSESAEIQRRGFRLKYTMSDEF</Hsp_hseq>
+      <Hsp_midline>G V S  +P  YP N+   +   ++ N R++LVF++    +   E  E      D C  D +   +  E    I+G +CG +     I S  +++++ F                S+   + + GF++ Y++ ++F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1236542300|gb|PAA65472.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig027546g1, partial [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA65472</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0558596</Hsp_evalue>
+      <Hsp_query-from>73</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPR----IKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>YANSINCSWNLTAPESYRIEVWF------EFSEIESC-CDFVHFLDVIMTKLAMVSDSCTNCSVLPRFSPSLNGPQNIMTVRFTTDGSIVKK-GFRIWYRATQD</Hsp_hseq>
+      <Hsp_midline>Y  ++  +W L + E+ RI++ F      E +E + C  DFV   D+  T   +    C +  V PR    +    N + + F +D   V K GF+I+Y   +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1236546823|gb|PAA69651.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig007110g1 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA69651</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0633669</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENT--RIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>LESPNYPSNYERNTNCIWLFAATNFTELRVNVSF---MQLETGVNGTCK-DFVQVREGSATAPLL-GSLC-SASTATWLVTLNRYLWIQFRS-DHQVQDRGFQLTVSAADN</Hsp_hseq>
+      <Hsp_midline>++SP +P++Y RN    W   +   T  R+ + F     LE   N  C+ DFV+V + S T+ ++ G  C        + +    + I F+S D+ V   GF++  S  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1236570536|gb|PAA92117.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig002999g2 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA92117</Hit_accession>
+  <Hit_len>513</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0813938</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLV---FDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LYETDQTVIASHRLYGRKSYQPNSVCRYIIRAW----SPDYRIEITSVSFDLEYTSE------CTGDSLTVYSGGNDSSPVLGRFCGSLDW--SVLTQSSFVALVFSSDAY-LEKGGFQLRYRFVS</Hsp_hseq>
+      <Hsp_midline>LY  D+T+      Y +    PNS  R ++  W      + RI++    FD ++  E      C  D + V      S+ + GR+CG  +    + ++++ + + F SD Y + K GF++ Y  + </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1236527364|gb|PAA52176.1|</Hit_id>
+  <Hit_def>hypothetical protein BOX15_Mlig024637g2 [Macrostomum lignano]</Hit_def>
+  <Hit_accession>PAA52176</Hit_accession>
+  <Hit_len>513</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0828251</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLV---FDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LYETDQTVIASHRLYGRKSYQPNSVCRYIIRAW----SPDYRIEITSVSFDLEYTSE------CTGDSLTVYSGGNDSSPVLGRFCGSLDW--SVLTQSSFVALVFSSDAY-LEKGGFQLRYRFVS</Hsp_hseq>
+      <Hsp_midline>LY  D+T+      Y +    PNS  R ++  W      + RI++    FD ++  E      C  D + V      S+ + GR+CG  +    + ++++ + + F SD Y + K GF++ Y  + </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>43522</Statistics_db-num>
+      <Statistics_db-len>23535946</Statistics_db-len>
+      <Statistics_hsp-len>106</Statistics_hsp-len>
+      <Statistics_eff-space>4995570096</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

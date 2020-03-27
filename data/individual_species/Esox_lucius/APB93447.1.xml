@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Esox_lucius</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|742151028|ref|XP_010880656.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010880656</Hit_accession>
+  <Hit_len>193</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.219</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>3.86177e-28</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>154</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>GTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEP---------DGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>GSAHEGVISFMEVYNKSICRPRELLVDIIKEYPAEVEHLYIPSCVVLMRCAGCCNDESQECMPTSTHNITMEIKRYNPKKIQSNI-FMSFTEHSACDCSLKKEAKEQRQNQCLPCCDGCSERRRR</Hsp_hseq>
+      <Hsp_midline>G+    V  F+EV+ +S C+ RE LV I++EYP E+  ++ PSCV ++RC+GCC DES +C P   H + ++I R NP+   S +  M FTEH+AC+C  +++  E          DG  E+ RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|742151024|ref|XP_010880655.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010880655</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.96465e-27</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>GSAHEGVISFMEVYNKSICRPRELLVDIIKEYPAEVEHLYIPSCVVLMRCAGCCNDESQECMPTSTHNITMEIKRYNPKKIQSNI-FMSFTEHSACDCSLKKEAKE</Hsp_hseq>
+      <Hsp_midline>G+    V  F+EV+ +S C+ RE LV I++EYP E+  ++ PSCV ++RC+GCC DES +C P   H + ++I R NP+   S +  M FTEH+AC+C  +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|742151022|ref|XP_010880654.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X5 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010880654</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>2.0538e-27</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>GSAHEGVISFMEVYNKSICRPRELLVDIIKEYPAEVEHLYIPSCVVLMRCAGCCNDESQECMPTSTHNITMEIKRYNPKKIQSNI-FMSFTEHSACDCSLKKEAKE</Hsp_hseq>
+      <Hsp_midline>G+    V  F+EV+ +S C+ RE LV I++EYP E+  ++ PSCV ++RC+GCC DES +C P   H + ++I R NP+   S +  M FTEH+AC+C  +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|742243946|ref|XP_010863502.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010863502</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>5.90565e-27</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>GQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>NDVVPFMDVYNKSMCRTRELLVDIFQEYPDDIEHIYIPSCVVLMRCAGCCNDEALECVPTETKNVTLTVLRKKMKSLQHTFQ-LSFTEHRKCECRPK</Hsp_hseq>
+      <Hsp_midline>  V PF++V+ +S C+ RE LV I QEYPD+I  I+ PSCV ++RC+GCC DE+L+C P     V L ++R   ++     + + FTEH  CECRP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1137532761|ref|XP_019911844.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_019911844</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.9821</Hsp_bit-score>
+      <Hsp_score>245</Hsp_score>
+      <Hsp_evalue>1.24191e-26</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>VISFMEVYNKSICRPRELLVDIIKEYPAEVEHLYIPSCVVLMRCAGCCNDESQECMPTSTHNITMEIKRYNPKKIQSNI-FMSFTEHSACDCSLKKEAKE</Hsp_hseq>
+      <Hsp_midline>V  F+EV+ +S C+ RE LV I++EYP E+  ++ PSCV ++RC+GCC DES +C P   H + ++I R NP+   S +  M FTEH+AC+C  +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|742210409|ref|XP_010896219.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010896219</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.6709</Hsp_bit-score>
+      <Hsp_score>239</Hsp_score>
+      <Hsp_evalue>5.99777e-26</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>MAAYLLAVAILFCIQGWP-------SGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPR</Hsp_qseq>
+      <Hsp_hseq>FASFVIQIAVTLQLQLSPVESTSLSSANSTTGVLLFQEVWGRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDEYLECHPTRTSNVTMQLLKIKPAKQGQEYVEMTFVEHQTCECRIRKAVVKSERRKQRGR</Hsp_hseq>
+      <Hsp_midline> A++++ +A+   +Q  P       S      V  F EV  RS C+  E LV ++QEYP E+  I+ PSCV ++RC+GCC DE L+C P     V +Q++++ P  Q  +   M F EH  CECR R+   + +  K++ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|742210405|ref|XP_010896218.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010896218</Hit_accession>
+  <Hit_len>187</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.0561</Hsp_bit-score>
+      <Hsp_score>240</Hsp_score>
+      <Hsp_evalue>8.63799e-26</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>MAAYLLAVAILFCIQGWP-------SGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPR</Hsp_qseq>
+      <Hsp_hseq>FASFVIQIAVTLQLQLSPVESTSLSSANSTTGVLLFQEVWGRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDEYLECHPTRTSNVTMQLLKIKPAKQGQEYVEMTFVEHQTCECRIRKAVVKSERRKQRGR</Hsp_hseq>
+      <Hsp_midline> A++++ +A+   +Q  P       S      V  F EV  RS C+  E LV ++QEYP E+  I+ PSCV ++RC+GCC DE L+C P     V +Q++++ P  Q  +   M F EH  CECR R+   + +  K++ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|742151032|ref|XP_010880657.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X4 [Esox lucius] &gt;gi|1137532764|ref|XP_019911845.1| PREDICTED: vascular endothelial growth factor A isoform X4 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010880657</Hit_accession>
+  <Hit_len>178</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.9005</Hsp_bit-score>
+      <Hsp_score>237</Hsp_score>
+      <Hsp_evalue>1.86704e-25</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>LEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>MEVYNKSICRPRELLVDIIKEYPAEVEHLYIPSCVVLMRCAGCCNDESQECMPTSTHNITMEIKRYNPKKIQSNI-FMSFTEHSACDCSLKKEAKE</Hsp_hseq>
+      <Hsp_midline>+EV+ +S C+ RE LV I++EYP E+  ++ PSCV ++RC+GCC DES +C P   H + ++I R NP+   S +  M FTEH+AC+C  +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|742150495|ref|XP_010880530.1|</Hit_id>
+  <Hit_def>PREDICTED: snake venom vascular endothelial growth factor toxin ICPP [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010880530</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.3597</Hsp_bit-score>
+      <Hsp_score>233</Hsp_score>
+      <Hsp_evalue>1.16961e-24</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>VQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKE</Hsp_qseq>
+      <Hsp_hseq>MHSEVMLFQEVWGRSLCHSMELLVKVEHEYPEGVEHIFSPACVLLWRCAGCCGDENLECHPTTMRNVTMQLMRITPAERTGKQVELTFVEHQSCECRLRMMDLNESSPRD</Hsp_hseq>
+      <Hsp_midline>+  +V  F EV  RS C + E LV +  EYP+ +  IF P+CV + RC+GCC DE+L+C P     V +Q+MR+ P  ++ K   + F EH +CECR R        P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|742243950|ref|XP_010863504.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010863504</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>1.58039e-24</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>90</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>LEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>MDVYNKSMCRTRELLVDIFQEYPDDIEHIYIPSCVVLMRCAGCCNDEALECVPTETKNVTLTVLRKKMKSLQHTFQ-LSFTEHRKCECRPK</Hsp_hseq>
+      <Hsp_midline>++V+ +S C+ RE LV I QEYPD+I  I+ PSCV ++RC+GCC DE+L+C P     V L ++R   ++     + + FTEH  CECRP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|742212010|ref|XP_010896673.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010896673</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.8189</Hsp_bit-score>
+      <Hsp_score>229</Hsp_score>
+      <Hsp_evalue>7.94107e-24</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRRGG</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRETMVEVWRELPGETHHLFVPSCVTVRRCGGCCSDEALECVPSLTHTLTMELMKTS--FMKHELIELDFVEHSQCECRLKENLLSAPTRPSKPQRNG</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ RET+V + +E P E   +F PSCV V RC GCC+DE+L+C P   HT+ +++M+ +      ++  + F EH+ CECR +           KP+R G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|742233940|ref|XP_010901944.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010901944</Hit_accession>
+  <Hit_len>397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>8.91872e-13</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>FLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>ILEEIQRTMCSPREVCLEVSKEYPESTSHSYRPRCVSVHRCGGCCHHEGLYCTNTSYTYVNKTLLEISHLDGSVVM--VAFINHTSCQCLSKR</Hsp_hseq>
+      <Hsp_midline> LE  +R+ C  RE  + + +EYP+  S  +RP CV+V RC GCC  E L CT      V+  ++ ++    S  M  + F  HT+C+C  +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1137543524|ref|XP_019897954.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X3 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_019897954</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>4.82763e-10</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACE------------------CRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>IKAIEEEWQKTQCMPRETCVDVAKELGTITSMFFKPPCVSVFRCNGCCGNEGVSCRNTSTTYVNKTLLSVVPFKFGPEPVLIKVANHTECKCLEPPLIRRHTRAHRRNGCSPTRQQSEPE</Hsp_hseq>
+      <Hsp_midline>++   E  +++ C  RET V + +E     S  F+P CV+V RC+GCC +E + C       V+  ++ V P     +  ++K   HT C+                  C P R+Q EP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|742167655|ref|XP_010884800.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010884800</Hit_accession>
+  <Hit_len>323</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>1.0771e-09</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACE------------------CRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>IKAIEEEWQKTQCMPRETCVDVAKELGTITSMFFKPPCVSVFRCNGCCGNEGVSCRNTSTTYVNKTLLSVVPFKFGPEPVLIKVANHTECKCLEPPLIRRHTRAHRRNGCSPTRQQSEPE</Hsp_hseq>
+      <Hsp_midline>++   E  +++ C  RET V + +E     S  F+P CV+V RC+GCC +E + C       V+  ++ V P     +  ++K   HT C+                  C P R+Q EP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1137543522|ref|XP_019897953.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_019897953</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>1.11632e-09</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>IKAIEEEWQKTQCMPRETCVDVAKELGTITSMFFKPPCVSVFRCNGCCGNEGVSCRNTSTTYVNKTLLSVVPFKFGPEPVLIKVANHTECKC</Hsp_hseq>
+      <Hsp_midline>++   E  +++ C  RET V + +E     S  F+P CV+V RC+GCC +E + C       V+  ++ V P     +  ++K   HT C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|884959935|ref|XP_012991357.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105031171 isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_012991357</Hit_accession>
+  <Hit_len>521</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>4.47859e-08</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>IFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN---PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNSKSLQCVPVVVHTRHLQVMKIQYIEKRPIYSKA-IVSVHDHVECRCHP</Hsp_hseq>
+      <Hsp_midline>+  P CV V RCSGCC  +SL+C PV  HT  LQ+M++     R   SK  ++   +H  C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|884959937|ref|XP_012991358.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105031171 isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_012991358</Hit_accession>
+  <Hit_len>421</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>5.93534e-08</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>IFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN---PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNSKSLQCVPVVVHTRHLQVMKIQYIEKRPIYSKA-IVSVHDHVECRCHP</Hsp_hseq>
+      <Hsp_midline>+  P CV V RCSGCC  +SL+C PV  HT  LQ+M++     R   SK  ++   +H  C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|742198587|ref|XP_010892766.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010892766</Hit_accession>
+  <Hit_len>406</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.06192e-06</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCLDVGREFGAATNTFYKPPCVSVYRCGGCCNSEERQCMNISTSYVSKTLFEIT--VPVTKPVTIIFANHTMCSC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC GCC  E  +C  +    V   +  +      +K   + F  HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|742198591|ref|XP_010892767.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010892767</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.71416e-06</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCLDVGREFGAATNTFYKPPCVSVYRCGGCCNSEERQCMNISTSYVSKTLFEIT--VPVTKPVTIIFANHTMCSC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC GCC  E  +C  +    V   +  +      +K   + F  HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|884957299|ref|XP_012990679.1|</Hit_id>
+  <Hit_def>PREDICTED: TPR-containing protein DDB_G0280363 isoform X1 [Esox lucius] &gt;gi|884957301|ref|XP_012990680.1| PREDICTED: TPR-containing protein DDB_G0280363 isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_012990679</Hit_accession>
+  <Hit_len>585</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000122801</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>SGTVQGQVRPFLEVH--ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>SNETHGRYKRNLDAQPAQQAVCKVRTEVMEITRAMLDRRNANFLLWPPCVEVQRCSGCCNSRLLQCVPSTLQTRYLQVTRIQYIDKRAHYDTAVIPVEDHASCRCQ</Hsp_hseq>
+      <Hsp_midline>S    G+ +  L+    +++ C+ R  ++ I +   D  +  F   P CV V RCSGCC    L+C P    T  LQ+ R+    + +  +  V+   +H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1137505680|ref|XP_019904987.1|</Hit_id>
+  <Hit_def>PREDICTED: PAX-interacting protein 1 isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_019904987</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000174319</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>SGTVQGQVRPFLEVH--ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>SNETHGRYKRNLDAQPAQQAVCKVRTEVMEITRAMLDRRNANFLLWPPCVEVQRCSGCCNSRLLQCVPSTLQTRYLQVTRIQYIDKRAHYDTAVIPVEDHASCRCQ</Hsp_hseq>
+      <Hsp_midline>S    G+ +  L+    +++ C+ R  ++ I +   D  +  F   P CV V RCSGCC    L+C P    T  LQ+ R+    + +  +  V+   +H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|742179574|ref|XP_010887757.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X3 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010887757</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000302171</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKNHRTVKVAKVEYVRRRPKLKEVFVKLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  K+   +++ +V    +  K++   +K  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|742179561|ref|XP_010887755.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010887755</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000342997</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKNHRTVKVAKVEYVRRRPKLKEVFVKLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  K+   +++ +V    +  K++   +K  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|742179570|ref|XP_010887756.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010887756</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000568495</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKNHRTVKVAKVEYVRRRPKLKEVFVKLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  K+   +++ +V    +  K++   +K  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|742106871|ref|XP_010871028.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Esox lucius]</Hit_def>
+  <Hit_accession>XP_010871028</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000611229</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>PDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>PTAANFLIWPPCVEVRRCTGCCNTSSMHCLASRKHHRTVKVAKVEYVRRRPKLKEVQVRLEEHLECICTSKRHIKE</Hsp_hseq>
+      <Hsp_midline>P   + +  P CV V RC+GCC   S+ C    KH   +++ +V    +  K++   ++  EH  C C  +R   E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>34963</Statistics_db-num>
+      <Statistics_db-len>22660845</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>988090473</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
