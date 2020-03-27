@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Danio_rerio</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1040668369|ref|XP_017207334.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_017207334</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>164.851</Hsp_bit-score>
+      <Hsp_score>416</Hsp_score>
+      <Hsp_evalue>4.92246e-52</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLC</Hsp_qseq>
+      <Hsp_hseq>MSYLTSLLRVFAAVQLSLLPGQ-SSSLVNVNSTDKVMLFQEVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPACVPLVRCAGCCGDENLECHPTLTSNTTMQLLKIKPAEQGQEYVEMTFVEHKACECRLRKPTTKQDRWKPRNRGRKRKEKQKAKDCDRC</Hsp_hseq>
+      <Hsp_midline>M      L++ A + L  +P Q + S  N +S  +V+ FQEVWG+S+CR +E+LV+VV EYP EVEH+FSP+CV L+RC GCCGDENL C P  T+N TMQLLKI+  ++   YVE+TF +H  CECR  +   K +R +P+ RG++R+EKQ+  DC  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1207192021|ref|XP_021328887.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021328887</Hit_accession>
+  <Hit_len>158</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>163.31</Hsp_bit-score>
+      <Hsp_score>412</Hsp_score>
+      <Hsp_evalue>1.41736e-51</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDC</Hsp_qseq>
+      <Hsp_hseq>MSYLTSLLRVFAAVQLSLLPGQ-SSSLVNVNSTDKVMLFQEVWGKSFCRTIEKLVEVVQEYPGEVEHIFSPACVPLVRCAGCCGDENLECHPTLTSNTTMQLLKIKPAEQGQEYVEMTFVEHKACECRLRKPTTKQDRWKPRNRGRKRKEKQKGKDC</Hsp_hseq>
+      <Hsp_midline>M      L++ A + L  +P Q + S  N +S  +V+ FQEVWG+S+CR +E+LV+VV EYP EVEH+FSP+CV L+RC GCCGDENL C P  T+N TMQLLKI+  ++   YVE+TF +H  CECR  +   K +R +P+ RG++R+EKQ+  DC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|167736373|ref|NP_001103819.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform 2 precursor [Danio rerio] &gt;gi|3088577|gb|AAC14713.1| vascular endothelial growth factor 121 isoform [Danio rerio]</Hit_def>
+  <Hit_accession>NP_001103819</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.561</Hsp_bit-score>
+      <Hsp_score>314</Hsp_score>
+      <Hsp_evalue>5.96429e-37</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>140</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLL--AGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER</Hsp_qseq>
+      <Hsp_hseq>MNLVVYLIQLFLAALLHLSAVKAAHIPKEG-GKSKNDVIPFMDVYKKSACKTRELLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRPKAEVKAKKER</Hsp_hseq>
+      <Hsp_midline>M L    +QL   A L L AV        G G S+ +V+PF +V+ +S C+  E LVD++ EYP E+EH + PSCV L+RC GCC DE L CVP ET NVTM++L+++        +L+F++H +CECRP  E K K ER</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|18859545|ref|NP_571483.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform 1 precursor [Danio rerio] &gt;gi|48428569|sp|O73682.1|VGFAA_DANRE RecName: Full=Vascular endothelial growth factor A-A; Short=VEGF-A-A; Flags: Precursor &gt;gi|3056721|gb|AAC41274.1| vascular endothelial growth factor isoform 165 [Danio rerio] &gt;gi|190338034|gb|AAI62588.1| Vascular endothelial growth factor Aa [Danio rerio] &gt;gi|190339362|gb|AAI62258.1| Vascular endothelial growth factor Aa [Danio rerio]</Hit_def>
+  <Hit_accession>NP_571483</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.176</Hsp_bit-score>
+      <Hsp_score>313</Hsp_score>
+      <Hsp_evalue>3.17457e-36</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLL--AGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERR-RPKGRGKRRREKQRPTDC</Hsp_qseq>
+      <Hsp_hseq>MNLVVYLIQLFLAALLHLSAVKAAHIPKEG-GKSKNDVIPFMDVYKKSACKTRELLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRPKAEVKAKKENHCEPCSERRKRLYVQDPLTC</Hsp_hseq>
+      <Hsp_midline>M L    +QL   A L L AV        G G S+ +V+PF +V+ +S C+  E LVD++ EYP E+EH + PSCV L+RC GCC DE L CVP ET NVTM++L+++        +L+F++H +CECRP  E K K E    P    ++R   Q P  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|688589640|ref|XP_009290293.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_009290293</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.02</Hsp_bit-score>
+      <Hsp_score>310</Hsp_score>
+      <Hsp_evalue>1.88576e-35</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>158</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLL--AGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTD</Hsp_qseq>
+      <Hsp_hseq>MNLVVYLIQLFLAALLHLSAVKAAHIPKEG-GKSKNDVIPFMDVYKKSACKTRELLVDIIQEYPDEIEHTYIPSCVVLMRCAGCCNDEALECVPTETRNVTMEVLRVKQRVSQHNFQLSFTEHTKCECRPKAEVKAKKEKKPRVRRVKNPNRAREGD</Hsp_hseq>
+      <Hsp_midline>M L    +QL   A L L AV        G G S+ +V+PF +V+ +S C+  E LVD++ EYP E+EH + PSCV L+RC GCC DE L CVP ET NVTM++L+++        +L+F++H +CECRP  E    + ++P+ R  +   + R  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1207158036|ref|XP_021324415.1|</Hit_id>
+  <Hit_def>placenta growth factor-like [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021324415</Hit_accession>
+  <Hit_len>169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.087</Hsp_bit-score>
+      <Hsp_score>292</Hsp_score>
+      <Hsp_evalue>2.57588e-33</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMKPE</Hsp_qseq>
+      <Hsp_hseq>GNSQSKVLLFEEAWARSQCRCLEQMVYVEQEYPGAVEHIYSPGCVPLLRCSGCCNDEKLACFPVSTSNISIQLLRITPAERRRDYVLLSFQEHQSCECRPRKHQQRHQ</Hsp_hseq>
+      <Hsp_midline>G+S+ +V+ F+E W RS CR LE++V V  EYP  VEH++SP CV LLRC+GCC DE L C PV T+N+++QLL+I   + R  YV L+F +H  CECRP + + + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|528475859|ref|XP_005164575.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_005164575</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.219</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>5.92391e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRP</Hsp_qseq>
+      <Hsp_hseq>VLQLF-----IVTLLYFSAVKSAYIPREG-GRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCRMKKDLPKEIEKKP</Hsp_hseq>
+      <Hsp_midline>V++LF     ++  L   AV   +    G G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR  ++  K   ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1038986259|ref|NP_001315527.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform 2 precursor [Danio rerio] &gt;gi|75858341|gb|ABA28744.1| VegfAb171, partial [Danio rerio]</Hit_def>
+  <Hit_accession>NP_001315527</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>7.19443e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>VLQLF-----IVTLLYFSAVKSAYIPREG-GRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCR</Hsp_hseq>
+      <Hsp_midline>V++LF     ++  L   AV   +    G G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|145337885|gb|AAI39620.1|</Hit_id>
+  <Hit_def>Vegfab protein [Danio rerio]</Hit_def>
+  <Hit_accession>AAI39620</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>7.75584e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>VLQLF-----IVTLLYFSAVKSAYIPREG-GRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCR</Hsp_hseq>
+      <Hsp_midline>V++LF     ++  L   AV   +    G G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|108742042|gb|AAI17666.1|</Hit_id>
+  <Hit_def>Vegfab protein, partial [Danio rerio]</Hit_def>
+  <Hit_accession>AAI17666</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>8.77729e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRP</Hsp_qseq>
+      <Hsp_hseq>VLQLFIVTLLYFSAVKSAYIPRE------GGRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCRMKKDLPKEIEKKP</Hsp_hseq>
+      <Hsp_midline>V++LF   L   + +    +P +       G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR  ++  K   ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1038986329|ref|NP_001315526.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform 1 precursor [Danio rerio]</Hit_def>
+  <Hit_accession>NP_001315526</Hit_accession>
+  <Hit_len>252</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>9.74979e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRP</Hsp_qseq>
+      <Hsp_hseq>VLQLFIVTLLYFSAVKSAYIPRE------GGRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCRMKKDLPKEIEKKP</Hsp_hseq>
+      <Hsp_midline>V++LF   L   + +    +P +       G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR  ++  K   ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|688545896|ref|XP_009298243.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_009298243</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.679</Hsp_bit-score>
+      <Hsp_score>252</Hsp_score>
+      <Hsp_evalue>1.17719e-26</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>VLQLF-----IVTLLYFSAVKSAYIPREG-GRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCR</Hsp_hseq>
+      <Hsp_midline>V++LF     ++  L   AV   +    G G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|68300769|gb|AAY89335.1|</Hit_id>
+  <Hit_def>Vegfab210 precursor [Danio rerio]</Hit_def>
+  <Hit_accession>AAY89335</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.908</Hsp_bit-score>
+      <Hsp_score>250</Hsp_score>
+      <Hsp_evalue>2.57329e-26</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>VLQLFIVTLLYFSAVKSAYIPRE------GGRSTYDVVPFMEVYNKSLCRPREMLVEIQQEYPDDTEHIFIPSCVVLTRCAGCCNDEMMECTPTVTYNITLEIKRLKPLRHQGDIFMSFAEHSECQCR</Hsp_hseq>
+      <Hsp_midline>V++LF   L   + +    +P +       G S  +VVPF EV+ +S CR  E LV++  EYP + EH+F PSCV L RC GCC DE + C P  T N+T+++ +++       + ++F++H  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1207190896|ref|XP_005157219.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Danio rerio]</Hit_def>
+  <Hit_accession>XP_005157219</Hit_accession>
+  <Hit_len>246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>3.44089e-21</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGN------GSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>ILGMFQFVTLTRIPTQCARTQSDHWMPTQSHKSGEVVRWLDVFQRSGCHPRETLVEVWQEFPWETNHLFLPSCVTLRRCGGCCSDEALECVPSQTHTLVMELMKT-SYMKHELVQLPFIEHNQCECR</Hsp_hseq>
+      <Hsp_midline> L +   + L  +P Q A +  +           EVV + +V+ RS C   E LV+V  E+P E  H+F PSCV+L RC GCC DE L CVP +T  + M+L+K  S  +   V+L F +H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1207116351|ref|XP_021336786.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021336786</Hit_accession>
+  <Hit_len>246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>3.44089e-21</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGN------GSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>ILGMFQFVTLTRIPTQCARTQSDHWMPTQSHKSGEVVRWLDVFQRSGCHPRETLVEVWQEFPWETNHLFLPSCVTLRRCGGCCSDEALECVPSQTHTLVMELMKT-SYMKHELVQLPFIEHNQCECR</Hsp_hseq>
+      <Hsp_midline> L +   + L  +P Q A +  +           EVV + +V+ RS C   E LV+V  E+P E  H+F PSCV+L RC GCC DE L CVP +T  + M+L+K  S  +   V+L F +H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|688605888|ref|XP_009293766.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin barietin-like isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_009293766</Hit_accession>
+  <Hit_len>91</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>1.6521e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>88</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR----PSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>TLCKPRETLVKVEDEFSEVMLGHVVPSCVPLQRCGGCCSDEAMVCVNVAKHTTIIQLQQYATDSEGNMAESIIELPFVEHSQCQCR</Hsp_hseq>
+      <Hsp_midline>+ C+  E LV V  E+   +     PSCV L RC GCC DE + CV V      +QL +  +        S +EL F +H +C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|688605885|ref|XP_003200919.3|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin VR-1&apos;-like isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_003200919</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>2.43141e-09</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>EVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR----PSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>KLYMSTLCKPRETLVKVEDEFSEVMLGHVVPSCVPLQRCGGCCSDEAMVCVNVAKHTTIIQLQQYATDSEGNMAESIIELPFVEHSQCQCR</Hsp_hseq>
+      <Hsp_midline>+++  + C+  E LV V  E+   +     PSCV L RC GCC DE + CV V      +QL +  +        S +EL F +H +C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|109627817|gb|ABG34342.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor B chain-like protein, partial [Danio rerio]</Hit_def>
+  <Hit_accession>ABG34342</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>2.03291e-08</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSY--VELTFSQHVRCECRPLREKMKPER</Hsp_qseq>
+      <Hsp_hseq>MLWPSCVEVQRCSGCCNARTLQCVPVITETRHLQITKIQYINRQPSYEKVVIPVEDHVTCSCQ-LRVPAQPPR</Hsp_hseq>
+      <Hsp_midline>M  PSCV + RC+GCC    L CVPV T    +Q+ KI+  +R PSY  V +    HV C C+ LR   +P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|93277128|ref|NP_001035268.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D precursor [Danio rerio] &gt;gi|528494371|ref|XP_005169367.1| vascular endothelial growth factor D isoform X1 [Danio rerio] &gt;gi|89275688|gb|ABD66223.1| vascular enthelial growth factor D [Danio rerio] &gt;gi|190338290|gb|AAI63164.1| C-fos induced growth factor [Danio rerio] &gt;gi|190339986|gb|AAI63170.1| C-fos induced growth factor [Danio rerio]</Hit_def>
+  <Hit_accession>NP_001035268</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>2.45202e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>PVMRLFPCFLQL--LAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR-----SGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAV</Hsp_qseq>
+      <Hsp_hseq>PDWKLWRCRLKLKHFDDVTPPENRRSTRYAAASFSPEM-LKDIDDEWQKTQCMPRETCVDVAKELGTNTAVFFKPPCVSVFRCGGCCNKEGVTCRNTSMTYVNKTILSVSLAPYISGPEPVLVKIANHTECKCQEHSLIRRHARERHRKNSCSPTR----KPEDKRLCNKGL</Hsp_hseq>
+      <Hsp_midline>P  +L+ C L+L     +  P        +A + S E+ +    + W ++ C   E  VDV  E  +     F P CVS+ RC GCC  E + C       V   +L +      SG  P  V++      +C+   L  +   ER R       R    +P D  LC   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|528468557|ref|XP_005160055.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_005160055</Hit_accession>
+  <Hit_len>395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>4.11218e-08</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI----RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPRQVCLDVGKEFGA-TNTFYKPPCVSVYRCGGCCNSEELQCRNISTSYISKTLFEITVPVKQGTKP--VTISFANHTSCSC</Hsp_hseq>
+      <Hsp_midline>W ++ C   +  +DV  E+ +     + P CVS+ RC GCC  E L C  + T+ ++  L +I    + G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|45387875|ref|NP_991297.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C precursor [Danio rerio] &gt;gi|31088265|gb|AAP44161.1|AF466147_1 vascular endothelial growth factor C [Danio rerio] &gt;gi|89130591|gb|AAI14254.1| Vascular endothelial growth factor c [Danio rerio]</Hit_def>
+  <Hit_accession>NP_991297</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>4.19503e-08</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI----RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPRQVCLDVGKEFGA-TNTFYKPPCVSVYRCGGCCNSEELQCRNISTSYISKTLFEITVPVKQGTKP--VTISFANHTSCSC</Hsp_hseq>
+      <Hsp_midline>W ++ C   +  +DV  E+ +     + P CVS+ RC GCC  E L C  + T+ ++  L +I    + G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|528473928|ref|XP_001336831.4|</Hit_id>
+  <Hit_def>uncharacterized protein pdgfbb isoform X2 [Danio rerio] &gt;gi|1207169809|ref|XP_021329269.1| uncharacterized protein pdgfbb isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_001336831</Hit_accession>
+  <Hit_len>482</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>5.13056e-08</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECRPLREKMKPERRRPKGRGK----RRREKQRPT-DCH</Hsp_qseq>
+      <Hsp_hseq>SNADFLLWPPCVEVQRCSGCCNTKTLQCVPVLTHTRYLQVMKIQYVKKRPLYDKAVVSVLDHVECRCQP---APRPAHRRKSSSQKLDARDRSEKSRPKEDLH</Hsp_hseq>
+      <Hsp_midline>S  + +  P CV + RC+GCC  + L CVPV T    +Q++KI+    RP Y +   S   HV C C+P     +P  RR     K     R EK RP  D H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|528473922|ref|XP_005171668.1|</Hit_id>
+  <Hit_def>uncharacterized protein pdgfbb isoform X1 [Danio rerio] &gt;gi|528473924|ref|XP_005171669.1| uncharacterized protein pdgfbb isoform X1 [Danio rerio] &gt;gi|1207169805|ref|XP_021329258.1| uncharacterized protein pdgfbb isoform X1 [Danio rerio] &gt;gi|1207169807|ref|XP_021329267.1| uncharacterized protein pdgfbb isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_005171668</Hit_accession>
+  <Hit_len>483</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>5.1333e-08</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECRPLREKMKPERRRPKGRGK----RRREKQRPT-DCH</Hsp_qseq>
+      <Hsp_hseq>SNADFLLWPPCVEVQRCSGCCNTKTLQCVPVLTHTRYLQVMKIQYVKKRPLYDKAVVSVLDHVECRCQP---APRPAHRRKSSSQKLDARDRSEKSRPKEDLH</Hsp_hseq>
+      <Hsp_midline>S  + +  P CV + RC+GCC  + L CVPV T    +Q++KI+    RP Y +   S   HV C C+P     +P  RR     K     R EK RP  D H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|120537819|gb|AAI29501.1|</Hit_id>
+  <Hit_def>LOC798657 protein, partial [Danio rerio]</Hit_def>
+  <Hit_accession>AAI29501</Hit_accession>
+  <Hit_len>468</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>9.1856e-08</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSY--VELTFSQHVRCECRPLREKMKPER</Hsp_qseq>
+      <Hsp_hseq>MLWPSCVEVQRCSGCCNARTLQCVPVITETRHLQITKIQYINRQPSYEKVVIPVEDHVTCSCQ-LRVPAQPPR</Hsp_hseq>
+      <Hsp_midline>M  PSCV + RC+GCC    L CVPV T    +Q+ KI+  +R PSY  V +    HV C C+ LR   +P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|688609746|ref|XP_009294732.1|</Hit_id>
+  <Hit_def>adenylate cyclase, terminal-differentiation specific [Danio rerio] &gt;gi|1207192804|ref|XP_021329201.1| adenylate cyclase, terminal-differentiation specific [Danio rerio]</Hit_def>
+  <Hit_accession>XP_009294732</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.3529e-07</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSY--VELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>MLWPSCVEVQRCSGCCNARTLQCVPVITETRHLQITKIQYINRQPSYEKVVIPVEDHVTCSCQ</Hsp_hseq>
+      <Hsp_midline>M  PSCV + RC+GCC    L CVPV T    +Q+ KI+  +R PSY  V +    HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|1207193935|ref|XP_021329643.1|</Hit_id>
+  <Hit_def>uncharacterized protein pdgfbb isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021329643</Hit_accession>
+  <Hit_len>482</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.53255e-07</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECRPLREKMKPERRRP----KGRGKRRREKQRPT-DCH</Hsp_qseq>
+      <Hsp_hseq>SNADFLLWPPCVEVQRCSGCCNTKTLQCVPVLTHTRYLQVMKIQYVKKRPLYDKAVVPVLDHVECRCQP---APRPAHRRKSSSQKQEARDRSEKSRPKEDLH</Hsp_hseq>
+      <Hsp_midline>S  + +  P CV + RC+GCC  + L CVPV T    +Q++KI+    RP Y +       HV C C+P     +P  RR     K   + R EK RP  D H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|1207193931|ref|XP_021329641.1|</Hit_id>
+  <Hit_def>uncharacterized protein pdgfbb isoform X1 [Danio rerio] &gt;gi|1207193933|ref|XP_021329642.1| uncharacterized protein pdgfbb isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021329641</Hit_accession>
+  <Hit_len>483</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.53336e-07</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS-GDRPSYVELTFS--QHVRCECRPLREKMKPERRRP----KGRGKRRREKQRPT-DCH</Hsp_qseq>
+      <Hsp_hseq>SNADFLLWPPCVEVQRCSGCCNTKTLQCVPVLTHTRYLQVMKIQYVKKRPLYDKAVVPVLDHVECRCQP---APRPAHRRKSSSQKQEARDRSEKSRPKEDLH</Hsp_hseq>
+      <Hsp_midline>S  + +  P CV + RC+GCC  + L CVPV T    +Q++KI+    RP Y +       HV C C+P     +P  RR     K   + R EK RP  D H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|1207105920|ref|XP_021324279.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X3 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021324279</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.8967e-06</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>79</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>VDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI----RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>LDVGKEF-GATNTFYKPPCVSVYRCGGCCNSEELQCRNISTSYISKTLFEITVPVKQGTKP--VTISFANHTSCSC</Hsp_hseq>
+      <Hsp_midline>+DV  E+       + P CVS+ RC GCC  E L C  + T+ ++  L +I    + G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|688577507|ref|XP_009304362.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_009304362</Hit_accession>
+  <Hit_len>169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.93833e-05</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>PVMRLFPCFLQL--LAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHC</Hsp_qseq>
+      <Hsp_hseq>PDWKLWRCRLKLKHFDDVTPPENRRSTRYAAASFSPEM-LKDIDDEWQKTQCMPRETCVDVAKELGTNTAVFFKPPCVSVFRCGGCCNKEGVTC</Hsp_hseq>
+      <Hsp_midline>P  +L+ C L+L     +  P        +A + S E+ +    + W ++ C   E  VDV  E  +     F P CVS+ RC GCC  E + C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|115529395|ref|NP_001070225.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor alpha polypeptide b precursor [Danio rerio] &gt;gi|115313085|gb|AAI24289.1| Platelet derived growth factor alpha b [Danio rerio]</Hit_def>
+  <Hit_accession>NP_001070225</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00140581</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSY----VELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTAANFLIWPPCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECIC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P +  + T+++ K+    R       V +    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|528473354|ref|XP_005163793.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor alpha polypeptide b isoform X1 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_005163793</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00149851</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSY----VELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTAANFLIWPPCVEVKRCTGCCNTGNMRCHPSKKQHRTVKVAKVEFASRKKAKLKEVLVRLEDHLECIC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P +  + T+++ K+    R       V +    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|1207105918|ref|XP_021324268.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Danio rerio]</Hit_def>
+  <Hit_accession>XP_021324268</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00511888</Hsp_evalue>
+      <Hsp_query-from>81</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>91</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>53</Hsp_align-len>
+      <Hsp_qseq>RCTGCCGDENLHCVPVETANVTMQLLKI----RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>RCGGCCNSEELQCRNISTSYISKTLFEITVPVKQGTKP--VTISFANHTSCSC</Hsp_hseq>
+      <Hsp_midline>RC GCC  E L C  + T+ ++  L +I    + G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|50417044|gb|AAH78289.1|</Hit_id>
+  <Hit_def>Pdgfaa protein [Danio rerio]</Hit_def>
+  <Hit_accession>AAH78289</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00792046</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTAANFLIWPPCVEVRRCSGCCNTSNMRCHPSKKHHRNVKVAKVEYVRRRPKLREVQVQLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RC+GCC   N+ C P +  +  +++ K   +R   +   V++    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|656214632|ref|NP_919407.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor alpha a precursor [Danio rerio] &gt;gi|688609560|ref|XP_009294688.1| platelet-derived growth factor subunit A [Danio rerio] &gt;gi|1207192771|ref|XP_021329190.1| platelet-derived growth factor subunit A [Danio rerio]</Hit_def>
+  <Hit_accession>NP_919407</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00807279</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTAANFLIWPPCVEVRRCSGCCNTSNMRCHPSKKHHRNVKVAKVEYVRRRPKLREVQVQLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RC+GCC   N+ C P +  +  +++ K   +R   +   V++    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>60006</Statistics_db-num>
+      <Statistics_db-len>39913494</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2339989686</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

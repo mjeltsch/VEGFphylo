@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Poecilia_mexicana</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|961836300|ref|XP_014839118.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014839118</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>222.246</Hsp_bit-score>
+      <Hsp_score>565</Hsp_score>
+      <Hsp_evalue>1.42809e-73</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSL----------DTSLRAHGVHATKHVPEKRPLPIRRKRSI-EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>MRATICCFLLWTTYLLATAEKEVEFPQELIDRLSNSEIHSISDLQRLLEIDSVGTGNEVVEEHKHHKHHNHHKNSSHHHGYYNDLKSSQLHSRRKRSIVEEAVPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECLCTS</Hsp_hseq>
+      <Hsp_midline>MR   C  LL   YL     +E E P+E+I+RL+ S+IHSI DLQRLLEIDSVG+ + +          +    +   H   +  +   L  RRKRSI EEAVPA CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTS+++C PSR HHR+VKVAKVEYVR++PKLKEV VRLE+HLEC C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|961984552|ref|XP_014824499.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014824499</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.756</Hsp_bit-score>
+      <Hsp_score>517</Hsp_score>
+      <Hsp_evalue>2.25428e-66</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRP-LPIRRKRS--IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTG</Hsp_qseq>
+      <Hsp_hseq>MKAAVFHLLTGFFCLLRTAAEESPLPQELLERLSRSEIRSISDLQRLLEMDTVENEVIEETKHSHHKDFFHISPTHKKPHLHTRQRRSTVVEEAVPALCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTNNMRCQAERKQLRTVKVAKVEYVRRRPKLREVEVTLEDHLECTCNNKRHISQNQDRDNG</Hsp_hseq>
+      <Hsp_midline>M+     LL G   L    AEE+ +P+E++ERL+RS+I SI DLQRLLE+D+V +E   +T    H          K+P L  R++RS  +EEAVPA+CK RT IYEIPRSQVDPTSANF+IWPPCVEVKRCTGCCNT++++CQ  R   R+VKVAKVEYVR++PKL+EV+V LE+HLEC C         ++ D G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|961984554|ref|XP_014824500.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014824500</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.073</Hsp_bit-score>
+      <Hsp_score>401</Hsp_score>
+      <Hsp_evalue>4.92481e-49</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>RRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTG</Hsp_qseq>
+      <Hsp_hseq>RRSTVVEEAVPALCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTNNMRCQAERKQLRTVKVAKVEYVRRRPKLREVEVTLEDHLECTCNNKRHISQNQDRDNG</Hsp_hseq>
+      <Hsp_midline>RR   +EEAVPA+CK RT IYEIPRSQVDPTSANF+IWPPCVEVKRCTGCCNT++++CQ  R   R+VKVAKVEYVR++PKL+EV+V LE+HLEC C         ++ D G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|961862041|ref|XP_014845842.1|</Hit_id>
+  <Hit_def>PREDICTED: histone-lysine N-methyltransferase, H3 lysine-79 specific-like isoform X1 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014845842</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.2781</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>4.5074e-21</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEI-DSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIE--EAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>AEGDPLPQSLIDLVWDSPISSVEDLKLLLQQQESSTIEDKED-----------EHDSLLSPIHGRYIRSLEAQQAQKAECKVRTEVMEITRSMVDRSNANFLVWPQCVEVQRCSGCCNSRHLQCVPVVNATRNLKVTKIVYRNQRRFNEDVIIPVVDHVSC</Hsp_hseq>
+      <Hsp_midline>AE   +P+ +I+ +  S I S+ DL+ LL+  +S   ED  D           +H     P+  R  RS+E  +A  A CK RT + EI RS VD ++ANFL+WP CVEV+RC+GCCN+  ++C P     R++KV K+ Y  ++   ++V + + +H+ C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|961862045|ref|XP_014845844.1|</Hit_id>
+  <Hit_def>PREDICTED: G-box-binding factor-like isoform X2 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014845844</Hit_accession>
+  <Hit_len>560</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.5077</Hsp_bit-score>
+      <Hsp_score>223</Hsp_score>
+      <Hsp_evalue>8.33119e-21</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEI-DSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI-EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>AEGDPLPQSLIDLVWDSPISSVEDLKLLLQQQESSTIEDKED-----------EHDSLLSPIHGRYIRSLAQQAQKAECKVRTEVMEITRSMVDRSNANFLVWPQCVEVQRCSGCCNSRHLQCVPVVNATRNLKVTKIVYRNQRRFNEDVIIPVVDHVSC</Hsp_hseq>
+      <Hsp_midline>AE   +P+ +I+ +  S I S+ DL+ LL+  +S   ED  D           +H     P+  R  RS+ ++A  A CK RT + EI RS VD ++ANFL+WP CVEV+RC+GCCN+  ++C P     R++KV K+ Y  ++   ++V + + +H+ C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|961866301|ref|XP_014846970.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC106920463 isoform X3 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014846970</Hit_accession>
+  <Hit_len>378</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.559</Hsp_bit-score>
+      <Hsp_score>179</Hsp_score>
+      <Hsp_evalue>4.5539e-15</Hsp_evalue>
+      <Hsp_query-from>110</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATT</Hsp_qseq>
+      <Hsp_hseq>VDRSNANFLLFPPCEEVQRCSGCCNTKDIQCVSNSTSTRNLTVTKIVYKNKRPTFTKAVVSVVDHVDCRCQPT</Hsp_hseq>
+      <Hsp_midline>VD ++ANFL++PPC EV+RC+GCCNT  ++C  +    R++ V K+ Y  K+P   +  V + +H++C C  T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|961866293|ref|XP_014846968.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC106920463 isoform X1 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014846968</Hit_accession>
+  <Hit_len>421</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>4.73009e-15</Hsp_evalue>
+      <Hsp_query-from>110</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATT</Hsp_qseq>
+      <Hsp_hseq>VDRSNANFLLFPPCEEVQRCSGCCNTKDIQCVSNSTSTRNLTVTKIVYKNKRPTFTKAVVSVVDHVDCRCQPT</Hsp_hseq>
+      <Hsp_midline>VD ++ANFL++PPC EV+RC+GCCNT  ++C  +    R++ V K+ Y  K+P   +  V + +H++C C  T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|961866297|ref|XP_014846969.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC106920463 isoform X2 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014846969</Hit_accession>
+  <Hit_len>420</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>1.31891e-11</Hsp_evalue>
+      <Hsp_query-from>110</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATT</Hsp_qseq>
+      <Hsp_hseq>VDRSNANFLLFPPCEEVQRCSGCCNTKDIQCVSNSTSTRNLTVTKIVFS-KRPSFSKVVVSVVDHVDCICQTT</Hsp_hseq>
+      <Hsp_midline>VD ++ANFL++PPC EV+RC+GCCNT  ++C  +    R++ V K+ +  K+P   +V V + +H++C C TT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|961926824|ref|XP_014862833.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X5 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014862833</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>3.22237e-06</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SAHIPEKA------ERGPHDVIPLMEVYNKSLCQPRELLVDI--LQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQ---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>+ H+PEK       +R   + +P       ++C+ R ++ +I   Q  P     +  P CV +KRC GCC+   ++C P+  ++ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|961926822|ref|XP_014862832.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X4 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014862832</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>1.65016e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRL</Hsp_qseq>
+      <Hsp_hseq>SAHIPEKA------ERGPHDVIPLMEVYNKSLCQPRELLVDI--LQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQ---NDIFMSFTEHSACECRLKT-EVQEKKENVCEPCCDNCAERRKRL</Hsp_hseq>
+      <Hsp_midline>+ H+PEK       +R   + +P       ++C+ R ++ +I   Q  P     +  P CV +KRC GCC+   ++C P+  ++ ++++ +++  R++    ++ +   EH  C C   +     ++E+   P       +RKRL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|961926816|ref|XP_014862831.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014862831</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.14406e-05</Hsp_evalue>
+      <Hsp_query-from>73</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>HVPEKRPLPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>HIPEKA------ERGPHDVIPLMEVYNKSLCQPRELLVDI--LQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQ---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>H+PEK       +R   + +P       ++C+ R ++ +I   Q  P     +  P CV +KRC GCC+   ++C P+  ++ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|961836391|ref|XP_014839142.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014839142</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>3.17497e-05</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>KRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>RRWLEVYSRSGCEPRDTLVEVWREL--PGEIHHLFVPSCVSVKRCGGCCADEALECVPLLTHTLTMELMRTSFM----KHELIELPFVEHSQCEC</Hsp_hseq>
+      <Hsp_midline>+R +E    + C+ R  + E+ R    P   + L  P CV VKRC GCC   +++C P   H  ++++ +  ++    K + +++   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|961926807|ref|XP_014862829.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014862829</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.38098e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SAHIPEKA------ERGPHDVIPLMEVYNKSLCQPRELLVDI--LQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQ---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>+ H+PEK       +R   + +P       ++C+ R ++ +I   Q  P     +  P CV +KRC GCC+   ++C P+  ++ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|961926810|ref|XP_014862830.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014862830</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.97426e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SAHIPEKA------ERGPHDVIPLMEVYNKSLCQPRELLVDI--LQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQ---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>+ H+PEK       +R   + +P       ++C+ R ++ +I   Q  P     +  P CV +KRC GCC+   ++C P+  ++ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|961944074|ref|XP_014867316.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014867316</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000206256</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>125</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFCRTMEKLVEV--VQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTETSNVTMQLLKIR--PSEPGEEYVEMTFVEHKTCEC</Hsp_hseq>
+      <Hsp_midline>+ C+T   + E+   Q  PT    +  P CV + RC GCC   +++C P+   + ++++ K+     +P  + V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|962008431|ref|XP_014830618.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014830618</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000576524</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>CMPREVCVDVGREFGAPT--NVFYKPPCVSVYRCGGCCPSEDKQCRNISTGYLSKTLFEIT-VPLTQGTKPVTISVANHTQCSCLS</Hsp_hseq>
+      <Hsp_midline>C  R V  ++ R    PT  N    PPCV V RC GCC +   +C+     + S  + ++  V      K V + +  H +C+C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|961828425|ref|XP_014837020.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014837020</Hit_accession>
+  <Hit_len>287</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00568708</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>PLPIRRKRSIEEAVPAV-CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PYSLEILKAVEEEWQSIQCMPRETCIDVAQELDSHTSVFFK--PPCVSVHRCGGCCNDEGLTCRNTSTVYVNKTIFSLTPFNLVP--EPVLIKVANHTACRC</Hsp_hseq>
+      <Hsp_midline>P  +   +++EE   ++ C  R    ++ +     TS  F   PPCV V RC GCCN   + C+ +   + +  +  +      P  + V +++  H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|961830153|ref|XP_014837481.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014837481</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00607214</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>236</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKEVQ-----VRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TDVIFWPSCLLVKRCGGNCACCSHRCADCQCVPTRV---TKKYHEVLLLRHRGGGRSLQKSMTDVALEHHEECSCV</Hsp_hseq>
+      <Hsp_midline> + + WP C+ VKRC G   CC+     CQ  P+RV   + K  +V  +R +   + +Q     V LE H EC+C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|961830149|ref|XP_014837479.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Poecilia mexicana]</Hit_def>
+  <Hit_accession>XP_014837479</Hit_accession>
+  <Hit_len>361</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00694788</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>283</Hsp_hit-from>
+      <Hsp_hit-to>355</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKEVQ-----VRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TDVIFWPSCLLVKRCGGNCACCSHRCADCQCVPTRV---TKKYHEVLLLRHRGGGRSLQKSMTDVALEHHEECSCV</Hsp_hseq>
+      <Hsp_midline> + + WP C+ VKRC G   CC+     CQ  P+RV   + K  +V  +R +   + +Q     V LE H EC+C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>41329</Statistics_db-num>
+      <Statistics_db-len>30006543</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2811217365</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

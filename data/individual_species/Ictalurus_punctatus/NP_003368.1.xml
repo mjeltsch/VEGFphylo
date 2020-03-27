@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Ictalurus_punctatus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1042371273|ref|XP_017329904.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017329904</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.8265</Hsp_bit-score>
+      <Hsp_score>242</Hsp_score>
+      <Hsp_evalue>9.80384e-25</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>AQAPVSQ--PDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDR</Hsp_qseq>
+      <Hsp_hseq>AKAPLAQWQPVQTHDSGQVIRWMDVYQRSGCQPRETLVEVWQEFPWETHHLFLPSCVSLRRCGGCCGDEALECVPSHTDTLTMELMKTTYMKHELVRLPFVEHSQCECRP-KADLHTEPTR</Hsp_hseq>
+      <Hsp_midline>A+AP++Q  P       +V+ W+DVY R+ CQPRE +V +  E         +PSCV+++RCGGCC D+ LECVP+    + M+++   Y   +L  +   EHSQCECRP K D   +P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1042371275|ref|XP_017329905.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017329905</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>1.15582e-21</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>IDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>MDVYQRSGCQPRETLVEVWQEFPWETHHLFLPSCVSLRRCGGCCGDEALECVPSHTDTLTMELMKTTYMKHELVRLPFVEHSQCECRPK</Hsp_hseq>
+      <Hsp_midline>+DVY R+ CQPRE +V +  E         +PSCV+++RCGGCC D+ LECVP+    + M+++   Y   +L  +   EHSQCECRPK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1042307478|ref|XP_017350212.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017350212</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.1965</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>4.35523e-21</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRP</Hsp_qseq>
+      <Hsp_hseq>LLQLFCVTLLYFSAVKSAYIPKENGGSTNEIVAFTDVYNKSMCRPREMLVEVHQEYPDDIEHIFIPSCVVLMRCAGCCNDEMLECTPTATRNITLEVQKLKPLRIKRNYP------MSFAEHTDCECRVKKD----IQDRIENTHCKP</Hsp_hseq>
+      <Hsp_midline>L +L    LL  +  ++     +  G   ++V++ DVY ++ C+PRE++V +  E    +    +PSCV + RC GCC D+ LEC PT    + +++  ++       YP      MS  EH+ CECR KK       DR    H +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1042307476|ref|XP_017350211.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017350211</Hit_accession>
+  <Hit_len>252</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>3.0234e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LLQLFCVTLLYFSAVKSAYIPKENGGSTNEIVAFTDVYNKSMCRPREMLVEVHQEYPDDIEHIFIPSCVVLMRCAGCCNDEMLECTPTATRNITLEVQKLKPLRIKRNYP------MSFAEHTDCECRVKK</Hsp_hseq>
+      <Hsp_midline>L +L    LL  +  ++     +  G   ++V++ DVY ++ C+PRE++V +  E    +    +PSCV + RC GCC D+ LEC PT    + +++  ++       YP      MS  EH+ CECR KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1042333175|ref|XP_017311733.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017311733</Hit_accession>
+  <Hit_len>158</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>4.05851e-19</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI--RYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPH</Hsp_qseq>
+      <Hsp_hseq>ILATLLLHIPL-TEVSDTLSMTHS-KVILFHDVWHRSVCRPLERLVEVEQEYPGIVEHILSPRCVPLHRCAGCCNDEELQCTPTLTRNVTIQLVKICPVAWTKQYVELSFLEHHSCECRPKQNHKRCQRQRLSRPY</Hsp_hseq>
+      <Hsp_midline>+LA LL   P    VS   +  H  KV+ + DV+ R+ C+P E +V +  E  G V   L P CV + RC GCC D+ L+C PT    V +Q++ I     + Q  E+S  EH  CECRPK+     +  R + P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1042315399|ref|XP_017351824.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017351824</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>7.70455e-19</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>PDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE----MSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQP</Hsp_qseq>
+      <Hsp_hseq>PKEEKSKNEVVPFMEVYSKSRCNPRETLVDVQSEYPHDTHITYLPSCVVLQRCGGCCNDEALECVPTHTHNITLELYRVK-PG--VGEHKHLLSFTEHTYCDCR-------VKPELKRKKEYRCEP</Hsp_hseq>
+      <Hsp_midline>P     + +VV +++VY+++ C PRE +V +  E         +PSCV +QRCGGCC D+ LECVPT  H + +++  ++ P   +GE    +S  EH+ C+CR       VKP+      +R +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1042376578|ref|XP_017332714.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017332714</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.1814</Hsp_bit-score>
+      <Hsp_score>191</Hsp_score>
+      <Hsp_evalue>5.27658e-18</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKKKDSAVKPDRAATPHH-RPQPR</Hsp_qseq>
+      <Hsp_hseq>LVQVVAAAVLTLTPGQC--SHSGTTNSTSKVILFQEVWGRSFCRTIETLVDVVQEYPGEVEHMYSPSCVPLVRCAGCCGDENLECHPTLTSNVTMQLLKLK-PAEQGQEYVEMTFVEHKSCECRLRKH----------TPKHDRSKPR</Hsp_hseq>
+      <Hsp_midline>L +++ AA+L L P Q   S         KV+ + +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC D+ LEC PT    V MQ+L ++ P+ Q     EM+  EH  CECR +K           TP H R +PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1042304678|ref|XP_017348737.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017348737</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>1.09021e-10</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQIL-MIRYPSSQLGEMSLEEHSQCECRPKKKDS</Hsp_qseq>
+      <Hsp_hseq>DLKKQSDCQPRESLINVYDEFPDEIQYTIVPHCVPLQRCLGCCTDEEQMCMPKRTETVNLEVFRTYSNGTSEIIKLPFLKHTRCQCRHQKKSN</Hsp_hseq>
+      <Hsp_midline>D+  ++ CQPRE ++ +  E    +   +VP CV +QRC GCC D+   C+P     V +++       +S++ ++   +H++C+CR +KK +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1042312423|ref|XP_017316275.1|</Hit_id>
+  <Hit_def>PREDICTED: RNA polymerase II degradation factor 1-like isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017316275</Hit_accession>
+  <Hit_len>581</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.26331e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>AQCKVRTEVMEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKTLKCVAVLTHTRHLQVMKIQYVNMRPVYNKAVVSVNDHVECRCQP</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CV    H   +Q++ I+Y    P      +S+ +H +C C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1042312425|ref|XP_017316278.1|</Hit_id>
+  <Hit_def>PREDICTED: RNA polymerase II degradation factor 1-like isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017316278</Hit_accession>
+  <Hit_len>540</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>1.49225e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>AQCKVRTEVMEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKTLKCVAVLTHTRHLQVMKIQYVNMRPVYNKAVVSVNDHVECRCQP</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CV    H   +Q++ I+Y    P      +S+ +H +C C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1042343353|ref|XP_017314427.1|</Hit_id>
+  <Hit_def>PREDICTED: myb-like protein Q [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017314427</Hit_accession>
+  <Hit_len>476</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>1.62031e-07</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPG-HQRKVVSWIDVYTR--ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LQELLDVHSVEEEEDEDHSNGTHKRLPRSLGDVQMAQPAVCKVRTEVMEVTRSMLDRSNANFLLWPLCVEVQRCSGCCNTRTLQCVPVSTETRHLQMTKIQFVNRQPFYEKVVLPVEDHLSCSCKPR</Hsp_hseq>
+      <Hsp_midline>L  LL +   +    +  + G H+R   S  DV     A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CVP       +Q+  I++ + Q   E   + +E+H  C C+P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1042372397|ref|XP_017330504.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017330504</Hit_accession>
+  <Hit_len>352</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>2.46611e-07</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>239</Hsp_hit-from>
+      <Hsp_hit-to>351</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTR------ATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRY-----PSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>HQKKTRGVVDLNLLREEVRLYSCTPRNYSVSLREELKRTDVI-FWPSCLLVKRCGGNCACCSNNCYECQCTPTKVTKKYHEVLMLKFRPGRGSQKSLTDVALEHHEECNCECKN</Hsp_hseq>
+      <Hsp_midline>HQ+K    +D+          +C PR   V L  EL  T      PSC+ V+RCGG   CC ++  E  C PT   +   ++LM+++         L +++LE H +C C  K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1042353382|ref|XP_017320478.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017320478</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>1.90014e-06</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPREVCLDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEDLQCMNISTSFISKTLFEITVPVKQPPKPVTISFANHTSCSCLSK</Hsp_hseq>
+      <Hsp_midline>+ +  C PREV + +  E          P CV+V RCGGCC  + L+C+      +   +  I  P  Q  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1042353384|ref|XP_017320479.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017320479</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>2.41005e-06</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>55</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPREVCLDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEDLQCMNISTSFISKTLFEITVPVKQPPKPVTISFANHTSCSCLSK</Hsp_hseq>
+      <Hsp_midline>+ +  C PREV + +  E          P CV+V RCGGCC  + L+C+      +   +  I  P  Q  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1042344192|ref|XP_017314631.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017314631</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.98801e-05</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>ANSYSLEVLKAIDEEWQKTQCMPRETCVDVAQELGTSNDMFFKPPCVSVFRCSGCCNKEGVTCRNTSTTYVD-KILLSVVPFKYGPEPMLISVANHTACKCQ</Hsp_hseq>
+      <Hsp_midline>A  +  +V+  ID  + +  C PRE  V +  EL  +      P CV+V RC GCC  +G+ C  T    V  +IL+   P     E   +S+  H+ C+C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1042344190|ref|XP_017314630.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017314630</Hit_accession>
+  <Hit_len>301</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>4.30526e-05</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI---RY-PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>ANSYSLEVLKAIDEEWQKTQCMPRETCVDVAQELGTSNDMFFKPPCVSVFRCSGCCNKEGVTCRNTSTTYVDKILLSVVPFKYGPEPML--ISVANHTACKC</Hsp_hseq>
+      <Hsp_midline>A  +  +V+  ID  + +  C PRE  V +  EL  +      P CV+V RC GCC  +G+ C  T    V   +L +   +Y P   L  +S+  H+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1042343395|ref|XP_017314450.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017314450</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00279219</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>TAANFLIWPPCVEVARCSGCCNTSTMRCHASKKQHRSVKVAKIEYVRRKPKLREVQVQLEDHLECVCMSK</Hsp_hseq>
+      <Hsp_midline>T A  L+ P CV V RC GCC    + C  + +    +++  I Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1042343393|ref|XP_017314449.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017314449</Hit_accession>
+  <Hit_len>238</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00335141</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>TAANFLIWPPCVEVARCSGCCNTSTMRCHASKKQHRSVKVAKIEYVRRKPKLREVQVQLEDHLECVCMSK</Hsp_hseq>
+      <Hsp_midline>T A  L+ P CV V RC GCC    + C  + +    +++  I Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1042299614|ref|XP_017346140.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D [Ictalurus punctatus]</Hit_def>
+  <Hit_accession>XP_017346140</Hit_accession>
+  <Hit_len>362</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0370163</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>297</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>37</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSINLREELKATNA-VFFPRCILVKRCGGNC</Hsp_hseq>
+      <Hsp_midline>+C PR   + L  EL  T A    P C+ V+RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>41907</Statistics_db-num>
+      <Statistics_db-len>28868604</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2611415682</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

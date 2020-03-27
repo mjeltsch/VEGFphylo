@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Chelonia_mydas</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|465956603|gb|EMP27011.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit B [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP27011</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>267.7</Hsp_bit-score>
+      <Hsp_score>683</Hsp_score>
+      <Hsp_evalue>7.46878e-91</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>AEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTR---VTIRTVRVRRPP--KGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>VQGDPIPEDIYKIMSDSSVHSRSDLQRALQIDSVEEDGSNLDLNSTRAHPG---QNLPRGRRSL--VVDAEPAVLAECKTRTEVFEISRSMVDSTNANFVVWPPCVEVQRCSGCCNNRNMQCRPTMVHVRHVQVNKIEFIQKKPIFKKAIVPLEDHLECRCEAL-SSRPSGRGRPGSREHRGESPSITAAPVSVRQ-RARRLPARKRKHRKFKHVHDKKVLKEILTA</Hsp_hseq>
+      <Hsp_midline> +GDPIPE++Y+++SD S+ S  DLQR L  D  EEDG+ LDLN TR+H G   ++L RGRRSL  +  AEPA++AECKTRTEVFEISR ++D TNANF+VWPPCVEVQRCSGCCNNRN+QCRPT V +R VQV KIE ++KKPIFKKA V LEDHL C+CE + ++RP  R   GS+E R ++P      V++R  R RR P  K KHRKFKH HDK  LKE L A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|591381782|ref|XP_007065426.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Chelonia mydas]</Hit_def>
+  <Hit_accession>XP_007065426</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.132</Hsp_bit-score>
+      <Hsp_score>370</Hsp_score>
+      <Hsp_evalue>6.13401e-44</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>184</Hsp_align-len>
+      <Hsp_qseq>RCWALFLSL-CCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELES----LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>RTWACILLIGFCYLPFAFPEEAEIPQELIERLAHSEIHSIRDLQRLLEIDSVGYDDVSETNLRSHSVHSAKHVQENHPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSMKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>R WA  L +  CYL     E   IP+EL E L+   I S  DLQRLL  D  G +D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +++C+P+++  R V+V K+E VRKKP  K+  V LE+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|465965332|gb|EMP30635.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP30635</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>140.198</Hsp_bit-score>
+      <Hsp_score>352</Hsp_score>
+      <Hsp_evalue>1.04923e-39</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>CYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELESL----ARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CFVCLKEAE---IPQELIERLAHSEIHSIRDLQRLLEIDSVGYDDVSETNLRSHSVHSAKHVQENHPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSMKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>C++ L  AE   IP+EL E L+   I S  DLQRLL  D  G +D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +++C+P+++  R V+V K+E VRKKP  K+  V LE+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|465954224|gb|EMP25775.1|</Hit_id>
+  <Hit_def>Peptidyl-prolyl cis-trans isomerase FKBP2 [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP25775</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>1.30025e-05</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>220</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>LVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTI-RTVRVRRPPK</Hsp_qseq>
+      <Hsp_hseq>LLAPSCVPLRRCAGCCADEGLQCVPTRMHVVVMEVMKTRYLHS----HLGQLAFQEHSACEC------RPKTNS--QVNPERPEQPKGKNSIGRKHKRKRPPE</Hsp_hseq>
+      <Hsp_midline>L+ P CV ++RC+GCC +  +QC PT++ +  ++V K   +          +  ++H AC+C      RP T S      +R + P+ + +I R  + +RPP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|465954046|gb|EMP25696.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor D [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP25696</Hit_accession>
+  <Hit_len>605</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.53476e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>228</Hsp_hit-from>
+      <Hsp_hit-to>321</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVA</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFK--PPCVNVFRCGGCCNEESLGCMNTSTTYVSKTLFEISVPLTS-VPEPVPVKIANHTRCRCLSTA</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    E+++ L   TN  F   PPCV V RC GCCN  ++ C  T        + +I +     + +   V + +H  C+C + A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|465965537|gb|EMP30705.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP30705</Hit_accession>
+  <Hit_len>103</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>8.94964e-05</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>86</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEVEHMFSPSCISLQRCTGCCGDETLQCVPVEMANVTMQLLKMKPAGQAPYVE---LSFTEHRQCEC</Hsp_hseq>
+      <Hsp_midline>+    +  P C+ +QRC+GCC +  +QC P ++    +Q+ K++   + P  +   ++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|591352230|ref|XP_007070562.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Chelonia mydas]</Hit_def>
+  <Hit_accession>XP_007070562</Hit_accession>
+  <Hit_len>355</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000151627</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVA</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFK--PPCVNVFRCGGCCNEESLGCMNTSTTYVSKTLFEISVPLTS-VPEPVPVKIANHTRCRCLSTA</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    E+++ L   TN  F   PPCV V RC GCCN  ++ C  T        + +I +     + +   V + +H  C+C + A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|591385378|ref|XP_007067136.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: vascular endothelial growth factor C [Chelonia mydas]</Hit_def>
+  <Hit_accession>XP_007067136</Hit_accession>
+  <Hit_len>414</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000261126</Hsp_evalue>
+      <Hsp_query-from>117</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>NFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTFFKPPCVSIYRCGGCCNSEGLQCMNISTSYISKTLFEITVPLSHGP--KPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>N    PPCV + RC GCCN+  +QC           + +I + +   P  K  TV+  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|465951672|gb|EMP24477.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP24477</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00152401</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>LGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>LGFIKFLEVYERSFCRTIETLVDIFQEYPD--EVEYIFKPSCVPLLRCAGCCGDEGLECVPVE-----VHNVTMEIMRIKPHQSQHIVHMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>LG +   E    + C+T   + +I +   D     ++  P CV + RC+GCC +  ++C P +     V    +EI+R KP   +  V +    H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|591353947|ref|XP_007071333.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Chelonia mydas]</Hit_def>
+  <Hit_accession>XP_007071333</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00360728</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>178</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>PEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDL-NMTRSHSGGELESLARGRRS--LGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEIVRK-KPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>PSALPLDLLNNAVAGFSTVEELIRY--LEPDRWQLDLEDLYRPSWQILGKAYIRGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSLREELKRTDTIF--WPLCLLVKRCGGNCACCHHTCNECQCVPTKVTKKYHEVLQLKPRSGVKGLHKSLTDVPLEHHEECAC</Hsp_hseq>
+      <Hsp_midline>P  L   L ++++  F  ++ L+     E D  +LDL ++ R       ++  RGR+S  +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC++     QC PT+V  +  +V +++     K + K  T V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|465957046|gb|EMP27236.1|</Hit_id>
+  <Hit_def>Placenta growth factor [Chelonia mydas]</Hit_def>
+  <Hit_accession>EMP27236</Hit_accession>
+  <Hit_len>88</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0120672</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>157</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>83</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>PPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIE</Hsp_qseq>
+      <Hsp_hseq>PSCVPLRRCAGCCGDEDLEC--VAVETRPVAMQASE</Hsp_hseq>
+      <Hsp_midline>P CV ++RC+GCC + +++C    V+ RPV ++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>26065</Statistics_db-num>
+      <Statistics_db-len>13045945</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1514540160</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

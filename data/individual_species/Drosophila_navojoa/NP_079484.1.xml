@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Drosophila_navojoa</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1062669678|ref|XP_017957617.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin homolog [Drosophila navojoa]</Hit_def>
+  <Hit_accession>XP_017957617</Hit_accession>
+  <Hit_len>3618</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>8.09881e-11</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>1100</Hsp_hit-from>
+      <Hsp_hit-to>1255</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKI--AEFDTVEDLLKYFNP</Hsp_qseq>
+      <Hsp_hseq>GTIQSPNWPLKYASNSYCTWLIKAPLGQRIELMVHN-FTLESTA-ERCADDYLEIRNGDQSTSPLIGLYCGNR-IPPRIPSFGNALWVRFCSDS-FVEEAGFRITWQHM-----ATGCGGKLNSPTGAI-----HSPHSIEGNRGALACDWQITVAQGSTVQLTLQSRDP</Hsp_hseq>
+      <Hsp_midline>G +QSP +P  Y  N   TW + +    RI+L+  N F LE    + C  D++E+ +  ++++ + G +CG++ +PPRI S  N + + F SD  FV + GF+I +  +     A        S T +I     +SP   +    A A D +I  A+  TV+  L+  +P</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.01567e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>1779</Hsp_hit-from>
+      <Hsp_hit-to>1895</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWES</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPNSYPANVECVWQLETREGNAVELRFE---AMDIVKSEHCNTDFLELRAGLKGPLI--GLYC-DNELPAEPLLVNSTLWIKFRSQAASTAS-GFKLRWSYVHDNELTEGTNGTIES</Hsp_hseq>
+      <Hsp_midline>G + SP +PNSYP N+   W+L ++E   ++L F+    ++  +++ C  DF+E+    +   I  G +C   E+P       + + I F+S     A  GFK+ +S + D +    +    ES</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>7.04466e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1328</Hsp_hit-from>
+      <Hsp_hit-to>1433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHS-QENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GAIETPNFPDKYPANANCEWDIRAGARSNHIQLAF-SHLAVEQLGPSSCDFDYVLLGDYREEQLISERRLCHAKDF--DFTSVGNRVLLRFSSDNSMEAQ-GFRAEYKRL</Hsp_hseq>
+      <Hsp_midline>G +++P FP+ YP N    W + +   +  IQL F +   +E+     C +D+V + D  E   I   R C  K+      S  N++ + F SD+   A+ GF+  Y  L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.89427e-05</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2776</Hsp_hit-from>
+      <Hsp_hit-to>2932</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SASIKALRNANLRRDESNHLTDLYRRDETIQVKGNGYV--QSPRFP-----NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE</Hsp_qseq>
+      <Hsp_hseq>SLEIRLLYHATEYRAESTPFRLQTSKPESLGGWGNIIIVGRQPTPPIKIDAQNYRNNIELSWEFRALGKLSLQLEFQGRFFIEMSPN--CSHDSLEVLQFQQGMWQPLAKYCG-RQMPDPLFISASRMRVVFRTDDQITAD-GFTFVVSPSCDTKLVASTE</Hsp_hseq>
+      <Hsp_midline>S  I+ L +A   R ES        + E++   GN  +  + P  P      +Y  N+ L+W   +     +QL F  +F +E + N  C +D +EV    +       ++CG +++P  +    +++++ F++DD   A  GF    S   D +  A++E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.96284e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>2364</Hsp_hit-from>
+      <Hsp_hit-to>2474</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFP--NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SGIIQSEHYPALGGYPKPAVCEYSILSTANTHIQLNFTDLHLPFAASSDAEALDRIEILDTNDERGIIMTLF-GNRSAPMPITLTTNQVVLRFVTKQLDNKYRGFKLEYQSL</Hsp_hseq>
+      <Hsp_midline>+G +QS  +P    YP+  +  + + S  NT IQL F +      A +D    D +E+ D ++   II   + G++  P  I   TNQ+ + F +        GFK+ Y  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1062685735|ref|XP_017963860.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin homolog [Drosophila navojoa]</Hit_def>
+  <Hit_accession>XP_017963860</Hit_accession>
+  <Hit_len>3791</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.16289e-09</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>1141</Hsp_hit-from>
+      <Hsp_hit-to>1247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>NGMLNSPEYPLNYTNGLDCIWQLRSPIGSQMELQFD-MFELTATRN--CSGDWLEVRNGRSNSSALIGRYCG-TSIPRRIPSFTHDLYLHFHTDDVDSAR-GFRLSWRVFAN</Hsp_hseq>
+      <Hsp_midline>NG + SP +P +Y   L   W+L S   ++++L FD  F L    N  C  D++EV +    S+ + GR+CG   +P RI S T+ + + F +DD   A+ GF++ + +  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>6.05758e-09</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>645</Hsp_hit-from>
+      <Hsp_hit-to>753</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>FEFETHGTLASPGSPGNYPRNRDCQWRLVAPSNKRIKLTF---FSLQLEDHDSCNFDFVSISDAISGQELY--KFCS-RERPAPLLLPTHEAIIRFHSDESGT-DLGFQLHYSAEE</Hsp_hseq>
+      <Hsp_midline> + + +G + SP  P +YPRN    WRL +  N RI+L F   F L+  ++D C +DFV + D      +   ++C  +E P  +   T++  I F SD+      GF+++YS  E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>3.77351e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>532</Hsp_hit-from>
+      <Hsp_hit-to>638</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>GRLRYPPGGDSYEHNSQCAWVIRTNESLVLNVTFES-FDIEDSTE--CRYDWLQINDGRSAASQVIGRYCGNHKPHGGNIISSSNQLYLWFRSDNS-TARAGFDLTWQSME</Hsp_hseq>
+      <Hsp_midline>G ++ P   +SY  N    W + + E+  + + F++ F +E++    CRYD++++ D    ++ + GR+CG HK     I S +NQ+ + F+SD+   A+ GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>4.15447e-07</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>1849</Hsp_hit-from>
+      <Hsp_hit-to>1949</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>SGRFTSPYYPDSYPVNIECEWVVQASAGNSQSLTIES-LDLEQSEG--CNNDYLELREGSPRGALI-GVYCGN-QLPPTIHSK-GSIWIKFKSNDDVVGE-GFMASYN</Hsp_hseq>
+      <Hsp_midline>+G   SP +P+SYP N+   W + +       L  ++   LE++E   C  D++E+ + S    +I G +CG+ ++PP I S+   I I FKS+D  V + GF   Y+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>1.45392e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1595</Hsp_hit-from>
+      <Hsp_hit-to>1716</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTI--------------------IRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>SGIIQSPNYPRPYPRNSECEWQVEVTPHHTIQFSIDN-IDLESGFN--CGWDYVVAYDMSGISVISSIDMDSDTLDESETNQIFKLCGR-AGDVANPKRNESATNRATVRFVTDDS-VQSGGFQITY</Hsp_hseq>
+      <Hsp_midline>+G +QSP +P  YPRN    W++    +  IQ   DN   LE   N  C +D+V   D+S  S I                    + GR  G    P R +S TN+  + F +DD  V   GF+I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.08599e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1254</Hsp_hit-from>
+      <Hsp_hit-to>1366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPR----IKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>IGNEGVITSPNYPSTYPHNAQCEWQLRVHPGSSIQIVIED---LEMEALDDCGYDYLRIYSGGRNTRLLDQPYTALCSTPDENSRVLHVDENEAVIVFHSDNS-NAERGFRLSYSTV</Hsp_hseq>
+      <Hsp_midline>+   G + SP +P++YP N    W+L     + IQ+V ++   LE    D C YD++ +      + ++   +      P      +    N+  I F SD+   A+ GF++ YS +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.31743e-05</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>2329</Hsp_hit-from>
+      <Hsp_hit-to>2443</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA---------ENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>ISSPNYPNLPNPHSECVWRISAPSHHRIAVQFVGTFDLTPSSNGNGNSSEEDDGCDREFVQLNDGSTELMPQLGRYCGNRK-PDIVYSSGSELRIKFYT-SVLEPRPGFQALVKLAD</Hsp_hseq>
+      <Hsp_midline>+ SP +PN    +    WR+ +  + RI + F   F L  +         E+D C  +FV++ D S       GR+CG+++ P  + S  ++++I F +      +PGF+    L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1062654583|ref|XP_017967730.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin isoform X5 [Drosophila navojoa]</Hit_def>
+  <Hit_accession>XP_017967730</Hit_accession>
+  <Hit_len>798</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>4.03611e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00283671</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFD-HFKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD  F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1062654576|ref|XP_017967729.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin isoform X4 [Drosophila navojoa]</Hit_def>
+  <Hit_accession>XP_017967729</Hit_accession>
+  <Hit_len>833</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>4.26213e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00238328</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1062654567|ref|XP_017967726.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin isoform X1 [Drosophila navojoa]</Hit_def>
+  <Hit_accession>XP_017967726</Hit_accession>
+  <Hit_len>933</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>4.37409e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0021339</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFD-HFKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD  F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>9920</Statistics_db-num>
+      <Statistics_db-len>5950568</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1369519952</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

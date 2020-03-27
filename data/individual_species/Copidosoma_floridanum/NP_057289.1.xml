@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Copidosoma_floridanum</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1317161333|ref|XP_023248481.1|</Hit_id>
+  <Hit_def>cubilin-like [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_023248481</Hit_accession>
+  <Hit_len>3764</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.09851e-09</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>2910</Hsp_hit-from>
+      <Hsp_hit-to>3015</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-----------EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGF</Hsp_qseq>
+      <Hsp_hseq>IRSPGFPQSYPNNTECIWEIMA-KNGYHVGLTFVERFNLETSKD--CQNDYVEVYAWQEVAHNNTDESNHWKSLGKVCGRTPPEEPFNSTNNRMRVKFVSNEKIEGE-GF</Hsp_hseq>
+      <Hsp_midline>I SP FP +YP NT  +W ++A +    + LTF ERF LE  +D  C+ D+VEV           +E +    LG+ CG         S  N++R++FVS+E    E GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>3.32335e-09</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1120</Hsp_hit-from>
+      <Hsp_hit-to>1223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GYIRSPNYPDKYPKNKECIW-VIEAESKYLVTLKFNS-FQLENVSN--CAYDYLEIRSGSRDNSPLLGKFCGD-RIEDEITSMTNQMYIRFVSDASL-QKKGFEIQWNSV</Hsp_hseq>
+      <Hsp_midline>G I SP +P  YP+N   +W ++  E    + L F+  F LE+  +  C YD++E+   S  +  +LG++CG   +  +  S  NQ+ IRFVSD     + GF I +N V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>6.56278e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>1592</Hsp_hit-from>
+      <Hsp_hit-to>1695</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>SGVIHSAKYPKNYPPNQNCEW-LITVDPNHVVNLTFVD---LDLEKSRNCSDDYIKVFDGNSTAALVLGTHCLNTEGLPYYVSSGNQILVKMRTDA-LVSAKGFMAHYN</Hsp_hseq>
+      <Hsp_midline>+G IHS ++P  YP N    W L+ V+ N  + LTF +   L+  +   C  D+++V +   +   +LG  C +       +S GNQI ++  +D    S  GF  HYN</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.41349e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>2318</Hsp_hit-from>
+      <Hsp_hit-to>2405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ITSPNYPNIPAPHTECVWTFMSMDTHR-LSIHFTDRFDLAFSED--CEKEYVEVRDGGTDDSPLMGRYCKT-TPPSSLSTKGNILYVRYFTD</Hsp_hseq>
+      <Hsp_midline>I SP +P+    +T  VW  ++++ +  + + F +RF L   ED  C+ ++VEV +    D  ++GR+C + T P    +KGN + +R+ +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>8.26914e-05</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1233</Hsp_hit-from>
+      <Hsp_hit-to>1336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG--RWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>TSSGSIISPNYPQNYYHRAACTWN-IRVSAGSVIRITFTD-FDIEDHMR--CAFDYLEISDIVNGYSQNTHRYCGSNS-PALIESNSNQMKLLFRSD-VLTNARGFHLRY</Hsp_hseq>
+      <Hsp_midline>+++GSI SP +P  Y       W  + V     I++TF + F +ED     C +D++E+ +  +G      R+CGS + P    S  NQ+++ F SD    +  GF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000242733</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>1824</Hsp_hit-from>
+      <Hsp_hit-to>1927</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEP-GFCIHYNIVM</Hsp_qseq>
+      <Hsp_hseq>GIIASPNYPLSYPSAADCIWNIRNSPGNR-ITLTF-ESFELQESEN--CDIDYLEIRENNGIGKLRGVFCGKNI---QSITSSQPLWIRFKSASNTVGNPKGFAAEYSLLF</Hsp_hseq>
+      <Hsp_midline>G I SP +P +YP     +W +     N  I LTF E F L++ E+  C  D++E+ E +  G + G +CG      + I+    + IRF S       P GF   Y+++ </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000364933</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>3036</Hsp_hit-from>
+      <Hsp_hit-to>3156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY-------NIVMPQFTEAVSPSVL</Hsp_qseq>
+      <Hsp_hseq>IESPNFQASYPSNTLCNYTLVSSGDQADIVVDFTNF--LIEGNGVSCIYDNLTINTFYNGDWLRDSSVWCGSNS-PGRKISAG-KMEIIFKTDSSINRE-GFKFKYQLNDCGGNITKPRL---ISPMIL</Hsp_hseq>
+      <Hsp_midline>I SP F  +YP NT+  + LV+  +   I + F     L +     C YD + +    +G  L     WCGS + PG++IS G ++ I F +D     E GF   Y       NI  P+    +SP +L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>8</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000824343</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>1349</Hsp_hit-from>
+      <Hsp_hit-to>1451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD---GTILGRWCG--SGTVPGKQISKGNQIRIRFVSDEYFPSEPGF</Hsp_qseq>
+      <Hsp_hseq>GVIESPNFPQNYENLSNCTWIISAPAGNT-VNITF-SHFHVQASLDGNCKKDYVKIQEGDDNQPNTEIITKCGHEEDVLPLKISSSQRQVFVTFMSDR-FVTASGF</Hsp_hseq>
+      <Hsp_midline>G I SP FP  Y   +   W + A   N  + +TF   F ++   D  CK D+V+++E  D    T +   CG     +P K  S   Q+ + F+SD  F +  GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>9</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00304696</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>750</Hsp_hit-from>
+      <Hsp_hit-to>859</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPH-TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VYTAERGEIVSPGYASGSYSSNMICDWE-IRLPEGSHVRINW---LNFEVERSRNCMFDSVQVYEGPNKDSPLIGRYCGSALPPSLSV-KSNRVLLRFESDANL-EEKGFILKYEV</Hsp_hseq>
+      <Hsp_midline>+  +  G I SP +   +Y  N +  W  + + E   +++ +      E      C +D V+V E    D  ++GR+CGS   P   + K N++ +RF SD     E GF + Y +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1317162540|ref|XP_023245166.1|</Hit_id>
+  <Hit_def>tolloid-like protein 2 [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_023245166</Hit_accession>
+  <Hit_len>1278</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>7.17034e-08</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>782</Hsp_hit-from>
+      <Hsp_hit-to>876</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VKVDGLGHLESPNYPEEYQSSKECVWRLTA-PQDYQVALKF-QSFEIE--SHDNCVYDYVEVRDGHSADSALIGVYCGY-KLPTDVRSSGNKLLVKFVSD</Hsp_hseq>
+      <Hsp_midline>+ V   G + SP +P  Y  +   VWRL A  ++  + L F + F +E    D C YD+VEV +   +D  ++G +CG   +P    S GN++ ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>4.0248e-07</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>940</Hsp_hit-from>
+      <Hsp_hit-to>1036</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVA-VEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEEPSDGTI---LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SNNGTITSPSFPETYPNNKHCVWEIIAPVQYRITLNFT---HFDLEGNNVYEQPCEYDWVEVASKLSDDVHKKHGIFCGS-RPPPLITSEGNSLKVVFSSD</Hsp_hseq>
+      <Hsp_midline>S NG+I SP FP TYP N   VW ++A V+  + +  T    F LE  +  +  C+YD+VEV       +    G +CGS   P    S+GN +++ F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.47964e-05</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>691</Hsp_hit-from>
+      <Hsp_hit-to>777</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>WRITANHGERILLNITY-----LDIYKSDFCRSDYLEIRDGYWHKSHVLGRFCGNGQMPAPVMSMGSRMLVTYVASARQSGHGGFTASYEAV</Hsp_hseq>
+      <Hsp_midline>WR+ A   E + + +T+     L+  + D C+ D++E+ +       +LGR+CG+G +P   +S G+++ + +V+        GF   Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1317169864|ref|XP_023248127.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106641909 [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_023248127</Hit_accession>
+  <Hit_len>897</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>9.75918e-05</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVP</Hsp_qseq>
+      <Hsp_hseq>SIKQEFYSPGYPEPYPKN-ISCFRVLEADPGMVLKVEFRDNFELEDQEK--CSYDYLEVRDGKYGYSRLIGKFCRAFPFP</Hsp_hseq>
+      <Hsp_midline>S     +SP +P  YP+N +  +R++  +  + +++ F + F LED E   C YD++EV +   G   ++G++C +   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1317161420|ref|XP_023248510.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106640542 [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_023248510</Hit_accession>
+  <Hit_len>766</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00318042</Hsp_evalue>
+      <Hsp_query-from>252</Hsp_query-from>
+      <Hsp_query-to>340</Hsp_query-to>
+      <Hsp_hit-from>553</Hsp_hit-from>
+      <Hsp_hit-to>634</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>PRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCR</Hsp_qseq>
+      <Hsp_hseq>PRAKVVPVREVYPNSTATYIPHCAIVHRCSDDTGCCRSETLTCEAKQTHNVELYFYVTHIHGATAIEKL-------SFTNHTECECIER</Hsp_hseq>
+      <Hsp_midline>PR   V +RE    +   + P C +V RC  +  CC      C+   +   + Y  V  +   T +  L       +  +H EC+C+ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|936607330|ref|XP_014217638.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1, partial [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_014217638</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00523601</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAV-EENVWIQL-TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>VKRTGNILSPTYPGTYPKDIVCSYQFVGKPRQRVRLEFRDFDLFFG--GPH---CPFDYVKVYDGINNTSAVIGTYCG</Hsp_hseq>
+      <Hsp_midline>V   G+I SP +P TYP++ V  ++ V    + V ++   FD  FG   P    C +D+V+V +  + T  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|936603441|ref|XP_014215514.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106644503 [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_014215514</Hit_accession>
+  <Hit_len>914</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0112803</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>201</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLED---------PEDDI------CKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFP-SEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VQSPAYPGIYPRALHCKYRLNTRQPFIKLYIE-NEEFNIDGQRCENIMTCPMRPISSGAEHCPYDYIRIYDGLNETAPVIGTFCGMGKFPYSIIGTGQDLYVEFVSSPAGPLLNTGF--HFNV</Hsp_hseq>
+      <Hsp_midline>+ SP +P  YPR     +RL   +  + + +  +E F ++          P   I      C YD++ + +  + T  ++G +CG G  P   I  G  + + FVS    P    GF  H+N+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1317170254|ref|XP_023248295.1|</Hit_id>
+  <Hit_def>cubilin [Copidosoma floridanum]</Hit_def>
+  <Hit_accession>XP_023248295</Hit_accession>
+  <Hit_len>1039</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0165363</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>426</Hsp_hit-from>
+      <Hsp_hit-to>560</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>GLLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTN----GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE------------RFGLEDPEDDICKYDFVEVEEP-SDGT--ILGRWCGSGTVPG</Hsp_qseq>
+      <Hsp_hseq>GPRLVMVFSSGEQQGRGFKAN----YTFETEYRIPGTAAPDGTCTFTYRSSSRKRGEFNSPRYPSNYPSDTNCTYLFLAT-PNEQVTLVFDHFKIRTKNFNVSGHYGVE-----YCQDDWVEIYNMYRDDTEKLIGRYCGM-TAPG</Hsp_hseq>
+      <Hsp_midline>G  L+    +G++QG   ++N    + F +     G   P      T  ++    G  +SPR+P  YP +T   +  +A   N  + L FD              +G+E      C+ D+VE+     D T  ++GR+CG  T PG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0177247</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>189</Hsp_hit-from>
+      <Hsp_hit-to>261</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAV-EENVWIQL-TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>VKRTGNILSPTYPGTYPKDIVCSYQFVGKPRQRVRLEFRDFDLFFG--GPH---CPFDYVKVYDGINNTSAVIGTYCG</Hsp_hseq>
+      <Hsp_midline>V   G+I SP +P TYP++ V  ++ V    + V ++   FD  FG   P    C +D+V+V +  + T  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>14999</Statistics_db-num>
+      <Statistics_db-len>8732385</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1793833301</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

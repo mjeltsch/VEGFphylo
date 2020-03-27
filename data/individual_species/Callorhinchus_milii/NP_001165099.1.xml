@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Callorhinchus_milii</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A121 NP_001165099.1 vascular endothelial growth factor A isoform n precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>147</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A121 NP_001165099.1 vascular endothelial growth factor A isoform n precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>147</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|632953626|ref|XP_007892526.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007892526</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.94</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>1.03871e-55</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD-----RARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>MNSLLNVINRAFLVFLYFRSV-WTAFIP-SEGPHKN--EVIKFMDVWNKSYCRTIETLVEILQEHPDQVEYIFKPACVPLLRCGGCCNDESLECVPTELHNVTMQIMKIKPHHAEHIAEMHFVQHSKCVCRPKRESKEPPKSRCEPCTERRK</Hsp_hseq>
+      <Hsp_midline>MN LL+ ++ +  + LY     W+   P +EG  +N  EV+KFMDV+ +SYC  IETLV+I QE+PD++EYIFKP+CVPL+RCGGCCNDE LECVPTE  N+TMQIM+IKPH  +HI EM F+QH+KC CRPK++     ++R E C + R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|632953624|ref|XP_007892525.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007892525</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.555</Hsp_bit-score>
+      <Hsp_score>436</Hsp_score>
+      <Hsp_evalue>3.38967e-55</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD</Hsp_qseq>
+      <Hsp_hseq>MNSLLNVINRAFLVFLYFRSV-WTAFIP-SEGPHKN--EVIKFMDVWNKSYCRTIETLVEILQEHPDQVEYIFKPACVPLLRCGGCCNDESLECVPTELHNVTMQIMKIKPHHAEHIAEMHFVQHSKCVCRPKRE</Hsp_hseq>
+      <Hsp_midline>MN LL+ ++ +  + LY     W+   P +EG  +N  EV+KFMDV+ +SYC  IETLV+I QE+PD++EYIFKP+CVPL+RCGGCCNDE LECVPTE  N+TMQIM+IKPH  +HI EM F+QH+KC CRPK++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|632985818|ref|XP_007909895.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X3 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007909895</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>128.642</Hsp_bit-score>
+      <Hsp_score>322</Hsp_score>
+      <Hsp_evalue>4.90461e-38</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIG---EMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>EVILFEEVWNRSYCRTIEVLVDVIKEYPSESAYIFKPSCVPLFRCAGCCGDEKLQCTAQETHNITMQIIKLKP--SEHVTQQEEKTFTEHSSCECRPRRKRLKGERRNSKRR</Hsp_hseq>
+      <Hsp_midline>EV+ F +V+ RSYC  IE LVD+ +EYP E  YIFKPSCVPL RC GCC DE L+C   E  NITMQI+++KP   +H+    E +F +H+ CECRP++ R + E+ +  RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|632985814|ref|XP_007909892.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X1 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007909892</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.872</Hsp_bit-score>
+      <Hsp_score>320</Hsp_score>
+      <Hsp_evalue>1.15544e-37</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIG---EMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>EVILFEEVWNRSYCRTIEVLVDVIKEYPSESAYIFKPSCVPLFRCAGCCGDEKLQCTAQETHNITMQIIKLKP--SEHVTQQEEKTFTEHSSCECRPRRKRLKGERRNSKRR</Hsp_hseq>
+      <Hsp_midline>EV+ F +V+ RSYC  IE LVD+ +EYP E  YIFKPSCVPL RC GCC DE L+C   E  NITMQI+++KP   +H+    E +F +H+ CECRP++ R + E+ +  RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|632985816|ref|XP_007909894.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X2 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007909894</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.487</Hsp_bit-score>
+      <Hsp_score>319</Hsp_score>
+      <Hsp_evalue>2.07543e-37</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIG---EMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>EVILFEEVWNRSYCRTIEVLVDVIKEYPSESAYIFKPSCVPLFRCAGCCGDEKLQCTAQETHNITMQIIKLKP--SEHVTQQEEKTFTEHSSCECRPRRKRLKGERRNSKRR</Hsp_hseq>
+      <Hsp_midline>EV+ F +V+ RSYC  IE LVD+ +EYP E  YIFKPSCVPL RC GCC DE L+C   E  NITMQI+++KP   +H+    E +F +H+ CECRP++ R + E+ +  RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|632985820|ref|XP_007909896.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X4 [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007909896</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.176</Hsp_bit-score>
+      <Hsp_score>313</Hsp_score>
+      <Hsp_evalue>4.9927e-37</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIG---EMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>EVILFEEVWNRSYCRTIEVLVDVIKEYPSESAYIFKPSCVPLFRCAGCCGDEKLQCTAQETHNITMQIIKLKP--SEHVTQQEEKTFTEHSSCECRPRRKRLKGERRNSKRR</Hsp_hseq>
+      <Hsp_midline>EV+ F +V+ RSYC  IE LVD+ +EYP E  YIFKPSCVPL RC GCC DE L+C   E  NITMQI+++KP   +H+    E +F +H+ CECRP++ R + E+ +  RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|632956751|ref|XP_007894115.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007894115</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.3294</Hsp_bit-score>
+      <Hsp_score>181</Hsp_score>
+      <Hsp_evalue>2.72506e-16</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>PMAEGGGQNHHEVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI--KPHQGQHIGEMSFLQHNKCECRPKKDRARQ</Hsp_qseq>
+      <Hsp_hseq>PVTFAAIYSNPEILRSIDIEWKKTQCMPREVCLDVGKEFGSPTNTIFKPSCVSIYRCGGCCNSEGLICTNTSTSHVPKSLFEIVMPLSQGAKPVTISVANHTSCRCMSKLDHFRQ</Hsp_hseq>
+      <Hsp_midline>P+      ++ E+++ +D+ ++++ C P E  +D+ +E+      IFKPSCV + RCGGCCN EGL C  T  S++   +  I     QG     +S   H  C C  K D  RQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|632967841|ref|XP_007900204.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007900204</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>6.29138e-16</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LHHAKWSQAAPMAEGGGQ--------NHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQ--HIGEMSFLQHNKCECRPKKD</Hsp_qseq>
+      <Hsp_hseq>LERKSWAAQYKTSQGSGAEAAVFMMWNKEDLKNIELEWEKTQCKPREVCLDVGKELGPTTNTFYKPPCVSVHRCGGCCNNEGLQCVNVSIAFVSKTLMEIKLPKAQIPRPVTVSFLNHTACRCQPKPD</Hsp_hseq>
+      <Hsp_midline>L    W+     ++G G         N  ++      ++++ C P E  +D+ +E        +KP CV + RCGGCCN+EGL+CV    + ++  +M IK  + Q      +SFL H  C C+PK D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|632949212|ref|XP_007890019.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007890019</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>4.07057e-11</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>EVVKFMD-VYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI</Hsp_qseq>
+      <Hsp_hseq>EILKSIDDEWQKTQCVPRESCVDVAKELGRSTNTFFKPPCVSVYRCGGCCNEEGLVCKNISTSYISKALFEI</Hsp_hseq>
+      <Hsp_midline>E++K +D  +Q++ C P E+ VD+ +E        FKP CV + RCGGCCN+EGL C     S I+  +  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|632943102|ref|XP_007886775.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007886775</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>3.5011e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>HPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQ---HIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>RPISVEIPRYKVDPSSAGFFLWPSCVEVDRCSGCCNTKTYKCIPSLTQFKSFQIAKLTYRYGRKELSVHTVTVQEHISCNC</Hsp_hseq>
+      <Hsp_midline> PI   +  ++  P    +   PSCV + RC GCCN +  +C+P+     + QI ++    G+    +  ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|632990669|ref|XP_007884275.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like, partial [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007884275</Hit_accession>
+  <Hit_len>135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00109046</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>107</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESN----ITMQIMRIKPHQGQHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>FLIWPSCVEVQRCSGCCNTKIYQCQPSVQQTRRVLIIKKNLRRRKLESSKI-EVILVDHVECQC</Hsp_hseq>
+      <Hsp_midline>++  PSCV + RC GCCN +  +C P+ +      I  + +R +  +   I E+  + H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|632952246|ref|XP_007891746.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007891746</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.00941674</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTGSIKCHPSRIHHRSVKVAKVEYIRRKPRLKEVI--VGLEEHLECAC</Hsp_hseq>
+      <Hsp_midline>P    ++  P CV + RC GCCN   ++C P+   + ++++ ++     KP   + I  +   +H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|632972365|ref|XP_007902621.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D [Callorhinchus milii]</Hit_def>
+  <Hit_accession>XP_007902621</Hit_accession>
+  <Hit_len>367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.113</Hsp_bit-score>
+      <Hsp_score>74</Hsp_score>
+      <Hsp_evalue>0.0541498</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>239</Hsp_hit-from>
+      <Hsp_hit-to>359</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>GGQNHHE------VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGG--CCNDE---GLECVPTEESNITMQIMRIKPHQGQ-------------HIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>GRTFHHERRTKADLNRMNDDVKRYSCTPRNYSVNLREEL-KQTNAVFFPRCLLVQRCGGNCACGTEHWRSCTCMPAKTVMKYHEVLRFVPEPGQPGQQRRRNKKKNINMVDIQLAHHERCDC</Hsp_hseq>
+      <Hsp_midline>G   HHE      + +  D  +R  C P    V++ +E   +   +F P C+ + RCGG   C  E      C+P +      +++R  P  GQ             ++ ++    H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>26984</Statistics_db-num>
+      <Statistics_db-len>16070142</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>747318770</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

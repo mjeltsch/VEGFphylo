@@ -1,0 +1,1786 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Camelus_ferus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|528768298|gb|EPY87957.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform 1 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY87957</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>353.599</Hsp_bit-score>
+      <Hsp_score>906</Hsp_score>
+      <Hsp_evalue>5.41537e-124</Hsp_evalue>
+      <Hsp_query-from>166</Hsp_query-from>
+      <Hsp_query-to>345</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>166</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>180</Hsp_align-len>
+      <Hsp_qseq>QFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTGG</Hsp_qseq>
+      <Hsp_hseq>QFTETVSPSVLPAAALPLDLLNNAVTAFSTLEDLIRYLEPDRWQLDLEDLYRPTWQLLGKAFVFGRKSRAVDLNLLKEEARLYSCTPRNFSVSVREELKRADTIFWPGCLLVKRCGGNCACCLHTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGNAGG</Hsp_hseq>
+      <Hsp_midline>QFTE VSPSVLP +ALPLDLLNNA+TAFSTLEDLIRYLEP+RWQLDLEDLYRPTWQLLGKAFVFGRKSR VDLNLL EE RLYSCTPRNFSVS+REELKR DTIFWPGCLLVKRCGGNCACCLH C+ECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRG+ GG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|560920085|ref|XP_006186262.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006186262</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>284.263</Hsp_bit-score>
+      <Hsp_score>726</Hsp_score>
+      <Hsp_evalue>5.09981e-94</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>364</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>328</Hsp_align-len>
+      <Hsp_qseq>EQNGVQD-PQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-------------------SPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP---KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>ESNHLTDLYRRDETIPVTGHGHVQSPRFPNSYPRNLLLTWRLHS-QEKTRIQLAFDNQFGLEEAENDICRYDFVEVEDISETSTVIRGRWCGHKEVPPRITSRTNQIKITFKSDDYFVAKPGFKIYYSFV-EDFQPAAASETNWESVTSSISGVSYHSPSVTDPT-LTADALDKTVAEFDTVEDLLKHFNPESWQEDLENLYLDTPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLTNVVFFPRCLLVQRCGGNCGCGTVNWKSCTCSSGKTVKKYHEVLKFEPGHFKRRGRAKHMALVDIQLDHHERCDCIC</Hsp_hseq>
+      <Hsp_midline>E N + D  + +  I V+ +G + SPRFP++YPRN +L WRL + +E   IQL FD +FGLE+ E+DIC+YDFVEVE+ S+ +  I GRWCG   VP +  S+ NQI+I F SD+YF ++PGF I+Y+ V   F  A                    SPSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK T+ +F+P CLLV+RCGGNC C   N   C C   K  KKYHEVL+  P   K   R  H +L D+ L+HHE CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|560920087|ref|XP_006186263.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X2 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006186263</Hit_accession>
+  <Hit_len>364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>283.878</Hsp_bit-score>
+      <Hsp_score>725</Hsp_score>
+      <Hsp_evalue>7.52008e-94</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>358</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>319</Hsp_align-len>
+      <Hsp_qseq>QHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-------------------SPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP---KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>RRDETIPVTGHGHVQSPRFPNSYPRNLLLTWRLHS-QEKTRIQLAFDNQFGLEEAENDICRYDFVEVEDISETSTVIRGRWCGHKEVPPRITSRTNQIKITFKSDDYFVAKPGFKIYYSFV-EDFQPAAASETNWESVTSSISGVSYHSPSVTDPT-LTADALDKTVAEFDTVEDLLKHFNPESWQEDLENLYLDTPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLTNVVFFPRCLLVQRCGGNCGCGTVNWKSCTCSSGKTVKKYHEVLKFEPGHFKRRGRAKHMALVDIQLDHHERCDCIC</Hsp_hseq>
+      <Hsp_midline>+ +  I V+ +G + SPRFP++YPRN +L WRL + +E   IQL FD +FGLE+ E+DIC+YDFVEVE+ S+ +  I GRWCG   VP +  S+ NQI+I F SD+YF ++PGF I+Y+ V   F  A                    SPSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK T+ +F+P CLLV+RCGGNC C   N   C C   K  KKYHEVL+  P   K   R  H +L D+ L+HHE CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|528768299|gb|EPY87958.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000204015 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY87958</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.872</Hsp_bit-score>
+      <Hsp_score>320</Hsp_score>
+      <Hsp_evalue>2.04718e-35</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>70</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>LEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>MRKGKQSLTRYDFVEVEEPSDGSVLGRWCGSGSVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYSIVVP</Hsp_hseq>
+      <Hsp_midline>+   +  + +YDFVEVEEPSDG++LGRWCGSG+VPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY+IV+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|528760305|gb|EPY79964.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000877043 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY79964</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.331</Hsp_bit-score>
+      <Hsp_score>316</Hsp_score>
+      <Hsp_evalue>2.71737e-34</Hsp_evalue>
+      <Hsp_query-from>236</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>139</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP---KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>VDLDRLNDDVKRYSCTPRNYSVNLREELKLTNVVFFPRCLLVQRCGGNCGCGTVNWKSCTCSSGKTVKKYHEVLKFEPGHFKRRGRAKHMALVDIQLDHHERCDCIC</Hsp_hseq>
+      <Hsp_midline>VDL+ L ++V+ YSCTPRN+SV++REELK T+ +F+P CLLV+RCGGNC C   N   C C   K  KKYHEVL+  P   K   R  H +L D+ L+HHE CDC+C</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>2.31457e-07</Hsp_evalue>
+      <Hsp_query-from>172</Hsp_query-from>
+      <Hsp_query-to>234</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>69</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>SPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSR</Hsp_qseq>
+      <Hsp_hseq>SPSVTDPT-LTADALDKTVAEFDTVEDLLKHFNPESWQEDLENLYLDTPHYRGRSY-HDRKSK</Hsp_hseq>
+      <Hsp_midline>SPSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|528764860|gb|EPY84519.1|</Hit_id>
+  <Hit_def>Bone morphogenetic protein 1 precursor-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY84519</Hit_accession>
+  <Hit_len>915</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.4698</Hsp_bit-score>
+      <Hsp_score>158</Hsp_score>
+      <Hsp_evalue>1.42328e-11</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>586</Hsp_hit-from>
+      <Hsp_hit-to>687</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVA-VEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGSITSPGWPKEYPPNKNCIWQLVAPTQYRISLQFDFFETEG-----NDVCKYDFVEVRSGLTADSKLHGKFCGS-EKPEVITSQYNNMRVEFKSDNTV-SKKGFKAHF</Hsp_hseq>
+      <Hsp_midline>NGSI SP +P  YP N   +W+LVA  +  + +Q  F E  G     +D+CKYDFVEV     +D  + G++CGS   P    S+ N +R+ F SD    S+ GF  H+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.49056e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>430</Hsp_hit-from>
+      <Hsp_hit-to>531</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGHIQSPNYPDDYRPSKVCIWR-IQVSEGFHVGLTF-QSFEIE--RHDSCAYDYLEVRDGHSESSTLIGRYCGY-EKPDDIKSTSSRLWLKFVSDGSI-NKAGFAVNF</Hsp_hseq>
+      <Hsp_midline>NG I SP +P  Y  + V +WR + V E   + LTF + F +E    D C YD++EV +      T++GR+CG    P    S  +++ ++FVSD    ++ GF +++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>3.43544e-07</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>739</Hsp_hit-from>
+      <Hsp_hit-to>831</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TSTSGTITSPNWPDKYPSKKECTWAISSTPGHR-VKLTFTEMDIESQPE---CAYDHLEVYDGRDAKAPVLGRFCGSKK-PEPVLATGSRMFLRFYSD</Hsp_hseq>
+      <Hsp_midline> ST+G+I SP +P  YP      W + +   +  ++LTF E      PE   C YD +EV +  D    +LGR+CGS   P   ++ G+++ +RF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00351307</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>316</Hsp_hit-from>
+      <Hsp_hit-to>421</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>STGNFSSPEYPNGYSAHMHCVWRISVTPGEKIILNFT-----SMDLYRSRLCWYDYVEVRDGFWRKAPLRGRFCG-GKLPEPIVSTDSRLWVEFRSSSNWVGKGFFAVYEAI</Hsp_hseq>
+      <Hsp_midline>+ G+  SP +P+ Y  +   VWR+ V   E + +  T      ++     +C YD+VEV +       + GR+CG G +P   +S  +++ + F S   +  +  F ++  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|528769089|gb|EPY88748.1|</Hit_id>
+  <Hit_def>tolloid-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY88748</Hit_accession>
+  <Hit_len>976</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.4698</Hsp_bit-score>
+      <Hsp_score>158</Hsp_score>
+      <Hsp_evalue>1.48948e-11</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>576</Hsp_hit-from>
+      <Hsp_hit-to>677</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGTITSPGWPKEYPTNKNCVWQVVAPAQ-YRISLQF-EVFELEG--NDVCKYDFVEVRSGLPPDARLHGKFCGSET-PEVITSQSSNMRVEFKSDSTV-SKRGFRAHF</Hsp_hseq>
+      <Hsp_midline>NG+I SP +P  YP N   VW++VA  +   I L F E F LE   +D+CKYDFVEV    P D  + G++CGS T P    S+ + +R+ F SD    S+ GF  H+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>5.36178e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>730</Hsp_hit-from>
+      <Hsp_hit-to>821</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SAEGTLVSPNWPDKYPSRRECTWNISSTAGHR-VKLTFNE-FEIEQHQE--CAYDHLELYDGPDSLAPVLGRFCGS-KKPDPVVASGSSLFLRFYSD</Hsp_hseq>
+      <Hsp_midline>S  G++ SP +P  YP      W + +   +  ++LTF+E F +E  ++  C YD +E+ +  D    +LGR+CGS   P   ++ G+ + +RF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.05294e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>421</Hsp_hit-from>
+      <Hsp_hit-to>521</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GQIQSPNYPDDYRPSKECVWR-ITVPEGFHVGLTFQ---AFEIERHDSCAYDYLEIRDGPTEESALIGHFCGY-EKPEDVKSSSNRMWMKFVSDASI-NKAGFAANF</Hsp_hseq>
+      <Hsp_midline>G I SP +P  Y  +   VWR + V E   + LTF      E    D C YD++E+ +    +  ++G +CG    P    S  N++ ++FVSD    ++ GF  ++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>4.99858e-05</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>306</Hsp_hit-from>
+      <Hsp_hit-to>395</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>TTGNFSAPGFPNGYPSYSHCVWRISVTPGEKIILNFTSMDLF-----KSRLCWYDYVEVRDGYWRKAPLLGRFCGD-KVPEALISTDSRLWVEFRS</Hsp_hseq>
+      <Hsp_midline>T G+  +P FP+ YP  +  VWR+ V   E + +  T  + F     +  +C YD+VEV +       +LGR+CG   VP   IS  +++ + F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|560937033|ref|XP_006194327.1|</Hit_id>
+  <Hit_def>PREDICTED: neuropilin-2 isoform X1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006194327</Hit_accession>
+  <Hit_len>926</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>6.79153e-11</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>FSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>YFSGHEVRGQPDPPCGGRLNSKDAGYITSPGYPQDYPSHQNCEWIVYAPEPNQKIVLNFNPHFEIEKHD---CKYDFIEIRDGDSESADLLGKHCGN-IAPPTIISSGSVLYIKFTSD-YARQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>+ S  E  G  DP     +     G I SP +P  YP +    W + A E N  I L F+  F +E  +   CKYDF+E+   +     +LG+ CG+   P   IS G+ + I+F SD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.78561e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVE--ENVWIQLTFD-ERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLED</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPEKYPHNLDCTFTILAKPKMEIILQFLTFDLEHDPLQVGEGD-CKYDWLDIWDGIPHVGPLIGKYCGTKT-PSELRSATGILSLTFHTDMAVAKD-GFSARYYLVHQEPPENFQCNV-PLGMESGRIANEQISASSTYSD</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP  YP N    + ++A    E +   LTFD E   L+  E D CKYD++++ +  P  G ++G++CG+ T P +  S    + + F +D     + GF   Y +V  +  E    +V P       + N  I+A ST  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|560937039|ref|XP_006194330.1|</Hit_id>
+  <Hit_def>PREDICTED: neuropilin-2 isoform X3 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006194330</Hit_accession>
+  <Hit_len>901</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>9.63627e-11</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>FSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>YFSGHEVRGQPDPPCGGRLNSKDAGYITSPGYPQDYPSHQNCEWIVYAPEPNQKIVLNFNPHFEIEKHD---CKYDFIEIRDGDSESADLLGKHCGN-IAPPTIISSGSVLYIKFTSD-YARQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>+ S  E  G  DP     +     G I SP +P  YP +    W + A E N  I L F+  F +E  +   CKYDF+E+   +     +LG+ CG+   P   IS G+ + I+F SD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>2.80241e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVE--ENVWIQLTFD-ERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLED</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPEKYPHNLDCTFTILAKPKMEIILQFLTFDLEHDPLQVGEGD-CKYDWLDIWDGIPHVGPLIGKYCGTKT-PSELRSATGILSLTFHTDMAVAKD-GFSARYYLVHQEPPENFQCNV-PLGMESGRIANEQISASSTYSD</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP  YP N    + ++A    E +   LTFD E   L+  E D CKYD++++ +  P  G ++G++CG+ T P +  S    + + F +D     + GF   Y +V  +  E    +V P       + N  I+A ST  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|560937037|ref|XP_006194329.1|</Hit_id>
+  <Hit_def>PREDICTED: neuropilin-2 isoform X2 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006194329</Hit_accession>
+  <Hit_len>906</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>1.07453e-10</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>FSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>YFSGHEVRGQPDPPCGGRLNSKDAGYITSPGYPQDYPSHQNCEWIVYAPEPNQKIVLNFNPHFEIEKHD---CKYDFIEIRDGDSESADLLGKHCGN-IAPPTIISSGSVLYIKFTSD-YARQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>+ S  E  G  DP     +     G I SP +P  YP +    W + A E N  I L F+  F +E  +   CKYDF+E+   +     +LG+ CG+   P   IS G+ + I+F SD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>2.80589e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVE--ENVWIQLTFD-ERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLED</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPEKYPHNLDCTFTILAKPKMEIILQFLTFDLEHDPLQVGEGD-CKYDWLDIWDGIPHVGPLIGKYCGTKT-PSELRSATGILSLTFHTDMAVAKD-GFSARYYLVHQEPPENFQCNV-PLGMESGRIANEQISASSTYSD</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP  YP N    + ++A    E +   LTFD E   L+  E D CKYD++++ +  P  G ++G++CG+ T P +  S    + + F +D     + GF   Y +V  +  E    +V P       + N  I+A ST  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|528758373|gb|EPY78032.1|</Hit_id>
+  <Hit_def>tolloid-like protein 2 precursor [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY78032</Hit_accession>
+  <Hit_len>997</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>2.85077e-09</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>707</Hsp_hit-from>
+      <Hsp_hit-to>795</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP-SDGTILGRWCGSGTVPGKQIS-KGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GIFNSPGYPEIYPSNVECVWNIVSSPGNQ-LQLSFIT-FQLEDSQD--CSRDFVEIREGNSTGHLVGRYCGN-TLPLNYSSVVGHSLWVRFVSD</Hsp_hseq>
+      <Hsp_midline>G  +SP +P  YP N   VW +V+   N  +QL+F   F LED +D  C  DFVE+ E  S G ++GR+CG+ T+P    S  G+ + +RFVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00281539</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>479</Hsp_hit-from>
+      <Hsp_hit-to>564</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>SGEIHSPNYPSPYRSNTECTW-VIQVEKHHRVLLNFTD-FDLEPQDSCVMAFDGLS----SATTRLVGVCGRQQLSNPIISTGNSLFVRFQS</Hsp_hseq>
+      <Hsp_midline>+G IHSP +P  Y  NT   W ++ VE++  + L F + F LE  +  +  +D +     S  T L   CG   +    IS GN + +RF S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0374516</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>SGTFTSPNFPNNYPNNLECVYR-ITVETSQQIALHF-THFSLEEAIGGVCVADYVEINNGGYESSPSLGKYCGSNPPP-SIISQSNKLWLKFKSD-FFGSGTGFSASWD</Hsp_hseq>
+      <Hsp_midline>+G+  SP FP+ YP N   V+R + VE +  I L F   F LE+    +C  D+VE+          LG++CGS   P   IS+ N++ ++F SD +F S  GF   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|528764912|gb|EPY84571.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000466018 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY84571</Hit_accession>
+  <Hit_len>160</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>7.37395e-09</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD---GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>VLSAPSGNFSSPNFPSLYPYNTECSW-LIVVAEGSSVLLTF-HAFDLE--YHDTCGFDFLEIYNGASGDQGNLLGRFCGQ-VLPPPFTSSWHVMSVVFHSDKHVASR-GFSAGY</Hsp_hseq>
+      <Hsp_midline>+  + +G+  SP FP  YP NT   W L+ V E   + LTF   F LE    D C +DF+E+   +    G +LGR+CG   +P    S  + + + F SD++  S  GF   Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|560925459|ref|XP_006188912.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X3 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006188912</Hit_accession>
+  <Hit_len>380</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>2.25067e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGT-----VPGKQI--SKGNQIRIRFVSDEYFPSE---PGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GQIQSPGYPDSYPSDSEVTWN-ITVPEGFRIKLYF-MHFNLESSY--LCEYDYVKVE--TEDQVLATFCGRETTDTEQTPGQEVVLSPGSFMSITFRSD--FSNEERFTGFEAHYMAV</Hsp_hseq>
+      <Hsp_midline>G I SP +P +YP ++ + W  + V E   I+L F   F LE     +C+YD+V+VE  ++  +L  +CG  T      PG+++  S G+ + I F SD  F +E    GF  HY  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>1.82069e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>195</Hsp_hit-from>
+      <Hsp_hit-to>282</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GVITSPDFPGPYPKSSECLY-TIELEEGFMVSLQFEDIFDIEDHPEVSCPYDYIKIK--TGPKVLGPFCGE-KAPEPINTQSHSVQILFRSD</Hsp_hseq>
+      <Hsp_midline>G I SP FP  YP+++  ++  + +EE   + L F++ F +ED  +  C YD+++++  +   +LG +CG    P    ++ + ++I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|528756898|gb|EPY76557.1|</Hit_id>
+  <Hit_def>tolloid-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY76557</Hit_accession>
+  <Hit_len>724</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>3.13694e-07</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>519</Hsp_hit-from>
+      <Hsp_hit-to>610</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV--EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SPSGFITSPNWPDKYPSRKECTWEISATPGHR-VKLAFSE-FEIEQHQE--CAYDHLEVFDGETEESPILGRLCGN-KIPEPLVATGNKMFVRFVSD</Hsp_hseq>
+      <Hsp_midline>S +G I SP +P  YP      W + A   +  ++L F E F +E  ++  C YD +EV   E  +  ILGR CG+  +P   ++ GN++ +RFVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>6.10704e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>324</Hsp_hit-from>
+      <Hsp_hit-to>412</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GQIQSPNYPDDYRPMKECVWK-ITVTEGCYVGLTFQ---AFEIERHDNCAYDYLEVRDGTSENSPLIGRFCGYDK-PEDIRSTSNTLWMKFVSD</Hsp_hseq>
+      <Hsp_midline>G I SP +P  Y      VW+ + V E  ++ LTF      E    D C YD++EV + +  +  ++GR+CG    P    S  N + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|528758469|gb|EPY78128.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_001118022 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY78128</Hit_accession>
+  <Hit_len>466</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>4.10069e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGT-----VPGKQI--SKGNQIRIRFVSDEYFPSE---PGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GQIQSPGYPDSYPSDSEVTWN-ITVPEGFRIKLYF-MHFNLESSY--LCEYDYVKVE--TEDQVLATFCGRETTDTEQTPGQEVVLSPGSFMSITFRSD--FSNEERFTGFEAHYMAV</Hsp_hseq>
+      <Hsp_midline>G I SP +P +YP ++ + W  + V E   I+L F   F LE     +C+YD+V+VE  ++  +L  +CG  T      PG+++  S G+ + I F SD  F +E    GF  HY  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>2.99241e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>267</Hsp_hit-from>
+      <Hsp_hit-to>354</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GVITSPDFPGPYPKSSECLY-TIELEEGFMVSLQFEDIFDIEDHPEVSCPYDYIKIK--TGPKVLGPFCGE-KAPEPINTQSHSVQILFRSD</Hsp_hseq>
+      <Hsp_midline>G I SP FP  YP+++  ++  + +EE   + L F++ F +ED  +  C YD+++++  +   +LG +CG    P    ++ + ++I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|560925455|ref|XP_006188910.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006188910</Hit_accession>
+  <Hit_len>728</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>6.36592e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGT-----VPGKQI--SKGNQIRIRFVSDEYFPSE---PGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GQIQSPGYPDSYPSDSEVTWN-ITVPEGFRIKLYF-MHFNLE--SSYLCEYDYVKVE--TEDQVLATFCGRETTDTEQTPGQEVVLSPGSFMSITFRSD--FSNEERFTGFEAHYMAV</Hsp_hseq>
+      <Hsp_midline>G I SP +P +YP ++ + W  + V E   I+L F   F LE     +C+YD+V+VE  ++  +L  +CG  T      PG+++  S G+ + I F SD  F +E    GF  HY  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>4.15449e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>195</Hsp_hit-from>
+      <Hsp_hit-to>282</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GVITSPDFPGPYPKSSECLY-TIELEEGFMVSLQFEDIFDIEDHPEVSCPYDYIKIK--TGPKVLGPFCGE-KAPEPINTQSHSVQILFRSD</Hsp_hseq>
+      <Hsp_midline>G I SP FP  YP+++  ++  + +EE   + L F++ F +ED  +  C YD+++++  +   +LG +CG    P    ++ + ++I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|560905528|ref|XP_006179114.1|</Hit_id>
+  <Hit_def>PREDICTED: tumor necrosis factor-inducible gene 6 protein [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006179114</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>8.17403e-07</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>249</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>SPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>SPGFPNEYGDNQICYWH-IRLKYGQRIHLSFLD-FDLED--DPACFADYVEIYDSYDDVHGFVGRYCGD-ELPEDIISTGNVMTLKFLSDASV-TAGGFQIKYVAVDP</Hsp_hseq>
+      <Hsp_midline>SP FP+ Y  N +  W  + ++    I L+F + F LED  D  C  D+VE+ +  D     +GR+CG   +P   IS GN + ++F+SD    +  GF I Y  V P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|528758881|gb|EPY78540.1|</Hit_id>
+  <Hit_def>procollagen C-endopeptidase enhancer 1 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY78540</Hit_accession>
+  <Hit_len>667</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>1.87964e-06</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>QDPQHERII------TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV--EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>QTPNYTRPVFLCGGSVTGESGYLASEGFPNHYPPNKECIW-TVTVPESQTVTLSF-RVFDLE--LHPSCRYDALEVFTGTGTSGQRLGRFCGT-FRPAPLVAPGNQVTLRMTSDE</Hsp_hseq>
+      <Hsp_midline>Q P + R +          +G + S  FP+ YP N   +W  V V E+  + L+F   F LE      C+YD +EV     + G  LGR+CG+   P   ++ GNQ+ +R  SDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|528753920|gb|EPY73579.1|</Hit_id>
+  <Hit_def>neuropilin 2 isoform 1 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY73579</Hit_accession>
+  <Hit_len>969</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.49542e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>232</Hsp_hit-from>
+      <Hsp_hit-to>376</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVE--ENVWIQLTFD-ERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLED</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPEKYPHNLDCTFTILAKPKMEIILQFLTFDLEHDPLQVGEGD-CKYDWLDIWDGIPHVGPLIGKYCGTKT-PSELRSATGILSLTFHTDMAVAKD-GFSARYYLVHQEPPENFQCNV-PLGMESGRIANEQISASSTYSD</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP  YP N    + ++A    E +   LTFD E   L+  E D CKYD++++ +  P  G ++G++CG+ T P +  S    + + F +D     + GF   Y +V  +  E    +V P       + N  I+A ST  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|560907306|ref|XP_006179980.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 2 isoform X3 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006179980</Hit_accession>
+  <Hit_len>685</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>5.64851e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>293</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>VFTARSGVLSSPEYPKPYPKLSSCAYS-IHLEEGFSVILDFVESFDVETHPESHCPYDSLKIQ--TDKEEYGPFCGK-TSPRRIETKSNTVTITFVTDQS-GDHAGWKIHY</Hsp_hseq>
+      <Hsp_midline>+  + +G + SP +P  YP+ +   +  + +EE   + L F E F +E   +  C YD ++++  +D    G +CG  T P +  +K N + I FV+D+      G+ IHY</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0688248</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT-ILGRWCG-----SGTVPGKQI--SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLASPGFPGTYGNNEEQRWTLTA-PPGYRLRLYF-THFHLE--PSYLCEYDFVKL---SSGTKVLATLCGWESTDTEQAPGNTTFYSRGSSLDVTFRSD</Hsp_hseq>
+      <Hsp_midline>G + SP FP TY  N    W L A      ++L F   F LE     +C+YDFV++   S GT +L   CG     +   PG     S+G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|528760099|gb|EPY79758.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000895003 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY79758</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>6.22527e-06</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>IVTYEDSGTMTSKNYPGTYPNHTV-CEKTITVPKGKRLIL----RLGDLDIESQTCASDYLLFISSSD--QYGPYCGSMTVPKELLLNTNEVTVRFESGSHI-SGRGFLLTY</Hsp_hseq>
+      <Hsp_midline>I+T   +G++ S  +P TYP +TV   + + V +   + L    R G  D E   C  D++     SD    G +CGS TVP + +   N++ +RF S  +  S  GF + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|528770584|gb|EPY90243.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000001001 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY90243</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.29661e-05</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>SSGNLHSQFYPENYPNNAKCVWD-IEVENNYRITVVFTD-VQLEGG----CNYDYIEVFDGPYHSSPLLARVCDGAR--GSFTSSSNFMSIRFVSDGSITRRGFWAEYYSSPSPQNTK</Hsp_hseq>
+      <Hsp_midline>++G++HS  +P  YP N   VW  + VE N  I + F +   LE      C YD++EV + P   + +L R C      G   S  N + IRFVSD        +  +Y+   PQ T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|560924763|ref|XP_006188569.1|</Hit_id>
+  <Hit_def>PREDICTED: G-protein coupled receptor 126 isoform X1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006188569</Hit_accession>
+  <Hit_len>1249</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.55753e-05</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY----------NIVMPQFTEAVSPSVLPPSALP</Hsp_qseq>
+      <Hsp_hseq>RVVLSSPSGTFTSPCYPNDYPNSQSCMWTLRAPVGYI-IQITFND-FDIEEAPN--CIYDSLSLDNGESQT---KFCGATAKGLSFNSSANEMHVSFSSD-FSIQKKGFNASYIRVAVSLRNQKVILPQTLDAYQVSVAKSVSIP</Hsp_hseq>
+      <Hsp_midline>R++  S +G+  SP +P+ YP +   +W L A    + IQ+TF++ F +E+  +  C YD + ++     T   ++CG+        S  N++ + F SD +   + GF   Y           +++PQ  +A   SV    ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|528760743|gb|EPY80402.1|</Hit_id>
+  <Hit_def>neuropilin-1a isoform 1 precursor [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY80402</Hit_accession>
+  <Hit_len>1219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>1.93112e-05</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>244</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE----DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>TAPSGVIKSPGFPEKYP-NSLECTYIIFAPKMSEIILEF-ESFDLEPDSNPPGGMICRYDRLEIWDGFPNVGPHIGHYCGQKT-PGRIRASSGILSMVFYTDSAIAKE-GFSANYSVLQSSISE</Hsp_hseq>
+      <Hsp_midline> + +G I SP FP  YP N++    ++   +   I L F E F LE     P   IC+YD +E+ +  P+ G  +G +CG  T PG+  +    + + F +D     E GF  +Y+++    +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|560936899|ref|XP_006194260.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006194260</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>5.33095e-05</Hsp_evalue>
+      <Hsp_query-from>183</Hsp_query-from>
+      <Hsp_query-to>338</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>LDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSR-------VVDLNLLTEEVRLYSCTPRNFSVSIREELKR-TDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLR-PKTGVRGLHKSLTDVALEHHEECDCV</Hsp_qseq>
+      <Hsp_hseq>LERSEQQIRAASGLEELLQITHFEDWKLWRCRLKLKSLTSSDSRSSPHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCC-----NEESLVCVNTSTSYVSKQLFQISVPLTSV----PELVPVKVANHTGCKCL</Hsp_hseq>
+      <Hsp_midline>L+     I A S LE+L++    E W+L    L   +           R +R       +  L ++ EE +   C+PR   V +  EL R TDT F P C+ V RCGG C     N     CV +  +    ++ Q+  P T V      L  V + +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|528753983|gb|EPY73642.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY73642</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>6.42321e-05</Hsp_evalue>
+      <Hsp_query-from>183</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>LDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSR-------VVDLNLLTEEVRLYSCTPRNFSVSIREELKR-TDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LERSEQQIRAASGLEELLQITHFEDWKLWRCRLKLKSLTSSDSRSSPHRSTRFAATFYDIETLKVIDEEWQRTQCSPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCC</Hsp_hseq>
+      <Hsp_midline>L+     I A S LE+L++    E W+L    L   +           R +R       +  L ++ EE +   C+PR   V +  EL R TDT F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|528766089|gb|EPY85748.1|</Hit_id>
+  <Hit_def>CUB and Sushi multiple domains 2-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY85748</Hit_accession>
+  <Hit_len>968</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>9.52778e-05</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>453</Hsp_hit-from>
+      <Hsp_hit-to>554</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>TASSGIILSPNYPEEYGNNMNCVW-LIISEPGSRIHLIFND-FDVEP------QFDFLAVKDDGVPDITVLGTFSGN-EVPSQLASSGHVVRLEFQSD-HSTTGRGFNITYT</Hsp_hseq>
+      <Hsp_midline> +++G I SP +P  Y  N   VW L+  E    I L F++ F +E       ++DF+ V++    D T+LG + G+  VP +  S G+ +R+ F SD +  +  GF I Y </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|528758372|gb|EPY78031.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_001140008 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY78031</Hit_accession>
+  <Hit_len>668</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000123217</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>347</Hsp_hit-from>
+      <Hsp_hit-to>461</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>VQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>TQSPECGGTLT-GTYGSIKSPGYPGKYPPGRDCVWRVI-TSPDLLITFTFG-TLSLEHHDD--CSKDYLEIRDGPLHQDPLLGKLCTTLSAPPLQTT-GPFARVHFHSDSQI-NDQGFHITY</Hsp_hseq>
+      <Hsp_midline> Q P+    +T  T GSI SP +P  YP     VWR++    ++ I  TF     LE  +D  C  D++E+ +       +LG+ C + + P  Q + G   R+ F SD    ++ GF I Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|528768365|gb|EPY88024.1|</Hit_id>
+  <Hit_def>membrane frizzled-related protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY88024</Hit_accession>
+  <Hit_len>584</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000131379</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>308</Hsp_hit-from>
+      <Hsp_hit-to>413</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG---TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>QGTFSAPSYLQQYRHQQLCTWH-ISVPTGHGLELLF-HNFSLE--AQDECKFDYVEVYETSKSGALSLLGRFCGA-EPPPHLISSHHQLAVLFRTDHGI-SSGGFSATYRAL</Hsp_hseq>
+      <Hsp_midline> G+  +P +   Y    +  W  ++V     ++L F   F LE    D CK+D+VEV E S     ++LGR+CG+   P   IS  +Q+ + F +D    S  GF   Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|528766098|gb|EPY85757.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000350041 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY85757</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000189018</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>53</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPHGYPNYANCTWIIVTGERNR-IQLSF-HTFALEEDFDILSVYD</Hsp_hseq>
+      <Hsp_midline>NG+I SP FPH YP      W +V  E N  IQL+F   F LE+  D +  YD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|528766128|gb|EPY85787.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY85787</Hit_accession>
+  <Hit_len>474</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.00027501</Hsp_evalue>
+      <Hsp_query-from>186</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQL-LGKAFVFGRKSRVVD----------LNLLTEEVRLYSCTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRSASSVDELMTVLYPEYWKMYKCQLRKGGWQYNKEQANANARTEETLKFAAAHYNAEILRSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L   + + S++++L+  L PE W++    L +  WQ    +A    R    +           L  +  E R   C PR   + + +E    T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|528766088|gb|EPY85747.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000350026 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY85747</Hit_accession>
+  <Hit_len>1459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000292386</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>946</Hsp_hit-from>
+      <Hsp_hit-to>1045</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTILSPGYPEPYGNNLNCIWKIVVTEGSGIQVQVI---SFATEQNWDSLEIYDGGDVTAPRLGSFSGT-----TVPALLNSTSNQLYLHFQSDISV-AAAGFHLEYKTV</Hsp_hseq>
+      <Hsp_midline>G+I SP +P  Y  N   +W++V  E   + +Q+     F  E   D +  YD  +V  P  G+  G      TVP    S  NQ+ + F SD    +  GF + Y  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0122241</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>595</Hsp_hit-from>
+      <Hsp_hit-to>691</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GVILSPNYPQPYPPGKECDWR-IKVNPDFVIALIF-KSFSMEP------SYDFLHIYEGEDSNSPLIGSFQGS-QAPERIESSGNSLFLAFRSDASV-GLSGFAIEF</Hsp_hseq>
+      <Hsp_midline>G I SP +P  YP      WR + V  +  I L F + F +E        YDF+ + E  D    ++G + GS   P +  S GN + + F SD       GF I +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0565834</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1348</Hsp_hit-from>
+      <Hsp_hit-to>1436</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TSQNGTIYSPGFPDEYPILKDCVWLITVPPGHGVYINFTLLQT---EAVNDYIAVWDGPDQDAPQLGVFSGN-----TALETACSSSSQVLLKFHSD</Hsp_hseq>
+      <Hsp_midline> S NG+I+SP FP  YP     VW + V     V+I  T  +    E   D I  +D  + + P  G   G      T      S  +Q+ ++F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|528767157|gb|EPY86816.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000297016 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY86816</Hit_accession>
+  <Hit_len>722</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000475394</Hsp_evalue>
+      <Hsp_query-from>249</Hsp_query-from>
+      <Hsp_query-to>340</Hsp_query-to>
+      <Hsp_hit-from>469</Hsp_hit-from>
+      <Hsp_hit-to>550</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>SCTPRNFSVSIREELKRT-DTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCR</Hsp_qseq>
+      <Hsp_hseq>TCQPREVVVPLSMELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCECSPR</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC  +  E  CVP+   +   ++L +R  +        L +++LE H +C+C  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|528764913|gb|EPY84572.1|</Hit_id>
+  <Hit_def>CUB domain-containing protein 2 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY84572</Hit_accession>
+  <Hit_len>421</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00139066</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>121</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VLTGLSGVLTSPEYPNNYPNNVECRWVIRAAGPAT-IKLVFVD-FQVEGSEQ--CMYDYVAVLGGPGPAHEHHYCGSARPP-TLVSLGHELQVVFKSD</Hsp_hseq>
+      <Hsp_midline>+    +G + SP +P+ YP N    W + A      I+L F + F +E  E   C YD+V V           +CGS   P   +S G+++++ F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00464607</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>256</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE--------DDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>VYTAMRGNFSSPQYPSSYPNNIRCHWT-IRLPPGYRVKLFFLD-LELEEPNSLTRTCDFDHLVAFDGASEEAP----LLGNWCGH-HLPPPVTSSHNQLLLLLHTDRS-STHRGFSVAYIGVVP</Hsp_hseq>
+      <Hsp_midline>+  +  G+  SP++P +YP N    W  + +     ++L F +   LE+P         D +  +D    E P    +LG WCG   +P    S  NQ+ +   +D    +  GF + Y  V+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|528762173|gb|EPY81832.1|</Hit_id>
+  <Hit_def>CUB and Sushi multiple domains 2-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY81832</Hit_accession>
+  <Hit_len>2250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.0017825</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1742</Hsp_hit-from>
+      <Hsp_hit-to>1841</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTILSPGFPEPYLNSLNCVWKIV-VPEGAGIQIQVIS-FVTEQ------NWDSLEVFDGADNTVTMLGSFSGT-TVPALLNSTSNQLYLHFYSDISV-SAAGFHLEYKTV</Hsp_hseq>
+      <Hsp_midline>G+I SP FP  Y  +   VW++V V E   IQ+     F  E        +D +EV + +D T+  LG + G+ TVP    S  NQ+ + F SD    S  GF + Y  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00204768</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1914</Hsp_hit-from>
+      <Hsp_hit-to>2010</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLV-AVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GVILSPGFPGNYPSNMDCSWKIVLPVGFGAHIQFL---NFSTEP------NHDFIEIRNGPHETSRMMGRFSGS-ELPGSLLSTSHETTVYFHSD-HSQNRPGFKLEY</Hsp_hseq>
+      <Hsp_midline>G I SP FP  YP N    W++V  V     IQ      F  E        +DF+E+      T  ++GR+ GS  +PG  +S  ++  + F SD +  + PGF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00375547</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1312</Hsp_hit-from>
+      <Hsp_hit-to>1409</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>SGVILSPNYPEPYPPGKECDWK-VTVSPDYVIALVFN-IFNLEP------GYDFLHIYDGRDSLSPLIGSFYGS-QLPGRIESSSNSLFLAFRSDASV-SNAGFVIDY</Hsp_hseq>
+      <Hsp_midline>+G I SP +P  YP      W+ V V  +  I L F+  F LE        YDF+ + +  D    ++G + GS  +PG+  S  N + + F SD    S  GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0859245</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>200</Hsp_hit-from>
+      <Hsp_hit-to>288</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGIITSPNFPIQYDNNAHCVWIITALNPSKVIKLAFEE-FDLERGYDTLTVGD--GGQDGDQKTVLYILTGT-SVPDLIVSTHHQMWLLFQTD</Hsp_hseq>
+      <Hsp_midline>+G I SP FP  Y  N   VW + A+  +  I+L F+E F LE   D +   D    ++    T+L    G+ +VP   +S  +Q+ + F +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|528762030|gb|EPY81689.1|</Hit_id>
+  <Hit_def>enteropeptidase [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY81689</Hit_accession>
+  <Hit_len>894</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00214948</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>406</Hsp_hit-from>
+      <Hsp_hit-to>513</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPS---EPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>NTTFTSMNFPNSYPNQASCVWNLNA-QQGKNIQLHFQE-FDLENIADVVEIRD----GEGDNSLLLAVYTGPGPVK-DVFSTTNRMTVLFITDEELAKGGFEANFTTGYHLGIPE</Hsp_hseq>
+      <Hsp_midline>N +  S  FP++YP     VW L A ++   IQL F E F LE+  D +   D     E  +  +L  + G G V     S  N++ + F++DE       E  F   Y++ +P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|528753029|gb|EPY72688.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein isoform a precursor, partial [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY72688</Hit_accession>
+  <Hit_len>1224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00462459</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>1061</Hsp_hit-from>
+      <Hsp_hit-to>1163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL--GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>GSFSSPWYPTNYPTNVECVW-VIHLAEKFLIELTIPS---LKLEHSHGCPYDFIEVFDGRQVASLSMGRFCAGTKL--TFLSSSNIMTAVFRSDAMITSTGFYAVYSAI</Hsp_hseq>
+      <Hsp_midline>GS  SP +P  YP N   VW ++ + E   I+LT      L+      C YDF+EV +      L  GR+C    +    +S  N +   F SD    S   + ++  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|528765048|gb|EPY84707.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 2, partial [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY84707</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00541083</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>184</Hsp_hit-from>
+      <Hsp_hit-to>287</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQI----SKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>VFTARSGVLSSPEYPKPYPKLSSCAYS-IHLEEGFSVILDFVESFDVETHPESHCPYDSLKVWFPGPRLTL----------AQQVLRIETKSNTVTITFVTDQSG-DHAGWKIHYT</Hsp_hseq>
+      <Hsp_midline>+  + +G + SP +P  YP+ +   +  + +EE   + L F E F +E   +  C YD ++V  P     L           +Q+    +K N + I FV+D+      G+ IHY </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0337472</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT-ILGRWCG-----SGTVPGKQI--SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLASPGFPGTYGNNEEQRWTLTA-PPGYRLRLYF-THFHLE--PSYLCEYDFVKL---SSGTKVLATLCGWESTDTEQAPGNTTFYSRGSSLDVTFRSD</Hsp_hseq>
+      <Hsp_midline>G + SP FP TY  N    W L A      ++L F   F LE     +C+YDFV++   S GT +L   CG     +   PG     S+G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|528765521|gb|EPY85180.1|</Hit_id>
+  <Hit_def>hypothetical protein CB1_000391012 [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY85180</Hit_accession>
+  <Hit_len>427</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0061387</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>306</Hsp_hit-from>
+      <Hsp_hit-to>369</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>SPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>SPGFPNEYGDNQICYWH-IRLKYGQRIHLSFLD-FDLED--DPACFADYVEIYDSYDDVHGFVGRYCG</Hsp_hseq>
+      <Hsp_midline>SP FP+ Y  N +  W  + ++    I L+F + F LED  D  C  D+VE+ +  D     +GR+CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|528770443|gb|EPY90102.1|</Hit_id>
+  <Hit_def>CUB and Sushi multiple domains 2-like protein [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY90102</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0077208</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>55</Hsp_hit-from>
+      <Hsp_hit-to>105</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>53</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD</Hsp_qseq>
+      <Hsp_hseq>NGTVESPGFPYGYPNYANCTWTITA-EDQHRIQLVF-QSFALEEDFDVLSVFD</Hsp_hseq>
+      <Hsp_midline>NG++ SP FP+ YP      W + A E+   IQL F + F LE+  D +  +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|560899158|ref|XP_006176018.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Camelus ferus] &gt;gi|946609347|ref|XP_014407204.1| PREDICTED: platelet-derived growth factor subunit B [Camelus ferus] &gt;gi|530666885|gb|EQB77186.1| platelet-derived growth factor subunit B precursor [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006176018</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00860698</Hsp_evalue>
+      <Hsp_query-from>178</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>PSALPLDLLNNAITAFSTLEDLIR--YLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRN--FSVSIREELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>PEELYEMLSDHSIRSFDDLQRLLHGDSVDEDGAELDL-NLTRS--HSGGELESLSRGRRSLGFPTVAEPAVIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSGCC-----NNRNVQCRPTQVQLRPVQVRKIEIVRKKPTFKKAT--VTLEDHLACKC</Hsp_hseq>
+      <Hsp_midline>P  L   L +++I +F  L+ L+    ++ +  +LDL +L R      G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G C     N    QC P++V  +  +V ++          K+   V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|946627148|ref|XP_014410734.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 2 isoform X2 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_014410734</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0154323</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT-ILGRWCG-----SGTVPGKQI--SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLASPGFPGTYGNNEEQRWTLTA-PPGYRLRLYFT-HFHLE--PSYLCEYDFVKL---SSGTKVLATLCGWESTDTEQAPGNTTFYSRGSSLDVTFRSD</Hsp_hseq>
+      <Hsp_midline>G + SP FP TY  N    W L A      ++L F   F LE     +C+YDFV++   S GT +L   CG     +   PG     S+G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|946627144|ref|XP_014410733.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 2 isoform X1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_014410733</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.018208</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT-ILGRWCG-----SGTVPGKQI--SKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLASPGFPGTYGNNEEQRWTLTA-PPGYRLRLYFT-HFHLE--PSYLCEYDFVKL---SSGTKVLATLCGWESTDTEQAPGNTTFYSRGSSLDVTFRSD</Hsp_hseq>
+      <Hsp_midline>G + SP FP TY  N    W L A      ++L F   F LE     +C+YDFV++   S GT +L   CG     +   PG     S+G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|530668844|gb|EQB79145.1|</Hit_id>
+  <Hit_def>inactive serine protease PAMR1 precursor [Camelus ferus]</Hit_def>
+  <Hit_accession>EQB79145</Hit_accession>
+  <Hit_len>734</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0327212</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SYPLNAHCEWTIHA-NPGFIIQLRF---VMLSLEFDYMCQYDYVEVRDGDSSDSQIIRRFCGN-ERPAPIRSTGSSLHVLFHSD</Hsp_hseq>
+      <Hsp_midline>+YP N    W + A      IQL F     L    D +C+YD+VEV   + SD  I+ R+CG+   P    S G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|528770116|gb|EPY89775.1|</Hit_id>
+  <Hit_def>complement C1r subcomponent precursor [Camelus ferus]</Hit_def>
+  <Hit_accession>EPY89775</Hit_accession>
+  <Hit_len>715</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0334191</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>210</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>SGYISSLEYPRPYPPDLRCNYS-IRVERGLTIQLKFLEPFEIDDHQQVHCPYDQLQIY--ASGRNIRELCGR-QRPSHIDTGSNAVDLLFFTDESGDSR-GWKLHY</Hsp_hseq>
+      <Hsp_midline>+G I S  +P  YP +    +  + VE  + IQL F E F ++D +   C YD +++   + G  +   CG    P    +  N + + F +DE   S  G+ +HY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|560938619|ref|XP_006195100.1|</Hit_id>
+  <Hit_def>PREDICTED: inactive serine protease PAMR1 [Camelus ferus]</Hit_def>
+  <Hit_accession>XP_006195100</Hit_accession>
+  <Hit_len>720</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0346489</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SYPLNAHCEWTIHA-NPGFIIQLRF---VMLSLEFDYMCQYDYVEVRDGDSSDSQIIRRFCGN-ERPAPIRSTGSSLHVLFHSD</Hsp_hseq>
+      <Hsp_midline>+YP N    W + A      IQL F     L    D +C+YD+VEV   + SD  I+ R+CG+   P    S G+ + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>26431</Statistics_db-num>
+      <Statistics_db-len>11918775</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2272540375</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

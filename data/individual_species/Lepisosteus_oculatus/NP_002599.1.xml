@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Lepisosteus_oculatus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|973181869|ref|XP_015215050.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215050</Hit_accession>
+  <Hit_len>361</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>173.326</Hsp_bit-score>
+      <Hsp_score>438</Hsp_score>
+      <Hsp_evalue>3.62293e-52</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>207</Hsp_align-len>
+      <Hsp_qseq>RCWALFL-SLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVA-AARPVTRSPGGSQEQRAKTPQTR</Hsp_qseq>
+      <Hsp_hseq>RSWGVLLFPACCWLLCASAQGDPLPRALVELVQSSSINSIEDLRRLLLTDSVEDDPDS-------PASGGALSNSTFSRLPRSLMLEAEPAVQAQCKVRTEVMAITRGMVDRRNANFLVWPPCVEVQRCSGCCSLRGQRCLPTAVHLRHLQVVKIEYVNKKTNYGRAVVSVEDHLACRCASTADVPRAAPREP--QHQARPRQPESR</Hsp_hseq>
+      <Hsp_midline>R W + L   CC+L   SA+GDP+P  L E++   SI S +DL+RLL  D  E+D            SGG L +    R     +  AEPA+ A+CK RTEV  I+R ++DR NANFLVWPPCVEVQRCSGCC+ R  +C PT V LR +QV KIE V KK  + +A V++EDHLAC+C + A   R   R P    + R + P++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|973182378|ref|XP_015215293.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X4 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215293</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>138.272</Hsp_bit-score>
+      <Hsp_score>347</Hsp_score>
+      <Hsp_evalue>2.16855e-40</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>NRCWALFLSLCCYLRLVSA--EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH-----SGGEL---ESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTVYCLF---ACSLYLLSAIAEEVEIPQELIERLSRSEIRSISDLQRLLELDSVGSENEIIPESKERSHKDYSASHADLKNSQTLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTNNMKCHAARRHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>N  + LF    C L L+SA  E   IP+EL E LS   IRS  DLQRLL  D    +   +  +  RSH     S  +L   ++L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  N++C   +   R V+V K+E VR++P  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|973182376|ref|XP_015215291.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X3 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215291</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>138.272</Hsp_bit-score>
+      <Hsp_score>347</Hsp_score>
+      <Hsp_evalue>2.35443e-40</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>NRCWALFLSLCCYLRLVSA--EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH-----SGGEL---ESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTVYCLF---ACSLYLLSAIAEEVEIPQELIERLSRSEIRSISDLQRLLELDSVGSENEIIPESKERSHKDYSASHADLKNSQTLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTNNMKCHAARRHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>N  + LF    C L L+SA  E   IP+EL E LS   IRS  DLQRLL  D    +   +  +  RSH     S  +L   ++L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  N++C   +   R V+V K+E VR++P  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|973182374|ref|XP_015215290.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215290</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>138.272</Hsp_bit-score>
+      <Hsp_score>347</Hsp_score>
+      <Hsp_evalue>3.8146e-40</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>NRCWALFLSLCCYLRLVSA--EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH-----SGGEL---ESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTVYCLF---ACSLYLLSAIAEEVEIPQELIERLSRSEIRSISDLQRLLELDSVGSENEIIPESKERSHKDYSASHADLKNSQTLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTNNMKCHAARRHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>N  + LF    C L L+SA  E   IP+EL E LS   IRS  DLQRLL  D    +   +  +  RSH     S  +L   ++L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  N++C   +   R V+V K+E VR++P  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|973182370|ref|XP_015215288.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Lepisosteus oculatus] &gt;gi|973182372|ref|XP_015215289.1| PREDICTED: platelet-derived growth factor subunit A isoform X1 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215288</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>138.272</Hsp_bit-score>
+      <Hsp_score>347</Hsp_score>
+      <Hsp_evalue>4.42286e-40</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>NRCWALFLSLCCYLRLVSA--EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH-----SGGEL---ESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTVYCLF---ACSLYLLSAIAEEVEIPQELIERLSRSEIRSISDLQRLLELDSVGSENEIIPESKERSHKDYSASHADLKNSQTLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTNNMKCHAARRHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>N  + LF    C L L+SA  E   IP+EL E LS   IRS  DLQRLL  D    +   +  +  RSH     S  +L   ++L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  N++C   +   R V+V K+E VR++P  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|973182380|ref|XP_015215294.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X5 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015215294</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.02</Hsp_bit-score>
+      <Hsp_score>310</Hsp_score>
+      <Hsp_evalue>6.20308e-35</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>NRCWALFLSLCCYLRLVSA--EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>NTVYCLF---ACSLYLLSAIAEEVEIPQELIERLSRSEIRSISDLQRLLELDSVEE------------------------------------AVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTNNMKCHAARRHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>N  + LF    C L L+SA  E   IP+EL E LS   IRS  DLQRLL  D  EE                                    A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  N++C   +   R V+V K+E VR++P  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|972978130|ref|XP_015205540.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like isoform X3 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015205540</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>3.0818e-05</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>SLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACK</Hsp_qseq>
+      <Hsp_hseq>SASSGNNTSGVMLFGEVWGRSFCRTIEKLVEVVQEYPSEVEHIFS--PACVPLWRCAGCCGDENLECYPSQTYNVTMQLLKIKPSESR---EYVEMTFVEHQTCE</Hsp_hseq>
+      <Hsp_midline>S + G  + G +   E    + C+T  ++ E+ +         F   P CV + RC+GCC + N++C P+Q     +Q+ KI+    +   +   +T  +H  C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|972967363|ref|XP_015200863.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015200863</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>3.33074e-05</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CMPREVCLDVGKEFGAATNTFYK--PPCVSVYRCGGCCNSEEYQCRNLSTSYISKTLFEITIPLSQEP--KPVTISFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>C  R    ++ +     TN  +   PPCV V RC GCCN+   QCR          + +I I + ++P  K  T++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|973191191|ref|XP_006639189.2|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006639189</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>4.19792e-05</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>ECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRK---KPIFKKATVTLEDHLACKC-ETVAAARPVTRSPGGSQEQRAKTP</Hsp_qseq>
+      <Hsp_hseq>QCMPRETFVDVAKEL--GTNTNIFFKPPCVSVFRCGGCCNKEGVICKETSFTYVNKTLLTFSIPLKYGPEPVL----IKVANHTECKCMEPVIIRRHVQEHRGNRCSFGLKNP</Hsp_hseq>
+      <Hsp_midline>+C  R    ++++ L   TN N    PPCV V RC GCCN   V C+ T        +    I  K   +P+     + + +H  CKC E V   R V    G       K P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|972978111|ref|XP_006632034.2|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006632034</Hit_accession>
+  <Hit_len>412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000111081</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>228</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPA--MIAE------CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKAT--VTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTP</Hsp_qseq>
+      <Hsp_hseq>TVSTVDELLDLLYPEYGLVQHC-LRKKALNTHTSIQEEGDSWGNQKKAALYIADSAFDLILDEMQKTLCTPREVFLDVSKEYPESTTNFYL--PRCVSVHRCGGCCKSEALHC----VNTSYTYVNKTLIELSMPHMEKTVVMVSFVNHTECECQP-------KRSPHSVIRRSANTP</Hsp_hseq>
+      <Hsp_midline>++ + D+L  LL+ + G      L      +H+  + E  + G +   +L IA+ A  +I +      C  R    ++S+   + T   +L  P CV V RC GCC +  + C    V      V K  I    P  +K    V+  +H  C+C+         RSP     + A TP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|972949634|ref|XP_015200906.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015200906</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000135531</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATV--TLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CKTRETLVDIFQEYPDEIE--YIFAPSCVPLMRCAGCCSDESFECVPNETYNITMVVKKI-----KPHHFDHTVQMSFTEHRRCEC</Hsp_hseq>
+      <Hsp_midline>CKTR  + +I +   D     ++  P CV + RC+GCC++ + +C P +     + V+KI     KP     TV  +  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|573874817|ref|XP_006625764.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006625764</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000622492</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATV--TLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CKTRETLVDIFQEYPDEIE--YIFAPSCVPLMRCAGCCSDESFECVPNETYNITMVVKKI-----KPHHFDHTVQMSFTEHRRCEC</Hsp_hseq>
+      <Hsp_midline>CKTR  + +I +   D     ++  P CV + RC+GCC++ + +C P +     + V+KI     KP     TV  +  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|573874820|ref|XP_006625765.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006625765</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000697419</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATV--TLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SYCKTRETLVDIFQEYPDEIE--YIFAPSCVPLMRCAGCCSDESFECVPNETYNITMVVKKI-----KPHHFDHTVQMSFTEHRRCEC</Hsp_hseq>
+      <Hsp_midline>+ CKTR  + +I +   D     ++  P CV + RC+GCC++ + +C P +     + V+KI     KP     TV  +  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|972978124|ref|XP_015205537.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like isoform X1 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015205537</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00785248</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>SLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRT</Hsp_qseq>
+      <Hsp_hseq>SASSGNNTSGVMLFGEVWGRSFCRTIEKLVEVVQEYPSEVEHIFS--PACVPLWRCAGCCGDENLECYPSQTYNVTMQLLKIKPSESR---EYVEMTFVEHQTCECRL-----------------------RKITVRN</Hsp_hseq>
+      <Hsp_midline>S + G  + G +   E    + C+T  ++ E+ +         F   P CV + RC+GCC + N++C P+Q     +Q+ KI+    +   +   +T  +H  C+C                          ++T+R </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|972978126|ref|XP_015205538.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like isoform X2 [Lepisosteus oculatus] &gt;gi|972978128|ref|XP_015205539.1| PREDICTED: placenta growth factor-like isoform X2 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015205538</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0160934</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>SLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRT</Hsp_qseq>
+      <Hsp_hseq>SASSGNNTSGVMLFGEVWGRSFCRTIEKLVEVVQEYPSEVEHIFS--PACVPLWRCAGCCGDENLECYPSQTYNVTMQLLKIKPSESR---EYVEMTFVEHQTCECRL-----------------------RKITVRN</Hsp_hseq>
+      <Hsp_midline>S + G  + G +   E    + C+T  ++ E+ +         F   P CV + RC+GCC + N++C P+Q     +Q+ KI+    +   +   +T  +H  C+C                          ++T+R </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|972959464|ref|XP_015197261.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X2 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015197261</Hit_accession>
+  <Hit_len>362</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0294848</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>200</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>DHSIRSFDDLQRLL-HGDPGEEDGAELDLNMTRSHSGG-ELESLARGRRSLGSLT-IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCC-----NNRNVQCRPTQVQLRPVQVRKIE----IVRKKPIFKK---ATVTLEDHLACKCETVAAARP</Hsp_qseq>
+      <Hsp_hseq>DQTIAAFDTVEELLKHLNP---DTWQEDLENLYTDTGHYRARTFHHERRHKIDLDRLNEDVKRYSCTPRNYSVNL-REELKATNAVFF--PRCLLVQRCGGNCACGTENWRSCTCSPGKTSEKLYEVLKFSPEPGFFRRKSRGRGMGLAEIYLEHHERCDC--VCHSRP</Hsp_hseq>
+      <Hsp_midline>D +I +FD ++ LL H +P   D  + DL    + +G     +    RR    L  + E      C  R     + R  +  TNA F   P C+ VQRC G C     N R+  C P +   +  +V K        R+K   +    A + LE H  C C  V  +RP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|573879339|ref|XP_006627888.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X1 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006627888</Hit_accession>
+  <Hit_len>368</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0324759</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>206</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>DHSIRSFDDLQRLL-HGDPGEEDGAELDLNMTRSHSGG-ELESLARGRRSLGSLT-IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCC-----NNRNVQCRPTQVQLRPVQVRKIE----IVRKKPIFKK---ATVTLEDHLACKCETVAAARP</Hsp_qseq>
+      <Hsp_hseq>DQTIAAFDTVEELLKHLNP---DTWQEDLENLYTDTGHYRARTFHHERRHKIDLDRLNEDVKRYSCTPRNYSVNL-REELKATNAVFF--PRCLLVQRCGGNCACGTENWRSCTCSPGKTSEKLYEVLKFSPEPGFFRRKSRGRGMGLAEIYLEHHERCDC--VCHSRP</Hsp_hseq>
+      <Hsp_midline>D +I +FD ++ LL H +P   D  + DL    + +G     +    RR    L  + E      C  R     + R  +  TNA F   P C+ VQRC G C     N R+  C P +   +  +V K        R+K   +    A + LE H  C C  V  +RP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|573882731|ref|XP_006629542.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_006629542</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0841244</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>335</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSGCC-----NNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKAT--VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DLYKPTWHILGKSFIHPRKSRVVDLNLLREEVRLYSCTPRN--FSVSLREELKRTDTIF--WPNCLLVKRCGGNCACCAQNCFECQCVPTKVIKKYHEVLQLRHRSGGRGWQKSMTDVLLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>DL     H  G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G C     N    QC PT+V  +  +V ++        ++K+   V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|972965947|ref|XP_015200204.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Lepisosteus oculatus]</Hit_def>
+  <Hit_accession>XP_015200204</Hit_accession>
+  <Hit_len>395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0987937</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>264</Hsp_hit-from>
+      <Hsp_hit-to>387</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CC--NNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKAT--VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DLYKPTWHILGKSFIHPRKSRVVDLNLLREEVRLYSCTPRN--FSVSLREELKRTDTIF--WPNCLLVKRCGGNCACCAQNCFECQCVPTKVIKKYHEVLQLRHRSGGRGWQKSMTDVLLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>DL     H  G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC  N    QC PT+V  +  +V ++        ++K+   V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>33991</Statistics_db-num>
+      <Statistics_db-len>24209487</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2883194295</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

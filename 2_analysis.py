@@ -4,7 +4,6 @@
 import argparse, subprocess, Bio, os, sys, shutil, re, time, datetime, socket, random, requests, xmltodict, json, csv, sqlite3, types
 from Bio import SeqIO
 from Bio import Phylo
-from Bio import SearchIO
 from Bio import Entrez
 from Bio import AlignIO
 from Bio.Blast import NCBIWWW
@@ -13,7 +12,7 @@ from Bio.Blast.Applications import NcbirpsblastCommandline
 from os.path import basename, dirname, splitext, split
 # To print some terminal output in color
 import xml.etree.ElementTree as ET
-from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa, download_proteins, execute_subprocess
+from phylolib import load_blacklist, load_dictionary, insert_line_breaks, write_dict_to_file, read_file_to_dict, execution_time_str, make_synonym_dictionary, create_sqlite_file, expand_complex_taxa, download_proteins, execute_subprocess, get_phylum_from_NCBI, get_taxon_id_from_NCBI
 # To draw the phylogenetic tree
 from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node, NCBITaxa
 
@@ -147,66 +146,6 @@ def get_sequence_number(taxon, taxon_data):
         elif item[0] == '-':
             i -= j
     return i + 1
-
-# This should be replaced by the corresponding function from ETE3
-def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
-    ncbi = NCBITaxa()
-    taxon_id_list = ncbi.get_name_translator([species_name])
-    taxon_id = taxon_id_list[species_name][0]
-    # Check that something sensinble was returned
-    if isinstance(taxon_id, int) and taxon_id > 0:
-        print('taxon_id for {0}: {1}'.format(species_name, taxon_id))
-    else:
-        taxon_id = None
-        print('No taxon_id for {0}. NCBI returned: {1}'.format(species_name, taxon_id_list))
-    #return TAXON_ID
-    return taxon_id
-
-# This sends a species id to NCBI and returns to which of the phyla within taxon_dictionary.py
-# this species belongs to.
-def get_phylum_from_NCBI(TAXON_ID, VERBOSE=True):
-    # Counter to increase waiting period upon incresing number of unsuccesful trials
-    i = 0
-    while True:
-        try:
-            URL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&retmode=xml&rettype=full'.format(TAXON_ID)
-            r = requests.get(URL)
-            text = r.text
-            if VERBOSE: print(text)
-            i = 0
-            for taxon, taxon_data in taxon_dictionary.items():
-                # Determine, whether a taxon is complex (with some branches to exclude)
-                try:
-                    TAXON = taxon_data[0].split('-')[0]
-                    SUBTRACT_TAXON = taxon_data[0].split('-')[1]
-                except Exception as err:
-                    SUBTRACT_TAXON = '-'
-                if VERBOSE: print('Looking for TAXON_ID {0}, exluding TAXON_ID {1}'.format(TAXON, SUBTRACT_TAXON))
-                if '<TaxId>{0}</TaxId>'.format(TAXON) in text and '<TaxId>{0}</TaxId>'.format(SUBTRACT_TAXON) not in text:
-                    if VERBOSE: print('Adding phylum info {0} to species {1}'.format(taxon, TAXON_ID))
-                    phylum = taxon
-                    print(phylum)
-                    break
-                i += 1
-            # The following line will be only executed if calling 'phylum' does not give a NameError
-            # When i = 51, none of the 51 phyla was in the text that was received from NCBI.
-            if i == 51:
-                if VERBOSE: print('Species {0} does not belong to any phylum in the phylum list'.format(TAXON_ID))
-                phylum = 'unknown'
-            elif i < 51:
-                i += 1
-                if VERBOSE: print('{0} phyla (of 51) checked before hit was found.'.format(i))
-            else:
-                if VERBOSE: print('Unknown error when trying to identify phylum for species {0}.'.format(TAXON_ID))
-                phylum = 'unknown'
-        except NameError as err:
-            if VERBOSE: print('Sleeping due to server error. Will retry in 60 seconds. Error: {0}'.format(err))
-            time.sleep(60)
-            continue
-        # If there were no exceptions (= we got the phylum), break out of the while loop
-        else:
-            break
-    return phylum
 
 def make_tree(ALIGNMENT_FILE, MODE):
     treedir = '{0}/data/alignments_and_trees'.format(APPLICATION_PATH)
@@ -942,7 +881,7 @@ def run_backcheck_blast(ID, proteindata):
     else:
         return 'unknown'
 
-def get_fully_sequenced_genomes(CSV_FILE):
+def get_fully_sequenced_genomes(CSV_FILE, PHYLUM_SPECIES_FILE):
     print('------------------------------------------------ ---------')
     print('--------\nGET NUMBERS OF FULLY SEQUENCED GENOMES\n--------')
     print('------------------------------------------------- --------')
@@ -959,21 +898,38 @@ def get_fully_sequenced_genomes(CSV_FILE):
         input_csv_file = csv.DictReader(open(CSV_FILE))
     # Initialize dictionary with zeros
     full_genome_dictionary = {}
+    phylum_species_dictionary = {'unknown': ''}
     print('taxon_dictionary_print:\n{0}'.format(taxon_dictionary))
     for taxon, taxon_data in taxon_dictionary.items():
         full_genome_dictionary[taxon] = 0
         print('Adding {0} to full_genome_dictionary.'.format(taxon))
+        phylum_species_dictionary[taxon] = ''
+        print('Adding {0} to phylum_species_dictionary.'.format(taxon))
     for line in input_csv_file:
         species_name = line['#Organism Name']
+        number_of_assemblies = line['Assemblies']
         print('species_name = {0}'.format(species_name))
         TAXON_ID, phylum = get_taxon_id_and_phylum(species_name)
         print('TAXON_ID: {0}, phylum: {1}'.format(TAXON_ID, phylum))
         # If phylum cannot be resolved via NBI, this would give an error when trying to increment the
-        # number of fully sequenced genomes!
-        if phylum != 'unknown':
-            full_genome_dictionary[phylum] += 1
-        print('Adding +1 to fully sequenced {0}'.format(phylum))
+        # number of fully sequenced genomes! Count only genomes as "fully sequenced" if at least one
+        # genome assembly exists (the file format has three numbers for the assemblies in the end of the rows
+        # and the first number needs to be a 1 or bigger; hence >99 for fully sequenced genomes. The other
+        # numbers refer to mitochondrial and other plasmid DNA if I am not mistaken)
+        if int(number_of_assemblies) > 99:
+            if phylum != 'unknown':
+                full_genome_dictionary[phylum] += 1
+                phylum_species_dictionary[phylum] += '{0}, '.format(species_name)
+            else:
+                phylum_species_dictionary['unknown'] += '{0}, '.format(species_name)
+            print('Adding +1 for {0} ({1} assemblies) to fully sequenced {2}'.format(species_name, number_of_assemblies, phylum))
+        else:
+            print('Number of assemblies for {0}: {1}'.format(species_name, number_of_assemblies))
     print(str(full_genome_dictionary))
+    # Write phylum/species list to file
+    with open(PHYLUM_SPECIES_FILE, 'w') as file:
+        for phylum, species in phylum_species_dictionary.items():
+            file.write('{0}: {1}\n'.format(phylum, species))
     return full_genome_dictionary
 
 def create_connection(DATABASE_FILE):
@@ -1127,6 +1083,7 @@ def run():
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
+    PHYLUM_SPECIES_FILE = '{0}/data/phylum-sorted_list_of_fully_sequenced_genomes.txt'.format(APPLICATION_PATH)
     DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
     LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
     ANALYSIS_RESULTS_DIR = '{0}/data/analysis_results'.format(APPLICATION_PATH)
@@ -1207,7 +1164,7 @@ def run():
             # Wait in order not to overload the server
             time.sleep(1)
     # Add the number of fully sequenced genomes to the new taxon dictionary
-    full_genome_dictionary = get_fully_sequenced_genomes(CSV_FILE)
+    full_genome_dictionary = get_fully_sequenced_genomes(CSV_FILE, PHYLUM_SPECIES_FILE)
     for taxon, number in full_genome_dictionary.items():
         new_taxon_dictionary[taxon][5] = number
     conn.commit()

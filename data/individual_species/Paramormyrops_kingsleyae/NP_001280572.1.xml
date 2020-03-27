@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Paramormyrops_kingsleyae</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1338775261|ref|XP_023684304.1|</Hit_id>
+  <Hit_def>placenta growth factor [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023684304</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.155</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>3.43465e-51</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR--SGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLC</Hsp_qseq>
+      <Hsp_hseq>MKFFAYIIQIVAAVQLQVSPAQFQSFLSGANSTFEVVSFQDVWERSFCRTIEKLVEVVQEYPGEVEHIFSPSCVPLVRCAGCCGDENLECRPTDTSNVTMQLLKIKPAEGDR-EYVDMTFVEHKACECRP-KKLLRNGRRRQKGRGRKRKDKQRPKDCDTC</Hsp_hseq>
+      <Hsp_midline>M+ F   +Q++A + L   P Q+       +S  EVV FQ+VW RS+CR +E+LV+VV EYP EVEH+FSPSCV L+RC GCCGDENL C P +T+NVTMQLLKI+   GDR  YV++TF +H  CECRP ++ ++  RRR KGRG++R++KQRP DC  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1338771570|ref|XP_023682354.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023682354</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.094</Hsp_bit-score>
+      <Hsp_score>305</Hsp_score>
+      <Hsp_evalue>5.39867e-35</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRP-KGRG-KRRREKQRPTDCHLCGD</Hsp_qseq>
+      <Hsp_hseq>LMLLFSTTLLYLS--AVKTAPT----SKEEGKS---VIPFMDVYNKSYCQSREILVDILQEYPDEIEHIYIPSCVVLSRCGGCCNNEALECVPTETYNVTLQVKRLKPLRQENNFLLSFTEHKSCKCRPKKEVMEQREQKPRKGKGLKRDRDRDREPQCEPCSE</Hsp_hseq>
+      <Hsp_midline>+M LF   L  L+  A+   P     S   G S   V+PF +V+ +SYC++ E LVD++ EYP E+EH++ PSCV L RC GCC +E L CVP ET NVT+Q+ +++   + +   L+F++H  C+CRP +E M+   ++P KG+G KR R++ R   C  C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1338771574|ref|XP_023682356.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023682356</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.168</Hsp_bit-score>
+      <Hsp_score>300</Hsp_score>
+      <Hsp_evalue>1.3569e-34</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRP-KGRG-KRRREKQR</Hsp_qseq>
+      <Hsp_hseq>LMLLFSTTLLYLS--AVKTAPT----SKEEGKS---VIPFMDVYNKSYCQSREILVDILQEYPDEIEHIYIPSCVVLSRCGGCCNNEALECVPTETYNVTLQVKRLKPLRQENNFLLSFTEHKSCKCRPKKEVMEQREQKPRKGKGLKRDRDRDR</Hsp_hseq>
+      <Hsp_midline>+M LF   L  L+  A+   P     S   G S   V+PF +V+ +SYC++ E LVD++ EYP E+EH++ PSCV L RC GCC +E L CVP ET NVT+Q+ +++   + +   L+F++H  C+CRP +E M+   ++P KG+G KR R++ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1338771576|ref|XP_023682357.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023682357</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.538</Hsp_bit-score>
+      <Hsp_score>275</Hsp_score>
+      <Hsp_evalue>3.23563e-31</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMK</Hsp_qseq>
+      <Hsp_hseq>VIPFMDVYNKSYCQSREILVDILQEYPDEIEHIYIPSCVVLSRCGGCCNNEALECVPTETYNVTLQVKRLKPLRQENNFLLSFTEHKSCKCRPKKEVME</Hsp_hseq>
+      <Hsp_midline>V+PF +V+ +SYC++ E LVD++ EYP E+EH++ PSCV L RC GCC +E L CVP ET NVT+Q+ +++   + +   L+F++H  C+CRP +E M+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1338771572|ref|XP_023682355.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023682355</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>111.309</Hsp_bit-score>
+      <Hsp_score>277</Hsp_score>
+      <Hsp_evalue>5.63775e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>VMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRR--PKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>LMLLFSTTLLYLS--AVKTAPT----SKEEGKS---VIPFMDVYNKSYCQSREILVDILQEYPDEIEHIYIPSCVVLSRCGGCCNNEALECVPTETYNVTLQVKRLKPLRQENNFLLSFTEHKSCKCRPKKEVMEQREHQCEPCSERRKRLFVQDPITCQ</Hsp_hseq>
+      <Hsp_midline>+M LF   L  L+  A+   P     S   G S   V+PF +V+ +SYC++ E LVD++ EYP E+EH++ PSCV L RC GCC +E L CVP ET NVT+Q+ +++   + +   L+F++H  C+CRP +E M+    +  P    ++R   Q P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1338745748|ref|XP_023668843.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Paramormyrops kingsleyae] &gt;gi|1338745750|ref|XP_023668844.1| vascular endothelial growth factor A-A-like isoform X1 [Paramormyrops kingsleyae] &gt;gi|1338745752|ref|XP_023668845.1| vascular endothelial growth factor A-A-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023668843</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.071</Hsp_bit-score>
+      <Hsp_score>266</Hsp_score>
+      <Hsp_evalue>2.97485e-29</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>LQLLAGLALPAVPPQWALSA----GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERRRPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>VNLILELFLAALHLSFLKAAHIPKDREKSKNEVVPFMDVFNKSLCQPREVLVDIFLEYPDETEVTYIPSCVALKRCGGCCNDEAMECVPTETYNTTMEVIRIKQRVQQQKYLRSFTQHQKCECRPKTDVKENKENHCAPCSEKRRRFVQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>+ L+  L L A+   +  +A        S+ EVVPF +V+ +S C+  E LVD+  EYP E E  + PSCV+L RC GCC DE + CVP ET N TM++++I+   +      +F+QH +CECRP  + K   E        KRRR  Q P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1338745754|ref|XP_023668847.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023668847</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>104.375</Hsp_bit-score>
+      <Hsp_score>259</Hsp_score>
+      <Hsp_evalue>1.2489e-28</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>LQLLAGLALPAVPPQWALSA----GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>VNLILELFLAALHLSFLKAAHIPKDREKSKNEVVPFMDVFNKSLCQPREVLVDIFLEYPDETEVTYIPSCVALKRCGGCCNDEAMECVPTETYNTTMEVIRIKQRVQQQKYLRSFTQHQKCECRP</Hsp_hseq>
+      <Hsp_midline>+ L+  L L A+   +  +A        S+ EVVPF +V+ +S C+  E LVD+  EYP E E  + PSCV+L RC GCC DE + CVP ET N TM++++I+   +      +F+QH +CECRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1338742760|ref|XP_023667273.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023667273</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.4413</Hsp_bit-score>
+      <Hsp_score>241</Hsp_score>
+      <Hsp_evalue>3.24899e-25</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>40</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR--------PLREKMKPERRRPKGRGKRRREKQR</Hsp_qseq>
+      <Hsp_hseq>EVLKWLEVYSRSRCQPRETLVEVWREFPWETQHLFLPSCVVLHRCGGCCSDETLECVPLHTYTLTMELMKT-TYTKHELVQMPFTEHSQCECRLKKDLHTVPTRQEQSPTR---KG-GKRERDKSK</Hsp_hseq>
+      <Hsp_midline>EV+ + EV+ RS C+  E LV+V  E+P E +H+F PSCV L RC GCC DE L CVP+ T  +TM+L+K  +  +   V++ F++H +CECR        P R++  P R   KG GKR R+K +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1338742758|ref|XP_023667272.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023667272</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.0561</Hsp_bit-score>
+      <Hsp_score>240</Hsp_score>
+      <Hsp_evalue>7.33651e-25</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>55</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR--------PLREKMKPERRRPKGRGKRRREKQR</Hsp_qseq>
+      <Hsp_hseq>EVLKWLEVYSRSRCQPRETLVEVWREFPWETQHLFLPSCVVLHRCGGCCSDETLECVPLHTYTLTMELMKT-TYTKHELVQMPFTEHSQCECRLKKDLHTVPTRQEQSPTR---KG-GKRERDKSK</Hsp_hseq>
+      <Hsp_midline>EV+ + EV+ RS C+  E LV+V  E+P E +H+F PSCV L RC GCC DE L CVP+ T  +TM+L+K  +  +   V++ F++H +CECR        P R++  P R   KG GKR R+K +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1338745756|ref|XP_023668848.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X3 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023668848</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>1.11738e-24</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERRRPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>DVFNKSLCQPREVLVDIFLEYPDETEVTYIPSCVALKRCGGCCNDEAMECVPTETYNTTMEVIRIKQRVQQQKYLRSFTQHQKCECRPKTDVKENKENHCAPCSEKRRRFVQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>+V+ +S C+  E LVD+  EYP E E  + PSCV+L RC GCC DE + CVP ET N TM++++I+   +      +F+QH +CECRP  + K   E        KRRR  Q P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1338742762|ref|XP_023667274.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X3 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023667274</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.8929</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>9.10037e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>55</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>EVLKWLEVYSRSRCQPRETLVEVWREFPWETQHLFLPSCVVLHRCGGCCSDETLECVPLHTYTLTMELMKT-TYTKHELVQMPFTEHSQCECR</Hsp_hseq>
+      <Hsp_midline>EV+ + EV+ RS C+  E LV+V  E+P E +H+F PSCV L RC GCC DE L CVP+ T  +TM+L+K  +  +   V++ F++H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1338750203|ref|XP_023671169.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023671169</Hit_accession>
+  <Hit_len>395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.44038e-10</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSE--------VEVVPFQEV---WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PPGRGRTAGSGSGEPVMFAAAFYDFEVFKSIESEWRKTLCMPREVCLDVGKELGSPTNTFYKPPCVSVYRCGGCCNSEELQCMNVSTSYISKTLFEITVPITHGTKP--VTIGFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>PP    +AG+GS E         +   F+ +   W ++ C   E  +DV  E  S     + P CVS+ RC GCC  E L C+ V T+ ++  L +    I  G +P  V + F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1338750199|ref|XP_023671167.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Paramormyrops kingsleyae] &gt;gi|1338750201|ref|XP_023671168.1| vascular endothelial growth factor C isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023671167</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.44202e-10</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSE--------VEVVPFQEV---WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PPGRGRTAGSGSGEPVMFAAAFYDFEVFKSIESEWRKTLCMPREVCLDVGKELGSPTNTFYKPPCVSVYRCGGCCNSEELQCMNVSTSYISKTLFEITVPITHGTKP--VTIGFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>PP    +AG+GS E         +   F+ +   W ++ C   E  +DV  E  S     + P CVS+ RC GCC  E L C+ V T+ ++  L +    I  G +P  V + F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1338785511|ref|XP_023689702.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023689702</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>9.95622e-10</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>244</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANV---TMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>TACQPREVCVEVAKEYVESTSHFFVPRCVSVHRCGGCCYNEGQECTNTSYTLVQKTVVELVPVQNGK--SIIKTTFVNHTSCECQP</Hsp_hseq>
+      <Hsp_midline>+ C+  E  V+V  EY     H F P CVS+ RC GCC +E   C       V    ++L+ +++G   S ++ TF  H  CEC+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1338785508|ref|XP_023689701.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023689701</Hit_accession>
+  <Hit_len>440</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>1.78516e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>244</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANV---TMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>TACQPREVCVEVAKEYVESTSHFFVPRCVSVHRCGGCCYNEGQECTNTSYTLVQKTVVELVPVQNGK--SIIKTTFVNHTSCECQP</Hsp_hseq>
+      <Hsp_midline>+ C+  E  V+V  EY     H F P CVS+ RC GCC +E   C       V    ++L+ +++G   S ++ TF  H  CEC+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1338827972|ref|XP_023656681.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023656681</Hit_accession>
+  <Hit_len>297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>9.356e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI---RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCMPRETCVDVAKELGTHTSMFFKPPCVSVFRCSGCCNKEGVSCKNTSMTYVNKTLLTVIPFKYGPEPVLIKV--ANHTECKC</Hsp_hseq>
+      <Hsp_midline>  E W ++ C   E  VDV  E  +     F P CVS+ RC+GCC  E + C       V   LL +   + G  P  +++  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1338827970|ref|XP_023656680.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023656680</Hit_accession>
+  <Hit_len>305</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>9.86528e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI---RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCMPRETCVDVAKELGTHTSMFFKPPCVSVFRCSGCCNKEGVSCKNTSMTYVNKTLLTVIPFKYGPEPVLIKV--ANHTECKC</Hsp_hseq>
+      <Hsp_midline>  E W ++ C   E  VDV  E  +     F P CVS+ RC+GCC  E + C       V   LL +   + G  P  +++  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1338733499|ref|XP_023679464.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X3 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023679464</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.1668e-08</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRP-SYVELTFSQHVRCEC---RPLREKMK</Hsp_qseq>
+      <Hsp_hseq>PREMALYKFDGTFEVIMQEIQ----RTVCRPREVCLEVSKENPESTSNFYLPRCVSVHRCGGCCNHEALYCGNTSHSLINKTLVELSPPRMERSVIMVTFVNHTACECQGKRPLHSIIR</Hsp_hseq>
+      <Hsp_midline>P + AL   +G+ EV +   Q    R+ CR  E  ++V  E P    + + P CVS+ RC GCC  E L+C     + +   L+++       S + +TF  H  CEC   RPL   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1338733495|ref|XP_023679447.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023679447</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.25767e-08</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRP-SYVELTFSQHVRCEC---RPLREKMK</Hsp_qseq>
+      <Hsp_hseq>PREMALYKFDGTFEVIMQEIQ----RTVCRPREVCLEVSKENPESTSNFYLPRCVSVHRCGGCCNHEALYCGNTSHSLINKTLVELSPPRMERSVIMVTFVNHTACECQGKRPLHSIIR</Hsp_hseq>
+      <Hsp_midline>P + AL   +G+ EV +   Q    R+ CR  E  ++V  E P    + + P CVS+ RC GCC  E L+C     + +   L+++       S + +TF  H  CEC   RPL   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1338733497|ref|XP_023679456.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023679456</Hit_accession>
+  <Hit_len>408</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.3055e-08</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRP-SYVELTFSQHVRCEC---RPLREKMK</Hsp_qseq>
+      <Hsp_hseq>PREMALYKFDGTFEVIMQEIQ----RTVCRPREVCLEVSKENPESTSNFYLPRCVSVHRCGGCCNHEALYCGNTSHSLINKTLVELSPPRMERSVIMVTFVNHTACECQGKRPLHSIIR</Hsp_hseq>
+      <Hsp_midline>P + AL   +G+ EV +   Q    R+ CR  E  ++V  E P    + + P CVS+ RC GCC  E L+C     + +   L+++       S + +TF  H  CEC   RPL   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1338752332|ref|XP_023672279.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023672279</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.66392e-06</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNTKSLQCVPTQRHTRYLQVMKIQYVNKHPYYEKAVIPIVDHVECHCH</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC  ++L CVP +     +Q++KI+  ++  Y E   +    HV C C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|1338752334|ref|XP_023672280.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023672280</Hit_accession>
+  <Hit_len>406</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>4.02497e-06</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNTKSLQCVPTQRHTRYLQVMKIQYVNKHPYYEKAVIPIVDHVECHCH</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC  ++L CVP +     +Q++KI+  ++  Y E   +    HV C C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1338846934|ref|XP_023666564.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X1 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023666564</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>7.65153e-06</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP---LREKMKPERRRPKGRGKRRREKQ</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPARRHHRTVKVAKVEYVRRKPRLKEVLVRLEDHLECMCTPQHHVLEHSEAEPGRSLATGKQRKRKK</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K   +R   R   V +    H+ C C P   + E  + E  R    GK+R+ K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|1338846938|ref|XP_023666566.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X3 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023666566</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>7.85362e-06</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP---LREKMKPERRRPKGRGKRRREKQ</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPARRHHRTVKVAKVEYVRRKPRLKEVLVRLEDHLECMCTPQHHVLEHSEAEPGRSLATGKQRKRKK</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K   +R   R   V +    H+ C C P   + E  + E  R    GK+R+ K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|1338846936|ref|XP_023666565.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023666565</Hit_accession>
+  <Hit_len>260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>7.9256e-06</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP---LREKMKPERRRPKGRGKRRREKQ</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPARRHHRTVKVAKVEYVRRKPRLKEVLVRLEDHLECMCTPQHHVLEHSEAEPGRSLATGKQRKRKK</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K   +R   R   V +    H+ C C P   + E  + E  R    GK+R+ K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|1338846940|ref|XP_023666567.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X4 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023666567</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>8.52491e-05</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPARRHHRTVKVAKVEYVRRKPRLKEVLVRLEDHLECMCTP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|1338846942|ref|XP_023666568.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X5 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023666568</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>8.70995e-05</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPARRHHRTVKVAKVEYVRRKPRLKEVLVRLEDHLECMCTP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|1338748624|ref|XP_023670348.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111845270 [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023670348</Hit_accession>
+  <Hit_len>489</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000504797</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNTRNLQCVATVSRIRPLQVTKIQFVNKQPLYERAVISVEDHVECRCK</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC   NL CV   +    +Q+ KI+  ++    E   ++   HV C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|1338805524|ref|XP_023700185.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Paramormyrops kingsleyae]</Hit_def>
+  <Hit_accession>XP_023700185</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00248212</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSY---VELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLLWPPCVEVKRCTGCCNTGNMRCHPSRRHHRTVKVAKVEYVRRRSKLREVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++ K+    R S    V +    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>43957</Statistics_db-num>
+      <Statistics_db-len>30705807</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1844784480</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

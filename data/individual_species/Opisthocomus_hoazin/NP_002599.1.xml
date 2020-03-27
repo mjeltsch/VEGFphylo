@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Opisthocomus_hoazin</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|700386430|ref|XP_009933313.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009933313</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>243.047</Hsp_bit-score>
+      <Hsp_score>619</Hsp_score>
+      <Hsp_evalue>2.32514e-81</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>156</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>GDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQ---TRVTIRTVRVRRPP--KGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>GDPIPEDIYEILGGSSVRSISDLQRALRIDSVEEDSSSLDLNAT--QPGQNPVALPRERRSLDALAAAEPAVLAECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEFVQRKPKFNKVVVPLEDHVQCRCEAVSRPP-PRSSRPGPREQRRKAPSFPPAAVSQRQ-RVRRPPAQKRKHKKYKHVNDKKVLKEILVA</Hsp_hseq>
+      <Hsp_midline>GDPIPE++YE+L   S+RS  DLQR L  D  EED + LDLN T    G    +L R RRSL +L  AEPA++AECKTR  VFEISR ++D TNANF+VWPPCVEVQRCSGCCNNRNVQCRPTQ+++R VQV KIE V++KP F K  V LEDH+ C+CE V+       S  G +EQR K P      V+ R  RVRRPP  K KH+K+KH +DK  LKE L A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|677549745|gb|KFR10362.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A, partial [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>KFR10362</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.627</Hsp_bit-score>
+      <Hsp_score>296</Hsp_score>
+      <Hsp_evalue>9.95713e-34</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>132</Hsp_align-len>
+      <Hsp_qseq>GEEDGAELDLNMTRSHSGGELESL----ARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GYDDVSETNLRSYNVHSAKHVQENRPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRIVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>G +D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|700384968|ref|XP_009932501.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009932501</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.627</Hsp_bit-score>
+      <Hsp_score>296</Hsp_score>
+      <Hsp_evalue>2.27991e-33</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>132</Hsp_align-len>
+      <Hsp_qseq>GEEDGAELDLNMTRSHSGGELESL----ARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GYDDVSETNLRSYNVHSAKHVQENRPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRIVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>G +D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|700374669|ref|XP_009937978.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009937978</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.0084e-05</Hsp_evalue>
+      <Hsp_query-from>77</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>ARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>ARGGGEGAVLTFREIWNRSFCRPLEQLVDVVTEFPN--EVEYMFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTMQLLKIKPNGEAPYVEMA---FTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>ARG      LT  E    + C+   ++ ++     +     ++  P CV +QRC GCC +  ++C P Q     +Q+ KI+   + P  + A     +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|677538758|gb|KFR00471.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>KFR00471</Hit_accession>
+  <Hit_len>93</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>3.32354e-05</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>VEYMFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTMQLLKIKPNGEAPYVEMA---FTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>  ++  P CV +QRC GCC +  ++C P Q     +Q+ KI+   + P  + A     +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|700393588|ref|XP_009937278.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009937278</Hit_accession>
+  <Hit_len>441</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.87358e-05</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAEL---DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAE-------------CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSSFDT-------RSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFK--PPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGP--KPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>S+ S D+L  +L+ +  +    +L        R HS  +        RS  SL  A     AE             C  R    ++ +     TN  F   PPCV + RC GCCN+  +QC           + +I + +   P  K  TV+  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|677554742|gb|KFR14219.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor C, partial [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>KFR14219</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.41469e-05</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAEL---DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAE-------------CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSSFDT-------RSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFK--PPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGP--KPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>S+ S D+L  +L+ +  +    +L        R HS  +        RS  SL  A     AE             C  R    ++ +     TN  F   PPCV + RC GCCN+  +QC           + +I + +   P  K  TV+  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|700385324|ref|XP_009932699.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009932699</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>5.19286e-05</Hsp_evalue>
+      <Hsp_query-from>68</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>HSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>HSEGEREEGGSHRQVIKFLEVYERSF---CRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCGDEGLECVPVD-----VYNVTMEIMRIKPHQSQHIVHMSFLQHSKCDC</Hsp_hseq>
+      <Hsp_midline>HS GE E     R+ +  L + E +    C+T   + +I +   D     ++  P CV + RC+GCC +  ++C P       V    +EI+R KP   +  V +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|700396602|ref|XP_009938947.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Opisthocomus hoazin] &gt;gi|677556389|gb|KFR15508.1| Vascular endothelial growth factor D [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009938947</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>5.70397e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFK--PPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTS-VPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    E+++ L   TN  F   PPCV V RC GCCN  ++ C  T        + +I +     + +   + + +H  CKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|677549953|gb|KFR10518.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>KFR10518</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0233206</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>93</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>CRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCGDEGLECVPVD-----VYNVTMEIMRIKPHQSQHIVHMSFLQHSKCDC</Hsp_hseq>
+      <Hsp_midline>C+T   + +I +   D     ++  P CV + RC+GCC +  ++C P       V    +EI+R KP   +  V +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|677552603|gb|KFR12608.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor C, partial [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>KFR12608</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0328642</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>298</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>EEDGAELDL-NMTRSHSGGELESLARGRRS--LGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>EPDRWQLDLEDLYRPTWQLLGKAYIHGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSLREELKRTDTIF--WPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDIPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>E D  +LDL ++ R       ++   GR+S  +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC+      QC PT+V  +  +V +++  +  + + K  T + LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|700390030|ref|XP_009935306.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Opisthocomus hoazin]</Hit_def>
+  <Hit_accession>XP_009935306</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0346752</Hsp_evalue>
+      <Hsp_query-from>77</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>271</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>ARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GRKSRVVDLNLLKEEVRLYSCTPRN--FSVSLREELKRTDTIF--WPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDIPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline> R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC+      QC PT+V  +  +V +++  +  + + K  T + LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>26703</Statistics_db-num>
+      <Statistics_db-len>13655801</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1593447840</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

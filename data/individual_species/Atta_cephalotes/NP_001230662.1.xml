@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Atta_cephalotes</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|801372000|ref|XP_012062717.1|</Hit_id>
+  <Hit_def>PREDICTED: protein PFC0760c-like [Atta cephalotes]</Hit_def>
+  <Hit_accession>XP_012062717</Hit_accession>
+  <Hit_len>783</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>2.72029e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>566</Hsp_hit-from>
+      <Hsp_hit-to>725</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>IDVYTRATCQ-PREVVVPLTVELMGTVAKQLVPSCVTVQRCG---GCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE-MSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCR-------CRCRRRSFLR-----CQGRGLELNPDTCRCRK</Hsp_qseq>
+      <Hsp_hseq>IKVNKEGSCQWPRARVIPVR-DVYPSPSTTYIPHCAILHRCSDDTGCCRSETLTCVPKHSHRIELSFYTTSVGGASVVEKLSFYNHTECEC---KERSEYDTTNEKPADQRVYRHQSSPPPQNMKKSPARKPCRCPSQFTPRITEGVCQCNCFESNENCIKTRR</Hsp_hseq>
+      <Hsp_midline>I V    +CQ PR  V+P+  ++  + +   +P C  + RC    GCC  + L CVP   H++ +         + + E +S   H++CEC   K+ S     + +P   R  +H   P P+  +       CRC  +   R     CQ    E N +  + R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|801383433|ref|XP_012054876.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105617950 [Atta cephalotes]</Hit_def>
+  <Hit_accession>XP_012054876</Hit_accession>
+  <Hit_len>329</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>6.39975e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>279</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>45</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILM-----IRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCR--------RRSFLRCQGR---------------GLELNPDTCRC</Hsp_qseq>
+      <Hsp_hseq>AKCMPELQLVSLKVD--DDPSTFVFPLCTRIKRCGGCCISPLLSCQPTATEMRNFEVIVTSLIDMDYRGRQI--VPVEEHTKCKCDCKIKEEHCND----------KQHYE---PHNCKCACNNVDEEEKCRKNDTKIWNSTLCVCTCRIIEPCTTGYYFNPNTCRC</Hsp_hseq>
+      <Hsp_midline>A C P   +V L V+     +  + P C  ++RCGGCC    L C PT       ++++     + Y   Q+  + +EEH++C+C  K K+                QH++   P  C+C C         R++  +                   G   NP+TCRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|801367382|ref|XP_012063690.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like [Atta cephalotes]</Hit_def>
+  <Hit_accession>XP_012063690</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000183061</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDS------AVKPDSPRPLCPR---CTQHHQR-PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKL</Hsp_qseq>
+      <Hsp_hseq>CVPRHAMVKLIPQPGYT----FYPNYASVKRCSGFCPRNK-SCMPVRKNVKKIAVRMDGYDSSECYHVLLEEHIKCKCQCSVTENHCNIHQVYSEDNCACECMNKRECDKERQMVWNEKLCKCTCDKKEEI--CSSGLEWVPSRCGCAQM</Hsp_hseq>
+      <Hsp_midline>C PR  +V L  +   T      P+  +V+RC G CP +   C+P  ++  ++ + M  Y SS+   + LEEH +C+C+    ++          D+    C     C +  Q   + + C+C C ++  +     GLE  P  C C ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>10682</Statistics_db-num>
+      <Statistics_db-len>6084637</Statistics_db-len>
+      <Statistics_hsp-len>89</Statistics_hsp-len>
+      <Statistics_eff-space>508259961</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

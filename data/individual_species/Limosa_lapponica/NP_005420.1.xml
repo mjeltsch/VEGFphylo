@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Limosa_lapponica</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-C NP_005420.1 vascular endothelial growth factor C preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>419</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-C NP_005420.1 vascular endothelial growth factor C preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>419</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1315487050|gb|PKU30473.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor hypothetical protein [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU30473</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.07</Hsp_bit-score>
+      <Hsp_score>658</Hsp_score>
+      <Hsp_evalue>6.22293e-85</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>140</Hsp_align-len>
+      <Hsp_qseq>AYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEIT</Hsp_qseq>
+      <Hsp_hseq>AHASKDLEEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSTFDTRSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTVEDMT</Hsp_hseq>
+      <Hsp_midline>A+ASKDLEEQLRSVSSVDELMTVLYPEYWKM+KCQLRKGGWQHNRE +  ++R+++++KFAAAHYN EILKSID EWRKTQCMPREVC+DVGKEFG  TNTFFKPPCVS+YRCGGCCNSEGLQCMN ST+Y+SKT+ ++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1315511094|gb|PKU45657.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor d [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU45657</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>239.58</Hsp_bit-score>
+      <Hsp_score>610</Hsp_score>
+      <Hsp_evalue>6.52849e-76</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>147</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>68</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AAFESGLDLSDAEPDAGEATAYASKDL-EEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRT--EETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQ---CQAANKTCPTNYMWNNHICRCLAQEDFMFSSDAGDDSTDGFHDICGPNKELDEETCQCVCRAGLRPASCGPHKELDRNSCQCVCKNKLFPSQCGANREFDENTCQCVCKRTCPRNQPLNPGKCACE-CTESPQKCLLKGKKFHHQTCSCYRRPCTNRQKACEPGFSYSEEVCRC</Hsp_qseq>
+      <Hsp_hseq>VSFLHLLQGSDYENGSVKRTSLSALERSEQQIRRASSLEELLRITHSEDWKLWKCRLKL------KSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKCLS--NTQRHPYAIIRRSV--QYPEEDGCPFTNKLCHNGWIWDSDKCECVL-------------------DVQHSNR-----------REGLPPLA-----EL---------------AMCGQHMEFDEENCECICRQKCPTDFFQSKENCSCYLCRESQESCALKHKIFHAETCSCEDK-CPSQPRTCPTAKPVCSRHCRC</Hsp_hseq>
+      <Hsp_midline> +F   L  SD E  + + T+ ++ +  E+Q+R  SS++EL+ + + E WK++KC+L+       +  ANL+SR+    + +FAAA Y+ + LK ID EW+KTQC+PRE C++V KE G  TN FFKPPCV+V+RCGGCCN E L CMNTST+Y+SKTLFEI+VPL+  P+PV I  ANHT C+C+S  +  R  ++IIRRS+    P+   C   NK C   ++W++  C C+                    D+   N+           R GL P +     EL               + CG + EFDE  C+C+C++ CP +   +   C+C  C ES + C LK K FH +TCSC  + C ++ + C          CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1315511064|gb|PKU45628.1|</Hit_id>
+  <Hit_def>placenta growth factor [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU45628</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>1.84365e-13</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>219</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYR</Hsp_qseq>
+      <Hsp_hseq>WNRSFCRPLEQLVDVITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVETSTVTMQLLKIK-PNGEAPY-VEMTFTEHKQCECRPRQDLMR</Hsp_hseq>
+      <Hsp_midline>W ++ C P E  +DV  EF       F+P CVS+ RCGGCC  EGL+C+   TS ++  L +I  P  + P  V ++F  H  C C  + D+ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1315514642|gb|PKU49098.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor a isoform x3 [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU49098</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>1.36534e-09</Hsp_evalue>
+      <Hsp_query-from>90</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>WQHNREQANLNSRTEETIKFAAAHYN-----TEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDV</Hsp_qseq>
+      <Hsp_hseq>WIHWGLAALLYLQSAELSKAAPALGDGERKPNEVIKFLEV-YERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQ--HIAHMSFLQHSKCDCRPKKDV</Hsp_hseq>
+      <Hsp_midline>W H    A L  ++ E  K A A  +      E++K ++  + ++ C   E  +D+ +E+       FKP CV + RC GCC  EGL+C+      ++  +  I    SQ      +SF  H+ C C  K DV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1315514562|gb|PKU49019.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit b [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU49019</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>8.68962e-07</Hsp_evalue>
+      <Hsp_query-from>129</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>TQCMPREVCIDVGKEFGVATNTFFK--PPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGP--KPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>AECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEF-VQRKPKFKKVVVPLEDHVQCRC</Hsp_hseq>
+      <Hsp_midline> +C  R V  ++ +    +TN  F   PPCV V RC GCCN+  +QC  T        + +I   + + P  K V +   +H  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1315512958|gb|PKU47450.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor c [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU47450</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>4.21815e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>186</Hsp_hit-from>
+      <Hsp_hit-to>284</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCC</Hsp_qseq>
+      <Hsp_hseq>LNNAVAGFSTVEELIRYLEPDRWQLDLEDLYRPTWQL-LGKAYIHGRKSRVVD----------LNLLKEEVRLYSCTPRNFSVSLREELK-RTDTIFWPLCLLVKRCGGNC</Hsp_hseq>
+      <Hsp_midline>L   +   S+V+EL+  L P+ W++    L +  WQ    +A ++ R    +           L  +  E R   C PR   + + +E    T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1315507433|gb|PKU42260.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor d [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU42260</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000527026</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>273</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>PDAGEATAYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCC</Hsp_qseq>
+      <Hsp_hseq>PSVTDSTLTAEA-LDQTIAAFDTVEDLLKHFNPDSWQEDLENLYTDSGHHYRGRSYHDRKSKVD------------LDRLNDDVKRYSCTPRNYSVNLREELKL-TNVVFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>P   ++T  A   L++ + +  +V++L+    P+ W+     L      H R ++  + +++              L  ++++ ++  C PR   +++ +E  + TN  F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1315504895|gb|PKU40056.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit a [Limosa lapponica baueri]</Hit_def>
+  <Hit_accession>PKU40056</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00100528</Hsp_evalue>
+      <Hsp_query-from>147</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>ATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGP--KPVTISFANHTSCRCMS</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEY-VRKKPKLKEVLVRLEEHMECTCTS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+  ++C  +   + S  + ++   + + P  K V +    H  C C S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>23011</Statistics_db-num>
+      <Statistics_db-len>7967155</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1820501120</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

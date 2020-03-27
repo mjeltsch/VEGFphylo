@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Varroa_jacobsoni</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1268021320|ref|XP_022707247.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270994 isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022707247</Hit_accession>
+  <Hit_len>998</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.11495e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>381</Hsp_hit-from>
+      <Hsp_hit-to>516</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRW------CGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-SPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>NGMLTSPNWPKKYGANQKCLIRLNATRSRL-IEISF-EYFLLERSPN--CAADFFEIHDKGPAENSLDSGWRPVYRLCGDGVARKKVVSSSNELQLVFSSDG-FSEVGGFKLTYRMVTPAVEKVTEAPSMVPLPLLPPDTM</Hsp_hseq>
+      <Hsp_midline>NG + SP +P  Y  N   + RL A    + I+++F E F LE   +  C  DF E+ +  P++ ++   W      CG G    K +S  N++++ F SD  F    GF + Y +V P   +   +PS++P   LP D +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>1.30994e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENV-WIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQI-RIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPHGYPNNAHCRWNLVAQSGNITLVVLKFLVEFSID------CGYDHLKISTGRPSKRLQTFCGTNLPEGEVIKTNSSIVTLEFVSDSNF-NDNGFKIEY</Hsp_hseq>
+      <Hsp_midline>G++ SP +PH YP N    W LVA   N+  + L F   F ++      C YD +++        L  +CG+    G+ I   + I  + FVSD  F ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.23754e-05</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>231</Hsp_hit-from>
+      <Hsp_hit-to>362</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>KIEYFTNTVKDIAKGTSCNRVLTAS-RGQFSSPGYPVAYTANE-HCETLLSVEAGHVVSINF-EDIALESSTK--CEGDFVELFDGTSTGSPSLGRFCGKARVRGLTTSTNNAL-IVFHSDDVF-QDAGFNATYEAIKP</Hsp_hseq>
+      <Hsp_midline>K ++ +N  ++  +     R++T S  G   SP +P  Y  N      L++VE    + + F E   LE      C+ DFVE+ +  S G+  LGR+CG   V G   S  N + I F SD+ F  + GF   Y  + P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1268021318|ref|XP_022707241.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270994 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022707241</Hit_accession>
+  <Hit_len>999</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.17234e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>382</Hsp_hit-from>
+      <Hsp_hit-to>517</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRW------CGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-SPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>NGMLTSPNWPKKYGANQKCLIRLNATRSRL-IEISF-EYFLLERSPN--CAADFFEIHDKGPAENSLDSGWRPVYRLCGDGVARKKVVSSSNELQLVFSSDG-FSEVGGFKLTYRMVTPAVEKVTEAPSMVPLPLLPPDTM</Hsp_hseq>
+      <Hsp_midline>NG + SP +P  Y  N   + RL A    + I+++F E F LE   +  C  DF E+ +  P++ ++   W      CG G    K +S  N++++ F SD  F    GF + Y +V P   +   +PS++P   LP D +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.56433e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENV-WIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQI-RIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPHGYPNNAHCRWNLVAQSGNITLVVLKFLVEFSI-----DCGRYDHLKISTGRPSKRLQTFCGTNLPEGEVIKTNSSIVTLEFVSDSNF-NDNGFKIEY</Hsp_hseq>
+      <Hsp_midline>G++ SP +PH YP N    W LVA   N+  + L F   F +     D  +YD +++        L  +CG+    G+ I   + I  + FVSD  F ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.3776e-05</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>232</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>KIEYFTNTVKDIAKGTSCNRVLTAS-RGQFSSPGYPVAYTANE-HCETLLSVEAGHVVSINF-EDIALESSTK--CEGDFVELFDGTSTGSPSLGRFCGKARVRGLTTSTNNAL-IVFHSDDVF-QDAGFNATYEAIKP</Hsp_hseq>
+      <Hsp_midline>K ++ +N  ++  +     R++T S  G   SP +P  Y  N      L++VE    + + F E   LE      C+ DFVE+ +  S G+  LGR+CG   V G   S  N + I F SD+ F  + GF   Y  + P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1268021322|ref|XP_022707253.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270994 isoform X3 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022707253</Hit_accession>
+  <Hit_len>998</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.19114e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>382</Hsp_hit-from>
+      <Hsp_hit-to>517</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRW------CGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-SPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>NGMLTSPNWPKKYGANQKCLIRLNATRSRL-IEISF-EYFLLERSPN--CAADFFEIHDKGPAENSLDSGWRPVYRLCGDGVARKKVVSSSNELQLVFSSDG-FSEVGGFKLTYRMVTPAVEKVTEAPSMVPLPLLPPDTM</Hsp_hseq>
+      <Hsp_midline>NG + SP +P  Y  N   + RL A    + I+++F E F LE   +  C  DF E+ +  P++ ++   W      CG G    K +S  N++++ F SD  F    GF + Y +V P   +   +PS++P   LP D +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.53251e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENV-WIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQI-RIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPHGYPNNAHCRWNLVAQSGNITLVVLKFLVEFSI-----DCGRYDHLKISTGRPSKRLQTFCGTNLPEGEVIKTNSSIVTLEFVSDSNF-NDNGFKIEY</Hsp_hseq>
+      <Hsp_midline>G++ SP +PH YP N    W LVA   N+  + L F   F +     D  +YD +++        L  +CG+    G+ I   + I  + FVSD  F ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.37665e-05</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>232</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>KIEYFTNTVKDIAKGTSCNRVLTAS-RGQFSSPGYPVAYTANE-HCETLLSVEAGHVVSINF-EDIALESSTK--CEGDFVELFDGTSTGSPSLGRFCGKARVRGLTTSTNNAL-IVFHSDDVF-QDAGFNATYEAIKP</Hsp_hseq>
+      <Hsp_midline>K ++ +N  ++  +     R++T S  G   SP +P  Y  N      L++VE    + + F E   LE      C+ DFVE+ +  S G+  LGR+CG   V G   S  N + I F SD+ F  + GF   Y  + P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1268021324|ref|XP_022707260.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270994 isoform X4 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022707260</Hit_accession>
+  <Hit_len>985</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.26321e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>368</Hsp_hit-from>
+      <Hsp_hit-to>503</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRW------CGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-SPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>NGMLTSPNWPKKYGANQKCLIRLNATRSRL-IEISF-EYFLLERSPN--CAADFFEIHDKGPAENSLDSGWRPVYRLCGDGVARKKVVSSSNELQLVFSSDG-FSEVGGFKLTYRMVTPAVEKVTEAPSMVPLPLLPPDTM</Hsp_hseq>
+      <Hsp_midline>NG + SP +P  Y  N   + RL A    + I+++F E F LE   +  C  DF E+ +  P++ ++   W      CG G    K +S  N++++ F SD  F    GF + Y +V P   +   +PS++P   LP D +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.6173e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENV-WIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQI-RIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPHGYPNNAHCRWNLVAQSGNITLVVLKFLVEFSI-----DCGRYDHLKISTGRPSKRLQTFCGTNLPEGEVIKTNSSIVTLEFVSDSNF-NDNGFKIEY</Hsp_hseq>
+      <Hsp_midline>G++ SP +PH YP N    W LVA   N+  + L F   F +     D  +YD +++        L  +CG+    G+ I   + I  + FVSD  F ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.65276e-05</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>218</Hsp_hit-from>
+      <Hsp_hit-to>349</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>KIEYFTNTVKDIAKGTSCNRVLTAS-RGQFSSPGYPVAYTANE-HCETLLSVEAGHVVSINF-EDIALESSTK--CEGDFVELFDGTSTGSPSLGRFCGKARVRGLTTSTNNAL-IVFHSDDVF-QDAGFNATYEAIKP</Hsp_hseq>
+      <Hsp_midline>K ++ +N  ++  +     R++T S  G   SP +P  Y  N      L++VE    + + F E   LE      C+ DFVE+ +  S G+  LGR+CG   V G   S  N + I F SD+ F  + GF   Y  + P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1268021326|ref|XP_022707265.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270994 isoform X5 [Varroa jacobsoni] &gt;gi|1268021328|ref|XP_022707273.1| uncharacterized protein LOC111270994 isoform X5 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022707265</Hit_accession>
+  <Hit_len>933</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.27375e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>316</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRW------CGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV-SPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>NGMLTSPNWPKKYGANQKCLIRLNATRSRL-IEISF-EYFLLERSPN--CAADFFEIHDKGPAENSLDSGWRPVYRLCGDGVARKKVVSSSNELQLVFSSDG-FSEVGGFKLTYRMVTPAVEKVTEAPSMVPLPLLPPDTM</Hsp_hseq>
+      <Hsp_midline>NG + SP +P  Y  N   + RL A    + I+++F E F LE   +  C  DF E+ +  P++ ++   W      CG G    K +S  N++++ F SD  F    GF + Y +V P   +   +PS++P   LP D +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.51481e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENV-WIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQI-RIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPHGYPNNAHCRWNLVAQSGNITLVVLKFLVEFSI-----DCGRYDHLKISTGRPSKRLQTFCGTNLPEGEVIKTNSSIVTLEFVSDSNF-NDNGFKIEY</Hsp_hseq>
+      <Hsp_midline>G++ SP +PH YP N    W LVA   N+  + L F   F +     D  +YD +++        L  +CG+    G+ I   + I  + FVSD  F ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.94908e-05</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>166</Hsp_hit-from>
+      <Hsp_hit-to>297</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>KIEYFTNTVKDIAKGTSCNRVLTAS-RGQFSSPGYPVAYTANE-HCETLLSVEAGHVVSINF-EDIALESSTK--CEGDFVELFDGTSTGSPSLGRFCGKARVRGLTTSTNNAL-IVFHSDDVF-QDAGFNATYEAIKP</Hsp_hseq>
+      <Hsp_midline>K ++ +N  ++  +     R++T S  G   SP +P  Y  N      L++VE    + + F E   LE      C+ DFVE+ +  S G+  LGR+CG   V G   S  N + I F SD+ F  + GF   Y  + P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1268077183|ref|XP_022709572.1|</Hit_id>
+  <Hit_def>cubilin-like [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022709572</Hit_accession>
+  <Hit_len>481</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>6.86836e-06</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI---LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>TASKQGNFSSPAYPNNYPENMECYYTFKG-QESETLRITFYE-FELEEPFQKGCLNDFVDISTISVANVKQLVGRFCGT-YVPVPLLTMKPRMEIIFKAN-HARSAKGFFGHY</Hsp_hseq>
+      <Hsp_midline>T S  G+  SP +P+ YP N    +     +E+  +++TF E F LE+P    C  DFV++   S   +   +GR+CG+  VP   ++   ++ I F ++ +  S  GF  HY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1268042235|ref|XP_022693784.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022693784</Hit_accession>
+  <Hit_len>1016</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.06012e-05</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>413</Hsp_hit-from>
+      <Hsp_hit-to>548</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>GTQAESNLSSKFQF------SSNKEQNGVQDPQHERI----ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GTLPDTLLSSGYRMTVIYRTSSNANKHSGFGATYEAICGGDLSLEDTLVLQSPNYPDEYRPAKECVWKII-TEEKFQVALKFQ---AFEVESHDNCVYDYVEIVDGHDNDSPVIGKYCGF-KLPEDIRSSDNKLMLKFVSD</Hsp_hseq>
+      <Hsp_midline>GT  ++ LSS ++       SSN  ++      +E I    +++     + SP +P  Y      VW+++  EE   + L F      E    D C YD+VE+ +   +D  ++G++CG   +P    S  N++ ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.29661e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>614</Hsp_hit-from>
+      <Hsp_hit-to>705</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP-SDGTIL--GRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NGTLTSPSFPDLYPPNKNCIWEIVAPPQH-RITLNF-THFELEGTNQE-CEYDSVDVSSRVRDVTVKKHGVFCGT-QKPSSITSEGNVLRVEFNSD</Hsp_hseq>
+      <Hsp_midline>NG++ SP FP  YP N   +W +VA  ++  I L F   F LE    + C+YD V+V     D T+   G +CG+   P    S+GN +R+ F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000784635</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>774</Hsp_hit-from>
+      <Hsp_hit-to>877</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV--EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GEITSPNYPLEYPSKKECAW-LFSTTPGHRLKLVFDD-FELEPHQE--CSYDSLSVYDGENTDSSSLGIFCGA-RAPHPLLSSNNKMYLVFKSDASV-SRKGFKARHSTV</Hsp_hseq>
+      <Hsp_midline>G I SP +P  YP      W L +      ++L FD+ F LE  ++  C YD + V   E +D + LG +CG+   P   +S  N++ + F SD    S  GF   ++ V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00114085</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>363</Hsp_hit-from>
+      <Hsp_hit-to>449</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>WRITATHGERIQLNITQMDIFETEN-----CETDYVEVRDGYWHQSDLIGRYCGTGTLPDTLLSSGYRMTVIYRTSSNANKHSGFGATYEAI</Hsp_hseq>
+      <Hsp_midline>WR+ A   E + + +T  + F  E+     C+ D+VEV +       ++GR+CG+GT+P   +S G ++ + + +        GF   Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1268036004|ref|XP_022690949.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111261606 isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022690949</Hit_accession>
+  <Hit_len>1004</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000277693</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>194</Hsp_hit-from>
+      <Hsp_hit-to>293</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRF-VSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>SSGYIESPHFPVVYPSDYSVEYQLVNVDPRGYVQLVFTD-FQLS-------PWSYIEVLN-TNGSRIDVYNGNTFRPPIIVSAGQNLTVKFRANDEY--ANAGFRAKYTFV</Hsp_hseq>
+      <Hsp_midline>++G I SP FP  YP +  + ++LV V+   ++QL F + F L         + ++EV   ++G+ +  + G+   P   +S G  + ++F  +DEY  +  GF   Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1268036000|ref|XP_022690947.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111261606 isoform X1 [Varroa jacobsoni] &gt;gi|1268036002|ref|XP_022690948.1| uncharacterized protein LOC111261606 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022690947</Hit_accession>
+  <Hit_len>1050</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000313253</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>194</Hsp_hit-from>
+      <Hsp_hit-to>293</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRF-VSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>SSGYIESPHFPVVYPSDYSVEYQLVNVDPRGYVQLVFTD-FQLS-------PWSYIEVLN-TNGSRIDVYNGNTFRPPIIVSAGQNLTVKFRANDEY--ANAGFRAKYTFV</Hsp_hseq>
+      <Hsp_midline>++G I SP FP  YP +  + ++LV V+   ++QL F + F L         + ++EV   ++G+ +  + G+   P   +S G  + ++F  +DEY  +  GF   Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1268067644|ref|XP_022705349.1|</Hit_id>
+  <Hit_def>tolloid-like protein 2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022705349</Hit_accession>
+  <Hit_len>530</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000890975</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>213</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGL--------------EDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFP</Hsp_qseq>
+      <Hsp_hseq>VQSPAYPGIYPRNLNCRYRISVRQSLVGLDLVFFDVDGLRCDNLLMCFPRPISREPSD--CLFDYVRIHDGPTDDHPVIATLCGRGRLKSNIVASGSEMLVTFVTSPAGP</Hsp_hseq>
+      <Hsp_midline>+ SP +P  YPRN    +R+   +  V + L F +  GL               +P D  C +D+V + +    D  ++   CG G +    ++ G+++ + FV+    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1268028153|ref|XP_022687458.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111259581 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022687458</Hit_accession>
+  <Hit_len>892</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00441824</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>173</Hsp_hit-from>
+      <Hsp_hit-to>326</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>156</Hsp_align-len>
+      <Hsp_qseq>AGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGS--IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGL--------------EDPEDDICKYDFVEV-EEPS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFP</Hsp_qseq>
+      <Hsp_hseq>ATVKQQQEVASRYGQYSNLYPHRRGQPVQNTYCHRLFKDCAPGRCFVQSPAYPGIYPRGLSCKFRINMRQSLVGLDLTFFDVDGLRCDNLLMCFPRPISRDPAD--CPFDYVRVFDGPTEDHPVITTLCGRGRLKSNIVASSSEMLVTFVSSPAGP</Hsp_hseq>
+      <Hsp_midline>A  +Q  +  S          ++    VQ+    R+      G   + SP +P  YPR     +R+   +  V + LTF +  GL               DP D  C +D+V V + P+ D  ++   CG G +    ++  +++ + FVS    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1268028155|ref|XP_022687459.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111259581 isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022687459</Hit_accession>
+  <Hit_len>741</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00508154</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>173</Hsp_hit-from>
+      <Hsp_hit-to>326</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>156</Hsp_align-len>
+      <Hsp_qseq>AGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGS--IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGL--------------EDPEDDICKYDFVEV-EEPS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFP</Hsp_qseq>
+      <Hsp_hseq>ATVKQQQEVASRYGQYSNLYPHRRGQPVQNTYCHRLFKDCAPGRCFVQSPAYPGIYPRGLSCKFRINMRQSLVGLDLTFFDVDGLRCDNLLMCFPRPISRDPAD--CPFDYVRVFDGPTEDHPVITTLCGRGRLKSNIVASSSEMLVTFVSSPAGP</Hsp_hseq>
+      <Hsp_midline>A  +Q  +  S          ++    VQ+    R+      G   + SP +P  YPR     +R+   +  V + LTF +  GL               DP D  C +D+V V + P+ D  ++   CG G +    ++  +++ + FVS    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1268018727|ref|XP_022694997.1|</Hit_id>
+  <Hit_def>cubilin-like isoform X1 [Varroa jacobsoni] &gt;gi|1268018729|ref|XP_022695005.1| cubilin-like isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022694997</Hit_accession>
+  <Hit_len>854</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00820434</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>425</Hsp_hit-from>
+      <Hsp_hit-to>568</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE----DDICKYDFVEVEEPSDGT----ILGRWCGSGTVPGKQISKGNQIRIRFV</Hsp_qseq>
+      <Hsp_hseq>LMLVFSSANTQGQGFKATYTFETDYKIPGTPSPN--KGCYFSYVSESQQTGEFNSPRYPANYPSMTTCEYHFLGRSDE-QVKIVFNYFKTRSDSSTTQYNDGCEEDWLELYEQNEKTGQEKKYGRYC-SGAAPGPIVTDIGYHTVRVV</Hsp_hseq>
+      <Hsp_midline>L+L+ S+   Q QG +A     + ++       N  +      +      G  +SPR+P  YP  T   +  +   +   +++ F+      D      +D C+ D++E+ E ++ T      GR+C SG  PG  ++      +R V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1268018731|ref|XP_022695008.1|</Hit_id>
+  <Hit_def>cubilin-like isoform X2 [Varroa jacobsoni] &gt;gi|1268018733|ref|XP_022695017.1| cubilin-like isoform X2 [Varroa jacobsoni] &gt;gi|1268018735|ref|XP_022695026.1| cubilin-like isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022695008</Hit_accession>
+  <Hit_len>837</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00899706</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>408</Hsp_hit-from>
+      <Hsp_hit-to>551</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE----DDICKYDFVEVEEPSDGT----ILGRWCGSGTVPGKQISKGNQIRIRFV</Hsp_qseq>
+      <Hsp_hseq>LMLVFSSANTQGQGFKATYTFETDYKIPGTPSPN--KGCYFSYVSESQQTGEFNSPRYPANYPSMTTCEYHFLGRSDE-QVKIVFNYFKTRSDSSTTQYNDGCEEDWLELYEQNEKTGQEKKYGRYC-SGAAPGPIVTDIGYHTVRVV</Hsp_hseq>
+      <Hsp_midline>L+L+ S+   Q QG +A     + ++       N  +      +      G  +SPR+P  YP  T   +  +   +   +++ F+      D      +D C+ D++E+ E ++ T      GR+C SG  PG  ++      +R V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1268052353|ref|XP_022698375.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111265741 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022698375</Hit_accession>
+  <Hit_len>379</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0201626</Hsp_evalue>
+      <Hsp_query-from>230</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>GRKSRVVDLNLLTEE-------VRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACC</Hsp_qseq>
+      <Hsp_hseq>NRDSFAVDIKLVKAEKHLFEMEVRAACASPRERVICVQDHYPDADIIYQPACTILHRCDEHSGCC</Hsp_hseq>
+      <Hsp_midline> R S  VD+ L+  E       VR    +PR   + +++     D I+ P C ++ RC  +  CC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1268052355|ref|XP_022698376.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111265741 isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022698376</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0316196</Hsp_evalue>
+      <Hsp_query-from>239</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>62</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>NLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACC</Hsp_qseq>
+      <Hsp_hseq>HLFEMEVRAACASPRERVICVQDHYPDADIIYQPACTILHRCDEHSGCC</Hsp_hseq>
+      <Hsp_midline>+L   EVR    +PR   + +++     D I+ P C ++ RC  +  CC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1268046610|ref|XP_022695766.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1-like isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022695766</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.04001</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>280</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>LTSALAGQRQGTQAESNLSSKFQFSSN-KEQNGVQDPQHERIITVST----NGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYF</Hsp_qseq>
+      <Hsp_hseq>MTVIFQSHATASQPVKGFRAIYQFVTNFGIPSGRQDPQGVCTFIYNSSEVSNGTFTTPNYPGVYPRDTECHYLFYGKDKEKIHIQFAYFDVEGVPPCTSDTAS-DYVEFSNFKTVDRKIPRHCGN-MKPNKIESDSDFFRVAFRSNDKF</Hsp_hseq>
+      <Hsp_midline>+T         +Q      + +QF +N    +G QDPQ       ++    NG+  +P +P  YPR+T   +     + E + IQ  + +  G+     D    D+VE     +    + R CG+   P K  S  +  R+ F S++ F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1268046612|ref|XP_022695767.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1-like isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022695767</Hit_accession>
+  <Hit_len>305</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.045254</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>280</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>LTSALAGQRQGTQAESNLSSKFQFSSN-KEQNGVQDPQHERIITVST----NGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYF</Hsp_qseq>
+      <Hsp_hseq>MTVIFQSHATASQPVKGFRAIYQFVTNFGIPSGRQDPQGVCTFIYNSSEVSNGTFTTPNYPGVYPRDTECHYLFYGKDKEKIHIQFAYFDVEGVPPCTSDTAS-DYVEFSNFKTVDRKIPRHCGN-MKPNKIESDSDFFRVAFRSNDKF</Hsp_hseq>
+      <Hsp_midline>+T         +Q      + +QF +N    +G QDPQ       ++    NG+  +P +P  YPR+T   +     + E + IQ  + +  G+     D    D+VE     +    + R CG+   P K  S  +  R+ F S++ F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1268028726|ref|XP_022687715.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111259764 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022687715</Hit_accession>
+  <Hit_len>3838</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0474708</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1040</Hsp_hit-from>
+      <Hsp_hit-to>1142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYP--RNTVLVWRLVAVEE------NVWIQLTFDERFGLEDPEDDICKYDFVEVE----------EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>LHSPLFPAAYPPSRRCHFSVQLLHTSQQHRTHSNASIELRFLE-FDLESHEN--CDYDYVEVTGGAWHPPGLLQSSGGRICGNW--NERIKLLRFTASRSMQITFVSD</Hsp_hseq>
+      <Hsp_midline>+HSP FP  YP  R      +L+   +      N  I+L F E F LE  E+  C YD+VEV           + S G I G W  +  +   + +    ++I FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1268049242|ref|XP_022697025.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 isoform X5 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022697025</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0591623</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>190</Hsp_hit-from>
+      <Hsp_hit-to>322</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE------RFGLEDPEDDICKYDFVEVEEPSDGTILGR--WCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLE</Hsp_qseq>
+      <Hsp_hseq>TEGRFFSPQYPSNYPRESRCSYQFLG-RETERVKLMFGQIRLQKGDYSCYNAPDKITVRDGRDMSAPVIGTLCNRNMWV-------ELVSTGPDLLVIFTASSHFPGR-GFFGNFSFV----------EILPPPPISASIDQNMYPAYHAIQ</Hsp_hseq>
+      <Hsp_midline>T G   SP++P  YPR +   ++ +   E   ++L F +       +   +  D I   D  ++  P  GT+  R  W        + +S G  + + F +  +FP   GF  +++ V           +LPP  +   +  N   A+  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1268049234|ref|XP_022697022.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 isoform X2 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022697022</Hit_accession>
+  <Hit_len>417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0686427</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>189</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE------RFGLEDPEDDICKYDFVEVEEPSDGTILGR--WCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAF</Hsp_qseq>
+      <Hsp_hseq>TEGRFFSPQYPSNYPRESRCSYQFLG-RETERVKLMFGQIRLQKGDYSCYNAPDKITVRDGRDMSAPVIGTLCNRNMWV-------ELVSTGPDLLVIFTASSHFPGR-GFFGNFSFV----------EILPPPPISASIDQNMYPAY</Hsp_hseq>
+      <Hsp_midline>T G   SP++P  YPR +   ++ +   E   ++L F +       +   +  D I   D  ++  P  GT+  R  W        + +S G  + + F +  +FP   GF  +++ V           +LPP  +   +  N   A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|1268068565|ref|XP_022705778.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111270049 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022705778</Hit_accession>
+  <Hit_len>375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0850246</Hsp_evalue>
+      <Hsp_query-from>244</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>52</Hsp_align-len>
+      <Hsp_qseq>EVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQ</Hsp_qseq>
+      <Hsp_hseq>QLRTRCALPREQVICVKDLYPDTDVKYYPACTLLHRCDASTGCCEDPTESCQ</Hsp_hseq>
+      <Hsp_midline>++R     PR   + +++    TD  ++P C L+ RC  +  CC      CQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1268049232|ref|XP_022697021.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 isoform X1 [Varroa jacobsoni]</Hit_def>
+  <Hit_accession>XP_022697021</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0909641</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>190</Hsp_hit-from>
+      <Hsp_hit-to>318</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE------RFGLEDPEDDICKYDFVEVEEPSDGTILGR--WCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAF</Hsp_qseq>
+      <Hsp_hseq>TEGRFFSPQYPSNYPRESRCSYQFLG-RETERVKLMFGQIRLQKGDYSCYNAPDKITVRDGRDMSAPVIGTLCNRNMWV-------ELVSTGPDLLVIFTASSHFPGR-GFFGNFSFV----------EILPPPPISASIDQNMYPAY</Hsp_hseq>
+      <Hsp_midline>T G   SP++P  YPR +   ++ +   E   ++L F +       +   +  D I   D  ++  P  GT+  R  W        + +S G  + + F +  +FP   GF  +++ V           +LPP  +   +  N   A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>18924</Statistics_db-num>
+      <Statistics_db-len>10910132</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2209344340</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

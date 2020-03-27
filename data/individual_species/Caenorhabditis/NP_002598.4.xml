@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Caenorhabditis</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|17555774|ref|NP_497461.1|</Hit_id>
+  <Hit_def>PDGF/VEGF growth factor related [Caenorhabditis elegans] &gt;gi|351051190|emb|CCD73778.1| PDGF/VEGF growth factor related [Caenorhabditis elegans]</Hit_def>
+  <Hit_accession>NP_497461</Hit_accession>
+  <Hit_len>304</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>8.66877e-07</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>LLLLGCGYLAHVL--AEEAEIPREVIERL--ARSQIHSIRDLQRLL----------EIDSVGSEDSLDT-SLRAHGVHATKHVPEKRP-----LPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>ILLIFCLFCAVICSRGTDSDIPHEFHKMLKHAKSLNSLLRDLHVIYSPEMTNRHVEKTDKHGAALSLKSGSMSAQRIVSIQNISDDEMDGYTLFHLQSMKDIKQG-NDTCNLQSVCVPIPQLSDDP---QVLMYPKCYEVKQCVGSCCNSVETCHPGTINLVKKHVAELLYIGNGRFMFNMTKEITMEEHTSCSCFDCGSN</Hsp_hseq>
+      <Hsp_midline>+LL+ C + A +     +++IP E  + L  A+S    +RDL  +           + D  G+  SL + S+ A  + + +++ +          ++  + I++     C  ++V   IP+   DP     L++P C EVK+C G C  S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|309358911|emb|CAP33607.2|</Hit_id>
+  <Hit_def>Protein CBR-PVF-1 [Caenorhabditis briggsae]</Hit_def>
+  <Hit_accession>CAP33607</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>4.86917e-06</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>CNLQNVCVPVPQLSDDPQ---LLIYPKCYEVKQCVGSCCNSLETCHPGTINLVKKHVAELLYIGNGRFMFNMTREITMEEHTSCSCFDCGSN</Hsp_hseq>
+      <Hsp_midline>C  + V   +P+   DP     LI+P C EVK+C G C  S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|268575774|ref|XP_002642867.1|</Hit_id>
+  <Hit_def>C. briggsae CBR-PVF-1 protein [Caenorhabditis briggsae]</Hit_def>
+  <Hit_accession>XP_002642867</Hit_accession>
+  <Hit_len>278</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>5.92851e-06</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>89</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>CNLQNVCVPVPQLSDDPQ---LLIYPKCYEVKQCVGSCCNSLETCHPGTINLVKKHVAELLYIGNGRFMFNMTREITMEEHTSCSCFDCGSN</Hsp_hseq>
+      <Hsp_midline>C  + V   +P+   DP     LI+P C EVK+C G C  S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1273536885|gb|PIC40906.1|</Hit_id>
+  <Hit_def>hypothetical protein B9Z55_008501 [Caenorhabditis nigoni]</Hit_def>
+  <Hit_accession>PIC40906</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>6.61505e-06</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>CNLQNVCVPVPQLSDDPQ---LLIYPKCYEVKQCVGSCCNSLETCHPGTINLVKKHVAELLYIGNGRFMFNMTREITMEEHTSCSCFDCGSN</Hsp_hseq>
+      <Hsp_midline>C  + V   +P+   DP     LI+P C EVK+C G C  S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|341888437|gb|EGT44372.1|</Hit_id>
+  <Hit_def>CBN-PVF-1 protein [Caenorhabditis brenneri]</Hit_def>
+  <Hit_accession>EGT44372</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>7.3884e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>QRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>QRIVSISNI-SNDEMDGYTLFH---------------LQSMKDIKQG-NDTCNLQSVCVPIPQLSDDP---QVLTYPKCYEVKQCVGSCCNSMETCHPGTINLVKKHVAELLYIGNGRFMFNMTREITMEEHTSCSCFDCGAN</Hsp_hseq>
+      <Hsp_midline>QR++ I ++ S D +D     H               ++  + I++     C  ++V   IP+   DP     L +P C EVK+C G C  S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|308483531|ref|XP_003103967.1|</Hit_id>
+  <Hit_def>CRE-PVF-1 protein [Caenorhabditis remanei] &gt;gi|308258624|gb|EFP02577.1| CRE-PVF-1 protein [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003103967</Hit_accession>
+  <Hit_len>295</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.26016e-05</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEV--QVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>CNLQSVCVPVPQLSDDP---QVLMYPKCYEVKQCVGSCCSSVETCHPGTINLVKKHVAELLYIGNGRFMFNMTREITMEEHTSCSCFDCGSN</Hsp_hseq>
+      <Hsp_midline>C  ++V   +P+   DP     L++P C EVK+C G C +S   C P  ++     VA++ Y+     +  +  ++ +EEH  C+C     N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1233667314|gb|OZG19568.1|</Hit_id>
+  <Hit_def>hypothetical protein FL83_05791, partial [Caenorhabditis latens]</Hit_def>
+  <Hit_accession>OZG19568</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0800369</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>51</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVH</Hsp_qseq>
+      <Hsp_hseq>CNLQSVCVPVPQLSDDP---QVLMYPKCYEVKQCVGSCCSSVETCHPGTIN</Hsp_hseq>
+      <Hsp_midline>C  ++V   +P+   DP     L++P C EVK+C G C +S   C P  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>236757</Statistics_db-num>
+      <Statistics_db-len>97015119</Statistics_db-len>
+      <Statistics_hsp-len>108</Statistics_hsp-len>
+      <Statistics_eff-space>7358872389</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

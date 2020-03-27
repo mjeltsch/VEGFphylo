@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Fopius_arisanus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|755991921|ref|XP_011313042.1|</Hit_id>
+  <Hit_def>PREDICTED: tolloid-like protein 1 [Fopius arisanus] &gt;gi|755991923|ref|XP_011313044.1| PREDICTED: tolloid-like protein 1 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011313042</Hit_accession>
+  <Hit_len>1205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>3.11424e-09</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>804</Hsp_hit-from>
+      <Hsp_hit-to>901</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE--DDICKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>ASNGTITSPSFPETYPGNKNCIWEIVAPAQ-YRITLNF-THFDLEGNKVYHQECEYDSVEVFSKLGDDILKKHGVFCGS-KVPTPIISEGNAMRIIFTSDK</Hsp_hseq>
+      <Hsp_midline>++NG+I SP FP TYP N   +W +VA  +   I L F   F LE  +     C+YD VEV       IL   G +CGS  VP   IS+GN +RI F SD+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>3.80144e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>652</Hsp_hit-from>
+      <Hsp_hit-to>740</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GHLESPNYPEEYQSSKECVWRLTVPDE-YQVALKF-QSFEIEN--HDNCVYDYVEVRDGHNADSPLIGLYCGYKAPPDLR-STGNKLFVKFVSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  Y  +   VWRL   +E   + L F + F +E+   D C YD+VEV +   +D  ++G +CG    P  + S GN++ ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.85019e-05</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>532</Hsp_hit-from>
+      <Hsp_hit-to>641</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYP--RNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>NSGSFASPTHPNSSPPLDDERCEWRITATHGERIVLNITSLDIF-----KSDYCKVDYIEIRDGYWYKSPVLGRFCGSGKIHEPIVSTGSRMLVTYVKTSQERGYRGFTANYEAV</Hsp_hseq>
+      <Hsp_midline> +GS  SP  P++ P   +    WR+ A   E + + +T  + F     + D CK D++E+ +       +LGR+CGSG +    +S G+++ + +V         GF  +Y  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000104948</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>964</Hsp_hit-from>
+      <Hsp_hit-to>1056</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TSSVGTITSPNYPDYYPARKDCVWHFRTTPGH-RIKLIF-KVFEMEPHQE--CAYDHIAIYDGDSPDSHTLGRFCGTKE-PHPMIATGNQMFMVFKSD</Hsp_hseq>
+      <Hsp_midline> S+ G+I SP +P  YP     VW       +  I+L F + F +E  ++  C YD + + +    D   LGR+CG+   P   I+ GNQ+ + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|755955813|ref|XP_011303226.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105266614 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011303226</Hit_accession>
+  <Hit_len>1048</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.03303e-08</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>399</Hsp_hit-from>
+      <Hsp_hit-to>553</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPED-DICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYF--------------PSEPGF------CIHYNIVMPQFTEAVSP-------SVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>FYSPNYPQMYPASIDCV-RILDAGEGMVLKLDFRDRFDLEAAKDKEDCKYDFLEVRDGMYGYATLVGLYCGK-SFPPEITSKGRYLWLHFHSDDTIQYWGFKAIWTTVPRPTTPGVPPEAEPCIKY--VTHEYDAAINSTQIEKERALAQKTALPLDCL</Hsp_hseq>
+      <Hsp_midline> +SP +P  YP +   V R++   E + ++L F +RF LE  +D + CKYDF+EV +   G  T++G +CG  + P +  SKG  + + F SD+                P+ PG       CI Y  V  ++  A++        ++   +ALPLD L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|755955058|ref|XP_011302978.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011302978</Hit_accession>
+  <Hit_len>3729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>5.81916e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1327</Hsp_hit-from>
+      <Hsp_hit-to>1425</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE----DDICKYDFVEVEEPSDG---TILGRWCGSG--TVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGVIESPNFPNRYPPNCNCTWIIDAPMGNK-INISF-SHFDLE-PENPYTDSPCKFDYLEIKEGSYGSPVTELGRFCATEGMTLPPKIVSTENQVFITFRTD</Hsp_hseq>
+      <Hsp_midline>+G I SP FP+ YP N    W + A   N  I ++F   F LE PE    D  CK+D++E++E S G   T LGR+C +   T+P K +S  NQ+ I F +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.24806e-05</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>220</Hsp_query-to>
+      <Hsp_hit-from>2872</Hsp_hit-from>
+      <Hsp_hit-to>3036</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>SIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV--EEPSDGTI---LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN-----IVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTW</Hsp_qseq>
+      <Hsp_hseq>NISSPGFPRAYPNKSECVWEY-DVEPGYHIGLSFIDRFSLENSIN--CTNDYVEVFDRERSDENTWKSLGKVCGRNT-PSPFNTTTNHIKVIFHSNDDIRGD-GFKAHIDKNCGGIFMASQVSQTIMSPMYPNGYPRYLNCNYTIVAPHRKAVIVEFE----NFDLETMPPSCW</Hsp_hseq>
+      <Hsp_midline>+I SP FP  YP  +  VW    VE    I L+F +RF LE+  +  C  D+VEV   E SD      LG+ CG  T P    +  N I++ F S++    + GF  H +     I M         S + P+  P  L  N        + +I   E      DLE +    W</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000242323</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1564</Hsp_hit-from>
+      <Hsp_hit-to>1655</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ASQGSIHSQNYPMNYPVNQNCEW-LIEVGEHHLINLTFVD-VDLEGSTD--CIMDYIKVFDGPTREHNLLETFCGK-TIPSPIISSGDSLLVVMRSD</Hsp_hseq>
+      <Hsp_midline>++ GSIHS  +P  YP N    W L+ V E+  I LTF +   LE   D  C  D+++V + P+ +  +L  +CG  T+P   IS G+ + +   SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00106757</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>2294</Hsp_hit-from>
+      <Hsp_hit-to>2389</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGF</Hsp_qseq>
+      <Hsp_hseq>VKTPGYPNVPPPYTECLWTFMA-PAGRRLSLHFIDRFDLTSSAE--CQKEYVEVRDGGTDHALVLGVYCGR-TAPSTISTKGNMLYIKYYTDMSVPGN-GF</Hsp_hseq>
+      <Hsp_midline>+ +P +P+  P  T  +W  +A      + L F +RF L    +  C+ ++VEV +       +LG +CG  T P    +KGN + I++ +D   P   GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00281553</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>742</Hsp_hit-from>
+      <Hsp_hit-to>874</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>HTYPRNT----VLVWRLVAVEENVW-IQLTFDERFGLEDPEDDI-----CKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI-VMPQFTE--AVSPSVLPPSALPLD</Hsp_qseq>
+      <Hsp_hseq>HTAPQGTISSPVVQGRYEAGLECTWKIQLPQGEKIRLVWQEIDIEDQKYCYYDFVEIYEGPDEESPVVGKYCGT-NLPLPRTLTTNVAIIVFSTDSSFHGK-GFTIKYDTHCGGEFHEPSGIFASPYYPSSYPDD</Hsp_hseq>
+      <Hsp_midline>HT P+ T    V+  R  A  E  W IQL   E+  L   E DI     C YDFVE+ E  D    ++G++CG+  +P  +    N   I F +D  F  + GF I Y+     +F E   +  S   PS+ P D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.014554</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1451</Hsp_hit-from>
+      <Hsp_hit-to>1539</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GTVTSPGYPNKYPTNIDCEW-TIEVDYGYSVQINFTD---VDTEKESSCMMDIIEVYGGVDESAPKLGEFCHSKT-PILYVSPINSIFIKLHSD</Hsp_hseq>
+      <Hsp_midline>G++ SP +P+ YP N    W  + V+    +Q+ F +   ++  ++  C  D +EV    D +   LG +C S T P   +S  N I I+  SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|755927435|ref|XP_011304198.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105267207 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011304198</Hit_accession>
+  <Hit_len>304</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000462208</Hsp_evalue>
+      <Hsp_query-from>266</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>TDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>TSVTYYPSCTRIKRCGG---CCGHALLSCQ--PTESEVRNFEVIKSTIGGNGKPKYSGKEIILLEEHKSCDCQC</Hsp_hseq>
+      <Hsp_midline>T   ++P C  +KRCGG   CC H    CQ  P++   +  EV++       +  +     + LE H+ CDC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|755981711|ref|XP_011309676.1|</Hit_id>
+  <Hit_def>PREDICTED: tolloid-like protein 1 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011309676</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00390178</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>280</Hsp_hit-from>
+      <Hsp_hit-to>381</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQ-LTFDERFGLEDPEDDICKYDFVEVEE-PSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GIIESPGFGTTYPPNLKCKWTIHVGAGKALTIGFVSFDIAW------HETCADDYVQFTEISSNGTRAILGKYCGND-LPTSFLSKSSVTEVEFRSKEK-TDHKGFQIRY</Hsp_hseq>
+      <Hsp_midline>G I SP F  TYP N    W + V   + + I  ++FD  +       + C  D+V+  E  S+GT  ILG++CG+  +P   +SK +   + F S E      GF I Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|755964787|ref|XP_011304958.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105267656 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011304958</Hit_accession>
+  <Hit_len>837</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0092514</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>711</Hsp_hit-from>
+      <Hsp_hit-to>826</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>NGVQDPQHERIITVST-NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGR-WCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGIP-PSSENCETVSVLEGILSSPFYPSPYPNNVNKCWRFYRAPAECRLQLSFLE-FDVE--SSPGCVKDSVSISG-QNTKFCGRTLAGSKTLLG--FPGSNSIDIRFSSDG-FGTGRGFTIGF</Hsp_hseq>
+      <Hsp_midline>NG+  P  E   TVS   G + SP +P  YP N    WR         +QL+F E F +E      C  D V +    +    GR   GS T+ G      N I IRF SD  F +  GF I +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|755940096|ref|XP_011297998.1|</Hit_id>
+  <Hit_def>PREDICTED: cubilin-like [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011297998</Hit_accession>
+  <Hit_len>453</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0249471</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>185</Hsp_hit-from>
+      <Hsp_hit-to>287</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GYIKSPGYPLYYPGEYACGWAFKTAPGQRVVLQF---HDFNIRSPEADGNCEDLIRIQD--SGQTIFESCGT-RIGTRIVSNSNQLTLKLISSSRVYPARGFLLKYEAV</Hsp_hseq>
+      <Hsp_midline>G I SP +P  YP      W    A  + V +Q      F +  PE D    D + +++   G  +   CG+  +  + +S  NQ+ ++ +S        GF + Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|755945716|ref|XP_011299894.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105264604 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011299894</Hit_accession>
+  <Hit_len>884</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0323313</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>204</Hsp_hit-from>
+      <Hsp_hit-to>323</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLED---------PEDDI------CKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFP-SEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VQSPAYPGIYPRALHCKYRLNTRQPFIKLYIE-NEEFNIDGQRCENIMTCPMRPISSGSQHCPYDYIRVYDGKDEGSPVIGTFCGMGKFPYSIIGTSADLYVEFVSSPAGPLLNTGF--HFNV</Hsp_hseq>
+      <Hsp_midline>+ SP +P  YPR     +RL   +  + + +  +E F ++          P   I      C YD++ V +  D    ++G +CG G  P   I     + + FVS    P    GF  H+N+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|755928986|ref|XP_011309257.1|</Hit_id>
+  <Hit_def>PREDICTED: tolloid-like protein 1 isoform X3 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011309257</Hit_accession>
+  <Hit_len>879</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0453187</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>432</Hsp_hit-from>
+      <Hsp_hit-to>564</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE-------------RFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPG</Hsp_qseq>
+      <Hsp_hseq>VMVFSSGESKQGRGFKANYSFETEYKIPGTPAPDGSCNFTY--LSSSRKKGEFNSPRYPSNYPSDTNCTYLFVAT-PNEQVTLVFDHFKVRTRNINLTVGHYGAEECQDDWL--EIYNMYRDNTEKLIGRYCWM-TAPG</Hsp_hseq>
+      <Hsp_midline>+++ +S  + Q +G +A  +  ++++       +G  +  +  + +    G  +SPR+P  YP +T   +  VA   N  + L FD               +G E+ +DD    +   +   +   ++GR+C   T PG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0699362</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>190</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQL---TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>TIKRTGTILSPTYPGTYPKDLACTYKFLG-EPGQRVRLEFRDFDLFYG-----GSHCPFDYVKVFDGLDKSAPVIGTYCG</Hsp_hseq>
+      <Hsp_midline>T+   G+I SP +P TYP++    ++ +  E    ++L    FD  +G        C +D+V+V +  D +  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|755928983|ref|XP_011309248.1|</Hit_id>
+  <Hit_def>PREDICTED: bone morphogenetic protein 1-like isoform X2 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011309248</Hit_accession>
+  <Hit_len>904</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0459009</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>457</Hsp_hit-from>
+      <Hsp_hit-to>589</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE-------------RFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPG</Hsp_qseq>
+      <Hsp_hseq>VMVFSSGESKQGRGFKANYSFETEYKIPGTPAPDGSCNFTY--LSSSRKKGEFNSPRYPSNYPSDTNCTYLFVAT-PNEQVTLVFDHFKVRTRNINLTVGHYGAEECQDDWL--EIYNMYRDNTEKLIGRYCWM-TAPG</Hsp_hseq>
+      <Hsp_midline>+++ +S  + Q +G +A  +  ++++       +G  +  +  + +    G  +SPR+P  YP +T   +  VA   N  + L FD               +G E+ +DD    +   +   +   ++GR+C   T PG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.069008</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>215</Hsp_hit-from>
+      <Hsp_hit-to>288</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQL---TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>TIKRTGTILSPTYPGTYPKDLACTYKFLG-EPGQRVRLEFRDFDLFYG-----GSHCPFDYVKVFDGLDKSAPVIGTYCG</Hsp_hseq>
+      <Hsp_midline>T+   G+I SP +P TYP++    ++ +  E    ++L    FD  +G        C +D+V+V +  D +  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|755928977|ref|XP_011309240.1|</Hit_id>
+  <Hit_def>PREDICTED: tolloid-like protein 1 isoform X1 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011309240</Hit_accession>
+  <Hit_len>913</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0467704</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>466</Hsp_hit-from>
+      <Hsp_hit-to>598</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE-------------RFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPG</Hsp_qseq>
+      <Hsp_hseq>VMVFSSGESKQGRGFKANYSFETEYKIPGTPAPDGSCNFTY--LSSSRKKGEFNSPRYPSNYPSDTNCTYLFVAT-PNEQVTLVFDHFKVRTRNINLTVGHYGAEECQDDWL--EIYNMYRDNTEKLIGRYCWM-TAPG</Hsp_hseq>
+      <Hsp_midline>+++ +S  + Q +G +A  +  ++++       +G  +  +  + +    G  +SPR+P  YP +T   +  VA   N  + L FD               +G E+ +DD    +   +   +   ++GR+C   T PG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.066747</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>224</Hsp_hit-from>
+      <Hsp_hit-to>297</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQL---TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>TIKRTGTILSPTYPGTYPKDLACTYKFLG-EPGQRVRLEFRDFDLFYGGSH-----CPFDYVKVFDGLDKSAPVIGTYCG</Hsp_hseq>
+      <Hsp_midline>T+   G+I SP +P TYP++    ++ +  E    ++L    FD  +G        C +D+V+V +  D +  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|755928992|ref|XP_011309270.1|</Hit_id>
+  <Hit_def>PREDICTED: tolloid-like protein 1 isoform X4 [Fopius arisanus]</Hit_def>
+  <Hit_accession>XP_011309270</Hit_accession>
+  <Hit_len>834</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0469511</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>466</Hsp_hit-from>
+      <Hsp_hit-to>598</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDE-------------RFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPG</Hsp_qseq>
+      <Hsp_hseq>VMVFSSGESKQGRGFKANYSFETEYKIPGTPAPDGSCNFTY--LSSSRKKGEFNSPRYPSNYPSDTNCTYLFVAT-PNEQVTLVFDHFKVRTRNINLTVGHYGAEECQDDWL--EIYNMYRDNTEKLIGRYCWM-TAPG</Hsp_hseq>
+      <Hsp_midline>+++ +S  + Q +G +A  +  ++++       +G  +  +  + +    G  +SPR+P  YP +T   +  VA   N  + L FD               +G E+ +DD    +   +   +   ++GR+C   T PG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0609198</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>224</Hsp_hit-from>
+      <Hsp_hit-to>297</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQL---TFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCG</Hsp_qseq>
+      <Hsp_hseq>TIKRTGTILSPTYPGTYPKDLACTYKFLG-EPGQRVRLEFRDFDLFYG-----GSHCPFDYVKVFDGLDKSAPVIGTYCG</Hsp_hseq>
+      <Hsp_midline>T+   G+I SP +P TYP++    ++ +  E    ++L    FD  +G        C +D+V+V +  D +  ++G +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>15827</Statistics_db-num>
+      <Statistics_db-len>10373965</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2153859925</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

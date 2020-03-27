@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Phaethon_lepturus</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-C NP_005420.1 vascular endothelial growth factor C preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>419</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-C NP_005420.1 vascular endothelial growth factor C preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>419</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|723121956|ref|XP_010284981.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010284981</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>351.673</Hsp_bit-score>
+      <Hsp_score>901</Hsp_score>
+      <Hsp_evalue>5.4656e-122</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>175</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>AYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPAT</Hsp_qseq>
+      <Hsp_hseq>AHASKDLEEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSSFDTRSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSKLDVYRQVHSIIRRSLPAT</Hsp_hseq>
+      <Hsp_midline>A+ASKDLEEQLRSVSSVDELMTVLYPEYWKM+KCQLRKGGWQHNRE ++ ++R+++++KFAAAHYN EILKSID EWRKTQCMPREVC+DVGKEFG  TNTFFKPPCVS+YRCGGCCNSEGLQCMN ST+Y+SKTLFEITVPLS GPKPVT+SFANHTSCRCMSKLDVYRQVHSIIRRSLPAT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|723145827|ref|XP_010290098.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010290098</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>293.508</Hsp_bit-score>
+      <Hsp_score>750</Hsp_score>
+      <Hsp_evalue>3.51902e-99</Hsp_evalue>
+      <Hsp_query-from>236</Hsp_query-from>
+      <Hsp_query-to>419</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>157</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>CQAANKTCPTNYMWNNHICRCLAQEDFMFSSDAGD-DSTDGFHDICGPNKELDEETCQCVCRAGLRPASCGPHKELDRNSCQCVCKNKLFPSQCGANREFDENTCQCVCKRTCPRNQPLNPGKCACECTESPQKCLLKGKKFHHQTCSCYRRPCTNRQKACEPGFSYSEEVCRCVPSYWKRPQMS</Hsp_qseq>
+      <Hsp_hseq>CHVANKTCPKNHIWNNQICRCLAQHDFGFSSHLGDSDTSEGFH-ICGPNKELDEETCQCVCKGGMRPSSCGPHKELDRSSCQCTCKNKLLPASCGPNKEFDEDKCQCVCKKTCPKHQPLNPAKCICECIESPNKCFLKGKRFHHQTCSCYRPPCTVRTKRCDAGFYFSEEVCRCVPTYWKRPLMN</Hsp_hseq>
+      <Hsp_midline>C  ANKTCP N++WNN ICRCLAQ DF FSS  GD D+++GFH ICGPNKELDEETCQCVC+ G+RP+SCGPHKELDR+SCQC CKNKL P+ CG N+EFDE+ CQCVCK+TCP++QPLNP KC CEC ESP KC LKGK+FHHQTCSCYR PCT R K C+ GF +SEEVCRCVP+YWKRP M+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|723138934|ref|XP_010286283.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010286283</Hit_accession>
+  <Hit_len>176</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>155.992</Hsp_bit-score>
+      <Hsp_score>393</Hsp_score>
+      <Hsp_evalue>8.47651e-46</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>AAFESGLDLSDAEPDAGEATAYASKDL-EEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRT--EETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLS</Hsp_qseq>
+      <Hsp_hseq>VSFLHLLQGSDYENGSVKRTSLSALERSEQQIRRASSLEELLRITHSEDWKLWKCRLKL------KSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTVNEAINLLS</Hsp_hseq>
+      <Hsp_midline> +F   L  SD E  + + T+ ++ +  E+Q+R  SS++EL+ + + E WK++KC+L+       +  ANL+SR+    + +FAAA Y+ + LK ID EW+KTQC+PRE C++V KE G  TN FFKPPCV+V+RCGGCCN E L CMNTST+Y+SKT+ E    LS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|677474728|gb|KFQ64142.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor D, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ64142</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.8853</Hsp_bit-score>
+      <Hsp_score>211</Hsp_score>
+      <Hsp_evalue>1.63808e-19</Hsp_evalue>
+      <Hsp_query-from>185</Hsp_query-from>
+      <Hsp_query-to>381</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>58</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>LFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQ---CQAANKTCPTNYMWNNHICRCLAQEDFMFSSDAGDDSTDGFHDICGPNKELDEETCQCVCRAGLRPASCGPHKELDRNSCQCVCKNKLFPSQCGANREFDENTCQCVCKRTCPRNQPLNPGKCACE-CTESPQKCLLKGKKFHHQTC</Hsp_qseq>
+      <Hsp_hseq>LFEISVPLTSVPEPVPIKIANHTGCKCLS--NTQRHQYAIIRRSV--QYPEEDGCPFTNKICHNGWIWDSDKCECVV-------------------DVEHPNR-----------REGLPPLA-----EL---------------AMCGQHMEFDEENCECICRQKCPTDFFQSKENCSCYLCRESRESCALKHKIFHAETC</Hsp_hseq>
+      <Hsp_midline>LFEI+VPL+  P+PV I  ANHT C+C+S  +  R  ++IIRRS+    P+   C   NK C   ++W++  C C+                    D+  PN+           R GL P +     EL               + CG + EFDE  C+C+C++ CP +   +   C+C  C ES + C LK K FH +TC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|723121088|ref|XP_010280140.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010280140</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>2.51267e-19</Hsp_evalue>
+      <Hsp_query-from>185</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>67</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>LFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQ---CQAANKTCPTNYMWNNHICRCLAQEDFMFSSDAGDDSTDGFHDICGPNKELDEETCQCVCRAGLRP----ASCGPHKELDRNSCQCVCKNKLFPSQCGANREFDENTCQCVCKRTCPRNQPLNPGKCACE-CTESPQKCLLKGKKFHHQTCSCYRRPCTNRQKACEPGFSYSEEVCRC</Hsp_qseq>
+      <Hsp_hseq>LFEISVPLTSVPEPVPIKIANHTGCKCLS--NTQRHQYAIIRRSV--QYPEEDGCPFTNKICHNGWIWDSDKCECVV-------------------DVEHPNR-----------REGLPPLAELAMCGQHMEFDEENCECICRQK------------------------CPTDFFQSKENCSCYLCRESRESCALKHKIFHAETCSCEDK-CPSQPRTCPTAKPMCSRHCRC</Hsp_hseq>
+      <Hsp_midline>LFEI+VPL+  P+PV I  ANHT C+C+S  +  R  ++IIRRS+    P+   C   NK C   ++W++  C C+                    D+  PN+           R GL P    A CG H E D  +C+C+C+ K                        CP +   +   C+C  C ES + C LK K FH +TCSC  + C ++ + C          CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|723141951|ref|XP_010287955.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010287955</Hit_accession>
+  <Hit_len>122</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.40951e-14</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDV</Hsp_qseq>
+      <Hsp_hseq>WNRSFCRPLEQLVDVISEFPNEVEYIFRPSCVSLQRCGGCCGDEGLHCVPVETSMVTMQLLKIK-PNGEAPY-VEMAFTEHKQCECRPRQDL</Hsp_hseq>
+      <Hsp_midline>W ++ C P E  +DV  EF       F+P CVS+ RCGGCC  EGL C+   TS ++  L +I  P  + P  V ++F  H  C C  + D+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|677488147|gb|KFQ77552.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ77552</Hit_accession>
+  <Hit_len>92</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.3958</Hsp_bit-score>
+      <Hsp_score>163</Hsp_score>
+      <Hsp_evalue>4.09426e-14</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>91</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>WNRSFCRPLEQLVDVISEFPNEVEYIFRPSCVSLQRCGGCCGDEGLHCVPVETSMVTMQLLKIK-PNGEAPY-VEMAFTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>W ++ C P E  +DV  EF       F+P CVS+ RCGGCC  EGL C+   TS ++  L +I  P  + P  V ++F  H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|677492653|gb|KFQ82058.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ82058</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.35274e-09</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>99</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDV</Hsp_qseq>
+      <Hsp_hseq>YERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQH--IAHMSFLQHSKCDCRPKKDV</Hsp_hseq>
+      <Hsp_midline>+ ++ C   E  +D+ +E+       FKP CV + RC GCC  EGL+C+      ++  +  I    SQ      +SF  H+ C C  K DV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|723150284|ref|XP_010292561.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010292561</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.37356e-09</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDV</Hsp_qseq>
+      <Hsp_hseq>YERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQH--IAHMSFLQHSKCDCRPKKDV</Hsp_hseq>
+      <Hsp_midline>+ ++ C   E  +D+ +E+       FKP CV + RC GCC  EGL+C+      ++  +  I    SQ      +SF  H+ C C  K DV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|677475021|gb|KFQ64435.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit B, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ64435</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>5.27554e-07</Hsp_evalue>
+      <Hsp_query-from>130</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>QCMPREVCIDVGKEFGVATNTFFK--PPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGP--KPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>ECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRIRHVQVNKIEF-VQRKPKFKKVVVPLEDHVQCRC</Hsp_hseq>
+      <Hsp_midline>+C  R V  ++ +    +TN  F   PPCV V RC GCCN+  +QC  T        + +I   + + P  K V +   +H  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|723122440|ref|XP_010287612.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010287612</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>1.04972e-06</Hsp_evalue>
+      <Hsp_query-from>130</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>QCMPREVCIDVGKEFGVATNTFFK--PPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGP--KPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>ECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRIRHVQVNKIEF-VQRKPKFKKVVVPLEDHVQCRC</Hsp_hseq>
+      <Hsp_midline>+C  R V  ++ +    +TN  F   PPCV V RC GCCN+  +QC  T        + +I   + + P  K V +   +H  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|723143199|ref|XP_010288645.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010288645</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.7529e-05</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>PDAGEATAYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCC</Hsp_qseq>
+      <Hsp_hseq>PSLLPPSALPLDVLNNAVAGFSTVEELIRYLEPDRWQLDLEDLYRPTWQ-LLGKAYIHGRKSRVVD----------LNLLKEEVRLYSCTPRNFSVSLREELK-RTDTIFWPLCLLVKRCGGNC</Hsp_hseq>
+      <Hsp_midline>P     +A     L   +   S+V+EL+  L P+ W++    L +  WQ    +A ++ R    +           L  +  E R   C PR   + + +E    T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|677478486|gb|KFQ67900.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor C, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ67900</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.7969e-05</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>121</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>PDAGEATAYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCC</Hsp_qseq>
+      <Hsp_hseq>PSLLPPSALPLDVLNNAVAGFSTVEELIRYLEPDRWQLDLEDLYRPTWQ-LLGKAYIHGRKSRVVD----------LNLLKEEVRLYSCTPRNFSVSLREELK-RTDTIFWPLCLLVKRCGGNC</Hsp_hseq>
+      <Hsp_midline>P     +A     L   +   S+V+EL+  L P+ W++    L +  WQ    +A ++ R    +           L  +  E R   C PR   + + +E    T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|677475111|gb|KFQ64525.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ64525</Hit_accession>
+  <Hit_len>102</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0106333</Hsp_evalue>
+      <Hsp_query-from>147</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>97</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>ATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLS</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+  ++C  +   + S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|723122703|ref|XP_010289065.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010289065</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0288832</Hsp_evalue>
+      <Hsp_query-from>147</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>ATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLS</Hsp_qseq>
+      <Hsp_hseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+  ++C  +   + S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>27408</Statistics_db-num>
+      <Statistics_db-len>12406516</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3046655300</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

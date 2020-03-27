@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/cloud-user/blast_database/nr_Seriola_lalandi</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1317133668|ref|XP_023279057.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023279057</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>232.261</Hsp_bit-score>
+      <Hsp_score>591</Hsp_score>
+      <Hsp_evalue>1.13368e-77</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSL-------------DTSLRAHGVHATKHVPEKRPLPIRRKRSI-EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>MRAALCYFLLWTAYLLLATAEEVEFPQELIDRLSHSEIHSISDLQRLLEIDSVGTGNDVIEEPKHHKHHNHHKNYSRHHGHYNDL---KSSQLHSRRKRSIVEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVCTS</Hsp_hseq>
+      <Hsp_midline>MR   C  LL   YL    AEE E P+E+I+RL+ S+IHSI DLQRLLEIDSVG+ + +                 R HG +      +   L  RRKRSI EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTS+++C PSR HHR+VKVAKVEYVR++PKLKEV VRLE+HLEC C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1317148534|ref|XP_023286952.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023286952</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>222.246</Hsp_bit-score>
+      <Hsp_score>565</Hsp_score>
+      <Hsp_evalue>2.83507e-73</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>184</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRP-LPIRRKRS--IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>MRPAIYHLLAGCLCLLRTVAEESPLPRELLERLSRSDIRSISDLQRLLEIDSVENEVIEETKHRYHKDFSHSFPDLKRAHTPTRHRRSTVVEEALPAVCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQASRKHHRTVKVAKVEYVRRRPKLREVQVKLEDHLDCMCTN</Hsp_hseq>
+      <Hsp_midline>MR     LL GC  L   +AEE+ +PRE++ERL+RS I SI DLQRLLEIDSV +E   +T  R H   +      KR   P R +RS  +EEA+PAVCK RT IYEIPRSQVDPTSANF+IWPPCVEVKRCTGCCNTS+++CQ SR HHR+VKVAKVEYVR++PKL+EVQV+LE+HL+C C  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1317148536|ref|XP_023286953.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X3 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023286953</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>5.02913e-69</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>EEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRP-LPIRRKRS--IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTG</Hsp_qseq>
+      <Hsp_hseq>QESPLPRELLERLSRSDIRSISDLQRLLEIDSVENEVIEETKHRYHKDFSHSFPDLKRAHTPTRHRRSTVVEEALPAVCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQASRKHHRTVKVAKVEYVRRRPKLREVQVKLEDHLDCMCTNKRHISPNSDTDNG</Hsp_hseq>
+      <Hsp_midline>+E+ +PRE++ERL+RS I SI DLQRLLEIDSV +E   +T  R H   +      KR   P R +RS  +EEA+PAVCK RT IYEIPRSQVDPTSANF+IWPPCVEVKRCTGCCNTS+++CQ SR HHR+VKVAKVEYVR++PKL+EVQV+LE+HL+C C          + D G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1317148532|ref|XP_023286951.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X1 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023286951</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.075</Hsp_bit-score>
+      <Hsp_score>536</Hsp_score>
+      <Hsp_evalue>1.17061e-68</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>EEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRP-LPIRRKRS--IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>QESPLPRELLERLSRSDIRSISDLQRLLEIDSVENEVIEETKHRYHKDFSHSFPDLKRAHTPTRHRRSTVVEEALPAVCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQASRKHHRTVKVAKVEYVRRRPKLREVQVKLEDHLDCMCTN</Hsp_hseq>
+      <Hsp_midline>+E+ +PRE++ERL+RS I SI DLQRLLEIDSV +E   +T  R H   +      KR   P R +RS  +EEA+PAVCK RT IYEIPRSQVDPTSANF+IWPPCVEVKRCTGCCNTS+++CQ SR HHR+VKVAKVEYVR++PKL+EVQV+LE+HL+C C  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1317155093|ref|XP_023251581.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111646335 [Seriola lalandi dorsalis] &gt;gi|1317155095|ref|XP_023251582.1| uncharacterized protein LOC111646335 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023251581</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>8.75612e-30</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>LAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>VAEGDPLPAALVELVRNSPIASIEDLQLLLLSDSVDEEDGTSA---ANGGHR---------LP--RSLDAQPAQQALCKVRTEVVEITRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYVNKRPTYAKAVVSVVDHVECRC</Hsp_hseq>
+      <Hsp_midline>+AE   +P  ++E +  S I SI DLQ LL  DSV  ED       A+G H          LP  R    + A  A+CK RT + EI R+ +D ++ANFL+WPPCVEV+RC+GCCNT S++C P   H R ++V K+EYV K+P   +  V + +H+EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1317148554|ref|XP_023286964.1|</Hit_id>
+  <Hit_def>suppressor of zyg-1 protein 20-like [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023286964</Hit_accession>
+  <Hit_len>556</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>3.13192e-25</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEIDS-VGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPA---VCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>AESDPLPPSLVDLVRNSPISSVDDLKLLLQQETNVIDEEEDEHDILTNHTHG------------RYTRSLVEAQPAQQAACKVRTEVMEVTRSMLDRRNANFMLWPPCVEVQRCSGCCNTRLLQCVPTVTSSRYLQVIKIQYINRKARYDKAIISVEDHVSCRC</Hsp_hseq>
+      <Hsp_midline>AE   +P  +++ +  S I S+ DL+ LL+ ++ V  E+  +  +  +  H             R  RS+ EA PA    CK RT + E+ RS +D  +ANF++WPPCVEV+RC+GCCNT  ++C P+    R ++V K++Y+ +K +  +  + +E+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1317086238|ref|XP_023254103.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like, partial [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023254103</Hit_accession>
+  <Hit_len>87</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.2554</Hsp_bit-score>
+      <Hsp_score>186</Hsp_score>
+      <Hsp_evalue>4.37058e-18</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>87</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>RRKRSIEEAVPA---VCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVK</Hsp_qseq>
+      <Hsp_hseq>RYTRSLVEAQPAQQAACKVRTEVMEVTRSMLDRRNANFMLWPPCVEVQRCSGCCNTRLLQCVPTVTSSRYLQ</Hsp_hseq>
+      <Hsp_midline>R  RS+ EA PA    CK RT + E+ RS +D  +ANF++WPPCVEV+RC+GCCNT  ++C P+    R ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1317103504|ref|XP_023263097.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B-like [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023263097</Hit_accession>
+  <Hit_len>267</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>4.41296e-07</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>KRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKK----PKLKEVQ--VRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKR</Hsp_qseq>
+      <Hsp_hseq>RRWLEVYSRSGCEPRDTLVEVWREL--PGETHHLFVPSCVSVRRCGGCCADEALECVPSLTHTLTMELMRTSFMKHELIELPFVEHSQCECRLKEHFQ---PTPTTRPHLKPPRKDKKRERGKSRQK</Hsp_hseq>
+      <Hsp_midline>+R +E    + C+ R  + E+ R    P   + L  P CV V+RC GCC   +++C PS  H  ++++ +  +++ +    P ++  Q   RL+EH +    T +  P  +     + RE GK R++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1317146358|ref|XP_023285803.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023285803</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>4.08451e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYRE--EDTGRPRESGKKRKRKRL</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--LQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKR---IKPQKQQNDIFMSFTEHSACEC---RLKKEVREQKENVCEPCCDHCSERRKRL</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI   Q  P     +  P CV + RC GCCN   ++C P+  ++ ++++ +   ++ + +  ++ +   EH  C C    L  + RE  E+   P       +RKRL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1317146356|ref|XP_023285802.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023285802</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>5.90322e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYRE--EDTGRPRESGKKRKRKRL</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--LQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKR---IKPQKQQNDIFMSFTEHSACEC---RLKKEVREQKENVCEPCCDHCSERRKRL</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI   Q  P     +  P CV + RC GCCN   ++C P+  ++ ++++ +   ++ + +  ++ +   EH  C C    L  + RE  E+   P       +RKRL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1317146396|ref|XP_023285823.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023285823</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>6.52448e-05</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC---ATTSLNPDYREEDTGRPRESGKKRKRKR</Hsp_qseq>
+      <Hsp_hseq>QEFPEEVGYIYMPACVPLKRCAGCCGDENLECHPTLERNITVQMMKIAPVIS----SHVELTFVEHQKCDCRLRQTLLKNKSSSESIKNKPR----RRKHKK</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV +KRC GCC   +++C P+   + +V++ K+  V        V++   EH +C C    T   N    E    +PR    +RK K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1317146354|ref|XP_023285801.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023285801</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>9.53487e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--LQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKR---IKPQKQQNDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI   Q  P     +  P CV + RC GCCN   ++C P+  ++ ++++ +   ++ + +  ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1317122280|ref|XP_023272975.1|</Hit_id>
+  <Hit_def>placenta growth factor, partial [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023272975</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000126709</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>125</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFCRTIEKLVEV--VQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTHTTNVTMQLLKIR--PSEPGQEYVEMTFVEHQTCEC</Hsp_hseq>
+      <Hsp_midline>+ C+T   + E+   Q  PT    +  P CV + RC GCC   +++C P+   + ++++ K+     +P  + V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1317092839|ref|XP_023257422.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023257422</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000260475</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>TDPSMFFKPPCVSIHRCSGCCNQEGVTCRNTTAVYVNKTVLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>T  +    PPCV + RC+GCCN   V C+ +   + +  V  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1317092841|ref|XP_023257423.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023257423</Hit_accession>
+  <Hit_len>316</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000289019</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>TDPSMFFKPPCVSIHRCSGCCNQEGVTCRNTTAVYVNKTVLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>T  +    PPCV + RC+GCCN   V C+ +   + +  V  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1317092843|ref|XP_023257424.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X3 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023257424</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00043697</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>TDPSMFFKPPCVSIHRCSGCCNQEGVTCRNTTAVYVNKTVLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>T  +    PPCV + RC+GCCN   V C+ +   + +  V  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1317124967|ref|XP_023274412.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Seriola lalandi dorsalis] &gt;gi|1317124969|ref|XP_023274413.1| vascular endothelial growth factor A-A-like isoform X3 [Seriola lalandi dorsalis] &gt;gi|1317124971|ref|XP_023274414.1| vascular endothelial growth factor A-A-like isoform X3 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023274412</Hit_accession>
+  <Hit_len>138</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000842463</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCQPREVLVDIFQEYPEDTEHHY--APSCVVLKRCGGCCMDEATECVPTETRNITLQV-----MRFRPMVMQHTIYLSFTEHQSCDC</Hsp_hseq>
+      <Hsp_midline>++C+ R V+ +I +   + T  ++   P CV +KRC GCC   + +C P+   + +++V     +R +P + +  + +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|1317157799|ref|XP_023253003.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023253003</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00355172</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>CMPREVCIDVGREFGAPT--NIFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEIT-VPITQGTRPVTISVANHTQCSCLS</Hsp_hseq>
+      <Hsp_midline>C  R V  ++ R    PT  N    PPCV V RC GCC++   +C+     + S  + ++  V      + V + +  H +C+C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1317124963|ref|XP_023274410.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Seriola lalandi dorsalis] &gt;gi|1317124965|ref|XP_023274411.1| vascular endothelial growth factor A-A-like isoform X1 [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023274410</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00374443</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKR</Hsp_qseq>
+      <Hsp_hseq>SMCQPREVLVDIFQEYPEDTEHHY--APSCVVLKRCGGCCMDEATECVPTETRNITLQV-----MRFRPMVMQHTIYLSFTEHQSCDCRK---KPEVQELNEYHCAPCSERRKR</Hsp_hseq>
+      <Hsp_midline>++C+ R V+ +I +   + T  ++   P CV +KRC GCC   + +C P+   + +++V     +R +P + +  + +   EH  C C      P+ +E +        ++RKR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|1317159112|ref|XP_023253698.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023253698</Hit_accession>
+  <Hit_len>364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00451196</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>289</Hsp_hit-from>
+      <Hsp_hit-to>357</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IFWPSCLLVKRCGGNCACCSHRCYDCQCVPARVTKKYHEVLLLKHRSGGRGLQKSMTDVPLEHHEECAC</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G   CC+     CQ  P+RV  +  +V  +++      L++    V LE H ECAC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1317128160|ref|XP_023276125.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Seriola lalandi dorsalis]</Hit_def>
+  <Hit_accession>XP_023276125</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0202341</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>LEEIQRTSCQPREVFVEVAKEYPESTTQFYL--PRCVALHRCGGCCTSEAYYC--TNTSHSLVNKTLMELSPPRMDRSVVMVTFVNHTSCEC</Hsp_hseq>
+      <Hsp_midline>+EE     C+ R V  E+ +   + T+  +L  P CV + RC GCC + +  C  +   H  V    +E    +     V V    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>35318</Statistics_db-num>
+      <Statistics_db-len>22278091</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>2103540208</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
