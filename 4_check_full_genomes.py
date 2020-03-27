@@ -159,10 +159,11 @@ def convert_to_html(FINAL_RESULTS_CSV):
             line = infile.readline()
             while line:
                 fields = line.split('\t')
-                id_list = fields[5][1:-1].split(',')
+                id_list = fields[5][1:-2].split(',')
+                print('id_list: {0}'.format(id_list))
                 linklist = ''
                 for item in id_list:
-                    linklist += '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}">{0}</a><br>'.format(item.strip(' \'').split('|')[-1])
+                    linklist += '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}">{0}</a><br>'.format(item.strip(' \'|').split('|')[-1])
                 outfile.write('<tr><th>{0}</th><th>{1}</th><th>{2}</th><th>{3}</th><th>{4}</th><th>'.format(fields[0], fields[1], fields[2], fields[3], fields[4]))
                 outfile.write('<a href="#" onclick="toggle_visibility(\'align_{0}\');">Show hits</a>'.format(fields[1].replace(' ', '_')))
                 outfile.write('<div id="align_{0}" style="display:none">{1}</div>'.format(fields[1].replace(' ', '_'), linklist))
@@ -246,7 +247,7 @@ def blastp(SPECIES):
             print('Could not parse blast-xml file {0}. File might not exist or is empty.'.format(outfile))
             #write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\n'.format(phylum, SPECIES, protein, '-', '-'))
     #print('{0} results from a total of {1} for {2} ({3}), similar to {4}'.format(number, total_num_sequences, SPECIES, phylum, protein))
-    write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, total_num_sequences/(len(temp_protein_hit_list)+0.00001), temp_protein_hit_list))
+    write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, total_num_sequences//(len(temp_protein_hit_list)+0.00001), temp_protein_hit_list))
 
 def run():
     global master_dictionary, RESULT_DIR, REMOTE, APPLICATION_PATH, final_result_string, FINAL_RESULTS
