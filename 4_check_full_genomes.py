@@ -151,6 +151,9 @@ def write_to_file(FILENAME, content):
         print('Writing to {0}:\n{1}'.format(FILENAME, content))
         out_handle.write(content)
 
+def convert_to_int(x):
+    return int(x[4])
+
 def sort_csv(CSV_FILE):
     data = []
     with open(CSV_FILE, 'r') as file:
@@ -160,7 +163,10 @@ def sort_csv(CSV_FILE):
             print('ROW:\n{0}'.format(row))
         # Use the 5th column
         print('DATA:\n{0}'.format(data))
-        sortedlist = sorted(data, key = operator.itemgetter(4))
+        # This gets the 5th element of the list and converts it into an integer for sorting
+        # This line has given me headaches as the list was never sorted (or never sorted correctly)
+        #sortedlist = sorted(data, key = int(operator.itemgetter(4)))
+        sortedlist = sorted(data, key = convert_to_int, reverse = True)
     print('SORTEDLIST:\n{0}'.format(sortedlist))
     # Write the sorted list into a new CSV file
     with open(FINAL_RESULTS_SORTED, 'w') as file:
@@ -169,7 +175,7 @@ def sort_csv(CSV_FILE):
             print('ROW: {0}'.format(row))
             fileWriter.writerow(row)
 
-def convert_to_html(FINAL_RESULTS_CSV):
+def convert_to_html(CSV_FILE):
     FINAL_RESULTS_HTML = '{0}/data/full_genome_data_sorted.html'.format(APPLICATION_PATH)
     with open(FINAL_RESULTS_HTML, 'w+') as outfile:
         outfile.write('<html>\n<head>\n<title>Blast hist counts for individual species</title>\n')
@@ -206,11 +212,11 @@ td {
         outfile.write(temp_string)
         outfile.write('</style>\n</head>\n<body>\n<table>')
         outfile.write('<thead><th>Phylum</th><th>Species</th><th>Blast hits (b)</th><th>Total number of protein sequences (n)</th><th>Approx. ratio b/n</th><th>List of hit ids</th></thead>\n<tbody>\n')
-        with open(FINAL_RESULTS_CSV, 'r') as infile:
+        with open(CSV_FILE, 'r') as infile:
             line = infile.readline()
             while line:
-                fields = line.split('\t')
-                id_list = fields[5][1:-2].split(',')
+                fields = line.split(',')
+                id_list = fields[5].split(',')
                 print('id_list: {0}'.format(id_list))
                 linklist = ''
                 for item in id_list:
