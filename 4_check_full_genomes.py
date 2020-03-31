@@ -106,7 +106,7 @@
 # The taxon_dictionary.py file also stores the statistical data associated with each taxon that is later generated with
 # the 2_analysis.py script.
 
-import argparse, Bio, os, sys, shutil, re, time, csv
+import argparse, Bio, os, sys, shutil, re, time, csv, operator
 from functools import wraps
 import errno
 import signal
@@ -141,20 +141,71 @@ def getCSVfile(CSV_FILE):
         # Download list of all fully sequences animal genomes:
         URL = 'https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on'
         r = requests.get(URL)
-        with open('CSV_FILE', 'wb') as file:
+        with open(CSV_FILE, 'wb') as file:
             file.write(r.content)
         input_csv_file = csv.DictReader(open(CSV_FILE))
     return input_csv_file
 
-def write_to_file(line):
-    with open(FINAL_RESULTS, 'a+') as out_handle:
-        out_handle.write(line)
+def write_to_file(FILENAME, content):
+    with open(FILENAME, 'a+') as out_handle:
+        print('Writing to {0}:\n{1}'.format(FILENAME, content))
+        out_handle.write(content)
+
+def sort_csv(CSV_FILE):
+    data = []
+    with open(CSV_FILE, 'r') as file:
+        data2 = csv.reader(file, delimiter='\t')
+        for row in data2:
+            data.append(tuple(row))
+            print('ROW:\n{0}'.format(row))
+        # Use the 5th column
+        print('DATA:\n{0}'.format(data))
+        sortedlist = sorted(data, key = operator.itemgetter(4))
+    print('SORTEDLIST:\n{0}'.format(sortedlist))
+    # Write the sorted list into a new CSV file
+    with open(FINAL_RESULTS_SORTED, 'w') as file:
+        fileWriter = csv.writer(file, delimiter = ',')
+        for row in sortedlist:
+            print('ROW: {0}'.format(row))
+            fileWriter.writerow(row)
 
 def convert_to_html(FINAL_RESULTS_CSV):
-    FINAL_RESULTS_HTML = '{0}/data/full_genome_data.html'.format(APPLICATION_PATH)
+    FINAL_RESULTS_HTML = '{0}/data/full_genome_data_sorted.html'.format(APPLICATION_PATH)
     with open(FINAL_RESULTS_HTML, 'w+') as outfile:
-        outfile.write('<html>\n<head>\n<title>Blast hist counts for individual species</title>\n<script type="text/javascript">\n<!--\nfunction toggle_visibility(id) {\nvar e = document.getElementById(id);\nif(e.style.display == \'block\')\ne.style.display = \'none\';\nelse\ne.style.display = \'block\'; }\n//-->\n</script>\n</head>\n<body>\n<table>')
-        outfile.write('<thead><th>Phylum</th><th>Species</th><th>Blast hits</th><th>Protein sequences</th><th>Ratio</th><th>List of hit ids</th></thead>\n<tbody>\n')
+        outfile.write('<html>\n<head>\n<title>Blast hist counts for individual species</title>\n')
+        outfile.write('<script type="text/javascript">\n<!--\nfunction toggle_visibility(id) {\nvar e = document.getElementById(id);\nif(e.style.display == \'block\')\ne.style.display = \'none\';\nelse\ne.style.display = \'block\'; }\n//-->\n</script>\n')
+        outfile.write('<style>\nbody {background-color: white;}\nh1 {color: ;}\np {color: DarkGray;}\n')
+        temp_string ='''thead,
+tfoot {
+    background-color: #3f87a6;
+    color: #fff;
+}
+tbody {
+    background-color: #e4f0f5;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+td {
+    text-align: center;
+    vertical-align: top
+}'''
+        outfile.write(temp_string)
+        outfile.write('</style>\n</head>\n<body>\n<table>')
+        outfile.write('<thead><th>Phylum</th><th>Species</th><th>Blast hits (b)</th><th>Total number of protein sequences (n)</th><th>Approx. ratio b/n</th><th>List of hit ids</th></thead>\n<tbody>\n')
         with open(FINAL_RESULTS_CSV, 'r') as infile:
             line = infile.readline()
             while line:
@@ -164,10 +215,13 @@ def convert_to_html(FINAL_RESULTS_CSV):
                 linklist = ''
                 for item in id_list:
                     linklist += '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}">{0}</a><br>'.format(item.strip(' \'|').split('|')[-1])
-                outfile.write('<tr><th>{0}</th><th>{1}</th><th>{2}</th><th>{3}</th><th>{4}</th><th>'.format(fields[0], fields[1], fields[2], fields[3], fields[4]))
-                outfile.write('<a href="#" onclick="toggle_visibility(\'align_{0}\');">Show hits</a>'.format(fields[1].replace(' ', '_')))
-                outfile.write('<div id="align_{0}" style="display:none">{1}</div>'.format(fields[1].replace(' ', '_'), linklist))
-                outfile.write('</th></tr>\n')
+                outfile.write('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>'.format(fields[0], fields[1], fields[2], fields[3], fields[4]))
+                if linklist == '':
+                    outfile.write('&amp;nbsp')
+                else:
+                    outfile.write('<a href="#" onclick="toggle_visibility(\'align_{0}\');">Show hits</a>'.format(fields[1].replace(' ', '_')))
+                    outfile.write('<div id="align_{0}" style="display:none">{1}</div>'.format(fields[1].replace(' ', '_'), linklist))
+                outfile.write('</td></tr>\n')
                 line = infile.readline()
         outfile.write('</tbody>\n</table>\n</body>\n<html>\n')
 
@@ -207,7 +261,7 @@ def blastp(SPECIES):
             else:
                 print('Remote blasting completed successfully.')
         else:
-            print('\nRunning local blastp against {0}, limited to organism {1}, requesting {2} results in XML format, with the following query sequence: {3}.'.format(BLAST_DATABASE, SPECIES, OPTIONAL_BLAST_NO, PROTEIN_ID))
+            print('\nRunning local blastp against {0}, limited to organism {1}, requesting {2} results in XML format, with the following query sequence: {3} ({4}).'.format(BLAST_DATABASE, SPECIES, OPTIONAL_BLAST_NO, protein, PROTEIN_ID))
             ENTREZ_QUERY = '({0}[organism])'.format(SPECIES)
             try:
                 stdout = ''
@@ -237,32 +291,41 @@ def blastp(SPECIES):
                         print(alignment.hit_id)
                         # Add hit to temporary list if it is unique
                         if alignment.hit_id not in temp_protein_hit_list:
-                            temp_protein_hit_list.append(alignment.hit_id)
+                            exclude_file = '{0}/data/proteins-exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, phylum, alignment.hit_id)
+                            if not os.path.isfile(exclude_file):
+                                temp_protein_hit_list.append(alignment.hit_id)
+                                print('Added {0} to alignment hit list.'.format(alignment.hit_id))
+                            else:
+                                print('Excluded {0} from alignment hit list.'.format(exclude_file))
             # Method 2 (to get the number of hits)
             blastp_result = SearchIO.read(outfile, 'blast-xml')
             number_of_results = len(blastp_result)
-            print('{0} results from a total of {1} for {2} ({3}), similar to {4}'.format(number_of_results, total_num_sequences, SPECIES, phylum, protein))
-            #write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\n'.format(phylum, SPECIES, protein, number, total_num_sequences))
+            print('{0} {1} homologs found in a total of {2} protein sequences for {3} ({4}).'.format(number_of_results, protein, total_num_sequences, SPECIES, phylum))
         except Exception as ex:
             print('Could not parse blast-xml file {0}. File might not exist or is empty.'.format(outfile))
-            #write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\n'.format(phylum, SPECIES, protein, '-', '-'))
-    #print('{0} results from a total of {1} for {2} ({3}), similar to {4}'.format(number, total_num_sequences, SPECIES, phylum, protein))
-    write_to_file('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, total_num_sequences//(len(temp_protein_hit_list)+0.00001), temp_protein_hit_list))
+    print('\nAdding to CSV file:\n{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences//(len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
+    write_to_file(FINAL_RESULTS, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences//(len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
 
 def run():
-    global master_dictionary, RESULT_DIR, REMOTE, APPLICATION_PATH, final_result_string, FINAL_RESULTS
+    global master_dictionary, RESULT_DIR, REMOTE, APPLICATION_PATH, final_result_string, FINAL_RESULTS, FINAL_RESULTS_SORTED
 
     # Determine directories of script (in order to load & save the data & log files)
     APPLICATION_PATH = os.path.abspath(os.path.dirname(__file__))
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     RESULT_DIR = '{0}/data/individual_species/'.format(APPLICATION_PATH)
     FINAL_RESULTS = '{0}/data/full_genome_data.csv'.format(APPLICATION_PATH)
+    if os.path.isfile(FINAL_RESULTS):
+        os.remove(FINAL_RESULTS)
+    FINAL_RESULTS_SORTED = '{0}/data/full_genome_data_sorted.csv'.format(APPLICATION_PATH)
     preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
     input_csv_file = getCSVfile(CSV_FILE)
     for line in input_csv_file:
         species_name = line['#Organism Name']
         blastp(species_name)
-    convert_to_html(FINAL_RESULTS)
+    print('Writing of {0} complete.'.format(FINAL_RESULTS))
+    sort_csv(FINAL_RESULTS)
+    print('Sorting of {0} complete.'.format(FINAL_RESULTS))
+    convert_to_html(FINAL_RESULTS_SORTED)
 
 if __name__ == '__main__':
     run()
