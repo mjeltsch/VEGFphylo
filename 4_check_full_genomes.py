@@ -120,7 +120,7 @@ from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbiblastpCommandline
 from ete3 import Tree, TreeStyle, TextFace, NodeStyle, SequenceFace, ImgFace, SVGFace, faces, add_face_to_node
 from os.path import basename, dirname, splitext, split
-from phylolib import load_dictionary, get_phylum_from_NCBI
+from phylolib import load_dictionary, get_phylum_from_NCBI, get_script_style_section
 
 parser = argparse.ArgumentParser()
 parser.add_argument("local_remote", help = "local (uses local blast), remote (Use NCBI's servers)")
@@ -170,71 +170,47 @@ def sort_csv(CSV_FILE):
     print('SORTEDLIST:\n{0}'.format(sortedlist))
     # Write the sorted list into a new CSV file
     with open(FINAL_RESULTS_SORTED, 'w') as file:
-        fileWriter = csv.writer(file, delimiter = ',')
+        fileWriter = csv.writer(file, delimiter = '\t')
         for row in sortedlist:
             print('ROW: {0}'.format(row))
             fileWriter.writerow(row)
 
 def convert_to_html(CSV_FILE):
-    FINAL_RESULTS_HTML = '{0}/data/full_genome_data_sorted.html'.format(APPLICATION_PATH)
+    FINAL_RESULTS_HTML = '{0}/full_genomes.html'.format(APPLICATION_PATH)
     with open(FINAL_RESULTS_HTML, 'w+') as outfile:
         outfile.write('<html>\n<head>\n<title>Blast hist counts for individual species</title>\n')
-        outfile.write('<script type="text/javascript">\n<!--\nfunction toggle_visibility(id) {\nvar e = document.getElementById(id);\nif(e.style.display == \'block\')\ne.style.display = \'none\';\nelse\ne.style.display = \'block\'; }\n//-->\n</script>\n')
-        outfile.write('<style>\nbody {background-color: white;}\nh1 {color: ;}\np {color: DarkGray;}\n')
-        temp_string ='''thead,
-tfoot {
-    background-color: #3f87a6;
-    color: #fff;
-}
-tbody {
-    background-color: #e4f0f5;
-}
-caption {
-    padding: 10px;
-    caption-side: bottom;
-}
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: .8rem;
-}
-td,
-th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 5px 10px;
-}
-td {
-    text-align: center;
-    vertical-align: top
-}'''
-        outfile.write(temp_string)
-        outfile.write('</style>\n</head>\n<body>\n<table>')
-        outfile.write('<thead><th>Phylum</th><th>Species</th><th>Blast hits (b)</th><th>Total number of protein sequences (n)</th><th>Approx. ratio b/n</th><th>List of hit ids</th></thead>\n<tbody>\n')
+        outfile.write(get_script_style_section())
+        outfile.write('</head>\n<body>\n<table>')
+        outfile.write('<thead><th>Phylum</th><th>Species</th><th>Blast hits</th><th>Total number of protein sequences</th><th>List of hit ids</th></thead>\n<tbody>\n')
         with open(CSV_FILE, 'r') as infile:
             line = infile.readline()
             while line:
-                fields = line.split(',')
+                fields = line.split('\t')
+                # Write first 5 columns to table row to html file
+                outfile.write('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>'.format(fields[0], fields[1], fields[2], fields[3]))
+                # Write last column (which contains zero to many protein_ids), first split into individual protein_ids
                 id_list = fields[5].split(',')
-                print('id_list: {0}'.format(id_list))
-                linklist = ''
-                for item in id_list:
-                    linklist += '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}">{0}</a><br>'.format(item.strip(' \'|').split('|')[-1])
-                outfile.write('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>'.format(fields[0], fields[1], fields[2], fields[3], fields[4]))
-                if linklist == '':
-                    outfile.write('&amp;nbsp')
+                #print('id_list: {0}'.format(id_list))
+                # If the last column does not contain any protein_ids, write nothing into the last table cell
+                if id_list == ['[]\n']:
+                    outfile.write('&nbsp;')
                 else:
-                    outfile.write('<a href="#" onclick="toggle_visibility(\'align_{0}\');">Show hits</a>'.format(fields[1].replace(' ', '_')))
-                    outfile.write('<div id="align_{0}" style="display:none">{1}</div>'.format(fields[1].replace(' ', '_'), linklist))
+                    linklist = ''
+                    for item in id_list:
+                        isolated_id = item.strip(' \'|[]\n').split('|')[-1]
+                        #print('item:\n{0}\nstripped_id:\n{1}isolated_id:\n{2}'.format(item, stripped_id, isolated_id))
+                        print('add_to_linklist: <a href="https://www.ncbi.nlm.nih.gov/protein/{0}" target="_blank">{0}</a><br>'.format(isolated_id))
+                        linklist += '<a href="https://www.ncbi.nlm.nih.gov/protein/{0}">{0}</a><br>'.format(isolated_id)
+                    outfile.write('<button onclick="myFunction(\'align_{0}\')">Show/Hide hits</button>'.format(fields[1].replace(' ', '_')))
+                    outfile.write('<div id="align_{0}" style="display: none;">{1}</div>'.format(fields[1].replace(' ', '_'), linklist))
                 outfile.write('</td></tr>\n')
                 line = infile.readline()
-        outfile.write('</tbody>\n</table>\n</body>\n<html>\n')
+            outfile.write('</tbody>\n</table>\n</body>\n<html>\n')
 
 def blastp(SPECIES):
     global final_result_string
     # Get phylum for the species
-    phylum = get_phylum_from_NCBI(SPECIES, VERBOSE=False)
+    phylum = get_phylum_from_NCBI(SPECIES, VERBOSE=True)
     # Make a subfolder for each species if it does not exist
     SPECIES_DIR = '{0}{1}'.format(RESULT_DIR, SPECIES.replace(' ', '_'))
     if not os.path.isdir(SPECIES_DIR):
@@ -297,33 +273,39 @@ def blastp(SPECIES):
                         print(alignment.hit_id)
                         # Add hit to temporary list if it is unique
                         if alignment.hit_id not in temp_protein_hit_list:
-                            exclude_file = '{0}/data/proteins-exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, phylum, alignment.hit_id)
+                            isolate_id = alignment.hit_id.split('|')[1]
+                            exclude_file = '{0}/data/proteins-exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, phylum, isolate_id)
+                            print('Checking for file {0}... '.format(exclude_file), end='')
                             if not os.path.isfile(exclude_file):
                                 temp_protein_hit_list.append(alignment.hit_id)
-                                print('Added {0} to alignment hit list.'.format(alignment.hit_id))
+                                print('Not found, adding to alignment hit list.')
                             else:
-                                print('Excluded {0} from alignment hit list.'.format(exclude_file))
+                                print('Found! Excluding from alignment hit list.')
             # Method 2 (to get the number of hits)
             blastp_result = SearchIO.read(outfile, 'blast-xml')
             number_of_results = len(blastp_result)
             print('{0} {1} homologs found in a total of {2} protein sequences for {3} ({4}).'.format(number_of_results, protein, total_num_sequences, SPECIES, phylum))
         except Exception as ex:
             print('Could not parse blast-xml file {0}. File might not exist or is empty.'.format(outfile))
-    print('\nAdding to CSV file:\n{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences//(len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
-    write_to_file(FINAL_RESULTS, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences//(len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
+    if total_num_sequences >= MINIMUM:
+        #print('\nAdding to CSV file:\n{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences// (len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
+        write_to_file(FINAL_RESULTS, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(phylum, SPECIES, len(temp_protein_hit_list), total_num_sequences, int(total_num_sequences//(len(temp_protein_hit_list)+0.00001)), temp_protein_hit_list))
 
 def run():
-    global master_dictionary, RESULT_DIR, REMOTE, APPLICATION_PATH, final_result_string, FINAL_RESULTS, FINAL_RESULTS_SORTED
+    global master_dictionary, RESULT_DIR, REMOTE, APPLICATION_PATH, final_result_string, FINAL_RESULTS, FINAL_RESULTS_SORTED, MINIMUM
 
+    # Only record if 2000 or more protein sequences exist for a species
+    MINIMUM = 2000
     # Determine directories of script (in order to load & save the data & log files)
     APPLICATION_PATH = os.path.abspath(os.path.dirname(__file__))
+    # List of fully sequenced genomes
     CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
     RESULT_DIR = '{0}/data/individual_species/'.format(APPLICATION_PATH)
     FINAL_RESULTS = '{0}/data/full_genome_data.csv'.format(APPLICATION_PATH)
     if os.path.isfile(FINAL_RESULTS):
         os.remove(FINAL_RESULTS)
     FINAL_RESULTS_SORTED = '{0}/data/full_genome_data_sorted.csv'.format(APPLICATION_PATH)
-    preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    preamble1, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH), VERBOSE = False)
     input_csv_file = getCSVfile(CSV_FILE)
     for line in input_csv_file:
         species_name = line['#Organism Name']
