@@ -53,7 +53,7 @@ th {
     padding: 5px 10px;
 }
 td {
-    text-align: center;
+    text-align: left;
     vertical-align: top
 }
 </style>'''
@@ -263,7 +263,7 @@ def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
 def get_phylum_from_NCBI(TAXON_ID_OR_NAME, VERBOSE=True):
     preamble1, species_dictionary = load_dictionary('data/species_data.py', VERBOSE)
     # Check first the locally cached data
-    if TAXON_ID_OR_NAME in species_dictionary:
+    if TAXON_ID_OR_NAME in species_dictionary and species_dictionary[TAXON_ID_OR_NAME] != 'unknown':
         phylum = species_dictionary[TAXON_ID_OR_NAME]
         print('Species {0} assigned from local cache to phylum {1}.'.format(TAXON_ID_OR_NAME, phylum))
     else:
@@ -291,6 +291,9 @@ def get_phylum_from_NCBI(TAXON_ID_OR_NAME, VERBOSE=True):
                     except Exception as err:
                         SUBTRACT_TAXON = '-'
                     if VERBOSE: print('Looking for TAXON_ID {0}, exluding TAXON_ID {1}'.format(TAXON, SUBTRACT_TAXON))
+                    if VERBOSE:
+                        if TAXON == '8782':
+                            print('TAXON = 8782 = aves')
                     if '<TaxId>{0}</TaxId>'.format(TAXON) in text and '<TaxId>{0}</TaxId>'.format(SUBTRACT_TAXON) not in text:
                         if VERBOSE: print('Adding phylum info {0} to species {1}'.format(taxon, TAXON_ID))
                         phylum = taxon
