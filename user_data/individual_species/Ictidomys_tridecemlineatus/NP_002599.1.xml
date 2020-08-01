@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_021580197.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021580197</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>394.815</Hsp_bit-score>
+      <Hsp_score>1013</Hsp_score>
+      <Hsp_evalue>5.26643e-141</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>198</Hsp_identity>
+      <Hsp_positive>205</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>245</Hsp_align-len>
+      <Hsp_qseq>MNRCWALFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPG----EEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>MNRCWALFLSLCCYLRLVSAEGDPIPEELYEMLSDRSIRSFEDLQRLLHSDSGLRQDPPDAAPL---------------------PVGPLAAAEPAMIAECKTRTEVFEISRRLLDRTNANFLVWPPCVEVQRCSGCCNSRNVRCRPAQVQLRPVQVRKIEIVRKKPTFKKATVTLEDHLACKCETVVSARPVTRSPAGSQEQRARTPQTRVTIRTVRVRRPPKGKHRKFKHTHDKTALKETLGA</Hsp_hseq>
+      <Hsp_midline>MNRCWALFLSLCCYLRLVSAEGDPIPEELYEMLSD SIRSF+DLQRLLH D G      D A L                      +G L  AEPAMIAECKTRTEVFEISRRL+DRTNANFLVWPPCVEVQRCSGCCN+RNV+CRP QVQLRPVQVRKIEIVRKKP FKKATVTLEDHLACKCETV +ARPVTRSP GSQEQRA+TPQTRVTIRTVRVRRPPKGKHRKFKHTHDKTALKETLGA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_005339882.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005339882</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>139.813</Hsp_bit-score>
+      <Hsp_score>351</Hsp_score>
+      <Hsp_evalue>2.08077e-40</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>AEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELESL----ARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQ</Hsp_qseq>
+      <Hsp_hseq>AEEAEIPRELIERLARSEIHSIRDLQRLLEIDSVGAEDALGTSLRAHRAHATKHAPEKRPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPRLKEVQVRLEEHLECACA------PSSLSPDHREEE</Hsp_hseq>
+      <Hsp_midline>AE   IP EL E L+   I S  DLQRLL  D  G ED     L   R+H+            R +RS+      E A+ A CKTRT ++EI R  +D T+ANFL+WPPCVEV+RC+GCCN  +V+C+P++V  R V+V K+E VRKKP  K+  V LE+HL C C       P + SP   +E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_005316047.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005316047</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>4.91672e-07</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>206</Hsp_align-len>
+      <Hsp_qseq>MNRCWALF-LSLCCYLRLVSAEGD---PIPEELYEML--SDHSIR---SFDDLQRLLHGDPGEEDGAELDLNM-------TRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>MYREWAVVNIFIMSYVQLVQGFGNEHGPVKRSSRSMLEQSEQQIRAASSLEELLRITHSEDWKLWRCRLKLKSFTSMDARSASHRSTRFAATFYDIETLK--VIDEEWQRTQCSPRETCVEVANELGKSTNTFFK--PPCVNVFRCGGCCNEESLICMNTSTSYVSKQLFEISVPLTS-VPELVPVKVANHTGCKCLPTAPRHPYS</Hsp_hseq>
+      <Hsp_midline>M R WA+  + +  Y++LV   G+   P+      ML  S+  IR   S ++L R+ H +  +     L L         + SH      +      +L    I E     +C  R    E++  L   TN  F   PPCV V RC GCCN  ++ C  T       Q+ +I +     + +   V + +H  CKC   A   P +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_005325592.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005325592</Hit_accession>
+  <Hit_len>417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>7.44376e-06</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>QCMPREVCIDVGKEFGAATNTFFK--PPCVSVYRCGGCCNSEGLQCMNTSTGYLSKTLFEITVPLSQGP--KPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>+C  R    ++ +     TN  F   PPCV V RC GCCN+  +QC  T        + +I + + + P  K  T++  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_005333632.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005333632</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000156017</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>64</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQH----QVRMQILMIRYPSSQLGEMSLEEHSQCEC</Hsp_hseq>
+      <Hsp_midline>T A  LV P CV VQRC GCC +  ++C PT       QVR   ++ + P  +   ++LE+H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_005318689.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X11 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005318689</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000535433</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_021577536.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X10 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577536</Hit_accession>
+  <Hit_len>158</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000578597</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_021579460.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X3 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021579460</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000888842</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>TNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEMEYILSPSCVSLKRCTGCCGDEDLHCLPVETTNVTMQILKI-----PPEGPPSYVELQFSQHVSCEC</Hsp_hseq>
+      <Hsp_midline>+   +++ P CV ++RC+GCC + ++ C P +     +Q+ KI      P    + V L+   H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_021579459.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021579459</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000901371</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>TNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEMEYILSPSCVSLKRCTGCCGDEDLHCLPVETTNVTMQILKI-----PPEGPPSYVELQFSQHVSCEC</Hsp_hseq>
+      <Hsp_midline>+   +++ P CV ++RC+GCC + ++ C P +     +Q+ KI      P    + V L+   H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_005321389.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Ictidomys tridecemlineatus] &gt;ref|XP_021579458.1| placenta growth factor isoform X1 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005321389</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00114726</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>TNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEMEYILSPSCVSLKRCTGCCGDEDLHCLPVETTNVTMQILKI-----PPEGPPSYVELQFSQHVSCEC</Hsp_hseq>
+      <Hsp_midline>+   +++ P CV ++RC+GCC + ++ C P +     +Q+ KI      P    + V L+   H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_021577532.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577532</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00200235</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_005318685.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X7 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005318685</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00208677</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_021577531.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577531</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0023586</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_005318684.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005318684</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00256854</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_021577533.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X6 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577533</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00258156</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_021577534.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X8 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577534</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00260903</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>101</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_021577530.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577530</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0030544</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_005318683.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005318683</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00316317</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_021577535.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X9 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021577535</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00350705</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>98</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDEGLECVPTQEFNITMQIMRIKPHQGQHI---GEMSFLQHSKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+  ++C PTQ     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_021585946.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X2 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_021585946</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0154075</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>266</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CC--NNRNVQCRPTQV--------QLRPVQVRKIEIVRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>AFSTLEDLIRYLEPDRWQLDLE--DLYRPTWQLLGKAFVFGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSIREELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECHCVPSKVTKKYHEVLQLRP----KIGV---RGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+  + +DL R L  D  + D    DL        G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC  N     C P++V        QLRP    KI +   + + K  T V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_005330979.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X1 [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005330979</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0224172</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>191</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSGCC-----NNRNVQCRPTQV--------QLRPVQVRKIEIVRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>AFSTLEDLIRYLEPDRWQLDLE--DLYRPTWQLLGKAFVFGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSIREELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECHCVPSKVTKKYHEVLQLRP----KIGV---RGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+  + +DL R L  D  + D    DL        G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G C     N     C P++V        QLRP    KI +   + + K  T V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2679460700</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

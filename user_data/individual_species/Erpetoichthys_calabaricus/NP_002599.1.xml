@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_028670966.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028670966</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>202.601</Hsp_bit-score>
+      <Hsp_score>514</Hsp_score>
+      <Hsp_evalue>2.99475e-62</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>222</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>218</Hsp_align-len>
+      <Hsp_qseq>ALFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDG-AELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGK</Hsp_qseq>
+      <Hsp_hseq>AFFVSLSFYLTFASAESDEIPEEVFQILRSNTIHSFEDLQQLLQIDSVDEDSEAETHHNLSFNNTQSSNSSLARMTRSLGSAINVERAKLAECKVRTEVMELTRGMVDRTNANFLIWPTCVEVQRCSGCCNTRNVRCVPTRVHLRHLMVLKIEFTQGKQTRVMAVVTVEDHLECHCET-------SSSPNTAQGHSSQQPSTTGQLQTKHVSEHPFGE</Hsp_hseq>
+      <Hsp_midline>A F+SL  YL   SAE D IPEE++++L  ++I SF+DLQ+LL  D  +ED  AE   N++ +++     SLAR  RSLGS    E A +AECK RTEV E++R ++DRTNANFL+WP CVEVQRCSGCCN RNV+C PT+V LR + V KIE  + K     A VT+EDHL C CET       + SP  +Q   ++ P T   ++T  V   P G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_028669843.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028669843</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>4.0912e-44</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CWALFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELES-----LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CYLLAFSL--YLGVASAEETEIPQELIEKIANSEIRSISDLQRLLELESVGNEVIPEVKPKSKKDYAAAHVDDKYSALLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLVWPPCVEVRRCTGCCNTNNMKCQPSRVHHRTVKVAKVEYVRRKAKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>C+ L  SL  YL + SAE   IP+EL E +++  IRS  DLQRLL  +  G E   E+     + ++   ++      L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFLVWPPCVEV+RC+GCCN  N++C+P++V  R V+V K+E VR+K   K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_028669841.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028669841</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>7.24155e-44</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CWALFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELES-----LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CYLLAFSL--YLGVASAEETEIPQELIEKIANSEIRSISDLQRLLELESVGNEVIPEVKPKSKKDYAAAHVDDKYSALLVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLVWPPCVEVRRCTGCCNTNNMKCQPSRVHHRTVKVAKVEYVRRKAKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>C+ L  SL  YL + SAE   IP+EL E +++  IRS  DLQRLL  +  G E   E+     + ++   ++      L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFLVWPPCVEV+RC+GCCN  N++C+P++V  R V+V K+E VR+K   K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_028670967.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X2 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028670967</Hit_accession>
+  <Hit_len>401</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.895</Hsp_bit-score>
+      <Hsp_score>359</Hsp_score>
+      <Hsp_evalue>3.65742e-40</Hsp_evalue>
+      <Hsp_query-from>81</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>RSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGKHRKF---KHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>RSLGSAINVERAKLAECKVRTEVMELTRGMVDRTNANFLIWPTCVEVQRCSGCCNTRNVRCVPTRVHLRHLMVLKIEFTQGKQTRVMAVVTVEDHLECHCETSS-------SPNTAQGHSSQQPSTTGQLQTKHVSEHPFGENSRHLVDPSTKDHVGQHDELGS</Hsp_hseq>
+      <Hsp_midline>RSLGS    E A +AECK RTEV E++R ++DRTNANFL+WP CVEVQRCSGCCN RNV+C PT+V LR + V KIE  + K     A VT+EDHL C CET +       SP  +Q   ++ P T   ++T  V   P G++ +      T D     + LG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_028669842.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028669842</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.005</Hsp_bit-score>
+      <Hsp_score>284</Hsp_score>
+      <Hsp_evalue>7.28861e-31</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LVRRKRSI------EEAVPAVCKTRTVIYEIPRSQIDPTSANFLVWPPCVEVRRCTGCCNTNNMKCQPSRVHHRTVKVAKVEYVRRKAKLKEVLVRLEEHLECVC</Hsp_hseq>
+      <Hsp_midline>L R +RS+      E A+ A CKTRT ++EI R  ID T+ANFLVWPPCVEV+RC+GCCN  N++C+P++V  R V+V K+E VR+K   K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_028655634.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028655634</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>2.12979e-06</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI---VRKKPIFKKATVTLEDHLACKCETVAAAR</Hsp_qseq>
+      <Hsp_hseq>CMPREVVVDVAKEL--GTNTNIFFKPACVSVFRCGGCCNEESLSCRNTSVSYVTKTVFEIALSVTYIPQPVY----VRIANHTSCKCMSPSVIR</Hsp_hseq>
+      <Hsp_midline>C  R  V ++++ L   TN N    P CV V RC GCCN  ++ CR T V      V +I +      +P++    V + +H +CKC + +  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_028653122.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028653122</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>4.46815e-05</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>RRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>RRTNEVIQFLEVFERSYCRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTETYNVTMQVMRMKFKHGQHV---SEMSFTEHSRCEC</Hsp_hseq>
+      <Hsp_midline>RR+   +   E    + C+T   + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +QV +++    + +   + ++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_028646981.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028646981</Hit_accession>
+  <Hit_len>400</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>6.71118e-05</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>IPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIV-----RKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IYPEYWTMLKCQSKRG----GRFHFKEPSASDPGQEDEPMAFAAAHYNFEIFK---------SIEAEWRKTQCMPREVCLDVGKEF--GAAANTFFKPTCVSVYRCGGCCNSEGLQC--MNISTSYVSKTLFEIVVPLSQRPKPV----TISFANHTACRC</Hsp_hseq>
+      <Hsp_midline>I  E + ML   S R      R    +P   D  + D  M  + +    E            +I       +C  R    ++ +       AN    P CV V RC GCCN+  +QC    +    V     EIV     R KP+    T++  +H AC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_028653121.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028653121</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000157609</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>RRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>RRTNEVIQFLEVFERSYCRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTETYNVTMQVMRMKFKHGQHV---SEMSFTEHSRCEC</Hsp_hseq>
+      <Hsp_midline>RR+   +   E    + C+T   + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +QV +++    + +   + ++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_028653123.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028653123</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000184586</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>RRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>RRTNEVIQFLEVFERSYCRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTETYNVTMQVMRMKFKHGQHV---SEMSFTEHSRCEC</Hsp_hseq>
+      <Hsp_midline>RR+   +   E    + C+T   + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +QV +++    + +   + ++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_028677508.1|</Hit_id>
+  <Hit_def>placenta growth factor [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028677508</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00213087</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>LVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IFSPSCVPLLRCAGCCGDENLECVPVETYNVTMQLLKIKPAERQ---EYIEMTFIEHQSCEC</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC + N++C P +     +Q+ KI+   ++   +   +T  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_028665830.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028665830</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00674366</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDVSTEFPNEVEYLFL--PACVPLHRCGGCCSDEAMECVPLQSHSLLVELMKTNYEKREMV----ELPFTEHSECEC</Hsp_hseq>
+      <Hsp_midline>C+ R  + ++S    +     FL  P CV + RC GCC++  ++C P Q     V++ K    +++ +     +   +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_028668880.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028668880</Hit_accession>
+  <Hit_len>400</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0165899</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC----ETVAAARPVTR</Hsp_qseq>
+      <Hsp_hseq>CTPREVCLDISREFPQITNKFYK--PSCVLVHRCGGCCDNEALHCTNTSYSF--ISKTVLEHTNFQP-GQVIDISFVNHTECSCRLRSETSHPSRSIIR</Hsp_hseq>
+      <Hsp_midline>C  R    +ISR     TN  +   P CV V RC GCC+N  + C  T      +    +E    +P  +   ++  +H  C C    ET   +R + R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_028659031.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Erpetoichthys calabaricus]</Hit_def>
+  <Hit_accession>XP_028659031</Hit_accession>
+  <Hit_len>322</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0241961</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>EMLSDHSIRSFDDLQRLL-HGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKAT--VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DMLDD-VVSYFNTLEEVIKYLEPDRWQLDMEDLHKSTWHVVGKSFIHHRKSRVVDLNLLKEEVRLFSCTPRNYSVSL-REELKRTDTIF--WPSCLLVKRCGGNCACCAHSCYDCQCTATKVTKKYHEVLQLRPKNGGKGWQKSMTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+ML D  +  F+ L+ ++ + +P        DL+ +  H  G+     R  R +    + E   +  C  R     + R  + RT+  F  WP C+ V+RC G   CC +   + QC  T+V  +  +V ++        ++K+   V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2288252340</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

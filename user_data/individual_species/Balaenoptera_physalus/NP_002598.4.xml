@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|KAB0391538.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_014581 [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0391538</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>139.043</Hsp_bit-score>
+      <Hsp_score>349</Hsp_score>
+      <Hsp_evalue>5.13255e-41</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>IPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>IPEELYEMLSDHSIRSFDDLQRLLHGDS-GDEDGAELDLNLTRSHSGGELDSLS----RGRRSLGSPTVAEPAVIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPTFKKATVTLEDHLACKCET</Hsp_hseq>
+      <Hsp_midline>IP E+ E L+   I S  DLQRLL  DS G ED  +  L     H+   +        R +RS+      E AV A CKTRT ++EI R  +D T+ANFL+WPPCVEV+RC+GCCN  +V+C+P++V  R V+V K+E VRKKP  K+  V LE+HL C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|KAB0403440.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_001889 [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0403440</Hit_accession>
+  <Hit_len>1601</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>5.67034e-12</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>1522</Hsp_hit-from>
+      <Hsp_hit-to>1579</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>60</Hsp_align-len>
+      <Hsp_qseq>RLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEI</Hsp_qseq>
+      <Hsp_hseq>RYLLFLPAGAEEPLETSLRAHGGHGAKHAPEKRPVPIRRKRSIGE--PQDCWGGEALYRL</Hsp_hseq>
+      <Hsp_midline>R L     G+E+ L+TSLRAHG H  KH PEKRP+PIRRKRSI E  P  C     +Y +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|KAB0404145.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_008898, partial [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0404145</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.15841e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>ATCQPREVVVPL-TMELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|KAB0397464.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_019699, partial [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0397464</Hit_accession>
+  <Hit_len>123</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000202077</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>97</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETVNVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   +R   +   V++   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|KAB0390964.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_018536, partial [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0390964</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000299344</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>LEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEY-VRKKPKLKEVQVRLEEHLECACATTS</Hsp_qseq>
+      <Hsp_hseq>LKLKSLTSADSRSASHRSTRFAATFYDIETL------KVIDEEWQRTQCSPRETCVEVA-SELGRSTDTFFK-PPCVNVFRCGGCCNEESLVCVNSSTSYVSKQLFEISVPLTSVPEL--VPVKVANHTGCKCLPTA</Hsp_hseq>
+      <Hsp_midline>L++ S+ S DS   S R+    AT +  E        K   EE     C  R    E+  S++  ++  F   PPCV V RC GCCN  S+ C  S   + S ++ ++   +   P+L  V V++  H  C C  T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|KAB0398281.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_001790 [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0398281</Hit_accession>
+  <Hit_len>540</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0043621</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKV</Hsp_qseq>
+      <Hsp_hseq>ATNTFFKPPCVSVYRCGGCCNSEGQRCTNTSASYLS-KAAKL</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+   +C  +   + S K AK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|KAB0399093.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_014234, partial [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0399093</Hit_accession>
+  <Hit_len>397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.00511895</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>321</Hsp_hit-from>
+      <Hsp_hit-to>390</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTG---CCNTSSVKCQ--PSRV---HHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>VFWPGCLLVKRCGGNCACCLHSCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHK-SLTDVALEHHEECDCV</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G   CC  S  +CQ  PS+V   +H  +++     VR   K     V LE H EC C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>764906534</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

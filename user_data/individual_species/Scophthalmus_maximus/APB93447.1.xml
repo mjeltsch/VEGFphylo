@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|AWP19886.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor A-A-like isoform 2 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP19886</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>109.768</Hsp_bit-score>
+      <Hsp_score>273</Hsp_score>
+      <Hsp_evalue>1.14898e-30</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRRG</Hsp_qseq>
+      <Hsp_hseq>PKNTARGPHDVIPLMEVYNKSMCQPREQLVEILQEYPEEVEHIFIPSCVVLTRCAGYCNDEMLQCMPTSTYNITMEIKRVKHHMQQNDI-FMSFTEHSACEC--RLKQEVKEQKEKQPRKG</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYP+E+  IF PSCV + RC+G C DE L+C P   + + ++I RV    Q + +  M FTEH+ACEC  R KQ   +  +++PR+G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|KAF0023329.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_023959 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0023329</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>109.383</Hsp_bit-score>
+      <Hsp_score>272</Hsp_score>
+      <Hsp_evalue>1.23916e-30</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRRG</Hsp_qseq>
+      <Hsp_hseq>PKNTARGPHDVIPLMEVYNKSMCQPREQLVEILQEYPEEVEHIFIPSCVVLTRCAGYCNDEMLQCMPTSTYNITMEIKRVKHHMQQNDI-FMSFTEHSACEC--RLKQEVKEQKEKQPRKG</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYP+E+  IF PSCV + RC+G C DE L+C P   + + ++I RV    Q + +  M FTEH+ACEC  R KQ   +  +++PR+G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|AWP19887.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor A-A-like isoform 3 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP19887</Hit_accession>
+  <Hit_len>135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.916</Hsp_bit-score>
+      <Hsp_score>263</Hsp_score>
+      <Hsp_evalue>7.54732e-30</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>PKNTARGPHDVIPLMEVYNKSMCQPREQLVEILQEYPEEVEHIFIPSCVVLTRCAGYCNDEMLQCMPTSTYNITMEIKRVKHHMQQNDI-FMSFTEHSACECRLKQEVKE</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYP+E+  IF PSCV + RC+G C DE L+C P   + + ++I RV    Q + +  M FTEH+ACECR +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|AWP19885.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor A-A-like [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP19885</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>4.58255e-28</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>PKNTARGPHDVIPLMEVYNKSMCQPREQLVEILQEYPEEVEHIFIPSCVVLTRCAGYCNDEMLQCMPTSTYNITMEIKRVKHHMQQNDI-FMSFTEHSACECRLKQEVKE</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYP+E+  IF PSCV + RC+G C DE L+C P   + + ++I RV    Q + +  M FTEH+ACECR +++  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|AWP11949.1|</Hit_id>
+  <Hit_def>Syntaxin 5A isoform 3 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP11949</Hit_accession>
+  <Hit_len>490</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.9005</Hsp_bit-score>
+      <Hsp_score>237</Hsp_score>
+      <Hsp_evalue>1.27945e-23</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMK--FTEHTACECR----PRRKQGEPDGPKEKPRRGG</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGETHHLFVPSCVSVRRCGGCCADEALECVPSLTHTLTMELM----RTSFMKHELIELPFVEHSQCECRSYLKPTRKDKKRERGKSRQRTSG</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E P E   +F PSCV+V RC GCC DE+L+C P   HT+ +++M    RT   K E+++  F EH+ CECR    P RK  + +  K + R  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|AWP11947.1|</Hit_id>
+  <Hit_def>Syntaxin 5A [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP11947</Hit_accession>
+  <Hit_len>465</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.5153</Hsp_bit-score>
+      <Hsp_score>236</Hsp_score>
+      <Hsp_evalue>1.32934e-23</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMK--FTEHTACECR----PRRKQGEPDGPKEKPRRGG</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGETHHLFVPSCVSVRRCGGCCADEALECVPSLTHTLTMELM----RTSFMKHELIELPFVEHSQCECRSYLKPTRKDKKRERGKSRQRTSG</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E P E   +F PSCV+V RC GCC DE+L+C P   HT+ +++M    RT   K E+++  F EH+ CECR    P RK  + +  K + R  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|AWP11948.1|</Hit_id>
+  <Hit_def>Syntaxin 5A isoform 2 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP11948</Hit_accession>
+  <Hit_len>519</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.9005</Hsp_bit-score>
+      <Hsp_score>237</Hsp_score>
+      <Hsp_evalue>1.46408e-23</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMK--FTEHTACECR----PRRKQGEPDGPKEKPRRGGV</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGETHHLFVPSCVSVRRCGGCCADEALECVPSLTHTLTMELM----RTSFMKHELIELPFVEHSQCECRSYLKPTRKDKKRERGKSRQRTSGA</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E P E   +F PSCV+V RC GCC DE+L+C P   HT+ +++M    RT   K E+++  F EH+ CECR    P RK  + +  K + R  G </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|KAF0023252.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_023882 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0023252</Hit_accession>
+  <Hit_len>764</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.5893</Hsp_bit-score>
+      <Hsp_score>231</Hsp_score>
+      <Hsp_evalue>1.10496e-22</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>QGWPSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR----KQGEPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>KGAPRGMM------FQEVLEKSMCHPMEQLVDVEQEFPGEVEYIYLPACVSLWRCSGCCGDENLECHPTLERNITVQMIKIAPKTSSHHVE-LTFVEHQRCDCRARQTLLNNKSSSESIKNKPRR</Hsp_hseq>
+      <Hsp_midline>+G P G +      F EV E+S C   E LV + QE+P E+  I+ P+CV++ RCSGCC DE+L+C P  +  + +Q++++ P+T S  +E + F EH  C+CR R+     +   +  K KPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|KAF0032062.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_016617 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0032062</Hit_accession>
+  <Hit_len>138</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.8853</Hsp_bit-score>
+      <Hsp_score>211</Hsp_score>
+      <Hsp_evalue>6.06409e-22</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>HGVVR-LSEVITKSMCQPREVLVDIFQEYPGDTEHTFVPSCVVLNRCGGCCSDEALECVPMEASNVTLQVMRFRQMVTQHTIH-LSFTEHQKCDCRLK</Hsp_hseq>
+      <Hsp_midline> G VR   EV  +S CQ RE LV I QEYP +    F PSCV + RC GCC+DE+L+C P+    V LQ+MR         +  + FTEH  C+CR +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|AWP15647.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor A-A-like, partial [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP15647</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>8.52045e-22</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>EVITKSMCQPREVLVDIFQEYPGDTEHTFVPSCVVLNRCGGCCSDEALECVPMEASNVTLQVMRFRQMVTQHTIH-LSFTEHQKCDCRLK</Hsp_hseq>
+      <Hsp_midline>EV  +S CQ RE LV I QEYP +    F PSCV + RC GCC+DE+L+C P+    V LQ+MR         +  + FTEH  C+CR +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|AWP19797.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor A-like [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP19797</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>2.14753e-19</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>116</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>FLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACE</Hsp_qseq>
+      <Hsp_hseq>FQEVLEKSMCHPMEQLVDVEQEFPGEVEYIYLPACVSLWRCSGCCGDENLECHPTLERNITVQMIKIAPKTSSHHVE-LTFVEHQRCD</Hsp_hseq>
+      <Hsp_midline>F EV E+S C   E LV + QE+P E+  I+ P+CV++ RCSGCC DE+L+C P  +  + +Q++++ P+T S  +E + F EH  C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|AWP01318.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor D isoform 3 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP01318</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>2.84097e-11</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>VSPIDEEWQRTQCMPRETCVDVAKELSTDPSMFFKPPCVSVHRCSGCCNQEGITCRNTTTVYVNKTVLSVIPFNFVPEPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>V P  E  +R+ C  RET V + +E   + S  F+P CV+V RCSGCC  E + C       V+  ++ V P     +  ++K   HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|AWP01316.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor D [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP01316</Hit_accession>
+  <Hit_len>273</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.29517e-11</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>VSPIDEEWQRTQCMPRETCVDVAKELSTDPSMFFKPPCVSVHRCSGCCNQEGITCRNTTTVYVNKTVLSVIPFNFVPEPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>V P  E  +R+ C  RET V + +E   + S  F+P CV+V RCSGCC  E + C       V+  ++ V P     +  ++K   HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|AWP01317.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor D isoform 2 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP01317</Hit_accession>
+  <Hit_len>286</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.40192e-11</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>VSPIDEEWQRTQCMPRETCVDVAKELSTDPSMFFKPPCVSVHRCSGCCNQEGITCRNTTTVYVNKTVLSVIPFNFVPEPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>V P  E  +R+ C  RET V + +E   + S  F+P CV+V RCSGCC  E + C       V+  ++ V P     +  ++K   HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|KAF0042988.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_004325 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0042988</Hit_accession>
+  <Hit_len>387</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>7.53835e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCMPRETCVDVAKELSTDPSMFFKPPCVSVHRCSGCCNQEGITCRNTTTVYVNKTVLSVIPFNFVPEPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V + +E   + S  F+P CV+V RCSGCC  E + C       V+  ++ V P     +  ++K   HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|KAF0032475.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_014765 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0032475</Hit_accession>
+  <Hit_len>876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>2.44233e-09</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>472</Hsp_hit-from>
+      <Hsp_hit-to>574</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMR---VNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>QQALCKVRTEVVEVTRAMLDRSNANFMLWPPCVEVQRCSGCCNTKSLQCVPHVTHTRYLQVMKIEYINKRPTYTKA-VVSVVDHVECRCQPVSR---PPLPKKKSSR</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  +V + +   D  +  F   P CV V RCSGCC  +SL+C P   HT  LQ+M+   +N R   +K  V+   +H  C C+P  +   P  PK+K  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|AWP18643.1|</Hit_id>
+  <Hit_def>PDGF domain containing protein [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP18643</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>7.50531e-09</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMR---VNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>QQALCKVRTEVVEVTRAMLDRSNANFMLWPPCVEVQRCSGCCNTKSLQCVPHVTHTRYLQVMKIEYINKRPTYTKA-VVSVVDHVECRCQPVSR---PPLPKKKSSR</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  +V + +   D  +  F   P CV V RCSGCC  +SL+C P   HT  LQ+M+   +N R   +K  V+   +H  C C+P  +   P  PK+K  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|AWP06441.1|</Hit_id>
+  <Hit_def>putative vascular endothelial growth factor C, partial [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP06441</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.84987e-06</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCVDVGREFGAPTNIFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEITVPITQGTRPVTISVANHTQCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  V + +E+    +  ++P CV+V RC GCC  E  +C  +    +   +  +  P TQ ++   +    HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|AWP05226.1|</Hit_id>
+  <Hit_def>putative platelet-derived growth factor subunit B [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP05226</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>5.30319e-06</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>88</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN--PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>QQAVCKVRTEVMEVTRSMLDRRNANFMLWPPCVEVQRCSGCCNTRHLQCVPVVTSSRYLQVIKIQYINRKAHYDKAIISVEDHVSCRCQP</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  ++ + +   D  +  F   P CV V RCSGCC    L+C PV   +  LQ++++    R       ++   +H +C C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|KAF0032691.1|</Hit_id>
+  <Hit_def>hypothetical protein F2P81_014981 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>KAF0032691</Hit_accession>
+  <Hit_len>564</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>5.2228e-05</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|AWP18926.1|</Hit_id>
+  <Hit_def>putative platelet-derived growth factor subunit A-like [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP18926</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>7.99371e-05</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|AWP18927.1|</Hit_id>
+  <Hit_def>putative platelet-derived growth factor subunit A-like isoform 2 [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP18927</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>8.16321e-05</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|AWP05235.1|</Hit_id>
+  <Hit_def>putative platelet-derived growth factor subunit A-like [Scophthalmus maximus]</Hit_def>
+  <Hit_accession>AWP05235</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00011186</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKM-EV-MKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTAIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQAARKHHRTVKVAKVEYVRKRPKLREVQVRLEDHLDCMCSNKR</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + I  P CV V RC+GCC   +++C    KH   +++ +V    +  K+ EV ++  +H  C C  +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1082120900</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

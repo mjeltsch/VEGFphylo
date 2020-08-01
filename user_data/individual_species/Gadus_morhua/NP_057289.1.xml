@@ -1,0 +1,2918 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_030224927.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030224927</Hit_accession>
+  <Hit_len>301</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>281.182</Hsp_bit-score>
+      <Hsp_score>718</Hsp_score>
+      <Hsp_evalue>2.8637e-93</Hsp_evalue>
+      <Hsp_query-from>103</Hsp_query-from>
+      <Hsp_query-to>340</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>297</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>245</Hsp_align-len>
+      <Hsp_qseq>ICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRV-VDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNC------NECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCR</Hsp_qseq>
+      <Hsp_hseq>FCWYDFVEIEDLSEGRVLGRWCGSQSGPAVLLSQGSQVRVRFVSDQYFPSEPGFCLHYSLLPPSDPEPQTPAVTPAPPPSVEELEEAVSTLGTVEEVLKYLDPEGWRADMEELYRPSWLGLGKSYIHNKKTRVGADLNQLREEVRLYSCSPRNVSVSLREELRRTDAIFWPGCLLVRRCGGNCSCSQCSQSCSQSGEQCACIPSRTSRKYYEVLQLKHRAGGRGLQRSMTDVVLEHHEECSCQCQ</Hsp_hseq>
+      <Hsp_midline> C YDFVE+E+ S+G +LGRWCGS + P   +S+G+Q+R+RFVSD+YFPSEPGFC+HY+++ P   E  +P+V P     ++ L  A++   T+E++++YL+PE W+ D+E+LYRP+W  LGK+++  +K+RV  DLN L EEVRLYSC+PRN SVS+REEL+RTD IFWPGCLLV+RCGGNC+C   +        +C C+PS+ ++KY+EVLQL+ + G RGL +S+TDV LEHHEEC C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_030237275.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030237275</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>227.639</Hsp_bit-score>
+      <Hsp_score>579</Hsp_score>
+      <Hsp_evalue>1.82209e-71</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>132</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>362</Hsp_align-len>
+      <Hsp_qseq>GLLLLTSALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVST-NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL--GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVM----PQFTEAVSPSVLPPSALPLDL------------LNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPT-WQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNE-CQCVPSKVTKKYHEVLQLRPKTGVRGLHKS------LTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>ALLLFVVTLGGSAGLARAQGGTTRAMR--GNVRRDDIY--RKEEVVEVTAEGGSVSSPRYPNSYPRNLLLSWKLVA-PPGCRLHLEFDTRFGLEESENGVCRYDFVEAEDQSETSTISWGRWCGQRAPPSLN-SKTNTLRVTLKSDDYFVAKPGFRAYYSLLHDTPPPESITNWEAVTLPGSELAADQTAGTLQPFSIEDLDRTIAVFETVEQLLQNLNPDTWRQDLDSIYTQTHLHYRSRAYHLASRHNKVDLDRLYDDVRRYSCTPRNLTVNLREELRATNAVFFPRCLLVKRCGGNCACGTADWNNGCTCQAAKTAVKLHEVLKYAPEMRSSGSQRRPRVRWVIDEIFLTHHEKCHCVC</Hsp_hseq>
+      <Hsp_midline> LLL    L G     +A+   +   +   N  ++ +   + E ++ V+   GS+ SPR+P++YPRN +L W+LVA      + L FD RFGLE+ E+ +C+YDFVE E+ S+ + +  GRWCG    P    SK N +R+   SD+YF ++PGF  +Y+++     P+         LP S L  D             L+  I  F T+E L++ L P+ W+ DL+ +Y  T      +A+    +   VDL+ L ++VR YSCTPRN +V++REEL+ T+ +F+P CLLVKRCGGNCAC   + N  C C  +K   K HEVL+  P+    G  +       + ++ L HHE+C CVC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_030204749.1|</Hit_id>
+  <Hit_def>neuropilin-1 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030204749</Hit_accession>
+  <Hit_len>917</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.46445e-12</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>IRITKANYLTSPGYPASYSPSHKCVWVITAPGPHQRILINFNPHFDLEDRE---CKYDYVEVRDGVDESGQLVGKYCGK-IAPSPVISSGNQLFIKFVSD-YETHGAGFSIRYEI</Hsp_hseq>
+      <Hsp_midline>I ++    + SP +P +Y  +   VW + A   +  I + F+  F LED E   CKYD+VEV +  D  G ++G++CG    P   IS GNQ+ I+FVSD Y     GF I Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>1.39995e-05</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>287</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>PQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE----DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV---MPQFTEAVSPSVLPPSALPLD</Hsp_qseq>
+      <Hsp_hseq>PECSRNFT-SNSGVIKSPGFPEKYPNNLDCTFMIFAPKMSE-IVVEF-ESFELEPDTTPPTGVFCRYDRLEIWDGFPGVGPYVGRYCGQ-NMPGRIISYTGILALTIFTDSAIAKE-GFSANFTVIERTVPEDFDCTDPLGLESGEIPSD</Hsp_hseq>
+      <Hsp_midline>P+  R  T S +G I SP FP  YP N    + + A + +  I + F E F LE     P    C+YD +E+ +  P  G  +GR+CG   +PG+ IS    + +   +D     E GF  ++ ++   +P+  +   P  L    +P D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_030204746.1|</Hit_id>
+  <Hit_def>neuropilin-1 isoform X1 [Gadus morhua] &gt;ref|XP_030204747.1| neuropilin-1 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030204746</Hit_accession>
+  <Hit_len>924</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.5219e-12</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>IRITKANYLTSPGYPASYSPSHKCVWVITAPGPHQRILINFNPHFDLEDRE---CKYDYVEVRDGVDESGQLVGKYCGK-IAPSPVISSGNQLFIKFVSD-YETHGAGFSIRYEI</Hsp_hseq>
+      <Hsp_midline>I ++    + SP +P +Y  +   VW + A   +  I + F+  F LED E   CKYD+VEV +  D  G ++G++CG    P   IS GNQ+ I+FVSD Y     GF I Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>1.38998e-05</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>289</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>PQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE----DPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV---MPQFTEAVSPSVLPPSALPLDLL</Hsp_qseq>
+      <Hsp_hseq>PECSRNFT-SNSGVIKSPGFPEKYPNNLDCTFMIFAPKMSE-IVVEF-ESFELEPDTTPPTGVFCRYDRLEIWDGFPGVGPYVGRYCGQ-NMPGRIISYTGILALTIFTDSAIAKE-GFSANFTVIERTVPEDFDCTDPLGLESGEIPSDQI</Hsp_hseq>
+      <Hsp_midline>P+  R  T S +G I SP FP  YP N    + + A + +  I + F E F LE     P    C+YD +E+ +  P  G  +GR+CG   +PG+ IS    + +   +D     E GF  ++ ++   +P+  +   P  L    +P D +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_030219463.1|</Hit_id>
+  <Hit_def>neuropilin-1a-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030219463</Hit_accession>
+  <Hit_len>978</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>2.43006e-12</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>IIINSANYLTSPGYPTAYPPSQQCAWHITAPDPGQKILINFNPHFDLEDRE---CKYDYVEVYNGGDEASPMLGKFCGK-IAPSPIVSLGNQLLIKFVSD-YETHGAGFSVRYEV</Hsp_hseq>
+      <Hsp_midline>I +++   + SP +P  YP +    W + A +    I + F+  F LED E   CKYD+VEV    D    +LG++CG    P   +S GNQ+ I+FVSD Y     GF + Y +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.65478e-05</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVA--VEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>TAPSGIITTPGFPDKYPNNLECTFMILAPKMSEIVVEFHSFDMEPDTTPPPGAQCRYDWLEIWDGYPAVGPHIGRYCGQSS-PGRVMSYTGILSLSITTDSAISKE-GFSANYTV</Hsp_hseq>
+      <Hsp_midline> + +G I +P FP  YP N    + ++A  + E V    +FD       P    C+YD++E+ +  P+ G  +GR+CG  + PG+ +S    + +   +D     E GF  +Y +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_030236440.1|</Hit_id>
+  <Hit_def>membrane frizzled-related protein [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030236440</Hit_accession>
+  <Hit_len>596</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2402</Hsp_bit-score>
+      <Hsp_score>160</Hsp_score>
+      <Hsp_evalue>1.74716e-11</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>325</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS---DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>HGSIASPNHPRLYPHQQLCTWRISAEQGHV-IRLSF-RNFSLE--TQDVCEFDYVEVHDSAAAGAGRVLGRFCGT-SLPPHLTSSGPEMTVVFVADEGV-ADSGFNATYQAV</Hsp_hseq>
+      <Hsp_midline>+GSI SP  P  YP   +  WR+ A + +V I+L+F   F LE    D+C++D+VEV + +    G +LGR+CG+ ++P    S G ++ + FV+DE   ++ GF   Y  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>7.58908e-05</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>271</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>TEGSFSSPNHPGSYPPDVLCVWVIRVPPPHV-VQVHVSS-LSVEGPSP--CLFDWLEVQERGDQADVITRLCGNVAPPTFNTNK-SSVWVTFHSDSIIAGS-GFTVQYRAILP</Hsp_hseq>
+      <Hsp_midline>T GS  SP  P +YP + + VW +     +V +Q+       +E P    C +D++EV+E  D   ++ R CG+   P    +K + + + F SD       GF + Y  ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_030208825.1|</Hit_id>
+  <Hit_def>bone morphogenetic protein 1-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030208825</Hit_accession>
+  <Hit_len>970</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.855</Hsp_bit-score>
+      <Hsp_score>159</Hsp_score>
+      <Hsp_evalue>2.92902e-11</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>583</Hsp_hit-from>
+      <Hsp_hit-to>673</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE---PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NGSLSTPGWPREYPPNKNCVWQLVAPAQYC-ITLVFD---AFETEGNHVCKYDYVEVSSGRGPADSRLHGRYCGSDT-PERITSTLNNLRVEFRSD</Hsp_hseq>
+      <Hsp_midline>NGS+ +P +P  YP N   VW+LVA  +   I L FD     E   + +CKYD+VEV     P+D  + GR+CGS T P +  S  N +R+ F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>8.72935e-08</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>427</Hsp_hit-from>
+      <Hsp_hit-to>516</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRIQSPNYPDDYLSNKECVW-IITVAKDFRVGLSF-RSFEIEN--HDSCSYDYLDVRDGGSASSPLLGRFCGHDKKPADLQSSSNQLWITFVSD</Hsp_hseq>
+      <Hsp_midline>G I SP +P  Y  N   VW ++ V ++  + L+F   F +E+   D C YD+++V +    +  +LGR+CG    P    S  NQ+ I FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>5.58761e-06</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>733</Hsp_hit-from>
+      <Hsp_hit-to>829</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>ERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>DQMVTALT-GTLSSPNWPDTYPSQKACTWSLATLPGHR-IKIAFNE---LDMEAHLECVYDHLQIHDGEDARAPSLGRFCGAKKPP-PLISSGNQMFLHFYSD</Hsp_hseq>
+      <Hsp_midline>++++T  T G++ SP +P TYP      W L  +  +  I++ F+E   L+      C YD +++ +  D     LGR+CG+   P   IS GNQ+ + F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000284804</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>312</Hsp_hit-from>
+      <Hsp_hit-to>441</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNN</Hsp_qseq>
+      <Hsp_hseq>SSGNLSSPGFPNGYAPYSNCVWRISVTPGEKIVLNFTAMDLF-----RSPLCRYDYVEVRDGFWKKAPLKGRFCGD-TLPETIVSTDSRLWIEFRSSSDWLGK-GFSAVYKAICGGEVRKDTGRIQSPN-YPDDYLSN</Hsp_hseq>
+      <Hsp_midline>++G++ SP FP+ Y   +  VWR+ V   E + +  T  + F        +C+YD+VEV +       + GR+CG  T+P   +S  +++ I F S   +  + GF   Y  +        +  +  P+  P D L+N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_030208621.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 [Gadus morhua] &gt;ref|XP_030208622.1| tolloid-like protein 1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030208621</Hit_accession>
+  <Hit_len>1027</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>5.59809e-10</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>641</Hsp_hit-from>
+      <Hsp_hit-to>742</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGTISTPGWPKEYPPNKNCVWQVVAPTQ-YRISMQF-EIFELEGNE--VCKYDYVEVRSGLTSDSKLHGKYCGT-EVPEVITSQYNNMRIEFKSDNTV-SKKGFKAHF</Hsp_hseq>
+      <Hsp_midline>NG+I +P +P  YP N   VW++VA  +   I + F E F LE  E  +CKYD+VEV     SD  + G++CG+  VP    S+ N +RI F SD    S+ GF  H+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.48942e-07</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>795</Hsp_hit-from>
+      <Hsp_hit-to>886</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SPSGTLSSPNWPDKYPSRKECTWDITATPGHR-VKITFNE-FEIEQHQE--CAYDHLEAFDGDTDTAAILGRLCGS-KIPEALVSTGNKMYLRFISD</Hsp_hseq>
+      <Hsp_midline>S +G++ SP +P  YP      W + A   +  +++TF+E F +E  ++  C YD +E  +    T  ILGR CGS  +P   +S GN++ +RF+SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>2.20792e-06</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>918</Hsp_hit-from>
+      <Hsp_hit-to>1015</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQI-SKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>HSQFGDNNYPGHTDCEW-LLTSEAGYGVELTF---ITFEVEEEADCGYDYIELYDGYDANSHRLGRFCGSG--PREEIYTPGDVVLIRFHSDDTI-SKKGFHIHY</Hsp_hseq>
+      <Hsp_midline>HS    + YP +T   W L+  E    ++LTF      E  E+  C YD++E+ +  D     LGR+CGSG  P ++I + G+ + IRF SD+   S+ GF IHY</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000197608</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>485</Hsp_hit-from>
+      <Hsp_hit-to>574</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGQIQSPNYPDDYRPSKECVWR-ITVSEGYNVGLSFQ---AFEIERHDSCAYDYLEVRDGPLETSPLIGRFCGYDK-PEDVRSTAHTLWMKFVSD</Hsp_hseq>
+      <Hsp_midline>+G I SP +P  Y  +   VWR + V E   + L+F      E    D C YD++EV +    T  ++GR+CG    P    S  + + ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00108268</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>371</Hsp_hit-from>
+      <Hsp_hit-to>476</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>STGNFSSPGYPNGYPSYTHCVWRISVTPGEKIVLNFTTMDLY-----KSSLCWYDYIEVRDGYWRKAPLLGRFCGD-KLPEVLVSTDSRMWIEFRSSSNWVGK-GFAAVYEAI</Hsp_hseq>
+      <Hsp_midline>+ G+  SP +P+ YP  T  VWR+ V   E + +  T  + +     +  +C YD++EV +       +LGR+CG   +P   +S  +++ I F S   +  + GF   Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_030213570.1|</Hit_id>
+  <Hit_def>bone morphogenetic protein 1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030213570</Hit_accession>
+  <Hit_len>966</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>8.84326e-10</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>579</Hsp_hit-from>
+      <Hsp_hit-to>668</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NGSITSPGWPREYPPNKNCIWQLVAPTQ-YRITLLFDV---FETEGNDVCKYDYVEVRSGLSADSRLHGKFCGA-EKPEAITSQYNNMRIEFKSD</Hsp_hseq>
+      <Hsp_midline>NGSI SP +P  YP N   +W+LVA  +   I L FD     E   +D+CKYD+VEV     +D  + G++CG+   P    S+ N +RI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>9.87011e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>423</Hsp_hit-from>
+      <Hsp_hit-to>512</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NGQIQSPNYPDDYRPNKVCVWK-ISVASGFHVGLTF-QSFEIE--RHDSCAYDYLEVRDGLTESSPLLGRFCGYDK-PDDIKTSSNQLWMKFVSD</Hsp_hseq>
+      <Hsp_midline>NG I SP +P  Y  N V VW+ ++V     + LTF + F +E    D C YD++EV +       +LGR+CG    P    +  NQ+ ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>2.06803e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>733</Hsp_hit-from>
+      <Hsp_hit-to>824</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDI-CKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SASGTITSPNWPDKYPSKKACTWALSATPGHR-IKIAFNEM----DMEAHLECAYDHIEVYDGRDGKAPSLGRFCGT-KEPLPITSSANKLFIRFFSD</Hsp_hseq>
+      <Hsp_midline>S +G+I SP +P  YP      W L A   +  I++ F+E     D E  + C YD +EV +  DG    LGR+CG+   P    S  N++ IRF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>2.87824e-05</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>856</Hsp_hit-from>
+      <Hsp_hit-to>961</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFT</Hsp_qseq>
+      <Hsp_hseq>HAQFGDNNYPGASDCQWVLVA-EKGYGVELIF-QTFEIEEEAD--CGYDYMELFDGGDIKSPRLGRYCGSGP-PEEIYSAGDSIVIKFRSDDTI-NKKGFHVRYTSTKFQDT</Hsp_hseq>
+      <Hsp_midline>H+    + YP  +   W LVA E+   ++L F + F +E+  D  C YD++E+ +  D     LGR+CGSG  P +  S G+ I I+F SD+   ++ GF + Y     Q T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_030220115.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220115</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.69342e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIY-IIEASPRQCIDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQGEGSEGT</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ ++       I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    + +E  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_030220118.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220118</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.87989e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIY-IIEASPRQCIDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQGEGSEGT</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ ++       I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    + +E  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_030220114.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220114</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>2.02287e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIYIIEASPRQC-IDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQGEGSEGT</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ + A      I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    + +E  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_030220116.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X1 [Gadus morhua] &gt;ref|XP_030220117.1| neuropilin and tolloid-like protein 1 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220116</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>2.04203e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAV</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIYIIEASPRQC-IDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQGEGSEGT</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ + A      I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    + +E  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_030198888.1|</Hit_id>
+  <Hit_def>neuropilin-2 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030198888</Hit_accession>
+  <Hit_len>959</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>2.81043e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VLDASDAGYITTPGYPLEYPPHQSCRWVITAPEPSQRIVLNFNPHFEIEKLD---CRYDYIEIHDGNTETADLLGKHC-SNIAPAPIISSGPSLHIKFVSD-YAHQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>++  S  G I +P +P  YP +    W + A E +  I L F+  F +E  +   C+YD++E+ + +  T  +LG+ C S   P   IS G  + I+FVSD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>4.35894e-06</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>155</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DP---EDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLED</Hsp_qseq>
+      <Hsp_hseq>TSPTGLIESPGFPDKYPHNLECHF-IIIVPPGMDVTLSF-LTFDLENDPLPGGEGECKYDWLEVWDGLPGVGPLIGRYCGTRVPPEIQSSTG-ALSLSFHTDMAVAKD-GFSARYNMTHKEVSDTFHCSN-PFGMESGRITDDQITASSSFYD-DRWL-PRQARLNNED</Hsp_hseq>
+      <Hsp_midline> S  G I SP FP  YP N    + ++ V   + + L+F   F LE DP    +  CKYD++EV +  P  G ++GR+CG+   P  Q S G  + + F +D     + GF   YN+   + ++    S  P       + ++ ITA S+  D  R+L P + +L+ ED</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_030198890.1|</Hit_id>
+  <Hit_def>neuropilin-2 isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030198890</Hit_accession>
+  <Hit_len>912</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>3.11307e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VLDASDAGYITTPGYPLEYPPHQSCRWVITAPEPSQRIVLNFNPHFEIEKLD---CRYDYIEIHDGNTETADLLGKHC-SNIAPAPIISSGPSLHIKFVSD-YAHQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>++  S  G I +P +P  YP +    W + A E +  I L F+  F +E  +   C+YD++E+ + +  T  +LG+ C S   P   IS G  + I+FVSD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>4.62535e-06</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>155</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DP---EDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLED</Hsp_qseq>
+      <Hsp_hseq>TSPTGLIESPGFPDKYPHNLECHF-IIIVPPGMDVTLSF-LTFDLENDPLPGGEGECKYDWLEVWDGLPGVGPLIGRYCGTRVPPEIQSSTG-ALSLSFHTDMAVAKD-GFSARYNMTHKEVSDTFHCSN-PFGMESGRITDDQITASSSFYD-DRWL-PRQARLNNED</Hsp_hseq>
+      <Hsp_midline> S  G I SP FP  YP N    + ++ V   + + L+F   F LE DP    +  CKYD++EV +  P  G ++GR+CG+   P  Q S G  + + F +D     + GF   YN+   + ++    S  P       + ++ ITA S+  D  R+L P + +L+ ED</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_030204774.1|</Hit_id>
+  <Hit_def>procollagen C-endopeptidase enhancer 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030204774</Hit_accession>
+  <Hit_len>449</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.39816e-09</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>298</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHT-YPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV---EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>TGSFKTPNWPEKDYPAGVTCSWRIVAPKHQI-IEVRF-EKFDVE--RDNYCRYDHVSIFNGPEINDARRIGKFCGD-SPPSPVLSEGNQLVIQFLSDLSLTAD-GFIAHYTF</Hsp_hseq>
+      <Hsp_midline> GS  +P +P   YP      WR+VA +  + I++ F E+F +E   D+ C+YD V +    E +D   +G++CG  + P   +S+GNQ+ I+F+SD    ++ GF  HY  </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>4.02981e-09</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP-SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SGLVGSQGYPGVYPPNTKCVWRITVPIGRV-VVLSF--RF-IDLESDNLCRYDYVDVYSGHAGGQRLGRFCGTAR-PGALVSTGNKMMVQMMSDANTAGS-GFLAVYSAAHPH</Hsp_hseq>
+      <Hsp_midline>+G + S  +P  YP NT  VWR+      V + L+F  RF ++   D++C+YD+V+V    + G  LGR+CG+   PG  +S GN++ ++ +SD       GF   Y+   P </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_030198889.1|</Hit_id>
+  <Hit_def>neuropilin-2 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030198889</Hit_accession>
+  <Hit_len>933</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>3.48535e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VLDASDAGYITTPGYPLEYPPHQSCRWVITAPEPSQRIVLNFNPHFEIEKLD---CRYDYIEIHDGNTETADLLGKHC-SNIAPAPIISSGPSLHIKFVSD-YAHQGAGFSLRYEI</Hsp_hseq>
+      <Hsp_midline>++  S  G I +P +P  YP +    W + A E +  I L F+  F +E  +   C+YD++E+ + +  T  +LG+ C S   P   IS G  + I+FVSD Y     GF + Y I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>4.94362e-06</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>155</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE-DP---EDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLED</Hsp_qseq>
+      <Hsp_hseq>TSPTGLIESPGFPDKYPHNLECHF-IIIVPPGMDVTLSF-LTFDLENDPLPGGEGECKYDWLEVWDGLPGVGPLIGRYCGTRVPPEIQSSTG-ALSLSFHTDMAVAKD-GFSARYNMTHKEVSDTFHCSN-PFGMESGRITDDQITASSSFYD-DRWL-PRQARLNNED</Hsp_hseq>
+      <Hsp_midline> S  G I SP FP  YP N    + ++ V   + + L+F   F LE DP    +  CKYD++EV +  P  G ++GR+CG+   P  Q S G  + + F +D     + GF   YN+   + ++    S  P       + ++ ITA S+  D  R+L P + +L+ ED</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_030220090.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220090</Hit_accession>
+  <Hit_len>597</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>4.08475e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVM-PQF</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIY-IIEASPRQCIDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQDPEF</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ ++       I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    P+F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_030220089.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030220089</Hit_accession>
+  <Hit_len>616</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>4.33525e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVM-PQF</Hsp_qseq>
+      <Hsp_hseq>SGGSFTSPNYPEKYPADRECIY-IIEASPRQCIDLFFLERYSIEPSWD--CKFDHIEVRDGPFGFSPIIGRYCGQQS-PAYVHSSGRYLYIKFVSDGELEAT-GFSAHYNFTQDPEF</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +   ++ ++       I L F ER+ +E   D  CK+D +EV +   G   I+GR+CG  + P    S G  + I+FVSD    +  GF  HYN    P+F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_030236206.1|</Hit_id>
+  <Hit_def>suppressor of tumorigenicity 14 protein homolog [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030236206</Hit_accession>
+  <Hit_len>851</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>6.7663e-08</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>342</Hsp_hit-from>
+      <Hsp_hit-to>445</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP---EDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>AAGGTFTSPNFPNYYPPNTVCVW-TITVPSGKWISLTFTQFF-LNEPGQGNSKKCNKDYVEVNSK-------KLCGEKTGHVVETVKNNQATVTFSSDHSY-VDRGFNVTYKAI</Hsp_hseq>
+      <Hsp_midline>+  G+  SP FP+ YP NTV VW  + V    WI LTF + F L +P       C  D+VEV          + CG  T    +  K NQ  + F SD  +  + GF + Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_030193063.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030193063</Hit_accession>
+  <Hit_len>365</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>7.03481e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>SGGFSSVDHPLPYPKSSDCSYS-IQVEEGLVVELLFNPTFDVEDHPDLPCPYDYVQV--IAGGKELGRYCG-GRSPGRVVTKSHLVLVNFHTDD</Hsp_hseq>
+      <Hsp_midline>+G   S   P  YP+++   +  + VEE + ++L F+  F +ED  D  C YD+V+V   + G  LGR+CG G  PG+ ++K + + + F +D+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.0019069</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>86</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GTVRSPNFPEAYPRDTELRWN-ISVPRGYHVQLYF-THFDLEPSY--LCEYDFVKVEVEE--VVLGLFCG</Hsp_hseq>
+      <Hsp_midline>G++ SP FP  YPR+T L W  ++V     +QL F   F LE     +C+YDFV+VE      +LG +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_030205039.1|</Hit_id>
+  <Hit_def>cubilin [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030205039</Hit_accession>
+  <Hit_len>3629</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.05993e-07</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>1765</Hsp_hit-from>
+      <Hsp_hit-to>1922</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYR</Hsp_qseq>
+      <Hsp_hseq>SGAFNSPNYPDAYPANVECVWTLRSSPGNR-LQLSF-IMFGLETSLN--CNKDVLEIREGSSTGPLVSRLCGDSLPSNYTSVTGHILWIRFRSDAS-GSGAGFQASFAHLYGNELTGESGQIASP-LYPRTYPNNADYRWTVTVDGDSYVQIHFLDLDIEDLYN</Hsp_hseq>
+      <Hsp_midline>+G+ +SP +P  YP N   VW L +   N  +QL+F   FGLE   +  C  D +E+ E S  G ++ R CG           G+ + IRF SD    S  GF   +  +        S  +  P   P    NNA   ++   D   Y++     LD+EDLY </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.53313e-07</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>1065</Hsp_hit-from>
+      <Hsp_hit-to>1170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>TSPTGTLSSPNYPSNYPNKRECVYKIV-VGVNMQIKLNFTD-FQLE--YSATCNYDYVEIRDGGYETSPIIGRFCGSQRPP-VLVSHSNSLWLMFRSD-VTTTSPGFTAHWD</Hsp_hseq>
+      <Hsp_midline> S  G++ SP +P  YP     V+++V V  N+ I+L F + F LE      C YD+VE+ +    T  I+GR+CGS   P   +S  N + + F SD    + PGF  H++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.86494e-07</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>149</Hsp_query-to>
+      <Hsp_hit-from>1415</Hsp_hit-from>
+      <Hsp_hit-to>1507</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSDEY</Hsp_qseq>
+      <Hsp_hseq>SGSFNSPGYPKWYPENSLCIWHITVATGRSITINI---HEFDVEYHPD--CNYDVLEVFGGPDQTAPRLAQLCSTTTTPMQVSSTGNTITVRFKTDAY</Hsp_hseq>
+      <Hsp_midline>+GS +SP +P  YP N++ +W + VA   ++ I +     F +E   D  C YD +EV    D T   L + C + T P +  S GN I +RF +D Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>3.35605e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2243</Hsp_hit-from>
+      <Hsp_hit-to>2347</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GYITSPNYPQNYPKNSDCVW-VIAVPNGESVRVDFEEDFYIEPTTS--CLNDYLEVRDGVTTEADLIAKLCGA-TRPSTQHSTGSSMLLRFRTDKSV-THKGFKAKYSIA</Hsp_hseq>
+      <Hsp_midline>G I SP +P  YP+N+  VW ++AV     +++ F+E F +E      C  D++EV +   ++  ++ + CG+ T P  Q S G+ + +RF +D+   +  GF   Y+I </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>4.7394e-06</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>954</Hsp_hit-from>
+      <Hsp_hit-to>1051</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>SPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPS---DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>SPGHPEGYPHGADCMW-FISVAPGNLIRLTFDS-FNVE--YDSRCEHDYLEVYDNGTVQTGTKVGRYCGR-SVPPSITSTDSLLTVLFVSDSTTATE-GFSISY</Hsp_hseq>
+      <Hsp_midline>SP  P  YP     +W  ++V     I+LTFD  F +E   D  C++D++EV +      GT +GR+CG  +VP    S  + + + FVSD    +E GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.83589e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>2826</Hsp_hit-from>
+      <Hsp_hit-to>2957</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV---EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNA</Hsp_qseq>
+      <Hsp_hseq>SGSIRSPGYPQNFPANAECSWQLVG-HEGSHLEMSFQGEFQIPD-DSGTCQSSYVKVWSGSSQTDEALLATGCGS-TAPGPIITPTNVLTARLQASG--PAGKGFFASFTSRCGANFTARSGRVVSPN-YPADYPNHS</Hsp_hseq>
+      <Hsp_midline>+GSI SP +P  +P N    W+LV   E   ++++F   F + D +   C+  +V+V      +D  +L   CGS T PG  I+  N +  R  +    P+  GF   +         A S  V+ P+  P D  N++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>2.16695e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>3410</Hsp_hit-from>
+      <Hsp_hit-to>3498</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GYLKSPGWPDVYPLNTDCTVVLMAPQGSS-ISLFFNS-FDIEG--HSLCAYDYLEVRNGSTATSPPLGRFCGSG-LPAPVFPGTNALYLRFKSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  YP NT     L+A + +  I L F+  F +E     +C YD++EV   S  T   LGR+CGSG +P       N + +RF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>8</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>6.78848e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>2473</Hsp_hit-from>
+      <Hsp_hit-to>2577</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVP-GKQI-SKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>SGTISSPNYPNLYPHNRVCRW-LVVVPRGRRVTLTIND-MRLEGSEAS-CYFDYVEVLNGVTEDSPLLTRYCGS--VPTGTQVRTSGRTMTVVFRTDASV-SNGGFTASYS</Hsp_hseq>
+      <Hsp_midline>+G+I SP +P+ YP N V  W LV V     + LT ++   LE  E   C +D+VEV      D  +L R+CGS  VP G Q+ + G  + + F +D    S  GF   Y+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>9</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000219757</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1640</Hsp_hit-from>
+      <Hsp_hit-to>1739</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV------EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>NLVADDSGGAISSPRYPSNYAPDLNCSWIITAQEPFNHVTLSFTD-LDLERVNSN-CSHDAVEVLDGNNYEAPS----IGRYCGS-ELPHPVTSFSNALVVNFVSDH</Hsp_hseq>
+      <Hsp_midline> ++   + G+I SPR+P  Y  +    W + A E    + L+F +   LE    + C +D VEV      E PS    +GR+CGS  +P    S  N + + FVSD </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>10</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.0026996</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>592</Hsp_hit-from>
+      <Hsp_hit-to>705</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>QDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV------EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>QDPVCGGELT-NTHGNINSPGYPGNYPPSRDCYWT-VNVPPGLLITFAFGD-LSLEHHPD--CSFDFLEIRDGLVAEDPS----LARYCSSASPP-PVSTTGPAAWLHFHSDSGV-SDRGFHISY</Hsp_hseq>
+      <Hsp_midline>QDP     +T +T+G+I+SP +P  YP +    W  V V   + I   F +   LE   D  C +DF+E+      E+PS    L R+C S + P    + G    + F SD    S+ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>11</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00362434</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>3494</Hsp_hit-from>
+      <Hsp_hit-to>3612</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>KFQFSSNKEQNGVQ-----DPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRF</Hsp_qseq>
+      <Hsp_hseq>RFKSDFNNVRDGFEATWTSSPQGCGGTLYGDHGSVASPNYPGTYPNGTHCEWDIRAPRGRV-VTVTF-AQLSIDDPGD--CQNNFLKLYDGPDSTTAPVGPYCGRETNVAPFTASSHLVYIVF</Hsp_hseq>
+      <Hsp_midline>+F+   N  ++G +      PQ         +GS+ SP +P TYP  T   W + A    V + +TF  +  ++DP D  C+ +F+++ +  D T   +G +CG  T      +  + + I F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>12</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00474057</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1185</Hsp_hit-from>
+      <Hsp_hit-to>1287</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GSFTSPNYPLPYHPNTECYWRIKTNQGNL-LRLSFSD-FHLEASTHMGCRRDYLAVYDGNSTAAPKLAVLCGH-TLPAPLNSSGSELYVKLRTD-YMISAGGFLASY</Hsp_hseq>
+      <Hsp_midline>GS  SP +P  Y  NT   WR+   + N+ ++L+F + F LE      C+ D++ V + +      L   CG  T+P    S G+++ ++  +D Y  S  GF   Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>13</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.0055401</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>2671</Hsp_hit-from>
+      <Hsp_hit-to>2800</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>LLLLTSALAGQRQGTQAESNLS--SKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGT-ILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>IVVFTSELWVHFQTDQAEGDLGFMAQYMFS---DCGGWQSGE---------GGVISSPNYPDHYPGPSRCAWLLEAPEGHT-ITLTF-TYFSLE--AHSQCSWDSLTIFNGASPGSPVIGQYCGTNS-PGTVQSGSSKMAVVFLGDH</Hsp_hseq>
+      <Hsp_midline>+++ TS L    Q  QAE +L   +++ FS   +  G Q  +          G I SP +P  YP  +   W L A E +  I LTF   F LE      C +D + +    S G+ ++G++CG+ + PG   S  +++ + F+ D </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>14</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00783231</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>830</Hsp_hit-from>
+      <Hsp_hit-to>922</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>TVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TFSGTGQIRSPYHPGAYPHNKECEWVLNQPQGYV-VTLNFLSF----DVEGNACRFNFVEVRDGSSSSSPLLGTFCGDQVPPMLQSTQ-RSMYLRFKTD</Hsp_hseq>
+      <Hsp_midline>T S  G I SP  P  YP N    W L   +  V + L F       D E + C+++FVEV + S  +  +LG +CG    P  Q ++   + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>15</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0334823</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1533</Hsp_hit-from>
+      <Hsp_hit-to>1621</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GEIHSPAYPANYPNSVDCSW-VISVDPTHRVLFNFTDLDVEYYPD---CQNDYVSIHDGPSVLAPQLGCVCGS-VRPAPIISTQNVIYVRFRSD</Hsp_hseq>
+      <Hsp_midline>G IHSP +P  YP +    W +++V+    +   F +      P+   C+ D+V + +        LG  CGS   P   IS  N I +RF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>16</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0415545</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>3203</Hsp_hit-from>
+      <Hsp_hit-to>3265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>NVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NKLINLTFDS-FDLENSPN--CRYDRIKVYDGDNVNVPLVGSFCGN-TVPMPFVSSGNFLTVLFVTD</Hsp_hseq>
+      <Hsp_midline>N  I LTFD  F LE+  +  C+YD ++V +  +  +  +G +CG+ TVP   +S GN + + FV+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_030221867.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030221867</Hit_accession>
+  <Hit_len>580</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.36879e-07</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVM-PQF</Hsp_qseq>
+      <Hsp_hseq>TEGGVFSSPNYPKTYPPNKECIYILEALPRQR-IELHFNRSFYMEASFE--CRFDHIEVRDGPFSFSPLIDRFCGTAT-PGLVVSSGRFVWVRFYSDDELEGQ-GFQVQYHFTTDPEF</Hsp_hseq>
+      <Hsp_midline>+  G   SP +P TYP N   ++ L A+     I+L F+  F +E   +  C++D +EV +   S   ++ R+CG+ T PG  +S G  + +RF SD+    + GF + Y+    P+F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_030193061.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030193061</Hit_accession>
+  <Hit_len>721</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.49126e-07</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>SGGFSSVDHPLPYPKSSDCSYS-IQVEEGLVVELLFNPTFDVEDHPDLPCPYDYVQVI--AGGKELGRYCG-GRSPGRVVTKSHLVLVNFHTDD</Hsp_hseq>
+      <Hsp_midline>+G   S   P  YP+++   +  + VEE + ++L F+  F +ED  D  C YD+V+V   + G  LGR+CG G  PG+ ++K + + + F +D+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00322756</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>86</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GTVRSPNFPEAYPRDTELRWN-ISVPRGYHVQLYF-THFDLE--PSYLCEYDFVKVEVEE--VVLGLFCG</Hsp_hseq>
+      <Hsp_midline>G++ SP FP  YPR+T L W  ++V     +QL F   F LE     +C+YDFV+VE      +LG +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_030193062.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030193062</Hit_accession>
+  <Hit_len>719</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.51648e-07</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>186</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>SGGFSSVDHPLPYPKSSDCSYS-IQVEEGLVVELLFNPTFDVEDHPDLPCPYDYVQVI--AGGKELGRYCG-GRSPGRVVTKSHLVLVNFHTDD</Hsp_hseq>
+      <Hsp_midline>+G   S   P  YP+++   +  + VEE + ++L F+  F +ED  D  C YD+V+V   + G  LGR+CG G  PG+ ++K + + + F +D+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00334013</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>84</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GTVRSPNFPEAYPRDTELRWN-ISVPRGYHVQLYF-THFDLE--PSYLCEYDFVKVEVEE--VVLGLFCG</Hsp_hseq>
+      <Hsp_midline>G++ SP FP  YPR+T L W  ++V     +QL F   F LE     +C+YDFV+VE      +LG +CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_030207002.1|</Hit_id>
+  <Hit_def>ovochymase-2-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030207002</Hit_accession>
+  <Hit_len>1395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.57431e-07</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVS</Hsp_qseq>
+      <Hsp_hseq>SGTFTSWRFPNHYDNGRGCSWQITVAADKV-IQLWFEE-FALED--SDMCVSDFVTLRDSLG--IMGKYCGY-TKPRTLVTLENRLMVYFDSND-LKTDQGFKAHYKAVAPESTGEIA</Hsp_hseq>
+      <Hsp_midline>+G+  S RFP+ Y       W++    + V IQL F+E F LED   D+C  DFV + +     I+G++CG  T P   ++  N++ + F S++   ++ GF  HY  V P+ T  ++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000403848</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>447</Hsp_hit-from>
+      <Hsp_hit-to>555</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-YDFVEVEE--PSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>NGIIKSPNWPMNYKANGECLWT-VEVPAGKRIQLSF-THFDIEAKSLMSPKCLDYIEIQDIRTGDGVLLDNYGPFCGSKLPPSVQ-TKGNRLVMRFTSD-LFTEGSGFRAYWS</Hsp_hseq>
+      <Hsp_midline>NG I SP +P  Y  N   +W  V V     IQL+F   F +E       K  D++E+++    DG +L   G +CGS   P  Q +KGN++ +RF SD  F    GF  +++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00224149</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>986</Hsp_hit-from>
+      <Hsp_hit-to>1077</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SNQGEITSPGWPSDYPGQAVCTWH-ITIPSATAIHLAF-THFEVQAVNQVGMCLDYVDIFQGTDMSSKGRFCGFAPPPKITI-DGNTAIIRFLSN</Hsp_hseq>
+      <Hsp_midline>S  G I SP +P  YP   V  W  + +     I L F   F ++         D+V++ + +D +  GR+CG    P   I  GN   IRF+S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_030226684.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X4 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226684</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>2.09371e-07</Hsp_evalue>
+      <Hsp_query-from>237</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DLNLLTEEVRLYS---CTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>DKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCC-----NDEAMECVPTRTRNVTMEVLQVREKVS-----QHLSQLSFVEHEECDC</Hsp_hseq>
+      <Hsp_midline>D N++   +++++   C  R   V I +E   R +  + P C+++KRC G C     N    +CVP++      EVLQ+R K       + L+ ++   HEECDC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_030193865.1|</Hit_id>
+  <Hit_def>procollagen C-endopeptidase enhancer 2-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030193865</Hit_accession>
+  <Hit_len>633</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.37651e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>279</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHT-YPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV---EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSP</Hsp_qseq>
+      <Hsp_hseq>GSVQTPNWPTSDYPAGISCSWH-ISVEPSNVIEVKFAK---LDLEPDTYCRYDYVAFFNGGERDDSRRIGKFCGD-TAPGTIMTNGNELLVQFVSDLSVTSD-GFMAFYSSV-PRGARAPGP</Hsp_hseq>
+      <Hsp_midline>GS+ +P +P + YP      W  ++VE +  I++ F +   L+   D  C+YD+V      E  D   +G++CG  T PG  ++ GN++ ++FVSD    S+ GF   Y+ V P+   A  P</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00183306</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>VTDSGFVASEGFPNQYQPNSKCTWYITVPAGHV-VMLSF-RLFDME--ADATCRYDYLDVFNGHTRLVQRLGRFCGT-FRPGALIATSNTMMLTMVADGSTAGR-GFVAFFSAGKPHVEE</Hsp_hseq>
+      <Hsp_midline>V+ +G + S  FP+ Y  N+   W +     +V + L+F   F +E   D  C+YD+++V       +  LGR+CG+   PG  I+  N + +  V+D       GF   ++   P   E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_030226683.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226683</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>2.47451e-07</Hsp_evalue>
+      <Hsp_query-from>237</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DLNLLTEEVRLYS---CTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>DKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCC-----NDEAMECVPTRTRNVTMEVLQVREKVS-----QHLSQLSFVEHEECDC</Hsp_hseq>
+      <Hsp_midline>D N++   +++++   C  R   V I +E   R +  + P C+++KRC G C     N    +CVP++      EVLQ+R K       + L+ ++   HEECDC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_030217137.1|</Hit_id>
+  <Hit_def>procollagen C-endopeptidase enhancer 2-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030217137</Hit_accession>
+  <Hit_len>462</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>3.02656e-07</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE</Hsp_qseq>
+      <Hsp_hseq>VSDSGFVGSEDFPSYYKPNSKCTWRITVPEGNV-VMLTFRV---MDLEADSLCRYDYLDAYNGHSNMKQKLGRFCGT-FRPGALISTSNTLMLDMVSDDGNQGR-GFVAYFSGIAPTADE</Hsp_hseq>
+      <Hsp_midline>VS +G + S  FP  Y  N+   WR+   E NV + LTF     ++   D +C+YD+++           LGR+CG+   PG  IS  N + +  VSD+      GF  +++ + P   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>3.36512e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>171</Hsp_hit-from>
+      <Hsp_hit-to>276</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFP-HTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV---EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GEITTPGWPMNKYPPGTSCSW-LITVDPGMVIMVRFD-KFLLE--ADTYCRFDYVAFFNGGERDNSRLIGKFCGD-RAPEPLVSNGNVLLVQFVSDLSVTSD-GFLASYTAV</Hsp_hseq>
+      <Hsp_midline>G I +P +P + YP  T   W L+ V+  + I + FD +F LE   D  C++D+V      E  +  ++G++CG    P   +S GN + ++FVSD    S+ GF   Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_030226681.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Gadus morhua] &gt;ref|XP_030226682.1| vascular endothelial growth factor A-A-like isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226681</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>3.42518e-07</Hsp_evalue>
+      <Hsp_query-from>237</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DLNLLTEEVRLYS---CTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>DKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCC-----NDEAMECVPTRTRNVTMEVLQVREKVS-----QHLSQLSFVEHEECDC</Hsp_hseq>
+      <Hsp_midline>D N++   +++++   C  R   V I +E   R +  + P C+++KRC G C     N    +CVP++      EVLQ+R K       + L+ ++   HEECDC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|XP_030226685.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X5 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226685</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>3.99991e-07</Hsp_evalue>
+      <Hsp_query-from>237</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DLNLLTEEVRLYS---CTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>DKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCC-----NDEAMECVPTRTRNVTMEVLQVREKVS-----QHLSQLSFVEHEECDC</Hsp_hseq>
+      <Hsp_midline>D N++   +++++   C  R   V I +E   R +  + P C+++KRC G C     N    +CVP++      EVLQ+R K       + L+ ++   HEECDC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|XP_030233670.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030233670</Hit_accession>
+  <Hit_len>658</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>5.02899e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE-----------YFPSEPGFCIH</Hsp_qseq>
+      <Hsp_hseq>GVFASPNYPNTYPPNKECVYILEALPRQ-RVQLAFDKSYYIEPSFE--CRFDHIEIRDGPFGFSPLISRFCG-GKNPGLVTSTGRFMWIKFTSDEELEGLGFRSKYTFIADPDFHLH</Hsp_hseq>
+      <Hsp_midline>G   SP +P+TYP N   V+ L A+     +QL FD+ + +E   +  C++D +E+ +   G   ++ R+CG G  PG   S G  + I+F SDE            F ++P F +H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_030203640.1|</Hit_id>
+  <Hit_def>CUB and sushi domain-containing protein 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030203640</Hit_accession>
+  <Hit_len>3609</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.4029e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRY</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGYPYGYPNYANCTWVIVAAEHNR-IQLVF-QGFALEEDFDLLSVYD----GPPSPGNLRTRLTGF-QLPSPIVSTGSRLTLWLLSD-YAVSGQGFKAAYE-ALPSYTCG-NPGVL------LNGLQQGTTF--NIGDKIRY</Hsp_hseq>
+      <Hsp_midline>NG+I SP +P+ YP      W +VA E N  IQL F + F LE+  D +  YD      PS G +  R  G   +P   +S G+++ +  +SD Y  S  GF   Y   +P +T   +P VL      L+ L    T    + D IRY</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00883928</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>2020</Hsp_hit-from>
+      <Hsp_hit-to>2116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GMILSPGFPGNYPSNSDCTWRVYLPVGYGAHIQFL---NFSTE------ANHDFLEIRNGPLDTSTVIGRFSGT-DVPSSLLTTSHETTVYYHSD-HSQNKPGFRLEY</Hsp_hseq>
+      <Hsp_midline>G I SP FP  YP N+   WR+ + V     IQ      F  E        +DF+E+   P D  T++GR+ G+  VP   ++  ++  + + SD +  ++PGF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0251697</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1496</Hsp_hit-from>
+      <Hsp_hit-to>1593</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>GGLILSPEYPEPYPHGRECDW-TVSVTQDYVIALNFNQ-FSLEPSYDFLHIYDGPDSLSPLLGSFYGI-----DVPDRIESSSNTLFLAFRSDASLSSN-GFVLQY</Hsp_hseq>
+      <Hsp_midline> G I SP +P  YP      W  V+V ++  I L F++ F LE   D +  YD  +   P  G+  G       VP +  S  N + + F SD    S  GF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0422707</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1848</Hsp_hit-from>
+      <Hsp_hit-to>1947</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTILSPGFPEPYLNSLNCVWKIL-VPEGSGIQIQVIS-FVTEQ------NWDSLEVFDGGDNTDTMLGSFSGT-TVPALLNSTSNQLYLHFFSDISV-SAAGFRLEYKTV</Hsp_hseq>
+      <Hsp_midline>G+I SP FP  Y  +   VW+++ V E   IQ+     F  E        +D +EV +  D   T+LG + G+ TVP    S  NQ+ + F SD    S  GF + Y  V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|XP_030219168.1|</Hit_id>
+  <Hit_def>CUB domain-containing protein 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030219168</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.96607e-06</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE---PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>ILSASSGNISSPNFPGLYPYNIDCMW-LIVVAEGSSVLLTF-HHFELEFHGH--CAYDYIRIYNGVSEDEGNLLGTFCGD-ISPPQFTSSWNVMSIIFHSDRHV-AHRGFAVGY</Hsp_hseq>
+      <Hsp_midline>I  +++G+I SP FP  YP N   +W L+ V E   + LTF   F LE      C YD++ +       +G +LG +CG    P +  S  N + I F SD +  +  GF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>5.68743e-05</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>374</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPED--DICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>ALSGNFSSPHFPGIYPNNINCHWT-VTLAAGYRIKLFF-PLVELEDRNSLTDECDYDSVAVYDGDSQLAPLLGRWCG-GEHPPSVTSKANRLLVVLNTDRNV-ARKGFSAAYVGVVP</Hsp_hseq>
+      <Hsp_midline>+ +G+  SP FP  YP N    W  V +     I+L F     LED     D C YD V V +       +LGRWCG G  P    SK N++ +   +D    +  GF   Y  V+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>ref|XP_030226220.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115553827 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226220</Hit_accession>
+  <Hit_len>1412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>2.43251e-06</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>743</Hsp_hit-from>
+      <Hsp_hit-to>870</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG-----SGTVPGKQ--ISKGNQIRIRFVSDEYFPSEP--GFCIHYNIVMPQFTEAVSPSVLPPSALPL</Hsp_qseq>
+      <Hsp_hseq>NHGKIQSPDFPQPYGPDLLERWDL-RVADGYQIQLTF-THMDIEPTQD--CSYDAL-VLLSDDKKLLGKFCGQEDSPDGNHPGNQPILSPGNKMSLVFQTDDT-NSEPHKGFSAHY-----QAMDIDECALLDPDSEPL</Hsp_hseq>
+      <Hsp_midline> +G I SP FP  Y  + +  W L  V +   IQLTF     +E  +D  C YD + V    D  +LG++CG      G  PG Q  +S GN++ + F +D+   SEP  GF  HY     Q  +    ++L P + PL</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.9065e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>284</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>LSGSLKGRISSPFRP--YPDNSRCRYTL-SVEPHLQLQLDFSAAFDVEQGPDGACR-DSLTVETRS--GMLGPFCGAVPPPSPLLTHSNHVVIHFNSDNY-GSNNGFTLFY</Hsp_hseq>
+      <Hsp_midline>++ S  G I SP  P  YP N+   + L +VE ++ +QL F   F +E   D  C+ D + VE  S   +LG +CG+   P   ++  N + I F SD Y  S  GF + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|XP_030226680.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226680</Hit_accession>
+  <Hit_len>193</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>4.56221e-06</Hsp_evalue>
+      <Hsp_query-from>237</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DLNLLTEEVRLYS---CTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>DKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCC-----NDEAMECVPTRTRNVTMEVLQVREKVS-----QHLSQLSFVEHEECDC</Hsp_hseq>
+      <Hsp_midline>D N++   +++++   C  R   V I +E   R +  + P C+++KRC G C     N    +CVP++      EVLQ+R K       + L+ ++   HEECDC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>ref|XP_030204775.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030204775</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>5.24954e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GGVFTSPNYPSKYPPETECVYILEAPPRQC-IDLHFEENYSIESSWE--CKFDNIEVRDGPFGFSPVMGRYCGQHSPPDIR-SSGRYLWIKFVTDGELEAV-GFSARYNFT</Hsp_hseq>
+      <Hsp_midline> G   SP +P  YP  T  V+ L A      I L F+E + +E   +  CK+D +EV +   G   ++GR+CG  + P  + S G  + I+FV+D    +  GF   YN  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>ref|XP_030225932.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: CUB and sushi domain-containing protein 3-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030225932</Hit_accession>
+  <Hit_len>3623</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>1.12585e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>215</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>216</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDL</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPYGYPNGANCTWVIVAEERNR-IHIVF-QSFAVEEEYDFLSLYD----GHPHPVNFRTRLTGF-TIPAPVTSTGSIFSLRLTSD-FAVSAHGFKIAYQ-------ELRSSACGNPGVPPKGILNG--TQFN-VGDKIRYRCVTGYVLDGHSL</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP+ YP      W +VA E N  I + F + F +E+  D +  YD      P       R  G  T+P    S G+   +R  SD +  S  GF I Y        E  S +   P   P  +LN   T F+ + D IRY     + LD   L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00221159</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>565</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>SGTFTSPNFPIQYESNSQCVWIISASDPNKVIQINF-EDFDLEIGYDSLTIGDGGEVGDSK--TVIQVLTGS-FVPDLIVSLSHQMWLHLQSDESVGSI-GFKINY</Hsp_hseq>
+      <Hsp_midline>+G+  SP FP  Y  N+  VW + A + N  IQ+ F E F LE   D +   D  EV +    T++    GS  VP   +S  +Q+ +   SDE   S  GF I+Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00482308</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>2364</Hsp_hit-from>
+      <Hsp_hit-to>2474</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>VQCPAHE--VRFDSTGVILSPGFPDSYPNLQMCSW-LINVEKGYNITLHF-ELFQTEKEFDILEVFDGPNINSQS----LASLSGDVDTPFNLTTTGHQLLLRWASD-HGTNRRGFRIRY</Hsp_hseq>
+      <Hsp_midline>VQ P HE  +   + G I SP FP +YP   +  W L+ VE+   I L F E F  E   D +  +D   +   S    L    G    P    + G+Q+ +R+ SD +  +  GF I Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>ref|XP_030222234.1|</Hit_id>
+  <Hit_def>inactive serine protease PAMR1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030222234</Hit_accession>
+  <Hit_len>1287</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>2.94122e-05</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>149</Hsp_query-to>
+      <Hsp_hit-from>177</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE-DDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEY</Hsp_qseq>
+      <Hsp_hseq>SYPNNARCEWTV-----QVDRAFTIDFRFMMLSLEFDHSCRYDYVEIRDGDSINSQVIGRFCGN-TRPGLIQSSGNTLHVLFVSDGY</Hsp_hseq>
+      <Hsp_midline>+YP N    W +      V    T D RF +   E D  C+YD+VE+ +    +  ++GR+CG+ T PG   S GN + + FVSD Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|XP_030218368.1|</Hit_id>
+  <Hit_def>enteropeptidase isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030218368</Hit_accession>
+  <Hit_len>1035</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>4.13848e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>518</Hsp_hit-from>
+      <Hsp_hit-to>604</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVW-IQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NSTFSSPNFPHSYGNKANCLWTLHAREG--WNIQLHF-LHFDVE------ATYDVVEVRDGSGSDSRLLGVFTGTGRPDPDLVSTTNQVTVRFVTN</Hsp_hseq>
+      <Hsp_midline>N +  SP FPH+Y      +W L A E   W IQL F   F +E        YD VEV + S  D  +LG + G+G      +S  NQ+ +RFV++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>ref|XP_030218367.1|</Hit_id>
+  <Hit_def>enteropeptidase isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030218367</Hit_accession>
+  <Hit_len>1069</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>4.50297e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>552</Hsp_hit-from>
+      <Hsp_hit-to>638</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVW-IQLTFDERFGLEDPEDDICKYDFVEVEEPS--DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NSTFSSPNFPHSYGNKANCLWTLHAREG--WNIQLHF-LHFDVE------ATYDVVEVRDGSGSDSRLLGVFTGTGRPDPDLVSTTNQVTVRFVTN</Hsp_hseq>
+      <Hsp_midline>N +  SP FPH+Y      +W L A E   W IQL F   F +E        YD VEV + S  D  +LG + G+G      +S  NQ+ +RFV++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|XP_030211964.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 2 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030211964</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>5.0696e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSG</Hsp_qseq>
+      <Hsp_hseq>GSFSSPGFPEPYPDNHRLVWN-ISVPEGHRVKLYF-THFSLEPSQH--CEYDYLQVLAESNETL--RFCGDG</Hsp_hseq>
+      <Hsp_midline>GS  SP FP  YP N  LVW  ++V E   ++L F   F LE  +   C+YD+++V   S+ T+  R+CG G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>ref|XP_030211957.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 2 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030211957</Hit_accession>
+  <Hit_len>298</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>5.83319e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSG</Hsp_qseq>
+      <Hsp_hseq>GSFSSPGFPEPYPDNHRLVWN-ISVPEGHRVKLYF-THFSLEPSQH--CEYDYLQVLAESNETL--RFCGDG</Hsp_hseq>
+      <Hsp_midline>GS  SP FP  YP N  LVW  ++V E   ++L F   F LE  +   C+YD+++V   S+ T+  R+CG G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>ref|XP_030203938.1|</Hit_id>
+  <Hit_def>CUB and sushi domain-containing protein 3-like isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030203938</Hit_accession>
+  <Hit_len>3634</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000208599</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>477</Hsp_hit-from>
+      <Hsp_hit-to>577</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>SGTFTSPNFPIQYESNAQCVWIITASNPNKVIQINFEE-FDMEIAYDTLTIGDGGEVGDPT--AILQVLSGS-FVPDLIVSMTHQMWLHLQSDESVGSI-GFKINY</Hsp_hseq>
+      <Hsp_midline>+G+  SP FP  Y  N   VW + A   N  IQ+ F+E F +E   D +   D  EV +P+   IL    GS  VP   +S  +Q+ +   SDE   S  GF I+Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000237656</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>NGTIESPGFPYGYPNGANCTWVVIG-EEGSRIQLLF-LSFAIEEEYDFLSLYD----GHPHPSNFRTRLTGF-QVPSPVTSTGNVFSLRLTSD-FAVSAHGFKLNY</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP+ YP      W ++  EE   IQL F   F +E+  D +  YD      P       R  G   VP    S GN   +R  SD +  S  GF ++Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00478205</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>2360</Hsp_hit-from>
+      <Hsp_hit-to>2485</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>LSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>LGDRLQMDGPPPTCQVQCPAHD--VRYDSSGVILSPGWPESYPNLQMCSWS-VAVEKGYNVTITF-ESFHTEREFDVLEIFDGPTANSPTLATLSGDL----ATPFNITSSSHQFLVRWASD-HGTNKRGFRIRY</Hsp_hseq>
+      <Hsp_midline>L  + Q         VQ P H+  +   ++G I SP +P +YP   +  W  VAVE+   + +TF E F  E   D +  +D      P+  T+ G        P    S  +Q  +R+ SD +  ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0111681</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1869</Hsp_hit-from>
+      <Hsp_hit-to>1968</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTILSPGYPEPYDNNQNCVWK-VSVPEGAGIQIQV-VSFATEHNWDSLDFYDGADNHAPR----LGSYSGT-TIPPLLNSTSNNLYLSFSSDISV-SAAGFHLEYTAI</Hsp_hseq>
+      <Hsp_midline>G+I SP +P  Y  N   VW+ V+V E   IQ+     F  E   D +  YD  +   P     LG + G+ T+P    S  N + + F SD    S  GF + Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>ref|XP_030198867.1|</Hit_id>
+  <Hit_def>tumor necrosis factor-inducible gene 6 protein isoform X1 [Gadus morhua] &gt;ref|XP_030198868.1| tumor necrosis factor-inducible gene 6 protein isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030198867</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000502666</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>246</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>IRTPGYPEEYEDEQICYWH-IRVRYGQRIRLHFLD-FDLED--DTSCMADYLEVYDSYDDITGFAGRFCGD-DLPDDIISSGNVMTLKFLSDASVTA-GGFQMQY</Hsp_hseq>
+      <Hsp_midline>I +P +P  Y    +  W  + V     I+L F + F LED  D  C  D++EV +  D      GR+CG   +P   IS GN + ++F+SD    +  GF + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|XP_030222106.1|</Hit_id>
+  <Hit_def>suppressor of tumorigenicity 14 protein homolog [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030222106</Hit_accession>
+  <Hit_len>844</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000878097</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>338</Hsp_hit-from>
+      <Hsp_hit-to>439</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDI--CKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>SGDITSPFFPAFYPPKTTCVWN-IQVPKGHFIKLQFTD-FSLADPAEGKAGCTKDYVEVNDQ-------RLCGKKESSVITV-ESTKMTVRFQSDDS-NVDSGFEAQYEAFVP</Hsp_hseq>
+      <Hsp_midline>+G I SP FP  YP  T  VW  + V +  +I+L F + F L DP +    C  D+VEV +        R CG        + +  ++ +RF SD+    + GF   Y   +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>ref|XP_030225231.1|</Hit_id>
+  <Hit_def>suppressor of tumorigenicity 14 protein homolog [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030225231</Hit_accession>
+  <Hit_len>840</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00258767</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>173</Hsp_hit-from>
+      <Hsp_hit-to>353</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>QRQGTQAESNLSSKFQFSSNKEQNGVQDPQHE----RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE---PSDGTILGRWCGSG--TVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI---------------VMPQFTEAVSPSVLPPS</Hsp_qseq>
+      <Hsp_hseq>QEHGRKSRQNIQIKEVTASYTDPRMARNSRAQECFSRLEATDVVQAFHSPGFPVKYPAKSRCQWQIRA-PENHAISLRFTQ-FHVEDD----CSNDFVSIYDSLSPDSSQAITEKCGQRPPSNPLQVVSSSNILLVNLITDSS-TQRPGFRAEYSLIPISTPKSCGGLLTNVQGEFSSPHHPSFYPPA</Hsp_hseq>
+      <Hsp_midline>Q  G ++  N+  K   +S  +    ++ + +    R+       + HSP FP  YP  +   W++ A  EN  I L F + F +ED     C  DFV + +   P     +   CG    + P + +S  N + +  ++D      PGF   Y++               V  +F+    PS  PP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|XP_030199875.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115533459 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030199875</Hit_accession>
+  <Hit_len>509</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.0026289</Hsp_evalue>
+      <Hsp_query-from>250</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>CTPRNFSVSI-REELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>CKVRTEVVEVTRDMLDRSNAHFLLWPPCVEVQRCSG---CC--NGNTLQCVPVLTHTRYLQVMKIQYINQKPTYNKAV--VSVVDHVECRC</Hsp_hseq>
+      <Hsp_midline>C  R   V + R+ L R++  F  WP C+ V+RC G   CC  N N  QCVP     +Y +V++++        +K++  V++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|XP_030199866.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115533459 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030199866</Hit_accession>
+  <Hit_len>528</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00337421</Hsp_evalue>
+      <Hsp_query-from>250</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>CTPRNFSVSI-REELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>CKVRTEVVEVTRDMLDRSNAHFLLWPPCVEVQRCSG---CC--NGNTLQCVPVLTHTRYLQVMKIQYINQKPTYNKAV--VSVVDHVECRC</Hsp_hseq>
+      <Hsp_midline>C  R   V + R+ L R++  F  WP C+ V+RC G   CC  N N  QCVP     +Y +V++++        +K++  V++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>ref|XP_030235031.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X6 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235031</Hit_accession>
+  <Hit_len>988</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00361027</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>ref|XP_030235029.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X5 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235029</Hit_accession>
+  <Hit_len>1149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00420332</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00446703</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>588</Hsp_hit-from>
+      <Hsp_hit-to>677</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMDCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTDS</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>ref|XP_030235025.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235025</Hit_accession>
+  <Hit_len>1242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00443297</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00467019</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>588</Hsp_hit-from>
+      <Hsp_hit-to>677</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMDCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTDS</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>ref|XP_030235028.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X4 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235028</Hit_accession>
+  <Hit_len>1195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00448946</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00468884</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>588</Hsp_hit-from>
+      <Hsp_hit-to>677</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMDCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTDS</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>ref|XP_030235027.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235027</Hit_accession>
+  <Hit_len>1195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00468884</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>287</Hsp_hit-from>
+      <Hsp_hit-to>375</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00493979</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>541</Hsp_hit-from>
+      <Hsp_hit-to>630</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMDCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTDS</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>ref|XP_030235026.1|</Hit_id>
+  <Hit_def>deleted in malignant brain tumors 1 protein-like isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030235026</Hit_accession>
+  <Hit_len>1196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00473025</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMNCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTD</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00494031</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>588</Hsp_hit-from>
+      <Hsp_hit-to>677</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PS-DGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>STEGYITSPNYPQQYPNNMDCVWVISPGYEVIELEFLHVELEGSD------CRFDGIQVYDGPSINQRQLGRLCGNQRSTFH--STGKTLTVRFTTDS</Hsp_hseq>
+      <Hsp_midline>ST G I SP +P  YP N   VW +    E + ++    E  G +      C++D ++V + PS +   LGR CG+        S G  + +RF +D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>ref|XP_030203937.1|</Hit_id>
+  <Hit_def>CUB and sushi domain-containing protein 3-like isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030203937</Hit_accession>
+  <Hit_len>3140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00483659</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1862</Hsp_hit-from>
+      <Hsp_hit-to>1987</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>LSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>LGDRLQMDGPPPTCQVQCPAHD--VRYDSSGVILSPGWPESYPNLQMCSWS-VAVEKGYNVTITF-ESFHTEREFDVLEIFDGPTANSPTLATLSGDL----ATPFNITSSSHQFLVRWASD-HGTNKRGFRIRY</Hsp_hseq>
+      <Hsp_midline>L  + Q         VQ P H+  +   ++G I SP +P +YP   +  W  VAVE+   + +TF E F  E   D +  +D      P+  T+ G        P    S  +Q  +R+ SD +  ++ GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.011595</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1371</Hsp_hit-from>
+      <Hsp_hit-to>1470</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTILSPGYPEPYDNNQNCVWK-VSVPEGAGIQIQV-VSFATEHNWDSLDFYDGADNHAPR----LGSYSGT-TIPPLLNSTSNNLYLSFSSDISV-SAAGFHLEYTAI</Hsp_hseq>
+      <Hsp_midline>G+I SP +P  Y  N   VW+ V+V E   IQ+     F  E   D +  YD  +   P     LG + G+ T+P    S  N + + F SD    S  GF + Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>ref|XP_030233329.1|</Hit_id>
+  <Hit_def>CUB and sushi domain-containing protein 1-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030233329</Hit_accession>
+  <Hit_len>3236</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00611858</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>227</Hsp_hit-from>
+      <Hsp_hit-to>327</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>TSASGTILSPNYPEEYGNNLNCVW-LIISEPGSRIHLLFSD-FELE-PQFD---WLVVKDEGLSEPTTFGTFSGK-DVPSQIASNGHIMRLEFQSD-HSNTGKGFNISY</Hsp_hseq>
+      <Hsp_midline> S +G+I SP +P  Y  N   VW L+  E    I L F + F LE P+ D   +  V+ E  S+ T  G + G   VP +  S G+ +R+ F SD +  +  GF I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00821261</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1452</Hsp_hit-from>
+      <Hsp_hit-to>1551</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTVLSPGYPEPYPNSLNCLWR-IHVSEGAGIQIQV-MTFATEHNWDSLEIYDGGDMTAPKLGSFSGT-----TAPSLLNSTSNQLLLHFQSDISVVAA-GFHLEYKTV</Hsp_hseq>
+      <Hsp_midline>G++ SP +P  YP +   +WR + V E   IQ+     F  E   D +  YD  ++  P  G+  G      T P    S  NQ+ + F SD    +  GF + Y  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0406721</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1795</Hsp_hit-from>
+      <Hsp_hit-to>1880</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRL-VAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>NGTIYSPQYPNEYPNSQDCSWVITVPHGHGVYINFTLLQ---TEPVTDYIAVWDGVDVSSSQLGVFSGN-----TALESAYSASPQVLIRFHSD</Hsp_hseq>
+      <Hsp_midline>NG+I+SP++P+ YP +    W + V     V+I  T  +    E   D I  +D V+V     G   G      T      S   Q+ IRF SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0605172</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>1623</Hsp_hit-from>
+      <Hsp_hit-to>1733</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSP</Hsp_qseq>
+      <Hsp_hseq>SGAILSPGFPGNYPGNLDCTWK-ITLPAGYGSHIQF-QNFSSED------NHDFLEVRAGPQHSSALIGQFTGT-QIPPPLLSTTHLTIIHFYSD-HSENRPGFKLTYQAFQLQNCQDPSP</Hsp_hseq>
+      <Hsp_midline>+G+I SP FP  YP N    W+ + +       + F + F  ED       +DF+EV         ++G++ G+  +P   +S  +   I F SD +  + PGF + Y     Q  +  SP</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0832999</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSE</Hsp_qseq>
+      <Hsp_hseq>GVITSPNYPVQYENNAHCVWVITALDTGKVIKLAFAE-FDLERGYDTLTVGDGGKIGDTR--RVLYVLTGS-SVPDLIVSLSNQMWLHLQSDDTIGSQ</Hsp_hseq>
+      <Hsp_midline>G I SP +P  Y  N   VW + A++    I+L F E F LE   D +   D  ++ +     +L    GS +VP   +S  NQ+ +   SD+   S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>ref|XP_030207084.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030207084</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0214884</Hsp_evalue>
+      <Hsp_query-from>179</Hsp_query-from>
+      <Hsp_query-to>344</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>SALPLDLLNN-AITAFSTLEDLIRYLEPERWQLD-LEDLYRPTWQLLGKAFVFGRKSRVV-----DLNLLTEEVRLYSCTPRNFSVSI---REELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKV---TKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTG</Hsp_qseq>
+      <Hsp_hseq>SPLPRELLERLSRSEIHSIRDLQRLLEIDSVDNEVMEETKHSHQKDLSHSF-HDRKSSLQAHTRHKRSIVVEEAVPALCKVRTVIYDIPRAQVDASSANFIVWPSCVELRRCSGCC-----NTGNLCCQPSRIHHRTVKVAKVEYVRRRPKLREV-----QIRLEEHLECTCTHRPPNG</Hsp_hseq>
+      <Hsp_midline>S LP +LL   + +   ++ DL R LE +    + +E+      + L  +F   RKS +        +++ EE     C  R     I   + +    + I WP C+ ++RC G C     N     C PS++   T K  +V  +R +  +R +      + LE H EC C  R   G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>ref|XP_030224531.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030224531</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0437175</Hsp_evalue>
+      <Hsp_query-from>250</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>CTPRNFSVSIREELK-RTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>CEPRDTLVEVWRELPGETHHLFVPACVSVRRCGGCC-----SDEGMACVPSLTHTLTMELMR------TSFMKHDLVELPFVEHSQCEC</Hsp_hseq>
+      <Hsp_midline>C PR+  V +  EL   T  +F P C+ V+RCGG C     +     CVPS       E+++         +   L ++    H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>ref|XP_030211382.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030211382</Hit_accession>
+  <Hit_len>412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0552743</Hsp_evalue>
+      <Hsp_query-from>192</Hsp_query-from>
+      <Hsp_query-to>338</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>AFSTLEDLIRYLEPERWQLDLEDLYR---PTWQLLG-----------KAFVFGRKS----RVVD--LNLLTEEVRLYSCTPRNFSVSIREELKRTDT-IFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCV</Hsp_qseq>
+      <Hsp_hseq>SVSNLDELLQLLHPEASRLQLCLRRRSQTPTSLLLHPAGGAQEEEQVEAALWGNPRQEALRRADGVFEVVLEELQRTACRPREVCVEVSKEAPEPSSRQYLPRCVALHRCGG---CCHHEGVACTNTSHHLVNKT--VLELSPL-----MERLVVTVTFVNHTSCECV</Hsp_hseq>
+      <Hsp_midline>+ S L++L++ L PE  +L L    R   PT  LL            +A ++G       R  D    ++ EE++  +C PR   V + +E     +  + P C+ + RCGG   CC H    C      +  K   VL+L P      + + +  V   +H  C+CV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>ref|XP_030203584.1|</Hit_id>
+  <Hit_def>seizure 6-like protein 2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030203584</Hit_accession>
+  <Hit_len>861</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0952795</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>175</Hsp_query-to>
+      <Hsp_hit-from>467</Hsp_hit-from>
+      <Hsp_hit-to>582</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSD---EYFPSEPGFCIHYNIVMPQFTEAVSPSV</Hsp_qseq>
+      <Hsp_hseq>SGTVLSPDWPQSYSKGQDCVWQIHGNEE---------KRIELDVQILNIRHNDVLTVYDGHDLMSHVIGQYLGSRER-FQVVSGGSEITIQFQSDPDDSSFILSQGFLIHYREVEPNDTCPTLPQI</Hsp_hseq>
+      <Hsp_midline>+G++ SP +P +Y +    VW++   EE         +R  L+    +I   D + V +  D    ++G++ GS     + +S G++I I+F SD     F    GF IHY  V P  T    P +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>107</Statistics_hsp-len>
+      <Statistics_eff-space>6016348212</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

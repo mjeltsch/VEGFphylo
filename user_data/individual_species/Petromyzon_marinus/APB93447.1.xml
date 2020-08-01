@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_032811972.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032811972</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>5.07298e-28</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>AAYLLAVAILFCIQGWPSGTVQGQ------VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEP</Hsp_qseq>
+      <Hsp_hseq>AVCIVLTLLLFPSSVKPMSVSSGQSHLKNGVMKFDEVMRRSYCQPMETMIDILHEYPDEVEHFFRPSCVPLLRCSGCCNDENQECLPTETANITLQVYKYKLR-HNAGYEEMSFQQHTKCECRSRERQKSP</Hsp_hseq>
+      <Hsp_midline>A  ++   +LF     P     GQ      V  F EV  RS CQ  ET++ IL EYPDE+   FRPSCV +LRCSGCC DE+ +C P     + LQ+ +   R  ++  E M F +HT CECR R +Q  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_032819879.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032819879</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.0561</Hsp_bit-score>
+      <Hsp_score>240</Hsp_score>
+      <Hsp_evalue>1.94022e-25</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>AVAILFCIQGWPSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>AVAQSFDTEEVPRGGSNDAV-PFRAVWERSFCRAMEVLVPVSAERPRDVEHLFKPPCVRLLRCAGCCGDERLQCLPTRTHNTTMQILKVKP-LHGQYLEEMTFVQHSACECRQVTSKGKSE</Hsp_hseq>
+      <Hsp_midline>AVA  F  +  P G     V PF  V ERS C+A E LVP+  E P ++  +F+P CV +LRC+GCC DE L+C P   H   +QI++V P      +E M F +H+ACECR    +G+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_032830205.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032830205</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.2857</Hsp_bit-score>
+      <Hsp_score>238</Hsp_score>
+      <Hsp_evalue>2.91863e-25</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>VQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>TSSEVVRFEEVMQRSYCRPMETMVPVSREFPDEVAHFFRPACVPLLRCSGCCNDEGSECVPTHTTTVTIQVYKNRP-SHGGGFQELPFTQHSECECRERSEQFKPQ</Hsp_hseq>
+      <Hsp_midline>   +V  F EV +RS C+  ET+VP+ +E+PDE++  FRP+CV +LRCSGCC DE  +C P    TV +Q+ +  P +     + + FT+H+ CECR R +Q +P </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_032819878.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032819878</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.7449</Hsp_bit-score>
+      <Hsp_score>234</Hsp_score>
+      <Hsp_evalue>1.27397e-24</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>YLLAVAILFCIQGW-----------PSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>YALRVVLLTMLHGAVAQQSFDTEEVPRGGSNDAV-PFRAVWERSFCRAMEVLVPVSAERPRDVEHLFKPPCVRLLRCAGCCGDERLQCLPTRTHNTTMQILKVKP-LHGQYLEEMTFVQHSACECRQVTSKGKSE</Hsp_hseq>
+      <Hsp_midline>Y L V +L  + G            P G     V PF  V ERS C+A E LVP+  E P ++  +F+P CV +LRC+GCC DE L+C P   H   +QI++V P      +E M F +H+ACECR    +G+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_032811973.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032811973</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.1965</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>1.28324e-22</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHT</Hsp_qseq>
+      <Hsp_hseq>LKNGVMKFDEVMRRSYCQPMETMIDILHEYPDEVEHFFRPSCVPLLRCSGCCNDENQECLPTETANITLQVYKYKLR-HNAGYEEMSFQQHT</Hsp_hseq>
+      <Hsp_midline>++  V  F EV  RS CQ  ET++ IL EYPDE+   FRPSCV +LRCSGCC DE+ +C P     + LQ+ +   R  ++  E M F +HT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_032820675.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X5 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820675</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.3521</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>1.29429e-22</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR-----RKQGEPD</Hsp_qseq>
+      <Hsp_hseq>EVVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGK-EQMSFAQHDSCKCGCRPCSGPRLQQDPD</Hsp_hseq>
+      <Hsp_midline>+V P   V ERSAC  RETLV +  EYP +    + PSCVA++RCSGCC DE+ +C P  K  V L++ ++N      K E M F +H +C+C  R     R Q +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_032820674.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X4 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820674</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>2.11547e-22</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>71</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR-----RKQGEPD</Hsp_qseq>
+      <Hsp_hseq>VVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGK-EQMSFAQHDSCKCGCRPCSGPRLQQDPD</Hsp_hseq>
+      <Hsp_midline>V P   V ERSAC  RETLV +  EYP +    + PSCVA++RCSGCC DE+ +C P  K  V L++ ++N      K E M F +H +C+C  R     R Q +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_032820671.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820671</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.3521</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>2.33931e-22</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR-----RKQGEPD</Hsp_qseq>
+      <Hsp_hseq>EVVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGK-EQMSFAQHDSCKCGCRPCSGPRLQQDPD</Hsp_hseq>
+      <Hsp_midline>+V P   V ERSAC  RETLV +  EYP +    + PSCVA++RCSGCC DE+ +C P  K  V L++ ++N      K E M F +H +C+C  R     R Q +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_032820670.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820670</Hit_accession>
+  <Hit_len>234</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>3.80086e-22</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR-----RKQGEPD</Hsp_qseq>
+      <Hsp_hseq>VVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGK-EQMSFAQHDSCKCGCRPCSGPRLQQDPD</Hsp_hseq>
+      <Hsp_midline>V P   V ERSAC  RETLV +  EYP +    + PSCVA++RCSGCC DE+ +C P  K  V L++ ++N      K E M F +H +C+C  R     R Q +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_032820673.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X3 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820673</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>3.84954e-22</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR-----RKQGEPD</Hsp_qseq>
+      <Hsp_hseq>VVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGK-EQMSFAQHDSCKCGCRPCSGPRLQQDPD</Hsp_hseq>
+      <Hsp_midline>V P   V ERSAC  RETLV +  EYP +    + PSCVA++RCSGCC DE+ +C P  K  V L++ ++N      K E M F +H +C+C  R     R Q +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_032804530.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032804530</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>9.48414e-22</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>GHAVPFAEVWAHSYCRALEVLVEVSREYPGAFPFVVRPACVPLFRCGGCCSDEGLHCAPTATYNASMQILTIRP-FHKPEMQEMSFLQHGACEC</Hsp_hseq>
+      <Hsp_midline>G   PF EV   S C+A E LV + +EYP     + RP+CV + RC GCC+DE L C P   +   +QI+ + P     +M+ M F +H ACEC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_032818588.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032818588</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>2.14597e-19</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVWRRSQCRPAERMVSVASERQGAVEWFFRPACVALRRCSGCCGDESARCEATATANVTLQVLLIRP-LQDHRLEEMTFVEHTACECR</Hsp_hseq>
+      <Hsp_midline>EV  RS C+  E +V +  E    +   FRP+CVA+ RCSGCC DES +C       V LQ++ + P  Q  ++E M F EHTACECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_032818587.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032818587</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>5.34426e-19</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>154</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVWRRSQCRPAERMVSVASERQGAVEWFFRPACVALRRCSGCCGDESARCEATATANVTLQVLLIRP-LQDHRLEEMTFVEHTACECR</Hsp_hseq>
+      <Hsp_midline>EV  RS C+  E +V +  E    +   FRP+CVA+ RCSGCC DES +C       V LQ++ + P  Q  ++E M F EHTACECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_032822846.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032822846</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.0724e-07</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>PSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>PRSVSHTRSRDSPEEAQIAACKPRNASVEIPRALLDTSSANFMLWPGCVELPRCSGCCNTAARRCTPSRIHTRQLKVAKIEYTRKRLRMKEVLVKMEEHLECRC</Hsp_hseq>
+      <Hsp_midline>P      + R   E  + +AC+ R   V I +   D  S  F   P CV + RCSGCC   + +CTP   HT  L++ ++    +  +M+  ++K  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_032822845.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116949539 isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032822845</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>8.86194e-07</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AACKPRNASVEIPRALLDTSSANFMLWPGCVELPRCSGCCNTAARRCTPSRIHTRQLKVAKIEYTRKRLRMKEVLVKMEEHLECRC</Hsp_hseq>
+      <Hsp_midline>+AC+ R   V I +   D  S  F   P CV + RCSGCC   + +CTP   HT  L++ ++    +  +M+  ++K  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_032812528.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032812528</Hit_accession>
+  <Hit_len>444</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>3.12723e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>214</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>SDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRP------------RRKQGEPDGPKEKPRRGGV</Hsp_qseq>
+      <Hsp_hseq>ASFFKPPCVALHRCGGCCNSEGLQCVNTSYEYISKTLIEISVSSVRLEAVTVSFVNHTTCRCLSRADAARHSHAIIRRALGETPESGCAPVRGGA</Hsp_hseq>
+      <Hsp_midline>+  F+P CVA+ RC GCC  E L+C       +   ++ ++  +   +   + F  HT C C              RR  GE       P RGG </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_032834627.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032834627</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>1.78739e-05</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN--PRTQSSKMEVMKFTEHTACECRPRRKQG---EPDGPKE</Hsp_qseq>
+      <Hsp_hseq>VRSLAEEATAAVCRVRPVSLEIPRSQIDSTSANFLVWPPCVELPRCSGCCNTHSVRCQPSRTRHKYVKVAKIEYVKRRTLLKEALVKLEEHLDCTCGCLAGHGDCRDSDGPNE</Hsp_hseq>
+      <Hsp_midline>VR   E    + C+ R   + I +   D  S  F   P CV + RCSGCC   S++C P       +++ ++    R    K  ++K  EH  C C      G   + DGP E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1216244435</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

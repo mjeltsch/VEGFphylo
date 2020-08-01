@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|KFV46852.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit B, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV46852</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>252.292</Hsp_bit-score>
+      <Hsp_score>643</Hsp_score>
+      <Hsp_evalue>4.15713e-85</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>158</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>EGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQ--TRVTIRTVRVRRPP--KGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>QGDPIPEDIYEILGGSSVRSISDLQRALQIDSVEEDSLNLDLNAT--QTGQNPVALSRKRRSLDALAAAEPAVLAECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPMQIRVRHVQVNKIEFVQRKPKFKKVVVPLEDHVQCRCEAVSRQPPRNSRP-GPREQRRLSPSFTTAAVSQRQRVRRPPAQKRKHKKYKHVNDKKVLKEILIA</Hsp_hseq>
+      <Hsp_midline>+GDPIPE++YE+L   S+RS  DLQR L  D  EED   LDLN T   +G    +L+R RRSL +L  AEPA++AECKTR  VFEISR ++D TNANF+VWPPCVEVQRCSGCCNNRNVQCRP Q+++R VQV KIE V++KP FKK  V LEDH+ C+CE V+   P    P G +EQR  +P   T    +  RVRRPP  K KH+K+KH +DK  LKE L A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_009805812.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009805812</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>253.832</Hsp_bit-score>
+      <Hsp_score>647</Hsp_score>
+      <Hsp_evalue>6.08622e-85</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>244</Hsp_align-len>
+      <Hsp_qseq>WALFLSLCCYL---RLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQ--TRVTIRTVRVRRPP--KGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>FADHLSNACFFPSFLFVIWQGDPIPEDIYEILGGSSVRSISDLQRALQIDSVEEDSLNLDLNATQT--GQNPVALSRKRRSLDALAAAEPAVLAECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPMQIRVRHVQVNKIEFVQRKPKFKKVVVPLEDHVQCRCEAVSRQPPRNSRP-GPREQRRLSPSFTTAAVSQRQRVRRPPAQKRKHKKYKHVNDKKVLKEILIA</Hsp_hseq>
+      <Hsp_midline>+A  LS  C+      V  +GDPIPE++YE+L   S+RS  DLQR L  D  EED   LDLN T++  G    +L+R RRSL +L  AEPA++AECKTR  VFEISR ++D TNANF+VWPPCVEVQRCSGCCNNRNVQCRP Q+++R VQV KIE V++KP FKK  V LEDH+ C+CE V+   P    P G +EQR  +P   T    +  RVRRPP  K KH+K+KH +DK  LKE L A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|KFV40430.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV40430</Hit_accession>
+  <Hit_len>102</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>3.57362e-24</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GEEDGAELDLNMTRSHSGGELES----LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRK</Hsp_qseq>
+      <Hsp_hseq>GYDDVSETNLRSYSVHSAKHVQENRPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVSK</Hsp_hseq>
+      <Hsp_midline>G +D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_009819717.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009819717</Hit_accession>
+  <Hit_len>116</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.5077</Hsp_bit-score>
+      <Hsp_score>223</Hsp_score>
+      <Hsp_evalue>3.49928e-23</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>EDGAELDLNMTRSHSGGELES----LARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRK</Hsp_qseq>
+      <Hsp_hseq>DDVSETNLRSYSVHSAKHVQENRPVPIRRKRSI------EEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVSK</Hsp_hseq>
+      <Hsp_midline>+D +E +L     HS   ++       R +RS+      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_009818178.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009818178</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>7.02631e-06</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>SDHSIR---SFDDLQRLLHGDPGEEDGAELDL----NMTRSHSGGELESLARGRRSLGSL-TIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEQQIRRASSLEELLRITHSEDWKLWKCRLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFK--PPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTS-VPEPVPIKIANHTACKC</Hsp_hseq>
+      <Hsp_midline>S+  IR   S ++L R+ H +  +     L L    N+    +       A     + +L  I E     +C  R    E+++ L   TN  F   PPCV V RC GCCN  ++ C  T        + +I +     + +   + + +H ACKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|KFV47809.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor D, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV47809</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>9.88737e-06</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>SDHSIR---SFDDLQRLLHGDPGEEDGAELDL----NMTRSHSGGELESLARGRRSLGSL-TIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SEQQIRRASSLEELLRITHSEDWKLWKCRLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFK--PPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTS-VPEPVPIKIANHTACKC</Hsp_hseq>
+      <Hsp_midline>S+  IR   S ++L R+ H +  +     L L    N+    +       A     + +L  I E     +C  R    E+++ L   TN  F   PPCV V RC GCCN  ++ C  T        + +I +     + +   + + +H ACKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_009806140.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009806140</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.5936e-05</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAEL---DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAE-------------CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSSFDT-------RSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFK--PPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGP--KPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>S+ S D+L  +L+ +  +    +L        R HS  +        RS  SL  A     AE             C  R    ++ +     TN  F   PPCV + RC GCCN+  +QC           + +I + +   P  K  TV+  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|KFV41170.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor C, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV41170</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.63157e-05</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAEL---DLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAE-------------CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SVSSVDELMTVLYPEYWKMFKCQLRKGGWQHNREHSSFDT-------RSDDSLKFAAAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFK--PPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGP--KPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>S+ S D+L  +L+ +  +    +L        R HS  +        RS  SL  A     AE             C  R    ++ +     TN  F   PPCV + RC GCCN+  +QC           + +I + +   P  K  TV+  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|KFV58807.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV58807</Hit_accession>
+  <Hit_len>93</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>9.442e-05</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>VEYIFRPSCVSLQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMA---FTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>  ++  P CV +QRC GCC +  ++C P +     +Q+ KI+   + P  + A     +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_009816437.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009816437</Hit_accession>
+  <Hit_len>122</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000191875</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>90</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>VEYIFRPSCVSLQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMA---FTEHKQCEC</Hsp_hseq>
+      <Hsp_midline>  ++  P CV +QRC GCC +  ++C P +     +Q+ KI+   + P  + A     +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KFV48500.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV48500</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0067847</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>93</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHI---AHMSFLQHSKCDC</Hsp_hseq>
+      <Hsp_midline>C+T   + +I +   D     ++  P CV + RC+GCC +  ++C P  V    +++ +I+  + + I   A ++   H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_009819562.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009819562</Hit_accession>
+  <Hit_len>176</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.00990736</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>90</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CRTIETLVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHI---AHMSFLQHSKCDC</Hsp_hseq>
+      <Hsp_midline>C+T   + +I +   D     ++  P CV + RC+GCC +  ++C P  V    +++ +I+  + + I   A ++   H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_009806620.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009806620</Hit_accession>
+  <Hit_len>285</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0174856</Hsp_evalue>
+      <Hsp_query-from>77</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>170</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>ARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GRKSRVVDLNLLKEEVRLYSCTPRN--FSVSLREELKRTDTIF--WPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline> R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC+      QC PT+V  +  +V +++  +  + + K  T V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|KFV50837.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor C, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV50837</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0193099</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>EEDGAELDL-NMTRSHSGGELESLARGRRS--LGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKAT-VTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>EPDRWQLDLEDLYRPTWQLLGKAYIHGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSLREELKRTDTIF--WPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>E D  +LDL ++ R       ++   GR+S  +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC+      QC PT+V  +  +V +++  +  + + K  T V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1301770705</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

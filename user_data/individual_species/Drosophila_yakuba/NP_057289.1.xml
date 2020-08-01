@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_002101749.2|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE15444 [Drosophila yakuba] &gt;gb|EDX02857.2| uncharacterized protein Dyak_GE15444 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002101749</Hit_accession>
+  <Hit_len>3755</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>5.32219e-09</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>631</Hsp_hit-from>
+      <Hsp_hit-to>743</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>PQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>PQCGGRINFDTHGTLASPGSPGNYPKNRDCRWQLVAPTSN-RIKLTF---FSLQLEQHENCNFDYVLIKDTISGRELAKYCTTGT-PAPLLLPTHLAEMHFHSDAE-GSDTGFQLHYSV</Hsp_hseq>
+      <Hsp_midline>PQ    I   T+G++ SP  P  YP+N    W+LVA   N  I+LTF   F L+  + + C +D+V +++   G  L ++C +GT P   +   +   + F SD    S+ GF +HY++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>6.2936e-07</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>1801</Hsp_hit-from>
+      <Hsp_hit-to>1906</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>VYTALSGKFSSPYYPASYPPNIECLWLLEASMGNS-ISLTL-ESMDLE--KSDGCNRDYLEVREESERGPLIGVYCGN-EVPGVIHSRGT-IWMKFKSDDDNVGE-GFMASYN</Hsp_hseq>
+      <Hsp_midline>+  + +G   SP +P +YP N   +W L A   N  I LT  E   LE  + D C  D++EV E S+ G ++G +CG+  VPG   S+G  I ++F SD+    E GF   YN</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.73956e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>514</Hsp_hit-from>
+      <Hsp_hit-to>632</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSP----RFPHT---YPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQI-SKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SCNGMLSAPSGRLKYPPSGTGYEHNAQCAW-VIRTNESLVVNVTF-QSFDVEDSTE--CRYDWLQINDGRSAAAQIIGRYCGNHLPHGGNIVSSGNQLYLWFRSDNSTAKE-GFDLTWNSIRPQ</Hsp_hseq>
+      <Hsp_midline>S NG + +P    ++P +   Y  N    W ++   E++ + +TF + F +ED  +  C+YD++++ +   +   I+GR+CG+    G  I S GNQ+ + F SD     E GF + +N + PQ</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>3.53006e-06</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>1452</Hsp_hit-from>
+      <Hsp_hit-to>1618</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG-RWCGSGTVPGKQI-SKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSP--SVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLL</Hsp_qseq>
+      <Hsp_hseq>SEGSFQSPNYPKMYPNHLECYW-LITVEQNSAVELTID---GLDLEESPNCTKDALTVSNHRNSVVAHERHCGS--TPKLVITSSGHRMHVRFISDDSH-NGGGFMATYRTVKATCGGKLTARNGVIESPNYPLNYPAHSQCEWQVEVSPHHQIVFEMSDLDLESGYGCNWDYL</Hsp_hseq>
+      <Hsp_midline>+ GS  SP +P  YP +    W L+ VE+N  ++LT D   GL+  E   C  D + V    +  +   R CGS   P   I S G+++ +RF+SD+   +  GF   Y  V       ++    V+     PL+   ++   +         +  E   LDLE  Y   W  L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000231064</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>1565</Hsp_hit-from>
+      <Hsp_hit-to>1674</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVE----VEEPSDGTILGRWCGSGTVPGKQISK-GNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>TARNGVIESPNYPLNYPAHSQCEWQ---VEVSPHHQIVF-EMSDLDLESGYGCNWDYLEAYDLAEDDTEGQRLFKVCGDEEDSGTLLSSTSNMAVVRFVSDDSL-SRKGFRLHFH</Hsp_hseq>
+      <Hsp_midline> + NG I SP +P  YP ++   W+   VE +   Q+ F E   L+      C +D++E     E+ ++G  L + CG     G  +S   N   +RFVSD+   S  GF +H++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00273474</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>2283</Hsp_hit-from>
+      <Hsp_hit-to>2374</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDI--CKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ISSPYYPNLPHPHSECIWIVEAPPEH-RIMLHFQGAFDLLDATEATKECEREYVLVNDGSTELKTEIGRYCGK-RKPDTIYSSGNQLRIRYFTD</Hsp_hseq>
+      <Hsp_midline>I SP +P+    ++  +W + A  E+  I L F   F L D  +    C+ ++V V + S    T +GR+CG    P    S GNQ+RIR+ +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0353376</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>995</Hsp_hit-from>
+      <Hsp_hit-to>1098</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>IHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG--------RWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>IRLPVDGDSYASEATCYWVIMA-PANKAIRLHWNS-FRLESSMD--CSYDYLEIYD-SLGAQLGDEKSKPMAKYCGY-RVPEDLLSHSRQLVIKFVSD-YSESDGGFDLSY</Hsp_hseq>
+      <Hsp_midline>I  P    +Y       W ++A   N  I+L ++  F LE   D  C YD++E+ + S G  LG        ++CG   VP   +S   Q+ I+FVSD Y  S+ GF + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_002099192.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE23510 [Drosophila yakuba] &gt;gb|EDW98904.1| uncharacterized protein Dyak_GE23510 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002099192</Hit_accession>
+  <Hit_len>1071</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>6.3294e-09</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>486</Hsp_hit-from>
+      <Hsp_hit-to>580</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>IQLTRDQSIDSPNYPLDYMPDKECVWRITA-PDNHQVALKF-QSFELE--KHDGCTYDYVEIRDGNHSESRLIGRFCGDKLPPNIK-TRSNQMYIRFVSD</Hsp_hseq>
+      <Hsp_midline>I ++ + SI SP +P  Y  +   VWR+ A  +N  + L F + F LE  + D C YD+VE+ +   S+  ++GR+CG    P  + ++ NQ+ IRFVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>6.56537e-05</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>806</Hsp_hit-from>
+      <Hsp_hit-to>898</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TTSYGVLQSPNYPEDYPRNIYCYWHFQTVLGH-RIQLTFHD-FEVESHQE--CIYDYVAIYDGRSENSSTLGIYCG-GREPYAVIASTNEMFMVLATD</Hsp_hseq>
+      <Hsp_midline> ++ G + SP +P  YPRN    W    V  +  IQLTF + F +E  ++  C YD+V + +    + + LG +CG G  P   I+  N++ +   +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0106975</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>642</Hsp_hit-from>
+      <Hsp_hit-to>742</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEEN-VWIQLTFDERFGLEDPEDDI--CKYDFVEV-EEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VDATKSNGSLFSPSYPDVYPNSKHCVWEVVAPPNHAVFLNFT---HFDLEGTRFHYTKCNYDYLIIYSKMRDNRLKKIGIYCGH-ELPSVVNSEQSVLRLEFYSD</Hsp_hseq>
+      <Hsp_midline>+    +NGS+ SP +P  YP +   VW +VA   + V++  T    F LE        C YD++ +  +  D  +  +G +CG   +P    S+ + +R+ F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_015045776.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE17077, isoform E [Drosophila yakuba] &gt;gb|KRK06216.1| uncharacterized protein Dyak_GE17077, isoform E [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_015045776</Hit_accession>
+  <Hit_len>633</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>5.61174e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEG--CKFDFLEIRDGQYGFSSLIGKFCGTD-FPPEITSKERYLWLHFHSDE</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E   CK+DF+E+ +   G  +++G++CG+   P +  SK   + + F SDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_015045775.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE17077, isoform D [Drosophila yakuba] &gt;gb|KRK06215.1| uncharacterized protein Dyak_GE17077, isoform D [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_015045775</Hit_accession>
+  <Hit_len>606</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>5.92202e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEG--CKFDFLEIRDGQYGFSSLIGKFCGTD-FPPEITSKERYLWLHFHSDE</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E   CK+DF+E+ +   G  +++G++CG+   P +  SK   + + F SDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_015045774.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE17077, isoform C [Drosophila yakuba] &gt;gb|KRK06214.1| uncharacterized protein Dyak_GE17077, isoform C [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_015045774</Hit_accession>
+  <Hit_len>481</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>6.45249e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEG--CKFDFLEIRDGQYGFSSLIGKFCGTD-FPPEITSKERYLWLHFHSDE</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E   CK+DF+E+ +   G  +++G++CG+   P +  SK   + + F SDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_002100473.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE17077, isoform A [Drosophila yakuba] &gt;ref|XP_015045773.1| uncharacterized protein Dyak_GE17077, isoform B [Drosophila yakuba] &gt;ref|XP_015045777.1| uncharacterized protein Dyak_GE17077, isoform F [Drosophila yakuba] &gt;gb|EDX01581.1| uncharacterized protein Dyak_GE17077, isoform A [Drosophila yakuba] &gt;gb|KRK06213.1| uncharacterized protein Dyak_GE17077, isoform B [Drosophila yakuba] &gt;gb|KRK06217.1| uncharacterized protein Dyak_GE17077, isoform F [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002100473</Hit_accession>
+  <Hit_len>697</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>8.41074e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEG--CKFDFLEIRDGQYGFSSLIGKFCGT-DFPPEITSKERYLWLHFHSDE</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E   CK+DF+E+ +   G  +++G++CG+   P +  SK   + + F SDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_002099193.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE23509 [Drosophila yakuba] &gt;gb|EDW98905.1| uncharacterized protein Dyak_GE23509 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002099193</Hit_accession>
+  <Hit_len>1473</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>2.288e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>860</Hsp_hit-from>
+      <Hsp_hit-to>948</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLESPNYPLDYLPNKECVWK-ITVPDSYQVALKF-QSFEVEN--HDSCVYDYVEVRDGPGQDAPLIGVFCGYKPPPNMK-SSGNSMYVKFVSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  Y  N   VW+ + V ++  + L F + F +E+   D C YD+VEV +    D  ++G +CG    P  + S GN + ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>6.48736e-06</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1176</Hsp_hit-from>
+      <Hsp_hit-to>1265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEV--EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>GSIFSPNYPDSYPPNADCVWHFITTPGH-RIKLIFNE-FDVESHQE--CTYDNVAVYDGESESSSVLGRFCGD-KIPFPISSTSNQMYMVLKTDK</Hsp_hseq>
+      <Hsp_midline>GSI SP +P +YP N   VW  +    +  I+L F+E F +E  ++  C YD V V   E    ++LGR+CG   +P    S  NQ+ +   +D+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000196879</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1014</Hsp_hit-from>
+      <Hsp_hit-to>1109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--EDDICKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>NGTITSPSFPEMYPLLKECIWEIVAPPKH-RISLNF-THFDLEGTVHQQSDCGYDSVTVYSKLGENRLKRIGTFCGS-SIPPTATSESNALRLEFHSDK</Hsp_hseq>
+      <Hsp_midline>NG+I SP FP  YP     +W +VA  ++  I L F   F LE    +   C YD V V        L   G +CGS ++P    S+ N +R+ F SD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_002094485.2|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE20177 [Drosophila yakuba] &gt;gb|EDW94197.2| uncharacterized protein Dyak_GE20177 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002094485</Hit_accession>
+  <Hit_len>3615</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>5.04187e-06</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1760</Hsp_hit-from>
+      <Hsp_hit-to>1849</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>TSARGSLSSPNFPDSYPANIECVWSIEARPGNA-LEVTFE---AMDIVHSEHCNDDFLEIRSSVQGPLLGLYCDK-KLPATPLVVQSQLWIKFRS</Hsp_hseq>
+      <Hsp_midline> S  GS+ SP FP +YP N   VW + A   N  +++TF+    ++    + C  DF+E+     G +LG +C    +P   +   +Q+ I+F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_002101670.2|</Hit_id>
+  <Hit_def>uncharacterized protein Dyak_GE17753, isoform A [Drosophila yakuba] &gt;gb|EDX02778.2| uncharacterized protein Dyak_GE17753, isoform A [Drosophila yakuba]</Hit_def>
+  <Hit_accession>XP_002101670</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0364603</Hsp_evalue>
+      <Hsp_query-from>249</Hsp_query-from>
+      <Hsp_query-to>340</Hsp_query-to>
+      <Hsp_hit-from>144</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>SCTPRNFSVSIREELK-RTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGL---HKSLTDVALEHHEECDCVCR</Hsp_qseq>
+      <Hsp_hseq>SCSPQPTIVELKPPAEDEANYYYMPACTRISRCNGCCGSTLISCQ-----PTEV-----EQVQLRVRKVDRAATSGRRPFTIITVEQHTQCRCDCR</Hsp_hseq>
+      <Hsp_midline>SC+P+   V ++   +   +  + P C  + RC G C   L +C      P++V     E +QLR +   R      +  T + +E H +C C CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2965983885</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

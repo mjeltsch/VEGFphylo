@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_024508917.1|</Hit_id>
+  <Hit_def>Cubilin [Strongyloides ratti] &gt;emb|CEF69718.1| Cubilin [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024508917</Hit_accession>
+  <Hit_len>4137</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>2.55216e-07</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>2481</Hsp_hit-from>
+      <Hsp_hit-to>2587</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQ-FGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>LTSPKWPNYSPNSLNCGWKISAPIGHRIKFNIDPETFNMEESSGGECVNDYLQIFDGPSKKNKLIGRYCNNKG-PETIFSTSNYLFIHYKTDS-MIPSHGFNATYSIAD</Hsp_hseq>
+      <Hsp_midline>+ SP++PN  P +L   W++ +    RI+   D + F +EE+    C  D++++ D       + GR+C +K  P  I S +N + I +K+D   +   GF   YS+ +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>4.90385e-07</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>1044</Hsp_hit-from>
+      <Hsp_hit-to>1171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE--EAENDICRYDFVEVEDISETST---IIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGV</Hsp_qseq>
+      <Hsp_hseq>NGTITSPNYPDGYLENLYCVYHISTEINKLIRLTFQ-TFDIEASSSDKDHCDSDVVGIYENYTTETEHGTLIGEFCG-SILPPSIVSSSNKLTIVLRTDRS-VKGIGFKAIYE-------SIPSDENCNKLFTSPSGV</Hsp_hseq>
+      <Hsp_midline>NG + SP +P+ Y  NL   + + ++ N  I+L F   F +E   ++ D C  D V + +   T T    + G +CG   +PP I S +N++ I  ++D   V   GFK  Y        +  S+ N   + +S SGV</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00049361</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>3151</Hsp_hit-from>
+      <Hsp_hit-to>3266</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIR--------------GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>NGTITSPG-DDVYLNNLNCLWDISVPKGFLTKLTFK-RFDIEES--DDCNNDSLLISEYVEHSIEHRLSGSEIAQYKHYTFHKLCGNKKVPVPIISTTNGLRLNFTTNDKYAGK-GFEIYW</Hsp_hseq>
+      <Hsp_midline>NG + SP   + Y  NL   W +   +    +L F  +F +EE+  D C  D + + +  E S   R               + CG+K+VP  I S TN +++ F ++D +  K GF+IY+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00349483</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>791</Hsp_hit-from>
+      <Hsp_hit-to>900</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI--------CRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GFIQSPNYPNNYFSNLDCLWKLNST-GTPLSYLLDHVIKLNIIDFDIPVKKEDYFCTNSYLKVMENSLSSSGI--QYCNNFKPSHTYSYSGNTLLIKFHSDSINKGK-GFLLSY</Hsp_hseq>
+      <Hsp_midline>G++QSP +PN+Y  NL   W+L+S   T +  + D+   L   + DI        C   +++V + S +S+ I  ++C + +         N + I F SD     K GF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00878184</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>2346</Hsp_hit-from>
+      <Hsp_hit-to>2463</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVE----------DISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>GTLLSPNYPDPYPSNISCSWSISTDSFRRIEVI-PNEIDLKTNDDGSCKNDILKISGKIPDNGTMLGFLEYSKLLQYETC--KKSFTNITFVHGKIQINFKSGIEENTKKGFSLKISEIVD</Hsp_hseq>
+      <Hsp_midline>G + SP +P+ YP N+  +W + +    RI+++  N+  L+  ++  C+ D +++              E S +++   C  K+    I     +I+I FKS      K GF +  S + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_024498586.1|</Hit_id>
+  <Hit_def>Astacin-like metalloendopeptidase [Strongyloides ratti] &gt;emb|CEF59375.1| Astacin-like metalloendopeptidase [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024498586</Hit_accession>
+  <Hit_len>892</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>3.90188e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>497</Hsp_hit-from>
+      <Hsp_hit-to>607</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRG---RWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>GAIISPNFPNQYPPNTECTWDIILKDDYQIFLNF-SFVSLEGIITD-CSYDSILVYELDNNMSVNHSSIVQICGQHTQPLLMKSTANKIRIKFQSDSS-VEKFGFIASYIGFHD</Hsp_hseq>
+      <Hsp_midline>G + SP FPN YP N   TW +  +++ +I L F +   LE    D C YD + V ++    ++      + CG    P  +KS  N+I+I F+SD   V K GF   Y    D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>1.19728e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>338</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>TKRKGFIESPNFPELYPYNISCQWEIEVSKNMLVAIKI---LYIEIEKSGNCMYDNIEFYEESNGELLLRT--CGSYNETISVVTKESNKMKIIFNSD</Hsp_hseq>
+      <Hsp_midline> K  G+++SP FP  YP N+   W +   +N  + +       +E  ++  C YD +E  + S    ++R   CG + E    +   +N++KI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000213381</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>658</Hsp_hit-from>
+      <Hsp_hit-to>763</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETST-IIRGRWC---GHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKI-YYS</Hsp_qseq>
+      <Hsp_hseq>GSFASPNYPEGYPSDKECKWHFITTPGHTIELTF-HEFDLEESSN--CSYDNVSIYNTYESSIDELIGIYCYDNYNKEFS--VSSNGNQMFLVMKTDSS-IMHNGFKASYYS</Hsp_hseq>
+      <Hsp_midline>G   SP +P  YP +    W   +     I+L F ++F LEE+ N  C YD V + +  E+S   + G +C    +KE    + S  NQ+ +  K+D   +   GFK  YYS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0146937</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>784</Hsp_hit-from>
+      <Hsp_hit-to>887</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN-------QFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSL</Hsp_qseq>
+      <Hsp_hseq>YGEGNYYPNSNCK-----WKLKMKDDSLIK---DNIIKIKFIKFNLESSNNCDCDHVKIIEHKNSDDSGKIIDKFCGNK-LPSIIMSRKEIVTIVFSSDDSMEGK-GFVFEYQL</Hsp_hseq>
+      <Hsp_midline>Y +   +PNS  +     W+L  ++++ I+   DN       +F LE + N  C +  +     S+ S  I  ++CG+K +P  I SR   + I F SDD    K GF   Y L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_024502838.1|</Hit_id>
+  <Hit_def>CUB domain and Low-density lipoprotein (LDL) receptor class A repeat-containing protein [Strongyloides ratti] &gt;emb|CEF63637.1| CUB domain and Low-density lipoprotein (LDL) receptor class A repeat-containing protein [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024502838</Hit_accession>
+  <Hit_len>1063</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>7.67613e-07</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>254</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLV---FDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVA-KPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>KNKGIILSPTYPGVYPNNIICVYLLKGKPNERIRLFLKDFDIYFGGEH-----CPYDVLTIYDGNNNNSPIIKKVCGLQQ-KMEIFSSSNNLYIEFLTSDPFKNDQRGFLLEYEFSSHF</Hsp_hseq>
+      <Hsp_midline>K  G + SP +P  YP N++  + L  + N RI+L    FD  FG E      C YD + + D +  ++ I  + CG ++    I S +N + I F + D F   + GF + Y     F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000235733</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>203</Hsp_query-to>
+      <Hsp_hit-from>568</Hsp_hit-from>
+      <Hsp_hit-to>716</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVE-----VEDISETSTIIRGRWCGHKEVPPRIKS-RTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQ---PAAASETNWESVTSSISGVSYNSPSVTDP</Hsp_qseq>
+      <Hsp_hseq>GSFNSPRFPSNYPLDTTCIYLIEGNPGDQIIINFDAFELHEDSSIDICN-DYVELYNVFVDNNGKETFQLQEKYCWNMKPGPSISAYNAYKMKLVFVS-NYEGSSNGFKATYKIRKRFKEEIPSVEGKDDDHCGVSIIASDGYTSGTFKSP</Hsp_hseq>
+      <Hsp_midline>G   SPRFP++YP +    + +      +I + FD     E++  DIC  D+VE     V++  + +  ++ ++C + +  P I +    ++K+ F S +Y  +  GFK  Y + + F+   P+   + +     S I+   Y S +   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_024504676.1|</Hit_id>
+  <Hit_def>CUB domain-containing protein [Strongyloides ratti] &gt;emb|CEF65476.1| CUB domain-containing protein [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024504676</Hit_accession>
+  <Hit_len>669</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00179313</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>518</Hsp_hit-from>
+      <Hsp_hit-to>625</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEN--DICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GTMMSINYPGYYPRNLECEYIFIAQDGYVVAINFD-YFDVEGFAGCEDSTQSDYVLFSNYKTVDRTNR-RFCGKTKPNSVILSESNYFRMLFKTNDIFDAT-GFYAHYQFL</Hsp_hseq>
+      <Hsp_midline>G + S  +P  YPRNL   +   +Q+   + + FD  F +E      D  + D+V   +        R R+CG  +    I S +N  ++ FK++D F A  GF  +Y  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_024507755.1|</Hit_id>
+  <Hit_def>Astacin-like metalloendopeptidase [Strongyloides ratti] &gt;emb|CEF68555.1| Astacin-like metalloendopeptidase [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024507755</Hit_accession>
+  <Hit_len>626</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00237069</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>418</Hsp_hit-from>
+      <Hsp_hit-to>539</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLE-EAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAA-ASETNWESVTSS</Hsp_qseq>
+      <Hsp_hseq>ISSPNYPGEFKEGMECSWLLTAPKGQHIQFQFIGQFEMYCKIRHSLC-MDYVEVRNSTDFANTGM-RYCCSGTPKNSIISATEDMVVLFRS--FYRGGKGFQAQFRAIP--QPGIWGSWESWSACTAS</Hsp_hseq>
+      <Hsp_midline>+ SP +P  +   +  +W L + +   IQ  F  QF +  +  + +C  D+VEV + ++ +     R+C        I S T  + + F+S  ++    GF+  +  +   QP    S  +W + T+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_024499539.1|</Hit_id>
+  <Hit_def>Uninflatable [Strongyloides ratti] &gt;emb|CEF60330.1| Uninflatable [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024499539</Hit_accession>
+  <Hit_len>2144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00914258</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>286</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFK</Hsp_qseq>
+      <Hsp_hseq>GIVQTPNFPLPYRGNSNCKYVIQVPENYRIQLIFE-EFDTEENIDLVSIIDGGPADNTSFAIATLSGNKKNANDL--FYTSSTNSLIIRFRSDASAQGK-GFK</Hsp_hseq>
+      <Hsp_midline>G VQ+P FP  Y  N    + +   EN RIQL+F+ +F  EE  + +   D    ++ S     + G      ++     S TN + I F+SD     K GFK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_024505734.1|</Hit_id>
+  <Hit_def>CUB domain and Low-density lipoprotein (LDL) receptor class A repeat-containing protein [Strongyloides ratti] &gt;emb|CEF66534.1| CUB domain and Low-density lipoprotein (LDL) receptor class A repeat-containing protein [Strongyloides ratti]</Hit_def>
+  <Hit_accession>XP_024505734</Hit_accession>
+  <Hit_len>580</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0142053</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETS-TIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED---FQP---------------AAASETNWESVTSSISGVSY--NSPS</Hsp_qseq>
+      <Hsp_hseq>GYILSPNYPSNYPSNQNCSYILTDFE-------LENYF----PSSKQCLNDYLLVVVIDRNSRRHYENRMCGNK-LPKPIKTMQHKVEIIFVTSK-MSNRRGFKIKYEFIPEENIIQPVSYLDDINKKYLKECGGKTEEGKEELTGSIQSPGYPSNYPS</Hsp_hseq>
+      <Hsp_midline>GY+ SP +P++YP N   ++ L   E        +N F      +  C  D++ V  I   S      R CG+K +P  IK+  ++++I F +      + GFKI Y  + +    QP                  +E   E +T SI    Y  N PS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1268466286</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_019650202.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_019650202</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.5893</Hsp_bit-score>
+      <Hsp_score>231</Hsp_score>
+      <Hsp_evalue>8.08004e-25</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>SGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>NGSSEMEVVPFQEVWGHSYCRALEKLVDIVAEYPSKMRHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSQDPPSYVE-LTFSQHIRCECRRLWKKIKPE</Hsp_hseq>
+      <Hsp_midline>+G+ + +V PF EV   S C+A E LV I+ EYP ++  +F PSCV++LRC+GCC DE+L C PV    V +Q++++  +   S +E + F++H  CECR   K+ +P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_002914547.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_002914547</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.8265</Hsp_bit-score>
+      <Hsp_score>242</Hsp_score>
+      <Hsp_evalue>8.43575e-25</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>152</Hsp_hit-from>
+      <Hsp_hit-to>260</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKH-----------TVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQ</Hsp_qseq>
+      <Hsp_hseq>EVVKFMDVYQRSYCRPIETLVDILQEYPDEVEYIFKPSCVPLMRCAGCCNDEGLECVPTEEYQCRWASEGGGGGGGVEIMRIKPH-QGQHIGEMSFLQHSKCECRPKKDR</Hsp_hseq>
+      <Hsp_midline>+V  F++V++RS C+  ETLV ILQEYPDE+  IF+PSCV ++RC+GCC DE L+C P  ++              ++IMR+ P  Q   +  M F +H+ CECRP++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_019650201.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_019650201</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>9.69537e-25</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>SGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>NGSSEMEVVPFQEVWGHSYCRALEKLVDIVAEYPSKMRHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSQDPPSYVE-LTFSQHIRCECRRLWKKIKPE</Hsp_hseq>
+      <Hsp_midline>+G+ + +V PF EV   S C+A E LV I+ EYP ++  +F PSCV++LRC+GCC DE+L C PV    V +Q++++  +   S +E + F++H  CECR   K+ +P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|EFB27021.1|</Hit_id>
+  <Hit_def>hypothetical protein PANDA_002678, partial [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>EFB27021</Hit_accession>
+  <Hit_len>92</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>4.09932e-23</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>VRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>VVPFQEVWGHSYCRALEKLVDIVAEYPSKMRHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSQDPPSYVE-LTFSQHIRCECR</Hsp_hseq>
+      <Hsp_midline>V PF EV   S C+A E LV I+ EYP ++  +F PSCV++LRC+GCC DE+L C PV    V +Q++++  +   S +E + F++H  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|EFB26253.1|</Hit_id>
+  <Hit_def>hypothetical protein PANDA_004854, partial [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>EFB26253</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.1662</Hsp_bit-score>
+      <Hsp_score>165</Hsp_score>
+      <Hsp_evalue>1.08622e-14</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>83</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIM</Hsp_qseq>
+      <Hsp_hseq>QKKVVSWIDVYARATCQPREVVVPLTVELMGSMAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQVL</Hsp_hseq>
+      <Hsp_midline>Q +V  +++V+ R+ CQ RE +VP+  E    ++    PSCV V RC GCC D+ L+C P G+H V +Q++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_019652430.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_019652430</Hit_accession>
+  <Hit_len>246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.1662</Hsp_bit-score>
+      <Hsp_score>165</Hsp_score>
+      <Hsp_evalue>2.63129e-14</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIM</Hsp_qseq>
+      <Hsp_hseq>QKKVVSWIDVYARATCQPREVVVPLTVELMGSMAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQVL</Hsp_hseq>
+      <Hsp_midline>Q +V  +++V+ R+ CQ RE +VP+  E    ++    PSCV V RC GCC D+ L+C P G+H V +Q++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_011235227.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X2 [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_011235227</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>3.4635e-11</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCGPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCCNEESLVCMNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V +  E        F+P CV V RC GCC +ESL C       V  Q+  ++ P T   ++  +K   HT C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_002929003.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X1 [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_002929003</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>1.03606e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCGPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCCNEESLVCMNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V +  E        F+P CV V RC GCC +ESL C       V  Q+  ++ P T   ++  +K   HT C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|EFB27858.1|</Hit_id>
+  <Hit_def>hypothetical protein PANDA_019078, partial [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>EFB27858</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>1.45445e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACECRP</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCGPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCCNEESLVCMNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V +  E        F+P CV V RC GCC +ESL C       V  Q+  ++ P T   ++  +K   HT C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_011235695.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: vascular endothelial growth factor C [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_011235695</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>4.16381e-09</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCTPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSHLSKTLFEITVPLSQGPKPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  F+P CV+V RC GCC  E L+C       +   +  +  P +Q  K   + F  HT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|EFB27886.1|</Hit_id>
+  <Hit_def>hypothetical protein PANDA_019581, partial [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>EFB27886</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>5.00467e-09</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCTPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSHLSKTLFEITVPLSQGPKPVTVSFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  F+P CV+V RC GCC  E L+C       +   +  +  P +Q  K   + F  HT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|EFB25180.1|</Hit_id>
+  <Hit_def>hypothetical protein PANDA_019824, partial [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>EFB25180</Hit_accession>
+  <Hit_len>159</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>6.62077e-06</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   S+KC P   H   +++ +V    +  K++   ++  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_011235905.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_011235905</Hit_accession>
+  <Hit_len>117</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>6.71321e-06</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   S+KC P   H   +++ +V    +  K++   ++  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1091817300</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

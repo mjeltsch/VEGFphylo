@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A121 NP_001165099.1 vascular endothelial growth factor A isoform n precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>147</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A121 NP_001165099.1 vascular endothelial growth factor A isoform n precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>147</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|NP_001020281.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A precursor [Ovis aries] &gt;sp|P50412.1| RecName: Full=Vascular endothelial growth factor A; Short=VEGF-A; AltName: Full=Vascular permeability factor; Short=VPF; Flags: Precursor [Ovis aries] &gt;emb|CAA61677.1| ovine vascular endothelial growth factor [Ovis aries]</Hit_def>
+  <Hit_accession>NP_001020281</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>263.077</Hsp_bit-score>
+      <Hsp_score>671</Hsp_score>
+      <Hsp_evalue>9.45221e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG-QKPHEVMKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEKCDKPRR</Hsp_hseq>
+      <Hsp_midline>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG Q  HEV+KFMDVYQRS+C PIETLVDIFQEYPDEIE+IFKPSCVPLMRCGGCCNDE LECVPTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQEKCDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|AAC23608.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor [Ovis aries] &gt;gb|ACG49836.1| vascular endothelial growth factor [Ovis aries]</Hit_def>
+  <Hit_accession>AAC23608</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>248.825</Hsp_bit-score>
+      <Hsp_score>634</Hsp_score>
+      <Hsp_evalue>1.94222e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>140</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQE</Hsp_qseq>
+      <Hsp_hseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG-QKPHEVMKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQE</Hsp_hseq>
+      <Hsp_midline>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG Q  HEV+KFMDVYQRS+C PIETLVDIFQEYPDEIE+IFKPSCVPLMRCGGCCNDE LECVPTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_011955820.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_011955820</Hit_accession>
+  <Hit_len>493</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>257.684</Hsp_bit-score>
+      <Hsp_score>657</Hsp_score>
+      <Hsp_evalue>5.26639e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>280</Hsp_hit-from>
+      <Hsp_hit-to>419</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEK</Hsp_qseq>
+      <Hsp_hseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG-QKPHEVMKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEK</Hsp_hseq>
+      <Hsp_midline>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGG Q  HEV+KFMDVYQRS+C PIETLVDIFQEYPDEIE+IFKPSCVPLMRCGGCCNDE LECVPTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQEK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|AAF75258.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor, partial [Ovis aries]</Hit_def>
+  <Hit_accession>AAF75258</Hit_accession>
+  <Hit_len>118</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.098</Hsp_bit-score>
+      <Hsp_score>575</Hsp_score>
+      <Hsp_evalue>1.61004e-77</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>MAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>MAEGG-QKPHEVMKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEKCDKPRR</Hsp_hseq>
+      <Hsp_midline>MAEGG Q  HEV+KFMDVYQRS+C PIETLVDIFQEYPDEIE+IFKPSCVPLMRCGGCCNDE LECVPTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQEKCDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|ABY61828.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A, partial [Ovis aries]</Hit_def>
+  <Hit_accession>ABY61828</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.912</Hsp_bit-score>
+      <Hsp_score>520</Hsp_score>
+      <Hsp_evalue>9.80395e-69</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>103</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQE</Hsp_qseq>
+      <Hsp_hseq>HEVMKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQNQHIGEMSFLQHNKCECRPKKDKARQE</Hsp_hseq>
+      <Hsp_midline>HEV+KFMDVYQRS+C PIETLVDIFQEYPDEIE+IFKPSCVPLMRCGGCCNDE LECVPTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_027827835.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027827835</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.946</Hsp_bit-score>
+      <Hsp_score>315</Hsp_score>
+      <Hsp_evalue>1.60627e-37</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>LYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKC</Hsp_qseq>
+      <Hsp_hseq>LALPAPQWA----LSPGNISSAVEVVPFEQVWSRSYCRPVERLVDIVSEYPSEVEHMFSPSCVSLMRCTGCCSDETMHCMPLETANVTMQLMKYHSLDQPFFVEMSFSQHVRCECKPLRGRMKPKRC</Hsp_hseq>
+      <Hsp_midline>L L   +W+    ++ G   +  EVV F  V+ RSYC P+E LVDI  EYP E+E++F PSCV LMRC GCC+DE + C+P E +N+TMQ+M+          EMSF QH +CEC+P + R + ++C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_027827834.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027827834</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>1.61534e-35</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRAR</Hsp_qseq>
+      <Hsp_hseq>LALPAPQWA----LSPGNISSAVEVVPFEQVWSRSYCRPVERLVDIVSEYPSEVEHMFSPSCVSLMRCTGCCSDETMHCMPLETANVTMQLMKYHSLDQPFFVEMSFSQHVRCECKPLRGRMK</Hsp_hseq>
+      <Hsp_midline>L L   +W+    ++ G   +  EVV F  V+ RSYC P+E LVDI  EYP E+E++F PSCV LMRC GCC+DE + C+P E +N+TMQ+M+          EMSF QH +CEC+P + R +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|AAN77495.1|</Hit_id>
+  <Hit_def>placental growth factor, partial [Ovis aries]</Hit_def>
+  <Hit_accession>AAN77495</Hit_accession>
+  <Hit_len>108</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>5.38489e-34</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>101</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKC</Hsp_qseq>
+      <Hsp_hseq>FEQVWSRSYCRPVERLVDIVSEYPSEVEHMFSPSCVSLMRCTGCCSDETMHCMPLETANVTMQLMKYHSLDQPFFVEMSFSQHVRCECEPLRGRMKPKRC</Hsp_hseq>
+      <Hsp_midline>F  V+ RSYC P+E LVDI  EYP E+E++F PSCV LMRC GCC+DE + C+P E +N+TMQ+M+          EMSF QH +CEC P + R + ++C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_027815351.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X3 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027815351</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.908</Hsp_bit-score>
+      <Hsp_score>250</Hsp_score>
+      <Hsp_evalue>2.7591e-27</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHE-VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPR</Hsp_qseq>
+      <Hsp_hseq>APVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQ-YPSSQLGEMSLEEHSQCECRPKK-RESAVKPDSPR</Hsp_hseq>
+      <Hsp_midline>AP+++     H + VV ++DVY R+ C P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +H++CECRPKK R    K D PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_027827836.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X3 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027827836</Hit_accession>
+  <Hit_len>135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>99.3673</Hsp_bit-score>
+      <Hsp_score>246</Hsp_score>
+      <Hsp_evalue>3.12136e-27</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>LYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQ</Hsp_qseq>
+      <Hsp_hseq>LALPAPQWA----LSPGNISSAVEVVPFEQVWSRSYCRPVERLVDIVSEYPSEVEHMFSPSCVSLMRCTGCCSDETMHCMPLETANVTMQ</Hsp_hseq>
+      <Hsp_midline>L L   +W+    ++ G   +  EVV F  V+ RSYC P+E LVDI  EYP E+E++F PSCV LMRC GCC+DE + C+P E +N+TMQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_014958446.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_014958446</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.523</Hsp_bit-score>
+      <Hsp_score>249</Hsp_score>
+      <Hsp_evalue>3.6464e-27</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHE-VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPR</Hsp_qseq>
+      <Hsp_hseq>APVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQ-YPSSQLGEMSLEEHSQCECRPKK-RESAVKPDSPR</Hsp_hseq>
+      <Hsp_midline>AP+++     H + VV ++DVY R+ C P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +H++CECRPKK R    K D PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_027815352.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X4 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027815352</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.9821</Hsp_bit-score>
+      <Hsp_score>245</Hsp_score>
+      <Hsp_evalue>7.62514e-27</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHE-VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>APVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQ-YPSSQLGEMSLEEHSQCECRPKK----RESAVKPDR</Hsp_hseq>
+      <Hsp_midline>AP+++     H + VV ++DVY R+ C P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +H++CECRPKK    +E   KP R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_027815350.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027815350</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>99.7525</Hsp_bit-score>
+      <Hsp_score>247</Hsp_score>
+      <Hsp_evalue>1.1828e-26</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHE-VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKCDKPRR</Hsp_qseq>
+      <Hsp_hseq>APVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQ-YPSSQLGEMSLEEHSQCECRPKK----RESAVKPDR</Hsp_hseq>
+      <Hsp_midline>AP+++     H + VV ++DVY R+ C P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +H++CECRPKK    +E   KP R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|AAN04108.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 182 isoform, partial [Ovis aries]</Hit_def>
+  <Hit_accession>AAN04108</Hit_accession>
+  <Hit_len>113</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.6633</Hsp_bit-score>
+      <Hsp_score>226</Hsp_score>
+      <Hsp_evalue>1.43863e-24</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>46</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>PTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEK</Hsp_qseq>
+      <Hsp_hseq>PTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEK</Hsp_hseq>
+      <Hsp_midline>PTEE NITMQIMRIKPHQ QHIGEMSFLQHNKCECRPKKD+ARQEK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_004021885.3|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Ovis aries]</Hit_def>
+  <Hit_accession>XP_004021885</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>1.48436e-14</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>HHEVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKP--HQGQHIGEMSFLQHNKCECRPKKDRARQ</Hsp_qseq>
+      <Hsp_hseq>NTEILRSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQ</Hsp_hseq>
+      <Hsp_midline>+ E+++ +D  ++++ C P E  +D+ +E+       FKP CV + RCGGCCN EG +C+ T  S ++  +  I     QG     +SF  H  C C  K D  RQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_011961649.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_011961649</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.781</Hsp_bit-score>
+      <Hsp_score>164</Hsp_score>
+      <Hsp_evalue>6.71028e-14</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQ--HIGEMSFLQHNKCECRPKKDR</Hsp_qseq>
+      <Hsp_hseq>ETLKVIDEEWQRTQCSPRETCVEVASELGSSTDTFFKPPCVNVFRCGGCCNEESLVCVNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCFPTAPR</Hsp_hseq>
+      <Hsp_midline>E +K +D  +QR+ C P ET V++  E     +  FKP CV + RCGGCCN+E L CV T  S ++ Q+  I         +  +    H  C+C P   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_004021978.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_004021978</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>1.4704e-13</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQ--HIGEMSFLQHNKCECRPKKDR</Hsp_qseq>
+      <Hsp_hseq>ETLKVIDEEWQRTQCSPRETCVEVASELGSSTDTFFKPPCVNVFRCGGCCNEESLVCVNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCFPTAPR</Hsp_hseq>
+      <Hsp_midline>E +K +D  +QR+ C P ET V++  E     +  FKP CV + RCGGCCN+E L CV T  S ++ Q+  I         +  +    H  C+C P   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_027821572.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027821572</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>9.9118e-06</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHI---GEMSFLQHNKCECRPKKDRA</Hsp_qseq>
+      <Hsp_hseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKVQVKKIEIVRKKKIFKKATVTLVDHLACRCETVMARA</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN+  ++C PT+  +  +Q+ +I+  + + I     ++ + H  C C     RA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_027821573.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027821573</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.00711e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHI---GEMSFLQHNKCECRPKKDRA</Hsp_qseq>
+      <Hsp_hseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKVQVKKIEIVRKKKIFKKATVTLVDHLACRCETVMARA</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN+  ++C PT+  +  +Q+ +I+  + + I     ++ + H  C C     RA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|NP_001009471.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B precursor [Ovis aries] &gt;sp|Q95229.1| RecName: Full=Platelet-derived growth factor subunit B; Short=PDGF subunit B; AltName: Full=PDGF-2; AltName: Full=Platelet-derived growth factor B chain; AltName: Full=Platelet-derived growth factor beta polypeptide; Flags: Precursor [Ovis aries] &gt;emb|CAA65790.1| platelet-derived growth factor B subunit [Ovis aries]</Hit_def>
+  <Hit_accession>NP_001009471</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.04693e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHI---GEMSFLQHNKCECRPKKDRA</Hsp_qseq>
+      <Hsp_hseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKVQVKKIEIVRKKKIFKKATVTLVDHLACRCETVMARA</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN+  ++C PT+  +  +Q+ +I+  + + I     ++ + H  C C     RA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_027817095.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027817095</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.00695894</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRNVKVAKVE</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   ++C P+   +  +++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_027817096.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027817096</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.00755266</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRNVKVAKVE</Hsp_hseq>
+      <Hsp_midline>P    ++  P CV + RC GCCN   ++C P+   +  +++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|AAL83948.1|</Hit_id>
+  <Hit_def>mannose-6-phosphate/insulin-like growth factor II receptor, partial [Ovis aries]</Hit_def>
+  <Hit_accession>AAL83948</Hit_accession>
+  <Hit_len>1239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.00970728</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>1041</Hsp_hit-from>
+      <Hsp_hit-to>1119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>TLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRAR</Hsp_qseq>
+      <Hsp_hseq>TAVDTFDEGKKRTFYL--SVCTPLPYIPGCHGTAVGSCLVTEENNWNLGVVQISPQVGAN-GSLSLVYVNGDKCKDQRFSTR</Hsp_hseq>
+      <Hsp_midline>T VD F E      Y+    C PL    GC       C+ TEE+N  + +++I P  G + G +S +  N  +C+ ++   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_027812140.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X2 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027812140</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.011479</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>301</Hsp_hit-from>
+      <Hsp_hit-to>388</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>CHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGG---CCNDEGLE--CVPTEESNITMQIMRIKPHQG-----QHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>CTPRNFSVSVREEL-KRTDTIFWPGCLLVKRCGGNCACCLQTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>C P    V + +E     + IF P C+ + RCGG   CC     E  CVP++ +    ++++++P  G     + + +++   H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_027812139.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X1 [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027812139</Hit_accession>
+  <Hit_len>397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0117048</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>302</Hsp_hit-from>
+      <Hsp_hit-to>389</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>CHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGG---CCNDEGLE--CVPTEESNITMQIMRIKPHQG-----QHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>CTPRNFSVSVREEL-KRTDTIFWPGCLLVKRCGGNCACCLQTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>C P    V + +E     + IF P C+ + RCGG   CC     E  CVP++ +    ++++++P  G     + + +++   H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_027828433.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: cation-independent mannose-6-phosphate receptor [Ovis aries]</Hit_def>
+  <Hit_accession>XP_027828433</Hit_accession>
+  <Hit_len>2499</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0118685</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>1115</Hsp_hit-from>
+      <Hsp_hit-to>1193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>TLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRAR</Hsp_qseq>
+      <Hsp_hseq>TAVDTFDEGKKRTFYL--SVCTPLPYIPGCHGTAVGSCLVTEENNWNLGVVQISPQVGAN-GSLSLVYVNGDKCKDQRFSTR</Hsp_hseq>
+      <Hsp_midline>T VD F E      Y+    C PL    GC       C+ TEE+N  + +++I P  G + G +S +  N  +C+ ++   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1047023640</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

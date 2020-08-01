@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|KAF1746725.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_023182 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1746725</Hit_accession>
+  <Hit_len>947</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>3.79618e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>542</Hsp_hit-from>
+      <Hsp_hit-to>639</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>ASNGSIASPNFPEMYPNSKTCIWEIEAPEGYHIFINFT---KFTVEGMKTE-CAYDYVKIGDSE------KLCGEYDTPLLFTTPRNRVRIEFSSDSSVERD-GFFAHF</Hsp_hseq>
+      <Hsp_midline>++NGSI SP FP  YP +   +W + A E  +++I  T   +F +E  + + C YD+V++ +        + CG    P    +  N++RI F SD     + GF  H+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>1.39275e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>695</Hsp_hit-from>
+      <Hsp_hit-to>798</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL--GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GDIHSPNYPNDYPKGQNCSWHFVTTPGH-RLMLTF-SNFQVE--EHAHCKYDAVSVFDGGDDSALLSGVFCGLAPPP-LILSSSNELYLTFSSDASV-SRRGFQAHYTSV</Hsp_hseq>
+      <Hsp_midline>G IHSP +P+ YP+     W  V    +  + LTF   F +E  E   CKYD V V +  D + L  G +CG    P   +S  N++ + F SD    S  GF  HY  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000453544</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>382</Hsp_hit-from>
+      <Hsp_hit-to>478</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD-FVEVEEPSDGTILGRWCGSGTVPG-----KQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ANEGVIHSPKYPESYPPNSDCQW-TIHVDENNQVAIEF-VYFHLEQHKE--CIYDRLVMTEGISKISKKQGKDGSETFCGLIEKKTIVSKTNQISLRFISD</Hsp_hseq>
+      <Hsp_midline>+  G IHSP++P +YP N+   W  + V+EN  + + F   F LE  ++  C YD  V  E  S  +      GS T  G       +SK NQI +RF+SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0267189</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>802</Hsp_hit-from>
+      <Hsp_hit-to>914</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSI--HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT---ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>RLTAESTPGHIYSHATFSDSKYGKNQDCSWSVRAKSSTRGVRIQFST-FNVESEEG--CQYDYVEVYDGAEATQESLVGRFCGD-TAPEIITSTGPELLLIMHTDNA-EEEKGFVAEY</Hsp_hseq>
+      <Hsp_midline>R+   ST G I  H+      Y +N    W + A      +++ F   F +E  E   C+YD+VEV + ++ T   ++GR+CG  T P    S G ++ +   +D     E GF   Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|OZF79071.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_11138, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF79071</Hit_accession>
+  <Hit_len>4047</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>7.75477e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>3797</Hsp_hit-from>
+      <Hsp_hit-to>3903</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--EDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SGRLTSPNFPRIYSENSTCFTQLKS--SNQKMLMVFNE-FMLEDPNNENKECEYDHLQVKD--DGLNGKKYCGS-SPPSAFLTSGKDVTMEFKSDHSL-SHVGYDASYFIVVSQ</Hsp_hseq>
+      <Hsp_midline>+G + SP FP  Y  N+    +L +   N  + + F+E F LEDP  E+  C+YD ++V++  DG    ++CGS + P   ++ G  + + F SD    S  G+   Y IV+ Q</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0330613</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>3361</Hsp_hit-from>
+      <Hsp_hit-to>3469</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>ALAGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVA-VEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD---GTILGRWCGS</Hsp_qseq>
+      <Hsp_hseq>TLDDSKEKKAMKRNRGFQFAYSINKCGDNIDLREGNEYIT-----TITSPAFPLPYAKDLNCVWNITTDADRQLYVKF---EKMDLEAFTD--CTADYVELFDSSDMVSNKTLGKFCGN</Hsp_hseq>
+      <Hsp_midline> L   ++    + N   +F +S NK  + +   +    IT     +I SP FP  Y ++   VW +    +  ++++    E+  LE   D  C  D+VE+ + SD      LG++CG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|POM50754.1|</Hit_id>
+  <Hit_def>hypothetical protein FL81_01179 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>POM50754</Hit_accession>
+  <Hit_len>1083</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>7.94182e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>263</Hsp_hit-from>
+      <Hsp_hit-to>348</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ASNGSIASPNFPEMYPNSKTCIWEIEAPEGYHIFINFT---KFTVEGMKTE-CAYDYVKIGDSE------KLCGEYDTPLLFTTPRNRVRIEFSSD</Hsp_hseq>
+      <Hsp_midline>++NGSI SP FP  YP +   +W + A E  +++I  T   +F +E  + + C YD+V++ +        + CG    P    +  N++RI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000267744</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD-FVEVEEPSDGTILGRWCGSGTVPG-----KQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ANEGVIHSPKYPESYPPNSDCQW-TIHVDENSQVAIEF-VYFHLEQHKE--CIYDRLVMTEGISKISKKQGKDGSETFCGLIEKKTIVSKTNQISLRFISD</Hsp_hseq>
+      <Hsp_midline>+  G IHSP++P +YP N+   W  + V+EN  + + F   F LE  ++  C YD  V  E  S  +      GS T  G       +SK NQI +RF+SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00402403</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>416</Hsp_hit-from>
+      <Hsp_hit-to>481</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GDIHSPNYPNDYPKGQNCSWHFVTTPGH-RLMLTF-SNFQVE--EHAHCKYDAVSVFDGGDDSALLSVCG</Hsp_hseq>
+      <Hsp_midline>G IHSP +P+ YP+     W  V    +  + LTF   F +E  E   CKYD V V +  D + L   CG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|OZF84084.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_15514, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF84084</Hit_accession>
+  <Hit_len>892</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>8.78528e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>527</Hsp_hit-from>
+      <Hsp_hit-to>612</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ASNGSIASPNFPEMYPNSKTCIWEIEAPEGYHIFINFT---KFTVEGMKTE-CAYDYVKIGDSE------KLCGEYDTPLLFTTPRNRVRIEFSSD</Hsp_hseq>
+      <Hsp_midline>++NGSI SP FP  YP +   +W + A E  +++I  T   +F +E  + + C YD+V++ +        + CG    P    +  N++RI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000318948</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>367</Hsp_hit-from>
+      <Hsp_hit-to>463</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD-FVEVEEPSDGTILGRWCGSGTVPG-----KQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ANEGVIHSPKYPESYPPNSDCQW-TIHVDENSQVAIEF-VYFHLEQHKE--CIYDRLVMTEGISKISKKQGKDGSETFCGLIEKKTIVSKTNQISLRFISD</Hsp_hseq>
+      <Hsp_midline>+  G IHSP++P +YP N+   W  + V+EN  + + F   F LE  ++  C YD  V  E  S  +      GS T  G       +SK NQI +RF+SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00351436</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>680</Hsp_hit-from>
+      <Hsp_hit-to>745</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCG</Hsp_qseq>
+      <Hsp_hseq>GDIHSPNYPNDYPKGQNCSWHFVTTPGH-RLMLTF-SNFQVE--EHAHCKYDAVSVFDGGDDSALLSVCG</Hsp_hseq>
+      <Hsp_midline>G IHSP +P+ YP+     W  V    +  + LTF   F +E  E   CKYD V V +  D + L   CG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.024692</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>747</Hsp_hit-from>
+      <Hsp_hit-to>859</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSI--HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT---ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>RLTAESTPGHIYSHATFSDSKYGKNQDCSWSVRAKSSTRGVRIQFST-FNVESEEG--CQYDYVEVYDGAEATQESLVGRFCGD-TAPEIITSTGPELLLIMHTDNA-EEEKGFVAEY</Hsp_hseq>
+      <Hsp_midline>R+   ST G I  H+      Y +N    W + A      +++ F   F +E  E   C+YD+VEV + ++ T   ++GR+CG  T P    S G ++ +   +D     E GF   Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_003103310.1|</Hit_id>
+  <Hit_def>CRE-NAS-39 protein [Caenorhabditis remanei] &gt;gb|EFP04053.1| CRE-NAS-39 protein [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003103310</Hit_accession>
+  <Hit_len>932</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>9.10808e-06</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>527</Hsp_hit-from>
+      <Hsp_hit-to>612</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVE-ENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ASNGSIASPNFPEMYPNSKTCIWEIEAPEGYHIFINFT---KFTVEGMKTE-CAYDYVKIGDSE------KLCGEYDTPLLFTTPRNRVRIEFSSD</Hsp_hseq>
+      <Hsp_midline>++NGSI SP FP  YP +   +W + A E  +++I  T   +F +E  + + C YD+V++ +        + CG    P    +  N++RI F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>1.31688e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>680</Hsp_hit-from>
+      <Hsp_hit-to>783</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTIL--GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GDIHSPNYPNDYPKGQNCSWHFVTTPGH-RLMLTFSN-FQVE--EHAHCKYDAVSVFDGGDDSALLSGVFCGLAPPP-LILSSSNELYLTFSSDASV-SRRGFQAHYTSV</Hsp_hseq>
+      <Hsp_midline>G IHSP +P+ YP+     W  V    +  + LTF   F +E  E   CKYD V V +  D + L  G +CG    P   +S  N++ + F SD    S  GF  HY  V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000351033</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>367</Hsp_hit-from>
+      <Hsp_hit-to>463</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYD-FVEVEEPSDGTILGRWCGSGTVPG-----KQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>ANEGVIHSPKYPESYPPNSDCQW-TIHVDENSQVAIEF-VYFHLEQHKE--CIYDRLVMTEGISKISKKQGKDGSETFCGLIEKKTIVSKTNQISLRFISD</Hsp_hseq>
+      <Hsp_midline>+  G IHSP++P +YP N+   W  + V+EN  + + F   F LE  ++  C YD  V  E  S  +      GS T  G       +SK NQI +RF+SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.027597</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>787</Hsp_hit-from>
+      <Hsp_hit-to>899</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSI--HSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT---ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHY</Hsp_qseq>
+      <Hsp_hseq>RLTAESTPGHIYSHATFSDSKYGKNQDCSWSVRAKSSTRGVRIQFST-FNVESEEG--CQYDYVEVYDGAEATQESLVGRFCGD-TAPEIITSTGPELLLIMHTDNA-EEEKGFVAEY</Hsp_hseq>
+      <Hsp_midline>R+   ST G I  H+      Y +N    W + A      +++ F   F +E  E   C+YD+VEV + ++ T   ++GR+CG  T P    S G ++ +   +D     E GF   Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|KAF1751802.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_018356 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1751802</Hit_accession>
+  <Hit_len>1008</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>2.628e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>758</Hsp_hit-from>
+      <Hsp_hit-to>864</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--EDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SGRLTSPNFPRIYSENSTCFTQLKS--SNQKMLMVFNE-FMLEDPNNENKECEYDHLQVKD--DGLNGKKYCGS-SPPSAFLTSGKDVTMEFKSDHSL-SHVGYDASYFTVVSQ</Hsp_hseq>
+      <Hsp_midline>+G + SP FP  Y  N+    +L +   N  + + F+E F LEDP  E+  C+YD ++V++  DG    ++CGS + P   ++ G  + + F SD    S  G+   Y  V+ Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|POM28895.1|</Hit_id>
+  <Hit_def>hypothetical protein FL81_18216 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>POM28895</Hit_accession>
+  <Hit_len>3985</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>2.92251e-05</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>3735</Hsp_hit-from>
+      <Hsp_hit-to>3841</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDP--EDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SGRLTSPNFPRIYSENSTCFTQLKS--SNQKMLMVFNE-FMLEDPNNENKECEYDHLQVKD--DGLNGKKYCGS-SPPSAFLTSGKDVTMEFKSDHSL-SHVGYDASYFTVVSQ</Hsp_hseq>
+      <Hsp_midline>+G + SP FP  Y  N+    +L +   N  + + F+E F LEDP  E+  C+YD ++V++  DG    ++CGS + P   ++ G  + + F SD    S  G+   Y  V+ Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_003103886.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_09483 [Caenorhabditis remanei] &gt;gb|EFP03477.1| hypothetical protein CRE_09483 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003103886</Hit_accession>
+  <Hit_len>420</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00246067</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>149</Hsp_query-to>
+      <Hsp_hit-from>318</Hsp_hit-from>
+      <Hsp_hit-to>404</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEY</Hsp_qseq>
+      <Hsp_hseq>GVITSPNYPHNYDNNHFCSYQL-ATLGSYKILLKFDE-FITESNDDIVRVYD----GDSSDKPLLGTYSGNLN-PFSLVSTGNTMYVTFKTDAF</Hsp_hseq>
+      <Hsp_midline>G I SP +PH Y  N    ++L A   +  I L FDE F  E  +D +  YD     + SD  +LG + G+   P   +S GN + + F +D +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|KAF1767211.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_007170 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1767211</Hit_accession>
+  <Hit_len>756</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00408543</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>149</Hsp_query-to>
+      <Hsp_hit-from>318</Hsp_hit-from>
+      <Hsp_hit-to>404</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEY</Hsp_qseq>
+      <Hsp_hseq>GVITSPNYPHNYDNNHFCSYQL-ATLGSYKILLKFDE-FITESNDDIVRVYD----GDSSDKPLLGTYSGNLN-PFSLVSTGNTMYVTFKTDAF</Hsp_hseq>
+      <Hsp_midline>G I SP +PH Y  N    ++L A   +  I L FDE F  E  +D +  YD     + SD  +LG + G+   P   +S GN + + F +D +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|OZF83403.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_15996, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF83403</Hit_accession>
+  <Hit_len>684</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0112831</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>IITVS-TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP---SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VITLSGTNGTMTSPNYPNNYDTYDEQVYQ-ISVAYGMQVNLTIDD-FRTES------KYDYLNIYNSSVQSNSTLVYTLSGTSVAPFNWISPRSYMSMKFVSD</Hsp_hseq>
+      <Hsp_midline>+IT+S TNG++ SP +P+ Y      V++ ++V   + + LT D+ F  E       KYD++ +      S+ T++    G+   P   IS  + + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|OZF90185.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_13297, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF90185</Hit_accession>
+  <Hit_len>284</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0214569</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>137</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GIVTSPNYPENYPDNKS-CGTLIHVAEGHVISLEF-LAFNTEDSYDTLSVFDGNSTSFPHLGTYSGK-----TVPPTITSSSNSLYLYFSSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  YP N      L+ V E   I L F   F  ED  D +  +D      P  GT  G+     TVP    S  N + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|KAF1750947.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_017498 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1750947</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0223538</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>356</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>IITVS-TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP---SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VITQSGTNGTMTSPNYPNNYDTYDEQVYQ-ISVAYGMQVNLTIDD-FRTES------KYDYLNIYNSSVQSNNTLVYTLSGTSVAPFNWISPRSYMSMKFVSD</Hsp_hseq>
+      <Hsp_midline>+IT S TNG++ SP +P+ Y      V++ ++V   + + LT D+ F  E       KYD++ +      S+ T++    G+   P   IS  + + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|KAF1752491.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_019046 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1752491</Hit_accession>
+  <Hit_len>284</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0226381</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>137</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GIVTSPNYPENYPDNKS-CGTLIHVAEGHVISLEF-LAFNTEDSYDTLSVFDGNSTSFPHLGTYSGK-----TVPPTITSSSNSLYLYFSSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  YP N      L+ V E   I L F   F  ED  D +  +D      P  GT  G+     TVP    S  N + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_003114321.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_27138 [Caenorhabditis remanei] &gt;gb|EFP05659.1| hypothetical protein CRE_27138 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003114321</Hit_accession>
+  <Hit_len>3992</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0233872</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>3718</Hsp_hit-from>
+      <Hsp_hit-to>3848</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFG------LEDP--EDDICKYDFVEV-------------EEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ</Hsp_qseq>
+      <Hsp_hseq>SGRLTSPNFPRIYSENSTCFTQLKSSNQKMLMVFKLVQNFKIFSEFMLEDPNNENKECEYDHLQVTFFSVIDNKEFVFQVKDDGLNGKKYCGS-SPPSAFLTSGKDVTMEFKSDHSL-SHVGYDASYFTVVSQ</Hsp_hseq>
+      <Hsp_midline>+G + SP FP  Y  N+    +L +  + + +     + F       LEDP  E+  C+YD ++V             +   DG    ++CGS + P   ++ G  + + F SD    S  G+   Y  V+ Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_003115625.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_18785 [Caenorhabditis remanei] &gt;gb|EFP00113.1| hypothetical protein CRE_18785 [Caenorhabditis remanei] &gt;gb|POM31552.1| hypothetical protein FL81_16299 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003115625</Hit_accession>
+  <Hit_len>284</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0234615</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>137</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GIVTSPNYPENYPDNKS-CGTLIHVAEGHVISLEF-LAFNTEDSYDTLSVFDGNSTSFPHLGTYSGK-----TVPPTITSSSNSLYLYFSSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  YP N      L+ V E   I L F   F  ED  D +  +D      P  GT  G+     TVP    S  N + + F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_003102323.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_05011 [Caenorhabditis remanei] &gt;gb|EFP05942.1| hypothetical protein CRE_05011 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003102323</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0250072</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>354</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>IITVS-TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP---SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VITQSGTNGTMTSPNYPNNYDTYDEQVYQ-ISVAYGMQVNLTIDD-FRTES------KYDYLNIYNSSVQSNSTLVYTLSGTSVAPFNWISPRSYMSMKFVSD</Hsp_hseq>
+      <Hsp_midline>+IT S TNG++ SP +P+ Y      V++ ++V   + + LT D+ F  E       KYD++ +      S+ T++    G+   P   IS  + + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_003102373.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_05009 [Caenorhabditis remanei] &gt;gb|EFP05992.1| hypothetical protein CRE_05009 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003102373</Hit_accession>
+  <Hit_len>376</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0283036</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>273</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP---SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TNGTMTSPNYPNNYDTYDEQVYQ-ISVAYGMQVNLTIDD-FRTES------KYDYLNIYNSSVQSNSTLVYTLSGTSVAPFNWISPRSYMSMKFVSD</Hsp_hseq>
+      <Hsp_midline>TNG++ SP +P+ Y      V++ ++V   + + LT D+ F  E       KYD++ +      S+ T++    G+   P   IS  + + ++FVSD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|OZF94126.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_08309, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF94126</Hit_accession>
+  <Hit_len>294</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0285058</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>291</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPE--DDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTE------AVSPSVLPPSAL</Hsp_qseq>
+      <Hsp_hseq>TNGKLWSANYPGLYPRNVYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDEATQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFITQEKSQISRVKLTISSSHTPFSTI</Hsp_hseq>
+      <Hsp_midline>TNG + S  +P  YPRN    +      + V + + F E F +E     D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +  + ++       +S S  P S +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|POM42052.1|</Hit_id>
+  <Hit_def>hypothetical protein FL81_11998, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>POM42052</Hit_accession>
+  <Hit_len>581</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0337015</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>445</Hsp_hit-from>
+      <Hsp_hit-to>554</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TNGKLWSANYPGLYPRNVYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDEATQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFI</Hsp_hseq>
+      <Hsp_midline>TNG + S  +P  YPRN    +      + V + + F E F +E  +  D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_003096831.1|</Hit_id>
+  <Hit_def>CRE-SOL-1 protein [Caenorhabditis remanei] &gt;gb|EFO85354.1| CRE-SOL-1 protein [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003096831</Hit_accession>
+  <Hit_len>616</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0403808</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>471</Hsp_hit-from>
+      <Hsp_hit-to>580</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TNGKLWSANYPGLYPRNVYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDEATQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFI</Hsp_hseq>
+      <Hsp_midline>TNG + S  +P  YPRN    +      + V + + F E F +E  +  D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|KAF1768322.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_000134 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1768322</Hit_accession>
+  <Hit_len>595</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0403824</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>450</Hsp_hit-from>
+      <Hsp_hit-to>559</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLE--DPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>TNGKLWSANYPGLYPRNVYCEYIFHGRNDQV-VHIHF-EYFDIEGFNQCDEATQSDYILFSNYQTHDRTNRRFCGKTAPKGPILSESNYFRMIFSTNDIFDA-TGFYAHYQFI</Hsp_hseq>
+      <Hsp_midline>TNG + S  +P  YPRN    +      + V + + F E F +E  +  D+  + D++      +      R+CG     G  +S+ N  R+ F +++ F +  GF  HY  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|POM29504.1|</Hit_id>
+  <Hit_def>hypothetical protein FL81_18051 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>POM29504</Hit_accession>
+  <Hit_len>917</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0492722</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>502</Hsp_hit-from>
+      <Hsp_hit-to>604</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-----YDFVEVEEPSDGTILGRWCGSGTVPGKQISK--GNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>RFRFTSSTGFFNSPRYPANYPLDTNCTYYIVG-QPGREILLHF-EQFALSGDNDNNCNDYLDVYDVFVKNGKEELKLKERYC-SDTFPGPSVSAFGSHEMRVVFTS</Hsp_hseq>
+      <Hsp_midline>R    S+ G  +SPR+P  YP +T   + +V  +    I L F E+F L    D+ C      YD        +  +  R+C S T PG  +S    +++R+ F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|OZF76922.1|</Hit_id>
+  <Hit_def>hypothetical protein FL82_19629, partial [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>OZF76922</Hit_accession>
+  <Hit_len>925</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0497671</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>510</Hsp_hit-from>
+      <Hsp_hit-to>612</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-----YDFVEVEEPSDGTILGRWCGSGTVPGKQISK--GNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>RFRFTSSTGFFNSPRYPANYPLDTNCTYYIVG-QPGREILLHF-EQFALSGDNDNNCNDYLDVYDVFVKNGKEELKLKERYC-SDTFPGPSVSAFGSHEMRVVFTS</Hsp_hseq>
+      <Hsp_midline>R    S+ G  +SPR+P  YP +T   + +V  +    I L F E+F L    D+ C      YD        +  +  R+C S T PG  +S    +++R+ F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_003105072.1|</Hit_id>
+  <Hit_def>CRE-EAT-18 protein [Caenorhabditis remanei] &gt;gb|EFP00970.1| CRE-EAT-18 protein [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003105072</Hit_accession>
+  <Hit_len>874</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0528834</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>459</Hsp_hit-from>
+      <Hsp_hit-to>561</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-----YDFVEVEEPSDGTILGRWCGSGTVPGKQISK--GNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>RFRFTSSTGFFNSPRYPANYPLDTNCTYYIVG-QPGREILLHF-EQFALSGDNDNNCNDYLDVYDVFVKNGKEELKLKERYC-SDTFPGPSVSAFGSHEMRVVFTS</Hsp_hseq>
+      <Hsp_midline>R    S+ G  +SPR+P  YP +T   + +V  +    I L F E+F L    D+ C      YD        +  +  R+C S T PG  +S    +++R+ F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gb|KAF1769660.1|</Hit_id>
+  <Hit_def>hypothetical protein GCK72_001477 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>KAF1769660</Hit_accession>
+  <Hit_len>863</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0532366</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>459</Hsp_hit-from>
+      <Hsp_hit-to>561</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-----YDFVEVEEPSDGTILGRWCGSGTVPGKQISK--GNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>RFRFTSSTGFFNSPRYPANYPLDTNCTYYIVG-QPGREILLHF-EQFALSGDNDNNCNDYLDVYDVFVKNGKEELKLKERYC-SDTFPGPSVSAFGSHEMRVVFTS</Hsp_hseq>
+      <Hsp_midline>R    S+ G  +SPR+P  YP +T   + +V  +    I L F E+F L    D+ C      YD        +  +  R+C S T PG  +S    +++R+ F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_003103827.1|</Hit_id>
+  <Hit_def>hypothetical protein CRE_09484 [Caenorhabditis remanei] &gt;gb|EFP03418.1| hypothetical protein CRE_09484 [Caenorhabditis remanei]</Hit_def>
+  <Hit_accession>XP_003103827</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.078383</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>321</Hsp_hit-from>
+      <Hsp_hit-to>405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICK-YDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GVFTSPNYPHNYDNNQLSTYQL-ATLGSYKILLKFTEF--ITEPMYDIVEVYDGDSPNKPLLGSYSGN-LGSFTVN----STGNMLYVRFLSD</Hsp_hseq>
+      <Hsp_midline>G   SP +PH Y  N +  ++L A   +  I L F E   + +P  DI + YD     +P  G+  G   GS TV     S GN + +RF+SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>108</Statistics_hsp-len>
+      <Statistics_eff-space>6769659942</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

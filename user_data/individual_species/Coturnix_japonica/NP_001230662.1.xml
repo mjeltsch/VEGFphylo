@@ -1,0 +1,948 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_015713224.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X8 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713224</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.553</Hsp_bit-score>
+      <Hsp_score>301</Hsp_score>
+      <Hsp_evalue>3.20103e-34</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LAALLYLQSAELSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQENHCEP-CSERRKHLFVQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>LAALL L  A+   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK     + +   P C    +H    DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_015713223.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X7 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713223</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>111.694</Hsp_bit-score>
+      <Hsp_score>278</Hsp_score>
+      <Hsp_evalue>1.73053e-30</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>WLFTLFVQHGCWKLSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQENHCEP-CSERRKHLFVQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline> L    +Q    +   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK     + +   P C    +H    DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_015713222.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X6 [Coturnix japonica] &gt;sp|P67965.1| RecName: Full=Vascular endothelial growth factor A; Short=VEGF-A; AltName: Full=Vascular permeability factor; Short=VPF; Flags: Precursor [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713222</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.923</Hsp_bit-score>
+      <Hsp_score>276</Hsp_score>
+      <Hsp_evalue>2.88273e-30</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>216</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>207</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS---------------------PRPLCPRCTQ---HHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LAALLYLQSAELSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRP-KKDVKNKQEKKSKRGKGKGQKRKRKKGRYKPPSFHCEPCSERRKHLFVQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>LAALL L  A+   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRP KKD   K +                      P   C  C++   H    DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_015713221.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713221</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.41407e-26</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>209</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS---------------------PRPLCPRCTQ---HHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>WLFTLFVQHGCWKLSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRP-KKDVKNKQEKKSKRGKGKGQKRKRKKGRYKPPSFHCEPCSERRKHLFVQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline> L    +Q    +   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRP KKD   K +                      P   C  C++   H    DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_015713219.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713219</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.4413</Hsp_bit-score>
+      <Hsp_score>241</Hsp_score>
+      <Hsp_evalue>1.49126e-24</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>270</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>LLLAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK------KDSAVKPDSPRP------------------------------LCP-RCTQHHQRP-----------DPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>WLFTLFVQHGCWKLSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKPRSDGPSYIPQTWSLHDPQPWQSFLMLYPESGKSRRVCPTRMDSSHCEPCSERRKHLFVQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline> L    +Q    +   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK      +  A KP S  P                              +CP R    H  P           DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_015713227.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X11 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713227</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>7.86506e-24</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK--KDSAVKPDSPR</Hsp_qseq>
+      <Hsp_hseq>LAALLYLQSAELSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKCEKPR</Hsp_hseq>
+      <Hsp_midline>LAALL L  A+   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK  K+   K + PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_015713218.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713218</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.2781</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>2.51226e-22</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQRK---VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LAALLYLQSAELSKAAPALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKK</Hsp_hseq>
+      <Hsp_midline>LAALL L  A+   + P     +RK   V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00156111</Hsp_evalue>
+      <Hsp_query-from>153</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>231</Hsp_hit-from>
+      <Hsp_hit-to>265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>DPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>DPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_015720583.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X3 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015720583</Hit_accession>
+  <Hit_len>169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.5817</Hsp_bit-score>
+      <Hsp_score>218</Hsp_score>
+      <Hsp_evalue>3.4103e-22</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR------YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>GAEASVLTFKEIWNRSFCRPREQLVDIITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTVQLVKIKPNGEAPYAEAPYVEMSFTEHKQCECRPRQ</Hsp_hseq>
+      <Hsp_midline>G +  V+++ +++ R+ C+PRE +V +  E    V     PSCV++QRCGGCC D+GL CVP     V +Q++ I+      Y  +   EMS  EH QCECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_015720584.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X4 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015720584</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.5817</Hsp_bit-score>
+      <Hsp_score>218</Hsp_score>
+      <Hsp_evalue>4.16473e-22</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR------YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>GAEASVLTFKEIWNRSFCRPREQLVDIITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTVQLVKIKPNGEAPYAEAPYVEMSFTEHKQCECRPRQ</Hsp_hseq>
+      <Hsp_midline>G +  V+++ +++ R+ C+PRE +V +  E    V     PSCV++QRCGGCC D+GL CVP     V +Q++ I+      Y  +   EMS  EH QCECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_015713226.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X10 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713226</Hit_accession>
+  <Hit_len>177</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>1.68718e-20</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>RKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK--KDSAVKPDSPR</Hsp_qseq>
+      <Hsp_hseq>NEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKCEKPR</Hsp_hseq>
+      <Hsp_midline> +V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK  K+   K + PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_015720582.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015720582</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>1.80815e-20</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>348</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR------YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>GAEASVLTFKEIWNRSFCRPREQLVDIITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTVQLVKIKPNGEAPYAEAPYVEMSFTEHKQCECRPRQ</Hsp_hseq>
+      <Hsp_midline>G +  V+++ +++ R+ C+PRE +V +  E    V     PSCV++QRCGGCC D+GL CVP     V +Q++ I+      Y  +   EMS  EH QCECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_032300768.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_032300768</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>1.99333e-20</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>348</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>GHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR------YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>GAEASVLTFKEIWNRSFCRPREQLVDIITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVQTSTVTVQLVKIKPNGEAPYAEAPYVEMSFTEHKQCECRPRQ</Hsp_hseq>
+      <Hsp_midline>G +  V+++ +++ R+ C+PRE +V +  E    V     PSCV++QRCGGCC D+GL CVP     V +Q++ I+      Y  +   EMS  EH QCECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_015713225.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X9 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713225</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>6.55092e-20</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>RKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>NEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKK</Hsp_hseq>
+      <Hsp_midline> +V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_015713220.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713220</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.1889</Hsp_bit-score>
+      <Hsp_score>204</Hsp_score>
+      <Hsp_evalue>2.285e-19</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>RKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>NEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKK</Hsp_hseq>
+      <Hsp_midline> +V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_015713215.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015713215</Hit_accession>
+  <Hit_len>294</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>2.82731e-19</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>EVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKK</Hsp_hseq>
+      <Hsp_midline>+V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I  I+ + S  +  MS  +HS+C+CRPKK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00198964</Hsp_evalue>
+      <Hsp_query-from>153</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>260</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>DPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>DPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_015717296.2|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: vascular endothelial growth factor C [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015717296</Hit_accession>
+  <Hit_len>587</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.72356e-10</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>279</Hsp_hit-from>
+      <Hsp_hit-to>382</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+    + +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_015742100.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015742100</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.28426e-09</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAP--VSQPDAPGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>RLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>RL L +L  L    A    ++  A  +    +  ID  + +  C PRE  V +  EL  T  K   P CV V RCGGCC ++ L C+ T    V   +  I  P + + E   + +  H+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_015742089.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015742089</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.01527e-09</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAP--VSQPDAPGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>RLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>RL L +L  L    A    ++  A  +    +  ID  + +  C PRE  V +  EL  T  K   P CV V RCGGCC ++ L C+ T    V   +  I  P + + E   + +  H+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_015715772.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Coturnix japonica] &gt;ref|XP_015715781.1| platelet-derived growth factor subunit B [Coturnix japonica] &gt;ref|XP_015715791.1| platelet-derived growth factor subunit B [Coturnix japonica] &gt;ref|XP_032300634.1| platelet-derived growth factor subunit B [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015715772</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.30873e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AECKTRTVVFEISRDMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPMQIRVRHVQVNKIEFVQKKPVFKKVVVPLEDHVQCQC</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  ++ +++ +     V  P CV VQRC GCC +  ++C P       +Q+  I +    P  +   + LE+H QC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_015732364.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X7 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732364</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>2.55619e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_015732359.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732359</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.16595e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_015732363.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X6 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732363</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>3.17744e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_015732360.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X4 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732360</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>3.52476e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_015732357.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732357</Hit_accession>
+  <Hit_len>273</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>3.71504e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_015732358.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732358</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>3.84289e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSTNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +   + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_015716470.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015716470</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.015314</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILM------IRYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRT-DTIFWPLCLLVKRCGGNCACCHQNCNECQCIPTKVTKKYHEVLQLKPRTGVRGLHKSLTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T      P C+ V+RCGG   CC  +  E  C+PT   +   ++L       +R     L ++ LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_032298072.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X3 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_032298072</Hit_accession>
+  <Hit_len>375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0414373</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>267</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNA-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T A    P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_015707729.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X1 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015707729</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0415187</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>281</Hsp_hit-from>
+      <Hsp_hit-to>322</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNA-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T A    P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_032298071.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X2 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_032298071</Hit_accession>
+  <Hit_len>383</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0432693</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>275</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNA-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T A    P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_032298073.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X4 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_032298073</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0443751</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>261</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNA-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T A    P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_015732365.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X8 [Coturnix japonica]</Hit_def>
+  <Hit_accession>XP_015732365</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.4982</Hsp_bit-score>
+      <Hsp_score>75</Hsp_score>
+      <Hsp_evalue>0.0968019</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>96</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQ</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHH</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1975608027</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

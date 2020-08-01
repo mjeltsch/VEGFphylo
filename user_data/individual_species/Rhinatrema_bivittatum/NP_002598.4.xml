@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_029432635.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029432635</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>325.865</Hsp_bit-score>
+      <Hsp_score>834</Hsp_score>
+      <Hsp_evalue>1.90572e-114</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>158</Hsp_identity>
+      <Hsp_positive>177</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>211</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>MTTWTCIWLLALGYLSWASCEEAEIPRELLDRLAHSEIKSISDLQRLLEIDSVGKEEAPGPRLRSHGAHSAHHAQEKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPLRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHLECTCTSPNSNSDYREEETGRPRETGKNRKRTKLKPT</Hsp_hseq>
+      <Hsp_midline>M T  C+ LL  GYL+    EEAEIPRE+++RLA S+I SI DLQRLLEIDSVG E++    LR+HG H+  H  EKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWPPCVEVKRCTGCCNTSSVKCQP R+HHRSVKVAKVEY+RKKPKLKEV VRLEEHLEC C + + N DYREE+TGRPRE+GK RKR +LKPT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_029432633.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029432633</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>311.612</Hsp_bit-score>
+      <Hsp_score>797</Hsp_score>
+      <Hsp_evalue>2.28386e-108</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>158</Hsp_identity>
+      <Hsp_positive>176</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>240</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTS-----------------------------LRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>MTTWTCIWLLALGYLSWASCEEAEIPRELLDRLAHSEIKSISDLQRLLEIDSVGASGQTGVSRGPGRCVAGPAGGCSLLISSGKEEAPGPRLRSHGAHSAHHAQEKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPLRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHLECTCTSPNSNSDYREEETGRPRETGKNRKRTKLKPT</Hsp_hseq>
+      <Hsp_midline>M T  C+ LL  GYL+    EEAEIPRE+++RLA S+I SI DLQRLLEIDSVG+      S                             LR+HG H+  H  EKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWPPCVEVKRCTGCCNTSSVKCQP R+HHRSVKVAKVEY+RKKPKLKEV VRLEEHLEC C + + N DYREE+TGRPRE+GK RKR +LKPT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_029432634.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029432634</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>282.722</Hsp_bit-score>
+      <Hsp_score>722</Hsp_score>
+      <Hsp_evalue>3.7956e-97</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>144</Hsp_identity>
+      <Hsp_positive>160</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>222</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTS-----------------------------LRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDT</Hsp_qseq>
+      <Hsp_hseq>MTTWTCIWLLALGYLSWASCEEAEIPRELLDRLAHSEIKSISDLQRLLEIDSVGASGQTGVSRGPGRCVAGPAGGCSLLISSGKEEAPGPRLRSHGAHSAHHAQEKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPLRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHLECTCTSPNSNSDYREEET</Hsp_hseq>
+      <Hsp_midline>M T  C+ LL  GYL+    EEAEIPRE+++RLA S+I SI DLQRLLEIDSVG+      S                             LR+HG H+  H  EKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWPPCVEVKRCTGCCNTSSVKCQP R+HHRSVKVAKVEY+RKKPKLKEV VRLEEHLEC C + + N DYREE+T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_029432637.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X5 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029432637</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>219.935</Hsp_bit-score>
+      <Hsp_score>559</Hsp_score>
+      <Hsp_evalue>5.09665e-73</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTS-----------------------------LRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKV</Hsp_qseq>
+      <Hsp_hseq>MTTWTCIWLLALGYLSWASCEEAEIPRELLDRLAHSEIKSISDLQRLLEIDSVGASGQTGVSRGPGRCVAGPAGGCSLLISSGKEEAPGPRLRSHGAHSAHHAQEKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPLRIHHRSVKM</Hsp_hseq>
+      <Hsp_midline>M T  C+ LL  GYL+    EEAEIPRE+++RLA S+I SI DLQRLLEIDSVG+      S                             LR+HG H+  H  EKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWPPCVEVKRCTGCCNTSSVKCQP R+HHRSVK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_029432636.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X4 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029432636</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>220.32</Hsp_bit-score>
+      <Hsp_score>560</Hsp_score>
+      <Hsp_evalue>5.7468e-73</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>184</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTS-----------------------------LRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKV</Hsp_qseq>
+      <Hsp_hseq>MTTWTCIWLLALGYLSWASCEEAEIPRELLDRLAHSEIKSISDLQRLLEIDSVGASGQTGVSRGPGRCVAGPAGGCSLLISSGKEEAPGPRLRSHGAHSAHHAQEKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPLRIHHRSVKLDKA</Hsp_hseq>
+      <Hsp_midline>M T  C+ LL  GYL+    EEAEIPRE+++RLA S+I SI DLQRLLEIDSVG+      S                             LR+HG H+  H  EKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWPPCVEVKRCTGCCNTSSVKCQP R+HHRSVK+ K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_029446049.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029446049</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.066</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>2.50569e-46</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>YLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDS-LDTSLRAHGVHATKHVPEKRPLPIRRKRSI----EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNP</Hsp_qseq>
+      <Hsp_hseq>HLPLLAAEGDPIPQEVYTKLGGSSIRSIADLQRLLQIDSVENEDNHLDL-----GLNSTRSSSSQNRTVSRIRRSLVAGAKPAVIAECKTRTEVFEISRGLVDPTNANFVVWPPCVEVERCSGCCNTKTMRCTPSRVQLRHVQVNKIEIVRRKHTVHKVVVTLEDHLECRCEAVAAAP</Hsp_hseq>
+      <Hsp_midline>+L  + AE   IP+EV  +L  S I SI DLQRLL+IDSV +ED+ LD      G+++T+    +     R +RS+    + AV A CKTRT ++EI R  VDPT+ANF++WPPCVEV+RC+GCCNT +++C PSRV  R V+V K+E VR+K  + +V V LE+HLEC C   +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_029426833.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X3 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029426833</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>2.66074e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLN</Hsp_qseq>
+      <Hsp_hseq>PHEAEHIFKPSCVSLRRCGGCCGDERLDCVPVEMHVAVLQVVRVSPVQGKS--REEAMSFTEHWSCECRPKALH</Hsp_hseq>
+      <Hsp_midline>P  A  +  P CV ++RC GCC    + C P  +H   ++V +V  V+ K   +E  +   EH  C C   +L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_029426832.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029426832</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>3.67124e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>117</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHEAEHIFKPSCVSLRRCGGCCGDERLDCVPVEMHVAVLQVVRVSPVQGKS--REEAMSFTEHWSCEC</Hsp_hseq>
+      <Hsp_midline>P  A  +  P CV ++RC GCC    + C P  +H   ++V +V  V+ K   +E  +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_029426834.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X4 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029426834</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>5.18137e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHEAEHIFKPSCVSLRRCGGCCGDERLDCVPVEMHVAVLQVVRVSPVQGKS--REEAMSFTEHWSCEC</Hsp_hseq>
+      <Hsp_midline>P  A  +  P CV ++RC GCC    + C P  +H   ++V +V  V+ K   +E  +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_029426831.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin apiscin-like isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029426831</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>6.07413e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHEAEHIFKPSCVSLRRCGGCCGDERLDCVPVEMHVAVLQVVRVSPVQGKS--REEAMSFTEHWSCEC</Hsp_hseq>
+      <Hsp_midline>P  A  +  P CV ++RC GCC    + C P  +H   ++V +V  V+ K   +E  +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_029459069.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029459069</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000755377</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>218</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYR--EEDTGRPRESGKKRKRK</Hsp_qseq>
+      <Hsp_hseq>TSTNMFFKPPCVSVFRCGGCCNEESLSCVNTSTSYISKALFEI-LVPLTHAPVAVSHRFANHTSCKCLPSILRHPYSIIRRSALFPGEDGCPRANK</Hsp_hseq>
+      <Hsp_midline>TS N    PPCV V RC GCCN  S+ C  +   + S  + ++  V        V  R   H  C C  + L   Y         P E G  R  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_029448728.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029448728</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00190276</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>EKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKV</Hsp_qseq>
+      <Hsp_hseq>EKKPSEVIKFLEVYER--SFCQPMDTLIDI--FQEYPDEVEYMFKPSCVVLKRCAGCCSDESLECVPIESYNVTMQIMRI</Hsp_hseq>
+      <Hsp_midline>EK+P  + +   + E   + C+    + +I   Q  P    ++  P CV +KRC GCC+  S++C P   ++ ++++ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_029459068.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029459068</Hit_accession>
+  <Hit_len>349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00212033</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>17</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>28</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKC</Hsp_qseq>
+      <Hsp_hseq>TSTNMFFKPPCVSVFRCGGCCNEESLSC</Hsp_hseq>
+      <Hsp_midline>TS N    PPCV V RC GCCN  S+ C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_029448727.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029448727</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00229426</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKV</Hsp_qseq>
+      <Hsp_hseq>QEYPDEVEYMFKPSCVVLKRCAGCCSDESLECVPIESYNVTMQIMRI</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV +KRC GCC+  S++C P   ++ ++++ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_029448726.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029448726</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00231773</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKV</Hsp_qseq>
+      <Hsp_hseq>SFCQPMDTLIDI--FQEYPDEVEYMFKPSCVVLKRCAGCCSDESLECVPIESYNVTMQIMRI</Hsp_hseq>
+      <Hsp_midline>+ C+    + +I   Q  P    ++  P CV +KRC GCC+  S++C P   ++ ++++ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_029470615.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029470615</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00424719</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC---ATTSLNPDYREEDTGRPRES</Hsp_qseq>
+      <Hsp_hseq>PEEVEHIFLPSCVPLLRCAGCCVDEELHCVPTKMHIVVMQIMKTKFMNTQTE----EMPFVQHSECECRPKKNTKLK-SARQDHFGGTREN</Hsp_hseq>
+      <Hsp_midline>P     +  P CV + RC GCC    + C P+++H   +++ K +++  + +    ++   +H EC C     T L    R++  G  RE+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_029470616.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029470616</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00683093</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PEEVEHIFLPSCVPLLRCAGCCVDEELHCVPTKMHIVVMQIMKTKFMNTQTE----EMPFVQHSECEC</Hsp_hseq>
+      <Hsp_midline>P     +  P CV + RC GCC    + C P+++H   +++ K +++  + +    ++   +H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_029435431.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029435431</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0142615</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>136</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKP---KLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>ATNTFFKPPCVSLYRCGGCCNSEGLQC----INTSSTYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV + RC GCCN+  ++C    ++  S  ++K  +    P     K V +    H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_029435360.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029435360</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0154461</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKP---KLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>ATNTFFKPPCVSLYRCGGCCNSEGLQC----INTSSTYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV + RC GCCN+  ++C    ++  S  ++K  +    P     K V +    H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_029435506.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X3 [Rhinatrema bivittatum] &gt;ref|XP_029435573.1| vascular endothelial growth factor C isoform X3 [Rhinatrema bivittatum] &gt;ref|XP_029435640.1| vascular endothelial growth factor C isoform X3 [Rhinatrema bivittatum] &gt;ref|XP_029435716.1| vascular endothelial growth factor C isoform X3 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029435506</Hit_accession>
+  <Hit_len>351</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0250969</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKP---KLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>ATNTFFKPPCVSLYRCGGCCNSEGLQC----INTSSTYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV + RC GCCN+  ++C    ++  S  ++K  +    P     K V +    H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2439496290</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

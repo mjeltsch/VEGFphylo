@@ -1,0 +1,1946 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.6.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>NP_005420.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>vascular endothelial growth factor C preproprotein [Homo sapiens] &gt;sp|P49767.1| RecName: Full=Vascular endothelial growth factor C; Short=VEGF-C; AltName: Full=Flt4 ligand; Short=Flt4-L; AltName: Full=Vascular endothelial growth factor-related protein; Short=VRP; Flags: Precursor [Homo sapiens] &gt;gb|AAX36428.1| vascular endothelial growth factor C [synthetic construct] &gt;gb|AAA85214.1| vascular endothelial growth factor related protein [Homo sapiens] &gt;gb|AAB02909.1| FLT4 ligand DHM [Homo sapiens] &gt;gb|AAH35212.1| Vascular endothelial growth factor C [Homo sapiens] &gt;gb|AAH63685.1| Vascular endothelial growth factor C [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>419</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>NP_005420.1</Iteration_query-ID>
+  <Iteration_query-def>vascular endothelial growth factor C preproprotein [Homo sapiens] &gt;sp|P49767.1| RecName: Full=Vascular endothelial growth factor C; Short=VEGF-C; AltName: Full=Flt4 ligand; Short=Flt4-L; AltName: Full=Vascular endothelial growth factor-related protein; Short=VRP; Flags: Precursor [Homo sapiens] &gt;gb|AAX36428.1| vascular endothelial growth factor C [synthetic construct] &gt;gb|AAA85214.1| vascular endothelial growth factor related protein [Homo sapiens] &gt;gb|AAB02909.1| FLT4 ligand DHM [Homo sapiens] &gt;gb|AAH35212.1| Vascular endothelial growth factor C [Homo sapiens] &gt;gb|AAH63685.1| Vascular endothelial growth factor C [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>419</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_032812528.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032812528</Hit_accession>
+  <Hit_len>444</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.252</Hsp_bit-score>
+      <Hsp_score>443</Hsp_score>
+      <Hsp_evalue>8.62614e-50</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>442</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>108</Hsp_gaps>
+      <Hsp_align-len>377</Hsp_align-len>
+      <Hsp_qseq>WKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKE-----------------------------FGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPAT-----LPQCQAANKTCPTNYMWNNHICRCLAQEDFMFSSDAG-----DDSTDGFHDICGPNKELDEETCQCVCRAGLRPASCGPHKELDRNSCQCVCKNKLFPSQCGANREFDENTCQCVCKRTCPRNQPLNPGKCACECTESPQKCLLKGKKFHHQTCSCYRRPCTNRQKACEPGFSYSEEVCRCVPSYWKR</Hsp_qseq>
+      <Hsp_hseq>WSLVRCRLKRSG--------------------TPATFNIN-WESIDREWHKTRCVPREVCVDVARERAGERAAPGVAPGAAWGSGWGPGGSDAEGGGSGSASFFKPPCVALHRCGGCCNSEGLQCVNTSYEYISKTLIEISVS-SVRLEAVTVSFVNHTTCRCLSRADAARHSHAIIRRALGETPESGCAPVRGGAEVECGSGHLWDDLSCACVPRLEALLAPHLSYWLPDPPLAAPPARTCGPGRALDEESCACVCRRACPRRHRRRTRSAHGARCECACP-------------------------------------------ETREGCARRGGRFHAETCSCLRAPCP--RVVCVPGHATHPRSCSCVP--WGR</Hsp_hseq>
+      <Hsp_midline>W + +C+L++ G                      A +N    +SID EW KT+C+PREVC+DV +E                              G  + +FFKPPCV+++RCGGCCNSEGLQC+NTS  Y+SKTL EI+V  S   + VT+SF NHT+CRC+S+ D  R  H+IIRR+L  T      P    A   C + ++W++  C C+ + + + +                   CGP + LDEE+C CVCR           +      C+C C                                            E+ + C  +G +FH +TCSC R PC   +  C PG +     C CVP  W R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_032820670.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820670</Hit_accession>
+  <Hit_len>234</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.559</Hsp_bit-score>
+      <Hsp_score>179</Hsp_score>
+      <Hsp_evalue>1.46268e-14</Hsp_evalue>
+      <Hsp_query-from>103</Hsp_query-from>
+      <Hsp_query-to>256</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>TEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQCQAANKT--------CPTNYMWNNHICRC</Hsp_qseq>
+      <Hsp_hseq>VSEEAKSLASRRSVEAVVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGKE--QMSFAQHDSCKCGCR---------------PCSGPRLQQDPDTCRCSCRMVCKHKLLLNKHTCKC</Hsp_hseq>
+      <Hsp_midline>  E  K  A+  + E +  ++    ++ CMPRE  + V  E+   T+  + P CV++ RC GCCN E  +C+ T+ S ++  +F++ V  S G +   +SFA H SC+C  +               P + P+ Q    T        C    + N H C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_032820673.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X3 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820673</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.559</Hsp_bit-score>
+      <Hsp_score>179</Hsp_score>
+      <Hsp_evalue>1.59851e-14</Hsp_evalue>
+      <Hsp_query-from>103</Hsp_query-from>
+      <Hsp_query-to>256</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>228</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>TEETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQCQAANKT--------CPTNYMWNNHICRC</Hsp_qseq>
+      <Hsp_hseq>VSEEAKSLASRRSVEAVVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGKE--QMSFAQHDSCKCGCR---------------PCSGPRLQQDPDTCRCSCRMVCKHKLLLNKHTCKC</Hsp_hseq>
+      <Hsp_midline>  E  K  A+  + E +  ++    ++ CMPRE  + V  E+   T+  + P CV++ RC GCCN E  +C+ T+ S ++  +F++ V  S G +   +SFA H SC+C  +               P + P+ Q    T        C    + N H C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_032820674.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X4 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820674</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.0182</Hsp_bit-score>
+      <Hsp_score>175</Hsp_score>
+      <Hsp_evalue>3.49359e-14</Hsp_evalue>
+      <Hsp_query-from>108</Hsp_query-from>
+      <Hsp_query-to>256</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>KFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQCQAANKT--------CPTNYMWNNHICRC</Hsp_qseq>
+      <Hsp_hseq>KSLASRRSVEAVVPLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGKE--QMSFAQHDSCKCGCR---------------PCSGPRLQQDPDTCRCSCRMVCKHKLLLNKHTCKC</Hsp_hseq>
+      <Hsp_midline>K  A+  + E +  ++    ++ CMPRE  + V  E+   T+  + P CV++ RC GCCN E  +C+ T+ S ++  +F++ V  S G +   +SFA H SC+C  +               P + P+ Q    T        C    + N H C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_032820671.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820671</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>9.39351e-14</Hsp_evalue>
+      <Hsp_query-from>105</Hsp_query-from>
+      <Hsp_query-to>256</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>228</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>ETIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQCQAANKT--------CPTNYMWNNHICRC</Hsp_qseq>
+      <Hsp_hseq>EEAKSLASRRSVEVV-PLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGKE--QMSFAQHDSCKCGCR---------------PCSGPRLQQDPDTCRCSCRMVCKHKLLLNKHTCKC</Hsp_hseq>
+      <Hsp_midline>E  K  A+  + E++  ++    ++ CMPRE  + V  E+   T+  + P CV++ RC GCCN E  +C+ T+ S ++  +F++ V  S G +   +SFA H SC+C  +               P + P+ Q    T        C    + N H C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_032820675.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X5 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032820675</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.85475e-13</Hsp_evalue>
+      <Hsp_query-from>108</Hsp_query-from>
+      <Hsp_query-to>256</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>KFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSIIRRSLPATLPQCQAANKT--------CPTNYMWNNHICRC</Hsp_qseq>
+      <Hsp_hseq>KSLASRRSVEVV-PLERVMERSACMPRETLVSVAAEYPGDTDIRYHPSCVAIMRCSGCCNDETRECLPTAKSNVTLEVFKLNVFHSGGKE--QMSFAQHDSCKCGCR---------------PCSGPRLQQDPDTCRCSCRMVCKHKLLLNKHTCKC</Hsp_hseq>
+      <Hsp_midline>K  A+  + E++  ++    ++ CMPRE  + V  E+   T+  + P CV++ RC GCCN E  +C+ T+ S ++  +F++ V  S G +   +SFA H SC+C  +               P + P+ Q    T        C    + N H C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_032811972.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032811972</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>2.74031e-13</Hsp_evalue>
+      <Hsp_query-from>106</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>TIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSK</Hsp_qseq>
+      <Hsp_hseq>SVSSGQSHLKNGVMK-FDEVMRRSYCQPMETMIDILHEYPDEVEHFFRPSCVPLLRCSGCCNDENQECLPTETANITLQVYKYKLRHNAGYE--EMSFQQHTKCECRSR</Hsp_hseq>
+      <Hsp_midline>++    +H    ++K  D   R++ C P E  ID+  E+      FF+P CV + RC GCCN E  +C+ T T+ ++  +++  +  + G +   +SF  HT C C S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_032818587.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032818587</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2402</Hsp_bit-score>
+      <Hsp_score>160</Hsp_score>
+      <Hsp_evalue>7.52679e-12</Hsp_evalue>
+      <Hsp_query-from>70</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>MTVLYPEYWKMYKCQLRKGGWQH-NREQANLNSRTEETIKFAA--------AHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>VTLHYAHYTRAPRVMRETGEWQRETREVTNPADLACSLCHFQAGLGRGRHRAQLTLPVVR-LEEVWRRSQCRPAERMVSVASERQGAVEWFFRPACVALRRCSGCCGDESARCEATATANVTLQVLLIR-PL-QDHRLEEMTFVEHTACEC</Hsp_hseq>
+      <Hsp_midline>+T+ Y  Y +  +     G WQ   RE  N          F A        A     +++ ++  WR++QC P E  + V  E   A   FF+P CV++ RC GCC  E  +C  T+T+ ++  +  I  PL Q  +   ++F  HT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_032818588.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032818588</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>2.83877e-11</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>IDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>LEEVWRRSQCRPAERMVSVASERQGAVEWFFRPACVALRRCSGCCGDESARCEATATANVTLQVLLIR-PL-QDHRLEEMTFVEHTACEC</Hsp_hseq>
+      <Hsp_midline>++  WR++QC P E  + V  E   A   FF+P CV++ RC GCC  E  +C  T+T+ ++  +  I  PL Q  +   ++F  HT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_032811973.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032811973</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.26431e-10</Hsp_evalue>
+      <Hsp_query-from>106</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>TIKFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHT</Hsp_qseq>
+      <Hsp_hseq>SVSSGQSHLKNGVMK-FDEVMRRSYCQPMETMIDILHEYPDEVEHFFRPSCVPLLRCSGCCNDENQECLPTETANITLQVYKYKLRHNAGYE--EMSFQQHT</Hsp_hseq>
+      <Hsp_midline>++    +H    ++K  D   R++ C P E  ID+  E+      FF+P CV + RC GCCN E  +C+ T T+ ++  +++  +  + G +   +SF  HT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_032804530.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032804530</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>2.04795e-10</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>WAHSYCRALEVLVEVSREYPGAFPFVVRPACVPLFRCGGCCSDEGLHCAPTATYNASMQI--LTIRPFHKPEMQEMSFLQHGACEC</Hsp_hseq>
+      <Hsp_midline>W  + C   EV ++V +E+  A     +P CV ++RCGGCC+ EGL C  T+T   S  +  +T+     P+   +SF  H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_032830205.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032830205</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>7.03251e-10</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>NTEILKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSKLDVYRQVHSII</Hsp_qseq>
+      <Hsp_hseq>SSEVVR-FEEVMQRSYCRPMETMVPVSREFPDEVAHFFRPACVPLLRCSGCCNDEGSECVPTHTTTVTIQVYKNRP--SHGGGFQELPFTQHSECECRERSEQFKPQTGLV</Hsp_hseq>
+      <Hsp_midline>++E+++  +   +++ C P E  + V +EF      FF+P CV + RC GCCN EG +C+ T T+ ++  +++     S G     + F  H+ C C  + + ++    ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_032819878.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032819878</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>2.18624e-09</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>WERSFCRAMEVLVPVSAERPRDVEHLFKPPCVRLLRCAGCCGDERLQCLPTRTHNTTMQILKVK-PL-HGQYLEEMTFVQHSACEC</Hsp_hseq>
+      <Hsp_midline>W ++ C   EV + V  E        FKPPCV + RC GCC  E LQC+ T T   +  + ++  PL  G     ++F  H++C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_032819879.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032819879</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>2.41477e-09</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>WRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>WERSFCRAMEVLVPVSAERPRDVEHLFKPPCVRLLRCAGCCGDERLQCLPTRTHNTTMQILKVK-PL-HGQYLEEMTFVQHSACEC</Hsp_hseq>
+      <Hsp_midline>W ++ C   EV + V  E        FKPPCV + RC GCC  E LQC+ T T   +  + ++  PL  G     ++F  H++C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_032812377.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: platelet-derived growth factor C [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032812377</Hit_accession>
+  <Hit_len>919</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000629592</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>748</Hsp_hit-from>
+      <Hsp_hit-to>860</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>DAEPDAGEATAYASKDLEEQLRSVSSVDELMTVLYPEYWKMYKCQLRKGGWQHNREQANLNSRTEETIKFAAAH---YNTEI-LKSIDNEWRKTQCMPREVCIDVGKEFGVATNTFFKPPCVSVYRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DPGPAAGE---LRMEVLSHTLSAFETLEDMVKFLEPESWQV--------------ELDRLAFSVPQARGRSSAHGRRWNGELNLNRLREEVRLYSCTPRNHSVSLREELG-RTDTVFWPSCVLVRRCGGNC</Hsp_hseq>
+      <Hsp_midline>D  P AGE      + L   L +  ++++++  L PE W++              E   L     +    ++AH   +N E+ L  +  E R   C PR   + + +E G  T+T F P CV V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_032834627.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032834627</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0061915</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>LKSIDNEWRKTQCMPREVCIDVGKE--FGVATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSYLSKTLFEIT-VPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>VRSLAEEATAAVCRVRPVSLEIPRSQIDSTSANFLVWPPCVELPRCSGCCNTHSVRCQPSRTRHKYVKVAKIEYVKRRTLLKEALVKLEEHLDCTC</Hsp_hseq>
+      <Hsp_midline>++S+  E     C  R V +++ +      + N    PPCV + RC GCCN+  ++C  + T +    + +I  V      K   +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_032829187.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X49 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829187</Hit_accession>
+  <Hit_len>17741</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166008</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_032829186.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X48 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829186</Hit_accession>
+  <Hit_len>17741</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166008</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_032829188.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X50 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829188</Hit_accession>
+  <Hit_len>17741</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166008</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_032829158.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X22 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829158</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_032829157.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X21 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829157</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_032829149.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X14 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829149</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_032829156.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X20 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829156</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_032829146.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X11 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829146</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_032829154.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X19 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829154</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_032829153.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X18 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829153</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_032829151.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X16 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829151</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_032829160.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X24 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829160</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_032829165.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X29 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829165</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_032829148.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X13 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829148</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_032829164.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X28 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829164</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0166018</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|XP_032829179.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X42 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829179</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|XP_032829184.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X46 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829184</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_032829181.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X44 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829181</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|XP_032829185.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X47 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829185</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>ref|XP_032829175.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X38 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829175</Hit_accession>
+  <Hit_len>17743</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|XP_032829176.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X39 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829176</Hit_accession>
+  <Hit_len>17743</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>ref|XP_032829174.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X37 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829174</Hit_accession>
+  <Hit_len>17744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>ref|XP_032829173.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X36 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829173</Hit_accession>
+  <Hit_len>17744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>ref|XP_032829170.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X33 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829170</Hit_accession>
+  <Hit_len>17744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|XP_032829171.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X34 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829171</Hit_accession>
+  <Hit_len>17744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>ref|XP_032829172.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X35 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829172</Hit_accession>
+  <Hit_len>17744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167436</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|XP_032829159.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X23 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829159</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>ref|XP_032829147.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X12 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829147</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>ref|XP_032829152.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X17 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829152</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>ref|XP_032829161.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X25 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829161</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|XP_032829163.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X27 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829163</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>ref|XP_032829150.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X15 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829150</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|XP_032829145.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X10 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829145</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|XP_032829162.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X26 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829162</Hit_accession>
+  <Hit_len>17876</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>ref|XP_032829144.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X9 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829144</Hit_accession>
+  <Hit_len>17877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>ref|XP_032829143.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X8 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829143</Hit_accession>
+  <Hit_len>17877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>ref|XP_032829142.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X7 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829142</Hit_accession>
+  <Hit_len>17877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>ref|XP_032829140.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X5 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829140</Hit_accession>
+  <Hit_len>17877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>ref|XP_032829141.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X6 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829141</Hit_accession>
+  <Hit_len>17877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>ref|XP_032829138.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X4 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829138</Hit_accession>
+  <Hit_len>17878</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167445</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>ref|XP_032829137.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X3 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829137</Hit_accession>
+  <Hit_len>18010</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167454</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>ref|XP_032829135.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829135</Hit_accession>
+  <Hit_len>18011</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167454</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>ref|XP_032829136.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829136</Hit_accession>
+  <Hit_len>18011</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0167454</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>ref|XP_032829178.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X41 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829178</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>ref|XP_032829180.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X43 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829180</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>ref|XP_032829183.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X45 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829183</Hit_accession>
+  <Hit_len>17742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>ref|XP_032829177.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X40 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829177</Hit_accession>
+  <Hit_len>17743</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>ref|XP_032829168.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X31 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829168</Hit_accession>
+  <Hit_len>17745</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>ref|XP_032829169.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X32 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829169</Hit_accession>
+  <Hit_len>17745</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>ref|XP_032829167.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116953249 isoform X30 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032829167</Hit_accession>
+  <Hit_len>17745</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173269</Hsp_evalue>
+      <Hsp_query-from>280</Hsp_query-from>
+      <Hsp_query-to>403</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>62</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>CGPNKELDEETCQCVCRAGLRPASCG----PHKELDRNSC---QCVCKNKLFPSQCGA----NREFDENTC---QCVCKR-----TCPRNQPLNP-----------GKCAC-------ECTES--PQKCLLKGKKFHHQTCSCYR--------------RPCTNRQK------ACEPGFSYSE</Hsp_qseq>
+      <Hsp_hseq>CNGHGTFSTESCGCVCDKGWTGKACSQPACPSDCGGRGTCVDGVCDCEEGFSGPDCGQAACLNDCSNRGVCVSGGCVCERGFAGTDC--SQPGCPNDCNGRGRCVDGKCLCARGFSGEDCRESRCPNNCNGRGRCVNGR-CVCQRGYGGSDCGEGGACVNDCSDRGKCVGGRCVCEPGFTGPE</Hsp_hseq>
+      <Hsp_midline>C  +     E+C CVC  G    +C     P     R +C    C C+       CG     N   +   C    CVC+R      C  +QP  P           GKC C       +C ES  P  C  +G+  + + C C R                C++R K       CEPGF+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>ref|XP_032822845.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC116949539 isoform X1 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032822845</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.0174079</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CMPREVCIDVGKEF--GVATNTFFKPPCVSVYRCGGCCNSEGLQCM--NTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>CKPRNASVEIPRALLDTSSANFMLWPGCVELPRCSGCCNTAARRCTPSRIHTRQLKVAKIEYTRKRLRM-KEVLVKMEEHLECRC</Hsp_hseq>
+      <Hsp_midline>C PR   +++ +      + N    P CV + RC GCCN+   +C      T  L     E T    +  K V +    H  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>ref|XP_032822846.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Petromyzon marinus]</Hit_def>
+  <Hit_accession>XP_032822846</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0240523</Hsp_evalue>
+      <Hsp_query-from>124</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>NEWRKTQCMPREVCIDVGKEF--GVATNTFFKPPCVSVYRCGGCCNSEGLQCM--NTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRC</Hsp_qseq>
+      <Hsp_hseq>EEAQIAACKPRNASVEIPRALLDTSSANFMLWPGCVELPRCSGCCNTAARRCTPSRIHTRQLKVAKIEYTRKRLRM-KEVLVKMEEHLECRC</Hsp_hseq>
+      <Hsp_midline> E +   C PR   +++ +      + N    P CV + RC GCCN+   +C      T  L     E T    +  K V +    H  CRC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>272690570</Statistics_db-num>
+      <Statistics_db-len>98139997296</Statistics_db-len>
+      <Statistics_hsp-len>109</Statistics_hsp-len>
+      <Statistics_eff-space>7739089860</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

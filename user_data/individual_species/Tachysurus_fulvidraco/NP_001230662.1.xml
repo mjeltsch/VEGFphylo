@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_026993720.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026993720</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.079</Hsp_bit-score>
+      <Hsp_score>279</Hsp_score>
+      <Hsp_evalue>7.95372e-31</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE----MSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>QLFLVALLNVSAVDAAYI-PKEGKSKNEVVPFMEVYTKSRCNPRETLVDVQHEYPHDTHVTYLPSCVVLQRCGGCCNDEALECVPTHTNNVTLELYRVK---PGVGEHKTLLSFTEHTHCDCRVKPEVKTKKEYRCEP-CSERKKHWFVQDPLTCRCSCTLTQ-LQCRSRKLELNERVCRCDKPRR</Hsp_hseq>
+      <Hsp_midline>+L L ALL ++   A    P     + +VV +++VYT++ C PRE +V +  E         +PSCV +QRCGGCC D+ LECVPT  + V +++  ++     +GE    +S  EH+ C+CR K +    K     P C    +H    DP TCRC C     L+C+ R LELN   CRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_027007327.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027007327</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>1.5487e-28</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>LLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSP----RPLCPRCTQHHQR---PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LLQLFCVTLLYFSAVKSAYIPKENEGITNEAVVPFTEVYNKSMCRPREMLVEVHQEYPEDIEHIFIPSCVVLMRCAGCCNDEMLECKPTATRNITMEVQKLKPMRIKRNYP------MSFAEHTECECRVKK---AMQENTDNIHCKPCCSTCSERKKRLYVQDPETCQCTC-KHSEADCKQKQLELNERTCRCDKPRR</Hsp_hseq>
+      <Hsp_midline>LL+   +  L   A   A + + +       VV + +VY ++ C+PRE++V +  E    +    +PSCV + RC GCC D+ LEC PT    + M++  ++       YP      MS  EH++CECR KK   A++ ++     +P C  C++  +R    DP TC+C C + S   C+ + LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_026990873.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026990873</Hit_accession>
+  <Hit_len>254</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.145</Hsp_bit-score>
+      <Hsp_score>261</Hsp_score>
+      <Hsp_evalue>1.3228e-27</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>230</Hsp_align-len>
+      <Hsp_qseq>AALLQLAPAQAPVSQPDAPGHQRK-----VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKP--DSPRPL-----------------------------------------------CPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKL</Hsp_qseq>
+      <Hsp_hseq>APLAQWQPTKSHESGQGTPSHSESFEIFYVVRWMDVYERSSCQPRETLVEVWQEFPWETHHLFLPSCVSVRRCGGCCGDEALECVPSHTDMVTMELMKTTYMKHELVQLPFVEHRQCECRPKA-DLHTEPTRQDPRPTRKGRKRERGKPKRKKHVRIKPTTPAPTTPAPPALPTSILPSHPAEEQCPPCPMRRMTSEPPMCECICSLRE-MSCTKRGKQLNQHSCRCERV</Hsp_hseq>
+      <Hsp_midline>A L Q  P ++  S    P H        VV W+DVY R++CQPRE +V +  E         +PSCV+V+RCGGCC D+ LECVP+    V M+++   Y   +L ++   EH QCECRPK  D   +P    PRP                                                CP C       +P  C C C  R  + C  RG +LN  +CRC ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_026990874.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026990874</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.605</Hsp_bit-score>
+      <Hsp_score>257</Hsp_score>
+      <Hsp_evalue>3.25825e-27</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>219</Hsp_align-len>
+      <Hsp_qseq>AQAPVSQ--PDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKP--DSPRPL-----------------------------------------------CPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKL</Hsp_qseq>
+      <Hsp_hseq>ARAPLAQWQPTKSHESGQVVRWMDVYERSSCQPRETLVEVWQEFPWETHHLFLPSCVSVRRCGGCCGDEALECVPSHTDMVTMELMKTTYMKHELVQLPFVEHRQCECRPKA-DLHTEPTRQDPRPTRKGRKRERGKPKRKKHVRIKPTTPAPTTPAPPALPTSILPSHPAEEQCPPCPMRRMTSEPPMCECICSLRE-MSCTKRGKQLNQHSCRCERV</Hsp_hseq>
+      <Hsp_midline>A+AP++Q  P       +VV W+DVY R++CQPRE +V +  E         +PSCV+V+RCGGCC D+ LECVP+    V M+++   Y   +L ++   EH QCECRPK  D   +P    PRP                                                CP C       +P  C C C  R  + C  RG +LN  +CRC ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_027007326.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027007326</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.5969</Hsp_bit-score>
+      <Hsp_score>244</Hsp_score>
+      <Hsp_evalue>3.88156e-25</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>220</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPG-HQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCECRPKK-------------------------KDSAVKPDSPRPLCPRCTQHHQR---PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LLQLFCVTLLYFSAVKSAYIPKENEGITNEAVVPFTEVYNKSMCRPREMLVEVHQEYPEDIEHIFIPSCVVLMRCAGCCNDEMLECKPTATRNITMEVQKLKPMRIKRNYP------MSFAEHTECECRVKKAMQENTDKKPRKGKGKGQKGKRKKNRDKMRDFIHCKPCCSTCSERKKRLYVQDPETCQCTC-KHSEADCKQKQLELNERTCRCDKPRR</Hsp_hseq>
+      <Hsp_midline>L +L    LL  +  ++     +  G     VV + +VY ++ C+PRE++V +  E    +    +PSCV + RC GCC D+ LEC PT    + M++  ++       YP      MS  EH++CECR KK                         +D        +P C  C++  +R    DP TC+C C + S   C+ + LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_026993721.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026993721</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.8853</Hsp_bit-score>
+      <Hsp_score>211</Hsp_score>
+      <Hsp_evalue>2.68487e-21</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE----MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>QLFLVALLNVSAVDAAYI-PKEGKSKNEVVPFMEVYTKSRCNPRETLVDVQHEYPHDTHVTYLPSCVVLQRCGGCCNDEALECVPTHTNNVTLELYRVK---PGVGEHKTLLSFTEHTHCDCRVK</Hsp_hseq>
+      <Hsp_midline>+L L ALL ++   A    P     + +VV +++VYT++ C PRE +V +  E         +PSCV +QRCGGCC D+ LECVPT  + V +++  ++     +GE    +S  EH+ C+CR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_027027771.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027027771</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>2.258e-18</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>LVQVVAAALLTLPPAQC--SHSGTTNSTSKVILFQEVWGRSFCRTIETLVDVVQEYPGEVEHIYSPSCVPLVRCAGCCGDENLECHPTLTSNVTIQLLKLKPAEQAQEYVEMTFVEHKSCECRLRKR</Hsp_hseq>
+      <Hsp_midline>L +++ AALL L PAQ   S         KV+ + +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC D+ LEC PT    V +Q+L ++    + +  EM+  EH  CECR +K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_027027772.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027027772</Hit_accession>
+  <Hit_len>160</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>4.56206e-18</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>LVQVVAAALLTLPPAQC--SHSGTTNSTSKVILFQEVWGRSFCRTIETLVDVVQEYPGEVEHIYSPSCVPLVRCAGCCGDENLECHPTLTSNVTIQLLKLK-PAEQAQEYVEMTFVEHKSCECRLRKR</Hsp_hseq>
+      <Hsp_midline>L +++ AALL L PAQ   S         KV+ + +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC D+ LEC PT    V +Q+L ++ P+ Q     EM+  EH  CECR +K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_027005276.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin ICPP-like [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027005276</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>75.8702</Hsp_bit-score>
+      <Hsp_score>185</Hsp_score>
+      <Hsp_evalue>2.62637e-17</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>QRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>QSNVILFPDVWHRSLCRPMERLVEVEQEYPGVVEYIFNPRCVPLHRCAGCCNDEQLLCSPTRRHNVTIQLVRINPVQRTKQYVELSFSEHCSCECRPKQN</Hsp_hseq>
+      <Hsp_midline>Q  V+ + DV+ R+ C+P E +V +  E  G V     P CV + RC GCC D+ L C PT +H V +Q++ I     + Q  E+S  EH  CECRPK+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_027009265.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027009265</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>3.07705e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>125</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>MSPLLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWI-DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>MSYALHFLLLFITLSFQTCEA-----NSQGYNEDTRETLKSIREKSSCQPRETLVKVCDEFPEQIQYTIVPRCVAVMRCLGCCTDEATTCMPQKNKTVELQVLRVYSDKTNVIMLPFVMHTKCACRPRRN</Hsp_hseq>
+      <Hsp_midline>MS  L  LLL   L     +A     ++ G+       +  +  +++CQPRE +V +  E    +   +VP CV V RC GCC D+   C+P     V +Q+L +    + +  +    H++C CRP++ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_027009264.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027009264</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.6254</Hsp_bit-score>
+      <Hsp_score>161</Hsp_score>
+      <Hsp_evalue>4.70348e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>MSPLLRRLLLAALL--QLAPAQAPVSQPDAPGHQRKV--VSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>MSYALHFLLLFITLSFQTCEANSQGYNEDTRETLKSIRGISLFVLIEKSSCQPRETLVKVCDEFPEQIQYTIVPRCVAVMRCLGCCTDEATTCMPQKNKTVELQVLRVYSDKTNVIMLPFVMHTKCACRPRRN</Hsp_hseq>
+      <Hsp_midline>MS  L  LLL   L  Q   A +     D     + +  +S   +  +++CQPRE +V +  E    +   +VP CV V RC GCC D+   C+P     V +Q+L +    + +  +    H++C CRP++ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_027001909.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027001909</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>3.17108e-07</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>47</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK-----KKDSAVKPDSP-----RPLCP----------RCT--------QHHQRP------------DPRTCRCRCRRRSFLRCQGRG--LELNPDTCRC</Hsp_qseq>
+      <Hsp_hseq>WRKTLCVPREVCLDVGKEFGAATNTFYKPPCVSVYRCGGCCNSEELQCMNISTSFISKTLFEITVPVKQPPKPVTISFANHTSCSCLSKLDVYRQKHSIIRRALPECHVANKTCPKNQSWSNGLCRCVSLHDSLFPQQHSDPFEQDLCGPNKELDEETCRCVCRKD--LRTAGCGPKRHLDKNTCQC</Hsp_hseq>
+      <Hsp_midline>+ +  C PREV + +  E          P CV+V RCGGCC  + L+C+      +   +  I  P  Q  +   +S   H+ C C  K     +K S ++   P        CP          RC         Q H  P            D  TCRC CR+   LR  G G    L+ +TC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_026994971.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC113638132 isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026994971</Hit_accession>
+  <Hit_len>541</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>9.81207e-07</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRP------KKKDSAVKPDS</Hsp_qseq>
+      <Hsp_hseq>QAQCKVRTEVMEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKNLKCVAVLTHTRYLQVMKIEYINMRPVYNKAVVSVNDHVECRCQPAPRPVSRKKSSSQKQEA</Hsp_hseq>
+      <Hsp_midline>+A C+ R  V+ +T  ++       +  P CV VQRC GCC    L+CV    H   +Q++ I Y    P      +S+ +H +C C+P      +KK S+ K ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_026994972.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC113638132 isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026994972</Hit_accession>
+  <Hit_len>449</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>2.08871e-06</Hsp_evalue>
+      <Hsp_query-from>68</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>LVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRP------KKKDSAVKPDS</Hsp_qseq>
+      <Hsp_hseq>LWPPCVEVQRCSGCCNTKNLKCVAVLTHTRYLQVMKIEYINMRPVYNKAVVSVNDHVECRCQPAPRPVSRKKSSSQKQEA</Hsp_hseq>
+      <Hsp_midline>L P CV VQRC GCC    L+CV    H   +Q++ I Y    P      +S+ +H +C C+P      +KK S+ K ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_027024222.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024222</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>7.10403e-06</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>ANSYSLEVLKAIDEEWQKTQCMPRETCVDVAQELSTSNDMFFKPPCVSVFRCSGCCNKEGVTCRNTSTTYVD-KILLSVVPFKYGPEPMLIRVANHTECKCQ</Hsp_hseq>
+      <Hsp_midline>A  +  +V+  ID  + +  C PRE  V +  EL  +      P CV+V RC GCC  +G+ C  T    V  +IL+   P     E   + +  H++C+C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_027024221.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024221</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>7.60381e-06</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>ANSYSLEVLKAIDEEWQKTQCMPRETCVDVAQELSTSNDMFFKPPCVSVFRCSGCCNKEGVTCRNTSTTYVD-KILLSVVPFKYGPEPMLIRVANHTECKCQ</Hsp_hseq>
+      <Hsp_midline>A  +  +V+  ID  + +  C PRE  V +  EL  +      P CV+V RC GCC  +G+ C  T    V  +IL+   P     E   + +  H++C+C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_027024223.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X3 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024223</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.39596e-05</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>ANSYSLEVLKAIDEEWQKTQCMPRETCVDVAQELSTSNDMFFKPPCVSVFRCSGCCNKEGVTCRNTSTTYVD-KILLSVVPFKYGPEPMLIRVANHTECKCQ</Hsp_hseq>
+      <Hsp_midline>A  +  +V+  ID  + +  C PRE  V +  EL  +      P CV+V RC GCC  +G+ C  T    V  +IL+   P     E   + +  H++C+C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_027018089.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027018089</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>6.98475e-05</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>277</Hsp_hit-from>
+      <Hsp_hit-to>368</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRY-----PSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>SCTPRNYSVSLREELKRTDVI-FWPSCLLVKRCGGNCACCSNNCYDCQCTPTKVTKKYHEVLMLKFRPGRGSLKSLTDVALEHHEECNCECKN</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T      PSC+ V+RCGG   CC ++  +  C PT   +   ++LM+++         L +++LE H +C C  K </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_027024413.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X4 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024413</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0015878</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>TAANFLIWPPCVEVMRCSGCCNTNTMRCHASKKQHRNVKVAKIEYVRRKPKLREVQVQLEDHLECVCMSK</Hsp_hseq>
+      <Hsp_midline>T A  L+ P CV V RC GCC  + + C  + +    +++  I Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_027024412.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X3 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024412</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0019065</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>PREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>PRSQVDPTAANFL------IWPPCVEVMRCSGCCNTNTMRCHASKKQHRNVKVAKIEYVRRKPKLREVQVQLEDHLECVCMSK</Hsp_hseq>
+      <Hsp_midline>PR  V P     +      + P CV V RC GCC  + + C  + +    +++  I Y    P  +  ++ LE+H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_027024476.1|</Hit_id>
+  <Hit_def>LIM domain-containing protein A-like isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024476</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0046996</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELM--GTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTEVMEVTRSMLDRSNANFLLWPHCVEVQRCSGCCNTRMLQCVPVTTQTRLLQMTKIQFIDRRAVYEKVVLPVEDHLSCSCK</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++        L P CV VQRC GCC    L+CVP       +Q+  I++       +   + +E+H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_027024475.1|</Hit_id>
+  <Hit_def>LIM domain-containing protein A-like isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024475</Hit_accession>
+  <Hit_len>487</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00470194</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELM--GTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTEVMEVTRSMLDRSNANFLLWPHCVEVQRCSGCCNTRMLQCVPVTTQTRLLQMTKIQFIDRRAVYEKVVLPVEDHLSCSCK</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++        L P CV VQRC GCC    L+CVP       +Q+  I++       +   + +E+H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_027024479.1|</Hit_id>
+  <Hit_def>LIM domain-containing protein A-like isoform X4 [Tachysurus fulvidraco] &gt;ref|XP_027024480.1| LIM domain-containing protein A-like isoform X4 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024479</Hit_accession>
+  <Hit_len>455</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00502269</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>117</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELM--GTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTEVMEVTRSMLDRSNANFLLWPHCVEVQRCSGCCNTRMLQCVPVTTQTRLLQMTKIQF</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++        L P CV VQRC GCC    L+CVP       +Q+  I++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_027024477.1|</Hit_id>
+  <Hit_def>LIM domain-containing protein A-like isoform X3 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_027024477</Hit_accession>
+  <Hit_len>462</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00504265</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELM--GTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTEVMEVTRSMLDRSNANFLLWPHCVEVQRCSGCCNTRMLQCVPVTTQTRLLQMTKIQFIDRRAVYEKVVLPVEDHLSCSCK</Hsp_hseq>
+      <Hsp_midline>A C+ R  V+ +T  ++        L P CV VQRC GCC    L+CVP       +Q+  I++       +   + +E+H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_026994691.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X1 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026994691</Hit_accession>
+  <Hit_len>364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.013459</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>264</Hsp_hit-from>
+      <Hsp_hit-to>356</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCP---DDGLECVPTGQHQVRMQILMIRYPSS------------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVNLREELKTTNA-VFFPRCILVKRCGGNCACGTEHWNSCTCSSAKTVSKLHEVLKFSPGPNYYKMKTKARWTLAEIKLQHHEQCEC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    P C+ V+RCGG C    +    C  +    V     ++++                L E+ L+ H QCEC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_026994692.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X2 [Tachysurus fulvidraco] &gt;ref|XP_026994693.1| platelet-derived growth factor D isoform X2 [Tachysurus fulvidraco]</Hit_def>
+  <Hit_accession>XP_026994692</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0155016</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>209</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCP---DDGLECVPTGQHQVRMQILMIRYPSS------------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVNLREELKTTNA-VFFPRCILVKRCGGNCACGTEHWNSCTCSSAKTVSKLHEVLKFSPGPNYYKMKTKARWTLAEIKLQHHEQCEC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    P C+ V+RCGG C    +    C  +    V     ++++                L E+ L+ H QCEC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1963366077</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>232</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>232</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_006797282.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006797282</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.846</Hsp_bit-score>
+      <Hsp_score>538</Hsp_score>
+      <Hsp_evalue>2.47363e-69</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>110</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD-RARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>HNVIPLMEVYNKSWCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQKNDIFMSFTEHSACECRLKNEGTEKKEKKSRTGRNKGQKRKRKKNPEKTIHDAV----------------CEPCSERRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>H V+  M+VY +S+C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + ++   MSF +H+ CECR K +   ++EKKS  G+ KGQKRKRKK+  K+    V                C PCSERRK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_006797283.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006797283</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.57</Hsp_bit-score>
+      <Hsp_score>462</Hsp_score>
+      <Hsp_evalue>4.40512e-58</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>HNVIPLMEVYNKSWCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQKNDIFMSFTEHSACEC--------------RLKNEGTEKKE--------------------------NVCEPCSERRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>H V+  M+VY +S+C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + ++   MSF +H+ CEC              R K +G ++K                           + C PCSERRK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_006786183.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006786183</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.872</Hsp_bit-score>
+      <Hsp_score>320</Hsp_score>
+      <Hsp_evalue>4.56995e-36</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>ALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKP-HQGQHIGEMSFLQHNKCECRPKKDRAR</Hsp_qseq>
+      <Hsp_hseq>VVALYLQFSP-AQSLPLASI--NSTMEVLVFEKVWGRSFCRTIEKLVEVVQEYPSEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTTNVTMQLLKIRPSEQGQEYVEMTFVEHQTCECRIRKPVVK</Hsp_hseq>
+      <Hsp_midline> + LYL  +  +Q+ P+A     +  EV+ F  V+ RS+C  IE LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT+ +N+TMQ+++I+P  QGQ   EM+F++H  CECR +K   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_006781356.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006781356</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.301</Hsp_bit-score>
+      <Hsp_score>264</Hsp_score>
+      <Hsp_evalue>1.30795e-27</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFLLLTRIPTSHAKLAHWRPADSPKSREGREVRRWLEVYSRSGCEPRDTLVEVWREFPGETHSLFIPSCVSVRRCGGCCADEAFECVPTLTRTVTMELMRTS-FMKHELTELPFVEHSQCDCRLKE</Hsp_hseq>
+      <Hsp_midline>+  +L    + L   +   HAK +   P      +   EV ++++VY RS C P +TLV++++E+P E   +F PSCV + RCGGCC DE  ECVPT    +TM++MR        + E+ F++H++C+CR K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_006793093.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006793093</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>4.86177e-19</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVRGKGKGQ</Hsp_qseq>
+      <Hsp_hseq>AQMSDEGGPN--TVIQLSEVMAKCSCQVMDQLVYVYDEYPQSVENIYVPHCVVVRRCSGYCSGEEFKCLPTLERNATLQ-LKIS-SQEQPMVELTFLEHQQCQCRDPENLQYYERSVIKSQQQQQ</Hsp_hseq>
+      <Hsp_midline>A M++ GG N   V++  +V  +  C  ++ LV ++ EYP  +E I+ P CV + RC G C+ E  +C+PT E N T+Q ++I   Q Q + E++FL+H +C+CR  ++    E+  ++ + + Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_006792834.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006792834</Hit_accession>
+  <Hit_len>405</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.6254</Hsp_bit-score>
+      <Hsp_score>161</Hsp_score>
+      <Hsp_evalue>1.12949e-12</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>227</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>FMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIM-RIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARC-CLMPWSLPGPHPCGPCSERRKHLF------------VQDPQTCKCSCKN--TDSRCKARQLELNERTCRC</Hsp_qseq>
+      <Hsp_hseq>ILEEIQRTSCQPREVCIEVAKEYPESTSQFYLPHCVALHRCGGCCNNEAFYCTNTSYALVNKTLMERSQSRLDYTAVTVTFINHTSCDCLPK----RPLRSIIRRAATDHLCSPPERACASGLVWDPANCVCVSADTINYP-------EREAEVLDSGLLALCGPNRVLEESTCECICQNGLTEASCDP-GWKLDHNTCEC</Hsp_hseq>
+      <Hsp_midline> ++  QR+ C P E  +++ +EYP+     + P CV L RCGGCCN+E   C  T  + +   +M R +         ++F+ H  C+C PK    R  +  +R           +    S  V+  A C C+   ++  P       ER   +             V +  TC+C C+N  T++ C     +L+  TC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_006780471.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006780471</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.17015e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>249</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGE---MSFLQHNKCEC-RPKKDRARQEKKSVRGKGKGQKRKRKKSRYKSWSVYV----GARCCLMPWSLP</Hsp_qseq>
+      <Hsp_hseq>EILTAIDEEWQRTQCMPRETCVDVAKELGTDHSVFFKPPCVSVHRCSGCCNQEGVTCRNTTTEYVNKTVLSVIPF--KFVPEPVLVKVANHTECKCLEPAIIRRNAQPHRGNGCALGQLSQAEDSKRLCASGFIWDCSSERCIPYPSSTP</Hsp_hseq>
+      <Hsp_midline>E++  +D  +QR+ C P ET VD+ +E   +    FKP CV + RC GCCN EG+ C  T    +   ++ + P   + + E   +    H +C+C  P   R   +     G   GQ  + + S+    S ++      RC   P S P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_006805702.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006805702</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>7.25783e-09</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>324</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>230</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDV-------YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQI--MRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVR-GKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSL---PGPHPCGPCSERRKHLFV-----------QDPQTCKCSCKNTDSRCKARQLELNERTCRCDKP</Hsp_qseq>
+      <Hsp_hseq>QLRPLGDTEEPTFAAVYLNLDILKSIESEWRKTQCSPREVCIDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKNLFEIRVPITQGTKPVTISVANHTQCSCLSKLDIYKQVHSIIRRALPECPLANRTCPLGQTWSNR-QCRCISITASMHVNPLPPLVFPTKPSQQHTDIFSADLCGPNKKLDVESCQCVCHQTQDCGPNHHLNRNTCQCVCNLP</Hsp_hseq>
+      <Hsp_midline>Q  P+ +        V   +D+       ++++ C P E  +D+ +E+       +KP CV + RCGGCC+ E  +C       ++  +  +R+   QG     +S   H +C C  K D  +Q    +R    +     R     ++WS     RC  +  S+   P P    P    ++H  +            D ++C+C C  T        L  N   C C+ P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_006798073.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC102793375 [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006798073</Hit_accession>
+  <Hit_len>520</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>8.67166e-07</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>LALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDV--YQRSYCHPIETLVDIFQEYPD--EIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVR</Hsp_qseq>
+      <Hsp_hseq>LQMLLFSDSVDEEDETSAANGG----HRLPRSLDAQPAQQALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHKRFLQVMKVEYINKKPTYAKAV--VSVVDHVECRCQTAPRPPPHKKKSSR</Hsp_hseq>
+      <Hsp_midline>L +LL+            A GG    H + + +D    Q++ C     +V++ +   D     ++  P CV + RC GCCN + L+CVP       +Q+M++     KP   + +  +S + H +C C+        +KKS R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_006803883.1|</Hit_id>
+  <Hit_def>PREDICTED: putative mediator of RNA polymerase II transcription subunit 26-like [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006803883</Hit_accession>
+  <Hit_len>531</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000154878</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>FLLWPPCVEVQRCSGCCNSPRMECVPIVTSTRYLQVIKIQYINKKPHYEKPI--IPVEDHVSCRC</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN   +ECVP   S   +Q+++I     KPH  + I  +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_006791510.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Neolamprologus brichardi]</Hit_def>
+  <Hit_accession>XP_006791510</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00325006</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVE</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   + C P+ + + T+++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>2011472715</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

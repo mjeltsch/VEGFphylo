@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_030226685.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X5 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226685</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.679</Hsp_bit-score>
+      <Hsp_score>252</Hsp_score>
+      <Hsp_evalue>3.68728e-27</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQ-APVSQPD---APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPK-----KKDSAVKPDR</Hsp_qseq>
+      <Hsp_hseq>LIQILFAAVLHISTIKTASINKEDQKTVKGDKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCCNDEAMECVPTRTRNVTMEVLQVREKVSQHLSQLSFVEHEECDCRQKPEVKIKKEKCDKPRR</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L ++  + A +++ D     G +  VVS++ V+ ++ CQ REV+V +  E    +    +P+CV ++RC GCC D+ +ECVPT    V M++L +R   SQ L ++S  EH +C+CR K     KK+   KP R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_030224531.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030224531</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>104.76</Hsp_bit-score>
+      <Hsp_score>260</Hsp_score>
+      <Hsp_evalue>4.09692e-27</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>AALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDS--------AVKPDRAATPHHRPQPRSVP</Hsp_qseq>
+      <Hsp_hseq>AKLAHWRPADSPRSR-----EAREVRRWMEVYSRSGCEPRDTLVEVWRELPGETHHLFVPACVSVRRCGGCCSDEGMACVPSLTHTLTMELMRTSFMKHDLVELPFVEHSQCECRPKEDARLPTHTTRPLLKPERKGRKKERGKSKRRP</Hsp_hseq>
+      <Hsp_midline>A L    PA +P S+       R+V  W++VY+R+ C+PR+ +V +  EL G      VP+CV+V+RCGGCC D+G+ CVP+  H + M+++   +    L E+   EHSQCECRPK+            +KP+R      R + +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_030226684.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X4 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226684</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.523</Hsp_bit-score>
+      <Hsp_score>249</Hsp_score>
+      <Hsp_evalue>3.01857e-26</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQ-APVSQPD---APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LIQILFAAVLHISTIKTASINKEDQKTVKGDKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCCNDEAMECVPTRTRNVTMEVLQVREKVSQHLSQLSFVEHEECDCRQK</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L ++  + A +++ D     G +  VVS++ V+ ++ CQ REV+V +  E    +    +P+CV ++RC GCC D+ +ECVPT    V M++L +R   SQ L ++S  EH +C+CR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_030226683.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226683</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>4.46395e-26</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQ-APVSQPD---APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LIQILFAAVLHISTIKTASINKEDQKTVKGDKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCCNDEAMECVPTRTRNVTMEVLQVREKVSQHLSQLSFVEHEECDCRQK</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L ++  + A +++ D     G +  VVS++ V+ ++ CQ REV+V +  E    +    +P+CV ++RC GCC D+ +ECVPT    V M++L +R   SQ L ++S  EH +C+CR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_030226681.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Gadus morhua] &gt;ref|XP_030226682.1| vascular endothelial growth factor A-A-like isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226681</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>99.7525</Hsp_bit-score>
+      <Hsp_score>247</Hsp_score>
+      <Hsp_evalue>5.97295e-26</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQ-APVSQPD---APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LIQILFAAVLHISTIKTASINKEDQKTVKGDKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCCNDEAMECVPTRTRNVTMEVLQVREKVSQHLSQLSFVEHEECDCRQK</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L ++  + A +++ D     G +  VVS++ V+ ++ CQ REV+V +  E    +    +P+CV ++RC GCC D+ +ECVPT    V M++L +R   SQ L ++S  EH +C+CR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_030226680.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030226680</Hit_accession>
+  <Hit_len>193</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.5969</Hsp_bit-score>
+      <Hsp_score>244</Hsp_score>
+      <Hsp_evalue>1.96708e-25</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQ-APVSQPD---APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>LIQILFAAVLHISTIKTASINKEDQKTVKGDKNVVVSFMQVFNKSRCQTREVLVDIYKEYPDRIEHTYIPACVILKRCSGCCNDEAMECVPTRTRNVTMEVLQVREKVSQHLSQLSFVEHEECDCRQK</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L ++  + A +++ D     G +  VVS++ V+ ++ CQ REV+V +  E    +    +P+CV ++RC GCC D+ +ECVPT    V M++L +R   SQ L ++S  EH +C+CR K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_030200525.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030200525</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>2.38513e-19</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM-SLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>VVPFMEVYNKSQCQPREVLVEVLHEYPEEVENIYIPSCVVLRRCAGCCSDEKMQCTPTSSHNITMEIKRIKLHRQQNNSFKSFAEHIACECR</Hsp_hseq>
+      <Hsp_midline>VV +++VY ++ CQPREV+V +  E    V    +PSCV ++RC GCC D+ ++C PT  H + M+I  I+    Q     S  EH  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_030200524.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030200524</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.4185</Hsp_bit-score>
+      <Hsp_score>202</Hsp_score>
+      <Hsp_evalue>3.42147e-19</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM-SLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>VVPFMEVYNKSQCQPREVLVEVLHEYPEEVENIYIPSCVVLRRCAGCCSDEKMQCTPTSSHNITMEIKRIKLHRQQNNSFKSFAEHIACECR</Hsp_hseq>
+      <Hsp_midline>VV +++VY ++ CQPREV+V +  E    V    +PSCV ++RC GCC D+ ++C PT  H + M+I  I+    Q     S  EH  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_030200526.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030200526</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.6481</Hsp_bit-score>
+      <Hsp_score>200</Hsp_score>
+      <Hsp_evalue>5.08444e-19</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM-SLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>VVPFMEVYNKSQCQPREVLVEVLHEYPEEVENIYIPSCVVLRRCAGCCSDEKMQCTPTSSHNITMEIKRIKLHRQQNNSFKSFAEHIACECR</Hsp_hseq>
+      <Hsp_midline>VV +++VY ++ CQPREV+V +  E    V    +PSCV ++RC GCC D+ ++C PT  H + M+I  I+    Q     S  EH  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_030212324.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X4 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030212324</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.411</Hsp_bit-score>
+      <Hsp_score>189</Hsp_score>
+      <Hsp_evalue>7.71671e-18</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LLLAAL-LQLAPAQA-PVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKKKDSAVKPDRAATP</Hsp_qseq>
+      <Hsp_hseq>LMAAALQLQLSPAQSLPSSSLNSTSE--VVLNFQEVWHRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDDNMECHPTNTSNVTMLLLKIK-PAAQGQEYVEMTFVEHQTCECR--KREPTMRVERCQVP</Hsp_hseq>
+      <Hsp_midline>L+ AAL LQL+PAQ+ P S  ++      V+++ +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC DD +EC PT    V M +L I+ P++Q     EM+  EH  CECR  K++  ++ +R   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_030212321.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030212321</Hit_accession>
+  <Hit_len>160</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>75.8702</Hsp_bit-score>
+      <Hsp_score>185</Hsp_score>
+      <Hsp_evalue>4.14381e-17</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LLLAAL-LQLAPAQA-PVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LMAAALQLQLSPAQSLPSSSLNSTSE--VVLNFQEVWHRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDDNMECHPTNTSNVTMLLLKIK-PAAQGQEYVEMTFVEHQTCECRKRE</Hsp_hseq>
+      <Hsp_midline>L+ AAL LQL+PAQ+ P S  ++      V+++ +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC DD +EC PT    V M +L I+ P++Q     EM+  EH  CECR ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_030212320.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030212320</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>75.485</Hsp_bit-score>
+      <Hsp_score>184</Hsp_score>
+      <Hsp_evalue>7.18701e-17</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LLLAAL-LQLAPAQA-PVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LMAAALQLQLSPAQSLPSSSLNSTSE--VVLNFQEVWHRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDDNMECHPTNTSNVTMLLLKIK-PAAQGQEYVEMTFVEHQTCECRKRE</Hsp_hseq>
+      <Hsp_midline>L+ AAL LQL+PAQ+ P S  ++      V+++ +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC DD +EC PT    V M +L I+ P++Q     EM+  EH  CECR ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_030200552.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin ICPP-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030200552</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>2.17729e-16</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>RLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVEL----MGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI--RYPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>RLLLILLMQI-PVQSSQAEPNPK------VLFLDLWNRSLCHLMEQLVEVSQEHPATGMGYIYH---PACVPLWRCAGCCSDENLECHPLVTQNTTMQLLRISPSEKSWQYVGLSFTEHLQCECRPRQK</Hsp_hseq>
+      <Hsp_midline>RLLL  L+Q+ P Q+  ++P+        V ++D++ R+ C   E +V ++ E     MG +     P+CV + RC GCC D+ LEC P       MQ+L I     S Q   +S  EH QCECRP++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_030212325.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X5 [Gadus morhua] &gt;ref|XP_030212326.1| placenta growth factor isoform X5 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030212325</Hit_accession>
+  <Hit_len>125</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>4.43536e-15</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>125</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>LLLAAL-LQLAPAQA-PVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCE</Hsp_qseq>
+      <Hsp_hseq>LMAAALQLQLSPAQSLPSSSLNSTS--EVVLNFQEVWHRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDDNMECHPTNTSNVTMLLLKIK-PAAQGQEYVEMTFVEHQTCE</Hsp_hseq>
+      <Hsp_midline>L+ AAL LQL+PAQ+ P S  ++      V+++ +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC DD +EC PT    V M +L I+ P++Q     EM+  EH  CE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_030212323.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030212323</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>1.34013e-14</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ---LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VLNFQEVWHRSFCRTIEKLVEVVQEYPGEVEHIYSPSCVPLVRCAGCCGDDNMECHPTNTSNVTMLLLKIK-PAAQGQEYVEMTFVEHQTCECRKRE</Hsp_hseq>
+      <Hsp_midline>V+++ +V+ R+ C+  E +V +  E  G V     PSCV + RC GCC DD +EC PT    V M +L I+ P++Q     EM+  EH  CECR ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_030211382.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030211382</Hit_accession>
+  <Hit_len>412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.781</Hsp_bit-score>
+      <Hsp_score>164</Hsp_score>
+      <Hsp_evalue>4.40266e-13</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>292</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>IDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQL-GEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPG--WDSAPGAPSPADITHPTP-----APGPSAHAAPSTTSALTPGPAAAAADAAASSVAKGG</Hsp_qseq>
+      <Hsp_hseq>LEELQRTACRPREVCVEVSKEAPEPSSRQYLPRCVALHRCGGCCHHEGVACTNTSHHLVNKTVLELSPLMERLVVTVTFVNHTSCECVSKRPLRAVIRRHAPPLCPPPQAPCSPGLFWDAEGCECVPDDGSHPVRDLGAFAPGPLALC----------GPRRALDDASCECVCRNG</Hsp_hseq>
+      <Hsp_midline>++   R  C+PREV V ++ E     ++Q +P CV + RCGGCC  +G+ C  T  H V   +L +     +L   ++   H+ CEC  K+   AV    A      PQ    PG  WD+      P D +HP       APGP A            GP  A  DA+   V + G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_030199875.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115533459 isoform X2 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030199875</Hit_accession>
+  <Hit_len>509</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>1.11526e-10</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR-------PKKKDSAVKPDRAATPHH</Hsp_qseq>
+      <Hsp_hseq>QALCKVRTEVVEVTRDMLDRSNAHFLLWPPCVEVQRCSGCCNGNTLQCVPVLTHTRYLQVMKIQYINQKPTYNKAVVSVVDHVECRCQPVPRPPAPKKKSSRRGPVPNKDQHH</Hsp_hseq>
+      <Hsp_midline>+A C+ R  VV +T +++       +  P CV VQRC GCC  + L+CVP   H   +Q++ I+Y    P+     +S+ +H +C C+       PKKK S   P      HH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_030199866.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115533459 isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030199866</Hit_accession>
+  <Hit_len>528</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>1.11839e-10</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR-------PKKKDSAVKPDRAATPHH</Hsp_qseq>
+      <Hsp_hseq>QALCKVRTEVVEVTRDMLDRSNAHFLLWPPCVEVQRCSGCCNGNTLQCVPVLTHTRYLQVMKIQYINQKPTYNKAVVSVVDHVECRCQPVPRPPAPKKKSSRRGPVPNKDQHH</Hsp_hseq>
+      <Hsp_midline>+A C+ R  VV +T +++       +  P CV VQRC GCC  + L+CVP   H   +Q++ I+Y    P+     +S+ +H +C C+       PKKK S   P      HH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_030208717.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like [Gadus morhua] &gt;ref|XP_030208719.1| platelet-derived growth factor subunit B-like [Gadus morhua] &gt;ref|XP_030208720.1| platelet-derived growth factor subunit B-like [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030208717</Hit_accession>
+  <Hit_len>362</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>1.3099e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>91</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVEL--MGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS--QLGE--MSLEEHSQCECRPKKKDSAV</Hsp_qseq>
+      <Hsp_hseq>AGCKVRTEVQEVTRAMHDISNAHFMLWPPCVEVQRCSGCCNSQIMHCVPTITSTRDLEVVKIQYLNSKPQIGKAIVSVEDHLSCRCEQRAHPRAI</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  +T  +  +      L P CV VQRC GCC    + CVPT      ++++ I+Y +S  Q+G+  +S+E+H  C C  +    A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_030207867.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030207867</Hit_accession>
+  <Hit_len>430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>1.20464e-06</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAFYNMDVMKSIDAEWRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCQSEDKQCRNISTGFLSKTLFEITVPNTQDTKPVTISVANHTRCNCLSK</Hsp_hseq>
+      <Hsp_midline>A  +   V+  ID   R T C PREV V +  E          P CV+V RCGGCC  +  +C       +   +  I  P++Q  +   +S+  H++C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_030207869.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X3 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030207869</Hit_accession>
+  <Hit_len>383</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>1.44889e-06</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>PVSQPD--APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>PLEEPGYAAAFYNMDVMKSIDAEWRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCQSEDKQCRNISTGFLSKTLFEITVPNTQDTKPVTISVANHTRCNCLSK</Hsp_hseq>
+      <Hsp_midline>P+ +P   A  +   V+  ID   R T C PREV V +  E          P CV+V RCGGCC  +  +C       +   +  I  P++Q  +   +S+  H++C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_030207084.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030207084</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>5.27425e-06</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>HKRSIV--VEEAVPALCKVRTVIYDIPRAQVDASSANFIVWPSCVELRRCSGCCNTGNLCCQPSRIHHRTVKVAKVEYVRRRPKLREVQIRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>H+R +V  ++    A C+ R V+  +   ++  + A  +V PSCV ++RC GCC    L C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_030232592.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030232592</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>7.9241e-05</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>142</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>WQRTQCMPRETCVDVAKELGTDPSMFFKPPCVSVYRCNGCCNTEGATCRNTTATYVNKTLLSV-IPFKFGPEPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL    +    P CV+V RC GCC  +G  C  T    V   +L +  P     E   + +  H++C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_030237275.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030237275</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000440129</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>259</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>IDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCP------DDGLEC----VPTGQHQVRMQILMIRYPSSQ--------LGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>YDDVRRYSCTPRNLTVNLREELRATNAV-FFPRCLLVKRCGGNCACGTADWNNGCTCQAAKTAVKLHEVLKYAPEMRSSGSQRRPRVRWVIDEIFLTHHEKCHC</Hsp_hseq>
+      <Hsp_midline> D   R +C PR + V L  EL  T A    P C+ V+RCGG C       ++G  C         H+V      +R   SQ        + E+ L  H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_030224927.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030224927</Hit_accession>
+  <Hit_len>301</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0382545</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>200</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG-----------CCPDDGLECVPTGQHQVRMQILMIRYPSSQLG------EMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>SCSPRNVSVSLREELRRTDAI-FWPGCLLVRRCGGNCSCSQCSQSCSQSGEQCACIPSRTSRKYYEVLQLKHRAGGRGLQRSMTDVVLEHHEECSCQCQQN</Hsp_hseq>
+      <Hsp_midline>+C PR V V L  EL  T A    P C+ V+RCGG               +   C+P+   +   ++L +++ +   G      ++ LE H +C C+ ++ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_030232128.1|</Hit_id>
+  <Hit_def>mucin-2-like isoform X1 [Gadus morhua]</Hit_def>
+  <Hit_accession>XP_030232128</Hit_accession>
+  <Hit_len>1775</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0550427</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>1226</Hsp_hit-from>
+      <Hsp_hit-to>1303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>PKKKDSAVKPDRAATPHHRPQPRS--VPGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGPAAAAADAAASSV</Hsp_qseq>
+      <Hsp_hseq>PTVSTSTRTPGTSPTPGISPKPGTSPTPGTSPTPGT-SPTPGTSPTPGTSPTPGTSPTPGTSPTPGTSPTPCQTTACDI</Hsp_hseq>
+      <Hsp_midline>P    S   P  + TP   P+P +   PG    PG  SP   T PTP   P+   +P+  ++ TPG +       A  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2705514744</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

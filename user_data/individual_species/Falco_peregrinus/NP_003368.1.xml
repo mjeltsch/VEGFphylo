@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_005243975.2|</Hit_id>
+  <Hit_def>placenta growth factor [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005243975</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>4.88416e-21</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ--LGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VLTFREIWNRSFCRPLEQLVDVITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVETSKVTMQLLKIK-PNGEAPYVEMAFTEHKQCECRPRQ</Hsp_hseq>
+      <Hsp_midline>V+++ +++ R+ C+P E +V +  E    V     PSCV++QRCGGCC D+GL CVP    +V MQ+L I+ P+ +    EM+  EH QCECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_013155676.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_013155676</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>7.08131e-21</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKK</Hsp_hseq>
+      <Hsp_midline>V+ +++VY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I+ I+ + S  +  MS  +HS+C+CRPKK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_005236755.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005236755</Hit_accession>
+  <Hit_len>515</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>2.0801e-10</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>207</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+    + +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_027641449.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X3 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_027641449</Hit_accession>
+  <Hit_len>375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>5.44426e-10</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+    + +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_027641448.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_027641448</Hit_accession>
+  <Hit_len>380</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>6.09076e-10</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNVSTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+    + +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_005231985.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005231985</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>6.12978e-10</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC---RPKKKDSAVK-----PDRAATPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPG</Hsp_qseq>
+      <Hsp_hseq>WQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTACKCLSNTPRHQYTIIRRSVQYPEEDGCPFTNKLCHNGWIWDS-DKCECVVDVQHPNRREG</Hsp_hseq>
+      <Hsp_midline>+ +  C PRE  V +  EL  T  K   P CV V RCGGCC ++ L C+ T    V   +  I  P + + E   + +  H+ C+C    P+ + + ++     P+    P       +   WDS        D+ HP    G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_013150995.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_013150995</Hit_accession>
+  <Hit_len>276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>2.58011e-09</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPGWDSA</Hsp_qseq>
+      <Hsp_hseq>AECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEFVQRKPKFKKVIVPLEDHVQCRCEAVSR----QPPRNSRPGPREQRRLSPSFTTA</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  ++  ++ +     V  P CV VQRC GCC +  ++C PT      +Q+  I +    P  +   + LE+H QC C    +    +P R + P  R Q R  P + +A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_013150792.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_013150792</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.08426e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS--QLGE--MSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSSNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y     +L E  + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_005232593.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005232593</Hit_accession>
+  <Hit_len>336</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000945325</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>240</Hsp_hit-from>
+      <Hsp_hit-to>328</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPD--DGLECVPTGQHQVRMQILM------IRYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRT-DTIFWPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T      P C+ V+RCGG   CC    +  +CVPT   +   ++L       +R     L ++ LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_005230615.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X1 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005230615</Hit_accession>
+  <Hit_len>375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0135952</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>267</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_027632854.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X2 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_027632854</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0149451</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>261</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_027632855.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X3 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_027632855</Hit_accession>
+  <Hit_len>355</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0164396</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>247</Hsp_hit-from>
+      <Hsp_hit-to>288</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1726344398</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

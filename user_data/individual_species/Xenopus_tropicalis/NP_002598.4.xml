@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_012825385.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Xenopus tropicalis] &gt;gb|KAE8579485.1| hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_012825385</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>285.034</Hsp_bit-score>
+      <Hsp_score>728</Hsp_score>
+      <Hsp_evalue>5.42296e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETGRTRETGKKRKRKKLKPT</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+TGR RE+GKKRKRK+LKPT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|KAE8579487.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8579487</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>275.789</Hsp_bit-score>
+      <Hsp_score>704</Hsp_score>
+      <Hsp_evalue>1.64628e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGR</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETGK</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+TG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_031748295.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Xenopus tropicalis] &gt;gb|KAE8579484.1| hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_031748295</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.174</Hsp_bit-score>
+      <Hsp_score>705</Hsp_score>
+      <Hsp_evalue>2.2745e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREED-----------TGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETGLFTSPALVLTGRTRETGKKRKRKKLKPT</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+           TGR RE+GKKRKRK+LKPT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|NP_001163968.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A precursor [Xenopus tropicalis] &gt;gb|AAI58257.1| Unknown (protein for MGC:185184) [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>NP_001163968</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>274.633</Hsp_bit-score>
+      <Hsp_score>701</Hsp_score>
+      <Hsp_evalue>7.45221e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>162</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGR</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETER</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+T R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_012825387.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X4 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_012825387</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>274.248</Hsp_bit-score>
+      <Hsp_score>700</Hsp_score>
+      <Hsp_evalue>7.8736e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>162</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGR</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETER</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+T R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_012825388.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X5 [Xenopus tropicalis] &gt;gb|KAE8579488.1| hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_012825388</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>272.707</Hsp_bit-score>
+      <Hsp_score>696</Hsp_score>
+      <Hsp_evalue>2.71115e-93</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>161</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDT</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEET</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_031748296.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_031748296</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>270.011</Hsp_bit-score>
+      <Hsp_score>689</Hsp_score>
+      <Hsp_evalue>6.29158e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>156</Hsp_identity>
+      <Hsp_positive>177</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREED-----------TGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVE-AVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETGLFTSPALVLTGRTRETGKKRKRKKLKPT</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+E AVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+           TGR RE+GKKRKRK+LKPT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|KAE8579486.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8579486</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.766</Hsp_bit-score>
+      <Hsp_score>665</Hsp_score>
+      <Hsp_evalue>1.61973e-88</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>156</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>LACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGR</Hsp_qseq>
+      <Hsp_hseq>FVCVSFLTCLFPDGL--KEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEETER</Hsp_hseq>
+      <Hsp_midline>  C+  L C +   +  +EAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+T R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|KAE8579489.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10024066 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8579489</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.84</Hsp_bit-score>
+      <Hsp_score>660</Hsp_score>
+      <Hsp_evalue>7.34919e-88</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>155</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>193</Hsp_align-len>
+      <Hsp_qseq>LACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDT</Hsp_qseq>
+      <Hsp_hseq>FVCVSFLTCLFPDGL--KEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVQLEEHLECTCTANS-NSDYREEET</Hsp_hseq>
+      <Hsp_midline>  C+  L C +   +  +EAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYVRKKPKLKEV V+LEEHLEC C   S N DYREE+T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>emb|CAL49315.1|</Hit_id>
+  <Hit_def>platelet derived growth factor, alpha, partial [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>CAL49315</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>224.557</Hsp_bit-score>
+      <Hsp_score>571</Hsp_score>
+      <Hsp_evalue>6.35948e-75</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>158</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLG-CGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGS-EDSLDTSLRAH--GVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYV</Hsp_qseq>
+      <Hsp_hseq>MRIWAWILLLSVCCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIRSQTRDFRHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSKIDSTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYV</Hsp_hseq>
+      <Hsp_midline>MR  A +LLL  C YL+  L EEAEIP+E+IERLA S+I SI DLQRLL+IDSVG  ED+   ++R+        + VPEKR +P RRKRS+EEAVPA+CKTRTVIYEIPRS++D TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSR+HHRSVKVAKVEYV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KAE8611489.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10012473 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8611489</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>127.102</Hsp_bit-score>
+      <Hsp_score>318</Hsp_score>
+      <Hsp_evalue>6.99624e-36</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>VLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI--EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>VSAEGDPIPEEMFKKISEGAVTSISELRRVLQIDSVDDEDDLNYA----SIHQTRSSPTNSSSHSRVIRSLDAEKAVIAECKPRVEVFEISRKIVDPTNANFLVWPPCVEVQRCSGCCNSKNMRCAPTRIHVRHVQVNKIFITPKGKKQVKVVVPLEDHHDCKC</Hsp_hseq>
+      <Hsp_midline>V AE   IP E+ ++++   + SI +L+R+L+IDSV  ED L+ +     +H T+  P       R  RS+  E+AV A CK R  ++EI R  VDPT+ANFL+WPPCVEV+RC+GCCN+ +++C P+R+H R V+V K+    K  K  +V V LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|NP_001297028.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B precursor [Xenopus tropicalis] &gt;gb|AAI60575.1| pdgfb protein [Xenopus tropicalis] &gt;gb|KAE8611488.1| hypothetical protein XENTR_v10012473 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>NP_001297028</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.331</Hsp_bit-score>
+      <Hsp_score>316</Hsp_score>
+      <Hsp_evalue>2.02541e-35</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>VLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI--EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>VSAEGDPIPEEMFKKISEGAVTSISELRRVLQIDSVDDEDDLNYA----SIHQTRSSPTNSSSHSRVIRSLDAEKAVIAECKPRVEVFEISRKIVDPTNANFLVWPPCVEVQRCSGCCNSKNMRCAPTRIHVRHVQVNKIFITPKGKKQVKVVVPLEDHHDCKC</Hsp_hseq>
+      <Hsp_midline>V AE   IP E+ ++++   + SI +L+R+L+IDSV  ED L+ +     +H T+  P       R  RS+  E+AV A CK R  ++EI R  VDPT+ANFL+WPPCVEV+RC+GCCN+ +++C P+R+H R V+V K+    K  K  +V V LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_004913816.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Xenopus tropicalis] &gt;ref|XP_012817969.1| platelet-derived growth factor subunit B isoform X1 [Xenopus tropicalis] &gt;gb|KAE8611490.1| hypothetical protein XENTR_v10012473 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_004913816</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.627</Hsp_bit-score>
+      <Hsp_score>296</Hsp_score>
+      <Hsp_evalue>1.30773e-32</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>VIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI--EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>MFKKISEGAVTSISELRRVLQIDSVDDEDDLNYA----SIHQTRSSPTNSSSHSRVIRSLDAEKAVIAECKPRVEVFEISRKIVDPTNANFLVWPPCVEVQRCSGCCNSKNMRCAPTRIHVRHVQVNKIFITPKGKKQVKVVVPLEDHHDCKC</Hsp_hseq>
+      <Hsp_midline>+ ++++   + SI +L+R+L+IDSV  ED L+ +     +H T+  P       R  RS+  E+AV A CK R  ++EI R  VDPT+ANFL+WPPCVEV+RC+GCCN+ +++C P+R+H R V+V K+    K  K  +V V LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>emb|CAL49348.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor, partial [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>CAL49348</Hit_accession>
+  <Hit_len>132</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>2.33446e-07</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCQVREILVDI--FQEYPDEVEYIFKPSCVPLMRCAGCCNDESLECVPTESYNITMQIMKI-----KPHISQHIMDMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ +I   Q  P    ++  P CV + RC GCCN  S++C P+  ++ ++++ K+     KP + +  + +  ++H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|NP_001107704.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A precursor [Xenopus tropicalis] &gt;gb|AAI58523.1| vegfa protein [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>NP_001107704</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.14065e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCQVREILVDI--FQEYPDEVEYIFKPSCVPLMRCAGCCNDESLECVPTESYNITMQIMKI-----KPHISQHIMDMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ +I   Q  P    ++  P CV + RC GCCN  S++C P+  ++ ++++ K+     KP + +  + +  ++H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|KAE8600141.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10013096 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8600141</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.35022e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCQVREILVDI--FQEYPDEVEYIFKPSCVPLMRCAGCCNDESLECVPTESYNITMQIMKI-----KPHISQHIMDMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ +I   Q  P    ++  P CV + RC GCCN  S++C P+  ++ ++++ K+     KP + +  + +  ++H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|KAE8607450.1|</Hit_id>
+  <Hit_def>hypothetical protein XENTR_v10011190 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>KAE8607450</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>6.11797e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHYSDFLFIPPCVSVLRCAGCCLDEALGCTPLQTNNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>P  ++FL  PPCV V RC GCC   ++ C P + ++ +++V K + ++         + + +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_004913697.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Xenopus tropicalis] &gt;ref|XP_004913698.1| vascular endothelial growth factor B isoform X2 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_004913697</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>1.82328e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHYSDFLFIPPCVSVLRCAGCCLDEALGCTPLQTNNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>P  ++FL  PPCV V RC GCC   ++ C P + ++ +++V K + ++         + + +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_031756507.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_031756507</Hit_accession>
+  <Hit_len>278</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>2.10482e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHYSDFLFIPPCVSVLRCAGCCLDEALGCTPLQTNNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>P  ++FL  PPCV V RC GCC   ++ C P + ++ +++V K + ++         + + +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_002940269.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X4 [Xenopus tropicalis] &gt;gb|KAE8607449.1| hypothetical protein XENTR_v10011190 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002940269</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.37366e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHYSDFLFIPPCVSVLRCAGCCLDEALGCTPLQTNNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>P  ++FL  PPCV V RC GCC   ++ C P + ++ +++V K + ++         + + +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_031756508.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X3 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_031756508</Hit_accession>
+  <Hit_len>244</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.52802e-05</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PHYSDFLFIPPCVSVLRCAGCCLDEALGCTPLQTNNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>P  ++FL  PPCV V RC GCC   ++ C P + ++ +++V K + ++         + + +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_002933363.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Xenopus tropicalis] &gt;gb|KAE8629860.1| hypothetical protein XENTR_v10000618 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002933363</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000117077</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>LAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSV---------GSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIE-EAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>FGDTKDQPGRELEEQLRS-VSSVDELMTLLYPESWKMFKCQLRQGGSTGYDTRREDSFTFAAAHYNYNAEI----WKSIENEWRKTQCIPREVCVDVGKEFGAPTNTFFK--PPCVSVYRCGGCCNSEGLHCMNTSSTFVSKTLFEITVPLSQGPVKPVTISFANHTSCRCMS</Hsp_hseq>
+      <Hsp_midline>  +  + P   +E   RS + S+ +L  LL  +S          G     DT        A  H      +     +SIE E     C  R V  ++ +    PT+  F   PPCV V RC GCCN+  + C  +     S  + ++     +  +K V +    H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_002934792.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Xenopus tropicalis] &gt;gb|KAE8630080.1| hypothetical protein XENTR_v10000683 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002934792</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00040895</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>271</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTG---CCN--TSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQ-----VRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IFWPSCLLVKRCGGNCACCNHMCSECHCMPTKV---TKKYHEVLQLKQRSGMKTLQKSLADVPLEHHEECAC</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G   CCN   S   C P++V   + K  +V  ++++  +K +Q     V LE H ECAC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_002942609.3|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Xenopus tropicalis] &gt;gb|KAE8621933.1| hypothetical protein XENTR_v10005040 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002942609</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00179931</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE---VQVRLEEHLECACATTS</Hsp_qseq>
+      <Hsp_hseq>TSTNTFFKPPCVSVFRCGGCCNEEGISC----VNTSTSYIFKTLFEISVPLTQAPEPVTIKIANHTSCKCTPSS</Hsp_hseq>
+      <Hsp_midline>TS N    PPCV V RC GCCN   + C    V+  +  + K  +    P  +    V +++  H  C C  +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>105</Statistics_hsp-len>
+      <Statistics_eff-space>4366170740</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

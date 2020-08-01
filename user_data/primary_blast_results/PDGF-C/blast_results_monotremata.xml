@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.6.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>NP_057289.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>platelet-derived growth factor C precursor [Homo sapiens] &gt;ref|XP_004040602.1| platelet-derived growth factor C [Gorilla gorilla gorilla] &gt;sp|Q9NRA1.2| RecName: Full=Platelet-derived growth factor C; Short=PDGF-C; AltName: Full=Fallotein; AltName: Full=Spinal cord-derived growth factor; Short=SCDGF; AltName: Full=VEGF-E; Contains: RecName: Full=Platelet-derived growth factor C, latent form; Short=PDGFC latent form; Contains: RecName: Full=Platelet-derived growth factor C, receptor-binding form; Short=PDGFC receptor-binding form; Flags: Precursor [Homo sapiens] &gt;dbj|BAJ20843.1| platelet derived growth factor C, partial [synthetic construct] &gt;gb|AAF00049.1| secretory growth factor-like protein fallotein [Homo sapiens] &gt;gb|AAI36663.1| Platelet derived growth factor C [Homo sapiens] &gt;gb|AAK51637.1| platelet-derived growth factor C [Homo sapiens] &gt;gb|AAQ88857.1| fallotein (VEGF-E) [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>182</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>NP_057289.1</Iteration_query-ID>
+  <Iteration_query-def>platelet-derived growth factor C precursor [Homo sapiens] &gt;ref|XP_004040602.1| platelet-derived growth factor C [Gorilla gorilla gorilla] &gt;sp|Q9NRA1.2| RecName: Full=Platelet-derived growth factor C; Short=PDGF-C; AltName: Full=Fallotein; AltName: Full=Spinal cord-derived growth factor; Short=SCDGF; AltName: Full=VEGF-E; Contains: RecName: Full=Platelet-derived growth factor C, latent form; Short=PDGFC latent form; Contains: RecName: Full=Platelet-derived growth factor C, receptor-binding form; Short=PDGFC receptor-binding form; Flags: Precursor [Homo sapiens] &gt;dbj|BAJ20843.1| platelet derived growth factor C, partial [synthetic construct] &gt;gb|AAF00049.1| secretory growth factor-like protein fallotein [Homo sapiens] &gt;gb|AAI36663.1| Platelet derived growth factor C [Homo sapiens] &gt;gb|AAK51637.1| platelet-derived growth factor C [Homo sapiens] &gt;gb|AAQ88857.1| fallotein (VEGF-E) [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>182</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_028932618.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X3 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028932618</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>326.25</Hsp_bit-score>
+      <Hsp_score>835</Hsp_score>
+      <Hsp_evalue>3.72466e-114</Hsp_evalue>
+      <Hsp_query-from>164</Hsp_query-from>
+      <Hsp_query-to>345</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>MPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTGG</Hsp_qseq>
+      <Hsp_hseq>MPQHTEAVSPSALTPSTLPLDLLNNAVAAFSTVEELIRYLEPDRWQLDLEDLYRPTWHILGKAFTLGRKSRVVDLNLLKEEVRLYSCTPRNFSVSLREELKRTDLIYWPSCLLVKRCGGNCACCQHNCNECQCIPTKITKKYHEVLQLKPRIGGRGLHKSLIDVHLEHHEECDCVCKGSTEG</Hsp_hseq>
+      <Hsp_midline>MPQ TEAVSPS L PS LPLDLLNNA+ AFST+E+LIRYLEP+RWQLDLEDLYRPTW +LGKAF  GRKSRVVDLNLL EEVRLYSCTPRNFSVS+REELKRTD I+WP CLLVKRCGGNCACC HNCNECQC+P+K+TKKYHEVLQL+P+ G RGLHKSL DV LEHHEECDCVC+GST G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_028932616.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X1 [Ornithorhynchus anatinus] &gt;ref|XP_028932617.1| platelet-derived growth factor C isoform X1 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028932616</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>328.561</Hsp_bit-score>
+      <Hsp_score>841</Hsp_score>
+      <Hsp_evalue>4.30075e-114</Hsp_evalue>
+      <Hsp_query-from>164</Hsp_query-from>
+      <Hsp_query-to>345</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>346</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>MPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTGG</Hsp_qseq>
+      <Hsp_hseq>MPQHTEAVSPSALTPSTLPLDLLNNAVAAFSTVEELIRYLEPDRWQLDLEDLYRPTWHILGKAFTLGRKSRVVDLNLLKEEVRLYSCTPRNFSVSLREELKRTDLIYWPSCLLVKRCGGNCACCQHNCNECQCIPTKITKKYHEVLQLKPRIGGRGLHKSLIDVHLEHHEECDCVCKGSTEG</Hsp_hseq>
+      <Hsp_midline>MPQ TEAVSPS L PS LPLDLLNNA+ AFST+E+LIRYLEP+RWQLDLEDLYRPTW +LGKAF  GRKSRVVDLNLL EEVRLYSCTPRNFSVS+REELKRTD I+WP CLLVKRCGGNCACC HNCNECQC+P+K+TKKYHEVLQL+P+ G RGLHKSL DV LEHHEECDCVC+GST G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_007671247.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X2 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_007671247</Hit_accession>
+  <Hit_len>335</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>327.405</Hsp_bit-score>
+      <Hsp_score>838</Hsp_score>
+      <Hsp_evalue>1.10971e-113</Hsp_evalue>
+      <Hsp_query-from>164</Hsp_query-from>
+      <Hsp_query-to>345</Hsp_query-to>
+      <Hsp_hit-from>154</Hsp_hit-from>
+      <Hsp_hit-to>335</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>MPQFTEAVSPSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTGG</Hsp_qseq>
+      <Hsp_hseq>MPQHTEAVSPSALTPSTLPLDLLNNAVAAFSTVEELIRYLEPDRWQLDLEDLYRPTWHILGKAFTLGRKSRVVDLNLLKEEVRLYSCTPRNFSVSLREELKRTDLIYWPSCLLVKRCGGNCACCQHNCNECQCIPTKITKKYHEVLQLKPRIGGRGLHKSLIDVHLEHHEECDCVCKGSTEG</Hsp_hseq>
+      <Hsp_midline>MPQ TEAVSPS L PS LPLDLLNNA+ AFST+E+LIRYLEP+RWQLDLEDLYRPTW +LGKAF  GRKSRVVDLNLL EEVRLYSCTPRNFSVS+REELKRTD I+WP CLLVKRCGGNCACC HNCNECQC+P+K+TKKYHEVLQL+P+ G RGLHKSL DV LEHHEECDCVC+GST G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_007665026.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X3 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_007665026</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>5.19719e-48</Hsp_evalue>
+      <Hsp_query-from>173</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>167</Hsp_hit-from>
+      <Hsp_hit-to>334</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>PSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP----KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>PSVTDPT-LTADALDQTVAGFDTVEDLLKHFNPETWQEDLENLYLETPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLSNVVFFPRCLLVQRCGGNCGCGSPNWRSCTCNSGKTVKKFHEVLKFEPGHFKRRGRTKNNMGLVDIQLEHHDRCDCIC</Hsp_hseq>
+      <Hsp_midline>PSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK ++ +F+P CLLV+RCGGNC C   N   C C   K  KK+HEVL+  P    + G    +  L D+ LEHH+ CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_028904004.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X4 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028904004</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>5.28685e-48</Hsp_evalue>
+      <Hsp_query-from>173</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>328</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>PSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP----KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>PSVTDPT-LTADALDQTVAGFDTVEDLLKHFNPETWQEDLENLYLETPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLSNVVFFPRCLLVQRCGGNCGCGSPNWRSCTCNSGKTVKKFHEVLKFEPGHFKRRGRTKNNMGLVDIQLEHHDRCDCIC</Hsp_hseq>
+      <Hsp_midline>PSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK ++ +F+P CLLV+RCGGNC C   N   C C   K  KK+HEVL+  P    + G    +  L D+ LEHH+ CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_028904002.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X1 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028904002</Hit_accession>
+  <Hit_len>372</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>1.29017e-47</Hsp_evalue>
+      <Hsp_query-from>173</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>PSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP----KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>PSVTDPT-LTADALDQTVAGFDTVEDLLKHFNPETWQEDLENLYLETPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLSNVVFFPRCLLVQRCGGNCGCGSPNWRSCTCNSGKTVKKFHEVLKFEPGHFKRRGRTKNNMGLVDIQLEHHDRCDCIC</Hsp_hseq>
+      <Hsp_midline>PSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK ++ +F+P CLLV+RCGGNC C   N   C C   K  KK+HEVL+  P    + G    +  L D+ LEHH+ CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_028904003.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X2 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028904003</Hit_accession>
+  <Hit_len>366</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.458</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.60507e-47</Hsp_evalue>
+      <Hsp_query-from>173</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>PSVLPPSALPLDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRP----KTGVRGLHKSLTDVALEHHEECDCVC</Hsp_qseq>
+      <Hsp_hseq>PSVTDPT-LTADALDQTVAGFDTVEDLLKHFNPETWQEDLENLYLETPHYRGRSY-HDRKSKV-DLDRLNDDVKRYSCTPRNYSVNLREELKLSNVVFFPRCLLVQRCGGNCGCGSPNWRSCTCNSGKTVKKFHEVLKFEPGHFKRRGRTKNNMGLVDIQLEHHDRCDCIC</Hsp_hseq>
+      <Hsp_midline>PSV  P+ L  D L+  +  F T+EDL+++  PE WQ DLE+LY  T    G+++   RKS+V DL+ L ++V+ YSCTPRN+SV++REELK ++ +F+P CLLV+RCGGNC C   N   C C   K  KK+HEVL+  P    + G    +  L D+ LEHH+ CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_028935588.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028935588</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>2.61994e-06</Hsp_evalue>
+      <Hsp_query-from>183</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>LDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSR-------VVDLNLLTEEVRLYSCTPRNFSVSIREELKR-TDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LERSEQQIKAASSLEELLQITHSEDWKLWKCRLKLKSFTNIDSRSAPHRSTRFAAAFYDIETLKVIDEEWQRTQCMPRETCVEVAKELGRSTNTFFKPPCVNVFRCGGCC</Hsp_hseq>
+      <Hsp_midline>L+     I A S+LE+L++    E W+L    L   ++  +       R +R       +  L ++ EE +   C PR   V + +EL R T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_028935589.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028935589</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.73991e-06</Hsp_evalue>
+      <Hsp_query-from>183</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>LDLLNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVFGRKSR-------VVDLNLLTEEVRLYSCTPRNFSVSIREELKR-TDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LERSEQQIKAASSLEELLQITHSEDWKLWKCRLKLKSFTNIDSRSAPHRSTRFAAAFYDIETLKVIDEEWQRTQCMPRETCVEVAKELGRSTNTFFKPPCVNVFRCGGCC</Hsp_hseq>
+      <Hsp_midline>L+     I A S+LE+L++    E W+L    L   ++  +       R +R       +  L ++ EE +   C PR   V + +EL R T+T F P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_028932887.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028932887</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>1.04211e-05</Hsp_evalue>
+      <Hsp_query-from>186</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVF-GRKSRVVD----------LNLLTEEVRLYSCTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRAVSSVDELMTVLYPEYWKMFKCQLRKGGWQRPREHATFDARTEDTVQFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSIYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L   + A S++++L+  L PE W++    L +  WQ   +   F  R    V           L  +  E R   C PR   + + +E    T+T F P C+ + RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_028932886.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028932886</Hit_accession>
+  <Hit_len>395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.34036e-05</Hsp_evalue>
+      <Hsp_query-from>186</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LNNAITAFSTLEDLIRYLEPERWQLDLEDLYRPTWQLLGKAFVF-GRKSRVVD----------LNLLTEEVRLYSCTPRNFSVSIREEL-KRTDTIFWPGCLLVKRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRAVSSVDELMTVLYPEYWKMFKCQLRKGGWQRPREHATFDARTEDTVQFAAAHYNTEILKSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSIYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L   + A S++++L+  L PE W++    L +  WQ   +   F  R    V           L  +  E R   C PR   + + +E    T+T F P C+ + RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_028913869.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028913869</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00609041</Hsp_evalue>
+      <Hsp_query-from>179</Hsp_query-from>
+      <Hsp_query-to>344</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>SALPLDLLNN-AITAFSTLEDLIRYLEPERWQL-DLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSI-REELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTG</Hsp_qseq>
+      <Hsp_hseq>AEIPRELIERLAHSEIHSIRDLQRLLEIDSVGYEDVSETNLRSHNIHGAKHAQEKRPVPIRRKRSIEEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTG---CC--NTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVL--VRLEEHLECTCTSLNSNS</Hsp_hseq>
+      <Hsp_midline>+ +P +L+   A +   ++ DL R LE +     D+ +    +  + G      ++   +      EE     C  R     I R ++  T   F  WP C+ VKRC G   CC  N +  +C PS++  +  +V ++        L + L  V LE H EC C    S  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_028913870.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028913870</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.00815913</Hsp_evalue>
+      <Hsp_query-from>179</Hsp_query-from>
+      <Hsp_query-to>344</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>SALPLDLLNN-AITAFSTLEDLIRYLEPERWQL-DLEDLYRPTWQLLGKAFVFGRKSRVVDLNLLTEEVRLYSCTPRNFSVSI-REELKRTDTIF--WPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGSTG</Hsp_qseq>
+      <Hsp_hseq>AEIPRELIERLAHSEIHSIRDLQRLLEIDSVGYEDVSETNLRSHNIHGAKHAQEKRPVPIRRKRSIEEAIPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTG---CC--NTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVL--VRLEEHLECTCTSLNSNS</Hsp_hseq>
+      <Hsp_midline>+ +P +L+   A +   ++ DL R LE +     D+ +    +  + G      ++   +      EE     C  R     I R ++  T   F  WP C+ VKRC G   CC  N +  +C PS++  +  +V ++        L + L  V LE H EC C    S  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_028935353.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028935353</Hit_accession>
+  <Hit_len>276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.00966389</Hsp_evalue>
+      <Hsp_query-from>269</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>IFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>LVWPPCVEVQRCSG---CC--NNRNVRCRPSKVQLRHVQVRKIEITRKKPTFKKAI--VVLEDHMACKC</Hsp_hseq>
+      <Hsp_midline>+ WP C+ V+RC G   CC  N    +C PSKV  ++ +V ++          K++  V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_028903495.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A, partial [Ornithorhynchus anatinus]</Hit_def>
+  <Hit_accession>XP_028903495</Hit_accession>
+  <Hit_len>323</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0190773</Hsp_evalue>
+      <Hsp_query-from>267</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>177</Hsp_hit-from>
+      <Hsp_hit-to>237</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>DTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_qseq>
+      <Hsp_hseq>EYIFKPSCVPLMRCAGCC-----NDEGLECVPSEVHNVTMQIMRIKPHHS-----QQINEMSFQQHSKCEC</Hsp_hseq>
+      <Hsp_midline>+ IF P C+ + RC G C     N    +CVPS+V     ++++++P        + + +++ + H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>274599501</Statistics_db-num>
+      <Statistics_db-len>98774826349</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1788591084</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|KAB0350463.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_015320, partial [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0350463</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>370.163</Hsp_bit-score>
+      <Hsp_score>949</Hsp_score>
+      <Hsp_evalue>2.05473e-131</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>232</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>190</Hsp_identity>
+      <Hsp_positive>201</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>GDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSL-----TIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRP-------VQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRA-KTPQTRVTIRTVRVRRPPKGKHRKFKHTHDKTALKETLGA</Hsp_qseq>
+      <Hsp_hseq>GDPIPEELYEMLSDHSIRSFDDLQRLLHGDSVDEDGAELDLNLTRSHSGGEFESLSRGRRSLGKTEGSPTVAAELAMMAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKRHFGGSVLQVKKIEIVRKRKIFKKATVTLVDHLECRCETVVA-RAVTGTPGSSQEQRAARTPQTRVTIRTVRVRRPPKGKHRKFKHTHEKTARKETLGA</Hsp_hseq>
+      <Hsp_midline>GDPIPEELYEMLSDHSIRSFDDLQRLLHGD  +EDGAELDLN+TRSHSGGE ESL+RGRRSLG         AE AM+AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQ R        +QV+KIEIVRK+ IFKKATVTL DHL C+CETV A R VT +PG SQEQRA +TPQTRVTIRTVRVRRPPKGKHRKFKHTH+KTA KETLGA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|KAB0350559.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_015416 [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0350559</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>131.724</Hsp_bit-score>
+      <Hsp_score>330</Hsp_score>
+      <Hsp_evalue>5.35504e-38</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>AEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGGELE----SLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVA</Hsp_qseq>
+      <Hsp_hseq>AEEAEIPREVIERLAHSQIHSIRDLQRLLEIDSVGAEEPLETSLRAHGGHGAKHAPEKRPAPIRRKRSI------EEAIPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYFRKKAKLKEVQVRLEEHLECTCASAS</Hsp_hseq>
+      <Hsp_midline>AE   IP E+ E L+   I S  DLQRLL  D  G E+  E  L     H          +  R +RS+      E A+ A CKTRT ++EI R  +D T+ANFL+WPPCVEV+RC+GCCN  +V+C+P++V  R V+V K+E  RKK   K+  V LE+HL C C + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|KAB0360483.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_004639 [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0360483</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.41359e-09</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>234</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>140</Hsp_align-len>
+      <Hsp_qseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGKHRKFKHTHDKTA</Hsp_qseq>
+      <Hsp_hseq>ATCQPREVVVPLNMELVG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQH----QVRMQILMIRYPSSQLGEMSLEEHSQCEC------RPKKRE-SAVKPDRASTPHHRPQPRSVPGWDPAPGAPSPADITHPTPA</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT       QVR   ++ + P  +   ++LE+H  C+C      RP  R     +  RA TP  R   R+V    P  G       TH   A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|KAB0346399.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_011256, partial [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0346399</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.41625e-05</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>QCMPREVCIDVGKEFGAATNTFFK--PPCVSVYRCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGP--KPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>+C  R    ++ +     TN  F   PPCV V RC GCCN+   QC  T        + +I + + + P  K  T++  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|KAB0343841.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_020767 [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0343841</Hit_accession>
+  <Hit_len>358</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>1.89777e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>IDEEWQRTQCSPRETCVEVASELGSSTDTFFK--PPCVNVFRCGGCCNEESLVCVNTSTSYVSKQLFEISVPLTS-VPELVPVKVANHTGCKCFPTAPRHPFS</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    E++  L   T+  F   PPCV V RC GCCN  ++ C  T       Q+ +I +     + +   V + +H  CKC   A   P +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|KAB0341129.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_018055, partial [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0341129</Hit_accession>
+  <Hit_len>158</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00153598</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>RLID-----RTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARP</Hsp_qseq>
+      <Hsp_hseq>RLVDIVSEYPSEMEHLFSPSCVSLLRCTGCCSDEKMHCVPLETANITMQLMKYRAL-DLPFF--VEMSFSQHVSCECRPEGARVP</Hsp_hseq>
+      <Hsp_midline>RL+D      +    L  P CV + RC+GCC++  + C P +     +Q+ K   +   P F    ++   H++C+C    A  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|KAB0356078.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_000234, partial [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0356078</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00198203</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>FLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>FIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQGQHI---GEMSFLQHNKCEC</Hsp_hseq>
+      <Hsp_midline>F+  P CV + RC GCCN+ +++C PT+     +Q+ +I+  + + I     ++   H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|KAB0363110.1|</Hit_id>
+  <Hit_def>hypothetical protein FD754_007266 [Muntiacus muntjak]</Hit_def>
+  <Hit_accession>KAB0363110</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0257856</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>SIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRP---VQVRKIEIVRKKPIFKKAT-VTLEDHLACKCETVAAARPVTR-SPGG</Hsp_qseq>
+      <Hsp_hseq>AFSTLEDLIRYLEPDRWQLDLEDL-YRPTSLQLLGKNFVFGRKSRVVDLNLLKEEVRLYSCTPRN--FSVSVREELKRTDTIF--WPGCLLVKRCGGNCACCLHTCSECQCVPSRVTKKYHEVLQLRPKTGVRG--LHKSLTDVALEHHEECDC--------VCRGSPGG</Hsp_hseq>
+      <Hsp_midline>+  + +DL R L  D  + D  +L    T     G+     R  R +    + E   +  C  R   F +S R  + RT+  F  WP C+ V+RC G   CC +     QC P++V  +    +Q+R    VR   + K  T V LE H  C C        V R SPGG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1342387235</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

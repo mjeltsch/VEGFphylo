@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_015801089.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015801089</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>229.565</Hsp_bit-score>
+      <Hsp_score>584</Hsp_score>
+      <Hsp_evalue>1.42756e-76</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>121</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSL--DTSLRAHGVH--------ATKHVPEKRPLPIRRKRSI-EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>MRAALCYFLLWTTYLL-ATAEEAEFPQELIDRLSNSEIHSISDLQRLLEIDSVGTGNDVIEEHKYRKHHNHHKNFSHHHGYYNGLKNSQLHSRRKRSIVEEAVPAACKTRTVIFEIPRSHVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRKPKLKEVFVRLEDHLECVCTS</Hsp_hseq>
+      <Hsp_midline>MR   C  LL   YL    AEEAE P+E+I+RL+ S+IHSI DLQRLLEIDSVG+ + +  +   R H  H           +  +   L  RRKRSI EEAVPA CKTRTVI+EIPRS VDPT+ANFLIWPPCVEVKRCTGCCNTS+++C PSR HHR+VKVAKVEYVR+KPKLKEV VRLE+HLEC C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_015797516.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015797516</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.356</Hsp_bit-score>
+      <Hsp_score>490</Hsp_score>
+      <Hsp_evalue>5.62131e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLA--HVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLP-IRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT---TSLNPDYREE</Hsp_qseq>
+      <Hsp_hseq>MKAAVYHLVVGFFWLLPLRTAAEESPLPLELLERLSRSDIRSISDLQRLLEIDSIENEVMEETKHSYYKVFSHSFLDHKKTQARLKRSTVVEEAVPAVCKVRATIYEIPRSQVDPTSANFIIWPPCVEVNRCTGCCNTSNTRCQAARKQHRTVKVAKVEYVRRRPKLREVPVTLEDHLECVCTNKQHIDLNPDTDNE</Hsp_hseq>
+      <Hsp_midline>M+     L++G  +L      AEE+ +P E++ERL+RS I SI DLQRLLEIDS+ +E   +T    + V +   +  K+    ++R   +EEAVPAVCK R  IYEIPRSQVDPTSANF+IWPPCVEV RCTGCCNTS+ +CQ +R  HR+VKVAKVEYVR++PKL+EV V LE+HLEC C       LNPD   E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_015797517.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X3 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015797517</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>8.91003e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>135</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>193</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLA--HVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLP-IRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT---TSLNPD</Hsp_qseq>
+      <Hsp_hseq>MKAAVYHLVVGFFWLLPLRTAAEESPLPLELLERLSRSDIRSISDLQRLLEIDSIENEVMEETKHSYYKVFSHSFLDHKKTQARLKRSTVVEEAVPAVCKVRATIYEIPRSQVDPTSANFIIWPPCVEVNRCTGCCNTSNTRCQAARKQHRTVKVAKVEYVRRRPKLREVPVTLEDHLECVCTNKQHIDLNPD</Hsp_hseq>
+      <Hsp_midline>M+     L++G  +L      AEE+ +P E++ERL+RS I SI DLQRLLEIDS+ +E   +T    + V +   +  K+    ++R   +EEAVPAVCK R  IYEIPRSQVDPTSANF+IWPPCVEV RCTGCCNTS+ +CQ +R  HR+VKVAKVEYVR++PKL+EV V LE+HLEC C       LNPD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_015797515.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015797515</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.971</Hsp_bit-score>
+      <Hsp_score>489</Hsp_score>
+      <Hsp_evalue>1.76701e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLA--HVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLP-IRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT---TSLNPDYREE</Hsp_qseq>
+      <Hsp_hseq>MKAAVYHLVVGFFWLLPLRTAAEESPLPLELLERLSRSDIRSISDLQRLLEIDSIENEVMEETKHSYYKVFSHSFLDHKKTQARLKRSTVVEEAVPAVCKVRATIYEIPRSQVDPTSANFIIWPPCVEVNRCTGCCNTSNTRCQAARKQHRTVKVAKVEYVRRRPKLREVPVTLEDHLECVCTNKQHIDLNPDTDNE</Hsp_hseq>
+      <Hsp_midline>M+     L++G  +L      AEE+ +P E++ERL+RS I SI DLQRLLEIDS+ +E   +T    + V +   +  K+    ++R   +EEAVPAVCK R  IYEIPRSQVDPTSANF+IWPPCVEV RCTGCCNTS+ +CQ +R  HR+VKVAKVEYVR++PKL+EV V LE+HLEC C       LNPD   E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_015800916.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC107376371 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015800916</Hit_accession>
+  <Hit_len>516</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>123.635</Hsp_bit-score>
+      <Hsp_score>309</Hsp_score>
+      <Hsp_evalue>1.03649e-32</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>AEEDALPAALVELVRNSPISSIEDLQLLLFSDSVDEEDKTSAASEGHR------------LP--RSLQAQPAQQALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPIVTHTRYLQVMKIEYVNKRPTYAKAVVSVVDHVECRC</Hsp_hseq>
+      <Hsp_midline>AEE  +P  ++E +  S I SI DLQ LL  DSV  ED    +   H             LP  R    + A  A+CK RT + E+ R+ +D ++ANFL+WPPCVEV+RC+GCCNT S++C P   H R ++V K+EYV K+P   +  V + +H+EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_015799042.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015799042</Hit_accession>
+  <Hit_len>567</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.908</Hsp_bit-score>
+      <Hsp_score>250</Hsp_score>
+      <Hsp_evalue>1.77474e-24</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAV---CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>AEGDPLPPSLVDLVRNSPVSSVDDLKILLQQETNAIEDEED-----------EHDTLPNYTPGRHTRSIVDAEPAKKAECTVRTEVMEITRSMLDRRSVNFIPWPPCVEVQRCSGCCNSRFIKCVPSVTSSRYLQVLKIMYKEGKSQYETVVITVEDHVRCMC</Hsp_hseq>
+      <Hsp_midline>AE   +P  +++ +  S + S+ DL+ LL+ ++   ED  D           +H       P R  RSI +A PA    C  RT + EI RS +D  S NF+ WPPCVEV+RC+GCCN+  +KC PS    R ++V K+ Y   K + + V + +E+H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_015825618.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015825618</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>2.77656e-07</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>VPVSRTNSTSEVLMFQEVWGRSFCRTIEKLVEV--VQEYPTEVEHIYSPSCVPLVRCAGCCGDEKLECHPTQTTNVTMQLLKIR--PSKPGQEYVEMTFVEHLTCECRVR--KPLVKVE---RKRQRGKGRKRKQRQKT</Hsp_hseq>
+      <Hsp_midline>+P+ R  S  E +        + C+T   + E+   Q  PT    +  P CV + RC GCC    ++C P++  + ++++ K+     KP  + V++   EHL C C      P  + E   R R+ GK RKRK+ + T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_015802830.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015802830</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>6.48774e-06</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>KRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>RRWLEVYSRSACEPRDTLIEVWREL--PGETHHLFVPSCVSVKRCGGCCADEALECVPLLTHTLTMELMRTSFM----KHELIELSFIEHSQCEC</Hsp_hseq>
+      <Hsp_midline>+R +E    + C+ R  + E+ R    P   + L  P CV VKRC GCC   +++C P   H  ++++ +  ++    K + +++   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_015803539.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015803539</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>9.3969e-06</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IEVYNKSVCQPREVLVEI--LQEYPDEVEHIFIPSCVVLRRCAGCCSDEMLQCTPTATRNVTMEIKRIKLQRQQ---NDVFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>IE    +VC+ R V+ EI   Q  P     +  P CV ++RC GCC+   ++C P+   + ++++ +++  R++    +V +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_015803540.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015803540</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>1.09997e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IEVYNKSVCQPREVLVEI--LQEYPDEVEHIFIPSCVVLRRCAGCCSDEMLQCTPTATRNVTMEIKRIKLQRQQ---NDVFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>IE    +VC+ R V+ EI   Q  P     +  P CV ++RC GCC+   ++C P+   + ++++ +++  R++    +V +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_015803542.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015803542</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.15615e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IEVYNKSVCQPREVLVEI--LQEYPDEVEHIFIPSCVVLRRCAGCCSDEMLQCTPTATRNVTMEIKRIKLQRQQ---NDVFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>IE    +VC+ R V+ EI   Q  P     +  P CV ++RC GCC+   ++C P+   + ++++ +++  R++    +V +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_015808972.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X3 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015808972</Hit_accession>
+  <Hit_len>259</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.6393e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>SLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRS-QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFPTSVGSH--RSTRYAAESYNLEILKAID-EEWQRTQCMPRETCVDVAKELGTDPT---IFFKPPCVSVHRCSGCCNQEGVTCRNTSVAYVNKTLLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>S  TS+ +H   +T++  E   L I +    EE     C  R    ++ +    DPT       PPCV V RC+GCCN   V C+ + V + +  +  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_015803543.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X4 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015803543</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>1.6513e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>IEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IEVYNKSVCQPREVLVEI--LQEYPDEVEHIFIPSCVVLRRCAGCCSDEMLQCTPTATRNVTMEIKRIKLQRQQ---NDVFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>IE    +VC+ R V+ EI   Q  P     +  P CV ++RC GCC+   ++C P+   + ++++ +++  R++    +V +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_015808970.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X1 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015808970</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.572e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>SLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRS-QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFPTSVGSH--RSTRYAAESYNLEIL-KAIDEEWQRTQCMPRETCVDVAKELGTDPT---IFFKPPCVSVHRCSGCCNQEGVTCRNTSVAYVNKTLLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>S  TS+ +H   +T++  E   L I  K   EE     C  R    ++ +    DPT       PPCV V RC+GCCN   V C+ + V + +  +  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_015808971.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D isoform X2 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015808971</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.6057e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>SLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRS-QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFPTSVGSH--RSTRYAAESYNLEIL-KAIDEEWQRTQCMPRETCVDVAKELGTDPT---IFFKPPCVSVHRCSGCCNQEGVTCRNTSVAYVNKTLLSVIPFKFVP--EPVLIKVANHTECRC</Hsp_hseq>
+      <Hsp_midline>S  TS+ +H   +T++  E   L I  K   EE     C  R    ++ +    DPT       PPCV V RC+GCCN   V C+ + V + +  +  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_015806298.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015806298</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.015856</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>264</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKL--KEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TDVIFWPSCLLVKRCGGNCACCSHHCYDCQCVPARVAKKYHEVLLLKHRGGGRGLLKSMTDVPLEHHEECSCV</Hsp_hseq>
+      <Hsp_midline> + + WP C+ VKRC G   CC+     CQ  P+RV  +  +V  +++      L      V LE H EC+C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_015806306.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015806306</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0164256</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>263</Hsp_hit-from>
+      <Hsp_hit-to>335</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKL--KEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TDVIFWPSCLLVKRCGGNCACCSHHCYDCQCVPARVAKKYHEVLLLKHRGGGRGLLKSMTDVPLEHHEECSCV</Hsp_hseq>
+      <Hsp_midline> + + WP C+ VKRC G   CC+     CQ  P+RV  +  +V  +++      L      V LE H EC+C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_015809835.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Nothobranchius furzeri]</Hit_def>
+  <Hit_accession>XP_015809835</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0874189</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>CAPREVCVDVGREFGAPT--NVFYKPRCVSVHRCGGCCHSEDKQCRNISTGYLSKTLFEIT-VPITQGTRPVTVSVANHTQCSC</Hsp_hseq>
+      <Hsp_midline>C  R V  ++ R    PT  N    P CV V RC GCC++   +C+     + S  + ++  V      + V V +  H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2353152936</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

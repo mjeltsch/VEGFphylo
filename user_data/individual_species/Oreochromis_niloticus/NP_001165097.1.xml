@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A165 NP_001165097.1 vascular endothelial growth factor A isoform VEGF-A precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>191</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A165 NP_001165097.1 vascular endothelial growth factor A isoform VEGF-A precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>191</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_003440872.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_003440872</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.667</Hsp_bit-score>
+      <Hsp_score>496</Hsp_score>
+      <Hsp_evalue>1.63081e-63</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD-RARQENPCGP----CSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPRETERGPHNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQQNDIFMSFTEHSACECRLKNEVKEKKENVCEPCCDQCSERRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>++A +     +  H V+  M+VY +S C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + Q+   MSF +H+ CECR K + + ++EN C P    CSERRK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_005449666.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005449666</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.882</Hsp_bit-score>
+      <Hsp_score>468</Hsp_score>
+      <Hsp_evalue>5.88752e-59</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>121</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>QAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR------------------PKKDRARQENP------------CGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCRCDKPRR</Hsp_qseq>
+      <Hsp_hseq>KSAHIPRETERGPHNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQQNDIFMSFTEHSACECRLKNEVKEKKEKKSRTGRDKGQKRKRKKNPEKTIHDAVCEPCCDQCSERRKRLFVQDPATCRCSCKHTDEYCKERQLELNERTCKCDKPRR</Hsp_hseq>
+      <Hsp_midline>++A +     +  H V+  M+VY +S C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + Q+   MSF +H+ CECR                    + R R++NP            C  CSERRK LFVQDP TC+CSCK+TD  CK RQLELNERTC+CDKPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_025756680.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_025756680</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.716</Hsp_bit-score>
+      <Hsp_score>317</Hsp_score>
+      <Hsp_evalue>8.09926e-37</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>FLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKP-HQGQHIGEMSFLQHNKCECRPKKDRAR</Hsp_qseq>
+      <Hsp_hseq>MLLGFVIGTV-VALYLQFSP-AQSLPLA--SINSTMEVLVFEKVWGRSFCRTIEKLVEVVQEYPSEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTTNVTMQLLKIRPSEQGQEYVEMTFVEHQTCECRIRKPVVK</Hsp_hseq>
+      <Hsp_midline> LL +V  ++ + LYL  +  +Q+ P+A     +  EV+ F  V+ RS+C  IE LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT+ +N+TMQ+++I+P  QGQ   EM+F++H  CECR +K   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_005449667.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005449667</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.783</Hsp_bit-score>
+      <Hsp_score>299</Hsp_score>
+      <Hsp_evalue>3.47803e-34</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>HNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQQNDIFMSFTEHSACECR</Hsp_hseq>
+      <Hsp_midline>H V+  M+VY +S C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + Q+   MSF +H+ CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_025754614.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_025754614</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.783</Hsp_bit-score>
+      <Hsp_score>299</Hsp_score>
+      <Hsp_evalue>1.02949e-33</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>HNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQQNDIFMSFTEHSACECR</Hsp_hseq>
+      <Hsp_midline>H V+  M+VY +S C P E LV+I QEYPDE+E+IF PSCV L RC GCCNDE L+C PT   N+TM+I RI P + Q+   MSF +H+ CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_005477020.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005477020</Hit_accession>
+  <Hit_len>153</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>1.29139e-32</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>FLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKP-HQGQHIGEMSFLQHNK</Hsp_qseq>
+      <Hsp_hseq>MLLGFVIGTV-VALYLQFSP-AQSLPLA--SINSTMEVLVFEKVWGRSFCRTIEKLVEVVQEYPSEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTTNVTMQLLKIRPSEQGQEYVEMTFVEHQT</Hsp_hseq>
+      <Hsp_midline> LL +V  ++ + LYL  +  +Q+ P+A     +  EV+ F  V+ RS+C  IE LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT+ +N+TMQ+++I+P  QGQ   EM+F++H  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_005467560.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005467560</Hit_accession>
+  <Hit_len>269</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.916</Hsp_bit-score>
+      <Hsp_score>263</Hsp_score>
+      <Hsp_evalue>1.15231e-27</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>MNFLLSWVHWSLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFLLLTRIPTSHAKLAHWRPADSPKSREGREVRRWLEVYSRSGCEPRDTLVEVWREFPGETHSLFIPSCVSVRRCGGCCADEAFECVPTLTHTVTMELMRTS-FMKHELTELPFIEHSQCDCRLKE</Hsp_hseq>
+      <Hsp_midline>+  +L    + L   +   HAK +   P      +   EV ++++VY RS C P +TLV++++E+P E   +F PSCV + RCGGCC DE  ECVPT    +TM++MR        + E+ F++H++C+CR K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_005449779.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin VR-1&apos; isoform X1 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005449779</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>6.18642e-18</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>SQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>AQMSDLQDEEGPN--TVIPLSEVMAKCSCQVMDQLVYVYDEYPQSVENMYLPHCVVVRRCSGYCSDEGFKCLPTLERNTTLQLT-IRFHEPP-VVELTFLEHQQCECR</Hsp_hseq>
+      <Hsp_midline>+Q + + +  G N   V+   +V  +  C  ++ LV ++ EYP  +E ++ P CV + RC G C+DEG +C+PT E N T+Q+  I+ H+   + E++FL+H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_025754582.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin VR-1&apos; isoform X2 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_025754582</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.0258</Hsp_bit-score>
+      <Hsp_score>188</Hsp_score>
+      <Hsp_evalue>1.0924e-17</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>SQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>AQMSDLQDEEGPN--TVIPLSEVMAKCSCQVMDQLVYVYDEYPQSVENMYLPHCVVVRRCSGYCSDEGFKCLPTLERNTTLQ-LTIRFHEPP-VVELTFLEHQQCECR</Hsp_hseq>
+      <Hsp_midline>+Q + + +  G N   V+   +V  +  C  ++ LV ++ EYP  +E ++ P CV + RC G C+DEG +C+PT E N T+Q + I+ H+   + E++FL+H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_005449780.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X3 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005449780</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.6406</Hsp_bit-score>
+      <Hsp_score>187</Hsp_score>
+      <Hsp_evalue>1.17352e-17</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>SQAAPMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>AQMSDLQDEEGPN--TVIPLSEVMAKCSCQVMDQLVYVYDEYPQSVENMYLPHCVVVRRCSGYCSDEGFKCLPTLERNTTLQ-LTIRFHEPP-VVELTFLEHQQCECR</Hsp_hseq>
+      <Hsp_midline>+Q + + +  G N   V+   +V  +  C  ++ LV ++ EYP  +E ++ P CV + RC G C+DEG +C+PT E N T+Q + I+ H+   + E++FL+H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_025754583.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_025754583</Hit_accession>
+  <Hit_len>125</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.7146</Hsp_bit-score>
+      <Hsp_score>182</Hsp_score>
+      <Hsp_evalue>4.88909e-17</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>91</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>MDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>IQVMAKCSCQVMDQLVYVYDEYPQSVENMYLPHCVVVRRCSGYCSDEGFKCLPTLERNTTLQLT-IRFHEPP-VVELTFLEHQQCECR</Hsp_hseq>
+      <Hsp_midline>+ V  +  C  ++ LV ++ EYP  +E ++ P CV + RC G C+DEG +C+PT E N T+Q+  I+ H+   + E++FL+H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_025754584.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_025754584</Hit_accession>
+  <Hit_len>117</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.7886</Hsp_bit-score>
+      <Hsp_score>177</Hsp_score>
+      <Hsp_evalue>2.01319e-16</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>83</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>IETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECR</Hsp_qseq>
+      <Hsp_hseq>MDQLVYVYDEYPQSVENMYLPHCVVVRRCSGYCSDEGFKCLPTLERNTTLQLT-IRFHEPP-VVELTFLEHQQCECR</Hsp_hseq>
+      <Hsp_midline>++ LV ++ EYP  +E ++ P CV + RC G C+DEG +C+PT E N T+Q+  I+ H+   + E++FL+H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_005460836.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005460836</Hit_accession>
+  <Hit_len>405</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.3294</Hsp_bit-score>
+      <Hsp_score>181</Hsp_score>
+      <Hsp_evalue>2.23653e-15</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>248</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>FMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMS-FLQHNKCECRPKKD------RARQENPCGPCSERRKHLFVQDPQTCKCSCKNT</Hsp_qseq>
+      <Hsp_hseq>ILEEIQRTSCQPREVCIEVAKEYPESTSQFYLPHCVALHRCGGCCNNEAFYCTNTSYTLVNKTLMKVSQSRMVRTVVMANFINHTSCDCLPKRPLRSIIRRAATDHLCSPPERACASGSIWDPANCVCVSADT</Hsp_hseq>
+      <Hsp_midline> ++  QR+ C P E  +++ +EYP+     + P CV L RCGGCCN+E   C  T  + +   +M++   +      M+ F+ H  C+C PK+       RA  ++ C P         + DP  C C   +T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_003445851.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_003445851</Hit_accession>
+  <Hit_len>292</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>9.43786e-10</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQ---HNKCEC</Hsp_qseq>
+      <Hsp_hseq>EILTAIDEEWQRTQCMPRETCVDVAKELGTDHSVFFKPPCVSVHRCSGCCNQEGVTCRNTTTEYVNKTVLSVIPF--KFVPEPVLVKVANHTECKC</Hsp_hseq>
+      <Hsp_midline>E++  +D  +QR+ C P ET VD+ +E   +    FKP CV + RC GCCN EG+ C  T    +   ++ + P   + + E   ++   H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_019216041.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_019216041</Hit_accession>
+  <Hit_len>390</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>9.48584e-09</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQI--MRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQ</Hsp_qseq>
+      <Hsp_hseq>WRKTQCAPREVCIDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKNLFEIRVPITQGTKPVTISVANHTQCSCLSKLDIYKQ</Hsp_hseq>
+      <Hsp_midline>++++ C P E  +D+ +E+       +KP CV + RCGGCC+ E  +C       ++  +  +R+   QG     +S   H +C C  K D  +Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_003459837.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_003459837</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.02408e-08</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQI--MRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQ</Hsp_qseq>
+      <Hsp_hseq>WRKTQCAPREVCIDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKNLFEIRVPITQGTKPVTISVANHTQCSCLSKLDIYKQ</Hsp_hseq>
+      <Hsp_midline>++++ C P E  +D+ +E+       +KP CV + RCGGCC+ E  +C       ++  +  +R+   QG     +S   H +C C  K D  +Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_005468404.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC100707172 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005468404</Hit_accession>
+  <Hit_len>521</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>6.22374e-07</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>LALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDV--YQRSYCHPIETLVDIFQEYPD--EIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECRPKKDRARQENPCGPCSERRKHLFVQDPQT</Hsp_qseq>
+      <Hsp_hseq>LQMLLLSDSVDEEDETSAANGG----HRLPRSLDAQPAQQALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHKRYLQVMKVEYINKKPTYAKAV--VSVVDHVECRCQ----TAPRPPPHKKKSSRRQHGYLHRNQT</Hsp_hseq>
+      <Hsp_midline>L +LL             A GG    H + + +D    Q++ C     +V++ +   D     ++  P CV + RC GCCN + L+CVP       +Q+M++     KP   + +  +S + H +C C+     A +  P    S RR+H ++   QT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_003459406.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC100712331 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_003459406</Hit_accession>
+  <Hit_len>545</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.16939e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>FLLWPPCVEVQRCSGCCNSPRMECVPTVTSTRYLQVIKIQ</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN   +ECVPT  S   +Q+++I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_003450102.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_003450102</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00541561</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVE</Hsp_hseq>
+      <Hsp_midline>P    ++  P CV + RC GCCN   + C P+ + + T+++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_005461708.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_005461708</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0489651</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>PTSANFIIWPPCVEVKRCTGCCNTSNMRCQAARKHYRTVKVAKVE</Hsp_hseq>
+      <Hsp_midline>P    +I  P CV + RC GCCN   + C    +   T+++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_019216173.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Oreochromis niloticus]</Hit_def>
+  <Hit_accession>XP_019216173</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0846355</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQI</Hsp_qseq>
+      <Hsp_hseq>PTSANFIIWPPCVEVKRCTGCCNTSNMRCQAARKHYRTVKI</Hsp_hseq>
+      <Hsp_midline>P    +I  P CV + RC GCCN   + C    +   T++I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2847548414</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

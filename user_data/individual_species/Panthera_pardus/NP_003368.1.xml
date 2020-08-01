@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_019270881.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B, partial [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019270881</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>320.472</Hsp_bit-score>
+      <Hsp_score>820</Hsp_score>
+      <Hsp_evalue>4.47591e-112</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>179</Hsp_identity>
+      <Hsp_positive>183</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>AQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGPAAAAADAAASSVAKGGA</Hsp_qseq>
+      <Hsp_hseq>GQGPVSQPDTPGHQKKVVSWIDVYARATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKRESAVKPDRASTPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPGPSAHAAPSAASALTPGPAAAAADAAASSVAKGGA</Hsp_hseq>
+      <Hsp_midline> Q PVSQPD PGHQ+KVVSWIDVY RATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKK++SAVKPDRA+TPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPGPSAHAAPS  SALTPGPAAAAADAAASSVAKGGA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_019312227.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A, partial [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019312227</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.531</Hsp_bit-score>
+      <Hsp_score>262</Hsp_score>
+      <Hsp_evalue>3.76506e-26</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>313</Hsp_hit-from>
+      <Hsp_hit-to>414</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVK</Hsp_qseq>
+      <Hsp_hseq>EVVKFMDVYQRSYCRPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIKPHQGQHIGEMSFLQHSKCECRPKKDRAKEK</Hsp_hseq>
+      <Hsp_midline>+VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +HS+CECRPKK  +  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_019282724.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X4 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019282724</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>2.758e-15</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS-QLGEMSLEEHSQCECRPKKKDSAVKPDRAAT</Hsp_qseq>
+      <Hsp_hseq>EVVPFQEVWGRSYCRALERLVDIVSEYPSEVQHMFSPSCISLLRCTGCCGDENLHCVPVETVNVTMQLLKIHSEDRPSYVELTFSQHVRCECRPLREK--MKPERCGN</Hsp_hseq>
+      <Hsp_midline>+VV + +V+ R+ C+  E +V +  E    V     PSC+++ RC GCC D+ L CVP     V MQ+L I         E++  +H +CECRP ++   +KP+R   </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_019282723.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X3 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019282723</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.1662</Hsp_bit-score>
+      <Hsp_score>165</Hsp_score>
+      <Hsp_evalue>4.19422e-14</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS-QLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>EVVPFQEVWGRSYCRALERLVDIVSEYPSEVQHMFSPSCISLLRCTGCCGDENLHCVPVETVNVTMQLLKIHSEDRPSYVELTFSQHVRCECRPLREK--MKPE</Hsp_hseq>
+      <Hsp_midline>+VV + +V+ R+ C+  E +V +  E    V     PSC+++ RC GCC D+ L CVP     V MQ+L I         E++  +H +CECRP ++   +KP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_019282720.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Panthera pardus] &gt;ref|XP_019282722.1| PREDICTED: placenta growth factor isoform X2 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019282720</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.1662</Hsp_bit-score>
+      <Hsp_score>165</Hsp_score>
+      <Hsp_evalue>4.91408e-14</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS-QLGEMSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>EVVPFQEVWGRSYCRALERLVDIVSEYPSEVQHMFSPSCISLLRCTGCCGDENLHCVPVETVNVTMQLLKIHSEDRPSYVELTFSQHVRCECRPLREK--MKPE</Hsp_hseq>
+      <Hsp_midline>+VV + +V+ R+ C+  E +V +  E    V     PSC+++ RC GCC D+ L CVP     V MQ+L I         E++  +H +CECRP ++   +KP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_019273499.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019273499</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>4.4185e-08</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM---SLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>WQRTQCSPRETCVEVASELGRSTDTFFKPPCVNVFRCGGCCNEESRVCMNTSTSYISKQLFQISVPLTSVPELVPVKVANHTGCKCLP</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL  +      P CV V RCGGCC ++   C+ T    +  Q+  I  P + + E+    +  H+ C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_019302460.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X1 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302460</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>7.02776e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>271</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_019302465.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X6 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302465</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>7.2177e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_019302462.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X3 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302462</Hit_accession>
+  <Hit_len>295</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>8.30349e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>149</Hsp_hit-from>
+      <Hsp_hit-to>267</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_019302463.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X4 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302463</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>1.17682e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_019289779.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019289779</Hit_accession>
+  <Hit_len>380</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>1.23074e-07</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDSEWRKTQCLPREVCIDVGKEFGAATNTFFKPPCVSAYRCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV + +  E          P CV+  RCGGCC  +G +C+ T    +   +  I  P SQ  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_019302461.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X2 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302461</Hit_accession>
+  <Hit_len>298</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>1.25955e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>152</Hsp_hit-from>
+      <Hsp_hit-to>270</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_019302464.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X5 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019302464</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>1.56059e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-------YPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEVSRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPT---QVQLRLVQVRKIEIVRKRPVFKKATVTLEDHLACKCETVVAARPVTRSPGSSQEQRARTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT   QV+++++ +R        P  +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_019277921.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X4 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019277921</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.88032e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>88</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYIRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_019277918.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X3 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019277918</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>2.24701e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYIRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_019277916.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Panthera pardus] &gt;ref|XP_019277919.1| PREDICTED: platelet-derived growth factor subunit A isoform X1 [Panthera pardus] &gt;ref|XP_019277920.1| PREDICTED: platelet-derived growth factor subunit A isoform X1 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019277916</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>4.02414e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYIRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_019277917.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019277917</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>4.18758e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYIRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_019296707.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019296707</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.00040731</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSIREELKRT-DTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKSGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC  +  E  CVP+   +   ++L +R  S        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_019289218.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019289218</Hit_accession>
+  <Hit_len>369</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0176014</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>264</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DEVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2884927080</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

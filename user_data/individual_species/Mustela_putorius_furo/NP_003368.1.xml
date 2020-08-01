@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_004770246.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004770246</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>317.005</Hsp_bit-score>
+      <Hsp_score>811</Hsp_score>
+      <Hsp_evalue>4.61543e-111</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>174</Hsp_identity>
+      <Hsp_positive>181</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>APVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGPAAAAADAAASSVAKGGA</Hsp_qseq>
+      <Hsp_hseq>GPVSQPDALSHQKKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKRESALKPDRASTPHHRPQPRSIPGWDSAPGAPSPADITHPTPAPGPTAHAAPSAASALTPGPAAVAADAAASSVAKGGA</Hsp_hseq>
+      <Hsp_midline> PVSQPDA  HQ+KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKK++SA+KPDRA+TPHHRPQPRS+PGWDSAPGAPSPADITHPTPAPGP+AHAAPS  SALTPGPAA AADAAASSVAKGGA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_004770247.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004770247</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>228.409</Hsp_bit-score>
+      <Hsp_score>581</Hsp_score>
+      <Hsp_evalue>1.9819e-76</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>154</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>APVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPD-------RAATPHHRPQP</Hsp_qseq>
+      <Hsp_hseq>GPVSQPDALSHQKKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKRESALKPDSPRPHCPRCTQRRQRPDP</Hsp_hseq>
+      <Hsp_midline> PVSQPDA  HQ+KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKK++SA+KPD       R      RP P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_004740378.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004740378</Hit_accession>
+  <Hit_len>569</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>2.03278e-26</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>382</Hsp_hit-from>
+      <Hsp_hit-to>488</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>APVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>APMAEGEHKPHE--VVKFMDVYQRSYCRPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIKPHQGQHIGEMSFLQHSKCECRPKK</Hsp_hseq>
+      <Hsp_midline>AP+++ +   H+  VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+GLECVPT +  + MQI+ I+ +    +GEMS  +HS+CECRPKK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_004739309.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004739309</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.4034</Hsp_bit-score>
+      <Hsp_score>176</Hsp_score>
+      <Hsp_evalue>5.82372e-16</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>140</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLA-----PAQAPVSQPDAPGH---QRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS-QLGEMSLEEHSQCECRPKKKDSAVKPDRAA</Hsp_qseq>
+      <Hsp_hseq>LFTCFLQLLAGLALPAVPPQQWALSAGNGSSEVEVVPFQEVWGRSYCRALEKLVDIVSEYPSEVEYIFSPSCVSLMRCTGCCGDENLHCVPIETVNVTMQVLKIRAKTRPSYVELTFSQHIRCECRPLWEK--MKPERCG</Hsp_hseq>
+      <Hsp_midline>L    LQL      PA  P     + G+   + +VV + +V+ R+ C+  E +V +  E    V     PSCV++ RC GCC D+ L CVP     V MQ+L IR  +     E++  +H +CECRP  +   +KP+R  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_004739308.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004739308</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.4774</Hsp_bit-score>
+      <Hsp_score>171</Hsp_score>
+      <Hsp_evalue>4.71228e-15</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLA-----PAQAPVSQPDAPGH---QRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS-QLGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>LFTCFLQLLAGLALPAVPPQQWALSAGNGSSEVEVVPFQEVWGRSYCRALEKLVDIVSEYPSEVEYIFSPSCVSLMRCTGCCGDENLHCVPIETVNVTMQVLKIRAKTRPSYVELTFSQHIRCECRP</Hsp_hseq>
+      <Hsp_midline>L    LQL      PA  P     + G+   + +VV + +V+ R+ C+  E +V +  E    V     PSCV++ RC GCC D+ L CVP     V MQ+L IR  +     E++  +H +CECRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_004775625.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004775625</Hit_accession>
+  <Hit_len>491</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>2.08981e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>286</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDNEWRKTQCVPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTSHLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV + +  E          P CV+V RCGGCC  +GL+C+ T    +   +  I  P SQ  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_004758938.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004758938</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>4.99405e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM---SLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>WQRTQCSPRETCVEVASELGRSTDTFFKPPCVSVFRCGGCCNEESLVCMNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCLP</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL  +      P CV+V RCGGCC ++ L C+ T    V  Q+  I  P + + E+    +  H+ C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_004743337.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004743337</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.05345e-08</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQH----QVRMQILMIRYPSSQLGEMSLEEHSQCEC------RPKKKD-SAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPTFKKATVTLEDHLACKCETVVATRPVTRSPGSTQEQRAKTPQTRVTIRTV</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT       QVR   ++ + P+ +   ++LE+H  C+C      RP  +   + +  RA TP  R   R+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_004743334.2|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X1 [Mustela putorius furo] &gt;ref|XP_004743336.1| PREDICTED: platelet-derived growth factor subunit B isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004743334</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>1.91486e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQH----QVRMQILMIRYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPTFKKATVTLEDHLACKC</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT       QVR   ++ + P+ +   ++LE+H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_012903227.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Mustela putorius furo] &gt;ref|XP_012903228.1| PREDICTED: platelet-derived growth factor subunit A isoform X1 [Mustela putorius furo] &gt;ref|XP_012903229.1| PREDICTED: platelet-derived growth factor subunit A isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_012903227</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>7.38728e-07</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>APAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>APKHAPEQRPVPIRRKRSIEEAIP----AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>AP  AP  +P     +R +   I     A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_012903230.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_012903230</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>9.51877e-07</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>APAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>APKHAPEQRPVPIRRKRSIEEAIP----AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCAGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>AP  AP  +P     +R +   I     A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_004772099.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004772099</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.90447e-05</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSIREELKRTDSI-FWPGCLLVKRCGGNCACCPHNCKECQCVPSKVTKKYHEVLQLRPKSGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T +    P C+ V+RCGG   CCP +  E  CVP+   +   ++L +R  S        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_012901072.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Mustela putorius furo] &gt;ref|XP_012901073.1| PREDICTED: platelet-derived growth factor C isoform X2 [Mustela putorius furo] &gt;ref|XP_012901074.1| PREDICTED: platelet-derived growth factor C isoform X2 [Mustela putorius furo] &gt;ref|XP_012901075.1| PREDICTED: platelet-derived growth factor C isoform X2 [Mustela putorius furo] &gt;ref|XP_012901076.1| PREDICTED: platelet-derived growth factor C isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_012901072</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.19441e-05</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>179</Hsp_hit-from>
+      <Hsp_hit-to>267</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPS------SQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSIREELKRT-DSIFWPGCLLVKRCGGNCACCPHNCKECQCVPSKVTKKYHEVLQLRPKSGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CCP +  E  CVP+   +   ++L +R  S        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_004764504.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X1 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004764504</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0162316</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>265</Hsp_hit-from>
+      <Hsp_hit-to>362</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC---PDDGLECVPTGQHQVRMQILMIRYPSSQ-----------LGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTHV-VFFPRCLLVQRCGGNCGCGTANWKSCTCSSGKTVKKYHEVLKFEPGHFKRRGRAKHMALVDIQLDHHERCDC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C     +   C  +    V+    ++++               L ++ L+ H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_004764505.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X2 [Mustela putorius furo]</Hit_def>
+  <Hit_accession>XP_004764505</Hit_accession>
+  <Hit_len>364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0183358</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>259</Hsp_hit-from>
+      <Hsp_hit-to>356</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC---PDDGLECVPTGQHQVRMQILMIRYPSSQ-----------LGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTHV-VFFPRCLLVQRCGGNCGCGTANWKSCTCSSGKTVKKYHEVLKFEPGHFKRRGRAKHMALVDIQLDHHERCDC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C     +   C  +    V+    ++++               L ++ L+ H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2425107008</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

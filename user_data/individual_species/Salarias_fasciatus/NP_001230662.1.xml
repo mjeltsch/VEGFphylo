@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_029959277.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: vascular endothelial growth factor A-A-like [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029959277</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>2.25261e-32</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQR---PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LVQILFAAVLHLSTVKTASLNKGVDKSRNEVLHDLEVITKSMCQPREVLVDIXQEYPEDTEHTYIPSCVVLKRCGGCCNDEALECVPTETRNVTLQVMRLRAMVSKHTXSLSFTEHQKCVCREKPEVEAKKEYH----CAPCSXRRKRLFVQDPFTCQCSCKFTQ-LDCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>L ++L AA+L L+  +           + +V+  ++V T++ CQPREV+V +  E         +PSCV ++RCGGCC D+ LECVPT    V +Q++ +R   S     +S  EH +C CR K +  A K       C  C+   +R    DP TC+C C+    L C+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_029965891.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029965891</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.153</Hsp_bit-score>
+      <Hsp_score>274</Hsp_score>
+      <Hsp_evalue>2.88217e-30</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQR---PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLR</Hsp_qseq>
+      <Hsp_hseq>VIPLMEVYNKSLCKPRELLVEILQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKRIK-PQRQQNDIFMSFTEHSACECRLKKEVREQKENVCEPCCDHCSERRKRLFVQDPATCRCSCKHTDEY-CKERQLELNERTCKCDKPR</Hsp_hseq>
+      <Hsp_midline>V+  ++VY ++ C+PRE++V +  E    V    +PSCV + RC GCC D+ L+C+PT  + + M+I  I+ P  Q  +  MS  EHS CECR KK+    K +   P C  C++  +R    DP TCRC C+      C+ R LELN  TC+C K R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_029962015.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029962015</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.65135e-26</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>AALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDS---AVKPD</Hsp_qseq>
+      <Hsp_hseq>AKLAHWRPSDSPKSR-----EGREVRRWLEVYSRSGCEPRDTLVEVWRELPGETHHLFVPSCVSVRRCGGCCADEALECVPSLTHTLTMELMRTSFMKHELIELPFIEHSQCECRLKERSEPTPTARPD</Hsp_hseq>
+      <Hsp_midline>A L    P+ +P S+       R+V  W++VY+R+ C+PR+ +V +  EL G      VPSCV+V+RCGGCC D+ LECVP+  H + M+++   +   +L E+   EHSQCECR K++       +PD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_029965889.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029965889</Hit_accession>
+  <Hit_len>213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.2857</Hsp_bit-score>
+      <Hsp_score>238</Hsp_score>
+      <Hsp_evalue>1.09318e-24</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKKK-------------------------DSAVKPDSPRPLCPRCTQHHQR---PDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLR</Hsp_qseq>
+      <Hsp_hseq>VIPLMEVYNKSLCKPRELLVEILQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKRIK-PQRQQNDIFMSFTEHSACECRLKKEVREQKEKKSRKGKGKGQKRKRKKNRDKTIHDAVCEPCCDHCSERRKRLFVQDPATCRCSCKHTDEY-CKERQLELNERTCKCDKPR</Hsp_hseq>
+      <Hsp_midline>V+  ++VY ++ C+PRE++V +  E    V    +PSCV + RC GCC D+ L+C+PT  + + M+I  I+ P  Q  +  MS  EHS CECR KK+                         D  +      P C  C++  +R    DP TCRC C+      C+ R LELN  TC+C K R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_029965890.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029965890</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>5.57714e-19</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE--MSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>VIPLMEVYNKSLCKPRELLVEILQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCMPTSSYNITMEIKRIK-PQRQQNDIFMSFTEHSACECRLKKE</Hsp_hseq>
+      <Hsp_midline>V+  ++VY ++ C+PRE++V +  E    V    +PSCV + RC GCC D+ L+C+PT  + + M+I  I+ P  Q  +  MS  EHS CECR KK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_029973090.1|</Hit_id>
+  <Hit_def>placenta growth factor [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029973090</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>2.87174e-16</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LLAALLQLAPAQ-APVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VVALYLLLSPAQCLPLSSINS---TMEVLMFQEVWGRSFCRTIEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTTNVTMQLLKIRPSDPGQEYVEMTFVEHQTCECRIRK</Hsp_hseq>
+      <Hsp_midline>++A  L L+PAQ  P+S  ++     +V+ + +V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LEC PT    V MQ+L IR   P  +  EM+  EH  CECR +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_029966708.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029966708</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.4774</Hsp_bit-score>
+      <Hsp_score>171</Hsp_score>
+      <Hsp_evalue>1.92641e-15</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>107</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>AEENRSKVMDFREVLAKSMCRPMEQLVDVEREFPEDVEHLYIPACVPLWRCSGCCGDENLECQPTLERNVTLQVVKILPLRSKHSAEISFVEHQKCECRARQR</Hsp_hseq>
+      <Hsp_midline>A  ++ KV+ + +V  ++ C+P E +V +  E    V    +P+CV + RC GCC D+ LEC PT +  V +Q++ I    S    E+S  EH +CECR +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_029942996.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029942996</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>6.06381e-08</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI--RYPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>RTSCQPREACVEVAKEYPESTSHFYLPRCVALHRCGGCCSNEALYCANSSYSLVNKTVMQLTPRMERS-VSTMAFVNHTSCECLSRR</Hsp_hseq>
+      <Hsp_midline>R +CQPRE  V +  E   + +   +P CV + RCGGCC ++ L C  +    V   ++ +  R   S +  M+   H+ CEC  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_029946070.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115387489 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029946070</Hit_accession>
+  <Hit_len>505</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>1.01439e-06</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMGTVAKQ--LVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>QALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYINKRPTYAKAVVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>+A C+ R  VV +T  ++        L P CV VQRC GCC    L+CVP   H   +Q++ I Y    P+     +S+ +H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_029950303.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029950303</Hit_accession>
+  <Hit_len>412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>1.67327e-06</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>WRKTQCTPREVCVDVGREFGAPTNIFYKPPCVSVYRCGGCCHSEDKQCRNISSGYLSKTLFEITVPITQGTKPVTISVANHTQCSCLSK</Hsp_hseq>
+      <Hsp_midline>+ +  C PREV V +  E          P CV+V RCGGCC  +  +C       +   +  I  P +Q  +   +S+  H+QC C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_029950994.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115391040 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029950994</Hit_accession>
+  <Hit_len>503</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>3.46648e-06</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>88</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>RATCQPREVVVPLTVELMG--TVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQL----GEMSLEEHSQCECR</Hsp_qseq>
+      <Hsp_hseq>QAACKVRTEVMEVTRSMLDRRNANFLLWPPCVEVQRCSGCCNTRLLQCVPTVTASRYLQVIKIQYVNKQAHYDKAIISVEDHVSCRCQ</Hsp_hseq>
+      <Hsp_midline>+A C+ R  V+ +T  ++        L P CV VQRC GCC    L+CVPT      +Q++ I+Y + Q       +S+E+H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_029950052.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029950052</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>5.12571e-06</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AESYSLEILKAIDEEWQRTQCMPRETCVDVAKELGTDPSMFFKPPCVSVHRCSGCCNQEGVTCRNTTTVFVNKTVLSV-IPFKFVPEPVLIKVANHTECKC</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID  + R  C PRE  V +  EL    +    P CV+V RC GCC  +G+ C  T    V   +L +  P   + E   + +  H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_029945023.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029945023</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000134004</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>HSRRKRSIVEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCQPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>H R+  S ++    A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +H   +++  + Y    P  +   + LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_029945024.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029945024</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000144195</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTRATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>HSRRKRSIVEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCQPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>H R+  S ++    A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    + C P+ +H   +++  + Y    P  +   + LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_029949964.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029949964</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000379887</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDS</Hsp_qseq>
+      <Hsp_hseq>HRRSIV--VEEAQPAVCKVRTTIYEIPRSQVDPTAANFIIWPPCVEVKRCTGCCNTSNMRCQAARKHHRTVKVAKVEYVRRRPKLREVQVKLEDHLECMCTNRRHVS</Hsp_hseq>
+      <Hsp_midline>H+R +V  ++    A C+ R  +  +    +   A   +  P CV V+RC GCC    + C    +H   +++  + Y    P  +  ++ LE+H +C C  ++  S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_029970713.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Salarias fasciatus]</Hit_def>
+  <Hit_accession>XP_029970713</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00191261</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPSS------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRTDAI-FWPSCLLVKRCGGNCACCSHRCFDCQCVPLRVTKKYHEVLLLKHRSGARGLQKSLTDVPLEHHEECSC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T A    PSC+ V+RCGG   CC     +  CVP    +   ++L++++ S        L ++ LE H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1887100998</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

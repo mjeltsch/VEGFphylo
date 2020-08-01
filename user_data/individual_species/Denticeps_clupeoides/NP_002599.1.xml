@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_028842319.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC114794133 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028842319</Hit_accession>
+  <Hit_len>528</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.836</Hsp_bit-score>
+      <Hsp_score>390</Hsp_score>
+      <Hsp_evalue>1.48985e-43</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>218</Hsp_align-len>
+      <Hsp_qseq>LRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGKHRKFKHTHDK</Hsp_qseq>
+      <Hsp_hseq>VRLSGGEGDPLPPALVELVRRSPISSIEDLQLLLLRDSEVPDSQPTDGHNSNN-------SYVRLPRSLD----AQPAQQAQCKVRTEVMEVTRSMLDRSNANFLLWPPCVEVQRCSGCCNTKSLHCVPVLMHMRYLQVMRIQYINKRPHYDKAVVSVNDHVECRCQ------PVPRIPVGS---RKKAASSR---RQTPKERPVKAHSKEDLHRHDE</Hsp_hseq>
+      <Hsp_midline>+RL   EGDP+P  L E++    I S +DLQ LL  D    D    D + + +       S  R  RSL     A+PA  A+CK RTEV E++R ++DR+NANFL+WPPCVEVQRCSGCCN +++ C P  + +R +QV +I+ + K+P + KA V++ DH+ C+C+      PV R P GS   R K   +R   R     RP K   ++  H HD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_028829434.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC114786463 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028829434</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>5.8746e-42</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>LFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRV</Hsp_qseq>
+      <Hsp_hseq>LLATVAVCVRLSGSESDPLPPSLLDLVIDAPVSSIGDLQMLLGTDSVEEEPDD------KIHSRKDHHRLPRS-----PIALAEPAQQAVCKVRTEVLEVTRSMHDRTNAHFILWPPCVEVERCSGCCNSRASQCVAVVKEMRQLQMTKITYVNMRPHFEKIIVPVEDHVKCSCQTIASAH-AARSSTPRKPQSTPSPPQRV</Hsp_hseq>
+      <Hsp_midline>L  ++   +RL  +E DP+P  L +++ D  + S  DLQ LL  D  EE+  +      + HS  +   L R       + +AEPA  A CK RTEV E++R + DRTNA+F++WPPCVEV+RCSGCCN+R  QC     ++R +Q+ KI  V  +P F+K  V +EDH+ C C+T+A+A    RS    + Q   +P  RV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_028843615.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X4 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028843615</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>136.732</Hsp_bit-score>
+      <Hsp_score>343</Hsp_score>
+      <Hsp_evalue>1.25099e-39</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>MNRCWALFLSLCCYLRL-VSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP-GEEDGAELDLNMTRSHSGG-----ELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>MRSAQVYFLLCTSYLLLFLTAEELGIPQELIERLSHSEINSISDLQRLLDIDAVGNEVIEEPKQRHHKNYSHGYHGYSDLKSSQVHRRRKRSVEEAVPAV---CKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHASRKHHRIVKVAKVEYVRRKPRLKEVLVRLEDHLECEC</Hsp_hseq>
+      <Hsp_midline>M      FL    YL L ++AE   IP+EL E LS   I S  DLQRLL  D  G E   E      +++S G     +L+S    RR   S+  A PA+   CKTRT ++EI R  +D T ANFL+WPPCVEV+RC+GCCN  N++C  ++   R V+V K+E VR+KP  K+  V LEDHL C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_028843614.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028843614</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>135.961</Hsp_bit-score>
+      <Hsp_score>341</Hsp_score>
+      <Hsp_evalue>2.99936e-39</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>189</Hsp_align-len>
+      <Hsp_qseq>MNRCWALFLSLCCYLRL-VSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP---GEEDGAELDLNMTRSHSGG-----ELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>MRSAQVYFLLCTSYLLLFLTAEELGIPQELIERLSHSEINSISDLQRLLDIDAVGTGNEVIEEPKQRHHKNYSHGYHGYSDLKSSQVHRRRKRSVEEAVPAV---CKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHASRKHHRIVKVAKVEYVRRKPRLKEVLVRLEDHLECEC</Hsp_hseq>
+      <Hsp_midline>M      FL    YL L ++AE   IP+EL E LS   I S  DLQRLL  D    G E   E      +++S G     +L+S    RR   S+  A PA+   CKTRT ++EI R  +D T ANFL+WPPCVEV+RC+GCCN  N++C  ++   R V+V K+E VR+KP  K+  V LEDHL C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_028843613.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028843613</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>132.109</Hsp_bit-score>
+      <Hsp_score>331</Hsp_score>
+      <Hsp_evalue>1.34519e-37</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>205</Hsp_align-len>
+      <Hsp_qseq>MNRCWALFLSLCCYLRL-VSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGD-----------PG----------EEDGAELDLNMTRSHSG-GELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCET</Hsp_qseq>
+      <Hsp_hseq>MRSAQVYFLLCTSYLLLFLTAEELGIPQELIERLSHSEINSISDLQRLLDIDAVGKGSDPVVSPGWSARRGNEVIEEPKQRHHKNYSHGYHGYSDLKSSQVHRRRKRSVEEAVPAV---CKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHASRKHHRIVKVAKVEYVRRKPRLKEVLVRLEDHLECECTS</Hsp_hseq>
+      <Hsp_midline>M      FL    YL L ++AE   IP+EL E LS   I S  DLQRLL  D           PG          EE       N +  + G  +L+S    RR   S+  A PA+   CKTRT ++EI R  +D T ANFL+WPPCVEV+RC+GCCN  N++C  ++   R V+V K+E VR+KP  K+  V LEDHL C+C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_028843612.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028843612</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>131.339</Hsp_bit-score>
+      <Hsp_score>329</Hsp_score>
+      <Hsp_evalue>2.70255e-37</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>207</Hsp_align-len>
+      <Hsp_qseq>MNRCWALFLSLCCYLRL-VSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGD-----------PG------------EEDGAELDLNMTRSHSG-GELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCET</Hsp_qseq>
+      <Hsp_hseq>MRSAQVYFLLCTSYLLLFLTAEELGIPQELIERLSHSEINSISDLQRLLDIDAVGKGSDPVVSPGWSARRGTGNEVIEEPKQRHHKNYSHGYHGYSDLKSSQVHRRRKRSVEEAVPAV---CKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHASRKHHRIVKVAKVEYVRRKPRLKEVLVRLEDHLECECTS</Hsp_hseq>
+      <Hsp_midline>M      FL    YL L ++AE   IP+EL E LS   I S  DLQRLL  D           PG            EE       N +  + G  +L+S    RR   S+  A PA+   CKTRT ++EI R  +D T ANFL+WPPCVEV+RC+GCCN  N++C  ++   R V+V K+E VR+KP  K+  V LEDHL C+C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_028821892.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C-like isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028821892</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>3.48579e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>132</Hsp_align-len>
+      <Hsp_qseq>DLNMTRSHSGGELESLARGRRSLGSLT-IAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNNR--NVQCRPTQVQLRPVQVRKIEIVRKKPIFKK-----ATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DLYKPTWHMLGKAFLYPKKPRGVVDLNQLREEVRLYSCTPRN--FSVSLREELRRTDVVF--WPSCLLVQRCGGNCPCCSNRCYECQCQPVRVAKKYHEVKKVLMLKYKAGGKGLQKLLTDVPLEHHEECSC</Hsp_hseq>
+      <Hsp_midline>DL     H  G+     +  R +  L  + E   +  C  R   F +S R  + RT+  F  WP C+ VQRC G   CC+NR    QC+P +V  +  +V+K+ +++ K   K        V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_028837417.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028837417</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>4.70547e-05</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCE</Hsp_qseq>
+      <Hsp_hseq>CRTREVLVDIYQEYPDEIEHTYI--PSCVVLSRCAGCCTDEALECVPTETRNVTLEVIRVKQRVSQHNFQ---LSFTEHTKCKCK</Hsp_hseq>
+      <Hsp_midline>C+TR  + +I +   D     ++  P CV + RC+GCC +  ++C PT+ +   ++V +++    +  F+   ++  +H  CKC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_028836506.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Denticeps clupeoides] &gt;ref|XP_028836507.1| vascular endothelial growth factor D isoform X1 [Denticeps clupeoides] &gt;ref|XP_028836509.1| vascular endothelial growth factor D isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028836506</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>7.16745e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCMPRETCVDVATEL--GTTAELFFKPPCVSVFRCNGCCNKEGVTCRNTSTTYINKTLLSVIPFRHGP--EPVLVKVANHTECSC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    +++  L   T A     PPCV V RC+GCCN   V CR T        +  +   R  P  +   V + +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_028836508.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028836508</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.68968e-05</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCMPRETCVDVATEL--GTTAELFFKPPCVSVFRCNGCCNKEGVTCRNTSTTYINKTLLSVIPFRHGP--EPVLVKVANHTECSC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    +++  L   T A     PPCV V RC+GCCN   V CR T        +  +   R  P  +   V + +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_028808975.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin ICPP-like [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808975</Hit_accession>
+  <Hit_len>166</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>9.27726e-05</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>NANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAK</Hsp_qseq>
+      <Hsp_hseq>GVEYFFSPGCVLLHRCSGCCSDENLACYPTLT--RNITMQLLRITPAERSRRYVELSFMEHHSCECRPRRAPFTSERRGGGPNRRKGR</Hsp_hseq>
+      <Hsp_midline>   +   P CV + RCSGCC++ N+ C PT    R + ++ + I   +   +   ++  +H +C+C    A     R  GG   ++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_028837419.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X3 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028837419</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000165745</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCE</Hsp_qseq>
+      <Hsp_hseq>CRTREVLVDIYQEYPDEIEHTYI--PSCVVLSRCAGCCTDEALECVPTETRNVTLEVIRVKQRVSQHNFQ---LSFTEHTKCKCK</Hsp_hseq>
+      <Hsp_midline>C+TR  + +I +   D     ++  P CV + RC+GCC +  ++C PT+ +   ++V +++    +  F+   ++  +H  CKC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_028839685.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028839685</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000281539</Hsp_evalue>
+      <Hsp_query-from>87</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>TIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLE--DHLACKCET</Hsp_qseq>
+      <Hsp_hseq>VIMEEMQRTACRPREVCLEVSKEFPE--SANHIYLPRCVSVHRCGGCCPNEALQCTNTSYAI----INKTLVELSPPRMENSVVMVAVVNHTSCECQS</Hsp_hseq>
+      <Hsp_midline> I E      C+ R    E+S+   +  +AN +  P CV V RC GCC N  +QC  T   +    + K  +    P  + + V +   +H +C+C++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_028842665.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028842665</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00102236</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>71</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>59</Hsp_align-len>
+      <Hsp_qseq>PPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>PACVPVVRCAGCCGDENLECHPTLTSNVTMQLLKIKPTEKGREY--VEMTFVEHRTCEC</Hsp_hseq>
+      <Hsp_midline>P CV V RC+GCC + N++C PT      +Q+ KI+   K   +    +T  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_028834297.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028834297</Hit_accession>
+  <Hit_len>390</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.0011691</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CMPREVCLDVGKEFGAATNTFYK--PPCVSVYRCGGCCNSEEHQCMNISTSYISKTLFEITVPIKQGT-KPVTISFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>C  R    ++ +     TN  +   PPCV V RC GCCN+   QC           + +I +  K+   K  T++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_028834296.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028834296</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.0011704</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CMPREVCLDVGKEFGAATNTFYK--PPCVSVYRCGGCCNSEEHQCMNISTSYISKTLFEITVPIKQGT-KPVTISFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>C  R    ++ +     TN  +   PPCV V RC GCCN+   QC           + +I +  K+   K  T++  +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_028837418.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028837418</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00118697</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCE</Hsp_qseq>
+      <Hsp_hseq>CRTREVLVDIYQEYPDEIEHTYI--PSCVVLSRCAGCCTDEALECVPTETRNVTLEVIRVKQRVSQHNFQ---LSFTEHTKCKCK</Hsp_hseq>
+      <Hsp_midline>C+TR  + +I +   D     ++  P CV + RC+GCC +  ++C PT+ +   ++V +++    +  F+   ++  +H  CKC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_028842673.1|</Hit_id>
+  <Hit_def>placenta growth factor-like isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028842673</Hit_accession>
+  <Hit_len>127</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00180143</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>71</Hsp_hit-from>
+      <Hsp_hit-to>110</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>PPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRK</Hsp_qseq>
+      <Hsp_hseq>PACVPVVRCAGCCGDENLECHPTLTSNVTMQLLKIKPTEK</Hsp_hseq>
+      <Hsp_midline>P CV V RC+GCC + N++C PT      +Q+ KI+   K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_028821893.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C-like isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028821893</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00182758</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>DLNMTRSHSGGELESLARGRRSLGSLT-IAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNNR--NVQCRPTQVQLRPVQVRKIEIVRKKPIFKK--ATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DLYKPTWHMLGKAFLYPKKPRGVVDLNQLREEVRLYSCTPRN--FSVSLREELRRTDVVF--WPSCLLVQRCGGNCPCCSNRCYECQCQPVRVAKKYHEVLMLKYKAGGKGLQKLLTDVPLEHHEECSC</Hsp_hseq>
+      <Hsp_midline>DL     H  G+     +  R +  L  + E   +  C  R   F +S R  + RT+  F  WP C+ VQRC G   CC+NR    QC+P +V  +  +V  ++        +K    V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_028816230.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028816230</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00187802</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>DLNMTRSHSGGELESLARGRRSLGSLT-IAEPAMIAECKTRTEVFEIS-RRLIDRTNANFLVWPPCVEVQRCSG---CCNNR--NVQCRPTQVQLRPVQVRKIEIVRKKPIFKK--ATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>DLYKPTWHMLGKAFLYPKKPRGVVDLNQLREEVRLYSCTPRN--FSVSLREELRRTDVVF--WPSCLLVQRCGGNCPCCSNRCYECQCQPVRVTKKYHEVLMLKYKAGGKGLQKLLTDVPLEHHEECSC</Hsp_hseq>
+      <Hsp_midline>DL     H  G+     +  R +  L  + E   +  C  R   F +S R  + RT+  F  WP C+ VQRC G   CC+NR    QC+P +V  +  +V  ++        +K    V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_028816071.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like [Denticeps clupeoides] &gt;ref|XP_028822328.1| vascular endothelial growth factor A-A-like [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028816071</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00375181</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SSCQPRQALVEVWQEFPEETHHLYL--PSCVALQRCGGCCSDEALVCVPLHTHSTTLELMRTSYLRHEMV----QLPFTEHTQCEC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  + E+ +   + T+  +L  P CV +QRC GCC++  + C P       +++ +   +R + +     +   +H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_028808930.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808930</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0131208</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKP-IFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDIMTEYPDEVEHIFI--PSCVVLTRCAGCCHDEALECTPISTHNVTMEIKVLRPKRQQSNVFKSFT----EHSMCACREKKAVKEVT</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I     D     F+  P CV + RC+GCC++  ++C P       ++++ +   R++  +FK  T    +H  C C    A + VT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_028808927.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808927</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0136882</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKP-IFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDIMTEYPDEVEHIFI--PSCVVLTRCAGCCHDEALECTPISTHNVTMEIKVLRPKRQQSNVFKSFT----EHSMCACREKKAVKEVT</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I     D     F+  P CV + RC+GCC++  ++C P       ++++ +   R++  +FK  T    +H  C C    A + VT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_028808929.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808929</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0151877</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKP-IFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDIMTEYPDEVEHIFI--PSCVVLTRCAGCCHDEALECTPISTHNVTMEIKVLRPKRQQSNVFKSFT----EHSMCACREKKAVKEVT</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I     D     F+  P CV + RC+GCC++  ++C P       ++++ +   R++  +FK  T    +H  C C    A + VT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_028808926.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808926</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0218854</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKP-IFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDIMTEYPDEVEHIFI--PSCVVLTRCAGCCHDEALECTPISTHNVTMEIKVLRPKRQQSNVFKSFT----EHSMCACREKKAVKEVT</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I     D     F+  P CV + RC+GCC++  ++C P       ++++ +   R++  +FK  T    +H  C C    A + VT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_028808928.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Denticeps clupeoides]</Hit_def>
+  <Hit_accession>XP_028808928</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0234057</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKP-IFKKATVTLEDHLACKCETVAAARPVT</Hsp_qseq>
+      <Hsp_hseq>CQPREVLVDIMTEYPDEVEHIFI--PSCVVLTRCAGCCHDEALECTPISTHNVTMEIKVLRPKRQQSNVFKSFT----EHSMCACREKKAVKEVT</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I     D     F+  P CV + RC+GCC++  ++C P       ++++ +   R++  +FK  T    +H  C C    A + VT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>104</Statistics_hsp-len>
+      <Statistics_eff-space>3953124588</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

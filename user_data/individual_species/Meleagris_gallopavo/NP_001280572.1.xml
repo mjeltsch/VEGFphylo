@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_019471674.1|</Hit_id>
+  <Hit_def>placenta growth factor, partial [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_019471674</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.79</Hsp_bit-score>
+      <Hsp_score>312</Hsp_score>
+      <Hsp_evalue>5.29701e-36</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>89</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR-SGDRP----SYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>LAVLTFKEIWNRSFCRPREQLVDIITEFPNEVEYIFRPSCVSLQRCGGCCGDEGLRCVPVQTGTVTVQLVKIKPNGEAPYVEAPYVEMSFTEHKQCECRPRQD</Hsp_hseq>
+      <Hsp_midline>+ V+ F+E+W RS+CR  E+LVD+++E+P+EVE++F PSCVSL RC GCCGDE L CVPV+T  VT+QL+KI+ +G+ P     YVE++F++H +CECRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_031408043.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_031408043</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>1.96711e-32</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER--RRPKGRG</Hsp_qseq>
+      <Hsp_hseq>VIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFRPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIARIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKPRSDG</Hsp_hseq>
+      <Hsp_midline>V+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++ +I+         ++F QH +C+CRP ++ K K E+  ++P+  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_003203122.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_003203122</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>3.50731e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>  E W ++ C   E  V+V  E  +     F P CV++ RC GCC +E+L C+   T  V+  L +I       P  V +  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_019470664.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_019470664</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>2.10673e-07</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>102</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVT</Hsp_qseq>
+      <Hsp_hseq>FAAAHYNAEI-LKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYIS</Hsp_hseq>
+      <Hsp_midline> +A + ++E+ +      W ++ C   E  VDV  E+ +     F P CVS+ RC GCC  E L C+ + T  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_010717977.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010717977</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00190805</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   +R   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_010717978.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010717978</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00218671</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   +R   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_010717979.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010717979</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00228368</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   +R   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_010709167.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010709167</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.00862274</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>59</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI---RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNNRNVQCRPMQIRIRHVQVNKIEFVQKKPVFKKVVVPLEDHVQCRC</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC + N+ C P++     +Q+ KI   +       V +    HV+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>922566600</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

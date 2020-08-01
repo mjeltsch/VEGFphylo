@@ -1,0 +1,1022 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>241</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-B NP_002599.1 platelet-derived growth factor subunit B isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>241</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_018115156.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018115156</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.866</Hsp_bit-score>
+      <Hsp_score>442</Hsp_score>
+      <Hsp_evalue>8.46503e-54</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>237</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>VSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARP-VTRSPGGSQEQRAKTPQTRVTIRTVRVR----RPPKGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>INAEGDPIPEEMFKKISEGAVTSISELRRVLQIDSVDEEDNYASINELRS-SPTSNSSHSRVIRSLD----AEQAVLAECKPRVEVFEISRKLVDPTNANFLVWPPCVEVQRCSGCCNGKTMRCAPTRIHIRHVQVNKIYISRQGKKHVKVIVPLEDHLVCKCEPVPSSTVRIHHTPPESKKAIELPPSTMAPAPTSKKEEQPLRPHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>++AEGDPIPEE+++ +S+ ++ S  +L+R+L  D  +E+     +N  RS S     S +R  RSL     AE A++AECK R EVFEISR+L+D TNANFLVWPPCVEVQRCSGCCN + ++C PT++ +R VQV KI I R+     K  V LEDHL CKCE V ++   +  +P  S++     P T     T +      RP K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_018114322.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like isoform X2 [Xenopus laevis] &gt;gb|OCT85489.1| hypothetical protein XELAEV_18023657mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018114322</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>164.466</Hsp_bit-score>
+      <Hsp_score>415</Hsp_score>
+      <Hsp_evalue>1.00795e-49</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>AEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH----SGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETV-AAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPP----KGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>AEGDPIPEEMFKKISEGAVSSISELRRVLQIDSVDDED---DFNYASIHETRRSPTNHSSHSRVIRSLD----AEQAVIAECKPRVEVFEISRKLVDPTNANFLVFPQCVEVQRCSGCCNSKTMRCAPTRIHIRHVKVNKIYITKQGKKHVKVVVPLEDHLDCKCEPVPSSAVRIHHTPPETKKAIELPPSTMAPVPAFQKEEQPLRLHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>AEGDPIPEE+++ +S+ ++ S  +L+R+L  D  +++    D N    H    S     S +R  RSL     AE A+IAECK R EVFEISR+L+D TNANFLV+P CVEVQRCSGCCN++ ++C PT++ +R V+V KI I ++     K  V LEDHL CKCE V ++A  +  +P  +++     P T   +   +    P    K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_018114321.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018114321</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.999</Hsp_bit-score>
+      <Hsp_score>406</Hsp_score>
+      <Hsp_evalue>2.67569e-48</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>243</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>135</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>GDPIPEELYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSH----SGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETV-AAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPP----KGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>GDPIPEEMFKKISEGAVSSISELRRVLQIDSVDDED---DFNYASIHETRRSPTNHSSHSRVIRSLD----AEQAVIAECKPRVEVFEISRKLVDPTNANFLVFPQCVEVQRCSGCCNSKTMRCAPTRIHIRHVKVNKIYITKQGKKHVKVVVPLEDHLDCKCEPVPSSAVRIHHTPPETKKAIELPPSTMAPVPAFQKEEQPLRLHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>GDPIPEE+++ +S+ ++ S  +L+R+L  D  +++    D N    H    S     S +R  RSL     AE A+IAECK R EVFEISR+L+D TNANFLV+P CVEVQRCSGCCN++ ++C PT++ +R V+V KI I ++     K  V LEDHL CKCE V ++A  +  +P  +++     P T   +   +    P    K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|NP_001087935.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Xenopus laevis] &gt;ref|XP_018115158.1| PREDICTED: platelet-derived growth factor subunit B isoform X3 [Xenopus laevis] &gt;gb|AAH77559.1| Pdgfb protein [Xenopus laevis] &gt;gb|OCT83114.1| hypothetical protein XELAEV_18025654mg [Xenopus laevis] &gt;gb|OCT83115.1| hypothetical protein XELAEV_18025654mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001087935</Hit_accession>
+  <Hit_len>213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.066</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>3.97985e-46</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>216</Hsp_align-len>
+      <Hsp_qseq>LYEMLSDHSIRSFDDLQRLLHGDPGEEDGAELDLNMTRSHSGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARP-VTRSPGGSQEQRAKTPQTRVTIRTVRVR----RPPKGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>MFKKISEGAVTSISELRRVLQIDSVDEEDNYASINELRS-SPTSNSSHSRVIRSLD----AEQAVLAECKPRVEVFEISRKLVDPTNANFLVWPPCVEVQRCSGCCNGKTMRCAPTRIHIRHVQVNKIYISRQGKKHVKVIVPLEDHLVCKCEPVPSSTVRIHHTPPESKKAIELPPSTMAPAPTSKKEEQPLRPHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>+++ +S+ ++ S  +L+R+L  D  +E+     +N  RS S     S +R  RSL     AE A++AECK R EVFEISR+L+D TNANFLVWPPCVEVQRCSGCCN + ++C PT++ +R VQV KI I R+     K  V LEDHL CKCE V ++   +  +P  S++     P T     T +      RP K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_018092794.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Xenopus laevis] &gt;gb|AAA49928.1| platelet-derived growth factor A chain short form precursor [Xenopus laevis] &gt;gb|AAI69971.1| Unknown (protein for MGC:196698) [Xenopus laevis] &gt;gb|OCT61560.1| hypothetical protein XELAEV_18047587mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018092794</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.288</Hsp_bit-score>
+      <Hsp_score>373</Hsp_score>
+      <Hsp_evalue>5.80076e-44</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>WALFLSLCC-YLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>WILLLSVCCSYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASAA--NIRSQKHDFHHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>W L LS+CC YL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +    N+           L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_018092793.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Xenopus laevis] &gt;emb|CAA35583.1| unnamed protein product [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018092793</Hit_accession>
+  <Hit_len>215</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.673</Hsp_bit-score>
+      <Hsp_score>374</Hsp_score>
+      <Hsp_evalue>7.12607e-44</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>WALFLSLCC-YLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>WILLLSVCCSYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASAA--NIRSQKHDFHHNRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>W L LS+CC YL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +    N+           L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|NP_001081304.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A precursor [Xenopus laevis] &gt;sp|P13698.1| RecName: Full=Platelet-derived growth factor subunit A; Short=PDGF subunit A; AltName: Full=PDGF-1; AltName: Full=Platelet-derived growth factor A chain; AltName: Full=Platelet-derived growth factor alpha polypeptide; Flags: Precursor [Xenopus laevis] &gt;gb|AAA49927.1| platelet-derived growth factor A chain long form precursor [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001081304</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.288</Hsp_bit-score>
+      <Hsp_score>373</Hsp_score>
+      <Hsp_evalue>1.10735e-43</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>WALFLSLCC-YLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>WILLLSVCCSYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASAANIR-SQKHDFHH-NRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>W L LS+CC YL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +  ++  ++ H       L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_018115157.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X2 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018115157</Hit_accession>
+  <Hit_len>235</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.05</Hsp_bit-score>
+      <Hsp_score>362</Hsp_score>
+      <Hsp_evalue>6.49826e-42</Hsp_evalue>
+      <Hsp_query-from>89</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>156</Hsp_align-len>
+      <Hsp_qseq>AEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARP-VTRSPGGSQEQRAKTPQTRVTIRTVRVR----RPPKGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>AEQAVLAECKPRVEVFEISRKLVDPTNANFLVWPPCVEVQRCSGCCNGKTMRCAPTRIHIRHVQVNKIYISRQGKKHVKVIVPLEDHLVCKCEPVPSSTVRIHHTPPESKKAIELPPSTMAPAPTSKKEEQPLRPHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>AE A++AECK R EVFEISR+L+D TNANFLVWPPCVEVQRCSGCCN + ++C PT++ +R VQV KI I R+     K  V LEDHL CKCE V ++   +  +P  S++     P T     T +      RP K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_018091899.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X3 [Xenopus laevis] &gt;gb|OCT64182.1| hypothetical protein XELAEV_18045283mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018091899</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.124</Hsp_bit-score>
+      <Hsp_score>357</Hsp_score>
+      <Hsp_evalue>1.32865e-41</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>CCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIR-SQTHDFHH-NRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>CCYL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +  ++  +++H       L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_018091898.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018091898</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.51</Hsp_bit-score>
+      <Hsp_score>358</Hsp_score>
+      <Hsp_evalue>1.56727e-41</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>CCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIR-SQTHDFHH-NRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>CCYL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +  ++  +++H       L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_018091897.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018091897</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.51</Hsp_bit-score>
+      <Hsp_score>358</Hsp_score>
+      <Hsp_evalue>1.61917e-41</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>CCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDP--GEEDGAELDLNMTRSHSGGELESLARGRRSLGS--LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CCYLSPSLGEEAEIPQELIERLAHSEIRSISDLQRLLDIDSVGGGEDASGANIR-SQTHDFHH-NRLVPEKRSVPSRRKRSVEEAVPAICKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRNVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>CCYL     E   IP+EL E L+   IRS  DLQRLL  D   G ED +  ++  +++H       L   +RS+ S      E A+ A CKTRT ++EI R  ID T+ANFL+WPPCVEV+RC+GCCN  +V+C+P+++  R V+V K+E VRKKP  K+  V LE+HL C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_018114323.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like isoform X3 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018114323</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>135.576</Hsp_bit-score>
+      <Hsp_score>340</Hsp_score>
+      <Hsp_evalue>9.72878e-39</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>190</Hsp_align-len>
+      <Hsp_qseq>ELDLNMTRSH----SGGELESLARGRRSLGSLTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETV-AAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPP----KGKHRKFKHTHDKTALKETL</Hsp_qseq>
+      <Hsp_hseq>EDDFNYASIHETRRSPTNHSSHSRVIRSLD----AEQAVIAECKPRVEVFEISRKLVDPTNANFLVFPQCVEVQRCSGCCNSKTMRCAPTRIHIRHVKVNKIYITKQGKKHVKVVVPLEDHLDCKCEPVPSSAVRIHHTPPETKKAIELPPSTMAPVPAFQKEEQPLRLHKKKNRKFKHLPSKKEQRELL</Hsp_hseq>
+      <Hsp_midline>E D N    H    S     S +R  RSL     AE A+IAECK R EVFEISR+L+D TNANFLV+P CVEVQRCSGCCN++ ++C PT++ +R V+V KI I ++     K  V LEDHL CKCE V ++A  +  +P  +++     P T   +   +    P    K K+RKFKH   K   +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|NP_001089283.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C S homeolog precursor [Xenopus laevis] &gt;gb|AAH90223.1| MGC85010 protein [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001089283</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>5.08027e-07</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>ECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>QCMPREVCVDVGKEFGAPTNTFFK--PPCVSVYRCGGCCNSEGMHCMNTSSTFISKTLFEITVPLSQGPVKPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>+C  R    ++ +     TN  F   PPCV V RC GCCN+  + C  T        + +I +   +   K  T++  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_018113112.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X2 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018113112</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>3.50762e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>227</Hsp_query-to>
+      <Hsp_hit-from>71</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKCETVAAARPVTRSPGGSQEQRAKTPQTRVTIRTVRVRRPPKGKHRKFK</Hsp_qseq>
+      <Hsp_hseq>SDFLFIPPCVSVLRCAGCCLDEALGCAPLQTSNITMQVIKTKSLQS----DLTNLSITQHVSCQCSLYIAGEKKVKKRRRKLKNGNGTPQADGS------PCPPCNKHRTLN</Hsp_hseq>
+      <Hsp_midline>++FL  PPCV V RC+GCC +  + C P Q     +QV K + ++         +++  H++C+C    A     +      +    TPQ   +        PP  KHR   </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|OCT96929.1|</Hit_id>
+  <Hit_def>hypothetical protein XELAEV_18009147mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>OCT96929</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.10247e-05</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>TQCMPREVCVDVGKEFGAPTNTFFK--PPCVSVYRCGGCCNSEGMHCMNTSSTFISKTLFEITVPLSQGPVKPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline> +C  R    ++ +     TN  F   PPCV V RC GCCN+  + C  T        + +I +   +   K  T++  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_018086215.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Xenopus laevis] &gt;gb|OCT99613.1| hypothetical protein XELAEV_18005395mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018086215</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>2.0233e-05</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>TQCLPREVCVDVGKEFGAPTNTFFK--PPCVSIYRCGGCCNSEGLHCMNTSSTFVSKTLFEITVPLSQGPVKPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline> +C  R    ++ +     TN  F   PPCV + RC GCCN+  + C  T        + +I +   +   K  T++  +H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|OCT84076.1|</Hit_id>
+  <Hit_def>hypothetical protein XELAEV_18022214mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>OCT84076</Hit_accession>
+  <Hit_len>278</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>3.74331e-05</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIF--------------KKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SDFLFIPPCVSVLRCAGCCLDEALGCAPLQTSNITMQVNIIKISNKKDFLYFLSHVIKTKSLQSDLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>++FL  PPCV V RC+GCC +  + C P Q     +QV  I+I  KK                     +++  H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|NP_001079058.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A L homeolog precursor [Xenopus laevis] &gt;gb|AAB63679.1| vascular endothelial growth factor 122 [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001079058</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>5.24812e-05</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CQVREILVDIFQEYPDEVE--YIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_018113111.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018113111</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.99062e-05</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>71</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>ANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>SDFLFIPPCVSVLRCAGCCLDEALGCAPLQTSNITMQVIKTKSLQS----DLTNLSITQHVSCQC</Hsp_hseq>
+      <Hsp_midline>++FL  PPCV V RC+GCC +  + C P Q     +QV K + ++         +++  H++C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_018117096.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X5 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117096</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000116305</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPDE--VEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_018117093.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X2 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117093</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000119172</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_018117092.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117092</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000125808</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_018100176.1|</Hit_id>
+  <Hit_def>PREDICTED: c-fos induced growth factor (vascular endothelial growth factor D) L homeolog isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018100176</Hit_accession>
+  <Hit_len>341</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000152965</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCIPRETCVDVGKDLGTSTNTFFK--PPCVSVFRCGGCCNEEGISCVNTSTSYVFKTLFEISVPLTQAP--EPVTIKIANHTSCKC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    ++ + L   TN  F   PPCV V RC GCCN   + C  T        + +I + + + P  +  T+ + +H +CKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|NP_001121269.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D precursor [Xenopus laevis] &gt;gb|AAI24877.1| LOC100158352 protein [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001121269</Hit_accession>
+  <Hit_len>341</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000172246</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCIPRETCVDVGKDLGTSTNTFFK--PPCVSVFRCGGCCNEEGISCVNTSTSYVFKTLFEISVPLTQAP--EPVTIKIANHTSCKC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    ++ + L   TN  F   PPCV V RC GCCN   + C  T        + +I + + + P  +  T+ + +H +CKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_018117095.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X4 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117095</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000219678</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_018117097.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X6 [Xenopus laevis] &gt;gb|AAB63680.1| vascular endothelial growth factor 196 [Xenopus laevis] &gt;gb|OCT79611.1| hypothetical protein XELAEV_18026419mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117097</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.00022026</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_018117094.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X3 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117094</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.00022632</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|OCT93952.1|</Hit_id>
+  <Hit_def>hypothetical protein XELAEV_18011615mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>OCT93952</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000240325</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>IAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEI-VRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCIPRETCVDVGKDLGTSTNTFFK--PPCVSVFRCGGCCNEEGISCVNTSTSYVFKTLFEISVPLTQAP--EPVTIKIANHTSCKC</Hsp_hseq>
+      <Hsp_midline>I E     +C  R    ++ + L   TN  F   PPCV V RC GCCN   + C  T        + +I + + + P  +  T+ + +H +CKC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_018117098.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A L homeolog isoform X7 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018117098</Hit_accession>
+  <Hit_len>177</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000330401</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>80</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>CQVREILVDIFQEYPD--EVEYIFKPSCVPLMRCAGCCNDESLECVPTECYNITMQIMKIKPHISQHIM---DMSFQQHSQCEC</Hsp_hseq>
+      <Hsp_midline>C+ R  + +I +   D     ++  P CV + RC+GCCN+ +++C PT+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_018086693.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Xenopus laevis] &gt;gb|OCT99668.1| hypothetical protein XELAEV_18005451mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018086693</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000727522</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>226</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GELESLARGRRSLGSLTIAEPAMIAECKTRT-EVFEISRRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEIVRKKPIFKK--ATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GKSYMYGRKNRVVDLNLLKEEVRLYSCTPRNFSVF--LREELKRTDVIF--WPSCLLVKRCGGNCACCNHVCRECQCMPTKVTKKYHEVLQLKQRNGMKTLQKSLADVPLEHHEECTC</Hsp_hseq>
+      <Hsp_midline>G+     R  R +    + E   +  C  R   VF   R  + RT+  F  WP C+ V+RC G   CCN+  R  QC PT+V  +  +V +++        +K  A V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_018098734.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Xenopus laevis] &gt;gb|OCT96980.1| hypothetical protein XELAEV_18009200mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018098734</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00722727</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>226</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GELESLARGRRSLGSLTIAEPAMIAECKTRT-EVFEISRRLIDRTNANFLVWPPCVEVQRCSG---CCNN--RNVQCRPTQVQLRPVQVRKIEIVRKKPIFKK--ATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>GKSYMYGRKNRVVDLNLLKEEVRLYSCTPRNFSVF--LREELKRTDAIF--WPSCLLVKRCGGNCACCNHVCSECHCMPTKVTKKYHEVLQLKQRIGMKTLQKSLADVPLEHHEECAC</Hsp_hseq>
+      <Hsp_midline>G+     R  R +    + E   +  C  R   VF   R  + RT+A F  WP C+ V+RC G   CCN+      C PT+V  +  +V +++        +K  A V LE H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|NP_001091254.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A S homeolog precursor [Xenopus laevis] &gt;gb|AAI69428.1| Vascular endothelial growth factor A-b [Xenopus laevis] &gt;gb|AAI69430.1| Vascular endothelial growth factor A-b [Xenopus laevis] &gt;gb|ABF19724.1| vascular endothelial growth factor A-b isoform 4 [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001091254</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0145867</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPE--EVEYIFKPSCVPLMRCAGCCNDESLECVSTESYNITMQIMKIKPHISQHIM---DMSFQQHSHCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   +     ++  P CV + RC+GCCN+ +++C  T+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|XP_018119668.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A S homeolog isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018119668</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0158491</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPE--EVEYIFKPSCVPLMRCAGCCNDESLECVSTESYNITMQIMKIKPHISQHIM---DMSFQQHSHCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   +     ++  P CV + RC+GCCN+ +++C  T+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_018119669.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A S homeolog isoform X2 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018119669</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0161175</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>LTIAEPAMIAECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQLRPVQVRKIEIVRKKPIFKKATVTLEDHLACKC</Hsp_qseq>
+      <Hsp_hseq>LKVYERSM---CQVREILVDIFQEYPE--EVEYIFKPSCVPLMRCAGCCNDESLECVSTESYNITMQIMKIKPHISQHIM---DMSFQQHSHCEC</Hsp_hseq>
+      <Hsp_midline>L + E +M   C+ R  + +I +   +     ++  P CV + RC+GCCN+ +++C  T+     +Q+ KI+    + I     ++ + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gb|OCT77452.1|</Hit_id>
+  <Hit_def>hypothetical protein XELAEV_18028544mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>OCT77452</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0286942</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>18</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>24</Hsp_align-len>
+      <Hsp_qseq>PPCVEVQRCSGCCNNRNVQCRPTQ</Hsp_qseq>
+      <Hsp_hseq>PSCVPLMRCAGCCNDESLECVSTE</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCCN+ +++C  T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>106</Statistics_hsp-len>
+      <Statistics_eff-space>5249609865</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

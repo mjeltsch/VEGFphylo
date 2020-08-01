@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_015974630.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015974630</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>313.153</Hsp_bit-score>
+      <Hsp_score>801</Hsp_score>
+      <Hsp_evalue>1.19091e-109</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>193</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDT</Hsp_qseq>
+      <Hsp_hseq>MRTWACLLLLGCGYLAHALAEEAEIPREVIERLAHSQIHSIRDLQRLLEIDSVGAEDALGSSPRAHGGRASKHTPEKRLGPVRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVRRCTGCCTTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTCAAGSPSPDHREEET</Hsp_hseq>
+      <Hsp_midline>MRT ACLLLLGCGYLAH LAEEAEIPREVIERLA SQIHSIRDLQRLLEIDSVG+ED+L +S RAHG  A+KH PEKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEV+RCTGCC TSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC CA  S +PD+REE+T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_015974628.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015974628</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>305.449</Hsp_bit-score>
+      <Hsp_score>781</Hsp_score>
+      <Hsp_evalue>2.19939e-106</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>173</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDY</Hsp_qseq>
+      <Hsp_hseq>MRTWACLLLLGCGYLAHALAEEAEIPREVIERLAHSQIHSIRDLQRLLEIDSVGAEDALGSSPRAHGGRASKHTPEKRLGPVRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVRRCTGCCTTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECTCAAGSPSPDH</Hsp_hseq>
+      <Hsp_midline>MRT ACLLLLGCGYLAH LAEEAEIPREVIERLA SQIHSIRDLQRLLEIDSVG+ED+L +S RAHG  A+KH PEKR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEV+RCTGCC TSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC CA  S +PD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_015984386.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X3 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984386</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.05</Hsp_bit-score>
+      <Hsp_score>362</Hsp_score>
+      <Hsp_evalue>1.53385e-42</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>LLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDS-LDTSLRAHGVHATKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>LFLSLCCYLRLVSAEGDPIPEELYEMLSDHSIRSFDDLQRLLHGDSVDEDGAELDLNL------TQSHSGGKSESLSRGRRSLDATTVAEPAMIAECKTRTEVFEISRRLVDRTNANFLVWPPCVEVQRCSGCCSNRHVQCRPTQVQLRHVQVRKIEIVRKKPSFKKATVTLEDHLACKCET</Hsp_hseq>
+      <Hsp_midline>L L  C YL  V AE   IP E+ E L+   I S  DLQRLL  DSV  + + LD +L         H   K     R +RS+      E A+ A CKTRT ++EI R  VD T+ANFL+WPPCVEV+RC+GCC+   V+C+P++V  R V+V K+E VRKKP  K+  V LE+HL C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_015984385.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984385</Hit_accession>
+  <Hit_len>289</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>135.191</Hsp_bit-score>
+      <Hsp_score>339</Hsp_score>
+      <Hsp_evalue>1.33883e-38</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>IPREVIERLARSQIHSIRDLQRLLEIDSVGSEDS-LDTSLRAHGVHATKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>IPEELYEMLSDHSIRSFDDLQRLLHGDSVDEDGAELDLNL------TQSHSGGKSESLSRGRRSLDATTVAEPAMIAECKTRTEVFEISRRLVDRTNANFLVWPPCVEVQRCSGCCSNRHVQCRPTQVQLRHVQVRKIEIVRKKPSFKKATVTLEDHLACKCET</Hsp_hseq>
+      <Hsp_midline>IP E+ E L+   I S  DLQRLL  DSV  + + LD +L         H   K     R +RS+      E A+ A CKTRT ++EI R  VD T+ANFL+WPPCVEV+RC+GCC+   V+C+P++V  R V+V K+E VRKKP  K+  V LE+HL C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_015984384.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984384</Hit_accession>
+  <Hit_len>367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>134.806</Hsp_bit-score>
+      <Hsp_score>338</Hsp_score>
+      <Hsp_evalue>1.23356e-37</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>IPREVIERLARSQIHSIRDLQRLLEIDSVGSEDS-LDTSLRAHGVHATKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>IPEELYEMLSDHSIRSFDDLQRLLHGDSVDEDGAELDLNL------TQSHSGGKSESLSRGRRSLDATTVAEPAMIAECKTRTEVFEISRRLVDRTNANFLVWPPCVEVQRCSGCCSNRHVQCRPTQVQLRHVQVRKIEIVRKKPSFKKATVTLEDHLACKCET</Hsp_hseq>
+      <Hsp_midline>IP E+ E L+   I S  DLQRLL  DSV  + + LD +L         H   K     R +RS+      E A+ A CKTRT ++EI R  VD T+ANFL+WPPCVEV+RC+GCC+   V+C+P++V  R V+V K+E VRKKP  K+  V LE+HL C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_015974035.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015974035</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>2.41068e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC----ATTSLNPDYREEDTGRPR</Hsp_qseq>
+      <Hsp_hseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKESAVNPDRAATPHHRPQ</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C      +++NPD       RP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_015974036.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015974036</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.0447e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>187</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC----ATTSLNPD</Hsp_qseq>
+      <Hsp_hseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKESAVNPD</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    P  +  ++ LEEH +C C      +++NPD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_015989854.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015989854</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000195096</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVEMANVTMQLLK---IRSGYRPSYVELTFSQHVRCEC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P  + + ++++ K   +R   +   V++   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_015989853.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015989853</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000289492</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVEMANVTMQLLK---IRSGYRPSYVELTFSQHVRCEC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P  + + ++++ K   +R   +   V++   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_015974449.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015974449</Hit_accession>
+  <Hit_len>351</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000292304</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEY-VRKKPKLKEVQVRLEEHLECACATTS</Hsp_qseq>
+      <Hsp_hseq>STNRFFKPPCVNVFRCGGCCNEESLICMNTSTSYVSKQLFEISVPLTSVPEL--VPVKVANHTGCKCLSTA</Hsp_hseq>
+      <Hsp_midline>S N    PPCV V RC GCCN  S+ C  +   + S ++ ++   +   P+L  V V++  H  C C +T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_016021517.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_016021517</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00167289</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEY-VRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>ATNTFFKPPCVSVYRCGGCCNSEGLQCMNTSTGYLSKTLFEITVPLSQGP--KPVTISFANHTSCRCMS</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+  ++C  +   + S  + ++   + + P  K V +    H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_015984228.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X4 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984228</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00401275</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIR-LHKVQHIGEMSFLQHEKCEC</Hsp_hseq>
+      <Hsp_midline>P    ++  P CV + RC GCCN   ++C P+   + ++++ ++  + K   + E+     E  EC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_015994155.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Rousettus aegyptiacus] &gt;ref|XP_015994156.1| PREDICTED: platelet-derived growth factor C isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015994155</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0103015</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>269</Hsp_hit-from>
+      <Hsp_hit-to>338</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTGCC-----NTSSVKCQPSRV---HHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>IFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKVGVRGLHK-SLTDVALEHHEECDCV</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G C     N +  +C PS+V   +H  +++     VR   K     V LE H EC C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_015994157.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015994157</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0103836</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>268</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTGCC-----NTSSVKCQPSRV---HHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>IFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKVGVRGLHK-SLTDVALEHHEECDCV</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G C     N +  +C PS+V   +H  +++     VR   K     V LE H EC C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_015984225.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984225</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.01054</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIR-LHKVQHIGEMSFLQHEKCEC</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   ++C P+   + ++++ ++  + K   + E+     E  EC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_015984227.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X3 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984227</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0129022</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIR-LHKVQHIGEMSFLQHEKCEC</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   ++C P+   + ++++ ++  + K   + E+     E  EC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_015984226.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_015984226</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0145491</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>QVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLEC</Hsp_qseq>
+      <Hsp_hseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEEFNITMQIMRIR-LHKVQHIGEMSFLQHEKCEC</Hsp_hseq>
+      <Hsp_midline>Q  P    ++  P CV + RC GCCN   ++C P+   + ++++ ++  + K   + E+     E  EC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_016019158.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X2 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_016019158</Hit_accession>
+  <Hit_len>364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0173826</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>282</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTGCC-----NTSSVKCQPSRVHHRSVKVAKVE--YVRKKPKLKE---VQVRLEEHLECACATTSLNP</Hsp_qseq>
+      <Hsp_hseq>TNVVFFPRCLLVQRCGGNCGCGTVNWKSCTCNSGKTVKKYHEVLKFEPGYFRRRDRAKHMAVVDIQLDHHERCDCICSSRPP</Hsp_hseq>
+      <Hsp_midline> N + +P C+ V+RC G C     N  S  C   +   +  +V K E  Y R++ + K    V ++L+ H  C C  +S  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_016019157.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D isoform X1 [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>XP_016019157</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0186407</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>288</Hsp_hit-from>
+      <Hsp_hit-to>369</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>ANFLIWPPCVEVKRCTGCC-----NTSSVKCQPSRVHHRSVKVAKVE--YVRKKPKLKE---VQVRLEEHLECACATTSLNP</Hsp_qseq>
+      <Hsp_hseq>TNVVFFPRCLLVQRCGGNCGCGTVNWKSCTCNSGKTVKKYHEVLKFEPGYFRRRDRAKHMAVVDIQLDHHERCDCICSSRPP</Hsp_hseq>
+      <Hsp_midline> N + +P C+ V+RC G C     N  S  C   +   +  +V K E  Y R++ + K    V ++L+ H  C C  +S  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2431195910</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>354</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-D NP_004460.1 vascular endothelial growth factor D preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>354</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_022171805.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022171805</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000121298</Hsp_evalue>
+      <Hsp_query-from>129</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>133</Hsp_hit-from>
+      <Hsp_hit-to>243</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>NTFFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISV----PLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>NLYFSPPCTRVKRCGGCCGSSLVSCQPTEVEMLN---FEVTVLEYNKTFTFKEKKIITVEQHVKCKC----------------------DCIIKEKDCKSSQMYDARECQCVCNDSGEECDEEKK-------------MWDSDTCSCRC</Hsp_hseq>
+      <Hsp_midline>N +F PPC  V RCGGCC    + C  T    ++   FE++V       +  E   + V  H  CKC                       C   +K C    ++D+ +C+CV  +       E               M+D D C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_022166983.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022166983</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00619998</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>FFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVK------VANHTGCKCL------PTAPRHPYSIIR---RSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQE</Hsp_qseq>
+      <Hsp_hseq>YYFPSCTRVDRCGGCCSHDLLACQPTKTETLH---FEVLVSQYNGEGKLEFKGRKTVSIDRHLKCKCGCVVKEEDCGPLQTYNIKECRCKCSNEDDEEKCSDEYQL----KEWNSATCKCECRE</Hsp_hseq>
+      <Hsp_midline>++ P C  V RCGGCC+ + L C  T T  +    FE+ V   +    +  K      +  H  CKC          P   Y+I     +     +E++CS   +L      W+S  CKC  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_022166982.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111031381 isoform X1 [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022166982</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0168991</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>155</Hsp_hit-from>
+      <Hsp_hit-to>271</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>FFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELV------PVKVANHTGCKCL------PTAPRHPYSIIR---RSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQE</Hsp_qseq>
+      <Hsp_hseq>YYFPSCTRVDRCGGCCSHDLLACQPTKTETLH---FEVLVSQYNGEGKLEFKGRKTVSIDRHLKCKCGCVVKEEDCGPLQTYNIKECRCKCSNEDDEEKCSDEYQL----KEWNSATCKCECRE</Hsp_hseq>
+      <Hsp_midline>++ P C  V RCGGCC+ + L C  T T  +    FE+ V   +    +       V +  H  CKC          P   Y+I     +     +E++CS   +L      W+S  CKC  +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_022166985.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022166985</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0277724</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>55</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>FFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>YYYPMCTRVNRCGGCCGHDLLACRPTEIETLN---FEVIALQYNGPSRLEFKG--------------------RKSVSVDQHLKC----------------KCDCVIEKEN----------------CAPSQVYNPDECRCKC</Hsp_hseq>
+      <Hsp_midline>++ P C  V RCGGCC  + L C  T    ++   FE+     + P  +  K                     R+S+ + +  +C                KC CV+++EN                C P  +++ D C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_022166984.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022166984</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.046836</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>55</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>FFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVC</Hsp_qseq>
+      <Hsp_hseq>YYYPMCTRVNRCGGCCGHDLLACRPTEIETLN---FEVIALQYNGPSRLEFKG--------------------RKSVSVDQHLKC----------------KCDCVIEKEN----------------CAPSQVYNPDECRCKC</Hsp_hseq>
+      <Hsp_midline>++ P C  V RCGGCC  + L C  T    ++   FE+     + P  +  K                     R+S+ + +  +C                KC CV+++EN                C P  +++ D C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_022166995.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111031390 [Myzus persicae]</Hit_def>
+  <Hit_accession>XP_022166995</Hit_accession>
+  <Hit_len>322</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0647994</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>70</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>FFKPPCVNVFRCGGCCNEESLICMNTSTSYISKQLFEISVPLTSVPELVPVKVANHTGCKCLPTAPRHPYSIIRRSIQIPEEDRCSHSKKLCPIDMLWDSNKCKCVLQEENPLAGTEDHSHLQEPALCGPHMMFDEDRCECVCKTPCPKDLIQHPKN----------CSCFECKESLETCCQKHKLFHPDTCSCE</Hsp_qseq>
+      <Hsp_hseq>YYYPTCTRVNRCGGCCAHDLLACQPTKVETLN---FEVMVSQYNDDGKLEFKG--------------------RKTVSIDQHLKC----------------KCGCVVKQEN----------------CTPLQTYYPNECRCMCSNEEDRDKCNDEYNLKLWNSATCMCQCREIKE-----CTSGFAFDYNTCGCE</Hsp_hseq>
+      <Hsp_midline>++ P C  V RCGGCC  + L C  T    ++   FE+ V   +    +  K                     R+++ I +  +C                KC CV+++EN                C P   +  + C C+C     +D      N          C C E KE     C     F  +TC CE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2412203456</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

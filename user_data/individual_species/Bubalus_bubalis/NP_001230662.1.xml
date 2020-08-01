@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_006050934.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006050934</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>288.5</Hsp_bit-score>
+      <Hsp_score>737</Hsp_score>
+      <Hsp_evalue>2.20023e-100</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>176</Hsp_identity>
+      <Hsp_positive>181</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>MSPLLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>MSPLLRRLLLAVLLQLAPAQAPVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQYPSSQLGEMSLEEHSQCECRPKKRASAVKPDSPRPLCPRCPQRRQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCQKLRR</Hsp_hseq>
+      <Hsp_midline>MSPLLRRLLLA LLQLAPAQAPVSQPDAPGHQ+KVVSWIDVY RATCQPREVVVPL +ELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI+YPSSQLGEMSLEEHSQCECRPKK+ SAVKPDSPRPLCPRC Q  QRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRC+KLRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_006050933.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006050933</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>238.424</Hsp_bit-score>
+      <Hsp_score>607</Hsp_score>
+      <Hsp_evalue>2.83433e-80</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>156</Hsp_align-len>
+      <Hsp_qseq>MSPLLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRT</Hsp_qseq>
+      <Hsp_hseq>MSPLLRRLLLAVLLQLAPAQAPVSQPDAPGHQKKVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQYPSSQLGEMSLEEHSQCECRPKKRASAVKPD-------RASTPHHRPQPRS</Hsp_hseq>
+      <Hsp_midline>MSPLLRRLLLA LLQLAPAQAPVSQPDAPGHQ+KVVSWIDVY RATCQPREVVVPL +ELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI+YPSSQLGEMSLEEHSQCECRPKK+ SAVKPD       R +  H RP PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_025142386.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X3 [Bubalus bubalis] &gt;ref|XP_025142387.1| vascular endothelial growth factor B isoform X3 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025142386</Hit_accession>
+  <Hit_len>178</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.527</Hsp_bit-score>
+      <Hsp_score>519</Hsp_score>
+      <Hsp_evalue>2.47609e-67</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>HQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRT</Hsp_qseq>
+      <Hsp_hseq>HLPLVVSWIDVYARATCQPREVVVPLNMELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIQYPSSQLGEMSLEEHSQCECRPKKRASAVKPD-------RASTPHHRPQPRS</Hsp_hseq>
+      <Hsp_midline>H   VVSWIDVY RATCQPREVVVPL +ELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI+YPSSQLGEMSLEEHSQCECRPKK+ SAVKPD       R +  H RP PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|APQ30590.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A [Bubalus bubalis]</Hit_def>
+  <Hit_accession>APQ30590</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.561</Hsp_bit-score>
+      <Hsp_score>314</Hsp_score>
+      <Hsp_evalue>3.53745e-36</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>SQPDAPGHQR--KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>AAPMAEGGQKPHEVVKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKK--DKARQENPCGPCSERRKHLFVQDPQTCKCSCKNTD-SRCKARQLELNERTCRCDKPRR</Hsp_hseq>
+      <Hsp_midline>+ P A G Q+  +VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK     + ++P   C    +H    DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|AFU80787.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 188, partial [Bubalus bubalis]</Hit_def>
+  <Hit_accession>AFU80787</Hit_accession>
+  <Hit_len>166</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.865</Hsp_bit-score>
+      <Hsp_score>307</Hsp_score>
+      <Hsp_evalue>2.19729e-35</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>SQPDAPGHQR--KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK-KDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRK</Hsp_qseq>
+      <Hsp_hseq>AAPMAEGGQKPPEVVKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEKPCGP---CSEQRKHLFVQDPQTCKCSCKNTD-SRCKARQLELNERTCRCDK</Hsp_hseq>
+      <Hsp_midline>+ P A G Q+  +VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK K    KP  P   C    +H    DP+TC+C C+     RC+ R LELN  TCRC K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_025119539.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A, partial [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025119539</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>3.94334e-30</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>231</Hsp_hit-from>
+      <Hsp_hit-to>419</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>190</Hsp_align-len>
+      <Hsp_qseq>SQPDAPGHQR--KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS----------------------PRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>AAPMAEGGQKPHEVVKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKARQEKKSVRGKGKGQKRKRKKSRYKSWSAPCGPCSERRKHLFVQDPQTCKCSC-KNTDSRCKARQLELNERTCRCDKPRR</Hsp_hseq>
+      <Hsp_midline>+ P A G Q+  +VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK  +  +  S                      P   C    +H    DP+TC+C C + +  RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|AFU80785.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 120, partial [Bubalus bubalis]</Hit_def>
+  <Hit_accession>AFU80785</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.28674e-27</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPAQAPVSQPDAPGHQR--KVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDS</Hsp_qseq>
+      <Hsp_hseq>LALVLYLHHSKWSQAAPMAEGGQKPPEVVKFMDVYQRSFCRPIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKA</Hsp_hseq>
+      <Hsp_midline>LA +L L  ++   + P A G Q+  +VV ++DVY R+ C+P E +V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|AFU80786.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor 164, partial [Bubalus bubalis]</Hit_def>
+  <Hit_accession>AFU80786</Hit_accession>
+  <Hit_len>92</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>4.7205e-19</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>PREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKKKDS</Hsp_qseq>
+      <Hsp_hseq>PIETLVDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKKDKA</Hsp_hseq>
+      <Hsp_midline>P E +V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>emb|CAJ87081.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor isoform 121, partial [Bubalus bubalis]</Hit_def>
+  <Hit_accession>CAJ87081</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.7146</Hsp_bit-score>
+      <Hsp_score>182</Hsp_score>
+      <Hsp_evalue>1.00532e-17</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>76</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>VPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK</Hsp_qseq>
+      <Hsp_hseq>VDIFQEYPDEIEFIFKPSCVPLMRCGGCCNDESLECVPTEEFNITMQIMRIKPHQSQHIGEMSFLQHNKCECRPKK</Hsp_hseq>
+      <Hsp_midline>V +  E    +     PSCV + RCGGCC D+ LECVPT +  + MQI+ I+ + S  +GEMS  +H++CECRPKK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_006053945.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006053945</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>2.11753e-15</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>FLQLLTGLVLPAVPTTQWALSPGNISSEVEVVPFQQVWSRSYCRPVERLVDIVSEYPSEMEHLFSPSCVSLMRCTGCCSDESMHCVPLETANVTMQLMKYRSLDQPFFVEMSFSQHVRCECKP</Hsp_hseq>
+      <Hsp_midline>  +LL   +L   P       P     + +VV +  V++R+ C+P E +V +  E    +     PSCV++ RC GCC D+ + CVP     V MQ++  R        EMS  +H +CEC+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_006053944.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006053944</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>2.31614e-15</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>LRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG-EMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>FLQLLTGLVLPAVPTTQWALSPGNISSEVEVVPFQQVWSRSYCRPVERLVDIVSEYPSEMEHLFSPSCVSLMRCTGCCSDESMHCVPLETANVTMQLMKYRSLDQPFFVEMSFSQHVRCECKP</Hsp_hseq>
+      <Hsp_midline>  +LL   +L   P       P     + +VV +  V++R+ C+P E +V +  E    +     PSCV++ RC GCC D+ + CVP     V MQ++  R        EMS  +H +CEC+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_006067137.1|</Hit_id>
+  <Hit_def>phosphatidylinositol N-acetylglucosaminyltransferase subunit A isoform X3 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006067137</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.99925e-10</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM---SLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>WQRTQCSPRETCVEVASELGSSTDTFFKPPCVNVFRCGGCCNEESLVCVNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCFP</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL  +      P CV V RCGGCC ++ L CV T    V  Q+  I  P + + E+    +  H+ C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_025132446.1|</Hit_id>
+  <Hit_def>phosphatidylinositol N-acetylglucosaminyltransferase subunit A isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025132446</Hit_accession>
+  <Hit_len>630</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>4.65993e-10</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEM---SLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>WQRTQCSPRETCVEVASELGSSTDTFFKPPCVNVFRCGGCCNEESLVCVNTSTSYVSKQLFEISVPLTSVPELVPVKVANHTGCKCFP</Hsp_hseq>
+      <Hsp_midline>+ R  C PRE  V +  EL  +      P CV V RCGGCC ++ L CV T    V  Q+  I  P + + E+    +  H+ C+C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_025136255.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025136255</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.7307e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>144</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNTEILRSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV + +  E          P CV+V RCGGCC  +G +C+ T    +   +  I  P SQ  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_006054068.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006054068</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>2.07369e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNTEILRSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCCNSEGQQCMNTSTSYLSKTLFEITVPLSQGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV + +  E          P CV+V RCGGCC  +G +C+ T    +   +  I  P SQ  +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_006078753.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Bubalus bubalis] &gt;ref|XP_025130328.1| platelet-derived growth factor subunit A isoform X2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006078753</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>4.26767e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY--PSSQLGEMS--LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRNVKVAKVEYFRKKAKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    ++L E+   LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|AFH66800.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor alpha polypeptide [Bubalus bubalis]</Hit_def>
+  <Hit_accession>AFH66800</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>4.83378e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY--PSSQLGEMS--LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRNVKVAKVEYFRKKAKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    ++L E+   LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_025130327.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025130327</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>6.55423e-05</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY--PSSQLGEMS--LEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRNVKVAKVEYFRKKAKLKEVQVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y    ++L E+   LEEH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_025138618.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025138618</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000914092</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI----RYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRPTQVQDRKVQVKKIEIVRKKKIFKKATVTLVDHLACRC</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  L+  T A  LV P CV VQRC GCC +  ++C PT     ++Q+  I    +    +   ++L +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_006078272.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006078272</Hit_accession>
+  <Hit_len>448</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.027214</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>352</Hsp_hit-from>
+      <Hsp_hit-to>440</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPSS------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSVREELKRT-DTIFWPGCLLVKRCGGNCACCLHTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC     E  CVP+   +   ++L +R  +        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_025123747.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025123747</Hit_accession>
+  <Hit_len>449</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0277349</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>353</Hsp_hit-from>
+      <Hsp_hit-to>441</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPSS------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSVREELKRT-DTIFWPGCLLVKRCGGNCACCLHTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC     E  CVP+   +   ++L +R  +        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_025123748.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X3 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_025123748</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0278421</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>315</Hsp_hit-from>
+      <Hsp_hit-to>403</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPSS------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSVREELKRT-DTIFWPGCLLVKRCGGNCACCLHTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC     E  CVP+   +   ++L +R  +        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_006078273.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor C isoform X4 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006078273</Hit_accession>
+  <Hit_len>397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0302214</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>301</Hsp_hit-from>
+      <Hsp_hit-to>389</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPDDGLE--CVPTGQHQVRMQILMIRYPSS------QLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSVREELKRT-DTIFWPGCLLVKRCGGNCACCLHTCSECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V +  EL  T      P C+ V+RCGG   CC     E  CVP+   +   ++L +R  +        L +++LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2423813568</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

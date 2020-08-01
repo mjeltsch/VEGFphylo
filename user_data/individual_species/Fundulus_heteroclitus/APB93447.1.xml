@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_021175261.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021175261</Hit_accession>
+  <Hit_len>234</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>5.01201e-27</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDG</Hsp_qseq>
+      <Hsp_hseq>PKETERGPHDVIPLREVYNKSLCQPREVLVDILQEYPDEVEHIFIPSCVVLKRCAGCCGDEMMQCTPTATYNVTMEIKRIKLQRQQNDV-YMSFIEHSACECRVKTEVREKEN</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P  EV+ +S CQ RE LV ILQEYPDE+  IF PSCV + RC+GCC DE ++CTP   + V ++I R+  + Q + +  M F EH+ACECR + +  E + </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_012707756.2|</Hit_id>
+  <Hit_def>placenta growth factor [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012707756</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.0485</Hsp_bit-score>
+      <Hsp_score>227</Hsp_score>
+      <Hsp_evalue>4.58846e-24</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>MAAYLLAVAILFCIQGWPSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>VALYLLPSPVQNVPMQDTNSTVE--VLMFQEVWGRSFCRTMEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTETSNVTMQLLKIRPSEPGEEYVEMTFVEHKTCECRVRK</Hsp_hseq>
+      <Hsp_midline>+A YLL   +        + TV+  V  F EV  RS C+  E LV ++QEYP E+  I+ PSCV ++RC+GCC DE+L+C P     V +Q++++ P     +   M F EH  CECR R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_012711487.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012711487</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>3.97992e-23</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMK--FTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGEIHHLFVPSCVSVKRCGGCCADEALECVPSLTHTLTMELM----RTSFMKHELIELPFVEHSQCECR</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E P EI  +F PSCV+V RC GCC DE+L+C P   HT+ +++M    RT   K E+++  F EH+ CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_012707664.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012707664</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>1.42325e-17</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>216</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>VQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>MDGTLAVILEEMQRTSCQPREVCVEVAKEYPESTSQLYLPRCVALHRCGGCCGNEAFYCTNTSYALVNKTLMELSPPRMDRTVAMVTFVNHTSCECLSKR</Hsp_hseq>
+      <Hsp_midline>+ G +   LE  +R++CQ RE  V + +EYP+  S ++ P CVA+ RC GCC +E+  CT      V+  +M ++P      + ++ F  HT+CEC  +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_021174247.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021174247</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.7886</Hsp_bit-score>
+      <Hsp_score>177</Hsp_score>
+      <Hsp_evalue>9.90171e-17</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>FLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>FMEVLTKSVCRPIEKLVNVEGEFPDGVEYIYIPSCVPLFRCSGCCIDETKECYPTTKRNITLEV------NQSGQYVNLTFVEHQACGVREK</Hsp_hseq>
+      <Hsp_midline>F+EV  +S C+  E LV +  E+PD +  I+ PSCV + RCSGCC DE+ +C P  K  + L++       QS +   + F EH AC  R +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_021178201.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021178201</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>3.68142e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCMPRETCVDVAKELGTDPSVFFKPPCVSVHRCGGCCNQEGITCRNTSTVYVNKTVLSVIPFKFVPEPVLIKVANHTACRC</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V + +E   + S  F+P CV+V RC GCC  E + C       V+  ++ V P     +  ++K   HTAC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_012728590.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105933547 isoform X1 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012728590</Hit_accession>
+  <Hit_len>523</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.00885e-08</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMR---VNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>QQAQCKVRTEVVEVTRAMLDRSNANFMLWPPCVEVQRCSGCCNTKILQCVPVVTHTRYLQVMKIEYINKRPTYAKA-VVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  +V + +   D  +  F   P CV V RCSGCC  + L+C PV  HT  LQ+M+   +N R   +K  V+   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_021177493.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105933547 isoform X2 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021177493</Hit_accession>
+  <Hit_len>427</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.20635e-07</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>IFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMR---VNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>MLWPPCVEVQRCSGCCNTKILQCVPVVTHTRYLQVMKIEYINKRPTYAKA-VVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>+  P CV V RCSGCC  + L+C PV  HT  LQ+M+   +N R   +K  V+   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_012709218.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012709218</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>8.5908e-07</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>128</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCIDVGREFGAPTNVFYKPPCVSVYRCGGCCPSEDKQCRNISTGYVSKTLFEITVPLTQGTKPVTISVANHTQCIC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC GCC  E  +C  +    V   +  +  P TQ +K   +    HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_012712154.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012712154</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>9.38925e-07</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFT--EHTACECRPRRKQGEPDGPKEKPRRGGVR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTNNMRCQAARKHHRTVKVAKVEYVRRRPKLREVEVTLEDHLECTCSNKRPIGQ-----NQDRDNGIR</Hsp_hseq>
+      <Hsp_midline>+ C+ R T+  +P  Q  P   + I  P CV V RC+GCC   +++C    KH   +++ +V    +  K+  ++ T  +H  C C  +R  G+      + R  G+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_012704951.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105915406 isoform X2 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012704951</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.41441e-06</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>PSGTVQGQVRPFLE--VHERSACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>PSATHGRYTRSLVDAKIAEKAECKVRTEVMEITRSMLDRTNAHFLVWPPCVEVQRCSGCCNSKQNQCVPTVVSSRYLQVLKVEYVNRKSRYEKAIISVEDHVSCFCQ</Hsp_hseq>
+      <Hsp_midline>PS T     R  ++  + E++ C+ R  ++ I +   D  +  F   P CV V RCSGCC  +  +C P    +  LQ+++V    + S+ E  ++   +H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_021168706.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X1 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021168706</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.73859e-06</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFT--EHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTTIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTNNMRCQAARKHHRTVKVAKVEYVRRRPKLREVEVTLEDHLECTCSNKRPIGQ</Hsp_hseq>
+      <Hsp_midline>+ C+ R T+  +P  Q  P   + I  P CV V RC+GCC   +++C    KH   +++ +V    +  K+  ++ T  +H  C C  +R  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_021164617.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105915406 isoform X1 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021164617</Hit_accession>
+  <Hit_len>562</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>4.01107e-06</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>KIAEKAECKVRTEVMEITRSMLDRTNAHFLVWPPCVEVQRCSGCCNSKQNQCVPTVVSSRYLQVLKVEYVNRKSRYEKAIISVEDHVSCFCQ</Hsp_hseq>
+      <Hsp_midline>++ E++ C+ R  ++ I +   D  +  F   P CV V RCSGCC  +  +C P    +  LQ+++V    + S+ E  ++   +H +C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_012708770.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012708770</Hit_accession>
+  <Hit_len>215</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.07299e-05</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GWPSGTVQGQV-----RPFLEVHERSACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>GYYNGLKSSQLHSRRKRSIVEEAIPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>G+ +G    Q+     R  +E    +AC+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_021166687.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X3 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021166687</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.12805e-05</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GWPSGTVQGQV-----RPFLEVHERSACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>GYYNGLKSSQLHSRRKRSIVEEAIPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>G+ +G    Q+     R  +E    +AC+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_012708772.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X4 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_012708772</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.16651e-05</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GWPSGTVQGQV-----RPFLEVHERSACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>GYYNGLKSSQLHSRRKRSIVEEAIPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>G+ +G    Q+     R  +E    +AC+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_021166686.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X1 [Fundulus heteroclitus]</Hit_def>
+  <Hit_accession>XP_021166686</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.26906e-05</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GWPSGTVQGQV-----RPFLEVHERSACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>GYYNGLKSSQLHSRRKRSIVEEAIPAACKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>G+ +G    Q+     R  +E    +AC+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>1028026941</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

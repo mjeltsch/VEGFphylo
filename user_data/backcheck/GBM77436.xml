@@ -1,0 +1,1441 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>GBM77436.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>hypothetical protein AVEN_107820_1 [Araneus ventricosus]</BlastOutput_query-def>
+  <BlastOutput_query-len>162</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.01</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>GBM77436.1</Iteration_query-ID>
+  <Iteration_query-def>hypothetical protein AVEN_107820_1 [Araneus ventricosus]</Iteration_query-def>
+  <Iteration_query-len>162</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>dbj|GBM77436.1|</Hit_id>
+  <Hit_def>hypothetical protein AVEN_107820_1 [Araneus ventricosus]</Hit_def>
+  <Hit_accession>GBM77436</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.732</Hsp_bit-score>
+      <Hsp_score>870</Hsp_score>
+      <Hsp_evalue>5.62027e-118</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>162</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>MWRISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVDPSFPAQSLIYSENMD</Hsp_qseq>
+      <Hsp_hseq>MWRISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVDPSFPAQSLIYSENMD</Hsp_hseq>
+      <Hsp_midline>MWRISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVDPSFPAQSLIYSENMD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_015918685.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC107448099 [Parasteatoda tepidariorum]</Hit_def>
+  <Hit_accession>XP_015918685</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.933</Hsp_bit-score>
+      <Hsp_score>424</Hsp_score>
+      <Hsp_evalue>4.14742e-50</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>HKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPV</Hsp_qseq>
+      <Hsp_hseq>HHKSKHHHDNEVLDTDERLALEHSQRVAEAGACDEPKLHVIHVSDHYPGRYFLPHCTVLHRCGKHAGCCGTDRLRCVAKTKEKVTLHFYSVRIGEHGAPTERQIEKLTFYNHTKCACAPA</Hsp_hseq>
+      <Hsp_midline>H +  H H+ +    DE+LALEHS RV E   C++PKLHV+ VSDHYPGR +LPHCTVLHRCGKHAGCC TD LRCVA  KEKV LHF+S+++ + G P E++I KLTF NHTKC C P </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|KFM65261.1|</Hit_id>
+  <Hit_def>Placenta growth factor, partial [Stegodyphus mimosarum]</Hit_def>
+  <Hit_accession>KFM65261</Hit_accession>
+  <Hit_len>139</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>161.77</Hsp_bit-score>
+      <Hsp_score>408</Hsp_score>
+      <Hsp_evalue>7.03156e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MWRISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPV</Hsp_qseq>
+      <Hsp_hseq>VWSATILIVTCIIL-ASSVTGRLLHA----------------EKLALLHSERVSELGACEVPKPQVIHVSDHYPGRYFLPHCTLLHRCGKHAGCCGVDSLRCVAAQKEKVTLHFYSVRVFEDGTPPEKKIEKLVFSNHTKCACVPV</Hsp_hseq>
+      <Hsp_midline>+W  + + V C IL   S +GR  H+                EKLAL HS RV E   C  PK  V+ VSDHYPGR +LPHCT+LHRCGKHAGCC  D LRCVA++KEKV LHF+S+++ + G PPEKKI KL F+NHTKC C+PV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>dbj|GBO17408.1|</Hit_id>
+  <Hit_def>hypothetical protein AVEN_63581_1 [Araneus ventricosus]</Hit_def>
+  <Hit_accession>GBO17408</Hit_accession>
+  <Hit_len>105</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>153.295</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>4.55893e-45</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>WRISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEK</Hsp_qseq>
+      <Hsp_hseq>WRITFIVILSAILFLDSTSNSHSLSHKHRN------QVSDDAKLVLKHSVRVGEMCTCDQPKLQVVRVRDHYPGRSYLPHCTVFHKCGEHSGCCATEALKCVAAEELK</Hsp_hseq>
+      <Hsp_midline>WRI+FI ++ AILFLDSTS  HS SHK RN      Q S D KL L+HSVRVGE CTC+QPKL VV+V DHYPGRSYLPHCTV H+CG+H+GCCAT+ L+CVA+E+ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_021916631.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC110828316 [Zootermopsis nevadensis]</Hit_def>
+  <Hit_accession>XP_021916631</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.5153</Hsp_bit-score>
+      <Hsp_score>236</Hsp_score>
+      <Hsp_evalue>1.30345e-19</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>239</Hsp_hit-from>
+      <Hsp_hit-to>381</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>RNHRHEA--QQASIDEKL--ALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEK---KIAKLTFTNHTKCGCIPVDPSF-PAQSLIYSENMD</Hsp_qseq>
+      <Hsp_hseq>RNHQHKATYKPTSPEGNLEKAVQHAVMVGREAQCRVPKPRLVQVKDMYPHPSKTYIPHCTILHQCGDDTGCCKSDTLTCTARKTESVELYFYTTTLRASGGSRNKGGPSVEKLVFHNHTECVCVDRLEEFMPRDRPIASSEKD</Hsp_hseq>
+      <Hsp_midline>RNH+H+A  +  S +  L  A++H+V VG    C  PK  +VQV D YP   ++Y+PHCT+LH+CG   GCC +D L C A + E V L+F++  +   G    K    + KL F NHT+C C+     F P    I S   D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|KFM76063.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Stegodyphus mimosarum]</Hit_def>
+  <Hit_accession>KFM76063</Hit_accession>
+  <Hit_len>301</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>2.8953e-19</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DVRLANDHFLRIRNRARCRAPVAQVVRVKDYYPDPSREYLPRCTLLHRCSDTSGCCDSDAFHCVPSAMQEVTLHFYTLAVGKNGL-SDSSIEKLLFVNHTACQCQPIN</Hsp_hseq>
+      <Hsp_midline>D +LA +H +R+     C  P   VV+V D+YP   R YLP CT+LHRC   +GCC +D   CV S  ++V LHF+++ +   G   +  I KL F NHT C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_023712790.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111867297 isoform X1 [Cryptotermes secundus]</Hit_def>
+  <Hit_accession>XP_023712790</Hit_accession>
+  <Hit_len>542</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.8189</Hsp_bit-score>
+      <Hsp_score>229</Hsp_score>
+      <Hsp_evalue>1.0865e-18</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>290</Hsp_hit-from>
+      <Hsp_hit-to>411</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>RNHRHEAQQASIDEKLA--LEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKM------MDKGQPPEKKIAKLTFTNHTKCGCI</Hsp_qseq>
+      <Hsp_hseq>RNHKGTYKTSSSDTDLAKAVQHALTVSREGQCRVPKPRLIQVKDVYPHPSKTYIPHCTILHLCGDDTGCCKSDTLTCIARKTEQVDLYFYTTTLRTSAVSRSRGGP---TVEKLSFHNHTECACV</Hsp_hseq>
+      <Hsp_midline>RNH+   + +S D  LA  ++H++ V     C  PK  ++QV D YP   ++Y+PHCT+LH CG   GCC +D L C+A + E+V L+F++  +        +G P    + KL+F NHT+C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_023712791.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111867297 isoform X2 [Cryptotermes secundus]</Hit_def>
+  <Hit_accession>XP_023712791</Hit_accession>
+  <Hit_len>541</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.8189</Hsp_bit-score>
+      <Hsp_score>229</Hsp_score>
+      <Hsp_evalue>1.11702e-18</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>290</Hsp_hit-from>
+      <Hsp_hit-to>411</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>RNHRHEAQQASIDEKLA--LEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKM------MDKGQPPEKKIAKLTFTNHTKCGCI</Hsp_qseq>
+      <Hsp_hseq>RNHKGTYKTSSSDTDLAKAVQHALTVSREGQCRVPKPRLIQVKDVYPHPSKTYIPHCTILHLCGDDTGCCKSDTLTCIARKTEQVDLYFYTTTLRTSAVSRSRGGP---TVEKLSFHNHTECACV</Hsp_hseq>
+      <Hsp_midline>RNH+   + +S D  LA  ++H++ V     C  PK  ++QV D YP   ++Y+PHCT+LH CG   GCC +D L C+A + E+V L+F++  +        +G P    + KL+F NHT+C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|RWS29460.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS29460</Hit_accession>
+  <Hit_len>135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>2.72612e-18</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>AQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>SDERNLDSRLASIHVSRILQQAKCKVPVPRVLHILDQYPSATKKYLPHCTILHICGSESGCCSSEYETCFPKTVTNVTLHFFVVELTTNGQ--KKYVQKLSFQNHTECEC</Hsp_hseq>
+      <Hsp_midline>+ + ++D +LA  H  R+ +   C  P   V+ + D YP   + YLPHCT+LH CG  +GCC+++   C       V LHFF +++   GQ  +K + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_022238756.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106457213 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_022238756</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7373</Hsp_bit-score>
+      <Hsp_score>221</Hsp_score>
+      <Hsp_evalue>7.80697e-18</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>264</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>SHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPE--KKIAKLTFTNHTKCGCIPVDPSF-----PAQSLIYSENMD</Hsp_qseq>
+      <Hsp_hseq>SNSFRRVTIDHSAQQNVEDIRQANEHFLHIRQKALCLTPRPLVVDTKDYYPDPTKKYLPRCTILHRCTEDSGCCGDDRMKCGPRKVQEVTLYFYTLRVGKQGTYVELDKAVDKLLFINHTECECQYINKQTYLQDDPESDAILNQNLE</Hsp_hseq>
+      <Hsp_midline>S+S +R    H AQQ   D + A EH + + +   C  P+  VV   D+YP   + YLP CT+LHRC + +GCC  D ++C   + ++V L+F+++++  +G   E  K + KL F NHT+C C  ++        P    I ++N++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_017776366.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC108562510 [Nicrophorus vespilloides]</Hit_def>
+  <Hit_accession>XP_017776366</Hit_accession>
+  <Hit_len>429</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7373</Hsp_bit-score>
+      <Hsp_score>221</Hsp_score>
+      <Hsp_evalue>1.14364e-17</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>328</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>LEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC-----IPVDPSFPAQSLIYSEN</Hsp_qseq>
+      <Hsp_hseq>IDHIRRVNLEAKCSVPRLKVVNIQEERPSPGKTYLPHCTVLHRCSDDTGCCSFAETKCQAKKQTLVYLYFYTSMLGHQGS----KVERLAFYNHTECGCQKIGATPTDVSAPPENLRMGRN</Hsp_hseq>
+      <Hsp_midline>++H  RV     C+ P+L VV + +  P  G++YLPHCTVLHRC    GCC+  E +C A ++  V L+F++  +  +G     K+ +L F NHT+CGC      P D S P ++L    N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|RWS27911.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS27911</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.9593</Hsp_bit-score>
+      <Hsp_score>206</Hsp_score>
+      <Hsp_evalue>3.05863e-17</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>ISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCI-PVDPSFPAQSL</Hsp_qseq>
+      <Hsp_hseq>IAFALLVCRLVSVEAFFGRDSNN---------------DAKLAAIHLSKITKEAKCKKPLPRVVHIEELHPNARKKYLPHCTVLHFCGQETGCCRQENEICSPKTIEEVTLNFWVVELTAFGK--RKGVEKMTFLNHTECDCISPIGNSTRSTSI</Hsp_hseq>
+      <Hsp_midline>I+F  +VC ++ +++  GR S++               D KLA  H  ++ +   C +P   VV + + +P   + YLPHCTVLH CG+  GCC  +   C     E+V L+F+ +++   G+   K + K+TF NHT+C CI P+  S  + S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_022191342.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111049554 [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022191342</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>3.88281e-17</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>SIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQP--PEKKIAKLTFTNHTKCGC-------IPVDPSF</Hsp_qseq>
+      <Hsp_hseq>SADHQEAMQHNLRMSREGACKVPRAKVVRVADLYPSANKQYLPACTLLHQCGDDAGCCIGRK-RCGAKTTKRIVLYFNTVTFYHQGRTRRQENSVEKLTFYNHTECECQDAAGEEMPRDATF</Hsp_hseq>
+      <Hsp_midline>S D + A++H++R+     C  P+  VV+V+D YP   + YLP CT+LH+CG  AGCC   + RC A   +++VL+F ++    +G+    E  + KLTF NHT+C C       +P D +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_023235470.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111633999 isoform X2 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023235470</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>4.52752e-17</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRQANLHYLKIRDVARCRTPGSRVIRVKDYYPDPSKEYLPRCTVVYRCGDDSGCCDNDAFQCVPRFVQEVALPFYTLHVGKQGLKIGNTIEKLLFINHTQCECQPVN</Hsp_hseq>
+      <Hsp_midline>D + A  H +++ +   C  P   V++V D+YP   + YLP CTV++RCG  +GCC  D  +CV    ++V L F+++ +  +G      I KL F NHT+C C PV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_023236810.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111633999 isoform X4 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023236810</Hit_accession>
+  <Hit_len>296</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>4.57697e-17</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRQANLHYLKIRDVARCRTPGSRVIRVKDYYPDPSKEYLPRCTVVYRCGDDSGCCDNDAFQCVPRFVQEVALPFYTLHVGKQGLKIGNTIEKLLFINHTQCECQPVN</Hsp_hseq>
+      <Hsp_midline>D + A  H +++ +   C  P   V++V D+YP   + YLP CTV++RCG  +GCC  D  +CV    ++V L F+++ +  +G      I KL F NHT+C C PV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_023236110.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111633999 isoform X3 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023236110</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>5.37094e-17</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRQANLHYLKIRDVARCRTPGSRVIRVKDYYPDPSKEYLPRCTVVYRCGDDSGCCDNDAFQCVPRFVQEVALPFYTLHVGKQGLKIGNTIEKLLFINHTQCECQPVN</Hsp_hseq>
+      <Hsp_midline>D + A  H +++ +   C  P   V++V D+YP   + YLP CTV++RCG  +GCC  D  +CV    ++V L F+++ +  +G      I KL F NHT+C C PV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_023237323.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111636334 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023237323</Hit_accession>
+  <Hit_len>433</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>6.10484e-17</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>QASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMM--DKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>QELEDIRLANEHFLKMRASGRCKIPRERVVRVKDYYPDPSKEYLPRCTLLHRCGDESGCCDNDAFECVAHSVQEVTLSFYTIHLGRHNKNVGLSNSVEKLLFINHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>Q   D +LA EH +++  +  C  P+  VV+V D+YP   + YLP CT+LHRCG  +GCC  D   CVA   ++V L F++I +   +K       + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_013794890.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106478862 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_013794890</Hit_accession>
+  <Hit_len>360</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>1.2253e-16</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>RHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHY--PGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>RNSTDLQRPNVDYGIRQDLEDIRRANEHFLRIRQTATCHTPEPHVVNIKDYYPDPSKKHLPRCTILHRCTEKTGCC-DDGVKCGPKAVQEVALYFYTLQVRKEGTYVGLSNAVEKLLFINHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>R+S   +R N  +  +Q   D + A EH +R+ +T TC+ P+ HVV + D+Y  P + +LP CT+LHRC +  GCC  D ++C     ++V L+F+++++  +G        + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_022244687.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106461893 isoform X3 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_022244687</Hit_accession>
+  <Hit_len>286</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.7297</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>2.13709e-16</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRRANEHFLQIRRTAKCHTPRPQVVNVKNYYPDPRRKYLPGCTILHRCTGNAGCCDDEGMECGPRAIQEVALYFYLLQVGKQGTYVGLSNTVEKLLFINHTECECRPID</Hsp_hseq>
+      <Hsp_midline>D + A EH +++  T  C+ P+  VV V ++YP   R YLP CT+LHRC  +AGCC  + + C     ++V L+F+ +++  +G        + KL F NHT+C C P+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_023234785.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111633999 isoform X1 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023234785</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>2.42912e-16</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRQANLHYLKIRDVARCRTPGSRVIRVKDYYPDPSKEYLPRCTVVYRCGDDSGCCDNDAFQCVPRFVQEVALPFYTLHVGKQGLKIGNTIEKLLFINHTQCECQPVN</Hsp_hseq>
+      <Hsp_midline>D + A  H +++ +   C  P   V++V D+YP   + YLP CTV++RCG  +GCC  D  +CV    ++V L F+++ +  +G      I KL F NHT+C C PV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_015906486.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC107438671 [Parasteatoda tepidariorum]</Hit_def>
+  <Hit_accession>XP_015906486</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>2.55046e-16</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>256</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DVKRANDHYLRMRNRARCRNPAPQILKVKAYYPDPSKDYLPRCAILHRCGDETGCCESDAFHCVPKTIQEVSLHFYTFSVGRNGG--DSKVEKLLFQNHTSCHCQPIN</Hsp_hseq>
+      <Hsp_midline>D K A +H +R+     C  P   +++V  +YP   + YLP C +LHRCG   GCC +D   CV    ++V LHF++  +   G   + K+ KL F NHT C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|KPM04145.1|</Hit_id>
+  <Hit_def>hypothetical protein QR98_0025870 [Sarcoptes scabiei]</Hit_def>
+  <Hit_accession>KPM04145</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>2.85278e-16</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>RISFIAVVCAI----LFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKK---IAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>RLAFVSLTVLVNLFTLNLMITNGQHASSQNFR--RQFSMMRSMAQK-AFDHGMRINEEAKCSKPRPELVYLNDS--RKMYLPRATLLHRCSNLIGCCPHATHSCEPIRKEKITLYFFVIDL--QTSPLKRRSRNIEHLTFVNHTECACKPID</Hsp_hseq>
+      <Hsp_midline>R++F+++   +    L L  T+G+H+ S   R  R  +   S+ +K A +H +R+ E   C++P+  +V ++D    + YLP  T+LHRC    GCC      C    KEK+ L+FF I +  +  P +++   I  LTF NHT+C C P+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_023237492.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111633999 isoform X5 [Centruroides sculpturatus]</Hit_def>
+  <Hit_accession>XP_023237492</Hit_accession>
+  <Hit_len>281</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.9593</Hsp_bit-score>
+      <Hsp_score>206</Hsp_score>
+      <Hsp_evalue>3.45409e-16</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>DIRQANLHYLKIRDVARCRTPGSRVIRVKDYYPDPSKEYLPRCTVVYRCGDDSGCCDNDAFQCVPRFVQEVALPFYTLHVGKQGLKIGNTIEKLLFINHTQCECQPVN</Hsp_hseq>
+      <Hsp_midline>D + A  H +++ +   C  P   V++V D+YP   + YLP CTV++RCG  +GCC  D  +CV    ++V L F+++ +  +G      I KL F NHT+C C PV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_022248064.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106464627 isoform X1 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_022248064</Hit_accession>
+  <Hit_len>376</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>4.02302e-16</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>231</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>HEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>HGIRQHIEDIRRANEHFLQIRQTAMCHTPRPLVVHIEDYYPDPSKKYLPRCTILHRCTEDSGCCDNERMKCGPRSVQEIALYFYTLRIGKQGTYVGSSDAVDKLLFVNHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>H  +Q   D + A EH +++ +T  C+ P+  VV + D+YP   + YLP CT+LHRC + +GCC  + ++C     +++ L+F+++++  +G        + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_022248065.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106464627 isoform X2 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_022248065</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>4.62232e-16</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>HEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>HGIRQHIEDIRRANEHFLQIRQTAMCHTPRPLVVHIEDYYPDPSKKYLPRCTILHRCTEDSGCCDNERMKCGPRSVQEIALYFYTLRIGKQGTYVGSSDAVDKLLFVNHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>H  +Q   D + A EH +++ +T  C+ P+  VV + D+YP   + YLP CT+LHRC + +GCC  + ++C     +++ L+F+++++  +G        + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_027202720.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC113796617 isoform X1 [Dermatophagoides pteronyssinus]</Hit_def>
+  <Hit_accession>XP_027202720</Hit_accession>
+  <Hit_len>176</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>1.0327e-15</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>ISFIAVVCAILFLDSTSGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEK--------KIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>FSLLILSCNQIFVSS------NNHNKRSMITE------DYAKAFDHGARVRNEGACHQPRSMIIYVNKTDPSKVHLPRGTVLHRCNDQTGCCSNPSESCVAIEMQTVELYFITITL--QVQSPFKNRRVRQSPKIEKLLFTNHTLCGC</Hsp_hseq>
+      <Hsp_midline> S + + C  +F+ S      ++H +R+   E      D   A +H  RV     C+QP+  ++ V+   P + +LP  TVLHRC    GCC+     CVA E + V L+F +I +  + Q P K        KI KL FTNHT CGC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_013777214.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106461893 isoform X1 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_013777214</Hit_accession>
+  <Hit_len>375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>1.25253e-15</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>QASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>QKLQDIRRANEHFLQIRRTAKCHTPRPQVVNVKNYYPDPRRKYLPGCTILHRCTGNAGCCDDEGMECGPRAIQEVALYFYLLQVGKQGTYVGLSNTVEKLLFINHTECECRPID</Hsp_hseq>
+      <Hsp_midline>Q   D + A EH +++  T  C+ P+  VV V ++YP   R YLP CT+LHRC  +AGCC  + + C     ++V L+F+ +++  +G        + KL F NHT+C C P+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_027202721.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC113796617 isoform X2 [Dermatophagoides pteronyssinus]</Hit_def>
+  <Hit_accession>XP_027202721</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.337</Hsp_bit-score>
+      <Hsp_score>194</Hsp_score>
+      <Hsp_evalue>1.33704e-15</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEK--------KIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>DYAKAFDHGARVRNEGACHQPRSMIIYVNKTDPSKVHLPRGTVLHRCNDQTGCCSNPSESCVAIEMQTVELYFITITL--QVQSPFKNRRVRQSPKIEKLLFTNHTLCGC</Hsp_hseq>
+      <Hsp_midline>D   A +H  RV     C+QP+  ++ V+   P + +LP  TVLHRC    GCC+     CVA E + V L+F +I +  + Q P K        KI KL FTNHT CGC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_013777215.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_013777215</Hit_accession>
+  <Hit_len>342</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.1889</Hsp_bit-score>
+      <Hsp_score>204</Hsp_score>
+      <Hsp_evalue>1.59689e-15</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>QASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPG--RSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>QKLQDIRRANEHFLQIRRTAKCHTPRPQVVNVKNYYPDPRRKYLPGCTILHRCTGNAGCCDDEGMECGPRAIQEVALYFYLLQVGKQGTYVGLSNTVEKLLFINHTECECRPID</Hsp_hseq>
+      <Hsp_midline>Q   D + A EH +++  T  C+ P+  VV V ++YP   R YLP CT+LHRC  +AGCC  + + C     ++V L+F+ +++  +G        + KL F NHT+C C P+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gb|OTF83400.1|</Hit_id>
+  <Hit_def>PDGF-and VEGF-related factor 3-like protein [Euroglyphus maynei]</Hit_def>
+  <Hit_accession>OTF83400</Hit_accession>
+  <Hit_len>132</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>2.11414e-15</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>DEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEK--------KIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>DYAKAFDHGVRVRNDGACHQPRPMIIYVNKTDPSKVHLPRGTLLHRCNDQTGCCTNPNENCVPIEMQTIELYFITIQL--KVQPTFKNRRIRQSPKIEKLLFTNHTLCGC</Hsp_hseq>
+      <Hsp_midline>D   A +H VRV     C+QP+  ++ V+   P + +LP  T+LHRC    GCC      CV  E + + L+F +I++  K QP  K        KI KL FTNHT CGC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_022235325.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC111083245, partial [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_022235325</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>3.16391e-15</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>QQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQ--PPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>QQKLEDVRRANDHFLEIRRKTVCKSPQPHVVRVKDYYPDVSKQYVPRCTILHRCTDETGCCDDELHTCGPLHMQEVTLNFYTLRLKDNSMRIGLNNAVEKLLFINHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>QQ   D + A +H + +     C  P+ HVV+V D+YP   + Y+P CT+LHRC    GCC  +   C     ++V L+F+++++ D          + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gb|RZF39663.1|</Hit_id>
+  <Hit_def>hypothetical protein LSTR_LSTR001184 [Laodelphax striatellus]</Hit_def>
+  <Hit_accession>RZF39663</Hit_accession>
+  <Hit_len>447</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.4185</Hsp_bit-score>
+      <Hsp_score>202</Hsp_score>
+      <Hsp_evalue>3.92267e-15</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>215</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>NHRHEAQQASIDE------KLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQP--PEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>NYRRGIQNSITDSGGRQETQEAMQHNMRMSREGACKVPRARVVRVADLYPSANKQYLPACTILHQCTDDAGCCVGRK-RCGAKTTKRVVLYFNTVTFYYQGRSRRQENSVEKLTFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>N+R   Q +  D       + A++H++R+     C  P+  VV+V+D YP   + YLP CT+LH+C   AGCC   + RC A   ++VVL+F ++    +G+    E  + KLTF NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>dbj|GFG38366.1|</Hit_id>
+  <Hit_def>hypothetical protein Cfor_05711, partial [Coptotermes formosanus]</Hit_def>
+  <Hit_accession>GFG38366</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.337</Hsp_bit-score>
+      <Hsp_score>194</Hsp_score>
+      <Hsp_evalue>5.96058e-15</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>RRNHRHEAQQASIDEKL--ALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFF</Hsp_qseq>
+      <Hsp_hseq>RNHHKGTYKPMSSDTDLSKAVQHAVTIGREGQCRVPKPRLIQVKDVYPHPSKTYIPHCTILHQCGDDAGCCKSDSLTCTARKAEQVELYFY</Hsp_hseq>
+      <Hsp_midline>R +H+   +  S D  L  A++H+V +G    C  PK  ++QV D YP   ++Y+PHCT+LH+CG  AGCC +D L C A + E+V L+F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_013794046.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106478078 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_013794046</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>6.65074e-15</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>HEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFS--IKMMDKGQPPEKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>HNIQEKLEEVRQANDHFLKIRKMATCKTPSPQVIRVKDYFPDSSKQYVPRCTILHRCSDQSGCCDDEQHKCGPLRVQEVTLHFYTLHLKNRDLQIGIENAVEKLLFINHTECECQPIN</Hsp_hseq>
+      <Hsp_midline>H  Q+   + + A +H +++ +  TC  P   V++V D++P  S  Y+P CT+LHRC   +GCC  ++ +C     ++V LHF++  +K  D     E  + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|XP_013781212.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC106465534 [Limulus polyphemus]</Hit_def>
+  <Hit_accession>XP_013781212</Hit_accession>
+  <Hit_len>355</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>7.63366e-15</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>QQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPP--EKKIAKLTFTNHTKCGCIPVD</Hsp_qseq>
+      <Hsp_hseq>QQKLEDVRRANDHFLEIRSRAECKTPHPQVVRVKDYFPDISKYYVPHCTILHRCSDETGCCEDGLHKCGPLQIEEVTLYFYTLHLKDNGMRTGWNNAVEKLLFINHTQCECQPIN</Hsp_hseq>
+      <Hsp_midline>QQ   D + A +H + +     C  P   VV+V D++P   + Y+PHCT+LHRC    GCC     +C   + E+V L+F+++ + D G        + KL F NHT+C C P++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>ref|XP_011702123.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein DDB_G0283697-like [Wasmannia auropunctata]</Hit_def>
+  <Hit_accession>XP_011702123</Hit_accession>
+  <Hit_len>805</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.6481</Hsp_bit-score>
+      <Hsp_score>200</Hsp_score>
+      <Hsp_evalue>1.00802e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>575</Hsp_hit-from>
+      <Hsp_hit-to>676</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>SIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCI</Hsp_qseq>
+      <Hsp_hseq>SAEQQAAADYARKVHREGSCQWPRARVIPVGNIYPSSSITYIPHCVILHRCSDDTGCCRSDTLTCVPKHSHRVELFFFTTNVVVGG-----KVEKLSFYNHTECECI</Hsp_hseq>
+      <Hsp_midline>S +++ A +++ +V    +C  P+  V+ V + YP  S  Y+PHC +LHRC    GCC +D L CV     +V L FF+  ++  G     K+ KL+F NHT+C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|XP_025159961.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105186330 isoform X2 [Harpegnathos saltator]</Hit_def>
+  <Hit_accession>XP_025159961</Hit_accession>
+  <Hit_len>844</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.6481</Hsp_bit-score>
+      <Hsp_score>200</Hsp_score>
+      <Hsp_evalue>1.05451e-14</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>612</Hsp_hit-from>
+      <Hsp_hit-to>707</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>ALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCI</Hsp_qseq>
+      <Hsp_hseq>ALRYSEKVKDEASCRWPRAKVIRVSDVRPDPSVNYHPHCAILHECSDNTGCCKSDELTCVANKSHTVQLTFYTTSVNG-----SLSVVKIEFVNHTECGCV</Hsp_hseq>
+      <Hsp_midline>AL +S +V +  +C  P+  V++VSD  P  S  Y PHC +LH C  + GCC +DEL CVA++   V L F++  +          + K+ F NHT+CGC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>ref|XP_025159960.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105186330 isoform X1 [Harpegnathos saltator]</Hit_def>
+  <Hit_accession>XP_025159960</Hit_accession>
+  <Hit_len>850</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.6481</Hsp_bit-score>
+      <Hsp_score>200</Hsp_score>
+      <Hsp_evalue>1.05551e-14</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>618</Hsp_hit-from>
+      <Hsp_hit-to>713</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>ALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCI</Hsp_qseq>
+      <Hsp_hseq>ALRYSEKVKDEASCRWPRAKVIRVSDVRPDPSVNYHPHCAILHECSDNTGCCKSDELTCVANKSHTVQLTFYTTSVNG-----SLSVVKIEFVNHTECGCV</Hsp_hseq>
+      <Hsp_midline>AL +S +V +  +C  P+  V++VSD  P  S  Y PHC +LH C  + GCC +DEL CVA++   V L F++  +          + K+ F NHT+CGC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>ref|XP_019886614.1|</Hit_id>
+  <Hit_def>uncharacterized protein DDB_G0283697 isoform X2 [Ooceraea biroi]</Hit_def>
+  <Hit_accession>XP_019886614</Hit_accession>
+  <Hit_len>742</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>81.2629</Hsp_bit-score>
+      <Hsp_score>199</Hsp_score>
+      <Hsp_evalue>1.45071e-14</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>582</Hsp_hit-from>
+      <Hsp_hit-to>690</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>RNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>QQYNKNGKSAEIRE--ALQHAIKVNKEGSCQWPRARVVPVRDVYPSPSTTYIPHCAILHRCSDDTGCCRSEALTCVPKHSHRVELSFYTTNVGGT-----TVVEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>+ +    + A I E  AL+H+++V +  +C  P+  VV V D YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>ref|XP_012271432.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC105694884 [Orussus abietinus]</Hit_def>
+  <Hit_accession>XP_012271432</Hit_accession>
+  <Hit_len>809</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>1.85202e-14</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>584</Hsp_hit-from>
+      <Hsp_hit-to>680</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>KLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>KEALQHAIKVSREGSCQWPRARVIPVRDVYPSPSTTYIPHCAILHRCSDDTGCCRSEALTCVPKNSHRVELYFYTTSVSGA-----SVVEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>K AL+H+++V    +C  P+  V+ V D YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L+F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|XP_014300631.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein DDB_G0283697-like [Microplitis demolitor]</Hit_def>
+  <Hit_accession>XP_014300631</Hit_accession>
+  <Hit_len>678</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>1.98411e-14</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>439</Hsp_hit-from>
+      <Hsp_hit-to>541</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>AQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>GKSAEIRE--ALQHAMKVSREGSCQWPRARVIPVRDVYPNPSTTYIPHCAILHRCSDDTGCCRSESLTCVPKQSHKVELYFYTTSIGGGSV-----VEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline> + A I E  AL+H+++V    +C  P+  V+ V D YP  S  Y+PHC +LHRC    GCC ++ L CV  +  KV L+F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>ref|XP_012222439.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105672225 isoform X2 [Linepithema humile]</Hit_def>
+  <Hit_accession>XP_012222439</Hit_accession>
+  <Hit_len>748</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>2.05542e-14</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>549</Hsp_hit-from>
+      <Hsp_hit-to>666</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>SGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>SVKETRSHMQQYHKN-GKGDGIKE--ALQHAIKVNKEGSCQWPRARVIPVRNVYPSPSTTYIPHCVILHRCSDDTGCCRSETLTCVPKHSHRVELSFYTTNV-----DAASIVEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>S + + SH ++ H++  +   I E  AL+H+++V +  +C  P+  V+ V + YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|XP_025410534.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC112683635 [Sipha flava]</Hit_def>
+  <Hit_accession>XP_025410534</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.1073</Hsp_bit-score>
+      <Hsp_score>196</Hsp_score>
+      <Hsp_evalue>2.2851e-14</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>163</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>RRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYP--GRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHF--FSIKMMDKGQPPEKKIAK--LTFTNHTKCGC-------IPVDPSFPAQSLIYSE</Hsp_qseq>
+      <Hsp_hseq>RNPHRISMLQGDNENAEAYKHQIRMIKEASCKVPRPRVVKVADVYPSSNKRYIPSCTVLHVCADDTGCCNSPTLKCGPKISQPIYLYFLVYTIPALDNNQSPEQMSNQKSLLFYNHTECECQSKMDDEMPRD-SLPTATAVFAE</Hsp_hseq>
+      <Hsp_midline>R  HR    Q   +   A +H +R+ +  +C  P+  VV+V+D YP   + Y+P CTVLH C    GCC +  L+C     + + L+F  ++I  +D  Q PE+   +  L F NHT+C C       +P D S P  + +++E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>ref|XP_015598603.1|</Hit_id>
+  <Hit_def>dentin sialophosphoprotein [Cephus cinctus]</Hit_def>
+  <Hit_accession>XP_015598603</Hit_accession>
+  <Hit_len>826</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>2.3186e-14</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>585</Hsp_hit-from>
+      <Hsp_hit-to>697</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>RRN-HRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>RRNMQQYNANGKSAEIHQAIQHAIKVSKEASCQWPRARVIPVHDVYPNPSTTYSPHCAILHRCSDDTGCCRSEALTCVPKHSHRVELYFYTTNI---GR--ENVVKKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>RRN  ++ A   S +   A++H+++V +  +C  P+  V+ V D YP  S  Y PHC +LHRC    GCC ++ L CV     +V L+F++  +   G+  E  + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gb|KPM02305.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like protein [Sarcoptes scabiei]</Hit_def>
+  <Hit_accession>KPM02305</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.337</Hsp_bit-score>
+      <Hsp_score>194</Hsp_score>
+      <Hsp_evalue>2.3617e-14</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LALEHSVRVGETCTCNQPKLHVVQVS---DHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVDPSFPA</Hsp_qseq>
+      <Hsp_hseq>LASRHYSRVLNLGRCQLPQARIVNVQKELNSSPSKKYIPHCTILHYCGSSTGCCLTETERCVPKTIENVTLYFWTLELTSSG--ARKNIEAVNMRNHTECVCASINSRTPV</Hsp_hseq>
+      <Hsp_midline>LA  H  RV     C  P+  +V V    +  P + Y+PHCT+LH CG   GCC T+  RCV    E V L+F+++++   G    K I  +   NHT+C C  ++   P </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>ref|XP_011351397.1|</Hit_id>
+  <Hit_def>uncharacterized protein DDB_G0283697 isoform X1 [Ooceraea biroi] &gt;gb|RLU25057.1| hypothetical protein DMN91_003149 [Ooceraea biroi]</Hit_def>
+  <Hit_accession>XP_011351397</Hit_accession>
+  <Hit_len>819</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>2.62518e-14</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>582</Hsp_hit-from>
+      <Hsp_hit-to>690</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>RNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>QQYNKNGKSAEIRE--ALQHAIKVNKEGSCQWPRARVVPVRDVYPSPSTTYIPHCAILHRCSDDTGCCRSEALTCVPKHSHRVELSFYTTNVGGT-----TVVEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>+ +    + A I E  AL+H+++V +  +C  P+  VV V D YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|XP_012222436.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC105672225 isoform X1 [Linepithema humile] &gt;ref|XP_012222437.1| PREDICTED: uncharacterized protein LOC105672225 isoform X1 [Linepithema humile] &gt;ref|XP_012222438.1| PREDICTED: uncharacterized protein LOC105672225 isoform X1 [Linepithema humile]</Hit_def>
+  <Hit_accession>XP_012222436</Hit_accession>
+  <Hit_len>800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>3.08264e-14</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>549</Hsp_hit-from>
+      <Hsp_hit-to>666</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>SGRHSHSHKRRNHRHEAQQASIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>SVKETRSHMQQYHKN-GKGDGIKE--ALQHAIKVNKEGSCQWPRARVIPVRNVYPSPSTTYIPHCVILHRCSDDTGCCRSETLTCVPKHSHRVELSFYTTNV-----DAASIVEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>S + + SH ++ H++  +   I E  AL+H+++V +  +C  P+  V+ V + YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>ref|XP_031627123.1|</Hit_id>
+  <Hit_def>LIM domain-containing protein A-like [Contarinia nasturtii]</Hit_def>
+  <Hit_accession>XP_031627123</Hit_accession>
+  <Hit_len>636</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>4.28319e-14</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>434</Hsp_hit-from>
+      <Hsp_hit-to>534</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>EKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRSYLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGCIPVDPSF</Hsp_qseq>
+      <Hsp_hseq>KKLAYAHAVRVSREGACKWPRPKLVQVGSH-TSKTYSPHCTVLHRCSDETGCCHADYKTCQPRHKENVTLYFW---VHSKNQ---QFVEHLTFENHTECHCISKSARF</Hsp_hseq>
+      <Hsp_midline>+KLA  H+VRV     C  P+  +VQV  H   ++Y PHCTVLHRC    GCC  D   C    KE V L+F+   +  K Q   + +  LTF NHT+C CI     F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|XP_020281506.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC109853621 [Pseudomyrmex gracilis] &gt;ref|XP_020281507.1| uncharacterized protein LOC109853621 [Pseudomyrmex gracilis]</Hit_def>
+  <Hit_accession>XP_020281506</Hit_accession>
+  <Hit_len>790</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>5.12955e-14</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>563</Hsp_hit-from>
+      <Hsp_hit-to>659</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>KLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>KEALQHAVKVHKEGNCQWPRARLIPVRDVYPNPSTTYLPHCAILHRCSDDTGCCRSETLTCVPKHSQRVELSFYTTNVTGSSV-----VEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>K AL+H+V+V +   C  P+  ++ V D YP  S  YLPHC +LHRC    GCC ++ L CV    ++V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|XP_028045989.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like [Monomorium pharaonis]</Hit_def>
+  <Hit_accession>XP_028045989</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>5.62827e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>SIDEKLALEHSVRVGETCTCNQPKLHVVQVSDHYPGRS--YLPHCTVLHRCGKHAGCCATDELRCVASEKEKVVLHFFSIKMMDKGQPPEKKIAKLTFTNHTKCGC</Hsp_qseq>
+      <Hsp_hseq>SAEIREALQHAIKVNKEGSCQWPRARVIPVRDVYPSPSTTYIPHCAILHRCSDDTGCCRSEALTCVPKNTHRVELSFYTTSVGGASV-----VEKLSFYNHTECEC</Hsp_hseq>
+      <Hsp_midline>S + + AL+H+++V +  +C  P+  V+ V D YP  S  Y+PHC +LHRC    GCC ++ L CV     +V L F++  +          + KL+F NHT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>289341353</Statistics_db-num>
+      <Statistics_db-len>1057712885</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_003756271.1|</Hit_id>
+  <Hit_def>placenta growth factor [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_003756271</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.219</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>2.23334e-28</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>SGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPD</Hsp_qseq>
+      <Hsp_hseq>NSTAEVEVLPFQEVWGRSFCRSLEKLVDVSTEYPGEVEHMFSPSCVSLKRCTGCCGDENLHCVPVETTNVTMQLLKIKSGEQPSYME-LAFTEHVQCECRPRKEKMKPE</Hsp_hseq>
+      <Hsp_midline>+ T + +V PF EV  RS C++ E LV +  EYP E+  +F PSCV++ RC+GCC DE+L C PV    V +Q++++    Q S ME + FTEH  CECRPR+++ +P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_012404509.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A, partial [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_012404509</Hit_accession>
+  <Hit_len>454</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.612</Hsp_bit-score>
+      <Hsp_score>270</Hsp_score>
+      <Hsp_evalue>3.1118e-28</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>277</Hsp_hit-from>
+      <Hsp_hit-to>379</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR-KQGEPD</Hsp_qseq>
+      <Hsp_hseq>EVVKFLDVYQRSYCRAIETLVDIFQEYPDEVEFIFKPSCVPLMRCAGCCNDEGLECVPIEVHNVTMQIMRIKPH-QGQHIGEMSFLQHSKCGCRQKKVVKGKPE</Hsp_hseq>
+      <Hsp_midline>+V  FL+V++RS C+A ETLV I QEYPDE+  IF+PSCV ++RC+GCC DE L+C P+  H V +QIMR+ P  Q   +  M F +H+ C CR ++  +G+P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_031799668.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_031799668</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>2.09453e-26</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>QEKVVPWLEVFSRASCQPREVLVPLSQEFPGEVAHQLVPSCVPLQRCGGCCSDEAFECVPTGQRHVRMQILMI--RYLSSHLGEMSFVEHSQCECRPKK</Hsp_hseq>
+      <Hsp_midline>Q +V P+LEV  R++CQ RE LVP+ QE+P E++    PSCV + RC GCC+DE+ +C P G+  V +QI+ +  R  SS +  M F EH+ CECRP++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_012401523.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_012401523</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>1.30339e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCTPRETCVEVAKELGKSTNTFFKPPCVNVFRCGGCCNEESLLCINTSTSYVSKQLFEITVPLTTVPELVPVKVANHTGCKC</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V + +E     +  F+P CV V RC GCC +ESL C       V  Q+  +  P T   ++  +K   HT C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_023361612.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_023361612</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>1.23342e-08</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCIDVGKEFGAATNTFFKPPCVSIYRCGGCCNSEGLQCMNTSTSYLSKTLFEITVPLSHGPKPVTISFANHTSCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  F+P CV++ RC GCC  E L+C       +   +  +  P +   K   + F  HT+C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_031797423.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_031797423</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>5.7988e-06</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVRRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   S+KC P   H   +++ +V    +  K++  +++  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_031797428.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_031797428</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.22073e-06</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVRRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   S+KC P   H   +++ +V    +  K++  +++  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_031813024.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_031813024</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.2943e-05</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVELRRCTGCCNTSSVKCQPSWIHHRSVKVAKVEYVRKRPKLKEVLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV + RC+GCC   S+KC P   H   +++ +V    +  K++  +++  EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_031797100.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_031797100</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00122137</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKC--TPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRATQVQLRHVQVRKIEIVRKKPTFKKVTVTLEDHLACKC</Hsp_hseq>
+      <Hsp_midline>C+ R  +  I +   D  +  F   P CV V RCSGCC + +++C  T V    V ++ + +  +  + K   +   +H AC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_023360123.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X2 [Sarcophilus harrisii]</Hit_def>
+  <Hit_accession>XP_023360123</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00139016</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>CQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKC--TPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>CKTRTEVFEISRRLIDRTNANFLVWPPCVEVQRCSGCCNNRNVQCRATQVQLRHVQVRKIEIVRKKPTFKKVTVTLEDHLACKC</Hsp_hseq>
+      <Hsp_midline>C+ R  +  I +   D  +  F   P CV V RCSGCC + +++C  T V    V ++ + +  +  + K   +   +H AC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1190242800</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

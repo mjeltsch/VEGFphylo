@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_030640656.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform X3 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030640656</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.916</Hsp_bit-score>
+      <Hsp_score>263</Hsp_score>
+      <Hsp_evalue>7.24448e-30</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>KNEVVSFMEVYNKSWCQTREMLVDIIQEYPDDIDHTYIPSCVVLRRCAGCCNDEALECVPTETRNVTMEVIRTKQRVSQHNYQ-LSFTEHTKCECKPKQEVKVKKEKCDKPRR</Hsp_hseq>
+      <Hsp_midline>+ +V  F+EV+ +S CQ RE LV I+QEYPD+I   + PSCV + RC+GCC DE+L+C P     V ++++R   R      + + FTEHT CEC+P+++        +KPRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_030637150.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030637150</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>2.48107e-29</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRK-QGEPDG</Hsp_qseq>
+      <Hsp_hseq>DVVPFMDVYNKSRCQPREVLVDVLTEYPDELENIFIPSCVVLMRCAGCCNDEMLECTPTVTHNVTMEVKRLKLFRQERNI-FMSFTEHSDCLCRPKREVTGKRDN</Hsp_hseq>
+      <Hsp_midline> V PF++V+ +S CQ RE LV +L EYPDE+ +IF PSCV ++RC+GCC DE L+CTP   H V +++ R+    Q   +  M FTEH+ C CRP+R+  G+ D </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_030640654.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform X1 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030640654</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.531</Hsp_bit-score>
+      <Hsp_score>262</Hsp_score>
+      <Hsp_evalue>3.36396e-29</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRK----------QGEPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>KNEVVSFMEVYNKSWCQTREMLVDIIQEYPDDIDHTYIPSCVVLRRCAGCCNDEALECVPTETRNVTMEVIRTKQRVSQHNYQ-LSFTEHTKCECKPKQEVKVKKEKKSMKGRGKGPKRKRQR</Hsp_hseq>
+      <Hsp_midline>+ +V  F+EV+ +S CQ RE LV I+QEYPD+I   + PSCV + RC+GCC DE+L+C P     V ++++R   R      + + FTEHT CEC+P+++          +G   GPK K +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_030637149.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030637149</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>4.47281e-29</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRK</Hsp_qseq>
+      <Hsp_hseq>DVVPFMDVYNKSRCQPREVLVDVLTEYPDELENIFIPSCVVLMRCAGCCNDEMLECTPTVTHNVTMEVKRLKLFRQERNI-FMSFTEHSDCLCRPKRE</Hsp_hseq>
+      <Hsp_midline> V PF++V+ +S CQ RE LV +L EYPDE+ +IF PSCV ++RC+GCC DE L+CTP   H V +++ R+    Q   +  M FTEH+ C CRP+R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_030640655.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A isoform X2 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030640655</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>7.79217e-28</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>QGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRK</Hsp_qseq>
+      <Hsp_hseq>KNEVVSFMEVYNKSWCQTREMLVDIIQEYPDDIDHTYIPSCVVLRRCAGCCNDEALECVPTETRNVTMEVIRTKQRVSQHNYQ-LSFTEHTKCECKPKQE</Hsp_hseq>
+      <Hsp_midline>+ +V  F+EV+ +S CQ RE LV I+QEYPD+I   + PSCV + RC+GCC DE+L+C P     V ++++R   R      + + FTEHT CEC+P+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_030643256.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030643256</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.2117</Hsp_bit-score>
+      <Hsp_score>243</Hsp_score>
+      <Hsp_evalue>1.10454e-26</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>PFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>PFQEVWRRSFCRTIERLVEVVQEYPGEVEYIYSPACVPLVRCAGCCGDENLECHPTLTSNVTMQLLKIKPAEQDQQYVVMTFVEHKSCECRLRK</Hsp_hseq>
+      <Hsp_midline>PF EV  RS C+  E LV ++QEYP E+  I+ P+CV ++RC+GCC DE+L+C P     V +Q++++ P  Q  +  VM F EH +CECR R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_030620694.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X2 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030620694</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.8189</Hsp_bit-score>
+      <Hsp_score>229</Hsp_score>
+      <Hsp_evalue>1.08493e-23</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>GQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>GEVVKWLEVYQKSGCQPRETLVEVWREFPWETQHLFLPSCVSLRRCGGCCSDEALECVPTHTDTLTMELMKTT--YMKHELVHLTFIEHSQCECRPK</Hsp_hseq>
+      <Hsp_midline>G+V  +LEV+++S CQ RETLV + +E+P E   +F PSCV++ RC GCC+DE+L+C P    T+ +++M+        ++  + F EH+ CECRP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_030620692.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like isoform X1 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030620692</Hit_accession>
+  <Hit_len>280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.8189</Hsp_bit-score>
+      <Hsp_score>229</Hsp_score>
+      <Hsp_evalue>1.81713e-23</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>GQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPR</Hsp_qseq>
+      <Hsp_hseq>GEVVKWLEVYQKSGCQPRETLVEVWREFPWETQHLFLPSCVSLRRCGGCCSDEALECVPTHTDTLTMELMKTT--YMKHELVHLTFIEHSQCECRPK</Hsp_hseq>
+      <Hsp_midline>G+V  +LEV+++S CQ RETLV + +E+P E   +F PSCV++ RC GCC+DE+L+C P    T+ +++M+        ++  + F EH+ CECRP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_030628000.1|</Hit_id>
+  <Hit_def>placenta growth factor-like [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030628000</Hit_accession>
+  <Hit_len>132</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.5817</Hsp_bit-score>
+      <Hsp_score>218</Hsp_score>
+      <Hsp_evalue>2.49634e-23</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>PSGTVQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>PLSKSHSKVMLFHEAWARSVCRSLERMVQVEQEYPGGVEHIFSPGCVPLQRCSGCCSDEKLECYPTRTQNVTIQLLRITPAERTREYVLLSFLEHHTCECRCRQ</Hsp_hseq>
+      <Hsp_midline>P      +V  F E   RS C++ E +V + QEYP  +  IF P CV + RCSGCC+DE L+C P     V +Q++R+ P  ++ +  ++ F EH  CECR R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_030649209.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC115829294 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030649209</Hit_accession>
+  <Hit_len>536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.14584e-11</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>149</Hsp_hit-from>
+      <Hsp_hit-to>242</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMR---VNPRTQSSKMEVMKFTEHTACECRPRRKQ</Hsp_qseq>
+      <Hsp_hseq>QQAVCKVRTEVVEVTRAMLDRTNADFLLWPPCVEVQRCSGCCNTRNLQCVPVTTHTRHLQVMKIQYVRKRPVYDKAVVSVF-DHVECQCQPRRKH</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  +V + +   D  +  F   P CV V RCSGCC   +L+C PV  HT  LQ+M+   V  R    K  V  F +H  C+C+PRRK </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_030627967.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030627967</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.44111e-10</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC----------RPRRKQG-EPDGPKEKPRR</Hsp_qseq>
+      <Hsp_hseq>QKTQCMPRETCVDVAKELGTTTAMFFKPPCVSVYRCNGCCNKEGVTCRNTSTTYVNKTLLSVIPFKYGPEPVLIKVANHTECKCMEPALTRRHARPHRKHGCSPIHQSEDSRR</Hsp_hseq>
+      <Hsp_midline>+++ C  RET V + +E     +  F+P CV+V RC+GCC  E + C       V+  ++ V P     +  ++K   HT C+C          RP RK G  P    E  RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_030644039.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030644039</Hit_accession>
+  <Hit_len>401</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>3.48849e-09</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCLDVGKEFGAATNTFYKPPCVSVYRCAGCCNSEEYQCMNISTSYISKTLFEITVPITQGTKPVTISFANHTMCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC+GCC  E  +C  +    +   +  +  P TQ +K   + F  HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_030644040.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030644040</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>3.58565e-09</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCMPREVCLDVGKEFGAATNTFYKPPCVSVYRCAGCCNSEEYQCMNISTSYISKTLFEITVPITQGTKPVTISFANHTMCRC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC+GCC  E  +C  +    +   +  +  P TQ +K   + F  HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_030637363.1|</Hit_id>
+  <Hit_def>putative mediator of RNA polymerase II transcription subunit 26 isoform X3 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030637363</Hit_accession>
+  <Hit_len>538</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000211249</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>QQAACKVRTEVMEVTRAMLDRRNANFLLWPPCVEVQRCSGCCNIRTMQCVPVVTEMRQLQMTKITFINRHPHYEKVIVPVEDHITCSCQ</Hsp_hseq>
+      <Hsp_midline>+++AC+ R  ++ + +   D  +  F   P CV V RCSGCC   +++C PV      LQ+ ++    +    E  ++   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_030637361.1|</Hit_id>
+  <Hit_def>putative mediator of RNA polymerase II transcription subunit 26 isoform X1 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030637361</Hit_accession>
+  <Hit_len>541</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00029223</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>QQAACKVRTEVMEVTRAMLDRRNANFLLWPPCVEVQRCSGCCNIRTMQCVPVVTEMRQLQMTKITFINRHPHYEKVIVPVEDHITCSCQ</Hsp_hseq>
+      <Hsp_midline>+++AC+ R  ++ + +   D  +  F   P CV V RCSGCC   +++C PV      LQ+ ++    +    E  ++   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_030637362.1|</Hit_id>
+  <Hit_def>putative mediator of RNA polymerase II transcription subunit 26 isoform X2 [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030637362</Hit_accession>
+  <Hit_len>538</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000315056</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIFR--PSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>QQAACKVRTEVMEVTRAMLDRRNANFLLWPPCVEVQRCSGCCNIRTMQCVPVVTEMRQLQMTKITFINRHPHYEKVIVPVEDHITCSCQ</Hsp_hseq>
+      <Hsp_midline>+++AC+ R  ++ + +   D  +  F   P CV V RCSGCC   +++C PV      LQ+ ++    +    E  ++   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_030646256.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030646256</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.00478703</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN--PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AACKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTGNVRCHASRKQHRTVKVAKVEFVRRKPKFKEVLVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+AC+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C    K    +++ +V    R    K  +++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_030638652.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like [Chanos chanos]</Hit_def>
+  <Hit_accession>XP_030638652</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.00979029</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKM-EV-MKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>AGCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTGNMCCHASRKHHRTVKVAKVEYVRRKPKLREVQVRLEDHLECVC</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   ++ C    KH   +++ +V    +  K+ EV ++  +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>798551954</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

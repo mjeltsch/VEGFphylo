@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>232</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-A206 NP_001165094.1 vascular endothelial growth factor A isoform i precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>232</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|PWA27587.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00000069 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA27587</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.4</Hsp_bit-score>
+      <Hsp_score>433</Hsp_score>
+      <Hsp_evalue>2.183e-52</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>226</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>293</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>APMAEGGGQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD-RARQEKKSVRGKGKGQKRKRKKSRYKSWSVYVGARCCLMPWSLPGPHPCGPCSERRKHLFVQDPQTCKCSCKNTDSRCKARQLELNERTCR</Hsp_qseq>
+      <Hsp_hseq>TPAKTKGGGEQFEVIPLMEVYNKSLCQPREVLVDILQEYPEEVEHIFIPSCVVLKRCAGCCSDEMLQCTPTATYNVTMEIKRIKLQRQQNDIFMSFTEHSACECRLKTEVREKKEKKPRTGKGKGLKRKRKKNRDKTIHDAVCEPC------------CDNCTERRKRLFVQDPSTCRCSCKHTVEYCKERQLELNEKTCK</Hsp_hseq>
+      <Hsp_midline> P    GG    EV+  M+VY +S C P E LVDI QEYP+E+E+IF PSCV L RC GCC+DE L+C PT   N+TM+I RIK  + Q+   MSF +H+ CECR K + R ++EKK   GKGKG KRKRKK+R K+    V   C            C  C+ERRK LFVQDP TC+CSCK+T   CK RQLELNE+TC+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|PWA16453.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00004499, partial [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA16453</Hit_accession>
+  <Hit_len>90</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.079</Hsp_bit-score>
+      <Hsp_score>279</Hsp_score>
+      <Hsp_evalue>5.87158e-32</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>90</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>FMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQ-GQHIGEMSFLQHNKCEC</Hsp_qseq>
+      <Hsp_hseq>FQEVWGRSFCRTMEKLVEVVQEYPTEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTSNVTMQLLKIRPSEPGEEYVEMTFVEHKTCEC</Hsp_hseq>
+      <Hsp_midline>F +V+ RS+C  +E LV++ QEYP E+E+I+ PSCVPL+RC GCC DE LEC PT+ SN+TMQ+++I+P + G+   EM+F++H  CEC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|PWA22289.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00012548, partial [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA22289</Hit_accession>
+  <Hit_len>307</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.605</Hsp_bit-score>
+      <Hsp_score>257</Hsp_score>
+      <Hsp_evalue>1.85919e-26</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>EVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVRGKGKGQKRK---RKKSRYKSWSV</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWRELPGEIHHLFVPSCVSVKRCGGCCADEALECVPSLTHTLTMELMRTSFMKHELI-ELPFVEHSQCECRLKEQFQPTPTTRLHLKPAGKERKKEGRKSRQRKTGSI</Hsp_hseq>
+      <Hsp_midline>EV ++++VY RS C P +TLV++++E P EI ++F PSCV + RCGGCC DE LECVP+    +TM++MR    + + I E+ F++H++CECR K+         +  K  G++RK   RK  + K+ S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|PWA27470.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00000148, partial [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA27470</Hit_accession>
+  <Hit_len>127</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.6406</Hsp_bit-score>
+      <Hsp_score>187</Hsp_score>
+      <Hsp_evalue>5.75234e-18</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>103</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>GQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDR</Hsp_qseq>
+      <Hsp_hseq>GKERPAAMGFTEVLNKSFCRPIEQHVNVETEFPGGVEDFYIPHCVSLFRCSGCCIDETQECYPVVERNITLEVSR-----SSQVVNLTFVEHQQCGVRLKEFR</Hsp_hseq>
+      <Hsp_midline>G+     + F +V  +S+C PIE  V++  E+P  +E  + P CV L RC GCC DE  EC P  E NIT+++ R        +  ++F++H +C  R K+ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|PWA32088.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00013453 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA32088</Hit_accession>
+  <Hit_len>414</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>2.09851e-14</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK-PHQGQHIGEMSFLQHNKCECRPKK</Hsp_qseq>
+      <Hsp_hseq>LAVILEEIQRTSCQPREVCVEVAKEYPESTSQLYLPRCVALHRCGGCCGNEAFYCTNTSYSLVNKTLMELSPPRMDRSVAMVTFVNHTSCECLSKR</Hsp_hseq>
+      <Hsp_midline>+   ++  QR+ C P E  V++ +EYP+    ++ P CV L RCGGCC +E   C  T  S +   +M +  P   + +  ++F+ H  CEC  K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|PWA30664.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00009234, partial [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA30664</Hit_accession>
+  <Hit_len>501</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.60265e-09</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>SQAAPMAEGGGQNHHEVVKFMDV-YQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLEC--VPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKSVR</Hsp_qseq>
+      <Hsp_hseq>SEAEEPTYAAAYLNLDVLKSIELEWRKTQCMPREVCVDVGREFGAPTNVFYKPPCVSVYRCGGCCPSEDKQCRNISTGYLSKTLFEITVPLTQGTKPVTISVANHTQCSCLSKLDIYRQVHSIIR</Hsp_hseq>
+      <Hsp_midline>S+A          + +V+K +++ ++++ C P E  VD+ +E+       +KP CV + RCGGCC  E  +C  + T   + T+  + +   QG     +S   H +C C  K D  RQ    +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|PWA33187.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00013666 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA33187</Hit_accession>
+  <Hit_len>540</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>3.09409e-08</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>SLALLLYLHHAKWSQAAPMAEGGGQNHHEVVKFMDV--YQRSYCHPIETLVDIFQEYPD--EIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECRPKKDRARQEKKS</Hsp_qseq>
+      <Hsp_hseq>DLQLLLLTDSVDEEEANAAANGG----HRLPRSLDAQPAQQAQCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHTRYLQVMKIEYINKRPTYAKAV--VSVVDHVECRCQPAPRPAVLKKKS</Hsp_hseq>
+      <Hsp_midline> L LLL        +A   A GG    H + + +D    Q++ C     +V++ +   D     ++  P CV + RC GCCN + L+CVP       +Q+M+I     +P   + +  +S + H +C C+P    A  +KKS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|PWA33848.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00018723 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA33848</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00449634</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>PDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIK</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVE</Hsp_hseq>
+      <Hsp_midline>P    ++  P CV + RC GCCN   + C P+ + + T+++ +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|PWA32532.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00015085 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA32532</Hit_accession>
+  <Hit_len>541</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0360263</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>YIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI</Hsp_qseq>
+      <Hsp_hseq>FLVFPRCVEVQRCSGCCNSRHQQCAPVVNATRNLEVKKI</Hsp_hseq>
+      <Hsp_midline>++  P CV + RC GCCN    +C P   +   +++ +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|PWA32573.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00015097, partial [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA32573</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0423598</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>QEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRI-----KPHQGQHIGEMSFLQHNKCECRPK</Hsp_qseq>
+      <Hsp_hseq>QVDPTSANFIIWPPCVEVKRCTGCCNTNNMRCQAAHKQLRTVKVAKVEYVRRRPKLRE--VEVTLEDHLECTCNNK</Hsp_hseq>
+      <Hsp_midline>Q  P    +I  P CV + RC GCCN   + C    +   T+++ ++     +P   +   E++   H +C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|PWA18882.1|</Hit_id>
+  <Hit_def>hypothetical protein CCH79_00004948 [Gambusia affinis]</Hit_def>
+  <Hit_accession>PWA18882</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.4982</Hsp_bit-score>
+      <Hsp_score>75</Hsp_score>
+      <Hsp_evalue>0.0605264</Hsp_evalue>
+      <Hsp_query-from>67</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>DEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQ</Hsp_qseq>
+      <Hsp_hseq>DAMQSVLDLFLAVGARCGGCCNDEGLTCRNMSTVYVNKTIFSFTPFK</Hsp_hseq>
+      <Hsp_midline>D ++ +         RCGGCCNDEGL C       +   I    P +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1320601344</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

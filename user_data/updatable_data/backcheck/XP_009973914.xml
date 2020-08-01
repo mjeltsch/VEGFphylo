@@ -1,0 +1,2334 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.9.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>XP_009973914.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PREDICTED: mannan-binding lectin serine protease 1-like [Tyto alba]</BlastOutput_query-def>
+  <BlastOutput_query-len>284</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.01</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>XP_009973914.1</Iteration_query-ID>
+  <Iteration_query-def>PREDICTED: mannan-binding lectin serine protease 1-like [Tyto alba]</Iteration_query-def>
+  <Iteration_query-len>284</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|723565117|ref|XP_010303314.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Balearica regulorum gibbericeps]</Hit_def>
+  <Hit_accession>XP_010303314</Hit_accession>
+  <Hit_len>816</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>595.504</Hsp_bit-score>
+      <Hsp_score>1534</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>447</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>283</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>8.03976e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIHSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|676248229|gb|KFO12101.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Balearica regulorum gibbericeps]</Hit_def>
+  <Hit_accession>KFO12101</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.964</Hsp_bit-score>
+      <Hsp_score>1530</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>283</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>7.4383e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIHSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|723124839|ref|XP_010294702.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>XP_010294702</Hit_accession>
+  <Hit_len>728</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.578</Hsp_bit-score>
+      <Hsp_score>1529</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>359</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYVKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDY+KIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.1974e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|677480869|gb|KFQ70274.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Phaethon lepturus]</Hit_def>
+  <Hit_accession>KFQ70274</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.578</Hsp_bit-score>
+      <Hsp_score>1529</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYVKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDY+KIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.43002e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|529436073|ref|XP_005237805.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_005237805</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.578</Hsp_bit-score>
+      <Hsp_score>1529</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLNFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITL+FEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>2.17516e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVMWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+ ++ I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|698384298|ref|XP_009815055.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Gavia stellata]</Hit_def>
+  <Hit_accession>XP_009815055</Hit_accession>
+  <Hit_len>771</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.193</Hsp_bit-score>
+      <Hsp_score>1528</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>402</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYVKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDY+KIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.71902e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|541983600|ref|XP_005443689.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Falco cherrug]</Hit_def>
+  <Hit_accession>XP_005443689</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>593.193</Hsp_bit-score>
+      <Hsp_score>1528</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLNFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITL+FEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>2.19509e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVMWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+ ++ I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|690442019|ref|XP_009321860.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Pygoscelis adeliae]</Hit_def>
+  <Hit_accession>XP_009321860</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.808</Hsp_bit-score>
+      <Hsp_score>1527</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQ ILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>8.14938e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>GVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>GEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|686608156|ref|XP_009280640.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Aptenodytes forsteri]</Hit_def>
+  <Hit_accession>XP_009280640</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.808</Hsp_bit-score>
+      <Hsp_score>1527</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQ ILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>8.00244e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>GVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>GEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|679137947|gb|KFW66794.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Pygoscelis adeliae]</Hit_def>
+  <Hit_accession>KFW66794</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.808</Hsp_bit-score>
+      <Hsp_score>1527</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQ ILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>8.00014e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>GVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>GEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|675314338|gb|KFM09600.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Aptenodytes forsteri]</Hit_def>
+  <Hit_accession>KFM09600</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.808</Hsp_bit-score>
+      <Hsp_score>1527</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQ ILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>7.71411e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>GVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>GEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQAILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1495962963|ref|XP_026710665.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 [Athene cunicularia]</Hit_def>
+  <Hit_accession>XP_026710665</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.423</Hsp_bit-score>
+      <Hsp_score>1526</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAAHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKA HREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.0355e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|729749735|ref|XP_010571420.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Haliaeetus leucocephalus]</Hit_def>
+  <Hit_accession>XP_010571420</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.038</Hsp_bit-score>
+      <Hsp_score>1525</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLAYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>I+AEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKL+YTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.5102e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|678179879|gb|KFV47601.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Gavia stellata]</Hit_def>
+  <Hit_accession>KFV47601</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.038</Hsp_bit-score>
+      <Hsp_score>1525</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYVKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDY+KIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.03295e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|677503133|gb|KFQ90189.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Phoenicopterus ruber ruber]</Hit_def>
+  <Hit_accession>KFQ90189</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.038</Hsp_bit-score>
+      <Hsp_score>1525</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPTCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIP CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.20003e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1561571875|ref|XP_027643081.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Falco peregrinus]</Hit_def>
+  <Hit_accession>XP_027643081</Hit_accession>
+  <Hit_len>453</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>592.038</Hsp_bit-score>
+      <Hsp_score>1525</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLNFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITL+FEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.51755e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVMWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+ ++ I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1159658717|gb|OPJ85609.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform B [Patagioenas fasciata monilis]</Hit_def>
+  <Hit_accession>OPJ85609</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>591.652</Hsp_bit-score>
+      <Hsp_score>1524</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDDLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKD+LES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.92657e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|543744940|ref|XP_005513277.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Columba livia] &gt;gi|1307735558|gb|PKK20951.1| mannan-binding lectin serine peptidase 1 (C4/C2 activating component of Ra-reactive factor), transcript variant X1 [Columba livia]</Hit_def>
+  <Hit_accession>XP_005513277</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>591.652</Hsp_bit-score>
+      <Hsp_score>1524</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.67093e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|768364370|ref|XP_011579437.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X1 [Aquila chrysaetos canadensis]</Hit_def>
+  <Hit_accession>XP_011579437</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>591.267</Hsp_bit-score>
+      <Hsp_score>1523</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLAYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>I+AEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKL+YTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.16997e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|960972558|ref|XP_014801240.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X1 [Calidris pugnax]</Hit_def>
+  <Hit_accession>XP_014801240</Hit_accession>
+  <Hit_len>803</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.882</Hsp_bit-score>
+      <Hsp_score>1522</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRNGVITSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQR+GV+ SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.43462e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>96</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|694663906|ref|XP_009486768.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1, partial [Pelecanus crispus]</Hit_def>
+  <Hit_accession>XP_009486768</Hit_accession>
+  <Hit_len>728</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.882</Hsp_bit-score>
+      <Hsp_score>1522</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>359</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDFFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+ FQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.48608e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|677474644|gb|KFQ64058.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Pelecanus crispus]</Hit_def>
+  <Hit_accession>KFQ64058</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.882</Hsp_bit-score>
+      <Hsp_score>1522</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDFFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+ FQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.66851e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1159658716|gb|OPJ85608.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform A [Patagioenas fasciata monilis]</Hit_def>
+  <Hit_accession>OPJ85608</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.497</Hsp_bit-score>
+      <Hsp_score>1521</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDDLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKD+LES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.98078e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|701336107|ref|XP_009973914.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1-like, partial [Tyto alba]</Hit_def>
+  <Hit_accession>XP_009973914</Hit_accession>
+  <Hit_len>284</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.497</Hsp_bit-score>
+      <Hsp_score>1521</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>284</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>284</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|1307735557|gb|PKK20950.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine peptidase 1 (C4/C2 activating component of Ra-reactive factor), transcript variant X2 [Columba livia]</Hit_def>
+  <Hit_accession>PKK20950</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.112</Hsp_bit-score>
+      <Hsp_score>1520</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>3.30264e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|902924479|ref|XP_013050482.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Anser cygnoides domesticus]</Hit_def>
+  <Hit_accession>XP_013050482</Hit_accession>
+  <Hit_len>713</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.112</Hsp_bit-score>
+      <Hsp_score>1520</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGPREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>3.22392e-06</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>GVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>GEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|1561707396|ref|XP_027667631.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Falco cherrug]</Hit_def>
+  <Hit_accession>XP_027667631</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.112</Hsp_bit-score>
+      <Hsp_score>1520</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLNFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITL+FEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.4622</Hsp_bit-score>
+      <Hsp_score>145</Hsp_score>
+      <Hsp_evalue>1.05549e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVMWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+ ++ I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|1540451440|ref|XP_027319945.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027319945</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>590.112</Hsp_bit-score>
+      <Hsp_score>1520</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGPREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.37756e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TEMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T+  G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|768364372|ref|XP_011579438.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X2 [Aquila chrysaetos canadensis]</Hit_def>
+  <Hit_accession>XP_011579438</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>589.341</Hsp_bit-score>
+      <Hsp_score>1518</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLAYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>I+AEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKL+YTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>2.4386e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIQAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|699657156|ref|XP_009881657.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: mannan-binding lectin serine protease 1 [Charadrius vociferus]</Hit_def>
+  <Hit_accession>XP_009881657</Hit_accession>
+  <Hit_len>805</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>589.341</Hsp_bit-score>
+      <Hsp_score>1518</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>436</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>283</Hsp_identity>
+      <Hsp_positive>284</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>287</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIG---NPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNSXNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIG   NPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.92527e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|1201885154|ref|XP_021252654.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X1 [Numida meleagris]</Hit_def>
+  <Hit_accession>XP_021252654</Hit_accession>
+  <Hit_len>779</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.956</Hsp_bit-score>
+      <Hsp_score>1517</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>410</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGQREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>2.61275e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|1197680469|ref|XP_005513278.2|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Columba livia]</Hit_def>
+  <Hit_accession>XP_005513278</Hit_accession>
+  <Hit_len>453</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.956</Hsp_bit-score>
+      <Hsp_score>1517</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>282</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>5.66838e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|704330519|ref|XP_010171992.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: mannan-binding lectin serine protease 1 [Antrostomus carolinensis]</Hit_def>
+  <Hit_accession>XP_010171992</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.956</Hsp_bit-score>
+      <Hsp_score>1517</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>277</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQIILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVITSADFPSPYPKSSDCLYRIELEQGFFITLNFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGERSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQ+ILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGV+ SADFPSPYPKSSDCLYRIELE+GFFITL+FEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGE+SPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.91824e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQIILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|697027543|ref|XP_009575661.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: mannan-binding lectin serine protease 1-like [Fulmarus glacialis]</Hit_def>
+  <Hit_accession>XP_009575661</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.956</Hsp_bit-score>
+      <Hsp_score>1517</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHSCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPTCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDH CHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIP CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>7.85815e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|47087165|ref|NP_998751.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 precursor [Gallus gallus] &gt;gi|45645031|gb|AAS73180.1| mannan-binding lectin associated serine protease 3 [Gallus gallus]</Hit_def>
+  <Hit_accession>NP_998751</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.571</Hsp_bit-score>
+      <Hsp_score>1516</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGQREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.91876e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYYM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + EGF I L +   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|733903084|ref|XP_010715062.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X1 [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010715062</Hit_accession>
+  <Hit_len>794</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.571</Hsp_bit-score>
+      <Hsp_score>1516</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>142</Hsp_hit-from>
+      <Hsp_hit-to>425</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGQREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.39975e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TEMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T+  G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|700427806|ref|XP_009952500.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1, partial [Leptosomus discolor]</Hit_def>
+  <Hit_accession>XP_009952500</Hit_accession>
+  <Hit_len>653</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.571</Hsp_bit-score>
+      <Hsp_score>1516</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>284</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGAYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHKEFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPG YMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGH+EFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|677396672|gb|KFQ13444.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Leptosomus discolor]</Hit_def>
+  <Hit_accession>KFQ13444</Hit_accession>
+  <Hit_len>654</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.571</Hsp_bit-score>
+      <Hsp_score>1516</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>285</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGAYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHKEFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPG YMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGH+EFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|1540451442|ref|XP_027319946.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027319946</Hit_accession>
+  <Hit_len>696</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.571</Hsp_bit-score>
+      <Hsp_score>1516</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGPREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.36878e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TEMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFMH-FDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T+  G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|733903087|ref|XP_010715063.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X2 [Meleagris gallopavo]</Hit_def>
+  <Hit_accession>XP_010715063</Hit_accession>
+  <Hit_len>722</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.186</Hsp_bit-score>
+      <Hsp_score>1515</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>353</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGQREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.38534e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TEMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T+  G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|701309247|ref|XP_010015542.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Nestor notabilis]</Hit_def>
+  <Hit_accession>XP_010015542</Hit_accession>
+  <Hit_len>726</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.186</Hsp_bit-score>
+      <Hsp_score>1515</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>357</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>279</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITMNFEDSFDVEDHPEVTCPYDYIKIKAGNREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFIT++FEDSFDVEDHPEVTCPYDYIKIKAG+REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.86286e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|527248102|ref|XP_005142371.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Melopsittacus undulatus]</Hit_def>
+  <Hit_accession>XP_005142371</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>588.186</Hsp_bit-score>
+      <Hsp_score>1515</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>279</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIKLEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGNREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRI+LE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG+REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.91824e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|944213008|gb|KQK79640.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 [Amazona aestiva]</Hit_def>
+  <Hit_accession>KQK79640</Hit_accession>
+  <Hit_len>730</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.8</Hsp_bit-score>
+      <Hsp_score>1514</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGNREFGPFCGEKSPGSIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG+REFGPFCGEKSPG IETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.71456e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIXSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|697826905|ref|XP_009633907.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Egretta garzetta]</Hit_def>
+  <Hit_accession>XP_009633907</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.8</Hsp_bit-score>
+      <Hsp_score>1514</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>279</Hsp_identity>
+      <Hsp_positive>281</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGHIETQTNSVQILFHSDNSGENRGWKLSYTATGNPCPLVQPPINGRIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPG IETQTNSVQILFHSDNSGENRGWKLSYTA GNPCPLVQPPING+IEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.49125e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|695139990|ref|XP_009512436.1|</Hit_id>
+  <Hit_def>PREDICTED: LOW QUALITY PROTEIN: mannan-binding lectin serine protease 1-like, partial [Phalacrocorax carbo]</Hit_def>
+  <Hit_accession>XP_009512436</Hit_accession>
+  <Hit_len>728</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.8</Hsp_bit-score>
+      <Hsp_score>1514</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>359</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>281</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDIFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGHIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFED FDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPG IETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>5.86787e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|677462683|gb|KFQ52097.1|</Hit_id>
+  <Hit_def>Mannan-binding lectin serine protease 1, partial [Nestor notabilis]</Hit_def>
+  <Hit_accession>KFQ52097</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.8</Hsp_bit-score>
+      <Hsp_score>1514</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>279</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITMNFEDSFDVEDHPEVTCPYDYIKIKAGNREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFIT++FEDSFDVEDHPEVTCPYDYIKIKAG+REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>6.31398e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|1540451444|ref|XP_027319947.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X3 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027319947</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.8</Hsp_bit-score>
+      <Hsp_score>1514</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>281</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGPREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPVCK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIP+CK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>8.23027e-07</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TEMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T+  G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|1201885156|ref|XP_021252655.1|</Hit_id>
+  <Hit_def>mannan-binding lectin serine protease 1 isoform X2 [Numida meleagris]</Hit_def>
+  <Hit_accession>XP_021252655</Hit_accession>
+  <Hit_len>430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.415</Hsp_bit-score>
+      <Hsp_score>1513</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>410</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEDGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGQREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELE+GFFITLSFEDSFDVEDHPEVTCPYDYIKIKAG REFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>1.71285e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIRSPNFPDSYPSDSEVTWNISVPEGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + EGF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|960972560|ref|XP_014801242.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 isoform X2 [Calidris pugnax]</Hit_def>
+  <Hit_accession>XP_014801242</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.415</Hsp_bit-score>
+      <Hsp_score>1513</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>280</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRNGVITSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICK</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQR+GV+ SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPICK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.52201e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|694850894|ref|XP_009466720.1|</Hit_id>
+  <Hit_def>PREDICTED: mannan-binding lectin serine protease 1 [Nipponia nippon]</Hit_def>
+  <Hit_accession>XP_009466720</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>587.415</Hsp_bit-score>
+      <Hsp_score>1513</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>279</Hsp_identity>
+      <Hsp_positive>282</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAKYTFKDQVVISCNTGYKVLKDNLESESFQIECLKDGTWSNKIPICK</Hsp_qseq>
+      <Hsp_hseq>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVVTSADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHTEFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQAQYTFKDQVVISCNTGYKVLKDNLESDSFQIECLKDGTWSNKIPICQ</Hsp_hseq>
+      <Hsp_midline>IEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAVDVDECLEKSDEELACDHYCHNYIGGYYCSCRFGYILHSDNRTCKVECSDNLYTQRSGVV SADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGH EFGPFCGEKSPGRIETQTNSVQILFHSDNSGENRGWKLSYTAIGNPCPLVQPPINGKIEPSQA+YTFKDQVVISCNTGYKVLKDNLES+SFQIECLKDGTWSNKIPIC+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>6.73192e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>TQRSGVVASADFPSPYPKSSDCLYRIELEEGFFITLSFEDSFDVEDHPEVTCPYDYIKIKAGHREFGPFCG------EKSPGR--IETQTNSVQILFHSDNSGENR--GWKLSYTAI</Hsp_qseq>
+      <Hsp_hseq>TDMFGEIQSPNFPDSYPSDSEVTWNISVPDGFKIKLYFM-HFDLES--SYLCEYDYVKIEAEDQELATFCGRETTDTEQAPGQQVILSPGPYMGLTFRSDFSNEERFTGFDAHYTAV</Hsp_hseq>
+      <Hsp_midline>T   G + S +FP  YP  S+  + I + +GF I L F   FD+E      C YDY+KI+A  +E   FCG      E++PG+  I +    + + F SD S E R  G+   YTA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>195624353</Statistics_db-num>
+      <Statistics_db-len>71183484073</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

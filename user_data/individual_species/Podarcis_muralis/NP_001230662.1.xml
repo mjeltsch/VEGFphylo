@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>188</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B167 NP_001230662.1 vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>188</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_028580180.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028580180</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>123.25</Hsp_bit-score>
+      <Hsp_score>308</Hsp_score>
+      <Hsp_evalue>2.79973e-35</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCEC--RPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LAALLYFQNAKFSQAAPAQGDGEKQQSEVISFLVVFERSACRTIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTSTYNVTMEILRIKHFQGQHLSRMSFQQHRECECRERPKKEVKPRQENHCEP-CSERRKHLFKQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>LAALL    A   QA  +Q D    Q +V+S++ V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LECVPT  + V M+IL I++   Q L  MS ++H +CEC  RPKK+    + +   P C    +H  + DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_028566508.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028566508</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.701</Hsp_bit-score>
+      <Hsp_score>291</Hsp_score>
+      <Hsp_evalue>1.50642e-32</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>195</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>WIDVYTRATCQPREVVVPLTVELMGTVAKQL-VPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI-RYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>FLEVFSRSACQAKETMVSLDKEYPDLVISHLIVPSCVALKRCVGCCADESAQCMPSRTYTVTMEVLLLSKFQRSHLQQLTFEEHATCECRPKE---VYRLATHSPSCAPCPDRKKRVNPVTCECVCKRDS-VRCQQRGWELNKATCRCVKHRR</Hsp_hseq>
+      <Hsp_midline>+++V++R+ CQ +E +V L  E    V   L VPSCV ++RC GCC D+  +C+P+  + V M++L++ ++  S L +++ EEH+ CECRPK+     +  +  P C  C    +R +P TC C C+R S +RCQ RG ELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_028580177.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028580177</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>3.50387e-32</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>203</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKKKDSAVKPDSPRPL-----------------CPRCTQ---HHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LAALLYFQNAKFSQAAPAQGDGEKQQSEVISFLVVFERSACRTIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTSTYNVTMEILRIKHFQGQHLSRMSFQQHRECECRERPKKE-VKPRQEKKSKRGKGKGQKRKRKRGRHCEPCSERRKHLFKQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>LAALL    A   QA  +Q D    Q +V+S++ V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LECVPT  + V M+IL I++   Q L  MS ++H +CECR + K   VKP   +                   C  C++   H  + DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_028580176.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028580176</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.39</Hsp_bit-score>
+      <Hsp_score>285</Hsp_score>
+      <Hsp_evalue>1.49366e-31</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>218</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>209</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKKKDSAVKP----------------------DSPRPL-CPRCTQ---HHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>LAALLYFQNAKFSQAAPAQGDGEKQQSEVISFLVVFERSACRTIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTSTYNVTMEILRIKHFQGQHLSRMSFQQHRECECRERPKKE-VKPRQEKKSKRGKGKGQKRKRKRGRYKPQNFHCEPCSERRKHLFKQDPQTCKCSCKFTD-SRCKSRQLELNERTCRCEKPRR</Hsp_hseq>
+      <Hsp_midline>LAALL    A   QA  +Q D    Q +V+S++ V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LECVPT  + V M+IL I++   Q L  MS ++H +CECR + K   VKP                        P+   C  C++   H  + DP+TC+C C+     RC+ R LELN  TCRC K RR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_028580181.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028580181</Hit_accession>
+  <Hit_len>174</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.5893</Hsp_bit-score>
+      <Hsp_score>231</Hsp_score>
+      <Hsp_evalue>5.0638e-24</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKKKDSAVKP</Hsp_qseq>
+      <Hsp_hseq>LAALLYFQNAKFSQAAPAQGDGEKQQSEVISFLVVFERSACRTIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTSTYNVTMEILRIKHFQGQHLSRMSFQQHRECECRERPKKE-VKP</Hsp_hseq>
+      <Hsp_midline>LAALL    A   QA  +Q D    Q +V+S++ V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LECVPT  + V M+IL I++   Q L  MS ++H +CECR + K   VKP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_028580178.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028580178</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.2041</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>1.32809e-23</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>132</Hsp_align-len>
+      <Hsp_qseq>LAALLQLAPA---QAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCEC--RPKKKDSAVKP</Hsp_qseq>
+      <Hsp_hseq>LAALLYFQNAKFSQAAPAQGDGEKQQSEVISFLVVFERSACRTIETMVDIFQEYPDEVEYIFKPSCVPLMRCAGCCNDEALECVPTSTYNVTMEILRIKHFQGQHLSRMSFQQHRECECRERPKKE---VKP</Hsp_hseq>
+      <Hsp_midline>LAALL    A   QA  +Q D    Q +V+S++ V+ R+ C+  E +V +  E    V     PSCV + RC GCC D+ LECVPT  + V M+IL I++   Q L  MS ++H +CEC  RPKK+   VKP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_028575451.1|</Hit_id>
+  <Hit_def>placenta growth factor [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028575451</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>1.87318e-19</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>LLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ-LGEMSLEEHSQCECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRRR</Hsp_qseq>
+      <Hsp_hseq>LFGGFLVALALRVVGAQRQDVLLQNSTTEAAVVSFHDVWNRSSCQPLEKLVDVVSEYPSEVEHVFSPSCVFLQRCSGCCGDERLQCVPTEVANVTMQLLKVNSEEQAPYVELSFVEHRKCVCRPRR--DAVKSGRRR-----------RPKGRSKRKRAKQR</Hsp_hseq>
+      <Hsp_midline>L    L+A  L++  AQ           +  VVS+ DV+ R++CQP E +V +  E    V     PSCV +QRC GCC D+ L+CVPT    V MQ+L +         E+S  EH +C CRP++   AVK    R           RP  R+ R R ++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_028597744.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X1 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028597744</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>1.40808e-13</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>VVPFEEVWSRSYCRARETLVDILSEFPHEAEHIFKPPCVPLWRCAGCCGDESLECIAVETRTIDLQVVRVSPILGTTQQEEMKFVEHTRCSCRPRRK</Hsp_hseq>
+      <Hsp_midline>VV + +V++R+ C+ RE +V +  E          P CV + RC GCC D+ LEC+      + +Q++ +     ++Q  EM   EH++C CRP++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_028597745.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X2 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028597745</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>1.41576e-13</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>VVPFEEVWSRSYCRARETLVDILSEFPHEAEHIFKPPCVPLWRCAGCCGDESLECIAVETRTIDLQVVRVSPILGTTQQEEMKFVEHTRCSCRPRRK</Hsp_hseq>
+      <Hsp_midline>VV + +V++R+ C+ RE +V +  E          P CV + RC GCC D+ LEC+      + +Q++ +     ++Q  EM   EH++C CRP++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_028597747.1|</Hit_id>
+  <Hit_def>snake venom vascular endothelial growth factor toxin HF-like isoform X3 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028597747</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2402</Hsp_bit-score>
+      <Hsp_score>160</Hsp_score>
+      <Hsp_evalue>1.75411e-13</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR--YPSSQLGEMSLEEHSQCECRPKKK</Hsp_qseq>
+      <Hsp_hseq>VVPFEEVWSRSYCRARETLVDILSEFPHEAEHIFKPPCVPLWRCAGCCGDESLECIAVETRTIDLQVVRVSPILGTTQQEEMKFVEHTRCSCRPRRK</Hsp_hseq>
+      <Hsp_midline>VV + +V++R+ C+ RE +V +  E          P CV + RC GCC D+ LEC+      + +Q++ +     ++Q  EM   EH++C CRP++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_028599649.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X4 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028599649</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.09171e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNPEILKSIDNEWRKTQCMPREVCVDVGKEYGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTSFISKTLFEITVPLSHGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_028599648.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X3 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028599648</Hit_accession>
+  <Hit_len>387</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.15486e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNPEILKSIDNEWRKTQCMPREVCVDVGKEYGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTSFISKTLFEITVPLSHGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_028583463.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028583463</Hit_accession>
+  <Hit_len>351</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.15971e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>89</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AAFYDIEILKVIDEEWQRTQCVPRETCVEVAKELGTATNKFFKPPCVNVYRCGGCCNEESLSCVNTSTSYISKMLFEISVPLTNVPDPIQVKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID  + R  C PRE  V +  EL     K   P CV V RCGGCC ++ L CV T    +   +  I  P + + +   + +  H+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_028583464.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028583464</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>2.31877e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDV-YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AAFYDIEILKVIDEEWQRTQCVPRETCVEVAKELGTATNKFFKPPCVNVYRCGGCCNEESLSCVNTSTSYISKMLFEISVPLTNVPDPIQVKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID  + R  C PRE  V +  EL     K   P CV V RCGGCC ++ L CV T    +   +  I  P + + +   + +  H+ C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_028599647.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028599647</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.52992e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>216</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNPEILKSIDNEWRKTQCMPREVCVDVGKEYGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTSFISKTLFEITVPLSHGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_028599646.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028599646</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>2.65518e-09</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNPEILKSIDNEWRKTQCMPREVCVDVGKEYGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTSFISKTLFEITVPLSHGPKPVTISFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+      +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_028601741.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X3 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028601741</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000572727</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI----RYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRTMVDPTNANFLVWPPCVEVQRCTGCCNTRNMQCRATRVRERHIQVNKIEIVRKKPVFNKAIVALEDHLECRC</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  ++  T A  LV P CV VQRC GCC    ++C  T   +  +Q+  I    + P      ++LE+H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_028601742.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X4 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028601742</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000713255</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI----RYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRTMVDPTNANFLVWPPCVEVQRCTGCCNTRNMQCRATRVRERHIQVNKIEIVRKKPVFNKAIVALEDHLECRCEAVSPRAFSWPNS</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  ++  T A  LV P CV VQRC GCC    ++C  T   +  +Q+  I    + P      ++LE+H +C C      +   P+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_028601740.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X2 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028601740</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000892183</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI----RYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRTMVDPTNANFLVWPPCVEVQRCTGCCNTRNMQCRATRVRERHIQVNKIEIVRKKPVFNKAIVALEDHLECRCEAVSPRAFSWPNS</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  ++  T A  LV P CV VQRC GCC    ++C  T   +  +Q+  I    + P      ++LE+H +C C      +   P+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_028601735.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Podarcis muralis] &gt;ref|XP_028601736.1| platelet-derived growth factor subunit B isoform X1 [Podarcis muralis] &gt;ref|XP_028601739.1| platelet-derived growth factor subunit B isoform X1 [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028601735</Hit_accession>
+  <Hit_len>252</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000946335</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMG-TVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMI----RYPSSQLGEMSLEEHSQCECRPKKKDSAVKPDS</Hsp_qseq>
+      <Hsp_hseq>AECKTRTEVFEISRTMVDPTNANFLVWPPCVEVQRCTGCCNTRNMQCRATRVRERHIQVNKIEIVRKKPVFNKAIVALEDHLECRCEAVSPRAFSWPNS</Hsp_hseq>
+      <Hsp_midline>A C+ R  V  ++  ++  T A  LV P CV VQRC GCC    ++C  T   +  +Q+  I    + P      ++LE+H +C C      +   P+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_028582005.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Podarcis muralis]</Hit_def>
+  <Hit_accession>XP_028582005</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0259076</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>266</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCP---DDGLECVPTGQHQVRMQILMIRY--------------PSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNIREELKQTNV-VFFPRCLLVQRCGGNCGCGFNNWKSCTCTAGKLVKKYHEVLRFIPEAGHIRRRGRTKNNMALIDIQLEHHERCDC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V +  EL  T      P C+ VQRCGG C    ++   C  T    V+    ++R+               +  L ++ LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2151499944</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

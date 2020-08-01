@@ -1,0 +1,1472 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_032588126.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid [Drosophila mojavensis] &gt;ref|XP_032588127.1| dorsal-ventral patterning protein tolloid [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_032588126</Hit_accession>
+  <Hit_len>733</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>4.89529e-11</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>TSATPQSASIKALRNANLRRDESNHLTDLYRRDET--------IQVKGN---GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETN</Hsp_qseq>
+      <Hsp_hseq>TLATPTSPYIEEEHALTISTATTTTRADRYRRQAEEDQVDRCRLFVEGDPTKNELYSPEYPNLYPKNINCTRVITAPKGQIIRLDFRNSFNIEAKEE--CKFDFLEIRDGQYGFSTLIGKYCG-TDFPPEITSKERYLWLHFHSDDT-IEYTGFSAVFEFLDRNREAPSTDLN</Hsp_hseq>
+      <Hsp_midline>T ATP S  I+      +    +    D YRR           + V+G+     + SP +PN YP+N+  T  + + +   I+L F N F +E  E   C++DF+E+ D     + + G++CG  + PP I S+   + + F SDD  +   GF   +  L+  + A +++ N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|EDW07487.2|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI15782 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>EDW07487</Hit_accession>
+  <Hit_len>555</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>5.48409e-11</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETN</Hsp_qseq>
+      <Hsp_hseq>SPEYPNLYPKNINCTRVITAPKGQIIRLDFRNSFNIEAKEE--CKFDFLEIRDGQYGFSTLIGKYCG-TDFPPEITSKERYLWLHFHSDDT-IEYTGFSAVFEFLDRNREAPSTDLN</Hsp_hseq>
+      <Hsp_midline>SP +PN YP+N+  T  + + +   I+L F N F +E  E   C++DF+E+ D     + + G++CG  + PP I S+   + + F SDD  +   GF   +  L+  + A +++ N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_002008876.2|</Hit_id>
+  <Hit_def>cubilin homolog isoform X2 [Drosophila mojavensis] &gt;gb|EDW19352.2| uncharacterized protein Dmoj_GI13733 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_002008876</Hit_accession>
+  <Hit_len>3613</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>5.62857e-11</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>1097</Hsp_hit-from>
+      <Hsp_hit-to>1252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKI--AEFDTVEDLLKYFNP</Hsp_qseq>
+      <Hsp_hseq>GTIQSPNWPLKYASNSNCTWLIKAPLGHRIELMVHN-FSLETTA-ERCADDYLEIRNGDQSTSPLIGLYCGSR-IPPRIPSFGNALWVRFRSDS-FVEEAGFRITWQ-----QMATGCGGKLNSPTGAI-----HSPHSIEGNRGALACDWQITVAQGSTVQLTLQSRDP</Hsp_hseq>
+      <Hsp_midline>G +QSP +P  Y  N   TW + +    RI+L+  N F LE    + C  D++E+ +  ++++ + G +CG + +PPRI S  N + + F+SD  FV + GF+I +      Q A        S T +I     +SP   +    A A D +I  A+  TV+  L+  +P</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>7.80767e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>1776</Hsp_hit-from>
+      <Hsp_hit-to>1892</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWES</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPNSYPANVECVWQLETREGNAMELRFE---AMDIVQSEHCNTDFLELRAGLQGPLI--GLYC-DNEVPAEPLLVNSTLWIKFRSQAASTAS-GFKLRWSYVHDNELTEGTNGTIES</Hsp_hseq>
+      <Hsp_midline>G + SP +PNSYP N+   W+L ++E   ++L F+    ++  +++ C  DF+E+    +   I  G +C   EVP       + + I F+S     A  GFK+ +S + D +    +    ES</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.05625e-05</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2773</Hsp_hit-from>
+      <Hsp_hit-to>2929</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SASIKALRNANLRRDESNHLTDLYRRDETIQVKGNGYV--QSPRFP-----NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE</Hsp_qseq>
+      <Hsp_hseq>SLQIRLLYHATEYRADSTPFRLQTSKPESLGGWGNIIIVGRQPTPPIKIDAQSYRNNMELSWEFQALGKLSLQLQFQGRFFIETAPN--CSHDSLEVLQFQQGMWQPLAKYCG-REMPDPLFIPASSMRVVFRTDDQITAD-GFTFVVSPSCDTKLVASTE</Hsp_hseq>
+      <Hsp_midline>S  I+ L +A   R +S        + E++   GN  +  + P  P      SY  N+ L+W   +     +QL F  +F +E A N  C +D +EV    +       ++CG +E+P  +    + +++ F++DD   A  GF    S   D +  A++E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.13678e-05</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1325</Hsp_hit-from>
+      <Hsp_hit-to>1427</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHS-QENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GAIETPNFPDKYPANANCEWDIRAGGRSNHIQLAF-SHLAVEQLGPNSCDFDYVLLGDYRDEQLISERRLCHAKDLD--FTSVGNRVLLRFSSDNSMEAQ-GFRAEY</Hsp_hseq>
+      <Hsp_midline>G +++P FP+ YP N    W + +   +  IQL F +   +E+   + C +D+V + D  +   I   R C  K++     S  N++ + F SD+   A+ GF+  Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000825827</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>2361</Hsp_hit-from>
+      <Hsp_hit-to>2471</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFP--NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SGTIQSEHYPALGGYPKPAVCEYSILSAANTHIQLNFTDLHLPFAASSDSEGLDRIEILDPNDERKIVMTLF-GNRSAPIPITLTTNQVVLRFVTKQLGNKYRGFKLEYQSL</Hsp_hseq>
+      <Hsp_midline>+G +QS  +P    YP+  +  + + S  NT IQL F +      A +D    D +E+ D ++   I+   + G++  P  I   TNQ+ + F +        GFK+ Y  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_032587635.1|</Hit_id>
+  <Hit_def>cubilin homolog isoform X1 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_032587635</Hit_accession>
+  <Hit_len>3615</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>5.62877e-11</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>1099</Hsp_hit-from>
+      <Hsp_hit-to>1254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKI--AEFDTVEDLLKYFNP</Hsp_qseq>
+      <Hsp_hseq>GTIQSPNWPLKYASNSNCTWLIKAPLGHRIELMVHN-FSLETTA-ERCADDYLEIRNGDQSTSPLIGLYCGSR-IPPRIPSFGNALWVRFRSDS-FVEEAGFRITWQ-----QMATGCGGKLNSPTGAI-----HSPHSIEGNRGALACDWQITVAQGSTVQLTLQSRDP</Hsp_hseq>
+      <Hsp_midline>G +QSP +P  Y  N   TW + +    RI+L+  N F LE    + C  D++E+ +  ++++ + G +CG + +PPRI S  N + + F+SD  FV + GF+I +      Q A        S T +I     +SP   +    A A D +I  A+  TV+  L+  +P</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>7.94514e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>1778</Hsp_hit-from>
+      <Hsp_hit-to>1894</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWES</Hsp_qseq>
+      <Hsp_hseq>GTLTSPGYPNSYPANVECVWQLETREGNAMELRFE---AMDIVQSEHCNTDFLELRAGLQGPLI--GLYC-DNEVPAEPLLVNSTLWIKFRSQAASTAS-GFKLRWSYVHDNELTEGTNGTIES</Hsp_hseq>
+      <Hsp_midline>G + SP +PNSYP N+   W+L ++E   ++L F+    ++  +++ C  DF+E+    +   I  G +C   EVP       + + I F+S     A  GFK+ +S + D +    +    ES</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.16417e-05</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1327</Hsp_hit-from>
+      <Hsp_hit-to>1429</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHS-QENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GAIETPNFPDKYPANANCEWDIRAGGRSNHIQLAF-SHLAVEQLGPNSCDFDYVLLGDYRDEQLISERRLCHAKDLD--FTSVGNRVLLRFSSDNSMEAQ-GFRAEY</Hsp_hseq>
+      <Hsp_midline>G +++P FP+ YP N    W + +   +  IQL F +   +E+   + C +D+V + D  +   I   R C  K++     S  N++ + F SD+   A+ GF+  Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>3.16417e-05</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>2775</Hsp_hit-from>
+      <Hsp_hit-to>2931</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>SASIKALRNANLRRDESNHLTDLYRRDETIQVKGNGYV--QSPRFP-----NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE</Hsp_qseq>
+      <Hsp_hseq>SLQIRLLYHATEYRADSTPFRLQTSKPESLGGWGNIIIVGRQPTPPIKIDAQSYRNNMELSWEFQALGKLSLQLQFQGRFFIETAPN--CSHDSLEVLQFQQGMWQPLAKYCG-REMPDPLFIPASSMRVVFRTDDQITAD-GFTFVVSPSCDTKLVASTE</Hsp_hseq>
+      <Hsp_midline>S  I+ L +A   R +S        + E++   GN  +  + P  P      SY  N+ L+W   +     +QL F  +F +E A N  C +D +EV    +       ++CG +E+P  +    + +++ F++DD   A  GF    S   D +  A++E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000825846</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>2363</Hsp_hit-from>
+      <Hsp_hit-to>2473</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFP--NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SGTIQSEHYPALGGYPKPAVCEYSILSAANTHIQLNFTDLHLPFAASSDSEGLDRIEILDPNDERKIVMTLF-GNRSAPIPITLTTNQVVLRFVTKQLGNKYRGFKLEYQSL</Hsp_hseq>
+      <Hsp_midline>+G +QS  +P    YP+  +  + + S  NT IQL F +      A +D    D +E+ D ++   I+   + G++  P  I   TNQ+ + F +        GFK+ Y  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_001998529.2|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid [Drosophila mojavensis] &gt;gb|EDW13990.2| uncharacterized protein Dmoj_GI24023 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_001998529</Hit_accession>
+  <Hit_len>1140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>1.32041e-10</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>548</Hsp_hit-from>
+      <Hsp_hit-to>650</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>IHLSKGQSIDSPNYPLEYMPGKECIWRITAPPNHQVALKFQS---FELEKHDSCIYDYIEIRDGSRSDSKLIGRFCGDK-LPPNIKTHSNQMFIKFVSDGS-VQKLGF</Hsp_hseq>
+      <Hsp_midline>I +     + SP +P  Y       WR+ +  N ++ L F +    E  ++D C YD++E+ D S + + + GR+CG K +PP IK+ +NQ+ I F SD   V K GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>6.97779e-09</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>872</Hsp_hit-from>
+      <Hsp_hit-to>973</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>GVLHSPNYPNDYARNIYCYWHFQTVLGHRIQLTFHD-FDVESHQE--CIYDYVAIYDGRSENSSTLGIYCGGRE-PYAVIASTNELFMVLKTDA-GLQRKGFKATFS</Hsp_hseq>
+      <Hsp_midline>G + SP +PN Y RN+   W   +    RIQL F + F +E  +   C YD+V + D    ++   G +CG +E P  + + TN++ +  K+D   + + GFK  +S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>2.83744e-07</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>950</Hsp_hit-from>
+      <Hsp_hit-to>1093</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>SNHLTDLYRRDETIQVKG---------NGYVQS----------PRFPN-SYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>TNELFMVLKTDAGLQRKGFKATFSSECGGYLRATNHTQIFYSHPRYGSRSYKHNMYCDWRIEADPDSSVKIKFLH-FEVEFSER--CDYDFLEVTEEGNAMNTIHGRFCG-KRKPPIIISNSDTLLLKFQTDESNALR-GFAISFVAVE</Hsp_hseq>
+      <Hsp_midline>+N L  + + D  +Q KG          GY+++          PR+ + SY  N+   WR+ +  ++ +++ F + F +E +E   C YDF+EV +       I GR+CG K  PP I S ++ + + F++D+    + GF I +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000455066</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>710</Hsp_hit-from>
+      <Hsp_hit-to>821</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI--CRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>NGTIYSPSYPDLYPNAKKCVWEIVTSVHHSVFLNF-THFDLEGTKFQYTKCSYDYLIIYSKMRDNRLKKIGIFCGN-ELPPIVNSEQNVLRVEFHSDRT-IQRSGFAAQFILDAD</Hsp_hseq>
+      <Hsp_midline>NG + SP +P+ YP      W + +  +  + L F   F LE  +     C YD++ +      + + + G +CG+ E+PP + S  N +++ F SD   + + GF   + L  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_001998528.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid [Drosophila mojavensis] &gt;gb|EDW13989.1| uncharacterized protein Dmoj_GI24022 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_001998528</Hit_accession>
+  <Hit_len>1446</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>4.26183e-10</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>1157</Hsp_hit-from>
+      <Hsp_hit-to>1245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNYPDNYPPNADCVWHFSTTPGHRIKLIF-NEFNVESHQE--CAYDNVAIYDGESELSSLLGRFCGEK-IPYPISSTTNQLYMVLKTD</Hsp_hseq>
+      <Hsp_midline>G + SP +P++YP N    W   +    RI+L+F N+F +E  +   C YD V + D     + + GR+CG K +P  I S TNQ+ +  K+D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>3.21829e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>841</Hsp_hit-from>
+      <Hsp_hit-to>941</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>GRLESPNYPLDYLPNKECVWKISVPKGFQVALKFQS---FEVENHDSCVYDYVEVRDGPAQDAPLIGVFCGYKP-PPNMKSSGNSMYVKFVSDTS-VQKAGFSAVF</Hsp_hseq>
+      <Hsp_midline>G ++SP +P  Y  N    W++   +  ++ L F +    E   +D C YD+VEV D       + G +CG+K  PP +KS  N + + F SD   V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>2.04448e-07</Hsp_evalue>
+      <Hsp_query-from>68</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>1279</Hsp_hit-from>
+      <Hsp_hit-to>1394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>RFPNS-YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV-EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSS</Hsp_qseq>
+      <Hsp_hseq>RFSNQDYDDNMDCEWTIQAPPNRNVQLIFLT-FDIESSEN--CTYDYVQVFSGMEDTSGPMYGQYCGNS-LPQDIISMTDSLLVRFKTDSSVPMK-GFSASYVAVDPFK---NSDEDMESSYSS</Hsp_hseq>
+      <Hsp_midline>RF N  Y  N+   W + +  N  +QL+F   F +E +EN  C YD+V+V   + +TS  + G++CG+  +P  I S T+ + + FK+D     K GF   Y  ++ F+    S+ + ES  SS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>4.39167e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>995</Hsp_hit-from>
+      <Hsp_hit-to>1101</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA--ENDICRYDFVEV-EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>NGTITSPSYPETYPMLKECVWEIIAPAKHKISLNF-THFDLEGTAHQQSDCGYDSVTIYSKLSENRLKRIGTYCG-SAIPPTATSDGNALRVEFHSDKS-IQRTGFAAVF</Hsp_hseq>
+      <Hsp_midline>NG + SP +P +YP      W + +    +I L F   F LE    +   C YD V +   +SE      G +CG   +PP   S  N +++ F SD   + + GF   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|EDW07631.2|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: uncharacterized protein Dmoj_GI15858 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>EDW07631</Hit_accession>
+  <Hit_len>3801</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.63475e-09</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>1147</Hsp_hit-from>
+      <Hsp_hit-to>1253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>NGMLNSPEYPLNYTNGLDCIWQLTSPIGSQMELQFD-MFELTATRN--CSGDWLEVRNGRSNSSALIGRYCG-TSIPRRIPSFTHDLYLHFHTDDVDSAR-GFRLSWHVFAN</Hsp_hseq>
+      <Hsp_midline>NG + SP +P +Y   L   W+L S   ++++L FD  F L    N  C  D++EV +    S+ + GR+CG   +P RI S T+ + + F +DD   A+ GF++ + +  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.25536e-08</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>651</Hsp_hit-from>
+      <Hsp_hit-to>788</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASET---------NWESVTSSIS</Hsp_qseq>
+      <Hsp_hseq>FEFETHGTLASPGSPGNYPRNRDCQWHLVAPSNKRIKLTF---FSLQLEDHDTCNFDFVSISDAISGQELY--KFCS-RERPAPLLLPTHEAIIRFHSDE-IGTDLGFQLHYSAEERLPGCGGVYTSKQGTIQSPNYELGTGAIS</Hsp_hseq>
+      <Hsp_midline> + + +G + SP  P +YPRN    W L +  N RI+L F   F L+  ++D C +DFV + D      +   ++C  +E P  +   T++  I F SD+      GF+++YS  E         T         N+E  T +IS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>6.13307e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>538</Hsp_hit-from>
+      <Hsp_hit-to>644</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>GRLRYPPGGDSYEHNSQCAWVIRTNESLVLNVTFQS-FDIEDSTE--CRFDWLQINDGRSAAAQVIGRYCGNHKPHGGNIISSSNQLYLWFRSDNS-TARAGFDLTWQSME</Hsp_hseq>
+      <Hsp_midline>G ++ P   +SY  N    W + + E+  + + F + F +E++    CR+D++++ D    +  + GR+CG HK     I S +NQ+ + F+SD+   A+ GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>1.2748e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>1855</Hsp_hit-from>
+      <Hsp_hit-to>1955</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>SGRFTSPYYPDSYPVNIECEWVVEASAGNSQTLTIES-LDLEQSEG--CNNDYLELREESPRGALI-GVYCGN-QVPPTVHSK-GSIWIKFKSNDDVVGE-GFMASYN</Hsp_hseq>
+      <Hsp_midline>+G   SP +P+SYP N+   W + +       L  ++   LE++E   C  D++E+ + S    +I G +CG+ +VPP + S+   I I FKS+D  V + GF   Y+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.7489e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1601</Hsp_hit-from>
+      <Hsp_hit-to>1722</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN---QFGLEEAENDICRYDFVEVEDISETSTI--------------------IRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>SGIIQSPNYPKPYPRNSECEWQVEVTPHHTIQFTIDNIDLESGFE------CGWDYVVAYDMSGTSVISNIDMDSDTLDESEANQIFKLCGR-AGDVVNPKRNESATNRATVRFVTDDS-VQSGGFQITY</Hsp_hseq>
+      <Hsp_midline>+G +QSP +P  YPRN    W++    +  IQ   DN   + G E      C +D+V   D+S TS I                    + GR  G    P R +S TN+  + F +DD  V   GF+I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000627664</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1260</Hsp_hit-from>
+      <Hsp_hit-to>1372</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTII---RGRWCGHKEVPPRI-KSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>IGNEGVITSPNYPSTYPHNAQCEWQLRVHSGSSLQIVIED---LEMETLDDCGYDYLRIYSGGSNSRLLDHPHFVLCSSPDENSRVLHVDDNEAVIVFHS-DISNADRGFRLSYSTV</Hsp_hseq>
+      <Hsp_midline>+   G + SP +P++YP N    W+L     + +Q+V ++   LE    D C YD++ +      S ++       C   +   R+     N+  I F S D   A  GF++ YS +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000834675</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>2335</Hsp_hit-from>
+      <Hsp_hit-to>2453</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA-------------ENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>ISSPNYPNLPNPHSECVWRISAPSHHRIAVQFVGNFDLTPSSNGNGNGNGNSSEEDDGCDREFVQLNDGSTELMPQLGRYCGNRK-PDIVYSSGSELRIKFYT-SVLEPRPGFQALIKLAD</Hsp_hseq>
+      <Hsp_midline>+ SP +PN    +    WR+ +  + RI + F   F L  +             E+D C  +FV++ D S       GR+CG+++ P  + S  ++++I F +      +PGF+    L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_002010314.3|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: cubilin homolog [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_002010314</Hit_accession>
+  <Hit_len>3801</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.73187e-09</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>1147</Hsp_hit-from>
+      <Hsp_hit-to>1253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>NGMLNSPEYPLNYTNGLDCIWQLTSPIGSQMELQFD-MFELTATRN--CSGDWLEVRNGRSNSSALIGRYCG-TSIPRRIPSFTHDLYLHFHTDDVDSAR-GFRLSWHVFAN</Hsp_hseq>
+      <Hsp_midline>NG + SP +P +Y   L   W+L S   ++++L FD  F L    N  C  D++EV +    S+ + GR+CG   +P RI S T+ + + F +DD   A+ GF++ + +  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>2.31543e-08</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>651</Hsp_hit-from>
+      <Hsp_hit-to>788</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASET---------NWESVTSSIS</Hsp_qseq>
+      <Hsp_hseq>FEFETHGTLASPGSPGNYPRNRDCQWHLVAPSNKRIKLTF---FSLQLEDHDTCNFDFVSISDAISGQELY--KFCS-RERPAPLLLPTHEAIIRFHSDE-IGTDLGFQLHYSAEERLPGCGGVYTSKQGTIQSPNYELGTGAIS</Hsp_hseq>
+      <Hsp_midline> + + +G + SP  P +YPRN    W L +  N RI+L F   F L+  ++D C +DFV + D      +   ++C  +E P  +   T++  I F SD+      GF+++YS  E         T         N+E  T +IS</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>6.13307e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>538</Hsp_hit-from>
+      <Hsp_hit-to>644</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG-HKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>GRLRYPPGGDSYEHNSQCAWVIRTNESLVLNVTFQS-FDIEDSTE--CRFDWLQINDGRSAAAQVIGRYCGNHKPHGGNIISSSNQLYLWFRSDNS-TARAGFDLTWQSME</Hsp_hseq>
+      <Hsp_midline>G ++ P   +SY  N    W + + E+  + + F + F +E++    CR+D++++ D    +  + GR+CG HK     I S +NQ+ + F+SD+   A+ GF + +  +E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>1.28594e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>1855</Hsp_hit-from>
+      <Hsp_hit-to>1955</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>SGRFTSPYYPDSYPVNIECEWVVEASAGNSQTLTIES-LDLEQSEG--CNNDYLELREESPRGALI-GVYCGN-QVPPTVHSK-GSIWIKFKSNDDVVGE-GFMASYN</Hsp_hseq>
+      <Hsp_midline>+G   SP +P+SYP N+   W + +       L  ++   LE++E   C  D++E+ + S    +I G +CG+ +VPP + S+   I I FKS+D  V + GF   Y+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.7489e-06</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>1601</Hsp_hit-from>
+      <Hsp_hit-to>1722</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN---QFGLEEAENDICRYDFVEVEDISETSTI--------------------IRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>SGIIQSPNYPKPYPRNSECEWQVEVTPHHTIQFTIDNIDLESGFE------CGWDYVVAYDMSGTSVISNIDMDSDTLDESEANQIFKLCGR-AGDVVNPKRNESATNRATVRFVTDDS-VQSGGFQITY</Hsp_hseq>
+      <Hsp_midline>+G +QSP +P  YPRN    W++    +  IQ   DN   + G E      C +D+V   D+S TS I                    + GR  G    P R +S TN+  + F +DD  V   GF+I Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000622265</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1260</Hsp_hit-from>
+      <Hsp_hit-to>1372</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTII---RGRWCGHKEVPPRI-KSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>IGNEGVITSPNYPSTYPHNAQCEWQLRVHSGSSLQIVIED---LEMETLDDCGYDYLRIYSGGSNSRLLDHPHFVLCSSPDENSRVLHVDDNEAVIVFHS-DISNADRGFRLSYSTV</Hsp_hseq>
+      <Hsp_midline>+   G + SP +P++YP N    W+L     + +Q+V ++   LE    D C YD++ +      S ++       C   +   R+     N+  I F S D   A  GF++ YS +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000841914</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>2335</Hsp_hit-from>
+      <Hsp_hit-to>2453</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA-------------ENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLE</Hsp_qseq>
+      <Hsp_hseq>ISSPNYPNLPNPHSECVWRISAPSHHRIAVQFVGNFDLTPSSNGNGNGNGNSSEEDDGCDREFVQLNDGSTELMPQLGRYCGNRK-PDIVYSSGSELRIKFYT-SVLEPRPGFQALIKLAD</Hsp_hseq>
+      <Hsp_midline>+ SP +PN    +    WR+ +  + RI + F   F L  +             E+D C  +FV++ D S       GR+CG+++ P  + S  ++++I F +      +PGF+    L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_032583777.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning tolloid-like protein 1 isoform X4 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_032583777</Hit_accession>
+  <Hit_len>833</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.19863e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00670247</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_032589784.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning tolloid-like protein 1 isoform X1 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_032589784</Hit_accession>
+  <Hit_len>933</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>1.23012e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00600113</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFD-HFKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD  F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KRG01564.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI24841, isoform G [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>KRG01564</Hit_accession>
+  <Hit_len>1025</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.35597e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>364</Hsp_hit-from>
+      <Hsp_hit-to>446</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00598371</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>657</Hsp_hit-from>
+      <Hsp_hit-to>775</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|EDW15454.2|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI24841, isoform F [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>EDW15454</Hit_accession>
+  <Hit_len>1125</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.42774e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>364</Hsp_hit-from>
+      <Hsp_hit-to>446</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00590561</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>657</Hsp_hit-from>
+      <Hsp_hit-to>775</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|KRG01563.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI24841, isoform E [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>KRG01563</Hit_accession>
+  <Hit_len>1086</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.6031e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>325</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0062451</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>618</Hsp_hit-from>
+      <Hsp_hit-to>736</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|KRG01562.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI24841, isoform D [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>KRG01562</Hit_accession>
+  <Hit_len>1095</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.66234e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>416</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00664263</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>627</Hsp_hit-from>
+      <Hsp_hit-to>745</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_015022668.2|</Hit_id>
+  <Hit_def>cubilin isoform X2 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015022668</Hit_accession>
+  <Hit_len>1246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.78846e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>485</Hsp_hit-from>
+      <Hsp_hit-to>567</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00640916</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>778</Hsp_hit-from>
+      <Hsp_hit-to>896</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_015022669.2|</Hit_id>
+  <Hit_def>cubilin isoform X3 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015022669</Hit_accession>
+  <Hit_len>1237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.81788e-05</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>476</Hsp_hit-from>
+      <Hsp_hit-to>558</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>YRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVF---DNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHK</Hsp_qseq>
+      <Hsp_hseq>YTITPSMSINKTGALISPTYPGAYPKDMSCTYQFLGESNQRVRLEFRDFDLFFGGPH-----CPFDYVKVYDGPDNSSALIGTYCGQQ</Hsp_hseq>
+      <Hsp_midline>Y    ++ +   G + SP +P +YP+++  T++   + N R++L F   D  FG        C +D+V+V D  + S+ + G +CG +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00634859</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>769</Hsp_hit-from>
+      <Hsp_hit-to>887</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI-----------CRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTN-QIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>KKRGELNSPRYPSNYPSDTNCSYLFLAEPNEQVTIVFDH-FKI-KADNNVNATAGSYGSGACFEDWLEMYVVYRDNNDRLLGRYCGLTAPGPVESPRGAVGLRITLHTDQESVAS-GFKARY</Hsp_hseq>
+      <Hsp_midline>K  G + SPR+P++YP +   ++   ++ N ++ +VFD+ F + +A+N++           C  D++E+  +  + +  + GR+CG     P    R    ++IT  +D   VA  GFK  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|KRG04969.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI20764, partial [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>KRG04969</Hit_accession>
+  <Hit_len>896</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>9.37252e-05</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>291</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN-QFGLE---------------EAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITF</Hsp_qseq>
+      <Hsp_hseq>YVQSPAYPGLYPRALNCRYKLHTRQ-PYIKLYLQNEQFAVDGQRCENVMTCPIRPIGSGNEHCPYDWLAVYDGRDEHSPLIGKFCGLGKFPFSIIGTSQYMYVEF</Hsp_hseq>
+      <Hsp_midline>YVQSP +P  YPR L   ++LH+++   I+L   N QF ++                + N+ C YD++ V D  +  + + G++CG  + P  I   +  + + F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_015019573.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6580083 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015019573</Hit_accession>
+  <Hit_len>990</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.000104244</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>282</Hsp_hit-from>
+      <Hsp_hit-to>385</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN-QFGLE---------------EAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITF</Hsp_qseq>
+      <Hsp_hseq>YVQSPAYPGLYPRALNCRYKLHTRQ-PYIKLYLQNEQFAVDGQRCENVMTCPIRPIGSGNEHCPYDWLAVYDGRDEHSPLIGKFCGLGKFPFSIIGTSQYMYVEF</Hsp_hseq>
+      <Hsp_midline>YVQSP +P  YPR L   ++LH+++   I+L   N QF ++                + N+ C YD++ V D  +  + + G++CG  + P  I   +  + + F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_001999196.2|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1 isoform X1 [Drosophila mojavensis] &gt;gb|EDW14657.2| uncharacterized protein Dmoj_GI23200 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_001999196</Hit_accession>
+  <Hit_len>668</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00250028</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>GNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDI-SETSTIIRGRWCGHKEVPP-RIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSV</Hsp_qseq>
+      <Hsp_hseq>GEGYFHSPRFPANYPAHIKCAYKFIGRPDSRVELLFE-ELQLPPVVSGGCQLDALTIFDAESAHMNAVIDVICA--PCPTRRILSSGPDLLLEFNASSNRTAK-GFRGKYKFVPNEQQALAVPPILEAASIAIKQTPAKTNSV</Hsp_hseq>
+      <Hsp_midline>G GY  SPRFP +YP ++   ++   + ++R++L+F+ +  L    +  C+ D + + D  S     +    C     P  RI S    + + F +     AK GF+  Y  + + Q A A     E+ + +I      + SV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_002009716.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6584056 [Drosophila mojavensis] &gt;gb|EDW07033.2| uncharacterized protein Dmoj_GI15086, isoform A [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_002009716</Hit_accession>
+  <Hit_len>342</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0161234</Hsp_evalue>
+      <Hsp_query-from>266</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>147</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DAKRYSCTPRNYSVNIRE------ELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>NATPASCSPQPTIVELKPLTEQGGEQTASNVYYLPACTRINRCNGCCGSTLI-----SCQPTET-----ETLQLRVRKVERFGASSKRGYAIVNVEQHLACKCDC</Hsp_hseq>
+      <Hsp_midline>+A   SC+P+   V ++       E   +NV + P C  + RC G CG   +     +C   +T     E LQ     ++R G +       + ++ H  C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|KRF93916.1|</Hit_id>
+  <Hit_def>uncharacterized protein Dmoj_GI15086, isoform B [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>KRF93916</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0249572</Hsp_evalue>
+      <Hsp_query-from>266</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>147</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>DAKRYSCTPRNYSVNIRE------ELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>NATPASCSPQPTIVELKPLTEQGGEQTASNVYYLPACTRINRCNGCCGSTLI-----SCQPTET-----ETLQLRVRKVERFGASSKRGYAIVNVEQHLACKCDC</Hsp_hseq>
+      <Hsp_midline>+A   SC+P+   V ++       E   +NV + P C  + RC G CG   +     +C   +T     E LQ     ++R G +       + ++ H  C C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_015020387.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6575965 isoform X3 [Drosophila mojavensis] &gt;gb|KRG02680.1| uncharacterized protein Dmoj_GI17127, isoform C [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015020387</Hit_accession>
+  <Hit_len>654</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.038488</Hsp_evalue>
+      <Hsp_query-from>291</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>478</Hsp_hit-from>
+      <Hsp_hit-to>541</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>IYFPHCTFVHRCSEDSGCCHSRTEICAPKRTHKVEKYF----FVKTHKDRRSKPEMLTFVN-----HTECHCI</Hsp_hseq>
+      <Hsp_midline>++FP C  V RC  + GC       C       V+KY     F   H  RR + + +  V+     H  C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_015020386.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6575965 isoform X1 [Drosophila mojavensis] &gt;gb|KRG02679.1| uncharacterized protein Dmoj_GI17127, isoform B [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015020386</Hit_accession>
+  <Hit_len>668</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0386669</Hsp_evalue>
+      <Hsp_query-from>291</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>492</Hsp_hit-from>
+      <Hsp_hit-to>555</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>IYFPHCTFVHRCSEDSGCCHSRTEICAPKRTHKVEKYF----FVKTHKDRRSKPEMLTFVN-----HTECHCI</Hsp_hseq>
+      <Hsp_midline>++FP C  V RC  + GC       C       V+KY     F   H  RR + + +  V+     H  C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_015020390.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6575965 isoform X2 [Drosophila mojavensis] &gt;gb|KRG02683.1| uncharacterized protein Dmoj_GI17127, isoform F [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015020390</Hit_accession>
+  <Hit_len>665</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0403434</Hsp_evalue>
+      <Hsp_query-from>291</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>489</Hsp_hit-from>
+      <Hsp_hit-to>552</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>IYFPHCTFVHRCSEDSGCCHSRTEICAPKRTHKVEKYF----FVKTHKDRRSKPEMLTFVN-----HTECHCI</Hsp_hseq>
+      <Hsp_midline>++FP C  V RC  + GC       C       V+KY     F   H  RR + + +  V+     H  C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_015020389.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6575965 isoform X4 [Drosophila mojavensis] &gt;gb|KRG02682.1| uncharacterized protein Dmoj_GI17127, isoform E [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_015020389</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0470859</Hsp_evalue>
+      <Hsp_query-from>291</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>IYFPHCTFVHRCSEDSGCCHSRTEICAPKRTHKVEKYF----FVKTHKDRRSKPEMLTFVN-----HTECHCI</Hsp_hseq>
+      <Hsp_midline>++FP C  V RC  + GC       C       V+KY     F   H  RR + + +  V+     H  C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_002001969.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6575965 isoform X5 [Drosophila mojavensis] &gt;gb|EDW11411.1| uncharacterized protein Dmoj_GI17127, isoform A [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_002001969</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.051714</Hsp_evalue>
+      <Hsp_query-from>291</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>325</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>VFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>IYFPHCTFVHRCSEDSGCCHSRTEICAPKRTHKVEKYF----FVKTHKDRRSKPEMLTFVN-----HTECHCI</Hsp_hseq>
+      <Hsp_midline>++FP C  V RC  + GC       C       V+KY     F   H  RR + + +  V+     H  C CI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_032586938.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6582810 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>XP_032586938</Hit_accession>
+  <Hit_len>1223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0637145</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>238</Hsp_hit-from>
+      <Hsp_hit-to>350</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLH--------------SQENTRIQLVFDNQFGLEEAENDICRY-------DFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDY</Hsp_qseq>
+      <Hsp_hseq>LQSPNYPGMYPRNVTCYWTIRQKEVPTSKHAMIAVSQENQHKALVKRSIASFNKTSRSIRAWSDCTGERDHLIFYDGSSTNDPVLAKYCGGDWL-PRVVSRGPEMLVAFHSSPF</Hsp_hseq>
+      <Hsp_midline>+QSP +P  YPRN+   W +               SQEN    LV  +     +    I  +       D +   D S T+  +  ++CG   + PR+ SR  ++ + F S  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|EDW18976.2|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: uncharacterized protein Dmoj_GI13535 [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>EDW18976</Hit_accession>
+  <Hit_len>1260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.0678922</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>257</Hsp_hit-from>
+      <Hsp_hit-to>369</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLH--------------SQENTRIQLVFDNQFGLEEAENDICRY-------DFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDY</Hsp_qseq>
+      <Hsp_hseq>LQSPNYPGMYPRNVTCYWTIRQKEVPTSKHAMIAVSQENQHKALVKRSIASFNKTSRSIRAWSDCTGERDHLIFYDGSSTNDPVLAKYCGGDWL-PRVVSRGPEMLVAFHSSPF</Hsp_hseq>
+      <Hsp_midline>+QSP +P  YPRN+   W +               SQEN    LV  +     +    I  +       D +   D S T+  +  ++CG   + PR+ SR  ++ + F S  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>104</Statistics_hsp-len>
+      <Statistics_eff-space>3793931666</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

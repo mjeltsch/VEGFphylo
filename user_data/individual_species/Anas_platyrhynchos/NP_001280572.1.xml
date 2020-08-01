@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_027314372.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X4 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314372</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.591</Hsp_bit-score>
+      <Hsp_score>366</Hsp_score>
+      <Hsp_evalue>1.04924e-44</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAVPRR</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQDPVRPGRRRPKGRGKRRGEKKRRKDCELCG--MPRR</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++ ++P RRRPKGRGKRR EK+R  DC LCG  +PRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_027314375.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X7 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314375</Hit_accession>
+  <Hit_len>150</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.436</Hsp_bit-score>
+      <Hsp_score>363</Hsp_score>
+      <Hsp_evalue>2.30983e-44</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKP</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQDPVRP</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++ ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_027314374.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X6 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314374</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.05</Hsp_bit-score>
+      <Hsp_score>362</Hsp_score>
+      <Hsp_evalue>3.71931e-44</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKP</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQDPVRP</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++ ++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_027314376.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X8 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314376</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.354</Hsp_bit-score>
+      <Hsp_score>355</Hsp_score>
+      <Hsp_evalue>2.41075e-43</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQD</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_027314373.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X5 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314373</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.124</Hsp_bit-score>
+      <Hsp_score>357</Hsp_score>
+      <Hsp_evalue>2.44491e-43</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQD</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_027314369.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Anas platyrhynchos] &gt;ref|XP_027314370.1| placenta growth factor isoform X2 [Anas platyrhynchos] &gt;ref|XP_027314371.1| placenta growth factor isoform X3 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027314369</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.739</Hsp_bit-score>
+      <Hsp_score>356</Hsp_score>
+      <Hsp_evalue>6.77487e-43</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>GAASAEAHVVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQLLKIKPNGEAPYVEMSFTEHKKCECRPRQD</Hsp_hseq>
+      <Hsp_midline>G  S+E  VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQLLKI+      YVE++F++H +CECRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_027309790.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X7 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309790</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.168</Hsp_bit-score>
+      <Hsp_score>300</Hsp_score>
+      <Hsp_evalue>7.61953e-35</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEK</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++ K K E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_027309789.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X6 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309789</Hit_accession>
+  <Hit_len>172</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.783</Hsp_bit-score>
+      <Hsp_score>299</Hsp_score>
+      <Hsp_evalue>1.8125e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKD</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_027309785.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309785</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>2.02655e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER--RRPKGRG</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKPRSDG</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++ K K E+  ++P+  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_027309788.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X5 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309788</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>4.7319e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRRE--KQRPTDC</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQENHCEPCSERRKHLFVQDPQTC</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++    +    +   +RR+    Q P  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_027309784.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309784</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.553</Hsp_bit-score>
+      <Hsp_score>301</Hsp_score>
+      <Hsp_evalue>5.35595e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER--RRPKGRG</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKPRSDG</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++ K K E+  ++P+  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_027309787.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309787</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>8.98134e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>135</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKD</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_027309783.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027309783</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.553</Hsp_bit-score>
+      <Hsp_score>301</Hsp_score>
+      <Hsp_evalue>9.13373e-34</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>ALSAGNGSSE-VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPER--RRPKGRG</Hsp_qseq>
+      <Hsp_hseq>APALGDGERKPNEVIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKPRSDG</Hsp_hseq>
+      <Hsp_midline>A + G+G  +  EV+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++ K K E+  ++P+  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|EOB04091.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor A, partial [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>EOB04091</Hit_accession>
+  <Hit_len>171</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.087</Hsp_bit-score>
+      <Hsp_score>292</Hsp_score>
+      <Hsp_evalue>2.32284e-33</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE</Hsp_qseq>
+      <Hsp_hseq>VIKFLEVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKD</Hsp_hseq>
+      <Hsp_midline>V+ F EV+ RS+CR +E LVD+  EYP EVE++F PSCV L+RC GCCGDE L CVPV+  NVTM++++I+         ++F QH +C+CRP ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|EOB05496.1|</Hit_id>
+  <Hit_def>Placenta growth factor [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>EOB05496</Hit_accession>
+  <Hit_len>448</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>104.375</Hsp_bit-score>
+      <Hsp_score>259</Hsp_score>
+      <Hsp_evalue>2.05039e-26</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>104</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQ</Hsp_qseq>
+      <Hsp_hseq>VVSFKEIWNRSFCRPLEQLVDVIAEFPDEVEYIFRPSCVALQRCGGCCGDEGLRCVPVETSTVTMQ</Hsp_hseq>
+      <Hsp_midline>VV F+E+W RS+CR LE+LVDV++E+P EVE++F PSCV+L RC GCCGDE L CVPVET+ VTMQ</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000493061</Hsp_evalue>
+      <Hsp_query-from>105</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>234</Hsp_hit-from>
+      <Hsp_hit-to>292</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>59</Hsp_align-len>
+      <Hsp_qseq>LLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCG</Hsp_qseq>
+      <Hsp_hseq>LLKIKPNGEAPYVEMSFTEHKKCECRPRQDPVRPGRRRPKGRGKRRGEKKRRKDCELCG</Hsp_hseq>
+      <Hsp_midline>LLKI+      YVE++F++H +CECRP ++ ++P RRRPKGRGKRR EK+R  DC LCG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_027312176.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: vascular endothelial growth factor C [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027312176</Hit_accession>
+  <Hit_len>516</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>4.42898e-11</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>206</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAVPRR</Hsp_qseq>
+      <Hsp_hseq>FAAAHYNAEI-LKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCM-----SKLDVYRQVHSIIRRSLPATQTQCHMANKTCPKN</Hsp_hseq>
+      <Hsp_midline> +A + ++E+ +      W ++ C   E  VDV  E+ +     F P CVS+ RC GCC  E L C+ + T  ++  L +I       P  V ++F+ H  C C       K +  R      RR      T CH+     P+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|EOA95451.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor C, partial [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>EOA95451</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>5.37344e-11</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAVPRR</Hsp_qseq>
+      <Hsp_hseq>FAAAHYNAEI-LKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMS-----KLDVYRQVHSIIRRSLPATQTQCHMANKTCPKN</Hsp_hseq>
+      <Hsp_midline> +A + ++E+ +      W ++ C   E  VDV  E+ +     F P CVS+ RC GCC  E L C+ + T  ++  L +I       P  V ++F+ H  C C       K +  R      RR      T CH+     P+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_021124977.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_021124977</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>6.03239e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>88</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>  E W ++ C   E  V+V  E  +     F P CV++ RC GCC +E+L C+   T  V+  L +I       P  V +  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_005015239.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_005015239</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>6.98893e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>FQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>IDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>  E W ++ C   E  V+V  E  +     F P CV++ RC GCC +E+L C+   T  V+  L +I       P  V +  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|EOB04601.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor D, partial [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>EOB04601</Hit_accession>
+  <Hit_len>282</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>9.12077e-09</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>RLFPCFLQL--LAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRS--GDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>KLWKCRLKLKSLANLDSRSASHRSTRFAAAFYDIDTLKVIDEEWQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNVFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKC</Hsp_hseq>
+      <Hsp_midline>+L+ C L+L  LA L   +   +    A        +    E W ++ C   E  V+V  E  +     F P CV++ RC GCC +E+L C+   T  V+  L +I       P  V +  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_027306635.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X1 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027306635</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00151821</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR---SGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRR</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEFVQKKPKFKKVVVPLEDHVQCRCEAV-SRQPPRSSRPAPREQKR</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC + N+ C P +     +Q+ KI       +   V +    HV+C C  +  +  P   RP  R ++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_027306640.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B isoform X2 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027306640</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00162512</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR---SGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRR</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEFVQKKPKFKKVVVPLEDHVQCRCEAV-SRQPPRSSRPAPREQKR</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC + N+ C P +     +Q+ KI       +   V +    HV+C C  +  +  P   RP  R ++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|EOB00939.1|</Hit_id>
+  <Hit_def>Platelet-derived growth factor subunit A, partial [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>EOB00939</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00188696</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   IR   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_027324682.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027324682</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00270517</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   IR   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_027324683.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027324683</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0034335</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   IR   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_027324684.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X4 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027324684</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00351583</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   IR   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_027324679.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Anas platyrhynchos] &gt;ref|XP_027324680.1| platelet-derived growth factor subunit A isoform X1 [Anas platyrhynchos] &gt;ref|XP_027324681.1| platelet-derived growth factor subunit A isoform X1 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027324679</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00458912</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYIRKKPKLKEVLVRLEEHMECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + ++++ K   IR   +   V +   +H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_027324685.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X5 [Anas platyrhynchos]</Hit_def>
+  <Hit_accession>XP_027324685</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0438417</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>61</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHV</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKA-------RPRHGEMTVQGHT</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   ++ C P    + +++        RP + E+T   H </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1717795229</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

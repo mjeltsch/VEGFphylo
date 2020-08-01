@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-F APB93447.1 vammin-1&apos; [Vipera ammodytes ammodytes]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_013769414.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X1 [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_013769414</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.242</Hsp_bit-score>
+      <Hsp_score>295</Hsp_score>
+      <Hsp_evalue>7.72825e-34</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGEPDGPKEKPRRGG</Hsp_qseq>
+      <Hsp_hseq>PRETERGPHNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQKNDI-FMSFTEHSACECRLK---NEVTEKKEKKSRTG</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYPDE+  IF PSCV + RC+GCC DE L+CTP   + V ++I R+NPR Q + +  M FTEH+ACECR +    E    KEK  R G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_005745671.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A isoform X2 [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005745671</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>3.98517e-33</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>PSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRRKQGE</Hsp_qseq>
+      <Hsp_hseq>PRETERGPHNVIPLMEVYNKSLCQPRELLVEILQEYPDEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTYNVTMEIKRINPRRQKNDI-FMSFTEHSACECRLKNEVTE</Hsp_hseq>
+      <Hsp_midline>P  T +G   V P +EV+ +S CQ RE LV ILQEYPDE+  IF PSCV + RC+GCC DE L+CTP   + V ++I R+NPR Q + +  M FTEH+ACECR + +  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_013763855.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like, partial [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_013763855</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>4.38274e-25</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>QGWPSGTVQG--QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>QSLPLASINSTMEVLVFEKVWGRSFCRTIEKLVEVVQEYPSEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTTNVTMQLLKIRPSEQGQEYVEMTFVEHQTCECRIRK</Hsp_hseq>
+      <Hsp_midline>Q  P  ++    +V  F +V  RS C+  E LV ++QEYP E+  I+ PSCV ++RC+GCC DE+L+C P     V +Q++++ P  Q  +   M F EH  CECR R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_005723111.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X2 [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005723111</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>1.23535e-24</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWREFPDETHSLFIPSCVSVRRCGGCCADEAFECVPTLTHAVTMELMRTS--FMKHELTELPFIEHSQCDCR</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E+PDE   +F PSCV+V RC GCC DE+ +C P   H V +++MR +      ++  + F EH+ C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_005723110.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X1 [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005723110</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.2041</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>1.31494e-23</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>QVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVRRWLEVYSRSGCEPRDTLVEVWREFPDETHSLFIPSCVSVRRCGGCCADEAFECVPTLTHAVTMELMRTS--FMKHELTELPFIEHSQCDCR</Hsp_hseq>
+      <Hsp_midline>+VR +LEV+ RS C+ R+TLV + +E+PDE   +F PSCV+V RC GCC DE+ +C P   H V +++MR +      ++  + F EH+ C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_005747396.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005747396</Hit_accession>
+  <Hit_len>404</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.7146</Hsp_bit-score>
+      <Hsp_score>182</Hsp_score>
+      <Hsp_evalue>3.32116e-16</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>VQGQVRPFLEVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>VDDTWRVILEEIQRTSCQPREVCIEVAKEYPESTSQFYLPHCVALHRCSGCCNNEAFYCTNTSYTLVNKTLMERSQSRLDYTAVTVTFINHTSCDCLPKR</Hsp_hseq>
+      <Hsp_midline>V    R  LE  +R++CQ RE  + + +EYP+  S  + P CVA+ RCSGCC +E+  CT      V+  +M  +          + F  HT+C+C P+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_005725027.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005725027</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>8.44833e-14</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>EVMAKCSCQVMDQLVYVYDEYPQSVENIYMPHCVVVRRCSGYCSGEEFKCLPTLERNATLQ-LKISSQEQPVE---LTFLEHQQCQCR</Hsp_hseq>
+      <Hsp_midline>EV  + +CQ  + LV +  EYP  + +I+ P CV V RCSG C+ E  KC P  +    LQ ++++ + Q  +   + F EH  C+CR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_005724173.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005724173</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>8.55809e-10</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>EVHERSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>EEWQRTQCMPRETCVDVAKELGTDHSVFFKPPCVSVHRCSGCCNQEGVTCRNTTTEYVNKTVLSVIPFKFVPEPVLVKVANHTDCKC</Hsp_hseq>
+      <Hsp_midline>E  +R+ C  RET V + +E   + S  F+P CV+V RCSGCC  E + C       V+  ++ V P     +  ++K   HT C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_005750206.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC102206349 [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005750206</Hit_accession>
+  <Hit_len>515</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>8.54411e-08</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>ERSACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRV---NPRTQSSKMEVMKFTEHTACECR</Hsp_qseq>
+      <Hsp_hseq>QQALCKVRTEVVEVTRAMLDRSNANFLLWPPCVEVQRCSGCCNTKSLQCVPVVTHKRYLQVMKVEYINKKPTYAKA-VVSVVDHVECRCQ</Hsp_hseq>
+      <Hsp_midline>+++ C+ R  +V + +   D  +  F   P CV V RCSGCC  +SL+C PV  H   LQ+M+V   N +   +K  V+   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_005744436.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005744436</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>8.27026e-07</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACECRPRRKQGEPDGPK</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHHRTVKVAKVEYVRRRPKLKEVFVRLEDHLECVCTSHHHAVEPSDPE</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + +  P CV V RC+GCC   +++C P  KH   +++ +V    +  K++   ++  +H  C C       EP  P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_005752490.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005752490</Hit_accession>
+  <Hit_len>415</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>8.81447e-07</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>RSACQARETLVPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVN-PRTQSSKMEVMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>KTQCSPREVCIDVGREFGAPTNVFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKNLFEIRVPITQGTKPVTISVANHTQCSC</Hsp_hseq>
+      <Hsp_midline>++ C  RE  + + +E+    +  ++P CV+V RC GCC  E  +C  +    +   +  +  P TQ +K   +    HT C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_005749873.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005749873</Hit_accession>
+  <Hit_len>548</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.4215e-06</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>PSGTVQGQVRPFLEVH--ERSACQARETLVPILQEYPDEISDIF--RPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKME--VMKFTEHTACEC</Hsp_qseq>
+      <Hsp_hseq>PKGTHGRYIRSLVEAQPAQQAACKVRTEVMEVTRSMLDRRNANFLLWPPCVEVQRCSGCCNSPRMECVPIVTSTRYLQVIKIQYINKKPHYEKPIIPVEDHVSCRC</Hsp_hseq>
+      <Hsp_midline>P GT    +R  +E    +++AC+ R  ++ + +   D  +  F   P CV V RCSGCC    ++C P+   T  LQ++++    +    E  ++   +H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_005753502.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Pundamilia nyererei]</Hit_def>
+  <Hit_accession>XP_005753502</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>9.64475e-05</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>SACQARETL--VPILQEYPDEISDIFRPSCVAVLRCSGCCTDESLKCTPVGKHTVDLQIMRVNPRTQSSKM-EV-MKFTEHTACECRPRR</Hsp_qseq>
+      <Hsp_hseq>AVCKVRTAIYEIPRSQVDPTSANFIIWPPCVEVKRCTGCCNTSNMRCQAARKHYRTVKVAKVEYVRRRPKLREVQVRVEDHLECTCTNKR</Hsp_hseq>
+      <Hsp_midline>+ C+ R  +  +P  Q  P   + I  P CV V RC+GCC   +++C    KH   +++ +V    +  K+ EV ++  +H  C C  +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>1043350197</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

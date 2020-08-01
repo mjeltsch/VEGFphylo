@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>345</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-C NP_057289.1 platelet-derived growth factor C precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>345</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_001990916.1|</Hit_id>
+  <Hit_def>cubilin homolog [Drosophila grimshawi] &gt;gb|EDV99540.1| GH12407 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_001990916</Hit_accession>
+  <Hit_len>3751</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>8.2861e-09</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>624</Hsp_hit-from>
+      <Hsp_hit-to>730</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYN</Hsp_qseq>
+      <Hsp_hseq>LVKFETHGTIASPGSPGNYPRNRDCRWHLVAPSSK-RIKLTF---FSLQLEKHDSCNFDFVSIRDAISDRELHKFC-SSEHPAPLLLPTHEAMIRFHSDET-DSDLGFQLHYS</Hsp_hseq>
+      <Hsp_midline>++   T+G+I SP  P  YPRN    W LVA      I+LTF   F L+  + D C +DFV + +      L ++C S   P   +   ++  IRF SDE   S+ GF +HY+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000131595</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1817</Hsp_hit-from>
+      <Hsp_hit-to>1905</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>STNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSD-GTILGRWCGSGTVPGKQISKGNQIRIRFVS</Hsp_qseq>
+      <Hsp_hseq>AVSGRFSSPNYPDSYPVNIECEWVLEASAGNSLALIV--ESLDLE--QSDGCNNDYLELREQSQRGSLIGVYCGN-EVPAAISSKGS-IWIKFKS</Hsp_hseq>
+      <Hsp_midline>+ +G   SP +P +YP N    W L A   N    +   E   LE  + D C  D++E+ E S  G+++G +CG+  VP    SKG+ I I+F S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.00013985</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>2247</Hsp_hit-from>
+      <Hsp_hit-to>2449</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>211</Hsp_align-len>
+      <Hsp_qseq>AGQRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVSTNGS---IHSPRFPHTYPRNTVLVWRLVA-VEENVWIQ-LTFDERFGLEDP-------EDDICKYDFVEVEEPSD--GTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQFTEAVSPSVLP---PSALPLDLLNNAITAFSTLEDLIRYLEPER</Hsp_qseq>
+      <Hsp_hseq>SSNRAYIKFQRNSFSRFRASFHYEEISDACSGHILLDDGSYNNTTRLISSPNFPNLPNPHSECVWRISAPPQHRIAVEFLSFDLTPSRSEPSNQSNDESDDGCDREFVQINDGSTELSPQLGRFCGA-RKPDTAFSSGSELRIKFYTG-VLESRPGFQARIKLADCGGSYYSANGVIRSPIPSQLDMHLLT------SKLKECIYTIEAER</Hsp_hseq>
+      <Hsp_midline>+  R   + + N  S+F+ S + E+       H  +   S N +   I SP FP+    ++  VWR+ A  +  + ++ L+FD      +P        DD C  +FV++ + S      LGR+CG+   P    S G+++RI+F +     S PGF     +     +   +  V+    PS L + LL       S L++ I  +E ER</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|EDV93119.1|</Hit_id>
+  <Hit_def>GH18446 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>EDV93119</Hit_accession>
+  <Hit_len>1065</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>3.43297e-08</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>472</Hsp_hit-from>
+      <Hsp_hit-to>566</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VFLSKARSIDSPNYPLEYTANKECIWRITAPTHH-QVALKF-QSFELE--KHDGCIYDYIEIRDGSRSDSKLIGRFCGDKLPPNIK-THSNQMYIKFVSD</Hsp_hseq>
+      <Hsp_midline>+ +S   SI SP +P  Y  N   +WR+ A   +  + L F + F LE  + D C YD++E+ +   SD  ++GR+CG    P  + +  NQ+ I+FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000217179</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>792</Hsp_hit-from>
+      <Hsp_hit-to>884</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TSSYGVLQSPNYPNDYARNIYCYWHFHTVLGH-RIQLTFHD-FDVESHQE--CIYDYVAIYDGRSENSSTLGIYCG-GREPYAVIASTNEMFMVLKTD</Hsp_hseq>
+      <Hsp_midline> S+ G + SP +P+ Y RN    W    V  +  IQLTF + F +E  ++  C YD+V + +    + + LG +CG G  P   I+  N++ +   +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00337258</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>628</Hsp_hit-from>
+      <Hsp_hit-to>742</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDI--CKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNI</Hsp_qseq>
+      <Hsp_hseq>VDATKSNGTLYSPSYPDLYPNAKECVWEVVAAAHHA-VFLNF-SHFDLEGTKLQYTKCSYDYLVIYSKMHDNRLKKIGIFCGN-ELPPIVNSEQNILRLEFHSDRTV-QRTGFVAQFTI</Hsp_hseq>
+      <Hsp_midline>+    +NG+++SP +P  YP     VW +VA   +  + L F   F LE  +     C YD++ +        L   G +CG+  +P    S+ N +R+ F SD       GF   + I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0210756</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>917</Hsp_hit-from>
+      <Hsp_hit-to>1018</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>PRFPH-TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>PRYGSINYNHNMYCDWRIEA-DPDSSVKIKF-LRFEVEYSER--CDYDFLEVTEEGNAMNTIHGRFCGKRKSL-IIVSNSDSLLLKFQTDES-NSLRGFAISFMAVDP</Hsp_hseq>
+      <Hsp_midline>PR+    Y  N    WR+ A + +  +++ F  RF +E  E   C YDF+EV E  +   TI GR+CG        +S  + + ++F +DE   S  GF I +  V P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_032593172.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032593172</Hit_accession>
+  <Hit_len>904</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.54619e-08</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>311</Hsp_hit-from>
+      <Hsp_hit-to>405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>ITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEP--SDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VFLSKARSIDSPNYPLEYTANKECIWRITAPTHH-QVALKF-QSFELE--KHDGCIYDYIEIRDGSRSDSKLIGRFCGDKLPPNIK-THSNQMYIKFVSD</Hsp_hseq>
+      <Hsp_midline>+ +S   SI SP +P  Y  N   +WR+ A   +  + L F + F LE  + D C YD++E+ +   SD  ++GR+CG    P  + +  NQ+ I+FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000198552</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>631</Hsp_hit-from>
+      <Hsp_hit-to>723</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>TSSYGVLQSPNYPNDYARNIYCYWHFHTVLGH-RIQLTFHD-FDVESHQE--CIYDYVAIYDGRSENSSTLGIYCG-GREPYAVIASTNEMFMVLKTD</Hsp_hseq>
+      <Hsp_midline> S+ G + SP +P+ Y RN    W    V  +  IQLTF + F +E  ++  C YD+V + +    + + LG +CG G  P   I+  N++ +   +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00381306</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>467</Hsp_hit-from>
+      <Hsp_hit-to>567</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>IITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDI--CKYDFVEVEEPSDGTIL---GRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>VDATKSNGTLYSPSYPDLYPNAKECVWEVVAAAHHA-VFLNF-SHFDLEGTKLQYTKCSYDYLVIYSKMHDNRLKKIGIFCGN-ELPPIVNSEQNILRLEFHSD</Hsp_hseq>
+      <Hsp_midline>+    +NG+++SP +P  YP     VW +VA   +  + L F   F LE  +     C YD++ +        L   G +CG+  +P    S+ N +R+ F SD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0188838</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>756</Hsp_hit-from>
+      <Hsp_hit-to>857</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>PRFPH-TYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMP</Hsp_qseq>
+      <Hsp_hseq>PRYGSINYNHNMYCDWRIEA-DPDSSVKIKF-LRFEVEYSER--CDYDFLEVTEEGNAMNTIHGRFCGKRKSL-IIVSNSDSLLLKFQTDES-NSLRGFAISFMAVDP</Hsp_hseq>
+      <Hsp_midline>PR+    Y  N    WR+ A + +  +++ F  RF +E  E   C YDF+EV E  +   TI GR+CG        +S  + + ++F +DE   S  GF I +  V P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|EDV96656.1|</Hit_id>
+  <Hit_def>GH15085 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>EDV96656</Hit_accession>
+  <Hit_len>3606</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>7.63587e-08</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>1748</Hsp_hit-from>
+      <Hsp_hit-to>1874</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ-FTEAVSPSVLPPSALPL</Hsp_qseq>
+      <Hsp_hseq>TSVRGTLSSPNYPESYPANVECVW-LIEPRAGNALELNFE---AMDLVESDHCNADFLEVRAGLLDSILGLYCGTELPAAPLIARG-QVWLKFRS-QPGSSANGFKLRWNYVHDQELTEGTDGIIESPPTLAV</Hsp_hseq>
+      <Hsp_midline> S  G++ SP +P +YP N   VW L+       ++L F+    ++  E D C  DF+EV      +ILG +CG+       I++G Q+ ++F S +   S  GF + +N V  Q  TE     +  P  L +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000454887</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1301</Hsp_hit-from>
+      <Hsp_hit-to>1392</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG--RWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGSIETPNFPDNYPANTNCEWDIRGGALSNRLQLIISH-MAVERTDSGFCYYDYVLLADYRDDQLINESRPCSANHL--DFTSEGNRLLISFRSD</Hsp_hseq>
+      <Hsp_midline>+GSI +P FP  YP NT   W +     +  +QL       +E  +   C YD+V + +  D  ++   R C +  +     S+GN++ I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_032591055.1|</Hit_id>
+  <Hit_def>cubilin homolog isoform X1 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032591055</Hit_accession>
+  <Hit_len>3653</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>7.77684e-08</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>1790</Hsp_hit-from>
+      <Hsp_hit-to>1916</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ-FTEAVSPSVLPPSALPL</Hsp_qseq>
+      <Hsp_hseq>TSVRGTLSSPNYPESYPANVECVW-LIEPRAGNALELNFE---AMDLVESDHCNADFLEVRAGLLDSILGLYCGTELPAAPLIARG-QVWLKFRS-QPGSSANGFKLRWNYVHDQELTEGTDGIIESPPTLAV</Hsp_hseq>
+      <Hsp_midline> S  G++ SP +P +YP N   VW L+       ++L F+    ++  E D C  DF+EV      +ILG +CG+       I++G Q+ ++F S +   S  GF + +N V  Q  TE     +  P  L +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000119462</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1118</Hsp_hit-from>
+      <Hsp_hit-to>1221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTIQSPNWPQKYGRLENCSW-IIKAPLGSRIELIV-QNFTLE--STDACEDDYLEIRNGNQATSPLIGRYCGS-HIPPRIPSYGNALHVYFRTDS-LVQEAGFHLNWQMA</Hsp_hseq>
+      <Hsp_midline>G+I SP +P  Y R     W ++       I+L   + F LE    D C+ D++E+   +  T  ++GR+CGS  +P +  S GN + + F +D     E GF +++ + </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000451195</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1343</Hsp_hit-from>
+      <Hsp_hit-to>1434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG--RWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGSIETPNFPDNYPANTNCEWDIRGGALSNRLQLIISH-MAVERTDSGFCYYDYVLLADYRDDQLINESRPCSANHL--DFTSEGNRLLISFRSD</Hsp_hseq>
+      <Hsp_midline>+GSI +P FP  YP NT   W +     +  +QL       +E  +   C YD+V + +  D  ++   R C +  +     S+GN++ I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_032591059.1|</Hit_id>
+  <Hit_def>cubilin homolog isoform X2 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032591059</Hit_accession>
+  <Hit_len>3648</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>7.84503e-08</Hsp_evalue>
+      <Hsp_query-from>52</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>1790</Hsp_hit-from>
+      <Hsp_hit-to>1916</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>VSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIVMPQ-FTEAVSPSVLPPSALPL</Hsp_qseq>
+      <Hsp_hseq>TSVRGTLSSPNYPESYPANVECVW-LIEPRAGNALELNFE---AMDLVESDHCNADFLEVRAGLLDSILGLYCGTELPAAPLIARG-QVWLKFRS-QPGSSANGFKLRWNYVHDQELTEGTDGIIESPPTLAV</Hsp_hseq>
+      <Hsp_midline> S  G++ SP +P +YP N   VW L+       ++L F+    ++  E D C  DF+EV      +ILG +CG+       I++G Q+ ++F S +   S  GF + +N V  Q  TE     +  P  L +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000122611</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1118</Hsp_hit-from>
+      <Hsp_hit-to>1221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGT--ILGRWCGSGTVPGKQISKGNQIRIRFVSDEYFPSEPGFCIHYNIV</Hsp_qseq>
+      <Hsp_hseq>GTIQSPNWPQKYGRLENCSW-IIKAPLGSRIELIV-QNFTLE--STDACEDDYLEIRNGNQATSPLIGRYCGS-HIPPRIPSYGNALHVYFRTDS-LVQEAGFHLNWQMA</Hsp_hseq>
+      <Hsp_midline>G+I SP +P  Y R     W ++       I+L   + F LE    D C+ D++E+   +  T  ++GR+CGS  +P +  S GN + + F +D     E GF +++ + </Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000459068</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>1343</Hsp_hit-from>
+      <Hsp_hit-to>1434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDGTILG--RWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>SGSIETPNFPDNYPANTNCEWDIRGGALSNRLQLIISH-MAVERTDSGFCYYDYVLLADYRDDQLINESRPCSANHL--DFTSEGNRLLISFRSD</Hsp_hseq>
+      <Hsp_midline>+GSI +P FP  YP NT   W +     +  +QL       +E  +   C YD+V + +  D  ++   R C +  +     S+GN++ I F SD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|EDV99736.1|</Hit_id>
+  <Hit_def>GH12251 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>EDV99736</Hit_accession>
+  <Hit_len>408</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>4.44566e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEE--CKFDFLEIRDGQYGFSTLIGKFCGTD-FPPEITSKERYLWLHFHSDD</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E+  CK+DF+E+ +   G  T++G++CG+   P +  SK   + + F SD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_001991112.2|</Hit_id>
+  <Hit_def>uncharacterized protein LOC6564716 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_001991112</Hit_accession>
+  <Hit_len>800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.52824e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>TNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEEPSDG--TILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>TKNELYSPEYPNLYPKN-INCTRVITAPKGQIIRLDFRNSFNIEAKEE--CKFDFLEIRDGQYGFSTLIGKFCGTD-FPPEITSKERYLWLHFHSDD</Hsp_hseq>
+      <Hsp_midline>T   ++SP +P+ YP+N +   R++   +   I+L F   F +E  E+  CK+DF+E+ +   G  T++G++CG+   P +  SK   + + F SD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_001990058.1|</Hit_id>
+  <Hit_def>dorsal-ventral patterning protein tolloid [Drosophila grimshawi] &gt;gb|EDV93120.1| GH18445 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_001990058</Hit_accession>
+  <Hit_len>1421</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>9.31643e-07</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>816</Hsp_hit-from>
+      <Hsp_hit-to>904</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSD</Hsp_qseq>
+      <Hsp_hseq>GRLESPNYPLDYLPNKECVWK-ITVPKGFQVALKF-QSFEVEN--HDSCVYDYVEVRDGPAQDAPLIGVFCGYKAPPNMK-SSGNSMYVKFVSD</Hsp_hseq>
+      <Hsp_midline>G + SP +P  Y  N   VW+ + V +   + L F + F +E+   D C YD+VEV +    D  ++G +CG    P  + S GN + ++FVSD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>5.45327e-05</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1132</Hsp_hit-from>
+      <Hsp_hit-to>1221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>GSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVE--EPSDGTILGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>GTIYSPNYPDSYPPNADCVWHFSTTPGH-RIKLIFNE-FNVESHQE--CSYDNVAIYDGESELSSLLGRFCGE-KIPYPISSSTNQLYMVLKTDK</Hsp_hseq>
+      <Hsp_midline>G+I+SP +P +YP N   VW       +  I+L F+E F +E  ++  C YD V +   E    ++LGR+CG   +P    S  NQ+ +   +D+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000322623</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>970</Hsp_hit-from>
+      <Hsp_hit-to>1065</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>NGSIHSPRFPHTYPRNTVLVWRLVA-VEENVWIQLTFDERFGLEDPEDDICKYDFVEV-EEPSDGTI--LGRWCGSGTVPGKQISKGNQIRIRFVSDE</Hsp_qseq>
+      <Hsp_hseq>NGTITSPSYPEFYPVLKECIWEIVAPPKHKISLNFTHFDLEGTAHQQSD-CGYDSVTVYSKLSENRLKRIGTFCGSA-IPPTATSDSNALRVEFHSDK</Hsp_hseq>
+      <Hsp_midline>NG+I SP +P  YP     +W +VA  +  + +  T  +  G    + D C YD V V  + S+  +  +G +CGS  +P    S  N +R+ F SD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_032596447.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032596447</Hit_accession>
+  <Hit_len>327</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.00047393</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>139</Hsp_hit-from>
+      <Hsp_hit-to>270</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>QRQGTQAESNLSSKFQFSSNKEQ----NGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE-PSDGTILGRWCGSGTVPGKQI-SKGNQIRIRFVSDEYF</Hsp_qseq>
+      <Hsp_hseq>QYYGFRAEYRFLTNFGITSGVQQGNECNFVYNSS-ERI-----TGLFHSPNFPGYYPENVVCNYYFYGVDERIVLRFTYFDVEGISTCEHQTAS-DYVEFSNFMTTDRKFTRHCGK--LPDFEVRSDGRFFRVSFHSNDRF</Hsp_hseq>
+      <Hsp_midline>Q  G +AE    + F  +S  +Q    N V +   ERI      G  HSP FP  YP N V  +    V+E + ++ T+ +  G+   E      D+VE     +      R CG   +P  ++ S G   R+ F S++ F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|EDV94346.1|</Hit_id>
+  <Hit_def>GH20613 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>EDV94346</Hit_accession>
+  <Hit_len>869</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00183828</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>139</Hsp_hit-from>
+      <Hsp_hit-to>252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>QRQGTQAESNLSSKFQFSSNKEQ----NGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVEVEE--PSDGTI---LGRWCGSG</Hsp_qseq>
+      <Hsp_hseq>QYYGFRAEYRFLTNFGITSGVQQGNECNFVYN-SSERI-----TGLFHSPNFPGYYPENVVCNYYFYGVDERIVLRFTYFDVEGISTCEHQTAS-DYVEFSNFMTTDRNLCGNLGKLCRSG</Hsp_hseq>
+      <Hsp_midline>Q  G +AE    + F  +S  +Q    N V +   ERI      G  HSP FP  YP N V  +    V+E + ++ T+ +  G+   E      D+VE      +D  +   LG+ C SG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_032592468.1|</Hit_id>
+  <Hit_def>probable serine/threonine-protein kinase DDB_G0280133 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032592468</Hit_accession>
+  <Hit_len>659</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.004646</Hsp_evalue>
+      <Hsp_query-from>199</Hsp_query-from>
+      <Hsp_query-to>342</Hsp_query-to>
+      <Hsp_hit-from>394</Hsp_hit-from>
+      <Hsp_hit-to>550</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>LIRYLEPERWQLDLEDLYRPTW---------------QLLGK--AFVFGRKSRVVDLNLLTEEVRLYSCT-----PRNFSVSIREELKRTDTIFWPGCLLVKRCGGNCACCLHNCNECQCVPSKVTKKYHEVLQLRPKTGVRGLHKSLTDVALEHHEECDCVCRGS</Hsp_qseq>
+      <Hsp_hseq>LIRNVALARGNIDNEDIDNNNYARNNHITGTLTERKEKLLGRPEAVIDARRQLEKDRALANKHMEEISCDKSCLLPQKRYVSVASDPSK---IYTPHCTSVYRCAEDSGCCARRTEIC------APKRSHKFERRVHVKGPKDRHSTVETLILVNHTECHCIERSN</Hsp_hseq>
+      <Hsp_midline>LIR +   R  +D ED+    +               +LLG+  A +  R+    D  L  + +   SC      P+   VS+  +  +   I+ P C  V RC  +  CC      C        K+ H+  +     G +  H ++  + L +H EC C+ R +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|EDV91598.1|</Hit_id>
+  <Hit_def>GH17522 [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>EDV91598</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00750128</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>139</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>QRQGTQAESNLSSKFQFSSNKEQNGVQDPQHERIITVST---NGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVE</Hsp_qseq>
+      <Hsp_hseq>QYYGFRAEYRFLTNFGITS-----GVQQGNECNFVYNSSERITGLFHSPNFPGYYPENVVCNYYFYGVDERIVLRFTYFDVEGISTCEHQTAS-DYVE</Hsp_hseq>
+      <Hsp_midline>Q  G +AE    + F  +S     GVQ       +  S+    G  HSP FP  YP N V  +    V+E + ++ T+ +  G+   E      D+VE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_032595956.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1, partial [Drosophila grimshawi]</Hit_def>
+  <Hit_accession>XP_032595956</Hit_accession>
+  <Hit_len>587</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00931187</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>474</Hsp_hit-from>
+      <Hsp_hit-to>565</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>QRQGTQAESNLSSKFQFSSNKEQ----NGVQDPQHERIITVSTNGSIHSPRFPHTYPRNTVLVWRLVAVEENVWIQLTFDERFGLEDPEDDICKYDFVE</Hsp_qseq>
+      <Hsp_hseq>QYYGFRAEYRFLTNFGITSGVQQGNECNFVYN-SSERI-----TGLFHSPNFPGYYPENVVCNYYFYGVDERIVLRFTYFDVEGISTCEHQTAS-DYVE</Hsp_hseq>
+      <Hsp_midline>Q  G +AE    + F  +S  +Q    N V +   ERI      G  HSP FP  YP N V  +    V+E + ++ T+ +  G+   E      D+VE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3164497875</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_022207435.1|</Hit_id>
+  <Hit_def>tolloid-like protein 1 [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022207435</Hit_accession>
+  <Hit_len>1161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.781</Hsp_bit-score>
+      <Hsp_score>164</Hsp_score>
+      <Hsp_evalue>3.56983e-12</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>596</Hsp_hit-from>
+      <Hsp_hit-to>702</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>IQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>LDVSEGGHLESPNYPEDYHHNKECVWRLTAPPDYQVALKFQS---FEVENHDSCVYDYVEVRDGHTLESPLIGKYCGYK-LPPDIHSSGNQMLLKFVSDGS-VQKAGFSAAF</Hsp_hseq>
+      <Hsp_midline>+ V   G+++SP +P  Y  N    WRL +  + ++ L F +    E   +D C YD+VEV D     + + G++CG+K +PP I S  NQ+ + F SD   V K GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>4.17013e-08</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>756</Hsp_hit-from>
+      <Hsp_hit-to>862</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDI----CRYDFVEVEDISETSTIIR-GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>NGTITSPSFPELYPGNKNCVWEIIAPPQYKITLNF-THFDLEG--NNVYQQECEYDSVEVHSKMRSDVLRRHGVFCGSR-LPPLVTSESNALRIEFSSDNS-VQRSGFAAVF</Hsp_hseq>
+      <Hsp_midline>NG + SP FP  YP N    W + +    +I L F   F LE   N++    C YD VEV     +  + R G +CG + +PP + S +N ++I F SD+  V + GF   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.80231e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>918</Hsp_hit-from>
+      <Hsp_hit-to>1014</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>GVVTSPNWPDYYPSRKDCVWHFTTTPGHRIKMIF-TEFEIEPHPE--CAYDHIMMYDGDSPDAHTLGRFCGSK-IPHPIIATSNQMFMVFKSDAS-VQRKGF</Hsp_hseq>
+      <Hsp_midline>G V SP +P+ YP      W   +    RI+++F  +F +E      C YD + + D         GR+CG K +P  I + +NQ+ + FKSD   V + GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000128948</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>996</Hsp_hit-from>
+      <Hsp_hit-to>1145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>SNHLTDLYRRDETIQVKG---------NGYVQ-----------SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWE</Hsp_qseq>
+      <Hsp_hseq>SNQMFMVFKSDASVQRKGFVATHTTACGGHLQATDRVKHFYSHSKYGDHNYDNRAGCDWTIEAAPGKNVHLTFLT-FELEDEQD--CGYDYVEVHSGLDFSGVSYGKFCGNSN-PTEIFSVAEALLVRFVTDDTIVSK-GFSASYV-------AVSSQTNEE</Hsp_hseq>
+      <Hsp_midline>SN +  +++ D ++Q KG          G++Q           S    ++Y       W + +     + L F   F LE+ ++  C YD+VEV    + S +  G++CG+   P  I S    + + F +DD  V+K GF   Y        A +S+TN E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0618343</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>484</Hsp_hit-from>
+      <Hsp_hit-to>573</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSY--PRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITF</Hsp_qseq>
+      <Hsp_hseq>SGLITSPQYTNSHLPHESDRCEWRITATHGEKVVL---NVTEIDIKKSNNCRTDYLEIRDGYWHKSQLLGRFCGSGRINDSIISTGSRMLITY</Hsp_hseq>
+      <Hsp_midline>+G + SP++ NS+    +    WR+ +    ++ L   N   ++  +++ CR D++E+ D     + + GR+CG   +   I S  +++ IT+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_022194496.1|</Hit_id>
+  <Hit_def>cubilin [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022194496</Hit_accession>
+  <Hit_len>2227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>1.69468e-08</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>1016</Hsp_hit-from>
+      <Hsp_hit-to>1151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>PQSASIKALRNANLRRDES----NHLTDLYRRDETIQVKGN-----GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKS</Hsp_qseq>
+      <Hsp_hseq>PQMTSNDNVITVIFRSDASVANEGFLANYIMKNATMTCGGSYLSSYGIIRSPNFPKPYPGNRQCSWVIHTRNNQQVRLRV-HHFQMDRNTHPQCLRDYLEIRNGGSDHSPLIGKYCG-TTIPEEILSLGNQLFIKFNS</Hsp_hseq>
+      <Hsp_midline>PQ  S   +     R D S      L +   ++ T+   G+     G ++SP FP  YP N   +W +H++ N +++L   + F ++   +  C  D++E+ +     + + G++CG   +P  I S  NQ+ I F S</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>5.33891e-08</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>934</Hsp_hit-from>
+      <Hsp_hit-to>1046</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNS---YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISE------TSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSL</Hsp_qseq>
+      <Hsp_hseq>GIIQSPQSANKQGKYPHNMYCIWTVAAPVGYVIQLTW-SHFSLEPSTNN-CVHDYVNVFDNSSYVSADGSSASSLGRYCG-RVLPPQMTSNDNVITVIFRSDAS-VANEGFLANYIM</Hsp_hseq>
+      <Hsp_midline>G +QSP+  N    YP N+   W + +     IQL + + F LE + N+ C +D+V V D S       +S    GR+CG + +PP++ S  N I + F+SD   VA  GF   Y +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>5.48094e-08</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>709</Hsp_hit-from>
+      <Hsp_hit-to>803</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GTYPENLHCEWLIQVPKGQRIKMYF-TKFSLEGRGK--CEHDKLQISDGGDSRAKLIGKWCGN-QLPPVVETTGNQALVEFVTDKT-IGDEGFRLVYEII</Hsp_hseq>
+      <Hsp_midline> +YP NL   W +   +  RI++ F  +F LE      C +D +++ D  ++   + G+WCG+ ++PP +++  NQ  + F +D   +   GF++ Y ++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>2.8842e-07</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>573</Hsp_hit-from>
+      <Hsp_hit-to>678</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV--EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>VISNGQISSPGSPGHYPPNKDCFYILSTSFNKRLQLNF---FSLDIEESPDCTKDYLRVWTEDDLQLE-----KYCGKTTTPTPIVSVSNTIKIEFHSDGEGSGS-GFQIAYNIL</Hsp_hseq>
+      <Hsp_midline>V  NG + SP  P  YP N    + L +  N R+QL F   F L+  E+  C  D++ V  ED  +       ++CG    P  I S +N IKI F SD       GF+I Y++L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>9.22609e-06</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>1176</Hsp_hit-from>
+      <Hsp_hit-to>1308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQL-VFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSVTDPTL</Hsp_qseq>
+      <Hsp_hseq>VGVSGSIHSPNYPQPYGKNAECFYTVTVSKGSKIQLTIVDLQ--LENSRN--CQLDYIQVFDGPSEKYPEVGKYCNVH--PPNFVSKSNQIFIKFRSDST-VEYRGFHLSYKTVCE----GVELTGFRGVIESP-----NFPSIFEPSV</Hsp_hseq>
+      <Hsp_midline>V  +G + SP +P  Y +N    + +   + ++IQL + D Q  LE + N  C+ D+++V D         G++C     PP   S++NQI I F+SD   V   GF + Y  + +        T +  V  S      N PS+ +P++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>6</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.21736e-05</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2050</Hsp_hit-from>
+      <Hsp_hit-to>2151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV--EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>GTARFASPGFPEGYASDLNCTWTVETGPGFKLHMSFI-AIDIESSEN--CEADYVQVAIQEKDKADMTVKGKYCENTAKYESYIYNTRRMQVTFVT-DYFVNKTGF</Hsp_hseq>
+      <Hsp_midline>G     SP FP  Y  +L  TW + +    ++ + F     +E +EN  C  D+V+V  ++  +    ++G++C +          T ++++TF + DYFV K GF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>7</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000262002</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1420</Hsp_hit-from>
+      <Hsp_hit-to>1525</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SGEIHSPGYPSSYDHRLTCEWHISVPPGNSIQINVTD-FNLEHTYG--CFGDYLMLFGGPDEDSPVHSRLCANQPVPLIQTSSSNHMFVRFNSDGTFNGR-GFHAIYTAV</Hsp_hseq>
+      <Hsp_midline>+G + SP +P+SY   L   W +       IQ+   + F LE      C  D++ +    +  + +  R C ++ VP    S +N + + F SD  F  + GF   Y+ +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>8</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000934028</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>813</Hsp_hit-from>
+      <Hsp_hit-to>921</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN--QFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSL</Hsp_qseq>
+      <Hsp_hseq>GSFNSPMYPSNYMVDHACTYLIEQPPGKVIKLQFMDFDVFGLPGKGNDRCLGDYVRVFDGETNNATKIGEYCANLK-PNLITSSFNYLRVEFLSTKHRTARGFFANYTTM</Hsp_hseq>
+      <Hsp_midline>G   SP +P++Y  +   T+ +       I+L F +   FGL    ND C  D+V V D    +    G +C + + P  I S  N +++ F S  +  A+  F  Y ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_022193782.1|</Hit_id>
+  <Hit_def>neuropilin and tolloid-like protein 2 [Nilaparvata lugens] &gt;ref|XP_022193783.1| neuropilin and tolloid-like protein 2 [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022193782</Hit_accession>
+  <Hit_len>671</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>3.34341e-07</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SPNYPGLYPNHTDCIKIITAESGNLLRLDFRDSFNVEPSED--CRFDYLEVRDGAHGYSTRIGLFCGH-DFPPVLTSSDRYLWLRFHSDET-IEYTGFKAVYSQI</Hsp_hseq>
+      <Hsp_midline>SP +P  YP +      + ++    ++L F + F +E +E+  CR+D++EV D +   +   G +CGH + PP + S    + + F SD+  +   GFK  YS +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_022199463.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: dorsal-ventral patterning tolloid-like protein 1 [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022199463</Hit_accession>
+  <Hit_len>788</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>9.72954e-05</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>396</Hsp_hit-from>
+      <Hsp_hit-to>547</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEN--------DICRYDFVEVEDISETSTI-IRGRWCGHKEVPPRIKSRTN-QIKITFKSD-----DYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPS</Hsp_qseq>
+      <Hsp_hseq>GEFNSPRYPSNYPSQTNCTYTFIATPNEQVTLVFDHFRVRADSANTTFGSYGLSVCQEDWLEMYNLYRDGTAKLIGRYCGMTAPGPVDSNRGAIGVKVILHSDQEGVFSGFKARYTFEVAKSIYGDCG-SNVSSTDFGVITSPNFPLNYEGPS</Hsp_hseq>
+      <Hsp_midline>G   SPR+P++YP     T+   +  N ++ LVFD+     ++ N         +C+ D++E+ ++    T  + GR+CG     P   +R    +K+   SD       F A+  F++  S+  D   +  S T++  +TS    ++Y  PS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_022199772.1|</Hit_id>
+  <Hit_def>cubilin-like [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022199772</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000152322</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>GEIMSPGFSLKYMPNVECDWDIRAESGYRIVLKFIDRFYLESSKD--CTKDYVKIFLWKNKQWVENSVHCGRDEVNKEIETEVTRVRVIFHSDASNEGD-GFKLLWT</Hsp_hseq>
+      <Hsp_midline>G + SP F   Y  N+   W + ++   RI L F ++F LE +++  C  D+V++        +     CG  EV   I++   ++++ F SD       GFK+ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_022189610.1|</Hit_id>
+  <Hit_def>cubilin-like [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022189610</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000280752</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>185</Hsp_hit-from>
+      <Hsp_hit-to>347</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAEND-ICRYDFVEVEDI-SETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPA-------AASETNWESVTSSISGVSYN---------------SPSVTDPTLIA</Hsp_qseq>
+      <Hsp_hseq>SGHFYSPRYPSSYPKNIRCAYTFQSRSKERIRVVFE-EVTLQKGDITCLNRADVIKVFDGRAATAPVIREVCNQVAQV--EVLSTGPHLYIEFLADSQWPGQ-GFNALY----EFQPVINNTIETGSPGQNGPSVSASASSTNCNHTLLDSSVAKSGTLISPGYRDPTLRA</Hsp_hseq>
+      <Hsp_midline>+G+  SPR+P+SYP+N+   +   S+   RI++VF+ +  L++ +   + R D ++V D  + T+ +IR       +V   + S    + I F +D  +  + GF   Y    +FQP         +   N  SV++S S  + N               SP   DPTL A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_022195564.1|</Hit_id>
+  <Hit_def>suppressor of lurcher protein 1-like, partial [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022195564</Hit_accession>
+  <Hit_len>316</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000818273</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>171</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQL---VFDNQFGLEEAENDICRYDFVEVEDISETSTIIR----GRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>GVVHSPNFPGHYPRDTECHYFFYGEHFQRVRLHFVHFDVE-GMLPCEANSAS-DYVEFSDM-----MLRDGKYARSCGQLQ-PFFVQSESNFFRVTFRSNDRLDAT-GFNASYRFF</Hsp_hseq>
+      <Hsp_midline>G V SP FP  YPR+    +  + +   R++L    FD + G+   E +    D+VE  D+     ++R     R CG  + P  ++S +N  ++TF+S+D   A  GF   Y   </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_022199776.1|</Hit_id>
+  <Hit_def>cubilin homolog [Nilaparvata lugens]</Hit_def>
+  <Hit_accession>XP_022199776</Hit_accession>
+  <Hit_len>504</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00959431</Hsp_evalue>
+      <Hsp_query-from>73</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>136</Hsp_align-len>
+      <Hsp_qseq>YPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRY---DFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSSISGVSYNSPSVTDPTL</Hsp_qseq>
+      <Hsp_hseq>YDSFLDCSWHVSTAEGYVIQIEF------EHLKLDVCKQCSCDFVELKDSLQNNSSVIGRYCDTPQF-KMAATVSNELWIRFKTDNTSNTGTGFRL--KLTRKTSECGVTELTVQNVSQVLTSPGY--PASCKPGL</Hsp_hseq>
+      <Hsp_midline>Y   L  +W + + E   IQ+ F      E  + D+C+    DFVE++D  + ++ + GR+C   +      + +N++ I FK+D+      GF++   L         +E   ++V+  ++   Y  P+   P L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2437187344</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

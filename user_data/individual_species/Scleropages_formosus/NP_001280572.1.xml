@@ -1,0 +1,966 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_018619632.2|</Hit_id>
+  <Hit_def>placenta growth factor isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018619632</Hit_accession>
+  <Hit_len>171</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>157.532</Hsp_bit-score>
+      <Hsp_score>397</Hsp_score>
+      <Hsp_evalue>4.29886e-49</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCHLCGDAVPRR</Hsp_qseq>
+      <Hsp_hseq>MNFFAYIVHISAVLQLHGLPAQTFLSSRAKNSSFEVMPFQEVWERSFCRTIEKLVEVVQEYPGEVEHIFSPTCVPLVRCAGCCGDENLECYPTHTSNVTMQLLKIKPAEVHQEYVDMAFMEHKACECRPKKVMLKNGRRRGKGRGRKRKEKQKMKGCDQCQP--PRR</Hsp_hseq>
+      <Hsp_midline>M  F   + + A L L  +P Q  LS+   +S  EV+PFQEVW RS+CR +E+LV+VV EYP EVEH+FSP+CV L+RC GCCGDENL C P  T+NVTMQLLKI+  +    YV++ F +H  CECRP +  +K  RRR KGRG++R+EKQ+   C  C    PRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_029114510.1|</Hit_id>
+  <Hit_def>placenta growth factor isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_029114510</Hit_accession>
+  <Hit_len>172</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>153.295</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>1.76591e-47</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>MRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMK</Hsp_qseq>
+      <Hsp_hseq>MNFFAYIVHISAVLQLHGLPAQTFLSSRAKNSSFEVMPFQEVWERSFCRTIEKLVEVVQEYPGEVEHIFSPTCVPLVRCAGCCGDENLECYPTHTSNVTMQLLKIKPAEVHQEYVDMAFMEHKACECRPKKVMLK</Hsp_hseq>
+      <Hsp_midline>M  F   + + A L L  +P Q  LS+   +S  EV+PFQEVW RS+CR +E+LV+VV EYP EVEH+FSP+CV L+RC GCCGDENL C P  T+NVTMQLLKI+  +    YV++ F +H  CECRP +  +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|KPP64531.1|</Hit_id>
+  <Hit_def>placenta growth factor-like, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP64531</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>142.124</Hsp_bit-score>
+      <Hsp_score>357</Hsp_score>
+      <Hsp_evalue>3.24068e-43</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCECRPLREKMK</Hsp_qseq>
+      <Hsp_hseq>LSSRAKNSSFEVMPFQEVWERSFCRTIEKLVEVVQEYPGEVEHIFSPTCVPLVRCAGCCGDENLECYPTHTSNVTMQLLKIKPAEVHQEYVDMAFMEHKACECRPKKVMLK</Hsp_hseq>
+      <Hsp_midline>LS+   +S  EV+PFQEVW RS+CR +E+LV+VV EYP EVEH+FSP+CV L+RC GCCGDENL C P  T+NVTMQLLKI+  +    YV++ F +H  CECRP +  +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_018598976.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018598976</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.849</Hsp_bit-score>
+      <Hsp_score>281</Hsp_score>
+      <Hsp_evalue>1.83944e-31</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>FLQLLAG--LALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>FMQLFLATLLYLSAVKTAPHIPGEGGKSGV--VSFVKVYNSSLCQPREMLVDILQEYPEEIEYIFIPSCVVLMRCGGCCNDDMYECVPTETYNITMEVMRFRPKVQRSIFQLSFIEHRRCDCRPKKEVVEKKENHCAPCAKRR--KQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>F+QL     L L AV     +    G S V  V F +V+  S C+  E LVD++ EYP E+E++F PSCV L+RC GCC D+   CVP ET N+TM++++ R   + S  +L+F +H RC+CRP +E ++ +        KRR  KQ P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_018598978.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018598978</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.842</Hsp_bit-score>
+      <Hsp_score>268</Hsp_score>
+      <Hsp_evalue>1.72677e-29</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>VVSFVKVYNSSLCQPREMLVDILQEYPEEIEYIFIPSCVVLMRCGGCCNDDMYECVPTETYNITMEVMRFRPKVQRSIFQLSFIEHRRCDCRPKKEVVEKKENHCAPCAKRR--KQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>VV F +V+  S C+  E LVD++ EYP E+E++F PSCV L+RC GCC D+   CVP ET N+TM++++ R   + S  +L+F +H RC+CRP +E ++ +        KRR  KQ P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_018612745.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Scleropages formosus] &gt;ref|XP_018612747.1| vascular endothelial growth factor A-A-like isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018612745</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.842</Hsp_bit-score>
+      <Hsp_score>268</Hsp_score>
+      <Hsp_evalue>1.89647e-29</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGNGSSEVE-----VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERR-RPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>FVVNLVRLVLAALQV-CALQAAHIPKDKEKGSNDVVPFMDVYNKSRCRPREVLVDIFHEYPEEIEHTYIPSCVVLTRCGGCCNDDALECIPTDTYNTTLEVIRIKQRVTQHNFLLSFTEHRRCECRPKKDVKEKKENHCQPCSERRKRLFVQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>F+  L  L L A+    AL A +   + E     VVPF +V+ +S CR  E LVD+  EYP E+EH + PSCV L RC GCC D+ L C+P +T N T+++++I+         L+F++H RCECRP ++ K K E   +P    ++R   Q P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_018598979.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X3 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018598979</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>1.90947e-29</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>FLQLLAG--LALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>FMQLFLATLLYLSAVKTAPHIPGEGGKSGV--VSFVKVYNSSLCQPREMLVDILQEYPEEIEYIFIPSCVVLMRCGGCCNDDMYECVPTETYNITMEVMRFRPKVQRSIFQLSFIEHRRCDCRP</Hsp_hseq>
+      <Hsp_midline>F+QL     L L AV     +    G S V  V F +V+  S C+  E LVD++ EYP E+E++F PSCV L+RC GCC D+   CVP ET N+TM++++ R   + S  +L+F +H RC+CRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|KPP71607.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP71607</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.842</Hsp_bit-score>
+      <Hsp_score>268</Hsp_score>
+      <Hsp_evalue>4.48602e-29</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLRE-KMKPERR-RPKGRGKRRREKQRPTDCH</Hsp_qseq>
+      <Hsp_hseq>DVVPFMDVYNKSRCRPREVLVDIFHEYPEEIEHTYIPSCVVLTRCGGCCNDDALECIPTDTYNTTLEVIRIKQRVTQHNFLLSFTEHRRCECRPKKDVKEKKENHCQPCSERRKRLFVQDPLTCQ</Hsp_hseq>
+      <Hsp_midline>+VVPF +V+ +S CR  E LVD+  EYP E+EH + PSCV L RC GCC D+ L C+P +T N T+++++I+         L+F++H RCECRP ++ K K E   +P    ++R   Q P  C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_018598980.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A isoform X4 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018598980</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.457</Hsp_bit-score>
+      <Hsp_score>267</Hsp_score>
+      <Hsp_evalue>4.81757e-29</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>FLQLLAG--LALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>FMQLFLATLLYLSAVKTAPHIPGEGGKSGV--VSFVKVYNSSLCQPREMLVDILQEYPEEIEYIFIPSCVVLMRCGGCCNDDMYECVPTETYNITMEVMRFRPKVQRSIFQLSFIEHRRCDCRP</Hsp_hseq>
+      <Hsp_midline>F+QL     L L AV     +    G S V  V F +V+  S C+  E LVD++ EYP E+E++F PSCV L+RC GCC D+   CVP ET N+TM++++ R   + S  +L+F +H RC+CRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_018612746.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-A-like isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018612746</Hit_accession>
+  <Hit_len>144</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.145</Hsp_bit-score>
+      <Hsp_score>261</Hsp_score>
+      <Hsp_evalue>6.49112e-29</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>FLQLLAGLALPAVPPQWALSAGNGSSEVE-----VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>FVVNLVRLVLAALQ-VCALQAAHIPKDKEKGSNDVVPFMDVYNKSRCRPREVLVDIFHEYPEEIEHTYIPSCVVLTRCGGCCNDDALECIPTDTYNTTLEVIRIKQRVTQHNFLLSFTEHRRCECRP</Hsp_hseq>
+      <Hsp_midline>F+  L  L L A+    AL A +   + E     VVPF +V+ +S CR  E LVD+  EYP E+EH + PSCV L RC GCC D+ L C+P +T N T+++++I+         L+F++H RCECRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_029113208.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_029113208</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.2781</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>1.41582e-22</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>LQLLAGL----ALPAVPPQWALSAGNGSSEV----EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR--------PLREKMKPERR-RPKGRGK</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFVLVTRMPPSYAKLAHWQPAESHRSREVLKWLEVYSKSRCQPRETLVEVWREFPRETQHLFLPSCVALRRCGGCCSDEALECVPSRTYTLNVELMKT-AYMKHELVQMPFTEHSQCECRLKKDLLPVPDRQEQTPLRKGRKRERGK</Hsp_hseq>
+      <Hsp_midline>LQ++ G+     +  +PP +A  A    +E     EV+ + EV+ +S C+  E LV+V  E+P E +H+F PSCV+L RC GCC DE L CVP  T  + ++L+K  +  +   V++ F++H +CECR        P R++  P R+ R + RGK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_029113209.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_029113209</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.8929</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>1.69886e-22</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>LQLLAGL----ALPAVPPQWALSAGNGSSEV----EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR--------PLREKMKPERR-RPKGRGK</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFVLVTRMPPSYAKLAHWQPAESHRSREVLKWLEVYSKSRCQPRETLVEVWREFPRETQHLFLPSCVALRRCGGCCSDEALECVPSRTYTLNVELMKT-AYMKHELVQMPFTEHSQCECRLKKDLLPVPDRQEQTPLRKGRKRERGK</Hsp_hseq>
+      <Hsp_midline>LQ++ G+     +  +PP +A  A    +E     EV+ + EV+ +S C+  E LV+V  E+P E +H+F PSCV+L RC GCC DE L CVP  T  + ++L+K  +  +   V++ F++H +CECR        P R++  P R+ R + RGK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_029113210.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor B isoform X3 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_029113210</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>1.55954e-21</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LQLLAGL----ALPAVPPQWALSAGNGSSEV----EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LQVILGMFQFVLVTRMPPSYAKLAHWQPAESHRSREVLKWLEVYSKSRCQPRETLVEVWREFPRETQHLFLPSCVALRRCGGCCSDEALECVPSRTYTLNVELMKT-AYMKHELVQMPFTEHSQCECR</Hsp_hseq>
+      <Hsp_midline>LQ++ G+     +  +PP +A  A    +E     EV+ + EV+ +S C+  E LV+V  E+P E +H+F PSCV+L RC GCC DE L CVP  T  + ++L+K  +  +   V++ F++H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|KPP61293.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_120628 [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP61293</Hit_accession>
+  <Hit_len>106</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>2.45546e-20</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LLKWLEVYSKSRCQPRETLVEVWREFPRETQHLFLPSCVALRRCGGCCSDEALECVPSRTYTLNVELMKT-AYMKHELVQMPFTEHSQCECR</Hsp_hseq>
+      <Hsp_midline>++ + EV+ +S C+  E LV+V  E+P E +H+F PSCV+L RC GCC DE L CVP  T  + ++L+K  +  +   V++ F++H +CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|KPP56800.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_125543, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP56800</Hit_accession>
+  <Hit_len>68</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>6.91688e-20</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>66</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>VPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQL</Hsp_qseq>
+      <Hsp_hseq>VSFVKVYNSSLCQPREMLVDILQEYPEEIEYIFIPSCVVLMRCGGCCNDDMYECVPTETYNITMEV</Hsp_hseq>
+      <Hsp_midline>V F +V+  S C+  E LVD++ EYP E+E++F PSCV L+RC GCC D+   CVP ET N+TM++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_018611843.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018611843</Hit_accession>
+  <Hit_len>398</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.781</Hsp_bit-score>
+      <Hsp_score>164</Hsp_score>
+      <Hsp_evalue>2.82205e-13</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>CFLQLLAGL----ALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDR-PSYVELTFSQHVRCECRPLREKMKPERRR</Hsp_qseq>
+      <Hsp_hseq>CLQQALQGAPPSSSLKKAPVRTSRETANPKTQNLIKEIMTELQRTACHPREECVEVAKEHPESTSSFFRPRCISVHRCGGCCNHEGQECVSTRQNLVQKTLLQISPLEQNPSIITLTFVNHTSCDCQP-KESLHTIRRR</Hsp_hseq>
+      <Hsp_midline>C  Q L G     +L   P + +    N  ++  +        R+ C   E  V+V  E+P      F P C+S+ RC GCC  E   CV      V   LL+I   ++ PS + LTF  H  C+C+P +E +   RRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_018607344.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018607344</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.7582e-10</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>PPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRP-SYVELTFSQHVRCECRPLR</Hsp_qseq>
+      <Hsp_hseq>PREMALYKVDGTFEVIMEEIQ----RTICRPREVCLEVSKEYPENTSNFYLPRCVSVHRCGGCCNHEALYCTNTSHSFVNKTLVELSPPRMERSVIMVNFVNHTACECQPKR</Hsp_hseq>
+      <Hsp_midline>P + AL   +G+ EV +   Q    R+ CR  E  ++V  EYP    + + P CVS+ RC GCC  E L+C     + V   L+++       S + + F  H  CEC+P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|KPP76120.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_104567, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP76120</Hit_accession>
+  <Hit_len>178</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>4.59336e-09</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPREVCLDVGKELGAPTNTFYKPPCVSVYRCGGCCNSEELQCMNTSTSYVSKTLFEITIPITQGMKP--VTVSFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>W ++ C   E  +DV  E  +     + P CVS+ RC GCC  E L C+   T+ V+  L +    I  G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_018605387.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018605387</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>8.63797e-09</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>GSSEVEVV-PFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI---RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>ASYSLEILQAIDEEWQKTQCMPRETCVDVAKELGTNTGMFFKPPCVSVYRCSGCCNKEGVTCRNTSTTYVNKTLLTVIPFKYGPEPVLIKV--ANHTECKC</Hsp_hseq>
+      <Hsp_midline> S  +E++    E W ++ C   E  VDV  E  +     F P CVS+ RC+GCC  E + C    T  V   LL +   + G  P  +++  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_018605388.2|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018605388</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>9.82724e-09</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>GSSEVEVV-PFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKI---RSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>ASYSLEILQAIDEEWQKTQCMPRETCVDVAKELGTNTGMFFKPPCVSVYRCSGCCNKEGVTCRNTSTTYVNKTLLTVIPFKYGPEPVLIKV--ANHTECKC</Hsp_hseq>
+      <Hsp_midline> S  +E++    E W ++ C   E  VDV  E  +     F P CVS+ RC+GCC  E + C    T  V   LL +   + G  P  +++  + H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_018591149.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018591149</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.71152e-08</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>WGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>WRKTLCMPREVCLDVGKELGAPTNTFYKPPCVSVYRCGGCCNSEELQCMNTSTSYVSKTLFEITIPITQGMKP--VTVSFANHTLCRC</Hsp_hseq>
+      <Hsp_midline>W ++ C   E  +DV  E  +     + P CVS+ RC GCC  E L C+   T+ V+  L +    I  G +P  V ++F+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|KPP77068.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_103535, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP77068</Hit_accession>
+  <Hit_len>459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.91611e-08</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>RSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQ--------------------LLKIRSGDR-PSYVELTFSQHVRCECRPLREKMKPERRR</Hsp_qseq>
+      <Hsp_hseq>RTACHPREECVEVAKEHPESTSSFFRPRCISVHRCGGCCNHEGQECVSTRQNLVQKTVRTPLTHAIAQARPRCQMACLLQISPLEQNPSIITLTFVNHTSCDCQP-KESLHTIRRR</Hsp_hseq>
+      <Hsp_midline>R+ C   E  V+V  E+P      F P C+S+ RC GCC  E   CV      V                       LL+I   ++ PS + LTF  H  C+C+P +E +   RRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|KPP59893.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_122147, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP59893</Hit_accession>
+  <Hit_len>383</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>5.57261e-07</Hsp_evalue>
+      <Hsp_query-from>48</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>RSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQL-------LKIRSGDRPSY--VELT------------FSQHVRCECRPLR</Hsp_qseq>
+      <Hsp_hseq>RTICRPREVCLEVSKEYPENTSNFYLPRCVSVHRCGGCCNHEALYCTNTSHSFVNKTVSVAQRPCLHSRRQRRTNFMLVELSPPRMERSVIMVNFVNHTACECQPKR</Hsp_hseq>
+      <Hsp_midline>R+ CR  E  ++V  EYP    + + P CVS+ RC GCC  E L+C     + V   +       L  R   R ++  VEL+            F  H  CEC+P R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gb|KPP70594.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_110564 [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP70594</Hit_accession>
+  <Hit_len>435</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>5.92433e-06</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRP</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNARTIKCVPTVISTRQLQVMKIQFVNKQKHYEKVVISVEDHVECRC-----QTAPPQLAPRTTARKPQHSQRP</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC    + CVP   +   +Q++KI+  ++  + E   ++   HV C C     +  P +  P+   ++ +  QRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_018601550.1|</Hit_id>
+  <Hit_def>involucrin-like isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018601550</Hit_accession>
+  <Hit_len>513</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>8.68294e-06</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRP</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNARTIKCVPTVISTRQLQVMKIQFVNKQKHYEKVVISVEDHVECRC-----QTAPPQLAPRTTARKPQHSQRP</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC    + CVP   +   +Q++KI+  ++  + E   ++   HV C C     +  P +  P+   ++ +  QRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_018601552.1|</Hit_id>
+  <Hit_def>putative cyclin-dependent serine/threonine-protein kinase DDB_G0272797/DDB_G0274007 isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018601552</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>1.3452e-05</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>99</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>PSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECRPLREKMKPERRRPKGRGKRRREKQRP</Hsp_qseq>
+      <Hsp_hseq>PPCVEVQRCSGCCNARTIKCVPTVISTRQLQVMKIQFVNKQKHYEKVVISVEDHVECRC-----QTAPPQLAPRTTARKPQHSQRP</Hsp_hseq>
+      <Hsp_midline>P CV + RC+GCC    + CVP   +   +Q++KI+  ++  + E   ++   HV C C     +  P +  P+   ++ +  QRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|KPP60251.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP60251</Hit_accession>
+  <Hit_len>397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000127945</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR---PLREKMKPERRRPKGRGKRR</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNARTVQCMPTVTHMRYLQVMKIQYVNKQPHYEKAVISVVDHIECRCQIEAPAKGQRTSHKRPPHRRKNSR</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC    + C+P  T    +Q++KI+  ++  + E   ++   H+ C C+   P + +    +R P  R   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_018598462.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC108928799 [Scleropages formosus] &gt;ref|XP_018598463.1| uncharacterized protein LOC108928799 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018598462</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000161594</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVE---LTFSQHVRCECR---PLREKMKPERRRPKGRGKRR</Hsp_qseq>
+      <Hsp_hseq>LLWPPCVEVQRCSGCCNARTVQCMPTVTHMRYLQVMKIQYVNKQPHYEKAVISVVDHIECRCQIEAPAKGQRTSHKRPPHRRKNSR</Hsp_hseq>
+      <Hsp_midline>+  P CV + RC+GCC    + C+P  T    +Q++KI+  ++  + E   ++   H+ C C+   P + +    +R P  R   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_018600897.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018600897</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000569525</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCHPGKLRCYPSRRHHRTVKVAKLEYVRRKPRLREVFVRLEDHLECMCMP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC    L C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_018600896.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018600896</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000599437</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCHPGKLRCYPSRRHHRTVKVAKLEYVRRKPRLREVFVRLEDHLECMCMP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC    L C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gb|KPP76066.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like, partial [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP76066</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0018152</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>137</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCHPGKLRCYPSRRHHRTVKVAKLEYVRRKPRLREVFVRLEDHLECMCMP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC    L C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|XP_018600898.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X3 [Scleropages formosus]</Hit_def>
+  <Hit_accession>XP_018600898</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00214339</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCECRP</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCHPGKLRCYPSRRHHRTVKVAKLEYVRRKPRLREVFVRLEDHLECMCMP</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC    L C P    + T+++ K   +R   R   V +    H+ C C P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gb|KPP59455.1|</Hit_id>
+  <Hit_def>hypothetical protein Z043_122622 [Scleropages formosus]</Hit_def>
+  <Hit_accession>KPP59455</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0405946</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQL</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRRHHRTVKV</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P    + T+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2351455899</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>207</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>VEGF-B186 NP_003368.1 vascular endothelial growth factor B isoform VEGFB-186 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>207</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_025978749.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025978749</Hit_accession>
+  <Hit_len>252</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7373</Hsp_bit-score>
+      <Hsp_score>221</Hsp_score>
+      <Hsp_evalue>1.11015e-21</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIR-YPSSQLGEMSLEEHSQCECRPKK------KDSAVKPDRAATPHHRPQPRSV</Hsp_qseq>
+      <Hsp_hseq>VIKFLDVYERSFCRTIETLVDIFQEYPDEVEYIFKPSCVPLMRCAGCCGDEGLECVPVDVYNVTMEIMRIKPHQSQHIAHMSFLQHSKCDCRPKKDVKNKQEKWAQKP-RSDSPFFIPQTWSL</Hsp_hseq>
+      <Hsp_midline>V+ ++DVY R+ C+  E +V +  E    V     PSCV + RC GCC D+GLECVP   + V M+I+ I+ + S  +  MS  +HS+C+CRPKK      +  A KP R+ +P   PQ  S+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_025976108.1|</Hit_id>
+  <Hit_def>placenta growth factor [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025976108</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>3.54044e-20</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>VVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQ--LGEMSLEEHSQCECRP</Hsp_qseq>
+      <Hsp_hseq>VVTFREIWNRSFCRPLEQLVDVITEFPNEVEYIFRPSCISLQRCGGCCGDEGLRCVPVEMSTVTMQLLKIK-PSGEAPYVEMAFTQHKRCECRP</Hsp_hseq>
+      <Hsp_midline>VV++ +++ R+ C+P E +V +  E    V     PSC+++QRCGGCC D+GL CVP     V MQ+L I+ PS +    EM+  +H +CECRP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_025976107.1|</Hit_id>
+  <Hit_def>ribosomal protein S6 kinase-like 1 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025976107</Hit_accession>
+  <Hit_len>719</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>1.34149e-11</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>124</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>DAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE</Hsp_qseq>
+      <Hsp_hseq>DDAGLSKQDLPFLEVYRSSFCQPFLTIVDVYSEYPDEVTYIYKPSCVAVQRCGGCCGDEGQFCAPVEMEMVTIEIGQLRADRGQLSQ</Hsp_hseq>
+      <Hsp_midline>D  G  ++ + +++VY  + CQP   +V +  E    V     PSCV VQRCGGCC D+G  C P     V ++I  +R    QL +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_025960957.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025960957</Hit_accession>
+  <Hit_len>439</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>6.54651e-10</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>APGHQRKVVSWIDVYTRAT-CQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>AAHYNAEILKSIDTEWRKTQCMPREVCVDVGKEFGATTNTFFKPPCVSIYRCGGCCNSEGLQCMNISTNYISKTLFEITVPLSHGPKPVTVSFANHTSCRCMSK</Hsp_hseq>
+      <Hsp_midline>A  +  +++  ID   R T C PREV V +  E   T      P CV++ RCGGCC  +GL+C+    + +   +  I  P S   +   +S   H+ C C  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_025956345.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025956345</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>1.02521e-09</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPLTVELMGTVAKQLV--PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY----PSSQLGEMSLEEHSQCECRPKKKDSAVKPDRAATPHHRPQPRSVPGWDSA</Hsp_qseq>
+      <Hsp_hseq>AECKTRAVVFEISRNMVDSTNANFVVWPPCVEVQRCSGCCNNRNVQCRPTQIRVRHVQVNKIEFVQRKPIFKKVVVPLEDHVQCRC----EAVSYQPPKNSRPRQREQRRLSPSFTTA</Hsp_hseq>
+      <Hsp_midline>A C+ R VV  ++  ++ +     V  P CV VQRC GCC +  ++C PT      +Q+  I +    P  +   + LE+H QC C    +  + +P + + P  R Q R  P + +A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_025976523.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025976523</Hit_accession>
+  <Hit_len>353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>2.68255e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>YTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGE---MSLEEHSQCECRPKK--------KDSAVKPDRAATPHHRPQPRSVPGWDSAPGAPSPADITHPTPAPG</Hsp_qseq>
+      <Hsp_hseq>WQKTQCVPRETCVEVAKELGTTTNKFFKPPCVNIFRCGGCCNEESLSCMNTSTTYVSKTLFEISVPLTSVPEPVPIKIANHTGCKCISNTQRHQYAIIRRSVQYPEEDGCPFANKLCHNGWIWDS-DKCECVVDVQHPNRREG</Hsp_hseq>
+      <Hsp_midline>+ +  C PRE  V +  EL  T  K   P CV + RCGGCC ++ L C+ T    V   +  I  P + + E   + +  H+ C+C            + S   P+    P       +   WDS        D+ HP    G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_025971998.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025971998</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>1.44764e-06</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>136</Hsp_query-to>
+      <Hsp_hit-from>178</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>ATCQPREVVVPL-TVELMGTVAKQLV-PSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSS--QLGE--MSLEEHSQCECRPKKKDSAVKPD</Hsp_qseq>
+      <Hsp_hseq>AVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRIHHRSVKVAKVEYVRKKPKLKEVLVRLEEHMECTCTSSNTNSDYREE</Hsp_hseq>
+      <Hsp_midline>A C+ R V+  +   ++  T A  L+ P CV V+RC GCC    ++C P+  H   +++  + Y     +L E  + LEEH +C C     +S  + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_025976005.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025976005</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000350102</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>TCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGG---CCPD--DGLECVPTGQHQVRMQILM------IRYPSSQLGEMSLEEHSQCEC</Hsp_qseq>
+      <Hsp_hseq>SCTPRNFSVSLREELKRT-DTIFWPLCLLVKRCGGNCACCHQSCNECQCVPTKVTKKYHEVLQLKPRIGVRGLHKSLTDVPLEHHEECDC</Hsp_hseq>
+      <Hsp_midline>+C PR   V L  EL  T      P C+ V+RCGG   CC    +  +CVPT   +   ++L       +R     L ++ LE H +C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_025963127.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X1 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025963127</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00809517</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>315</Hsp_hit-from>
+      <Hsp_hit-to>356</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_025963128.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X2 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025963128</Hit_accession>
+  <Hit_len>417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.00820784</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>309</Hsp_hit-from>
+      <Hsp_hit-to>350</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_025963129.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D isoform X3 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025963129</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.00905858</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>295</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>DVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCC</Hsp_qseq>
+      <Hsp_hseq>DDVKRYSCTPRNYSVNLREELKLTNV-VFFPRCLLVQRCGGNC</Hsp_hseq>
+      <Hsp_midline>D   R +C PR   V L  EL  T      P C+ VQRCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_025974123.1|</Hit_id>
+  <Hit_def>dynamin-2 isoform X2 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025974123</Hit_accession>
+  <Hit_len>871</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0958176</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>750</Hsp_hit-from>
+      <Hsp_hit-to>815</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PKKKDSAVKPDRAATPHHRPQPRSV---PGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGP</Hsp_qseq>
+      <Hsp_hseq>PPVDDTWLQTSSGHSPPPQRRPVSAILPPGRPPAVRGPTPGPPLIPIPAGGPSSFAAPPIPS--RPGP</Hsp_hseq>
+      <Hsp_midline>P   D+ ++     +P  + +P S    PG   A   P+P     P PA GPS+ AAP   S   PGP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_025974125.1|</Hit_id>
+  <Hit_def>dynamin-2 isoform X4 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025974125</Hit_accession>
+  <Hit_len>867</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0975071</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>746</Hsp_hit-from>
+      <Hsp_hit-to>811</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PKKKDSAVKPDRAATPHHRPQPRSV---PGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGP</Hsp_qseq>
+      <Hsp_hseq>PPVDDTWLQTSSGHSPPPQRRPVSAILPPGRPPAVRGPTPGPPLIPIPAGGPSSFAAPPIPS--RPGP</Hsp_hseq>
+      <Hsp_midline>P   D+ ++     +P  + +P S    PG   A   P+P     P PA GPS+ AAP   S   PGP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_025974124.1|</Hit_id>
+  <Hit_def>dynamin-2 isoform X3 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025974124</Hit_accession>
+  <Hit_len>867</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0992803</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>746</Hsp_hit-from>
+      <Hsp_hit-to>811</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PKKKDSAVKPDRAATPHHRPQPRSV---PGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGP</Hsp_qseq>
+      <Hsp_hseq>PPVDDTWLQTSSGHSPPPQRRPVSAILPPGRPPAVRGPTPGPPLIPIPAGGPSSFAAPPIPS--RPGP</Hsp_hseq>
+      <Hsp_midline>P   D+ ++     +P  + +P S    PG   A   P+P     P PA GPS+ AAP   S   PGP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_025974122.1|</Hit_id>
+  <Hit_def>dynamin-2 isoform X1 [Dromaius novaehollandiae]</Hit_def>
+  <Hit_accession>XP_025974122</Hit_accession>
+  <Hit_len>871</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0993343</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>750</Hsp_hit-from>
+      <Hsp_hit-to>815</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PKKKDSAVKPDRAATPHHRPQPRSV---PGWDSAPGAPSPADITHPTPAPGPSAHAAPSTTSALTPGP</Hsp_qseq>
+      <Hsp_hseq>PPVDDTWLQTSSGHSPPPQRRPVSAILPPGRPPAVRGPTPGPPLIPIPAGGPSSFAAPPIPS--RPGP</Hsp_hseq>
+      <Hsp_midline>P   D+ ++     +P  + +P S    PG   A   P+P     P PA GPS+ AAP   S   PGP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1654792765</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

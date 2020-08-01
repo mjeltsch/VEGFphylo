@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|RWS29460.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS29460</Hit_accession>
+  <Hit_len>135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>7.51588e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>MPVMRLFPCFLQLLAGLALPAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRA-LERLVDVVSEYPSEVEHMFSPSCVSLLRC---TGCCGDENLHCVPVETANVTMQLLKIR---SGDRPSYVELTFSQHVRCECR</Hsp_qseq>
+      <Hsp_hseq>LFIVCVFVCF-------KINAIPLINASDERNLDSRLASIHVSRILQQAKCKVPVPRVLHILDQYPSATK-KYLPHCTILHICGSESGCCSSEYETCFPKTVTNVTLHFFVVELTTNGQKKYVQKLSFQNHTECECR</Hsp_hseq>
+      <Hsp_midline>+ ++ +F CF        + A+P   A    N  S +  +    +  ++ C+  + R++ ++ +YPS  +  + P C  L  C   +GCC  E   C P    NVT+    +    +G +    +L+F  H  CECR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|RWS27911.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS27911</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00013317</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>GNGSSEVEVVPFQEVWGRSYCRA-LERLVDVVSEYPSEVEHMFSPSCVSLLRC---TGCCGDENLHCVPVETANVTMQLLKIR---SGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>SNNDAKLAAIHLSKITKEAKCKKPLPRVVHIEELHPN-ARKKYLPHCTVLHFCGQETGCCRQENEICSPKTIEEVTLNFWVVELTAFGKRKGVEKMTFLNHTECDC</Hsp_hseq>
+      <Hsp_midline> N  +++  +   ++   + C+  L R+V +   +P+     + P C  L  C   TGCC  EN  C P     VT+    +     G R    ++TF  H  C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|RWS30032.1|</Hit_id>
+  <Hit_def>PDGF-and VEGF-related factor 3-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS30032</Hit_accession>
+  <Hit_len>116</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.000283844</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRC---TGCCGDENLHCVPVETANVTMQLL-------KIRSGDRPSYVELTFSQHVRCECRPLREKMK</Hsp_qseq>
+      <Hsp_hseq>PHSSTKVYFPRGTILHRCGDDTGCCHHSAWSCQAVESEVVELYFLIFSANLDKHRRGRRQTPEKLSFVNHTRCACKSINEELN</Hsp_hseq>
+      <Hsp_midline>P     ++ P    L RC   TGCC      C  VE+  V +  L       K R G R +  +L+F  H RC C+ + E++ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|RWS27345.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS27345</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.00641325</Hsp_evalue>
+      <Hsp_query-from>69</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>EHMFSPSCVSLLRCTGCCGDENLHCVP--VETANVTMQLLKIRSGDRPSYVELT---FSQHVRCECRPLREKMKP</Hsp_qseq>
+      <Hsp_hseq>DSIMFPKCVRVQRCGGCCVSPRQHCVPTKVTTRDVRRTAIRIKRSAPESVSQTTQVEVHEECQCQCKIKKEDCNP</Hsp_hseq>
+      <Hsp_midline>+ +  P CV + RC GCC     HCVP  V T +V    ++I+     S  + T     +  +C+C+  +E   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|RWS30020.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like protein [Leptotrombidium deliense]</Hit_def>
+  <Hit_accession>RWS30020</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.3426</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>0.0307224</Hsp_evalue>
+      <Hsp_query-from>70</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>64</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>HMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIR</Hsp_qseq>
+      <Hsp_hseq>ELYFPWCVKLPRCSGCCPSRRLECVATKVTKVDITGVKLQ</Hsp_hseq>
+      <Hsp_midline> ++ P CV L RC+GCC    L CV  +   V +  +K++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>86</Statistics_hsp-len>
+      <Statistics_eff-space>313725641</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.6.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>NP_079484.1</BlastOutput_query-ID>
+  <BlastOutput_query-def>platelet-derived growth factor D isoform 1 precursor [Homo sapiens] &gt;ref|XP_003828415.1| platelet-derived growth factor D isoform X1 [Pan paniscus] &gt;ref|XP_004052090.1| platelet-derived growth factor D isoform X1 [Gorilla gorilla gorilla] &gt;ref|XP_522165.2| platelet-derived growth factor D isoform X1 [Pan troglodytes] &gt;sp|Q9GZP0.1| RecName: Full=Platelet-derived growth factor D; Short=PDGF-D; AltName: Full=Iris-expressed growth factor; AltName: Full=Spinal cord-derived growth factor B; Short=SCDGF-B; Contains: RecName: Full=Platelet-derived growth factor D, latent form; Short=PDGFD latent form; Contains: RecName: Full=Platelet-derived growth factor D, receptor-binding form; Short=PDGFD receptor-binding form; Flags: Precursor [Homo sapiens] &gt;gb|AAG39287.1| MSTP036 [Homo sapiens] &gt;gb|AAK20081.1| iris-expressed growth factor long form [Homo sapiens] &gt;gb|AAK38840.1| platelet-derived growth factor D [Homo sapiens] &gt;gb|AAK56136.1| platelet-derived growth factor D [Homo sapiens] &gt;gb|EAW67045.1| platelet derived growth factor D, isoform CRA_a [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>200</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>NP_079484.1</Iteration_query-ID>
+  <Iteration_query-def>platelet-derived growth factor D isoform 1 precursor [Homo sapiens] &gt;ref|XP_003828415.1| platelet-derived growth factor D isoform X1 [Pan paniscus] &gt;ref|XP_004052090.1| platelet-derived growth factor D isoform X1 [Gorilla gorilla gorilla] &gt;ref|XP_522165.2| platelet-derived growth factor D isoform X1 [Pan troglodytes] &gt;sp|Q9GZP0.1| RecName: Full=Platelet-derived growth factor D; Short=PDGF-D; AltName: Full=Iris-expressed growth factor; AltName: Full=Spinal cord-derived growth factor B; Short=SCDGF-B; Contains: RecName: Full=Platelet-derived growth factor D, latent form; Short=PDGFD latent form; Contains: RecName: Full=Platelet-derived growth factor D, receptor-binding form; Short=PDGFD receptor-binding form; Flags: Precursor [Homo sapiens] &gt;gb|AAG39287.1| MSTP036 [Homo sapiens] &gt;gb|AAK20081.1| iris-expressed growth factor long form [Homo sapiens] &gt;gb|AAK38840.1| platelet-derived growth factor D [Homo sapiens] &gt;gb|AAK56136.1| platelet-derived growth factor D [Homo sapiens] &gt;gb|EAW67045.1| platelet derived growth factor D, isoform CRA_a [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>200</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_029458287.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029458287</Hit_accession>
+  <Hit_len>367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>349.747</Hsp_bit-score>
+      <Hsp_score>896</Hsp_score>
+      <Hsp_evalue>7.1774e-121</Hsp_evalue>
+      <Hsp_query-from>171</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>167</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>163</Hsp_identity>
+      <Hsp_positive>181</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>EDFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQF--EPGHIKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>DDFQPAA-SETNWESVTSSVSEGSYQSPSVTDSTLTAETLDQTIAIFDTVEELLKYLNPDTWQEDLENLYTDTAHYRGRTYHEKKSKVDLDRLNDDVKRYSCTPRNYSVNLREELKLSNAVFFPRCLLVQRCGGNCGCGTVNWRSCTCTSGKTVKKYHEVLKFIPEPGHLKRKGRTKNMALTDIQLEHHERCDCVCSSRPPR</Hsp_hseq>
+      <Hsp_midline>+DFQPAA SETNWESVTSS+S  SY SPSVTD TL A+ LD+ IA FDTVE+LLKY NP++WQEDLEN+Y DT  YRGR+YH++KSKVDLDRLNDD KRYSCTPRNYSVN+REELKL+N VFFPRCLLVQRCGGNCGCGTVNWRSCTC SGKTVKKYHEVL+F  EPGH+KR+GR K MAL DIQL+HHERCDC+CSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_030056111.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Microcaecilia unicolor]</Hit_def>
+  <Hit_accession>XP_030056111</Hit_accession>
+  <Hit_len>367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>340.502</Hsp_bit-score>
+      <Hsp_score>872</Hsp_score>
+      <Hsp_evalue>2.93232e-117</Hsp_evalue>
+      <Hsp_query-from>171</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>167</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>EDFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQF--EPGHIKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>DDFQPAA-SETNWESVTSSVSEGPYQSPSVTDSTLTAETLDQTIAVFDTVEELLKHLNPDTWQEDLENLYTDTAHYRGRTYHEKKSKVDLDRLNDDVKRYSCTPRNYSVNLREELTMSNAVFFPRCLLVQRCGGNCGCGTANWRSCTCTSGKTVKKYHEVLKFIPEPGHLKRKGKTKNMGLVDIQLEHHERCDCVCSSRPPR</Hsp_hseq>
+      <Hsp_midline>+DFQPAA SETNWESVTSS+S   Y SPSVTD TL A+ LD+ IA FDTVE+LLK+ NP++WQEDLEN+Y DT  YRGR+YH++KSKVDLDRLNDD KRYSCTPRNYSVN+REEL ++N VFFPRCLLVQRCGGNCGCGT NWRSCTC SGKTVKKYHEVL+F  EPGH+KR+G+ K M LVDIQL+HHERCDC+CSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_002934980.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor D [Xenopus tropicalis] &gt;gb|KAE8627615.1| hypothetical protein XENTR_v10007067 [Xenopus tropicalis] &gt;gb|KAE8627616.1| hypothetical protein XENTR_v10007067 [Xenopus tropicalis] &gt;gb|KAE8627617.1| hypothetical protein XENTR_v10007067 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002934980</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>305.834</Hsp_bit-score>
+      <Hsp_score>782</Hsp_score>
+      <Hsp_evalue>2.74306e-103</Hsp_evalue>
+      <Hsp_query-from>172</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>189</Hsp_hit-from>
+      <Hsp_hit-to>389</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>144</Hsp_identity>
+      <Hsp_positive>174</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>DFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEP---GHIKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>DFLPAA-SETNWESVTSSFSELSYHPPSVTDSTVTAEALDQTIAHFDTVEEVLKHFNPESWQDDLENLYTDTSQFRGRTFQEKKSKVNLDRLNDDVKRYSCTPRNYTVNLREELKITNAVFFPRCLLIKRCGGNCGCGTPNWKSCVCTSGKTVKKYHEVLKVTPDNSNNKKTKSKSKNMAIVDIQLEHHERCDCICSSRPPR</Hsp_hseq>
+      <Hsp_midline>DF PAA SETNWESVTSS S +SY+ PSVTD T+ A+ALD+ IA FDTVE++LK+FNPESWQ+DLEN+Y DT ++RGR++ ++KSKV+LDRLNDD KRYSCTPRNY+VN+REELK+ N VFFPRCLL++RCGGNCGCGT NW+SC C SGKTVKKYHEVL+  P    + K + ++K MA+VDIQL+HHERCDCICSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_018105801.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D-like [Xenopus laevis] &gt;gb|OCT93204.1| hypothetical protein XELAEV_18016268mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018105801</Hit_accession>
+  <Hit_len>389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.827</Hsp_bit-score>
+      <Hsp_score>769</Hsp_score>
+      <Hsp_evalue>2.66708e-101</Hsp_evalue>
+      <Hsp_query-from>172</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>189</Hsp_hit-from>
+      <Hsp_hit-to>389</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>173</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>DFQPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGH---IKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>DFLPAA-SETNWESVTSSFSELSYHSLSVTDSTVTAEALDQTIAQFDTVEEVLKHFNPESWQADLENLYTDTAQFRGRTFQEKKSKVNLDRLNDDVKHYSCTPRNYTVNLREELKITNAVFFPRCLLIKRCGGNCGCGTPNWKSCVCTSGKTVKKYHEVLKVMPENSINKKTKSKSKNMSIVDIQLEHHERCDCICSSRPPR</Hsp_hseq>
+      <Hsp_midline>DF PAA SETNWESVTSS S +SY+S SVTD T+ A+ALD+ IA+FDTVE++LK+FNPESWQ DLEN+Y DT ++RGR++ ++KSKV+LDRLNDD K YSCTPRNY+VN+REELK+ N VFFPRCLL++RCGGNCGCGT NW+SC C SGKTVKKYHEVL+  P +    K + ++K M++VDIQL+HHERCDCICSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_018429246.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D-like [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018429246</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>256.914</Hsp_bit-score>
+      <Hsp_score>655</Hsp_score>
+      <Hsp_evalue>5.27524e-87</Hsp_evalue>
+      <Hsp_query-from>195</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>YNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEP--GHIKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>YYSPSATNSTVLAEAMDQAISMFDTVEEVVKHLNPVTWQEELENLYTDTAQHWGRTFQERKSKVNLDRLNDDVKRYSCTPRNFTVNLREELKITSAVFFPRCLLVKRCGGNCGCGTPYTKSCTCTSGKTVKKYHEVLRVVPEVGYNKKKN-GKNMSIIDIQLEHHERCDCICSSRPPR</Hsp_hseq>
+      <Hsp_midline>Y SPS T+ T++A+A+D+ I+ FDTVE+++K+ NP +WQE+LEN+Y DT ++ GR++ +RKSKV+LDRLNDD KRYSCTPRN++VN+REELK+ + VFFPRCLLV+RCGGNCGCGT   +SCTC SGKTVKKYHEVL+  P  G+ K++   K M+++DIQL+HHERCDCICSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_018101056.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor D-like [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018101056</Hit_accession>
+  <Hit_len>296</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.874</Hsp_bit-score>
+      <Hsp_score>455</Hsp_score>
+      <Hsp_evalue>3.82137e-55</Hsp_evalue>
+      <Hsp_query-from>258</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>296</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>VDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEP---GHIKRRGRAKTMALVDIQLDHHERCDCICSSRPPR</Hsp_qseq>
+      <Hsp_hseq>VNLDRLNDDVKRYSCTPRNYTVNLREELKITNAVFFPRCLLIKRCGGNCGCGTPNWKSCICTAGKTVKKYHEVLKVMPENSNNKKTKSKSKNMSIVDIQLEHHERCDCICSSRPPR</Hsp_hseq>
+      <Hsp_midline>V+LDRLNDD KRYSCTPRNY+VN+REELK+ N VFFPRCLL++RCGGNCGCGT NW+SC C +GKTVKKYHEVL+  P    + K + ++K M++VDIQL+HHERCDCICSSRPPR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|PIO39432.1|</Hit_id>
+  <Hit_def>hypothetical protein AB205_0097110, partial [Lithobates catesbeianus]</Hit_def>
+  <Hit_accession>PIO39432</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.451</Hsp_bit-score>
+      <Hsp_score>389</Hsp_score>
+      <Hsp_evalue>1.09228e-46</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>GPSVFPPSALPLDVLSATVSRFGTVEEVIRFLEPDRWQLDIEELYRPTWQLLGKSYIHGRKSRGGDLSIMRDEVRLYSCTPRNFSVSLREELKRTDAIFWPSCLLVKRCGGNCACCNYSCNECQCTPTKVTKKYHEVLQ-----LRQRTGSKSLQKSLTDVALEHHEECACLC</Hsp_hseq>
+      <Hsp_midline> PSV  P+ L  D L   ++ F TVE+++++  P+ WQ D+E +Y  T +  G+SY H RKS+  DL  + D+ + YSCTPRN+SV++REELK  + +F+P CLLV+RCGGNC C   +   C C   K  KKYHEVLQ     +++R  +K++  +L D+ L+HHE C C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_018086693.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Xenopus laevis] &gt;gb|OCT99668.1| hypothetical protein XELAEV_18005451mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018086693</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>152.525</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>6.64822e-44</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>341</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>SPSVLPPSALPLDILSETVARFETLEEVIRYLEPDRLHLDIEDLYRPPWQLLGKSYMYGRKNRVVDLNLLKEEVRLYSCTPRNFSVFLREELKRTDVIFWPSCLLVKRCGGNCACCNHVCRECQCMPTKVTKKYHEVLQ-----LKQRNGMKTLQKSLADVPLEHHEECTCMC</Hsp_hseq>
+      <Hsp_midline>SPSV  P+ L  D L + +A F+T+E++++Y  P+    D+E++Y    +  G+SY + RK++V DL+ L ++ + YSCTPRN+SV +REELK  +V+F+P CLLV+RCGGNC C     R C C   K  KKYHEVLQ     +K+R   KT+  +L D+ L+HHE C C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_018415213.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018415213</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>151.369</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>1.49495e-43</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>173</Hsp_hit-from>
+      <Hsp_hit-to>340</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>SSSVLPPSALPLDVLSATVSHFGTVEEVIRYLEPDRWHLDIEELYRPSWQLLGKSYIHGRKSRAGDLSIMREEVRLYSCTPRNFSVSLREELKRTDAIFWPSCLLVKRCGGNCACCNYSCNECQCTPTKVTKKYHEVLQ-----LRQRTGSKSLQKSLTDVALEHHEECTCLC</Hsp_hseq>
+      <Hsp_midline>S SV  P+ L  D L   ++ F TVE++++Y  P+ W  D+E +Y  + +  G+SY H RKS+  DL  + ++ + YSCTPRN+SV++REELK  + +F+P CLLV+RCGGNC C   +   C C   K  KKYHEVLQ     +++R  +K++  +L D+ L+HHE C C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_002934792.2|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Xenopus tropicalis] &gt;gb|KAE8630080.1| hypothetical protein XENTR_v10000683 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002934792</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.673</Hsp_bit-score>
+      <Hsp_score>374</Hsp_score>
+      <Hsp_evalue>1.93747e-42</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>341</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>SPSVLPPSALPLDILSETVARFETLEEVIRYLEPDRLHLDIEDLYRPPWQLLGKSYMYGRKNRVVDLNLLKEEVRLYSCTPRNFSVFLREELKRTDAIFWPSCLLVKRCGGNCACCNHMCSECHCMPTKVTKKYHEVLQ-----LKQRSGMKTLQKSLADVPLEHHEECACMC</Hsp_hseq>
+      <Hsp_midline>SPSV  P+ L  D L + +A F+T+E++++Y  P+    D+E++Y    +  G+SY + RK++V DL+ L ++ + YSCTPRN+SV +REELK  + +F+P CLLV+RCGGNC C       C C   K  KKYHEVLQ     +K+R   KT+  +L D+ L+HHE C C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_018098734.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like [Xenopus laevis] &gt;gb|OCT96980.1| hypothetical protein XELAEV_18009200mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018098734</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>4.13025e-42</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>341</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>SPSVLPPSALPLDILSETVARFETLEEVIRYLEPDRLHLDIEDLYRPPLQLLGKSYMYGRKNRVVDLNLLKEEVRLYSCTPRNFSVFLREELKRTDAIFWPSCLLVKRCGGNCACCNHVCSECHCMPTKVTKKYHEVLQ-----LKQRIGMKTLQKSLADVPLEHHEECACMC</Hsp_hseq>
+      <Hsp_midline>SPSV  P+ L  D L + +A F+T+E++++Y  P+    D+E++Y    +  G+SY + RK++V DL+ L ++ + YSCTPRN+SV +REELK  + +F+P CLLV+RCGGNC C       C C   K  KKYHEVLQ     +K+R   KT+  +L D+ L+HHE C C+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_030047468.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Microcaecilia unicolor]</Hit_def>
+  <Hit_accession>XP_030047468</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.436</Hsp_bit-score>
+      <Hsp_score>363</Hsp_score>
+      <Hsp_evalue>6.58387e-41</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>SPSVTDPT-LIADALDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSY-HDRKSKV-DLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTM--ALVDIQLDHHERCDCIC</Hsp_qseq>
+      <Hsp_hseq>TPSLLPPSALPLDLLNNAVAGFSTMEELMRYLEPDRWQLDIEDLYKTTWQLLGKVYIHGRKSRVVDLNLLKEEVRLYSCTPRNFSVSLREELKRTDVIFWPGCLLVKRCGGNCACCNHNCNECQCVPTKVTKKYHEVLQ-----LKHRSGMKGLHKSLTDVLLEHHEECDCLC</Hsp_hseq>
+      <Hsp_midline>+PS+  P+ L  D L+  +A F T+E+L++Y  P+ WQ D+E++Y  T +  G+ Y H RKS+V DL+ L ++ + YSCTPRN+SV++REELK  +V+F+P CLLV+RCGGNC C   N   C C   K  KKYHEVLQ     +K R   K +  +L D+ L+HHE CDC+C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|NP_001089283.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C S homeolog precursor [Xenopus laevis] &gt;gb|AAH90223.1| MGC85010 protein [Xenopus laevis]</Hit_def>
+  <Hit_accession>NP_001089283</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.0029822</Hsp_evalue>
+      <Hsp_query-from>174</Hsp_query-from>
+      <Hsp_query-to>363</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>QPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQ------EDLENMYLDTPR---YRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCI</Hsp_qseq>
+      <Hsp_hseq>QPGAAYESGQGYYDDPEFGDTQDQP--------GKELEEQLRSVSSVDELMTLLYPESWKMFKCQLRQGGTTGFDTRRDDSFKFAAAHYNYNADIWKSIENEWRKTQCMPREVCVDVGKEFGAPTNTFFKPPCVSVYRCGGCCNSEGMH---CMNTSSTFISK----TLFEITVPLSQGPVKP---VTISFANHTSCRCM</Hsp_hseq>
+      <Hsp_midline>QP AA E+          G + + P           L++++    +V++L+    PESW+              DT R   ++  + H   +      + ++ ++  C PR   V++ +E       FF P C+ V RCGG C    ++   C   S   + K      FE      +G  K    V I   +H  C C+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|OCT96929.1|</Hit_id>
+  <Hit_def>hypothetical protein XELAEV_18009147mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>OCT96929</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.0030447</Hsp_evalue>
+      <Hsp_query-from>174</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>QPAAASETNWESVTSSISGVSYNSPSVTDPTLIADALDKKIAEFDTVEDLLKYFNPESWQ------EDLENMYLDTPR---YRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>QPGAAYESGQGYYDDPEFGDTQDQP--------GKELEEQLRSVSSVDELMTLLYPESWKMFKCQLRQGGTTGFDTRRDDSFKFAAAHYNYNADIWKSIENEWRKTQCMPREVCVDVGKEFGAPTNTFFKPPCVSVYRCGGCC</Hsp_hseq>
+      <Hsp_midline>QP AA E+          G + + P           L++++    +V++L+    PESW+              DT R   ++  + H   +      + ++ ++  C PR   V++ +E       FF P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_002933363.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Xenopus tropicalis] &gt;gb|KAE8629860.1| hypothetical protein XENTR_v10000618 [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>XP_002933363</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00565232</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>LDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKSKVDL--------------DRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRSVSSVDELMTLLYPESWK-----MFKCQLRQGGSTGYDTRREDSFTFAAAHYNYNAEIWKSIENEWRKTQCIPREVCVDVGKEFGAPTNTFFKPPCVSVYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L++++    +V++L+    PESW+     M+    R  G + +D + +                   + ++ ++  C PR   V++ +E       FF P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_018428241.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X1 [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018428241</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0116584</Hsp_evalue>
+      <Hsp_query-from>181</Hsp_query-from>
+      <Hsp_query-to>362</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>TNWESVTSSISGVSYNSPSVTDPTLIADALDKKIA--EFDTVEDLLKYFNPES-WQEDLENMYLDTPR---YRGRSYHDRKS-KVDLDRLNDDAKRYSCTPRNYSVNI-REEL--KLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDC</Hsp_qseq>
+      <Hsp_hseq>TSW--VWILLLGVCYLSPSFGEEAEIPQELIEKLAHSEIHSIRDLQRILDIDSVGNDDFSGGNVKTQTHNFYHNRHVQEKRSVPIRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCC-----NTSSVKCQPSRIHHRSVKVAKVE--YVRKKPKLKE---VLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>T+W  V   + GV Y SPS  +   I   L +K+A  E  ++ DL +  + +S   +D     + T     Y  R   +++S  +   R  ++A    C  R     I R ++    AN + +P C+ V+RC G C     N  S  C   +   +  +V + E  +++++ + K    V ++L+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_018428313.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A isoform X2 [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018428313</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0129909</Hsp_evalue>
+      <Hsp_query-from>181</Hsp_query-from>
+      <Hsp_query-to>362</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>TNWESVTSSISGVSYNSPSVTDPTLIADALDKKIA--EFDTVEDLLKYFNPES-WQEDLENMYLDTPR---YRGRSYHDRKS-KVDLDRLNDDAKRYSCTPRNYSVNI-REEL--KLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDC</Hsp_qseq>
+      <Hsp_hseq>TSW--VWILLLGVCYLSPSFGEEAEIPQELIEKLAHSEIHSIRDLQRILDIDSVGNDDFSGGNVKTQTHNFYHNRHVQEKRSVPIRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPPCVEVKRCTGCCNTSSVK-----CQPSRIHHRSVKVAKVE--YVRKKPKLKE---VLVRLEEHLECTC</Hsp_hseq>
+      <Hsp_midline>T+W  V   + GV Y SPS  +   I   L +K+A  E  ++ DL +  + +S   +D     + T     Y  R   +++S  +   R  ++A    C  R     I R ++    AN + +P C+ V+RC G C   +V      C   +   +  +V + E  +++++ + K    V ++L+ H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_029435360.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X1 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029435360</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0173852</Hsp_evalue>
+      <Hsp_query-from>207</Hsp_query-from>
+      <Hsp_query-to>307</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>ADALDKKIAEFDTVEDLLKYFNPESWQE--------DLEN---------MYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNCG</Hsp_qseq>
+      <Hsp_hseq>SKELEEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGSLQNNREWPSFDPKTEDTVRFAAAHYNTD----ILKSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSLYRCGGCCN</Hsp_hseq>
+      <Hsp_midline>+  L++++    +V++L+    PE W+          L+N            DT R+    Y+       L  ++++ ++  C PR   +++ +E   A   FF P C+ + RCGG C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_029435431.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C isoform X2 [Rhinatrema bivittatum]</Hit_def>
+  <Hit_accession>XP_029435431</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.0191014</Hsp_evalue>
+      <Hsp_query-from>195</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>YNSPSVTDPTLIADA-LDKKIAEFDTVEDLLKYFNPESWQE--------DLEN---------MYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>YDDPDLGDSRDQASKELEEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGSLQNNREWPSFDPKTEDTVRFAAAHYNTDI----LKSIDNEWRKTQCMPREVCIDVGKEFGAATNTFFKPPCVSLYRCGGCC</Hsp_hseq>
+      <Hsp_midline>Y+ P + D    A   L++++    +V++L+    PE W+          L+N            DT R+    Y+       L  ++++ ++  C PR   +++ +E   A   FF P C+ + RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|XP_018419054.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018419054</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0204428</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>LDKKIAEFDTVEDLLKYFNPESWQEDLENMYLDTPRYRGRSYHDRKS----KVDLDRLNDDA----------KRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRAVSSVDELMTLLYPESWK-----MFKCQLRQGGQSGFDSRRDDSVKYAAAHYNYNADIWKSIEIEWRKTQCMPREVCVDVGKEFGAPTNTFFKPPCVSLYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L++++    +V++L+    PESW+     M+    R  G+S  D +     K      N +A          ++  C PR   V++ +E       FF P C+ + RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_018086215.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like [Xenopus laevis] &gt;gb|OCT99613.1| hypothetical protein XELAEV_18005395mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018086215</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.0210147</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>LDKKIAEFDTVEDLLKYFNPESWQ------EDLENMYLDTPR---YRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>LEEQLRSVSSVDELMTLLYPESWKMFKCQLRQGGTTGFETRRDDNFKFAAAHYNYNAEIWKSIENEWRKTQCLPREVCVDVGKEFGAPTNTFFKPPCVSIYRCGGCC</Hsp_hseq>
+      <Hsp_midline>L++++    +V++L+    PESW+              +T R   ++  + H   +      + ++ ++  C PR   V++ +E       FF P C+ + RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_030047381.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: vascular endothelial growth factor C [Microcaecilia unicolor]</Hit_def>
+  <Hit_accession>XP_030047381</Hit_accession>
+  <Hit_len>410</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0474674</Hsp_evalue>
+      <Hsp_query-from>202</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>DPTLIAD------ALDKKIAEFDTVEDLLKYFNPESWQ-----------------EDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNC</Hsp_qseq>
+      <Hsp_hseq>DPDLVESRDQANKELEEQLRSVSSVDELMTVLYPEYWKMFKCQLRKGGLQNNREWPSFEPRTESTVRFAAVHYNQISXKWKCIEI--EWRKTQCVPREVCIDVGKEFGAATNTFFKPPCVSVYRCGGCC</Hsp_hseq>
+      <Hsp_midline>DP L+         L++++    +V++L+    PE W+                    E     T R+    Y+    K     +  + ++  C PR   +++ +E   A   FF P C+ V RCGG C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_030058182.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor D [Microcaecilia unicolor]</Hit_def>
+  <Hit_accession>XP_030058182</Hit_accession>
+  <Hit_len>366</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.0543691</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>307</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>LDKKIAEFDTVEDLLKYFNPES---WQEDLENMYLDTPRYRGRSYHDRKSKVD------LDRLNDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNCG</Hsp_qseq>
+      <Hsp_hseq>LENQIRSAASLEELLEIIQSRELKLWRCRSKIKHLAGPDSRSASHRSTRFAAAFYGAEVLKEIGEEWQKTQCMPRETCVDVAKDLGTSTNMFFKPPCVSVFRCGGCCS</Hsp_hseq>
+      <Hsp_midline>L+ +I    ++E+LL+         W+   +  +L  P  R  S+   +          L  + ++ ++  C PR   V++ ++L  +  +FF P C+ V RCGG C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_018114321.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like isoform X1 [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018114321</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.058692</Hsp_evalue>
+      <Hsp_query-from>206</Hsp_query-from>
+      <Hsp_query-to>368</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>IADALDKKIAE--FDTVEDLLKYFNPESW--QEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREEL---KLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCICSSRP</Hsp_qseq>
+      <Hsp_hseq>IPEEMFKKISEGAVSSISELRRVLQIDSVDDEDDFNYASIHETR-RSPTNHSSHSRVIRSLDAEQAVIAECKPRVEVFEISRKLVDPTNANFLVFPQCVEVQRCSGCC-----NSKTMRCAPTRIHIRHVKVNKI---YITKQGKKHVKVVVPLE-DH---LDCKCEPVP</Hsp_hseq>
+      <Hsp_midline>I + + KKI+E    ++ +L +    +S   ++D     +   R R  + H   S+V      + A    C PR     I  +L     AN + FP+C+ VQRC G C     N ++  C   +   ++ +V +    +I ++G+     +V ++ DH    DC C   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_018114322.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit B-like isoform X2 [Xenopus laevis] &gt;gb|OCT85489.1| hypothetical protein XELAEV_18023657mg [Xenopus laevis]</Hit_def>
+  <Hit_accession>XP_018114322</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.061347</Hsp_evalue>
+      <Hsp_query-from>206</Hsp_query-from>
+      <Hsp_query-to>368</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>IADALDKKIAE--FDTVEDLLKYFNPESW--QEDLENMYLDTPRYRGRSYHDRKSKVDLDRLNDDAKRYSCTPRNYSVNIREEL---KLANVVFFPRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDCICSSRP</Hsp_qseq>
+      <Hsp_hseq>IPEEMFKKISEGAVSSISELRRVLQIDSVDDEDDFNYASIHETR-RSPTNHSSHSRVIRSLDAEQAVIAECKPRVEVFEISRKLVDPTNANFLVFPQCVEVQRCSGCC-----NSKTMRCAPTRIHIRHVKVNKI---YITKQGKKHVKVVVPLE-DH---LDCKCEPVP</Hsp_hseq>
+      <Hsp_midline>I + + KKI+E    ++ +L +    +S   ++D     +   R R  + H   S+V      + A    C PR     I  +L     AN + FP+C+ VQRC G C     N ++  C   +   ++ +V +    +I ++G+     +V ++ DH    DC C   P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_018418565.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D [Nanorana parkeri]</Hit_def>
+  <Hit_accession>XP_018418565</Hit_accession>
+  <Hit_len>341</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0785488</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>362</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>LDKKIAEFDTVEDLLKYFNPES---WQ-EDLENMYLDTPRYRG--RSYHDRKSKVDLDRL---NDDAKRYSCTPRNYSVNIREELKLANVVFF-PRCLLVQRCGGNCGCGTVNWRSCTCNSGKTVKKYHEVLQFEPGHIKRRGRAKTMALVDIQLDHHERCDC</Hsp_qseq>
+      <Hsp_hseq>LEYKIRSAANLEELLRLTHPRELKLWRCRSKLKSYINTDTRSGPHRSTRFAAAFYDIEILTVIDEEWQKTQCMPRETCIDVAKDLGTATNKFFKPPCVSVYRCGGCC-----NEEGVTCLNTSTSYVLKSVFQIS------VPLTQAPEPVTIKVANHTSCKC</Hsp_hseq>
+      <Hsp_midline>L+ KI     +E+LL+  +P     W+       Y++T    G  RS     +  D++ L   +++ ++  C PR   +++ ++L  A   FF P C+ V RCGG C     N    TC +  T      V Q            +    V I++ +H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>274599501</Statistics_db-num>
+      <Statistics_db-len>98774826349</Statistics_db-len>
+      <Statistics_hsp-len>112</Statistics_hsp-len>
+      <Statistics_eff-space>12632922456</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

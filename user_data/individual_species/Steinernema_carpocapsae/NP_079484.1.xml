@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>370</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-D NP_079484.1 platelet-derived growth factor D isoform 1 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>370</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|TKR64617.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_025115 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR64617</Hit_accession>
+  <Hit_len>958</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>4.2555e-10</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>710</Hsp_hit-from>
+      <Hsp_hit-to>811</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>SGVITSPNFPDEYSNFKRCQWHFVTTPGHRLALTFD-EFVLE--DDKACSFDRVEVFDGAESTSSILGIFCGVAK-PPTLTSTSNQLFVVMSSDST-VTRRGFKAFY</Hsp_hseq>
+      <Hsp_midline>+G + SP FP+ Y       W   +    R+ L FD +F LE  ++  C +D VEV D +E+++ I G +CG  + PP + S +NQ+ +   SD   V + GFK +Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.99085e-08</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>550</Hsp_hit-from>
+      <Hsp_hit-to>659</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCG---HKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDF</Hsp_qseq>
+      <Hsp_hseq>NGTFQSPNFPVRYEPNTECTWEIEADEGYQIIVNF-THFNVEGLKTE-CAYDYLKIGKIAGSQNEFE-KYCGDYHQPQQPLVVTSLTNKLRVTFVSDSS-VEKTGFAAFF--LTDF</Hsp_hseq>
+      <Hsp_midline>NG  QSP FP  Y  N   TW + + E  +I + F   F +E  + + C YD++++  I+ +      ++CG     + P  + S TN++++TF SD   V K GF  ++  L DF</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>2.81591e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>837</Hsp_hit-from>
+      <Hsp_hit-to>930</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>NSYPRNLLLTWRLHSQENTR-IQLVFDNQFGLEEAENDICRYDFVEVEDIS-ETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY</Hsp_qseq>
+      <Hsp_hseq>NKYDKKLVCRWEITAADKSQGVELRF-TQFAVEMGTS--CEYDYVAIYDGAIATENNKFGQFCGDK-IPPLIVSTTNVVLVEFITDDS-VEQKGFVLEY</Hsp_hseq>
+      <Hsp_midline>N Y + L+  W + + + ++ ++L F  QF +E   +  C YD+V + D +  T     G++CG K +PP I S TN + + F +DD  V + GF + Y</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000338751</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>184</Hsp_query-to>
+      <Hsp_hit-from>390</Hsp_hit-from>
+      <Hsp_hit-to>511</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV-EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWE</Hsp_qseq>
+      <Hsp_hseq>IADEGVIESPRFPEYYSSDANCMWAITVPVGFRVAVKF-HFFHVEQHKD--CIYDRLEFYEGHVATEGRLLERLCGTHVSESIQTERENQMLVKFVSDSS-VQKPGFQ--FEFVKEFDECASGTHDCE</Hsp_hseq>
+      <Hsp_midline>+   G ++SPRFP  Y  +    W +      R+ + F + F +E+ ++  C YD +E  E    T   +  R CG          R NQ+ + F SD   V KPGF+  +  +++F   A+   + E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|TKR92560.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_007189 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR92560</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>8.39193e-07</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA--ENDICRYDFVE-VEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL-EDFQPAAASETNWESVTSSISGVS</Hsp_qseq>
+      <Hsp_hseq>GFITSPAFPHSYPPDQHCSYRLKASSNALIIHLTFIEFDLEKKTERSGQCLNDFVVFVITDREGREHVTERFCG-TEIPEPIQTMQSELVVMFTASQANEHK-GFKIRYDFIPEERIPEPPASTSIETL--AIAGIA</Hsp_hseq>
+      <Hsp_midline>G++ SP FP+SYP +   ++RL +  N  I  +   +F LE+    +  C  DFV  V    E    +  R+CG  E+P  I++  +++ + F +      K GFKI Y  + E+  P   + T+ E++  +I+G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|TKR94272.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_008579 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR94272</Hit_accession>
+  <Hit_len>801</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.88469e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>464</Hsp_hit-from>
+      <Hsp_hit-to>646</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGL---EEAENDICRYDFVEVEDI------SETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE-------------TNWESVTSSIS----GVSYNSPSVTDPTLIADALDKKIAEFDTVE</Hsp_qseq>
+      <Hsp_hseq>GFFNSPRYPANYPLDTNCTYFIQARPGRQILLYFE-QFALYRDDGGSADDCK-DWLEVFDVFTNKDGSETLKLHAKHCAGTFPGPTVSTFGSHEMRVVFSSDSSGTAN-GFKAFYEVRKAFKEDIPSKDGLEPRHCGHRIVANADHVTGSIMSPGYAIKYNRDTICDWEVVARANHQILIRFNALE</Hsp_hseq>
+      <Hsp_midline>G+  SPR+P +YP +   T+ + ++   +I L F+ QF L   +    D C+ D++EV D+      SET  +      G    P      ++++++ F SD    A  GFK +Y + + F+    S+              N + VT SI      + YN  ++ D  ++A A  + +  F+ +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|TKR94273.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_008579 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR94273</Hit_accession>
+  <Hit_len>904</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>1.9602e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>464</Hsp_hit-from>
+      <Hsp_hit-to>646</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGL---EEAENDICRYDFVEVEDI------SETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE-------------TNWESVTSSIS----GVSYNSPSVTDPTLIADALDKKIAEFDTVE</Hsp_qseq>
+      <Hsp_hseq>GFFNSPRYPANYPLDTNCTYFIQARPGRQILLYFE-QFALYRDDGGSADDCK-DWLEVFDVFTNKDGSETLKLHAKHCAGTFPGPTVSTFGSHEMRVVFSSDSSGTAN-GFKAFYEVRKAFKEDIPSKDGLEPRHCGHRIVANADHVTGSIMSPGYAIKYNRDTICDWEVVARANHQILIRFNALE</Hsp_hseq>
+      <Hsp_midline>G+  SPR+P +YP +   T+ + ++   +I L F+ QF L   +    D C+ D++EV D+      SET  +      G    P      ++++++ F SD    A  GFK +Y + + F+    S+              N + VT SI      + YN  ++ D  ++A A  + +  F+ +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|TKR94271.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_008579 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR94271</Hit_accession>
+  <Hit_len>865</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.33045e-06</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>528</Hsp_hit-from>
+      <Hsp_hit-to>710</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGL---EEAENDICRYDFVEVEDI------SETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASE-------------TNWESVTSSIS----GVSYNSPSVTDPTLIADALDKKIAEFDTVE</Hsp_qseq>
+      <Hsp_hseq>GFFNSPRYPANYPLDTNCTYFIQARPGRQILLYFE-QFALYRDDGGSADDCK-DWLEVFDVFTNKDGSETLKLHAKHCAGTFPGPTVSTFGSHEMRVVFSSDSSGTAN-GFKAFYEVRKAFKEDIPSKDGLEPRHCGHRIVANADHVTGSIMSPGYAIKYNRDTICDWEVVARANHQILIRFNALE</Hsp_hseq>
+      <Hsp_midline>G+  SPR+P +YP +   T+ + ++   +I L F+ QF L   +    D C+ D++EV D+      SET  +      G    P      ++++++ F SD    A  GFK +Y + + F+    S+              N + VT SI      + YN  ++ D  ++A A  + +  F+ +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|TKR76615.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_017729 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR76615</Hit_accession>
+  <Hit_len>4009</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.43918e-06</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>3269</Hsp_hit-from>
+      <Hsp_hit-to>3468</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>204</Hsp_align-len>
+      <Hsp_qseq>ICANFCSCRDTSATPQSASIKA------LRNANLRRDESNHLTD------LYRRDETIQVKGNG-----YVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV-EDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYY--SLLEDFQPAAA--SETNWESVTSSISG</Hsp_qseq>
+      <Hsp_hseq>VIGTYCTGQTDLGTQNSLSIRGPVGVKFVTNATMNHDKVKRFKGFKLSYALAECGGEIKLKENAGSFSKTLSSPGFPLPYHHDMECVWNITAPANRIISVKFTD-FDIEMSND--CRFDYVELFNGINETEANSLGKLCGDVLPPSQMFSTGRNMVVKFKSDRS-NAKAGFRLVLTPTLGEDMGCGGTFNATMDWKILKSPLTG</Hsp_hseq>
+      <Hsp_midline>+   +C+ +    T  S SI+       + NA +  D+            L      I++K N       + SP FP  Y  ++   W + +  N  I + F + F +E + +  CR+D+VE+   I+ET     G+ CG    P ++ S    + + FKSD    AK GF++    +L ED        +  +W+ + S ++G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.12757e-05</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>2418</Hsp_hit-from>
+      <Hsp_hit-to>2508</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>VQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN-QFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>LEAPGFPSVAPNSLDCSWTLRGPPGRRIKFTVDPVKFDLQTAAMETCDDDFMEIRDGASLHAPLVGRFC-RQNPPSTVFSTGSYLHVRFVTD</Hsp_hseq>
+      <Hsp_midline>+++P FP+  P +L  +W L      RI+   D  +F L+ A  + C  DF+E+ D +     + GR+C  +  P  + S  + + + F +D</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000787108</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>3070</Hsp_hit-from>
+      <Hsp_hit-to>3185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>KGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEV--EDISETSTIIRGRW------------CGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKI</Hsp_qseq>
+      <Hsp_hseq>KMSGHIMSPEWPKDYANDLRCLWDISVPLGYHVQVTFEE---FDVAESDACKKDSLQISEEHQSRAMAPVGGYYFFYDYEDHKPPMCG-SDLPKVYDSESNRIRLNFTTDARSQAK-GFKL</Hsp_hseq>
+      <Hsp_midline>K +G++ SP +P  Y  +L   W +       +Q+ F+     + AE+D C+ D +++  E  S     + G +            CG  ++P    S +N+I++ F +D    AK GFK+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.023086</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>2536</Hsp_hit-from>
+      <Hsp_hit-to>2627</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEV-PPRIKSRTNQIKITFKSD</Hsp_qseq>
+      <Hsp_hseq>NATVSSPNFPEPYPSEADCEWNVRAPNNHFVNVSF-NHLWMIYSEN--CSLDYVTIKDGNSTGADLIPKTCNMNQVRGETFHSTRNTMHVKFLSN</Hsp_hseq>
+      <Hsp_midline>N  V SP FP  YP      W + +  N  + + F N   +  +EN  C  D+V ++D + T   +  + C   +V      S  N + + F S+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>5</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0731055</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>1365</Hsp_hit-from>
+      <Hsp_hit-to>1476</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDN---------QFGLEEAENDICRYDFVEV--EDISETSTIIRG---------RWCGHKEVPPRIKSRTNQIKITFKS</Hsp_qseq>
+      <Hsp_hseq>HGILQSPGYPENTLDARQCKWKIKTSAGNRIRLTFHHFRVTDLMYSRFSL-NSNTHMCSNNFLEIKHEQLGTVHAVIDGIRNDSTTLERFCDKSGEPISLLTKSNEVDISFVS</Hsp_hseq>
+      <Hsp_midline>+G +QSP +P +        W++ +    RI+L F +         +F L  +   +C  +F+E+  E +     +I G         R+C     P  + +++N++ I+F S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|TMS38352.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_005096 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TMS38352</Hit_accession>
+  <Hit_len>3533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.1084e-05</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>232</Hsp_hit-from>
+      <Hsp_hit-to>329</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED--ISETSTIIRGRWCGHKEVPP-RIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>SGQIHSPNYPSSYRLNSNCRWVIESPINSRIQLTFD----YFETEKD---QDLVQVVDGGPSENSTVVLATLSGARTGEKLTFTSSTNMMSIRFRSDSMIQAR-GF</Hsp_hseq>
+      <Hsp_midline>+G + SP +P+SY  N    W + S  N+RIQL FD      E E D    D V+V D   SE ST++     G +        S TN + I F+SD    A+ GF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|TMS38353.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_005096 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TMS38353</Hit_accession>
+  <Hit_len>3432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.11646e-05</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>228</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>152</Hsp_align-len>
+      <Hsp_qseq>CRDTSATPQSASIKALRNANLRRDESNHLTDLYRRDETIQV--KG-NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVED--ISETSTIIRGRWCGHKEVPP-RIKSRTNQIKITFKSDDYFVAKPGF</Hsp_qseq>
+      <Hsp_hseq>CHNGACVPLKDQCNGVNDCGDFSDE--HNCPVSREDLSCMKYEKGESGQIHSPNYPSSYRLNSNCRWVIESPINSRIQLTFD----YFETEKD---QDLVQVVDGGPSENSTVVLATLSGARTGEKLTFTSSTNMMSIRFRSDSMIQAR-GF</Hsp_hseq>
+      <Hsp_midline>C + +  P       + +     DE  H   + R D +     KG +G + SP +P+SY  N    W + S  N+RIQL FD      E E D    D V+V D   SE ST++     G +        S TN + I F+SD    A+ GF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|TMS36439.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_003601 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TMS36439</Hit_accession>
+  <Hit_len>512</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>8.18312e-05</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>NSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYS</Hsp_qseq>
+      <Hsp_hseq>NTYPSNTDCQFLLRATSPSRQIILFVNSSKLEEPLFKNCT-DYVTARDGDQRQSNELKTWCGH-EVPEQIIGTTDSMFLAFHSDE-IVQSTGFIVTYA</Hsp_hseq>
+      <Hsp_midline>N+YP N    + L +   +R  ++F N   LEE     C  D+V   D  +  +     WCGH EVP +I   T+ + + F SD+  V   GF + Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|TKR95121.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_009333 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR95121</Hit_accession>
+  <Hit_len>722</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000105517</Hsp_evalue>
+      <Hsp_query-from>62</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>237</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>GYVQSPRFPNSYPRNLLLTWRL-HSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEV--PPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLED</Hsp_qseq>
+      <Hsp_hseq>GFIQSPRFPDAYPRNILKNYTIVNRNPEGFVRLVFDD-----------CNMHFQSELRILDSS--YRELFNSRQEYRRPPSFVSTNDRIFVIFASHD-FSSPIGFRAKYEFVDE</Hsp_hseq>
+      <Hsp_midline>G++QSPRFP++YPRN+L  + + +      ++LVFD+           C   F     I ++S   R  +   +E   PP   S  ++I + F S D F +  GF+  Y  +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|TKR93608.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_008027 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR93608</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000110462</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>168</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>ALRNANLRRDESNHLTDLYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFD--NQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSS</Hsp_qseq>
+      <Hsp_hseq>GLSDMHAKRDDSKPCQFIFNSTK----KTSGNLWSPNHPGLYPRNINCNYIFHGTATQVVVIHFEYFDVEGFAQCE-DSTQSDYVLFSNY-QTHDRTNRRYCGRTRPSVSIVSESNYFRMMFKSNDIFEAT-GFYAHYQFIT---PKSA-QTNRVKLSSS</Hsp_hseq>
+      <Hsp_midline> L + + +RD+S     ++   +    K +G + SP  P  YPRN+   +  H      + + F+  +  G  + E D  + D+V   +  +T      R+CG       I S +N  ++ FKS+D F A  GF  +Y  +    P +A +TN   ++SS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|TKR68060.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_024104 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR68060</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000170575</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>175</Hsp_query-to>
+      <Hsp_hit-from>83</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>NGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGH---KEVPPR-IKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQP</Hsp_qseq>
+      <Hsp_hseq>NGVITSPLYPQNYPNNDQCYYFINAKQGSVVQFNF-THFDVETC----C--DYVTIYDGRTEKDPILVRFGGHNRTADIPTGPLFSSTRYALMTFTSDN-IVNKPGFAMTYSSVYTASP</Hsp_hseq>
+      <Hsp_midline>NG + SP +P +YP N    + +++++ + +Q  F   F +E      C  D+V + D       I  R+ GH    ++P   + S T    +TF SD+  V KPGF + YS +    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|TKR93609.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_008027 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR93609</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000266161</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>316</Hsp_hit-from>
+      <Hsp_hit-to>464</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>ALRNANLRRDESNHLTDLYRRDETIQVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFD--NQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNWESVTSS</Hsp_qseq>
+      <Hsp_hseq>GLSDMHAKRDDSKPCQFIFNSTK----KTSGNLWSPNHPGLYPRNINCNYIFHGTATQVVVIHFEYFDVEGFAQCE-DSTQSDYVLFSNY-QTHDRTNRRYCGRTRPSVSIVSESNYFRMMFKSNDIFEAT-GFYAHYQFIT----PKSAQTNRVKLSSS</Hsp_hseq>
+      <Hsp_midline> L + + +RD+S     ++   +    K +G + SP  P  YPRN+   +  H      + + F+  +  G  + E D  + D+V   +  +T      R+CG       I S +N  ++ FKS+D F A  GF  +Y  +       +++TN   ++SS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|TKR96315.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_010353 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR96315</Hit_accession>
+  <Hit_len>467</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.0569375</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA----------ENDI--CRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLL</Hsp_qseq>
+      <Hsp_hseq>SPGYPDRYRPGLDCVRVIYAPPNYDVIIHFNERFQIETSYELTLPSAFSRHDVSRCPNDFLEVRDGRYGFSPLIGRFCGMTLPEFEVRATSGYVYLRFHS-DYLLEYVGFHAEYEFV</Hsp_hseq>
+      <Hsp_midline>SP +P+ Y   L     +++  N  + + F+ +F +E +           +D+  C  DF+EV D     + + GR+CG       +++ +  + + F S DY +   GF   Y  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|TKR96316.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_010353 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR96316</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0665147</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>SPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEA----------ENDI--CRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAKPGFKIYYSLLEDFQPAAASETNW</Hsp_qseq>
+      <Hsp_hseq>SPGYPDRYRPGLDCVRVIYAPPNYDVIIHFNERFQIETSYELTLPSAFSRHDVSRCPNDFLEVRDGRYGFSPLIGRFCGMTLPEFEVRATSGYVYLRFHS-DYLLEYVGFHAEYEFVRS-DLALKQEPGW</Hsp_hseq>
+      <Hsp_midline>SP +P+ Y   L     +++  N  + + F+ +F +E +           +D+  C  DF+EV D     + + GR+CG       +++ +  + + F S DY +   GF   Y  +     A   E  W</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|TKR60430.1|</Hit_id>
+  <Hit_def>hypothetical protein L596_027679 [Steinernema carpocapsae]</Hit_def>
+  <Hit_accession>TKR60430</Hit_accession>
+  <Hit_len>385</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.0666294</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>256</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>QVKGNGYVQSPRFPNSYPRNLLLTWRLHSQENTRIQLVFDNQFGLEEAENDICRYDFVEVEDISETSTIIRGRWCGHKEVPPRIKSRTNQIKITFKSDDYFVAK</Hsp_qseq>
+      <Hsp_hseq>QWTSSGVISSSNFPSDYDNDLYCKYTLNSPENTRILLNF-NTFRTEYYK------DYVEVWDGIEGGRLL-AKMHGTQPEKTSFESSENLLTVVFITNPTITMK</Hsp_hseq>
+      <Hsp_midline>Q   +G + S  FP+ Y  +L   + L+S ENTRI L F N F  E  +      D+VEV D  E   ++  +  G +      +S  N + + F ++     K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>2097263580</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>169</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PlGF-1 NP_001280572.1 placenta growth factor isoform 3 precursor [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>169</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>emb|CAG10594.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG10594</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.479</Hsp_bit-score>
+      <Hsp_score>306</Hsp_score>
+      <Hsp_evalue>9.24619e-34</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>91</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGD-RPSYVELTFSQHVRCE</Hsp_qseq>
+      <Hsp_hseq>VLMFEEVWSRSFCRTIEKLVEVVQEYPTEVEYIYSPSCVPLVRCAGCCGDEKLECHPTTTTNVTMQLLKIRPSEPHKEYVHMTFVEHQTCE</Hsp_hseq>
+      <Hsp_midline>V+ F+EVW RS+CR +E+LV+VV EYP+EVE+++SPSCV L+RC GCCGDE L C P  T NVTMQLLKIR  +    YV +TF +H  CE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>emb|CAG01515.1|</Hit_id>
+  <Hit_def>unnamed protein product [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG01515</Hit_accession>
+  <Hit_len>169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>109.383</Hsp_bit-score>
+      <Hsp_score>272</Hsp_score>
+      <Hsp_evalue>7.15408e-31</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>VEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSG-DRPSYVELTFSQHVRCECRPLREKMKPERRRP---KGRGKRRREKQRPTDCHLC</Hsp_qseq>
+      <Hsp_hseq>TKVMMFEEVWAKSMCQPMEQLVDVEQEYPGELEYTYMPSCVPLKRCSGCCGDEHLECQPTLESNVTLQVIKIQQTVVSMHYVEITFVEHQRCECRLKHHKKSFSHESSDFVKNKLRRMKHKKAADSCGKC</Hsp_hseq>
+      <Hsp_midline> +V+ F+EVW +S C+ +E+LVDV  EYP E+E+ + PSCV L RC+GCCGDE+L C P   +NVT+Q++KI+       YVE+TF +H RCECR    K           K + +R + K+    C  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>emb|CAF95492.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAF95492</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.7449</Hsp_bit-score>
+      <Hsp_score>234</Hsp_score>
+      <Hsp_evalue>2.89821e-25</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>VVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRR</Hsp_qseq>
+      <Hsp_hseq>VVSFNKVYEQSICQPRDVLVDVFQAYPEDTEHIYTPSCVVLKRCGGCCNDEGKECVPAESRNVTLQLQRFRPRVIKEVVDLSFTEHVLCVCRSKPDVLAEEKKK</Hsp_hseq>
+      <Hsp_midline>VV F +V+ +S C+  + LVDV   YP + EH+++PSCV L RC GCC DE   CVP E+ NVT+QL + R       V+L+F++HV C CR   + +  E+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>emb|CAF99334.1|</Hit_id>
+  <Hit_def>unnamed protein product [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAF99334</Hit_accession>
+  <Hit_len>151</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>1.69395e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>EVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK</Hsp_qseq>
+      <Hsp_hseq>DVIPLMEVYNKSLCRPRELLIEILQEYPEEVEHLFLPSCVVLRRCAGCCTDEMLQCTPTATYNVTMQVGK</Hsp_hseq>
+      <Hsp_midline>+V+P  EV+ +S CR  E L++++ EYP EVEH+F PSCV L RC GCC DE L C P  T NVTMQ+ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>emb|CAG09776.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG09776</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.7297</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>1.05866e-20</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>100</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>EVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCECRPLREKMKPERRRPK</Hsp_qseq>
+      <Hsp_hseq>EVYSRSGCEPRDTLVEVWRELPGETHHLFIPSCVSLRRCSGCCADEALECVPSLTHTLTMELMRT-SFMRHELVELPFVEHSQCQKSCFRRRQQAGRRLPQ</Hsp_hseq>
+      <Hsp_midline>EV+ RS C   + LV+V  E P E  H+F PSCVSL RC+GCC DE L CVP  T  +TM+L++  S  R   VEL F +H +C+    R + +  RR P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>emb|CAF91466.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAF91466</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>1.64817e-08</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>PAVPPQWALSAGNGSSEVEVVPFQEVWGRSYCRALERLVDVVSEYPSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK----IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PAATEDLAFSAVYLNLDV-LKSIESEWRKTQCTPREVCVDVGREFGAPTNIFYKPPCVSVYRCGGCCHSEDKQCRNISTGYLSKTLFEITVPITQGTKP--VTISVANHTQCSC</Hsp_hseq>
+      <Hsp_midline>PA     A SA   + +V +   +  W ++ C   E  VDV  E+ +     + P CVS+ RC GCC  E+  C  + T  ++  L +    I  G +P  V ++ + H +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>emb|CAG12547.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG12547</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000311723</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK---IRSGDRPSYVELTFSQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFIIWPPCVEVKRCTGCCNTSNMRCQAARVQHRTVKVAKVEYVRRRPKLREVQVRLEDHLECTC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C      + T+++ K   +R   +   V++    H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>emb|CAG11405.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG11405</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000485174</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>PSEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTF---SQHVRCEC</Hsp_qseq>
+      <Hsp_hseq>PTSANFLIWPPCVEVKRCTGCCNTSNMRCHPSRKHYRTVKVAKVEYVKRKPKLKEVFVRLEDHLECMC</Hsp_hseq>
+      <Hsp_midline>P+    +  P CV + RCTGCC   N+ C P      T+++ K+    R   ++  F     H+ C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>emb|CAF93266.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAF93266</Hit_accession>
+  <Hit_len>61</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.00101435</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>61</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLK</Hsp_qseq>
+      <Hsp_hseq>SNANFLLWPPCVEVQRCSGCCNTKSLQCVPLVTHMRYLQVKK</Hsp_hseq>
+      <Hsp_midline>S    +  P CV + RC+GCC  ++L CVP+ T    +Q+ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>emb|CAG02542.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG02542</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.00146031</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>82</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>SEVEHMFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLLKIRSGDRPSYVELTFSQHVRCE</Hsp_qseq>
+      <Hsp_hseq>SNANFLLWPPCVEVQRCSGCCNTKSLQCVPLVTHMRYLQGKGHHKDELHQWDELKQNQRVQLE</Hsp_hseq>
+      <Hsp_midline>S    +  P CV + RC+GCC  ++L CVP+ T    +Q       +   + EL  +Q V+ E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>emb|CAG12536.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Tetraodon nigroviridis]</Hit_def>
+  <Hit_accession>CAG12536</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.0034142</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>66</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MFSPSCVSLLRCTGCCGDENLHCVPVETANVTMQLL</Hsp_qseq>
+      <Hsp_hseq>MLWPPCVEVQRCSGCCNNRLVQCVPTVTSSRNLQGL</Hsp_hseq>
+      <Hsp_midline>M  P CV + RC+GCC +  + CVP  T++  +Q L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>683870264</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_032896438.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X2 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032896438</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>254.603</Hsp_bit-score>
+      <Hsp_score>649</Hsp_score>
+      <Hsp_evalue>1.17395e-86</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>148</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>LLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGR</Hsp_qseq>
+      <Hsp_hseq>LLLALCYLVGGHAEETEFPPELLEKLAHSDITSIRDLQRLLEIESVGEDDHLGS--KSHSVNPIKHEYTKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPACVEVRRCTGCCNTGSVKCQPSRIHHRSVKVAKVEYVRRKPRLKEVIVRLEEHLECTCTGLQSTSEHREHEDVR</Hsp_hseq>
+      <Hsp_midline>LLL   YL    AEE E P E++E+LA S I SIRDLQRLLEI+SVG +D L +  ++H V+  KH   KR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWP CVEV+RCTGCCNT SVKCQPSR+HHRSVKVAKVEYVR+KP+LKEV VRLEEHLEC C       ++RE +  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_032896437.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A isoform X1 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032896437</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>254.603</Hsp_bit-score>
+      <Hsp_score>649</Hsp_score>
+      <Hsp_evalue>3.86858e-86</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>152</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>LLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLK</Hsp_qseq>
+      <Hsp_hseq>LLLALCYLVGGHAEETEFPPELLEKLAHSDITSIRDLQRLLEIESVGEDDHLGS--KSHSVNPIKHEYTKRSAPVRRKRSIEEAVPAVCKTRTVIYEIPRSQIDPTSANFLIWPACVEVRRCTGCCNTGSVKCQPSRIHHRSVKVAKVEYVRRKPRLKEVIVRLEEHLECTCTGLQSTSEHREHE-------GPSTNPKRLK</Hsp_hseq>
+      <Hsp_midline>LLL   YL    AEE E P E++E+LA S I SIRDLQRLLEI+SVG +D L +  ++H V+  KH   KR  P+RRKRSIEEAVPAVCKTRTVIYEIPRSQ+DPTSANFLIWP CVEV+RCTGCCNT SVKCQPSR+HHRSVKVAKVEYVR+KP+LKEV VRLEEHLEC C       ++RE +       G     KRLK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_032900250.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X3 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032900250</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.612</Hsp_bit-score>
+      <Hsp_score>270</Hsp_score>
+      <Hsp_evalue>5.98201e-29</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>EEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIR-RKRSIEEAVPAV-CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>KEDGLPDDVLKIIGQADIRSIGDLEHLL------------------GVEA------KDPAGIRPRSRTVHSRPKAAGCKTRIVTVDVPRYKVDPTSVGFFLWPSCVEVQRCSGCCNTKTYKCIPSHASYRSFQIAKLSYRYGRKELTIHTVSIREHLSCNCT</Hsp_hseq>
+      <Hsp_midline>+E  +P +V++ + ++ I SI DL+ LL                  GV A      K P  IR R R++     A  CKTR V  ++PR +VDPTS  F +WP CVEV+RC+GCCNT + KC PS   +RS ++AK+ Y   + +L    V + EHL C C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_032900248.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X2 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032900248</Hit_accession>
+  <Hit_len>246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>4.79014e-28</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>LACLLLLGCGYLAHV------LAEEAEIPREVIERLARSQIHSIRDLQRLLEI---DSVG--------------SEDSLDTSLRAHGVHATKHVPEKRP-----LPIRRKRSIEEAV-----PAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>LLVFLSLFCFWTAFSEDMPKDTDKEDGLPDDVLKIIGQADIRSIGDLEHLLGVEAKDPAGIRPRSRTGVPRWRDSYKSTHDYLRQQALNDEHSPPWHHPVLPQELPPQNQQPAFKEVHSRPKAAGCKTRIVTVDVPRYKVDPTSVGFFLWPSCVEVQRCSGCCNTKTYKCIPSHASYRSFQIAKLSYRYGRKELTIHTVSIREHLSCNCT</Hsp_hseq>
+      <Hsp_midline>L   L L C + A          +E  +P +V++ + ++ I SI DL+ LL +   D  G              S  S    LR   ++     P   P     LP + ++   + V      A CKTR V  ++PR +VDPTS  F +WP CVEV+RC+GCCNT + KC PS   +RS ++AK+ Y   + +L    V + EHL C C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_032900247.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit A-like isoform X1 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032900247</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.916</Hsp_bit-score>
+      <Hsp_score>263</Hsp_score>
+      <Hsp_evalue>1.79447e-27</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>EEAEIPREVIERLARSQIHSIRDLQRLLEI---DSVG--------------SEDSLDTSLRAHGVHATKHVPEKRP-----LPIRRKRSIEEAV-----PAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>KEDGLPDDVLKIIGQADIRSIGDLEHLLGVEAKDPAGIRPRSRTGVPRWRDSYKSTHDYLRQQALNDEHSPPWHHPVLPQELPPQNQQPAFKEVHSRPKAAGCKTRIVTVDVPRYKVDPTSVGFFLWPSCVEVQRCSGCCNTKTYKCIPSHASYRSFQIAKLSYRYGRKELTIHTVSIREHLSCNCT</Hsp_hseq>
+      <Hsp_midline>+E  +P +V++ + ++ I SI DL+ LL +   D  G              S  S    LR   ++     P   P     LP + ++   + V      A CKTR V  ++PR +VDPTS  F +WP CVEV+RC+GCCNT + KC PS   +RS ++AK+ Y   + +L    V + EHL C C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_032869222.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032869222</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.064</Hsp_bit-score>
+      <Hsp_score>253</Hsp_score>
+      <Hsp_evalue>1.42071e-26</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>HSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDY--REEDTGRP--------RESGKKRKRKRLK</Hsp_qseq>
+      <Hsp_hseq>HNQRSFPLPWTLDRNGT-DPNELGLFSTNEGAQGHAPR-----VTRSTVVEIAKPAQCKVRPEVMEITRSMVDPTKANFYLWPSCVEVQRCSGCCTIKNYKCQPTKVQERRVRFVKKVFKRRGIVSKTAVIVLHDHVECKCMTAAQLADSQDREAFLASPAPTIALARKYSSSKRKHRKFK</Hsp_hseq>
+      <Hsp_midline>H+ R       +D  G+ D  +  L +    A  H P      + R   +E A PA CK R  + EI RS VDPT ANF +WP CVEV+RC+GCC   + KCQP++V  R V+  K  + R+    K   + L +H+EC C T +   D   RE     P        + S  KRK ++ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_032870467.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032870467</Hit_accession>
+  <Hit_len>175</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>1.34768e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>49</Hsp_hit-from>
+      <Hsp_hit-to>154</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKR-KRKRLK</Hsp_qseq>
+      <Hsp_hseq>SYCRTIEVLVEVVRE--FPTESEWIFKPSCVPLLRCAGCCGDEKLRCTARDVYNITLQVIKLKPLEQVTRPEEMT--FMEHSSCECRP-------RRKRLKGDRRSGKRRGQRKRIK</Hsp_hseq>
+      <Hsp_midline>+ C+T  V+ E+ R    PT + ++  P CV + RC GCC    ++C    V++ +++V K++ + +  + +E+     EH  C C         R +     R SGK+R +RKR+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_032885365.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor C [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032885365</Hit_accession>
+  <Hit_len>259</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000616203</Hsp_evalue>
+      <Hsp_query-from>118</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>LIWPPCVEVKRCTGCCNTSSV-----KCQPSRVHHRSVKVAKVEYVR-KKPKLKEV-QVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>IYWPGCLLVKRCGGNCACCSLGCHDCQCAPIKVSKKYHEVLQLRYRSPGKPLQKSLADVGLEHHEECGCA</Hsp_hseq>
+      <Hsp_midline>+ WP C+ VKRC G C   S+     +C P +V  +  +V ++ Y    KP  K +  V LE H EC CA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_032885093.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X3 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032885093</Hit_accession>
+  <Hit_len>426</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00758521</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKL-KEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>CKPREVCLDLGRELG--TATNKFYKPPCVSVHRCGGCCNNEGFQC---------INVSTA-FVSKTVGLSRPVVISFINHTACGC</Hsp_hseq>
+      <Hsp_midline>CK R V  ++ R     T+ N    PPCV V RC GCCN    +C         + V+   +V K   L + V +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_032885092.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X2 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032885092</Hit_accession>
+  <Hit_len>430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00810868</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKC</Hsp_qseq>
+      <Hsp_hseq>CKPREVCLDLGRELG--TATNKFYKPPCVSVHRCGGCCNNEGFQC</Hsp_hseq>
+      <Hsp_midline>CK R V  ++ R     T+ N    PPCV V RC GCCN    +C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_032874646.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032874646</Hit_accession>
+  <Hit_len>410</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00820744</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEY-VRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>CMPREVSLDVGREFGSATSIIFK--PSCVSVYRCGGCCNSEGISCMNTSTMYVSKTLFEISIPISQVP--KPVTISVANHTGCRCMS</Hsp_hseq>
+      <Hsp_midline>C  R V  ++ R     TS  F   P CV V RC GCCN+  + C  +   + S  + ++   + + P  K V + +  H  C C +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_032885091.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C-like isoform X1 [Amblyraja radiata]</Hit_def>
+  <Hit_accession>XP_032885091</Hit_accession>
+  <Hit_len>434</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00882692</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>CKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKC</Hsp_qseq>
+      <Hsp_hseq>CKPREVCLDLGRELG--TATNKFYKPPCVSVHRCGGCCNNEGFQC</Hsp_hseq>
+      <Hsp_midline>CK R V  ++ R     T+ N    PPCV V RC GCCN    +C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2392041897</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

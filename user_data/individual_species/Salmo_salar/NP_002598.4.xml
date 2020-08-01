@@ -1,0 +1,1022 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/home/mjeltsch/VEGFphylo/../blastdb/nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.1</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>PDGF-A NP_002598.4 platelet-derived growth factor subunit A isoform 1 preproprotein [Homo sapiens]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_014058146.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014058146</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>224.557</Hsp_bit-score>
+      <Hsp_score>571</Hsp_score>
+      <Hsp_evalue>4.095e-74</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>121</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>203</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLL--EID---SVGSEDSLDTS--LRAHGVHATKHVP---EKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDT</Hsp_qseq>
+      <Hsp_hseq>MRPVLCYFLLCTSYLLNAVAEE--VPQELIERLSHSEIHSISDLQRLLDSEIDVPVGAGNEVMEETKPMQKHHKNYSQQHGYSDLKSSQIHSRRKRSVEEAVPAVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHPSRRHHRTVKVAKVEYVRRKPKLKEVLIRLEDHLECVCTSQHHVTEHSDADT</Hsp_hseq>
+      <Hsp_midline>MR + C  LL   YL + +AEE  +P+E+IERL+ S+IHSI DLQRLL  EID     G+E   +T    + H  ++ +H     +   +  RRKRS+EEAVPAVCKTRTVIYEIPRSQVDPT+ANFLIWPPCVEVKRCTGCCNTS+++C PSR HHR+VKVAKVEYVR+KPKLKEV +RLE+HLEC C +     ++ + DT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|XP_014036829.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014036829</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.542</Hsp_bit-score>
+      <Hsp_score>545</Hsp_score>
+      <Hsp_evalue>1.96716e-70</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>132</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>AEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTG</Hsp_qseq>
+      <Hsp_hseq>AEEAPLPRELLERLSRSEIRSISDLQRLLELDLDENEVIEENKQRYHNKAYSQ--LESSQTHSRHKRSIEEALPAVCKTRTVIYEIPRSQVDSTSANFIIWPPCVEVKRCTGCCNTSNMHCLPSRKHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECICTSKRHIKELYDTDNG</Hsp_hseq>
+      <Hsp_midline>AEEA +PRE++ERL+RS+I SI DLQRLLE+D   +E   +   R H    ++   E      R KRSIEEA+PAVCKTRTVIYEIPRSQVD TSANF+IWPPCVEVKRCTGCCNTS++ C PSR HHR+VKVAKVEYVR++PKLKEV VRLEEHLEC C +     +  + D G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_014049732.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Salmo salar] &gt;ref|XP_014058147.1| PREDICTED: platelet-derived growth factor subunit A-like isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014049732</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.866</Hsp_bit-score>
+      <Hsp_score>442</Hsp_score>
+      <Hsp_evalue>4.85748e-55</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLL--EID---SVGSEDSLDTS--LRAHGVHATKHVP---EKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKV</Hsp_qseq>
+      <Hsp_hseq>MRPVLCYFLLCTSYLLNAVAEE--VPQELIERLSHSEIHSISDLQRLLDSEIDVPVGAGNEVMEETKPMQKHHKNYSQQHGYSDLKSSQIHSRRKRSVEEAVPAVCKTRTVIYEIPRSQVDPTAANFLIWPPCVEVKRCTGCCNTSNMRCHPSRRHHRTVKF</Hsp_hseq>
+      <Hsp_midline>MR + C  LL   YL + +AEE  +P+E+IERL+ S+IHSI DLQRLL  EID     G+E   +T    + H  ++ +H     +   +  RRKRS+EEAVPAVCKTRTVIYEIPRSQVDPT+ANFLIWPPCVEVKRCTGCCNTS+++C PSR HHR+VK </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|XP_013986118.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like, partial [Salmo salar]</Hit_def>
+  <Hit_accession>XP_013986118</Hit_accession>
+  <Hit_len>121</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.777</Hsp_bit-score>
+      <Hsp_score>421</Hsp_score>
+      <Hsp_evalue>1.23684e-52</Hsp_evalue>
+      <Hsp_query-from>89</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTG</Hsp_qseq>
+      <Hsp_hseq>EEALPAVCKTRTVIYEIPRSQVDSTSANFIIWPPCVEVKRCTGCCNTSNMHCLPSRKHHRTVKVAKVEYVRRRPKLKEVLVRLEEHLECICTSKRHIKELYEIDNG</Hsp_hseq>
+      <Hsp_midline>EEA+PAVCKTRTVIYEIPRSQVD TSANF+IWPPCVEVKRCTGCCNTS++ C PSR HHR+VKVAKVEYVR++PKLKEV VRLEEHLEC C +     +  E D G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|XP_014048129.1|</Hit_id>
+  <Hit_def>PREDICTED: trichohyalin-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014048129</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.316</Hsp_bit-score>
+      <Hsp_score>290</Hsp_score>
+      <Hsp_evalue>1.45083e-29</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>LLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLL---EIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>LLAAC--LRSGSAEGDPLPPGLVELVRSNPISSIEDLQLLLLSTSVDEDFSDDFLPSG--QHSNNTSNRLP--------RSLDAQPAQQALCKVRTEVMEVTRAMLDRSNANFMLWPPCVEVQRCSGCCNTKSLQCVPVLTHTRHLQVMKIQYVDKRPNYSKAVVSVHDHVECRC</Hsp_hseq>
+      <Hsp_midline>LL  C  L    AE   +P  ++E +  + I SI DLQ LL    +D   S+D L +    H  + +  +P        R    + A  A+CK RT + E+ R+ +D ++ANF++WPPCVEV+RC+GCCNT S++C P   H R ++V K++YV K+P   +  V + +H+EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|XP_014038121.1|</Hit_id>
+  <Hit_def>PREDICTED: ell-associated factor Eaf-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014038121</Hit_accession>
+  <Hit_len>614</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.39</Hsp_bit-score>
+      <Hsp_score>285</Hsp_score>
+      <Hsp_evalue>9.59669e-29</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLL-LGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPA---VCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>MNSWVLLLASLAAGCLRFGSAEGDPLPPSLVELVRTSPISSIEDLQQLLEQETDSQEVEPDEP-SANEIHSND-------THGRYRRNLVDAQPAQQAVCKVRTEVMEVTRAMLDRRNANFLLWPPCVEVQRCSGCCNTRMLQCVPVVTQTRYLQVTRIQYIDKRPHYDKAVISVEDHASCRCQT</Hsp_hseq>
+      <Hsp_midline>M +   LL  L  G L    AE   +P  ++E +  S I SI DLQ+LLE ++   E   D    A+ +H+            R +R++ +A PA   VCK RT + E+ R+ +D  +ANFL+WPPCVEV+RC+GCCNT  ++C P     R ++V +++Y+ K+P   +  + +E+H  C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|XP_014059866.1|</Hit_id>
+  <Hit_def>PREDICTED: uncharacterized protein LOC106607441 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014059866</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.464</Hsp_bit-score>
+      <Hsp_score>280</Hsp_score>
+      <Hsp_evalue>4.16102e-28</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>174</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>LLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVG---SEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>LLALFATCLRSGSAEGDPLPPGLVELVRSNPISSIEDLQLLLLSDSVDEDVSEDFVPSG--QHSNNASNRLP--------RSLDAQPAQQALCKVRTEVMEVTRAMLDRSNANFMLWPPCVEVQRCSGCCNTKTLQCVPVLMHTRHLQVMKIQYVEKRPNYSKAVVSVHDHVECRC</Hsp_hseq>
+      <Hsp_midline>LL L    L    AE   +P  ++E +  + I SI DLQ LL  DSV    SED + +    H  +A+  +P        R    + A  A+CK RT + E+ R+ +D ++ANF++WPPCVEV+RC+GCCNT +++C P  +H R ++V K++YV K+P   +  V + +H+EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|XP_014039458.1|</Hit_id>
+  <Hit_def>PREDICTED: alpha-protein kinase 1-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014039458</Hit_accession>
+  <Hit_len>510</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.5001</Hsp_bit-score>
+      <Hsp_score>210</Hsp_score>
+      <Hsp_evalue>9.55163e-19</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>79</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>EIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACAT</Hsp_qseq>
+      <Hsp_hseq>EVTRAMLDRRNANFLLWPPCVEVQRCSGCCNTRMLQCVPMVTQTRYLQVTRIQYIDKRPHYDKAVISVEDHASCRCQT</Hsp_hseq>
+      <Hsp_midline>E+ R+ +D  +ANFL+WPPCVEV+RC+GCCNT  ++C P     R ++V +++Y+ K+P   +  + +E+H  C C T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_013986123.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor subunit A-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_013986123</Hit_accession>
+  <Hit_len>108</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>2.08857e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>88</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>87</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>MRTLACLLLLGCGYL-AHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSI</Hsp_qseq>
+      <Hsp_hseq>MRTAFVSFLLACLLCPLRTAAEEAPLPRELLERLSRSEIRSISDLQRLLELDLDENEVIGENKQRYHNKAYSQ--LESSQTHSRRKRSI</Hsp_hseq>
+      <Hsp_midline>MRT     LL C        AEEA +PRE++ERL+RS+I SI DLQRLLE+D   +E   +   R H    ++   E      RRKRSI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|XP_014068415.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X1 [Salmo salar] &gt;ref|XP_014068416.1| PREDICTED: vascular endothelial growth factor B isoform X2 [Salmo salar] &gt;ref|XP_014068417.1| PREDICTED: vascular endothelial growth factor B isoform X1 [Salmo salar] &gt;ref|XP_014068418.1| PREDICTED: vascular endothelial growth factor B isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014068415</Hit_accession>
+  <Hit_len>258</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>1.40321e-07</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>204</Hsp_align-len>
+      <Hsp_qseq>CLLLLGCGYLAHVLAEEAEIPREVIERLARSQIHSIRDLQRLLEIDSVGSEDSLDTSLRAHGVHATKHVPEKRPLPIRRKRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLK</Hsp_qseq>
+      <Hsp_hseq>CMLIMGLSINAHILFRQLE------------SVHNNFTDEKNTVIKQIYNEGKL-----AHWRPADT-TPKSREV----RRWLEVYSRTGCEPRDTLVEVWREL--PGETHHLFVPSCVSVHRCGGCCSDEALECVPSLTHSITMELMKTSFM----KHELIQLDFVEHSQCEC---RLKENLQSAPTRPAKPLRKDRKRERGK</Hsp_hseq>
+      <Hsp_midline>C+L++G    AH+L  + E             +H+    ++   I  + +E  L     AH   A    P+ R +    +R +E      C+ R  + E+ R    P   + L  P CV V RC GCC+  +++C PS  H  ++++ K  ++    K + +Q+   EH +C C    L  + +   T   +   K RKR+R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|XP_014055706.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014055706</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>7.82145e-07</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>LPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKPT</Hsp_qseq>
+      <Hsp_hseq>IPKNGEKSKNDVVPFMDVYNKSMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVPTETKNVTMEVIQ---VKQRVSQHNFQLSFTEHRKCECRP---KPEVKAK-----KEKGNDQKRKKERDT</Hsp_hseq>
+      <Hsp_midline>+P   ++S  + VP       ++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C P+   + +++V +   V+++      Q+   EH +C C      P+ + +     +E G  +KRK+ + T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|XP_014068419.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor B isoform X3 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014068419</Hit_accession>
+  <Hit_len>235</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>9.20726e-07</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>KRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLK</Hsp_qseq>
+      <Hsp_hseq>RRWLEVYSRTGCEPRDTLVEVWREL--PGETHHLFVPSCVSVHRCGGCCSDEALECVPSLTHSITMELMKTSFM----KHELIQLDFVEHSQCEC---RLKENLQSAPTRPAKPLRKDRKRERGK</Hsp_hseq>
+      <Hsp_midline>+R +E      C+ R  + E+ R    P   + L  P CV V RC GCC+  +++C PS  H  ++++ K  ++    K + +Q+   EH +C C    L  + +   T   +   K RKR+R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>ref|XP_014060854.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014060854</Hit_accession>
+  <Hit_len>254</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>2.39108e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKP</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--AQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLECTPTSTHNITMEIKRIKPQRQE---NDIFMSFTEHSACEC---------------RPKKEVKEQRQNQCKP</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI  +Q  P     +  P CV + RC GCCN   ++C P+  H+ ++++ +++  R++    ++ +   EH  C C               RP++  K++++ + KP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|XP_014055707.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X3 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014055707</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>3.80693e-06</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>LPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IPKNGEKSKNDVVPFMDVYNKSMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVPTETKNVTMEVIQ---VKQRVSQHNFQLSFTEHRKCEC</Hsp_hseq>
+      <Hsp_midline>+P   ++S  + VP       ++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C P+   + +++V +   V+++      Q+   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_014060853.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014060853</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>6.34336e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--AQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLECTPTSTHNITMEIKRIKPQRQE---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI  +Q  P     +  P CV + RC GCCN   ++C P+  H+ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_014060856.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X3 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014060856</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>9.90034e-06</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--AQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLECTPTSTHNITMEIKRIKPQRQE---NDIFMSFTEHSACEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI  +Q  P     +  P CV + RC GCCN   ++C P+  H+ ++++ +++  R++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|XP_014055705.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014055705</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>1.66494e-05</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>LPIRRKRSIEEAVP-------AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>IPKNGEKSKNDVVPFMDVYNKSMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVPTETKNVTMEVIQ---VKQRVSQHNFQLSFTEHRKCEC</Hsp_hseq>
+      <Hsp_midline>+P   ++S  + VP       ++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C P+   + +++V +   V+++      Q+   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_014000120.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014000120</Hit_accession>
+  <Hit_len>193</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>3.41985e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECACATTSLNPDYREEDTGRPRESGKKRKRKRLKP</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--LQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTHNVTMEIKRIKPHKQQ---NDIFMSFTEHNACEC---------------RPKNEVKEQKENQCEP</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI   Q  P     +  P CV + RC GCCN   ++C P+  H+ ++++ +++  +++    ++ +   EH  C C               RP+   K++K  + +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_014000119.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014000119</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>5.2191e-05</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SLCQPRELLVEI--LQEYPEEVEHIFIPSCVVLTRCAGCCNDEMLQCTPTSTHNVTMEIKRIKPHKQQ---NDIFMSFTEHNACEC</Hsp_hseq>
+      <Hsp_midline>++C+ R ++ EI   Q  P     +  P CV + RC GCCN   ++C P+  H+ ++++ +++  +++    ++ +   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|NP_001134108.1|</Hit_id>
+  <Hit_def>Vascular endothelial growth factor D precursor [Salmo salar] &gt;gb|ACI66247.1| Vascular endothelial growth factor D precursor [Salmo salar]</Hit_def>
+  <Hit_accession>NP_001134108</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000109318</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>TTTSMFFKPPCVSVFRCNGCCNKEGVSCRNTSTAYVNKTLLSVIPFKYGP--EPVLIKVANHTECKC</Hsp_hseq>
+      <Hsp_midline>T+ +    PPCV V RC GCCN   V C+ +   + +  +  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_014062923.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor D-like, partial [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014062923</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000113371</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>TSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>TTTSMFFKPPCVSVFRCNGCCNKEGVSCRNTSTAYVNKTLLSVIPFKYGP--EPVLIKVANHTECKC</Hsp_hseq>
+      <Hsp_midline>T+ +    PPCV V RC GCCN   V C+ +   + +  +  V   +  P  + V +++  H EC C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_014054384.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A-like, partial [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014054384</Hit_accession>
+  <Hit_len>105</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000300781</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>97</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>59</Hsp_align-len>
+      <Hsp_qseq>KRSIEEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPS</Hsp_qseq>
+      <Hsp_hseq>RRWLEVYSHSVCEPRDTLVEV--WQELPGETHHLFVPSCVSVRRCGGCCSDEALECVPS</Hsp_hseq>
+      <Hsp_midline>+R +E    +VC+ R  + E+   Q  P   + L  P CV V+RC GCC+  +++C PS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_014000601.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014000601</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00132099</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SLCRSMERLVEV--EQEYPGGVEYIFSPACVPLWRCAGCCGDENLECHPTLTRNVTMQLMRITPTERTGQY--VELTFVEHQTCEC</Hsp_hseq>
+      <Hsp_midline>++C++   + E+   Q  P    ++  P CV + RC GCC   +++C P+   + ++++ ++    +  +   V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_014024642.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A isoform X3 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014024642</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00147367</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVTTETKNVTMEVIQ---VKQRVSQHHFLLSFTEHRKCEC</Hsp_hseq>
+      <Hsp_midline>++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C  +   + +++V +   V+++       +   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_014066301.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014066301</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00213201</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFCRTIEKLVEV--VQEYPGEVEHIYSPSCVPLVRCAGCCGDENLECHPTRTSNVTMQLLKIKPAEQGQEY--VEMTFVEHQTCEC</Hsp_hseq>
+      <Hsp_midline>+ C+T   + E+   Q  P     +  P CV + RC GCC   +++C P+R  + ++++ K++   +  +   V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_014054687.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014054687</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00221825</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>220</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TWHILGKSFLHNKKSRGVDLNLLREEVRLYSCTPRNFSVSL-REELKRTDAIF--WPSCLLVKRCGGNCACCSHRCFDCQCVPTRVVNKYHEVLLLKHRSGGRGLQKSMTDVPLEHHEECACV</Hsp_hseq>
+      <Hsp_midline>T H+  K  L  ++ R +      EE     C  R     + R ++  T A F  WP C+ VKRC G   CC+     CQ  P+RV ++  +V  +++      L++    V LE H ECAC </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_014054688.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X3 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014054688</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00308458</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TWHILGKSFLHNKKSRGVDLNLLREEVRLYSCTPRNFSVSL-REELKRTDAIF--WPSCLLVKRCGGNCACCSHRCFDCQCVPTRVVNKYHEVLLLKHRSGGRGLQKSMTDVPLEHHEECACV</Hsp_hseq>
+      <Hsp_midline>T H+  K  L  ++ R +      EE     C  R     + R ++  T A F  WP C+ VKRC G   CC+     CQ  P+RV ++  +V  +++      L++    V LE H ECAC </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_014054686.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014054686</Hit_accession>
+  <Hit_len>359</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.00360556</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>234</Hsp_hit-from>
+      <Hsp_hit-to>353</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTG---CCNTSSVKCQ--PSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TWHILGKSFLHNKKSRGVDLNLLREEVRLYSCTPRNFSVSL-REELKRTDAIF--WPSCLLVKRCGGNCACCSHRCFDCQCVPTRVVNKYHEVLLLKHRSGGRGLQKSMTDVPLEHHEECACV</Hsp_hseq>
+      <Hsp_midline>T H+  K  L  ++ R +      EE     C  R     + R ++  T A F  WP C+ VKRC G   CC+     CQ  P+RV ++  +V  +++      L++    V LE H ECAC </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_014024621.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014024621</Hit_accession>
+  <Hit_len>190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00566511</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVTTETKNVTMEVIQ---VKQRVSQHHFLLSFTEHRKCEC</Hsp_hseq>
+      <Hsp_midline>++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C  +   + +++V +   V+++       +   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_014024632.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor A-A isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014024632</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.00799294</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>87</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SMCRTREMLVDIFQEYPDEIEHTYI--PSCVVLMRCAGCCNDEALECVTTETKNVTMEVIQ---VKQRVSQHHFLLSFTEHRKCEC</Hsp_hseq>
+      <Hsp_midline>++C+TR ++ +I +   D     ++  P CV + RC GCCN  +++C  +   + +++V +   V+++       +   EH +C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_014040365.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014040365</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0132815</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFCRTIEKLVEV--VQEYPGEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTSNVTMQLLKIKPGEQGQEY--VEMSFVEHQTCEC</Hsp_hseq>
+      <Hsp_midline>+ C+T   + E+   Q  P     +  P CV + RC GCC   +++C P++  + ++++ K++   +  +   V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|XP_014040427.1|</Hit_id>
+  <Hit_def>PREDICTED: placenta growth factor-like isoform X2 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014040427</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0139394</Hsp_evalue>
+      <Hsp_query-from>94</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>AVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>SFCRTIEKLVEV--VQEYPGEVEHIYSPSCVPLVRCAGCCGDENLECHPTQTSNVTMQLLKIKPGEQGQEY--VEMSFVEHQTCEC</Hsp_hseq>
+      <Hsp_midline>+ C+T   + E+   Q  P     +  P CV + RC GCC   +++C P++  + ++++ K++   +  +   V++   EH  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|XP_014067409.1|</Hit_id>
+  <Hit_def>PREDICTED: platelet-derived growth factor C-like, partial [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014067409</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0143132</Hsp_evalue>
+      <Hsp_query-from>71</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>TKHVPEKRPLPIRRKRSI------EEAVPAVCKTRTVIYEIPRSQVDPTSANFLIWPPCVEVKRCTG---CCN--TSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKE--VQVRLEEHLECACA</Hsp_qseq>
+      <Hsp_hseq>TWHILGKSFLHNKKSRGVDLNLLREEVRLYSCTPRNFSISL-REELKRTDAIF--WPSCLLVKRCGGNCACCSHRCSDCQCAPTRVVKKYHEVLLLKHRSGGRGLQKSMTDVPLEHHEECDCV</Hsp_hseq>
+      <Hsp_midline>T H+  K  L  ++ R +      EE     C  R     + R ++  T A F  WP C+ VKRC G   CC+   S  +C P+RV  +  +V  +++      L++    V LE H EC C </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_014064807.1|</Hit_id>
+  <Hit_def>PREDICTED: vascular endothelial growth factor C-like isoform X1 [Salmo salar]</Hit_def>
+  <Hit_accession>XP_014064807</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0519796</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>ATNTFYKPPCVSVYRCGGCCNSEAHQCMNISTSYISKTLFEIT-VSSSTNNNLVTISFANHTVCNC</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+ + +C      + S  + ++  V        V +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|NP_001167218.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor C precursor [Salmo salar] &gt;gb|ACN11121.1| Vascular endothelial growth factor C precursor [Salmo salar]</Hit_def>
+  <Hit_accession>NP_001167218</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.05399</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>SANFLIWPPCVEVKRCTGCCNTSSVKCQPSRVHHRSVKVAKVEYVRKKPKLKEVQVRLEEHLECAC</Hsp_qseq>
+      <Hsp_hseq>ATNTFYKPPCVSVYRCGGCCNSEAHQCMNISTSYISKTLFEIT-VSSSTSNNLVTISFANHTVCNC</Hsp_hseq>
+      <Hsp_midline>+ N    PPCV V RC GCCN+ + +C      + S  + ++  V        V +    H  C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>269435541</Statistics_db-num>
+      <Statistics_db-len>97036454992</Statistics_db-len>
+      <Statistics_hsp-len>106</Statistics_hsp-len>
+      <Statistics_eff-space>5267529540</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
