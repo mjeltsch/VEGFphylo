@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-# This script downloads a CSV file of all fully sequenced genomes
+# This script downloads a CSV file of all "fully sequenced" genomes
 # and creates species-specific blast databases (aliases) in order
 # to allow for local species-specific blasting.
 # I used information form this thread to make it work: https://www.biostars.org/p/6528/.
+# The species-specific gi-lists were initially downloaded manually from
+# the NCBI website.
 
 import Bio, csv, os, requests, time, subprocess
 
@@ -24,8 +26,8 @@ def getCSVfile(CSV_FILE):
         input_csv_file = csv.DictReader(open(CSV_FILE))
     except FileNotFoundError as err:
         print(err)
-        # Download list of all fully sequences animal genomes:
-        URL = 'https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeBrowser).usingschema(%2Fschema%2FGenomeAssemblies).matching(group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Csize%7CSize(Mb)%2Cchromosomes%7CChromosomes%2Corganelles%7COrganelles%2Cplasmids%7CPlasmids%2Cassemblies%7CAssemblies&filename=genomes.csv&nolimit=on'
+        # Download list of all "fully sequenced" animal genomes:
+        URL = 'https://www.ncbi.nlm.nih.gov/genomes/solr2txt.cgi?q=%5Bdisplay()%5D.from(GenomeAssemblies).usingschema(%2Fschema%2FGenomeAssemblies).matching(tab%3D%3D%5B%22Eukaryotes%22%5D%20and%20group%3D%3D%5B%22Animals%22%5D)&fields=organism%7COrganism%20Name%2Clineage%7COrganism%20Groups%2Cstrain%7CStrain%2Cbiosample%7CBioSample%2Cbioproject%7CBioProject%2Cassembly%7CAssembly%2Clevel%7CLevel%2Csize%7CSize(Mb)%2Cgc_content%7CGC%25%2Creplicons%7CReplicons%2Cwgs%7CWGS%2Cscaffolds%7CScaffolds%2Cproteins%7CCDS%2Crelease_date%7CRelease%20Date%2Cftp_path_genbank%7CGenBank%20FTP%2Cftp_path_refseq%7CRefSeq%20FTP&filename=eukaryotes.csv&nolimit=on'
         r = requests.get(URL)
         with open('CSV_FILE', 'wb') as file:
             file.write(r.content)

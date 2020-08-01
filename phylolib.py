@@ -56,8 +56,36 @@ td {
     text-align: left;
     vertical-align: top
 }
+.a1 {
+    display: inline-block;
+    width: 240px;
+}
 </style>'''
     return script_style_string
+
+# Sanitize malformed sceintific species names (some people use single quotes, parenthesis, etc. in the scientific name!)
+def sanitize_species_name(SPECIES_NAME):
+    # Replace single quotes, commas, and round parenthesis by spaces 
+    translation_table = str.maketrans('\',() ', '_____')
+    return SPECIES_NAME.translate(translation_table) 
+
+# Download a single fasta file
+def download_fasta_file(ID_OR_ACCNO, FASTA_FILE):
+    Entrez.email = "michael@jeltsch.org"
+    Entrez.tool = "local_script_under_development"
+    with open(FASTA_FILE, 'w') as filehandle:
+        print('Retrieving sequence {0} from Entrez...'.format(ID_OR_ACCNO))
+        time.sleep(1)
+        try:
+            with Entrez.efetch(db="protein", rettype="fasta", retmode="text", id=ID_OR_ACCNO) as seqhandle:
+                seq_record = SeqIO.read(seqhandle, "fasta")
+                filehandle.write(seq_record.format("fasta"))
+        except Exception as err:
+            print('Problem contacting Blast server. Skipping {0}. Error: {1}.'.format(ID_OR_ACCNO, err))
+            return False
+        else:
+            return True
+
 
 # Get all fasta sequences from the master_dictionary via Entrez
 def download_proteins(target_dir, master_dict, rename_fasta_description_after_key=False, overwrite=False, filename='after_key'):
@@ -124,18 +152,57 @@ def load_blacklist():
     blacklist = []
     return blacklist
 
+def blast_formatter(RID, FORMAT, FILE, VERBOSE = True):
+    # The blast formatter requires access to the same database for the reformatting since some
+    # data needed for the xml file is not contained in the html file, but is retrieved during formatting.
+    # In this case a local database must either be available to fetch the data or, alternatively,
+    # if the RID is known, you can request the blast_reformater to fetch you a refomatted
+    # file from the blast server. The RID can be found from the html file.
+    comment = 'Converting html into xml:'
+    #bash_command = 'blast_formatter -rid {0} -outfmt 5 > {1}'.format(RID, BLAST_XMLFILE)
+    #print('comment: {0}\nbash_command: {1}'.format(comment, bash_command))
+    #output, error = execute_subprocess(comment, bash_command)
+    bash_command_as_list = ['blast_formatter', '-rid', RID, '-outfmt', '5']
+    print('{0} {1}'.format(comment, bash_command_as_list))
+    working_directory = '.'
+    try:
+        result = subprocess.run(bash_command_as_list, stdout = subprocess.PIPE, stderr = subprocess.PIPE, cwd = working_directory)
+    except Exception as ex:
+        if VERBOSE: print('Subprocess error: {0}'.format(result.stderr))
+        return result.stderr.decode('utf-8')
+    else:
+        if VERBOSE: print('Subprocess output: {0}'.format(result.stdout))
+        #if result.stdout == 'Network error: Error fetching sequence data from BLAST databases at NCBI, please try again later'
+        # Write blast results to an html file
+        with open(FILE, "w") as out_handle:
+            out_handle.write(result.stdout.decode('utf-8'))
+            print('New format {0} written to file {1}.'.format(FORMAT, FILE))
+        out_handle.close()
+        return result.stdout.decode('utf-8')
+
 def execute_subprocess(comment, bash_command, working_directory='.'):
-    print("\n" + comment, bash_command)
+    print('\nSubprocess: {0} {1} {2}'.format(comment, bash_command, time.ctime()))
     process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
     output, error = process.communicate()
     process_status = process.wait()
     output = output.decode('utf-8')
     error = error.decode('utf-8')
     if output != '':
-        print('Output: {0}'.format(output))
+        print('Subprocess output: {0}'.format(output))
     if error != '':
-        print('Error: {0}'.format(error))
+        print('Subprocess error: {0}'.format(error))
+    print('Subprocess output/error: {0}/{1}\n{2}'.format(output, error, time.ctime()))
     return output, error
+
+def execute_subprocess_new(comment, bash_command_as_list, working_directory='.'):
+    print('\nSubprocess function entered.')
+    print('{0} {1}'.format(comment, bash_command_as_list))
+    print('start time: {0}'.format(time.ctime()))
+    result = subprocess.run(bash_command_as_list, stdout = subprocess.PIPE, stderr = subprocess.PIPE, cwd = working_directory)
+    print('Subprocess output: {0}'.format(result.stdout))
+    print('Subprocess error: {0}'.format(result.stderr))
+    print('completion time: {0}'.format(time.ctime()))
+    return result
 
 def make_synonym_dictionary(master_dictionary):
     #print('master_dictionary:\n{0}'.format(master_dictionary))
@@ -248,11 +315,15 @@ def execution_time_str(elapsed_time_seconds):
 def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
     ncbi = NCBITaxa()
     taxon_id_list = ncbi.get_name_translator([species_name])
-    taxon_id = taxon_id_list[species_name][0]
-    # Check that something sensinble was returned
-    if isinstance(taxon_id, int) and taxon_id > 0:
-        print('taxon_id for {0}: {1}'.format(species_name, taxon_id))
-    else:
+    try:
+        taxon_id = taxon_id_list[species_name][0]
+        # Check that something sensinble was returned
+        if isinstance(taxon_id, int) and taxon_id > 0:
+            print('taxon_id for {0}: {1}'.format(species_name, taxon_id))
+        else:
+            taxon_id = None
+            print('No taxon_id for {0}. NCBI returned: {1}'.format(species_name, taxon_id_list))
+    except:
         taxon_id = None
         print('No taxon_id for {0}. NCBI returned: {1}'.format(species_name, taxon_id_list))
     #return TAXON_ID
@@ -261,16 +332,18 @@ def get_taxon_id_from_NCBI(species_name, VERBOSE=True):
 # This sends a species id to NCBI and returns to which of the phyla within taxon_dictionary.py
 # this species belongs to.
 def get_phylum_from_NCBI(TAXON_ID_OR_NAME, VERBOSE=True):
-    preamble1, species_dictionary = load_dictionary('data/species_data.py', VERBOSE)
+    preamble1, species_dictionary = load_dictionary('prog_data/species_data.py', VERBOSE)
     # Check first the locally cached data
     if TAXON_ID_OR_NAME in species_dictionary and species_dictionary[TAXON_ID_OR_NAME] != 'unknown':
         phylum = species_dictionary[TAXON_ID_OR_NAME]
         print('Species {0} assigned from local cache to phylum {1}.'.format(TAXON_ID_OR_NAME, phylum))
     else:
         print('Species {0} not found in local cache. Asking NCBI...'.format(TAXON_ID_OR_NAME))
-        preamble2, taxon_dictionary = load_dictionary('data/taxon_data.py', VERBOSE)
+        preamble2, taxon_dictionary = load_dictionary('prog_data/taxon_data.py', VERBOSE)
         # If a latin species name is given, translate it into a taxonomic id
-        if TAXON_ID_OR_NAME.isdigit():
+        if isinstance(TAXON_ID_OR_NAME, int):
+            TAXON_ID = str(TAXON_ID_OR_NAME)
+        elif TAXON_ID_OR_NAME.isdigit():
             TAXON_ID = TAXON_ID_OR_NAME
         else:
             TAXON_ID = get_taxon_id_from_NCBI(TAXON_ID_OR_NAME)
@@ -321,8 +394,8 @@ def get_phylum_from_NCBI(TAXON_ID_OR_NAME, VERBOSE=True):
         # Add result from NCBI to dictionary, write new dictionary file, and replace the old dictioanry file with the new one
         try:
             species_dictionary[TAXON_ID_OR_NAME] = phylum
-            write_dict_to_file(preamble1, species_dictionary, 'data/.species_data.py')
-            os.rename('data/.species_data.py', 'data/species_data.py')
+            write_dict_to_file(preamble1, species_dictionary, 'prog_data/.species_data.py')
+            os.rename('prog_data/.species_data.py', 'prog_data/species_data.py')
         except:
-            print('Could not write phylum to data/species_data.py')            
+            print('Could not write phylum to prog_data/species_data.py')            
     return phylum

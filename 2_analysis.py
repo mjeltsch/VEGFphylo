@@ -137,7 +137,7 @@ def get_sequence_number(taxon, taxon_data):
     TAXA_LIST = expand_complex_taxa(taxon_data[0])
     i = 0
     for item in TAXA_LIST:
-        SEQUENCE_GI_LIST = '{0}/data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, item[1:])
+        SEQUENCE_GI_LIST = '{0}/user_data/gi_lists/txid{1}.gi'.format(APPLICATION_PATH, item[1:])
         with open(SEQUENCE_GI_LIST) as file:
             for j, m in enumerate(file):
                 pass
@@ -148,7 +148,7 @@ def get_sequence_number(taxon, taxon_data):
     return i + 1
 
 def make_tree(ALIGNMENT_FILE, MODE):
-    treedir = '{0}/data/alignments_and_trees'.format(APPLICATION_PATH)
+    treedir = '{0}/user_data/alignments_and_trees'.format(APPLICATION_PATH)
     os.chdir(treedir)
     # Detect whether parallel bootstrapping should be performed
     mpirun_path = shutil.which('mpirun')
@@ -229,7 +229,7 @@ body { font-family: "Open Sans", Arial; }
         new_type = item[2]
         i += 1
     #lineitem += '\n</body>\n</html>\n'
-    HTML_DIR = '{0}/data/analysis_results/{1}'.format(APPLICATION_PATH, protein)
+    HTML_DIR = '{0}/user_data/analysis_results/{1}'.format(APPLICATION_PATH, protein)
     HTML_FILE = '{0}/{1}.html'.format(HTML_DIR, taxon)
     if not os.path.isdir(HTML_DIR):
         os.mkdir(HTML_DIR)
@@ -263,13 +263,13 @@ def write_protein_hitdict_to_file(protein_hitdict):
         taxon = value[0]
         print('Ecluding proteins. value = {0}'.format(value))
         # Do not deal with excluded proteins at all!
-        if os.path.isfile('{0}/data/proteins_exclude/{1}.fasta'.format(APPLICATION_PATH, key)):
+        if os.path.isfile('{0}/prog_data/proteins_exclude/{1}.fasta'.format(APPLICATION_PATH, key)):
             print('Protein {0} was manually excluded. Skipping...'.format(key))
         # Check also in the taxon-specific subfolder
-        elif os.path.isfile('{0}/data/proteins_exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, taxon, key)):
+        elif os.path.isfile('{0}/prog_data/proteins_exclude/{1}/{2}.fasta'.format(APPLICATION_PATH, taxon, key)):
             print('Protein {0} was found in subfolder {1} and manually excluded. Skipping...'.format(key, value[0]))
         else:
-            print('Including protein {0} as it was not found in {1}/data/proteins_exclude or {1}/data/proteins_exclude/{2}'.format(key, APPLICATION_PATH, value[0]))
+            print('Including protein {0} as it was not found in {1}/prog_data/proteins_exclude or {1}/prog_data/proteins_exclude/{2}'.format(key, APPLICATION_PATH, value[0]))
             print('{0} -> {1}'.format(key, value))
             # Evaluate which protein was mostly identified as a homolog (in order to include it in the MSA)
             closest_homolog_list = value[3].split()
@@ -279,23 +279,23 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 closest_homolog = most_frequent(closest_homolog_list)
                 print('Closest homolog: {0}'.format(closest_homolog))
                 if closest_homolog != 'manually_excluded':
-                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
+                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/prog_data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, master_dictionary[closest_homolog][0])
                 else:
                     print('{0} was manually excluded from analysis'.format(key))
                     # Default comparison to VEGF-C
-                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
+                    QUERY_FILE_CLOSEST_HOMOLOG = '{0}/prog_data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
             else:
                 #closest_homolog = ''
                 print('No closest homolog identified.')
                 # Default comparison to VEGF-C
-                QUERY_FILE_CLOSEST_HOMOLOG = '{0}/data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
-            PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
-            QUERY_FILE = '{0}/data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
-            MATRIX_FILE = '{0}/data/GONNETmod.matrix'.format(APPLICATION_PATH)
+                QUERY_FILE_CLOSEST_HOMOLOG = '{0}/prog_data/reference_proteins/NP_005420.1.fasta'.format(APPLICATION_PATH)
+            PROT_FILE = '{0}/user_data/protein_results/{1}.html'.format(APPLICATION_PATH, value[0])
+            QUERY_FILE = '{0}/user_data/proteins/{1}.fasta'.format(APPLICATION_PATH, key)
+            MATRIX_FILE = '{0}/prog_data/GONNETmod.matrix'.format(APPLICATION_PATH)
             if not os.path.isfile(QUERY_FILE) or os.stat(QUERY_FILE).st_size == 0:
-                download_proteins('{0}/data/proteins'.format(APPLICATION_PATH), {key: [key]})
+                download_proteins('{0}/user_data/proteins'.format(APPLICATION_PATH), {key: [key]})
                 time.sleep(1)
-            VEGFC_signature = '{0}/data/reference_proteins/VEGFC_signature.fasta'.format(APPLICATION_PATH)
+            VEGFC_signature = '{0}/prog_data/reference_proteins/VEGFC_signature.fasta'.format(APPLICATION_PATH)
             # Simple one-to-one comparison
             #bash_command = 'needle {0} {1} -gapopen 10 -gapextend 0.5 stdout'.format(QUERY_FILE1, QUERY_FILE2)
             # MSA including additonally the VEGF signature uding edialign
@@ -405,11 +405,11 @@ def write_protein_hitdict_to_file(protein_hitdict):
             # Fix filenames with whitespaces (because t_coffee cannot handle them)
             taxon_sanitized = "_".join(taxon.split())
             # Name of the html output file from t_coffee
-            outputfile_html = '{0}/data/alignments_and_trees/{1}_all.html'.format(APPLICATION_PATH, taxon_sanitized)
+            outputfile_html = '{0}/user_data/alignments_and_trees/{1}_all.html'.format(APPLICATION_PATH, taxon_sanitized)
             # Name of the clustalw output file from t_coffee
-            MSA_outputfile_from_tcoffee = '{0}/data/alignments_and_trees/{1}_all.clustalw'.format(APPLICATION_PATH, taxon_sanitized)
+            MSA_outputfile_from_tcoffee = '{0}/user_data/alignments_and_trees/{1}_all.clustalw'.format(APPLICATION_PATH, taxon_sanitized)
             # Name of the converted phylip output file from biopython
-            outputfile_phylip = '{0}/data/alignments_and_trees/{1}_all.phylip'.format(APPLICATION_PATH, taxon_sanitized)
+            outputfile_phylip = '{0}/user_data/alignments_and_trees/{1}_all.phylip'.format(APPLICATION_PATH, taxon_sanitized)
             # Do only (during testing) if the alignment file does not yet exist!
             if not os.path.isfile(MSA_outputfile_from_tcoffee):
                 #print('taxon_specific_protein_hitlist:\{0}'.format(taxon_specific_protein_hitlist))
@@ -418,9 +418,9 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 TRUE_UNIQUES[taxon] = 0
                 for id in taxon_specific_protein_hitlist:
                     seqfile = '{0}.fasta'.format(id)
-                    if os.path.isfile('{0}/data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
+                    if os.path.isfile('{0}/prog_data/proteins_exclude/{1}'.format(APPLICATION_PATH, seqfile)) or os.path.isfile('{0}/prog_data/proteins_exclude/{1}/{2}'.format(APPLICATION_PATH, taxon, seqfile)):
                         print('Sequence {0} was manually excluded. Omitting from MSA for {1}'.format(seqfile, taxon))
-                    elif os.path.isfile('{0}/data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
+                    elif os.path.isfile('{0}/user_data/proteins/{1}'.format(APPLICATION_PATH, seqfile)):
                         alignment_file_list.append(seqfile)
                         TRUE_UNIQUES[taxon] += 1
                         print('TRUE_UNIQUES: {0}'.format(TRUE_UNIQUES))
@@ -433,7 +433,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 number_of_reference_sequences = 0
                 for key, value in master_dictionary.items():
                     seqfile = '../reference_proteins/{0}.fasta'.format(value[0])
-                    if os.path.isfile('{0}/data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
+                    if os.path.isfile('{0}/prog_data/reference_proteins/{1}.fasta'.format(APPLICATION_PATH, value[0])):
                         alignment_file_list.append(seqfile)
                         number_of_reference_sequences += 1
                 # Only execute MSA if there are non-reference sequences in the alignment_file_list
@@ -449,13 +449,13 @@ def write_protein_hitdict_to_file(protein_hitdict):
                     alignment_file_list_str = ' '.join(alignment_file_list)
                     bash_command = 'cat {0} > {1}'.format(alignment_file_list_str, concat_fasta_file)
                     comment = 'Concatenating all fasta files for taxon {0}'.format(taxon)
-                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/data/proteins/'.format(APPLICATION_PATH))
+                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/user_data/proteins/'.format(APPLICATION_PATH))
                     # The nice -n 19 is because I have to work on the same computer!
                     # Need to output into something different than phylip since t_coffee uses the strict phylip format
                     # which does not allow for more than 10 characters in the sequence name; try clustalw
                     bash_command = 'nice -n 19 t_coffee -seq {0} -output=html,clustalw -mode {1}'.format(concat_fasta_file, MODE)
                     comment = 'Making MSA for {0} VEGFs/PDGFs (alignment #{1} from total {2})\n'.format(taxon, count_taxa, number_of_taxa)
-                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/data/alignments_and_trees'.format(APPLICATION_PATH))
+                    result, error = execute_subprocess(comment, bash_command, working_directory='{0}/user_data/alignments_and_trees'.format(APPLICATION_PATH))
                     #print('Result of MSA subprocess: {0}'.format(result))
                     # Convert clustalw format into phylip format for Phyml
                     input_alignment = open(MSA_outputfile_from_tcoffee, "rU")
@@ -476,7 +476,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
 
             # Do only (during testing) if the tree file does not yet exist!
             treefile = '{0}_phyml_tree.txt'.format(outputfile_phylip)
-            if not os.path.isfile('{0}/data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)):
+            if not os.path.isfile('{0}/user_data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)):
                 if generate_tree == True:
                     result, error = make_tree(outputfile_phylip, MODE)
                 else:
@@ -488,10 +488,10 @@ def write_protein_hitdict_to_file(protein_hitdict):
             #    html_string += '<p>&nbsp;</p>{0}'.format(file.read())
 
             # Check that the Newick tree file exists and that it contains a tree!
-            if os.path.isfile('{0}/data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)) and generate_tree == True:
+            if os.path.isfile('{0}/user_data/alignments_and_trees/{1}_all.phylip_phyml_tree.txt'.format(APPLICATION_PATH, taxon_sanitized)) and generate_tree == True:
                 #Draw tree
                 print('Drawing phylogenetic tree for taxon {0}'.format(taxon))
-                TREE_IMAGE_SVG = '{0}/data/alignments_and_trees/{1}.svg'.format(APPLICATION_PATH, taxon_sanitized)
+                TREE_IMAGE_SVG = '{0}/user_data/alignments_and_trees/{1}.svg'.format(APPLICATION_PATH, taxon_sanitized)
                 # Convert phylip into newick format
 
                 t = Tree(treefile)
@@ -537,7 +537,7 @@ def write_protein_hitdict_to_file(protein_hitdict):
                 TRUE_UNIQUES[taxon] = 'n.a.'
                 print('Not generating MSA/tree since number of homologous sequences in taxon {0} is too high ({1}).'.format(taxon, how_many_specific))
                 html_string = 'MSA/tree were not generated since number of homologous sequences in taxon {0} ({1}) exceeded the limit of {2}.'.format(taxon, how_many_specific, LIMIT['MAX'])
-        PROT_FILE = '{0}/data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
+        PROT_FILE = '{0}/user_data/protein_results/{1}.html'.format(APPLICATION_PATH, taxon)
         with open(PROT_FILE, 'a') as handle:
             # Don't make alignments for large numbers of proteins
             end_of_file = '</table>\n'
@@ -630,6 +630,9 @@ def get_protein_data(taxon):
                 # their description contains a repetition like "VEGF-A (Vacular endothelial growth factor-A)".
                 # The Try statement is simply for escaping both for-loops
                 ortholog_group = 'None'
+                #
+                # HERE WE TRY TO IDENTIFY SYNOMYNS, RELATED PROTEINS & UNKNOWN PROTEINS
+                #
                 try:
                     # Try synonyms first (more likely to find a category?)
                     for synonym in protein_data[3]:
@@ -688,13 +691,13 @@ def get_protein_data(taxon):
                         # makeprofiledb -title PDGF_V1.0 -in pdgf.pn -out PDGF -threshold 9.82 -scale 100.0 -dbtype rps -index true
                         # rpsblast -query NP_079484.1.fasta -db PDGF -evalue 0.00001 -outfmt 5 -out out.xml
                         # Download the sequence from Entrez
-                        query_filename = '{0}/rpsblast/data/{1}.fasta'.format(APPLICATION_PATH, hit_accession_no)
+                        query_filename = '{0}/prog_data/rpsblast/{1}.fasta'.format(APPLICATION_PATH, hit_accession_no)
                         if not os.path.isfile(query_filename):
                             download([hit_accession_no], query_filename)
-                        xml_result_filename = '{0}/rpsblast/data/{1}.xml'.format(APPLICATION_PATH, hit_accession_no)
+                        xml_result_filename = '{0}/prog_data/rpsblast/{1}.xml'.format(APPLICATION_PATH, hit_accession_no)
                         # Adjust the file locations:
-                        rpsblast_database = "rpsblast/PDGF"
-                        rpsblast_executable = '/home/mjeltsch/bin/ncbi-blast-2.9.0+/bin/rpsblast'
+                        rpsblast_database = "prog_data/rpsblast/PDGF"
+                        rpsblast_executable = '/home/mjeltsch/bin/blast/bin/rpsblast'
                         #Adjust the expectation cut-off here
                         E_VALUE_THRESHOLD = 0.00001
                         # THIS DOES NOT WORK IF THE Ubuntu-provided blast version is used!
@@ -850,6 +853,9 @@ def run_backcheck_blast(ID, proteindata):
     blastp_result = SearchIO.read('data/backcheck/{0}.xml'.format(ID), 'blast-xml')
     how_many = len(blastp_result)
     print('blastp result should equal 50: {0}'.format(how_many))
+    #
+    # HERE WE COUNT SYNOMYNS, RELATED PROTEINS & UNKNOWN PROTEINS
+    #
     i = 0 # count synonyms
     j = 0 # count related proteins
     k = 1 # count 50 rounds
@@ -1081,13 +1087,13 @@ def run():
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     #print('\nThe script is located in {0}'.format(APPLICATION_PATH))
-    TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
-    CSV_FILE = '{0}/data/genomes.csv'.format(APPLICATION_PATH)
-    PHYLUM_SPECIES_FILE = '{0}/data/phylum-sorted_list_of_fully_sequenced_genomes.txt'.format(APPLICATION_PATH)
-    DATABASE_FILE = '{0}/data/database.sqlite3'.format(APPLICATION_PATH)
-    LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
-    ANALYSIS_RESULTS_DIR = '{0}/data/analysis_results'.format(APPLICATION_PATH)
-    PROTEIN_RESULTS_DIR = '{0}/data/protein_results'.format(APPLICATION_PATH)
+    TAXON_DICTIONARY_FILE = '{0}/prog_data/taxon_data.py'.format(APPLICATION_PATH)
+    CSV_FILE = '{0}/prog_data/genomes.csv'.format(APPLICATION_PATH)
+    PHYLUM_SPECIES_FILE = '{0}/prog_data/phylum-sorted_list_of_fully_sequenced_genomes.txt'.format(APPLICATION_PATH)
+    DATABASE_FILE = '{0}/prog_data/database.sqlite3'.format(APPLICATION_PATH)
+    LOGFILE = '{0}/user_data/logfile.txt'.format(APPLICATION_PATH)
+    ANALYSIS_RESULTS_DIR = '{0}/user_data/analysis_results'.format(APPLICATION_PATH)
+    PROTEIN_RESULTS_DIR = '{0}/user_data/protein_results'.format(APPLICATION_PATH)
     # Remove all old analysis and protein results and recreate the directories
     if os.path.isdir(ANALYSIS_RESULTS_DIR):
         shutil.rmtree(ANALYSIS_RESULTS_DIR)
@@ -1103,12 +1109,12 @@ def run():
     #print('taxon_dictionary: {0}\n'.format(taxon_dictionary))
     #print("Populating new taxon dictionary")
     new_taxon_dictionary = taxon_dictionary
-    preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    preamble2, master_dictionary = load_dictionary('{0}/prog_data/master_dictionary.py'.format(APPLICATION_PATH))
     # Make a list of all manually identified false-positive hits
-    excluded_list = os.listdir('{0}/data/proteins_exclude'.format(APPLICATION_PATH))
+    excluded_list = os.listdir('{0}/prog_data/proteins_exclude'.format(APPLICATION_PATH))
     print('Excluded list:\{0}'.format(excluded_list))
     # Downlaod reference proteins and rename fasta description according to the key (human-readable name)
-    download_proteins('{0}/data/reference_proteins'.format(APPLICATION_PATH), master_dictionary, rename_fasta_description_after_key=True, overwrite=False, filename='after_value[0]')
+    download_proteins('{0}/prog_data/reference_proteins'.format(APPLICATION_PATH), master_dictionary, rename_fasta_description_after_key=True, overwrite=False, filename='after_value[0]')
     synonym_dictionary = make_synonym_dictionary(master_dictionary)
     print('synonym_dictionary:\n{0}'.format(synonym_dictionary))
     blacklist = load_blacklist()
@@ -1207,7 +1213,7 @@ def run():
     print(save_stats)
     # Delete all guide trees in tree directory
     print('Deleting all guide tree files.')
-    treedir = '{0}/data/alignments_and_trees/'.format(APPLICATION_PATH)
+    treedir = '{0}/user_data/alignments_and_trees/'.format(APPLICATION_PATH)
     for file in os.listdir(treedir):
         if file.endswith('_all.dnd'):
             os.remove('{0}/{1}'.format(treedir, file))
