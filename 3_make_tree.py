@@ -165,10 +165,13 @@ def load_dictionary(FILENAME):
             for key, value in dictionary.items():
                 print(key, value)
         except Exception as e:
+            preamble = ''
             dictionary = {}
             print('Could not read taxon dictionary {0}'.format(FILENAME))
     else:
+        preamble = ''
         dictionary = {}
+        print('Could not find taxon dictionary file {0}'.format(FILENAME))
     return preamble, dictionary
 
 # This takes a list (as shown below) and returns a formatted string which is displayed on the tree
@@ -257,7 +260,7 @@ def drawtree(TREEFILE):
     #                '8': "#B7FF88",
     #                '9': "#9FFF88",
     #                '10': "#88FF88"}
-    TAXON_DICTIONARY_FILE = '{0}/data/taxon_data.py'.format(APPLICATION_PATH)
+    TAXON_DICTIONARY_FILE = '{0}/prog_data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
     print('\nLoading tree file {0}:\n'.format(TREEFILE))
@@ -411,162 +414,164 @@ def drawtree(TREEFILE):
                 print('Animal group: {0}'.format(klasse))
                 if klasse == animal_class_name:
                     print('Match!')
-            try:
-                number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
-                number_of_animal_species = taxon_dictionary[animal_class_name][1]
-                number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
 
-                # Heuristic number for reliability
-                reliability = number_of_fully_sequenced_genomes**2/number_of_animal_species*number_of_protein_sequences+1
-                reliability = math.log10(reliability)*1.25
-                reliability = str(int(round(reliability, 0)))
-                #print('reliability for {0} is {1}'.format(animal_class_name, reliability))
+            #try:
+            number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
+            number_of_animal_species = taxon_dictionary[animal_class_name][1]
+            number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
 
-                if number_of_protein_sequences < 1000:
-                    number_of_protein_sequences = ' ' + str(number_of_protein_sequences)
-                elif number_of_protein_sequences < 1000000:
-                    number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000, 0))) + 'k'
-                elif number_of_protein_sequences < 1000000000:
-                    number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000000, 0))) + 'M'
-                animal_class_name_common = taxon_dictionary[animal_class_name][2]
+            # Heuristic number for reliability
+            reliability = number_of_fully_sequenced_genomes**2/number_of_animal_species*number_of_protein_sequences+1
+            reliability = math.log10(reliability)*0.9
+            reliability = str(int(round(reliability, 0)))
+            #print('reliability for {0} is {1}'.format(animal_class_name, reliability))
 
-                protein_dict = taxon_dictionary[animal_class_name][4]
-                #print(str(protein_dict))
-                # Convert dictionary into ordered dictionary
-                ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
-                #print('Ordered protein dict:\n{0}'.format(ordered_protein_dict))
+            if number_of_protein_sequences < 1000:
+                number_of_protein_sequences = ' ' + str(number_of_protein_sequences)
+            elif number_of_protein_sequences < 1000000:
+                number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000, 0))) + 'k'
+            elif number_of_protein_sequences < 1000000000:
+                number_of_protein_sequences = ' ' + str(int(round(number_of_protein_sequences/1000000, 0))) + 'M'
+            animal_class_name_common = taxon_dictionary[animal_class_name][2]
 
-                # Add a "fake" header (is actually part of the first phylum row)
-                if animal_class_name == 'ctenophora':
-                    textFace = TextFace('# animal\n species', fsize = 16, fstyle = "italic")
-                    (t & animal_class_name).add_face(textFace, 0, "aligned")
-                    textFace = TextFace(' # se-\n quences', fsize = 16, fstyle = "italic")
-                    (t & animal_class_name).add_face(textFace, 1, "aligned")
-                    textFace = TextFace(' # compl.\n genomes ', fsize = 16, fstyle = "italic")
-                    (t & animal_class_name).add_face(textFace, 2, "aligned")
-                    textFace = TextFace(' # unique blasthits\n(excl. false pos.)', fsize = 16, fstyle = "italic")
-                    (t & animal_class_name).add_face(textFace, 3, "aligned")
-                    textFace = TextFace(' ', fsize = 16)
-                    (t & animal_class_name).add_face(textFace, 4, "aligned")
-                    textFace = TextFace(' ', fsize = 16)
-                    (t & animal_class_name).add_face(textFace, 5, "aligned")
-                    #(t & animal_class_name).add_face(textFace, 13, "aligned")
-                    #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
-                    i = 6
+            protein_dict = taxon_dictionary[animal_class_name][4]
+            #print(str(protein_dict))
+            # Convert dictionary into ordered dictionary
+            ordered_protein_dict = collections.OrderedDict(sorted(protein_dict.items()))
+            #print('Ordered protein dict:\n{0}'.format(ordered_protein_dict))
 
-                    # Protein colors (Fonts, not background)
-                    #zero_color = '#FFFFE0' # LightYellow
-                    #first_color = '#98FB98' # PaleGreen
-                    #second_color = '#FFE4E1' # MistyRose
-                    #third_color = '#D8BFD8' # Thistle
-                    # Protein colors corresponding to the tree background color
-                    zero_color = "Black" # Cyan ->darker
-                    first_color = '#03BA03' # PaleGreen
-                    second_color = '#AD78AD' # Thistle
-                    third_color = '#808080' # Grey
-                    prot_color_dict = {    'PDGF-A':first_color,
-                                            'PDGF-B':first_color,
-                                            'PDGF-C':first_color,
-                                            'PDGF-D':first_color,
-                                            'PlGF-1':second_color,
-                                            'VEGF-A121':first_color,
-                                            'VEGF-A165':first_color,
-                                            'VEGF-A206':first_color,
-                                            'VEGF-B167':second_color,
-                                            'VEGF-B186':second_color,
-                                            'VEGF-C':zero_color,
-                                            'VEGF-D':second_color,
-                                            'VEGF-F':third_color}
-
-                    for protein, value in ordered_protein_dict.items():
-                        textFace = TextFace('', fsize = 16)
-                        (t & animal_class_name).add_face(textFace, i, "aligned")
-                        i += 1
-                        font_color = prot_color_dict[protein]
-                        textFace2 = TextFace(' '+protein, fsize = 24, tight_text = True, fgcolor=prot_color_dict[protein], fstyle = "italic", bold= True)
-                        (t & animal_class_name).add_face(textFace2, i, "aligned")
-                        i += 1
-
-                # NUMBERS (#0, #1, #2, #3)
-                # e.g. number of animal species in this class in the NCBI protein sequence database, ...
-                textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16, tight_text = True)
-                (t & animal_class_name_with).add_face(textFace, 0, "aligned")
-                textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16, tight_text = True)
-                (t & animal_class_name_with).add_face(textFace, 1, "aligned")
-                textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16, tight_text = True)
-                (t & animal_class_name_with).add_face(textFace, 2, "aligned")
-                tot_unique = taxon_dictionary[animal_class_name][6]
-                # Create links for the whole taxon
-                dict_key1 = str(counter1).zfill(3)
-                number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
-                counter1 += 1
-                # Total unique blast hits (in parenthesis unique true homologs , i.e. after subtracting those, that where
-                # manually identified as false positives)
-                #
-                # An alignment is also created if there are 0 true homologs after removing false positives! => FIX!
-                if taxon_dictionary[animal_class_name][7] == 'n.a.':
-                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (n.a.)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
-                elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique != 0:
-                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (0)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
-                elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique == 0:
-                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
-                elif taxon_dictionary[animal_class_name][7] != 'n.a.':
-                    true_homologs = ' ({0})'.format(taxon_dictionary[animal_class_name][7])
-                    textFace = TextFace(str(tot_unique)+DELIMITER1+dict_key1+true_homologs+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
-                else:
-                    # This option should never occur!
-                    textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
-                (t & animal_class_name_with).add_face(textFace, 3, "aligned")
-
-                # IMAGE (#4, animal silouette)
-                svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
-                print('SVG filename: {0}'.format('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name)))
-                (t & animal_class_name_with).add_face(svgFace, 4, "aligned")
-                svgFace.margin_right = 10
-                svgFace.margin_left = 10
-                svgFace.hzalign = 2
-                print('Adding svg image for {0}.'.format(animal_class_name))
-
-                # TEXT (#5, animal class name)
-                # Do not display anything if there is no common animal class name
-                if animal_class_name_common == '?' or animal_class_name_common == '':
-                    description = '{0}  '.format(animal_class_name)
-                else:
-                    description = '{0} ({1})  '.format(animal_class_name, animal_class_name_common)
-                textFace = TextFace(description, fsize = 16)
-                (t & animal_class_name_with).add_face(textFace, 5, "aligned")
-
-                # PROTEIN HITS (#6 and above)
-                # i continues the numbering of the column from left to right
+            # Add a "fake" header (is actually part of the first phylum row)
+            if animal_class_name == 'ctenophora':
+                textFace = TextFace('# animal\n species', fsize = 16, fstyle = "italic")
+                (t & animal_class_name).add_face(textFace, 0, "aligned")
+                textFace = TextFace(' # se-\n quences', fsize = 16, fstyle = "italic")
+                (t & animal_class_name).add_face(textFace, 1, "aligned")
+                textFace = TextFace(' # compl.\n genomes ', fsize = 16, fstyle = "italic")
+                (t & animal_class_name).add_face(textFace, 2, "aligned")
+                textFace = TextFace(' # unique blasthits\n(excl. false pos.)', fsize = 16, fstyle = "italic")
+                (t & animal_class_name).add_face(textFace, 3, "aligned")
+                textFace = TextFace(' ', fsize = 16)
+                (t & animal_class_name).add_face(textFace, 4, "aligned")
+                textFace = TextFace(' ', fsize = 16)
+                (t & animal_class_name).add_face(textFace, 5, "aligned")
+                #(t & animal_class_name).add_face(textFace, 13, "aligned")
+                #textFace = TextFace(' reliability\n (1-10)', fsize = 16)
                 i = 6
-                # value in the next for loop is a compound datatype like this:
-                # [0, {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0}]
+
+                # Protein colors (Fonts, not background)
+                #zero_color = '#FFFFE0' # LightYellow
+                #first_color = '#98FB98' # PaleGreen
+                #second_color = '#FFE4E1' # MistyRose
+                #third_color = '#D8BFD8' # Thistle
+                # Protein colors corresponding to the tree background color
+                zero_color = "Black" # Cyan ->darker
+                first_color = '#03BA03' # PaleGreen
+                second_color = '#AD78AD' # Thistle
+                third_color = '#808080' # Grey
+                prot_color_dict = {    'PDGF-A':first_color,
+                                        'PDGF-B':first_color,
+                                        'PDGF-C':first_color,
+                                        'PDGF-D':first_color,
+                                        'PlGF-1':second_color,
+                                        'VEGF-A121':first_color,
+                                        'VEGF-A165':first_color,
+                                        'VEGF-A206':first_color,
+                                        'VEGF-B167':second_color,
+                                        'VEGF-B186':second_color,
+                                        'VEGF-C':zero_color,
+                                        'VEGF-D':second_color,
+                                        'VEGF-E': "Black",
+                                        'VEGF-F':third_color}
 
                 for protein, value in ordered_protein_dict.items():
-                    #print('animal_class_name: {0}'.format(animal_class_name))
-                    #print('formatted_text_string: {0}'.format(formatted_text_string))
-                    # The format_false_positives is a function to specify the looks of the numbers that are visible in the final PDF table
-                    # It also does some calculation (of the unknown proteins)
-                    formatted_text_strings = format_false_positives(protein, value)
-                    #print('protein, value:\n{0}\n{1}'.format(protein, value))
-                    #
-                    # THIS IS THE NUMBER OF ORTHOLOGS FOUND
-                    textFace = TextFace(formatted_text_strings[0], fsize = 16, tight_text = True) #bold = True,
-                    (t & animal_class_name_with).add_face(textFace, i, "aligned")
-                    textFace.background.color = color_dict[reliability]
+                    textFace = TextFace('', fsize = 16)
+                    (t & animal_class_name).add_face(textFace, i, "aligned")
                     i += 1
-                    #
-                    # THESE ARE THE PARALOGS, UNKNOWN PROTEINS AND THE TOTAL NUMBER OF HOMOLOGS FOUND
-                    dict_key = str(counter).zfill(3)
-                    number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html" target="_blank">'.format(protein, animal_class_name)
-                    textFace2 = TextFace(DELIMITER+dict_key+formatted_text_strings[1]+DELIMITER, fsize = 16, fgcolor = "MediumBlue", tight_text = True)
-                    (t & animal_class_name_with).add_face(textFace2, i, "aligned")
-                    textFace2.background.color = color_dict[reliability]
+                    font_color = prot_color_dict[protein]
+                    textFace2 = TextFace(' '+protein, fsize = 24, tight_text = True, fgcolor=prot_color_dict[protein], fstyle = "italic", bold= True)
+                    (t & animal_class_name).add_face(textFace2, i, "aligned")
                     i += 1
-                    counter += 1
 
-            except Exception as ex:
-                print('Could not get common animal class name for {0} from  dictionary file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
+            # NUMBERS (#0, #1, #2, #3)
+            # e.g. number of animal species in this class in the NCBI protein sequence database, ...
+            textFace = TextFace(' ' + str(number_of_animal_species), fsize = 16, tight_text = True)
+            (t & animal_class_name_with).add_face(textFace, 0, "aligned")
+            textFace = TextFace(' ' + str(number_of_protein_sequences), fsize = 16, tight_text = True)
+            (t & animal_class_name_with).add_face(textFace, 1, "aligned")
+            textFace = TextFace(' ' + str(number_of_fully_sequenced_genomes), fsize = 16, tight_text = True)
+            (t & animal_class_name_with).add_face(textFace, 2, "aligned")
+            tot_unique = taxon_dictionary[animal_class_name][6]
+            # Create links for the whole taxon
+            dict_key1 = str(counter1).zfill(3)
+            number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
+            counter1 += 1
+            # Total unique blast hits (in parenthesis unique true homologs , i.e. after subtracting those, that where
+            # manually identified as false positives)
+            #
+            # An alignment is also created if there are 0 true homologs after removing false positives! => FIX!
+            if taxon_dictionary[animal_class_name][7] == 'n.a.':
+                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (n.a.)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+            elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique != 0:
+                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1+' (0)', fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+            elif taxon_dictionary[animal_class_name][7] == 0 and tot_unique == 0:
+                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+            elif taxon_dictionary[animal_class_name][7] != 'n.a.':
+                true_homologs = ' ({0})'.format(taxon_dictionary[animal_class_name][7])
+                textFace = TextFace(str(tot_unique)+DELIMITER1+dict_key1+true_homologs+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+            else:
+                # This option should never occur!
+                textFace = TextFace(DELIMITER1+dict_key1+str(tot_unique)+DELIMITER1, fgcolor = "MediumBlue", fsize = 16, tight_text = True)
+            (t & animal_class_name_with).add_face(textFace, 3, "aligned")
+
+            # IMAGE (#4, animal silouette)
+            svgFace = SVGFace('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name), height = 40)
+            print('SVG filename: {0}'.format('{0}{1}.svg'.format(IMG_BASENAME, animal_class_name)))
+            (t & animal_class_name_with).add_face(svgFace, 4, "aligned")
+            svgFace.margin_right = 10
+            svgFace.margin_left = 10
+            svgFace.hzalign = 2
+            print('Adding svg image for {0}.'.format(animal_class_name))
+
+            # TEXT (#5, animal class name)
+            # Do not display anything if there is no common animal class name
+            if animal_class_name_common == '?' or animal_class_name_common == '':
+                description = '{0}  '.format(animal_class_name)
+            else:
+                description = '{0} ({1})  '.format(animal_class_name, animal_class_name_common)
+            textFace = TextFace(description, fsize = 16)
+            (t & animal_class_name_with).add_face(textFace, 5, "aligned")
+
+            # PROTEIN HITS (#6 and above)
+            # i continues the numbering of the column from left to right
+            i = 6
+            # value in the next for loop is a compound datatype like this:
+            # [0, {'platelet-derived growth factor': 0, 'PDGF and VEGF related factor': 0, 'uncharacterized protein': 0, 'hypothetical protein': 0}]
+
+            for protein, value in ordered_protein_dict.items():
+                #print('animal_class_name: {0}'.format(animal_class_name))
+                #print('formatted_text_string: {0}'.format(formatted_text_string))
+                # The format_false_positives is a function to specify the looks of the numbers that are visible in the final PDF table
+                # It also does some calculation (of the unknown proteins)
+                formatted_text_strings = format_false_positives(protein, value)
+                #print('protein, value:\n{0}\n{1}'.format(protein, value))
+                #
+                # THIS IS THE NUMBER OF ORTHOLOGS FOUND
+                textFace = TextFace(formatted_text_strings[0], fsize = 16, tight_text = True) #bold = True,
+                (t & animal_class_name_with).add_face(textFace, i, "aligned")
+                textFace.background.color = color_dict[reliability]
+                i += 1
+                #
+                # THESE ARE THE PARALOGS, UNKNOWN PROTEINS AND THE TOTAL NUMBER OF HOMOLOGS FOUND
+                dict_key = str(counter).zfill(3)
+                number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html" target="_blank">'.format(protein, animal_class_name)
+                textFace2 = TextFace(DELIMITER+dict_key+formatted_text_strings[1]+DELIMITER, fsize = 16, fgcolor = "MediumBlue", tight_text = True)
+                (t & animal_class_name_with).add_face(textFace2, i, "aligned")
+                textFace2.background.color = color_dict[reliability]
+                i += 1
+                counter += 1
+
+            #except Exception as ex:
+            #    print('Could not get common animal class name for {0} from  dictionary file {1}. Error: '.format(animal_class_name, TAXON_DICTIONARY_FILE) + str(ex))
 
     # ROTATING SOME NODES CAN BE DONE HERE:
     # MOVE ACTINOPTERYGII NEXT TO THE OTHER FISH
@@ -585,20 +590,22 @@ def drawtree(TREEFILE):
     n1style["shape"] = "sphere"
     n1style["fgcolor"] = "darkred"
     n1style["size"] = 15
-    n1 = t.get_common_ancestor("toxicofera", "'lepidosauria excl. toxicofera'")
-    n1.set_style(n1style)
-    for item in n1:
-        # Set formating of leaves
-        if item.is_leaf():
-            leafstyle = NodeStyle()
-            leafstyle["hz_line_type"] = 1
-            leafstyle["hz_line_color"] = "Red"
-            leafstyle["vt_line_color"] = "Red"
-            leafstyle["shape"] = "sphere"
-            leafstyle["fgcolor"] = "blue"
-            leafstyle["size"] = 15
-            print('Setting leaf style for node {0}.'.format(n1))
-            item.set_style(leafstyle)
+
+    # Obsolete since we do not split the lepidosauria taxon anymore 
+    # n1 = t.get_common_ancestor("toxicofera", "'lepidosauria excl. toxicofera'")
+    # n1.set_style(n1style)
+    # for item in n1:
+    #     # Set formating of leaves
+    #     if item.is_leaf():
+    #         leafstyle = NodeStyle()
+    #         leafstyle["hz_line_type"] = 1
+    #         leafstyle["hz_line_color"] = "Red"
+    #         leafstyle["vt_line_color"] = "Red"
+    #         leafstyle["shape"] = "sphere"
+    #         leafstyle["fgcolor"] = "blue"
+    #         leafstyle["size"] = 15
+    #         print('Setting leaf style for node {0}.'.format(n1))
+    #         item.set_style(leafstyle)
 
     # Define background colors for parts of the tree
     nst1 = NodeStyle()
@@ -617,7 +624,8 @@ def drawtree(TREEFILE):
     n_vegfa_pdgf.set_style(nst2)
     n_vegfb = t.get_common_ancestor("cyclostomata", "chondrichthyes")
     n_vegfb.set_style(nst3)
-    n_vegff = t.get_common_ancestor("aves", "toxicofera")
+    # "toxicofera" replaced by "lepidosauria"
+    n_vegff = t.get_common_ancestor("aves", "lepidosauria")
     n_vegff.set_style(nst4)
 #    n3 = t.get_common_ancestor("c1", "c2", "c3")
 #    n3.set_style(nst3)
@@ -670,11 +678,11 @@ def run():
     # Determine directory of script (in order to load the data files)
     APPLICATION_PATH =  os.path.abspath(os.path.dirname(__file__))
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
-    TREEFILE = '{0}/data/animalia.newick'.format(APPLICATION_PATH)
+    TREEFILE = '{0}/prog_data/animalia.newick'.format(APPLICATION_PATH)
     SVGFILE = '{0}/animalia.svg'.format(APPLICATION_PATH)
     IMG_BASENAME = '{0}/images/'.format(APPLICATION_PATH)
-    LOGFILE = '{0}/data/logfile.txt'.format(APPLICATION_PATH)
-    preamble2, master_dictionary = load_dictionary('{0}/data/master_dictionary.py'.format(APPLICATION_PATH))
+    LOGFILE = '{0}/user_data/logfile.txt'.format(APPLICATION_PATH)
+    preamble2, master_dictionary = load_dictionary('{0}/prog_data/master_dictionary.py'.format(APPLICATION_PATH))
     # DELIMITER = pipe
     DELIMITER = '|'
     DELIMITER1 = '£'
