@@ -1240,9 +1240,6 @@ def run():
         print('Sum for {0}: {1}'.format(taxon, all_uniques))
         new_taxon_dictionary[taxon][6] = all_uniques
         total_number_of_unique_homologs += all_uniques
-    #print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
-    # Make backup file before overwriting
-    os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'.bak')
     # This used to be after line 1016
     write_protein_hitdict_to_file(protein_hitdict)
     # Add the real number of homologs (considering the manually excluded sequences)
@@ -1254,7 +1251,11 @@ def run():
             print('Error: TRUE_UNIQUES for taxon {0}: {1}; err: {2}'.format(taxon, TRUE_UNIQUES, err))
             # The TRUE_UNIQUES number is only calculated until LIMIT['MAX'], which is by default 200)
             new_taxon_dictionary[taxon][7] = '-'
+    # Make backup file before overwriting
+    print('\nSaving backup_of taxon_dictionary as {0}'.format(TAXON_DICTIONARY_FILE+'.bak'))
+    os.rename(TAXON_DICTIONARY_FILE, TAXON_DICTIONARY_FILE+'.bak')
     # Write new taxon data to file
+    print('\nWriting new_taxon_dictionary:\n{0}'.format(str(new_taxon_dictionary)))
     write_dict_to_file(preamble1, new_taxon_dictionary, TAXON_DICTIONARY_FILE)
 
 
