@@ -180,18 +180,20 @@ def blast_formatter(RID, FORMAT, FILE, VERBOSE = True):
         out_handle.close()
         return result.stdout.decode('utf-8')
 
-def execute_subprocess(comment, bash_command, working_directory='.'):
-    print('\nSubprocess: {0} {1} {2}'.format(comment, bash_command, time.ctime()))
+def execute_subprocess(comment, bash_command, working_directory = '.', silent = False):
+    if silent == False:
+        print('\nSubprocess: {0} {1} {2}'.format(comment, bash_command, time.ctime()))
     process = subprocess.Popen(bash_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd=working_directory)
     output, error = process.communicate()
     process_status = process.wait()
     output = output.decode('utf-8')
     error = error.decode('utf-8')
-    if output != '':
+    if output != '' and silent == False:
         print('Subprocess output: {0}'.format(output))
-    if error != '':
+    if error != '' and silent == False:
         print('Subprocess error: {0}'.format(error))
-    print('Subprocess output/error: {0}/{1}\n{2}'.format(output, error, time.ctime()))
+    if silent == False:
+        print('Subprocess output/error: {0}/{1}\n{2}'.format(output, error, time.ctime()))
     return output, error
 
 def execute_subprocess_new(comment, bash_command_as_list, working_directory='.'):

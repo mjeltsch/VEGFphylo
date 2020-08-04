@@ -133,7 +133,7 @@ def get_taxon_id_and_phylum(species_name, VERBOSE = True):
 # How many sequences are in the local database for this taxon? The gi files were manually downloaded from
 # NCBI. E.g. https://www.ncbi.nlm.nih.gov/protein/?term=txid7777%5Borganism%5D and then "Send to file" -> "Format: GI List" -> "Create File"
 # There should be smarter way to get these!
-def get_sequence_number_old(taxon, taxon_data):
+def get_sequence_number_old1(taxon, taxon_data):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
     TAXA_LIST = expand_complex_taxa(taxon_data[0])
     i = 0
@@ -148,7 +148,9 @@ def get_sequence_number_old(taxon, taxon_data):
             i -= j
     return i + 1
 
-def get_sequence_number(taxon, taxon_data):
+# The new function does not work! It always gives the number of total sequences and not the number
+# of sequences within the phylum
+def get_sequence_number_old2(taxon, taxon_data):
     print('Retrieving number of sequences for taxon {0}... -> '.format(taxon), end='')
     # Open any of the primary blast results for a specific species
     # The total number of sequences for this species in the database is
@@ -160,6 +162,24 @@ def get_sequence_number(taxon, taxon_data):
         how_many = blast_record.num_sequences_in_database
         print('How many sequences for {0}? -> {1}'.format(taxon, how_many))
     return how_many
+
+def get_sequence_number(taxon, taxon_data):
+    print('Retrieving number of sequences for taxon {0} (txid{1}) from NCBI\'s Identical Protein Groups (IPG) Database... -> '.format(taxon, taxon_data[0]), end='')
+    # Query the identical protein groups database
+    URL = 'https://www.ncbi.nlm.nih.gov/ipg?term=txid{0}[Organism]'.format(taxon_data[0])
+    r = requests.get(URL)
+    if r.status_code == 200:
+        number = re.search(r'>Items: (1 to 20 of )*(\d*)</h',r.text)
+        if number is not None:
+            number = number.group(2)        
+        else:
+            print('URL: {0}'.format(r.url))
+            number = 1
+        print('How many sequences for {0}? -> {1}'.format(taxon, number))
+    else:
+        print('Failed to retrive any data. Using sequence number = 0.')
+        number = '0'
+    return number
 
 def make_tree(ALIGNMENT_FILE, MODE):
     treedir = '{0}/user_data/alignments_and_trees'.format(APPLICATION_PATH)
@@ -1215,14 +1235,14 @@ def run():
             try:
                 new_species_number = get_species_number_from_ncbi(taxon, taxon_data)
             except Exception as err:
-                print('Could not get new species number. Error was: {0}',value(err))
+                print('Could not get new species number. Error was: {0}'.format(err))
             else:
                 new_taxon_dictionary[taxon][1] = new_species_number
             # NUMBER OF SEQUENCES IN NCBI DATABASE
             try:
                 new_sequence_number = get_sequence_number(taxon, taxon_data)
             except Exception as err:
-                print('Could not get new sequence number. Error was: {0}',value(err))
+                print('Could not get new sequence number. Error was: {0}'.format(err))
             else:
                 new_taxon_dictionary[taxon][3] = new_sequence_number
             # Wait in order not to overload the server
@@ -1265,7 +1285,7 @@ def run():
     else:
         print('Formating the taxon data file failed.')
     number_of_blast_searches = len(taxon_dictionary)*len(master_dictionary)
-    save_stats = 'Analyzed sequences (hits resulting from {0} blast searches, {1} animal groups x {2} query sequences):'.format(number_of_blast_searches, len(taxon_dictionary), len(master_dictionary))
+    save_stats = 'Analyzed sequences (hits resulting from {0} blast searches, {1} animal groups x {2} query sequences): '.format(number_of_blast_searches, len(taxon_dictionary), len(master_dictionary))
     save_stats += '{0} (out of which unique: {1}, programmatically recognized as VEGF/PDGF family members: {2}%)\n'.format(TOTAL_COUNT, total_number_of_unique_homologs, round(100-TOTAL_UNKNOWN_COUNT*100/TOTAL_COUNT, 1))
     with open(LOGFILE, 'a') as log_file:
         log_file.write(save_stats)

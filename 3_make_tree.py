@@ -232,7 +232,7 @@ def format_false_positives(protein, list_of_categories):
         formatted_text_strings = str(true_positive_counter), ' P{0}, ?{1}, ∑{2}'.format(total_related_counter, unknown_count, total_hits)
     return formatted_text_strings
 
-def drawtree(TREEFILE):
+def drawtree(TREEFILE, silent = False):
     global number_dictionary, number_dictionary1, DELIMITER, DELIMITER1
     # Red to White
     color_dict = {  '-':"White",
@@ -260,6 +260,17 @@ def drawtree(TREEFILE):
     #                '8': "#B7FF88",
     #                '9': "#9FFF88",
     #                '10': "#88FF88"}
+    #
+    # Shades of Green
+    green1 = "White"
+    green2 = "#DBF0E0"
+    green3 = "#B2DFBC"
+    green4 = "#8FD19E"
+    green5 = "#6DC381"
+    green6 = "#4AB563"
+    green7 = "#28A745"
+    green8 = "#228C3A"
+
     TAXON_DICTIONARY_FILE = '{0}/prog_data/taxon_data.py'.format(APPLICATION_PATH)
     preamble, taxon_dictionary = load_dictionary(TAXON_DICTIONARY_FILE)
 
@@ -284,39 +295,8 @@ def drawtree(TREEFILE):
     ts.branch_vertical_margin = 10 # 10 pixels between adjacent branches
     print(t)
 
-    # Define node styles for different animal classes
-    #
-    # Toxicofera
-    toxicofera = NodeStyle()
-    toxicofera["hz_line_type"] = 1
-    toxicofera["hz_line_color"] = "#cccccc"
-    # Mammals
-    mammalia = NodeStyle()
-    mammalia["bgcolor"] = "Chocolate"
-    # Reptiles
-    reptilia = NodeStyle()
-    reptilia["bgcolor"] = "Olive"
-    # Cartilaginous fish
-    chondrichthyes = NodeStyle()
-    chondrichthyes["bgcolor"] = "SteelBlue"
-    # Ray-fenned fish
-    actinopterygii = NodeStyle()
-    actinopterygii["bgcolor"] = "CornflowerBlue"
-    # Lobe-finned fish
-    sarcopterygii = NodeStyle()
-    sarcopterygii["bgcolor"] = "DarkCyan"
-    # Birds
-    aves = NodeStyle()
-    aves["bgcolor"] = "DarkSalmon"
-    # Amphibia
-    amphibia = NodeStyle()
-    amphibia["bgcolor"] = "DarkSeaGreen"
-    # Myxini
-    myxini = NodeStyle()
-    myxini["bgcolor"] = "LightBlue"
-
+    # Size ansd shape of the blue symbol for the leaves
     general_leaf_style = NodeStyle()
-    # size ansd shape of the blue symbol for the leaves
     general_leaf_style["size"] = 15
     general_leaf_style["shape"] = "sphere"
 
@@ -325,70 +305,16 @@ def drawtree(TREEFILE):
     nstyle["shape"] = "sphere"
     nstyle["size"] = 15
     nstyle["fgcolor"] = "darkred"
-    # Gray dashed branch lines
-    #nstyle["hz_line_type"] = 1
-    #nstyle["hz_line_color"] = "#cccccc"
 
     # Applies the same static style to all nodes in the tree if they are not leaves.
     # Note that if "nstyle" is modified, changes will affect to all nodes
     # Apply a separate style to all leaf nodes
     for node in t.traverse():
+        print("Setting leaf style for node " + node.name)
         if node.is_leaf():
-            print("Setting leaf style for node " + node.name)
-            animal_class_name = ''
-            print(animal_class_name)
-            if animal_class_name == 'Mammalia':
-                node.set_style(mammalia)
-            elif animal_class_name == 'Reptilia':
-                node.set_style(reptilia)
-            elif animal_class_name == 'Chondrichthyes':
-                node.set_style(chondrichthyes)
-            elif animal_class_name == 'Actinopterygii':
-                node.set_style(actinopterygii)
-            elif animal_class_name == 'Sarcopterygii':
-                node.set_style(sarcopterygii)
-            elif animal_class_name == 'Aves':
-                node.set_style(aves)
-            elif animal_class_name == 'Amphibia':
-                node.set_style(amphibia)
-            elif animal_class_name == 'Myxini':
-                node.set_style(myxini)
-            # Line styles for paraphyletic branch
-            elif animal_class_name == 'toxicofera':
-                node.set_style(toxicofera)
-            else:
-                node.set_style(nstyle)
-            # Set general leaf attributes
             node.set_style(general_leaf_style)
         else:
             node.set_style(nstyle)
-
-    # ADD TEXT
-    # for key, value in sequence_dictionary.items():
-    #     # For multiple sequences of a single species an error is generated
-    #     # Check first if the key is present in the tree file!
-    #     if key in treestring:
-    #         if key == outgroup_name:
-    #             print(key, value[0], value[1], value[2], value[3], value[4])
-    #             textFace = TextFace(value[1] + " (" + value[2] + ", " + key +  ", " + value[4] + ")   ", fsize = 16)
-    #             (t & key).add_face(textFace, 2, "aligned")
-    #             textFace.margin_left = 10
-    #             print(key, value[0], value[1], value[2], value[3])
-    #             textFace = TextFace(" ", fsize = 16)
-    #             (t & key).add_face(textFace, 2, "aligned")
-    #             textFace.margin_left = 10
-    #             print(key, value[0], value[1], value[2], value[3])
-    #             textFace = TextFace("Consensus score", fsize = 16)
-    #             (t & key).add_face(textFace, 2, "aligned")
-    #             textFace.margin_left = 10
-    #         else:
-    #             print(key, value[0], value[1], value[2], value[3], value[4], end = '')
-    #             textFace = TextFace(value[1] + " (" + value[2] + ", " + key +  ", " + value[4] + ")   ", fsize = 16)
-    #             (t & key).add_face(textFace, 2, "aligned")
-    #             textFace.margin_left = 10
-    #         print(" Adding...")
-    #     else:
-    #         print("key " + key + " is not present in the tree file. Skipping...")
 
     # ADD NODE STYLE & INFORMATION (TEXT, IMAGES)
 
@@ -401,7 +327,7 @@ def drawtree(TREEFILE):
     for node in t.traverse():
         if node.is_leaf():
             animal_class_name = node.name
-            print('-----------------------\nProcessing leaf node {0}:\n-----------------------\n'.format(node.name))
+            print('\n-----------------------\nProcessing leaf node {0}:\n-----------------------\n'.format(node.name), end = '')
             # Get the common name for this animal class if it exists
             #print('taxon_dictionary: {0}'.format(str(taxon_dictionary)))
             #
@@ -411,21 +337,22 @@ def drawtree(TREEFILE):
             animal_class_name_with = node.name
             # Testing of match condiitons
             for klasse in taxon_dictionary:
-                print('Animal group: {0}'.format(klasse))
+                if silent == False: print('Animal group: {0}'.format(klasse))
                 if klasse == animal_class_name:
-                    print('Match!')
+                    print('Match: {0}'.format(klasse))
 
             #try:
             number_of_fully_sequenced_genomes = taxon_dictionary[animal_class_name][5]
             number_of_animal_species = taxon_dictionary[animal_class_name][1]
-            number_of_protein_sequences = taxon_dictionary[animal_class_name][3]
+            number_of_protein_sequences = int(taxon_dictionary[animal_class_name][3])
 
-            # Heuristic number for reliability
-            reliability = number_of_fully_sequenced_genomes**2/number_of_animal_species*number_of_protein_sequences+1
-            reliability = math.log10(reliability)*0.9
+            # Heuristic number for reliability (used to color the background for the phylum)
+            reliability = math.log10(number_of_fully_sequenced_genomes**2/number_of_animal_species*number_of_protein_sequences+1)*0.9
+            # Round and make string from integer
             reliability = str(int(round(reliability, 0)))
-            #print('reliability for {0} is {1}'.format(animal_class_name, reliability))
+            print('Reliability of data for {0} is {1}'.format(animal_class_name, reliability))
 
+            # Formating the number of sequences
             if number_of_protein_sequences < 1000:
                 number_of_protein_sequences = ' ' + str(number_of_protein_sequences)
             elif number_of_protein_sequences < 1000000:
@@ -468,20 +395,21 @@ def drawtree(TREEFILE):
                 first_color = '#03BA03' # PaleGreen
                 second_color = '#AD78AD' # Thistle
                 third_color = '#808080' # Grey
-                prot_color_dict = {    'PDGF-A':first_color,
-                                        'PDGF-B':first_color,
-                                        'PDGF-C':first_color,
-                                        'PDGF-D':first_color,
-                                        'PlGF-1':second_color,
-                                        'VEGF-A121':first_color,
-                                        'VEGF-A165':first_color,
-                                        'VEGF-A206':first_color,
-                                        'VEGF-B167':second_color,
-                                        'VEGF-B186':second_color,
-                                        'VEGF-C':zero_color,
-                                        'VEGF-D':second_color,
+                # This determines the color of the writing of the different VEGFs
+                prot_color_dict = {    'PDGF-A': green5,
+                                        'PDGF-B': green5,
+                                        'PDGF-C': green5,
+                                        'PDGF-D': green5,
+                                        'PlGF-1': green7,
+                                        'VEGF-A121': green4,
+                                        'VEGF-A165': green4,
+                                        'VEGF-A206': green4,
+                                        'VEGF-B167': green7,
+                                        'VEGF-B186': green7,
+                                        'VEGF-C': green3,
+                                        'VEGF-D': green6,
                                         'VEGF-E': "Black",
-                                        'VEGF-F':third_color}
+                                        'VEGF-F': green8}
 
                 for protein, value in ordered_protein_dict.items():
                     textFace = TextFace('', fsize = 16)
@@ -579,9 +507,6 @@ def drawtree(TREEFILE):
     #n1 = t.get_common_ancestor("XP_006632034.2", "XP_006006690.1")
     #n1.swap_children()
 
-    # COLOR PARAPHYLETIC GROUPS DIFFERENTLY
-    # lepidosauria excl. toxicofera and toxicofera
-    #
     # Set formating of internal nodes
     n1style = NodeStyle()
     n1style["hz_line_type"] = 1
@@ -591,46 +516,78 @@ def drawtree(TREEFILE):
     n1style["fgcolor"] = "darkred"
     n1style["size"] = 15
 
-    # Obsolete since we do not split the lepidosauria taxon anymore 
-    # n1 = t.get_common_ancestor("toxicofera", "'lepidosauria excl. toxicofera'")
-    # n1.set_style(n1style)
-    # for item in n1:
-    #     # Set formating of leaves
-    #     if item.is_leaf():
-    #         leafstyle = NodeStyle()
-    #         leafstyle["hz_line_type"] = 1
-    #         leafstyle["hz_line_color"] = "Red"
-    #         leafstyle["vt_line_color"] = "Red"
-    #         leafstyle["shape"] = "sphere"
-    #         leafstyle["fgcolor"] = "blue"
-    #         leafstyle["size"] = 15
-    #         print('Setting leaf style for node {0}.'.format(n1))
-    #         item.set_style(leafstyle)
-
-    # Define background colors for parts of the tree
+    # Define background colors for parts of the tree and internal node appearance
     nst1 = NodeStyle()
-    nst1["bgcolor"] = "White"
+    nst1["bgcolor"] = green1
+    nst1["shape"] = "sphere"
+    nst1["fgcolor"] = "darkred"    
+    nst1["size"] = 15
+
     nst2 = NodeStyle()
-    nst2["bgcolor"] = "PaleGreen"
+    nst2["bgcolor"] = green2
+    nst2["shape"] = "sphere"
+    nst2["fgcolor"] = "darkred"    
+    nst2["size"] = 15
+
     nst3 = NodeStyle()
-    nst3["bgcolor"] = "Thistle"
+    nst3["bgcolor"] = green3
+    nst3["shape"] = "sphere"
+    nst3["fgcolor"] = "darkred"    
+    nst3["size"] = 15
+
     nst4 = NodeStyle()
-    nst4["bgcolor"] = "LightGrey"
+    nst4["bgcolor"] = green4
+    nst4["shape"] = "sphere"
+    nst4["fgcolor"] = "darkred"    
+    nst4["size"] = 15
 
+    nst5 = NodeStyle()
+    nst5["bgcolor"] = green5
+    nst5["shape"] = "sphere"
+    nst5["fgcolor"] = "darkred"    
+    nst5["size"] = 15
 
-    n_vegfc = t.get_common_ancestor("porifera", "placozoa")
-    n_vegfc.set_style(nst1)
-    n_vegfa_pdgf = t.get_common_ancestor("cnidaria", "xenacoelomorpha")
-    n_vegfa_pdgf.set_style(nst2)
-    n_vegfb = t.get_common_ancestor("cyclostomata", "chondrichthyes")
-    n_vegfb.set_style(nst3)
-    # "toxicofera" replaced by "lepidosauria"
-    n_vegff = t.get_common_ancestor("aves", "lepidosauria")
-    n_vegff.set_style(nst4)
-#    n3 = t.get_common_ancestor("c1", "c2", "c3")
-#    n3.set_style(nst3)
-#    n4 = t.get_common_ancestor("b3", "b4")
-#    n4.set_style(nst4)
+    nst6 = NodeStyle()
+    nst6["bgcolor"] = green6
+    nst6["shape"] = "sphere"
+    nst6["fgcolor"] = "darkred"    
+    nst6["size"] = 15
+
+    nst7 = NodeStyle()
+    nst7["bgcolor"] = green7
+    nst7["shape"] = "sphere"
+    nst7["fgcolor"] = "darkred"    
+    nst7["size"] = 15
+
+    nst8 = NodeStyle()
+    nst8["bgcolor"] = green8
+    nst8["size"] = 15
+    nst8["shape"] = "sphere"
+
+    n_xC = t.get_common_ancestor("porifera", "placozoa")
+    n_xC.set_style(nst1)
+
+    n_C = t.get_common_ancestor("cnidaria", "xenacoelomorpha")
+    n_C.set_style(nst2)
+
+    n_CA = t.get_common_ancestor("echinodermata", "cephalochordata")
+    n_CA.set_style(nst3)
+
+    n_CA_PDGF = t.get_common_ancestor("cephalochordata", "cyclostomata")
+    n_CA_PDGF.set_style(nst4)
+
+    n_CAD_PDGF = t.get_common_ancestor("actinopterygii", "chondrichthyes")
+    n_CAD_PDGF.set_style(nst5)
+
+    n_CADPlB = t.get_common_ancestor("amphibia", "actinopterygii")
+    n_CADPlB.set_style(nst6)    
+
+    n_xB = t.get_common_ancestor("aves", "lepidosauria")
+    n_xB.set_style(nst7)
+
+    n_F = t.search_nodes(name="lepidosauria")
+    for item in n_F:
+        item.set_style(nst8)
 
     # Add description to treefile
     description_text = "• Analysis performed: " + datetime.datetime.now().strftime("%y%m%d_%H%M%S") + "\n"
@@ -639,8 +596,8 @@ def drawtree(TREEFILE):
         lines = log_file.read().splitlines()
         description_text += '• ' + lines[-1] + '.'
     # Add other stuff to description
-    description_text += '\n• Red dotted lines in the tree indicate paraphyletic relationships.\n'
-    description_text += '• The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
+    #description_text += '\n• Red dotted lines in the tree indicate paraphyletic relationships.\n'
+    description_text += '\n• The tree background color indicates the presence of the proteins with the corresponding color according to our hypotheses.\n'
     description_text += '• The red-to-white background of the table indicates a heuristic reliability of the results, where a brighter color indicates a higher reliability. This is '
     description_text += 'calculated using the number of fully sequenced genomes, the number of species in the phylum and the number of protein sequences available for that phylum.\n'
     description_text += '• The numbers in the table denote the number of: orthologs found (black), P = paralogs found, ? = homologs found, whose relationship could not be programmatically determined, ∑ = total homologs found.\n '
@@ -688,24 +645,25 @@ def run():
     DELIMITER1 = '£'
 
     if os.path.isfile(TREEFILE):
-        drawtree(TREEFILE)
+        drawtree(TREEFILE, silent = True)
+        print('Inserting xlinks, please wait...')
         # Replace the special string (|XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary.items():
             command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER, key, value)
-            result = execute_subprocess("Inserting xlinks:\n", command)
+            result = execute_subprocess("Inserting xlinks:\n", command, silent = True)
         print('Opened {0} xlinks'.format(len(number_dictionary)))
         # Replace all end strings (£)
         command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER)
-        result = execute_subprocess("Inserting xlinks:\n", command)
+        result = execute_subprocess("Inserting xlinks:\n", command, silent = True)
 
         # Replace the special string (£XXXX) with help of the number_dictionary by xlinks
         for key, value in number_dictionary1.items():
             command = 'sed -i -e \'s/{0}{1}/{2}/g\' animalia.svg'.format(DELIMITER1, key, value)
-            result = execute_subprocess("Inserting xlinks:\n", command)
+            result = execute_subprocess("Inserting xlinks:\n", command, silent = True)
         print('Opened {0} xlinks'.format(len(number_dictionary1)))
         # Replace all end strings (£)
         command = 'sed -i -e \'s/{0}/<\/a>/g\' animalia.svg'.format(DELIMITER1)
-        result = execute_subprocess("Inserting xlinks:\n", command)
+        result = execute_subprocess("Inserting xlinks:\n", command, silent = True)
 
         # Generate PDF file
         command = 'inkscape --export-pdf {0} {1}'.format('animalia.pdf', SVGFILE)
