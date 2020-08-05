@@ -39,7 +39,8 @@
 # tunicata = ascidians/sea squirts/tunicates/sea pork/sea livers/sea tulips
 #
 # PHYLUM DICTIONARY   phylum: [ncbi_taxon_id, number of animnal species in this phylum in the NCBI database, common name, number of protein sequences for that taxon in the NCBI nr protein database, {protein data dictionary}, number of fully sequenced genomes in the phylum]
-# PROTEIN DATA DICTIONARY   protein: [how many blast hits in this phylum which are unambigously identified as orthologous to the query protein, dictionary of paralogs (closely related proteins), dictionary of synonyms]
+#
+# PROTEIN DATA DICTIONARY   'protein': [how many blast hits in this phylum which are unambigously identified as orthologous to the query protein, dictionary of paralogs (closely related proteins), dictionary of synonyms]
 #
 # Complex phylum names (e.g. with white spaces) need to be enclosed in single quotes!
 # In fact, complex phylum names are mostly not monophyletic, but paraphyletic and the the complementary

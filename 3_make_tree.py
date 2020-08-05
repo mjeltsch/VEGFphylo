@@ -431,7 +431,7 @@ def drawtree(TREEFILE, silent = False):
             tot_unique = taxon_dictionary[animal_class_name][6]
             # Create links for the whole taxon
             dict_key1 = str(counter1).zfill(3)
-            number_dictionary1[dict_key1] = '<a xlink:href="data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
+            number_dictionary1[dict_key1] = '<a xlink:href="user_data\/protein_results\/{0}.html" target="_blank">'.format(animal_class_name)
             counter1 += 1
             # Total unique blast hits (in parenthesis unique true homologs , i.e. after subtracting those, that where
             # manually identified as false positives)
@@ -491,7 +491,7 @@ def drawtree(TREEFILE, silent = False):
                 #
                 # THESE ARE THE PARALOGS, UNKNOWN PROTEINS AND THE TOTAL NUMBER OF HOMOLOGS FOUND
                 dict_key = str(counter).zfill(3)
-                number_dictionary[dict_key] = '<a xlink:href="data\/analysis_results\/{0}\/{1}.html" target="_blank">'.format(protein, animal_class_name)
+                number_dictionary[dict_key] = '<a xlink:href="user_data\/analysis_results\/{0}\/{1}.html" target="_blank">'.format(protein, animal_class_name)
                 textFace2 = TextFace(DELIMITER+dict_key+formatted_text_strings[1]+DELIMITER, fsize = 16, fgcolor = "MediumBlue", tight_text = True)
                 (t & animal_class_name_with).add_face(textFace2, i, "aligned")
                 textFace2.background.color = color_dict[reliability]
