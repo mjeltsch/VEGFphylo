@@ -152,7 +152,7 @@ def timeout(error_message=os.strerror(errno.ETIME)):
 
 if args.local_remote == 'local_recycle':
     REMOTE = 'local_recycle'
-    print('This run uses - if available - blastp search results from previous runs to save time. New searchers are done locally.')
+    print('This run uses - if available - blastp search results from previous runs to save time. New searches are done locally.')
 elif args.local_remote == 'remote_recycle':
     REMOTE = 'remote_recycle'
     print('This run uses - if available - blastp search results from previous runs to save time. New searches are done remotely.')
@@ -256,7 +256,8 @@ def blastp(PROTEIN, PROTEIN_DATA, TAXON, TAXON_DATA):
     # Memorize start time to figure out how long the whole script execution takes
     start_time = time.time()
     #print('Types:\nTAXON: {0}\nTAXON_DATA: {1}\nPROTEIN: {2}\nTAXON_DATA[2]: {3}\n'.format(type(TAXON), type(TAXON_DATA), type(PROTEIN), type(TAXON_DATA[2])))
-    print('\nRunning remote blastp against {0}, subsection {1}, requesting {2} results in html format, with the following query sequence: {3} ({4}).'.format(BLAST_DATABASE, TAXON, OPTIONAL_BLAST_NO, PROTEIN, PROTEIN_ID))
+    human_time = time.ctime(int(start_time))
+    print('\nRunning remote blastp against {0}, subsection {1}, requesting {2} results in html format, with the following query sequence: {3} ({4}, started at UTC {5})...'.format(BLAST_DATABASE, TAXON, OPTIONAL_BLAST_NO, PROTEIN, PROTEIN_ID, human_time))
     # The hitlist_size seems to be ignored by the wrapper/service????
     # Reference: http://biopython.org/DIST/docs/api/Bio.Blast.NCBIWWW-module.html
     # The default is to use the sequence_id for the blasting. However, if no sequence_id is available, we can provide the amino acid sequence locally
@@ -307,8 +308,13 @@ def extract_RID_from_html_file(FILE):
     # Get the RID from the html file
     with open(FILE, 'r') as handle:
         html_source = handle.read()
-        RID = re.search('</span> <h1>results for RID-(.*)</h1></span>', html_source).group(1)
-        print('The extracted RID is: {0}'.format(RID))
+        RIDobj = re.search('</span> <h1>results for RID-(.*)</h1></span>', html_source)
+        if RIDobj is None:
+            print('The blast search did not return any RID.')
+            RID = None
+        else:
+            RID = RIDobj.group(1)
+            print('The extracted RID is: {0}'.format(RID))
     return RID
 
 # Wrapping blastp in a timeout function
@@ -333,7 +339,7 @@ def run():
     # Determine directories of script (in order to load & save the data & log files)
     APPLICATION_PATH = os.path.abspath(os.path.dirname(__file__))
     DATA_DIR = '{0}/user_data/primary_blast_results'.format(APPLICATION_PATH)
-    LOGFILE = '{0}/prog_data/temp/logfile.txt'.format(APPLICATION_PATH)
+    LOGFILE = '{0}/user_data/logfile.txt'.format(APPLICATION_PATH)
     SUMMARY_FILE = '{0}/summary.csv'.format(DATA_DIR)
     print('\nThe script is located in {0}'.format(APPLICATION_PATH))
     create_subdirectory(DATA_DIR)
@@ -382,15 +388,24 @@ def run():
                             # Check whether we have an XML file and it is > 0
                             if os.path.isfile(BLAST_XMLFILE) and os.path.getsize(BLAST_XMLFILE) > 0:
                                 print('{0} exists and is > 0'.format(BLAST_XMLFILE))
-                                parse_blast_result(protein, protein_data, taxon)
-                                break
+                                try:
+                                    parse_blast_result(protein, protein_data, taxon)
+                                except ValueError as err:
+                                    print(err)
+                                    print('Deleting BLAST_XMLFILE file and requesting a new one...')
+                                    if os.path.isfile(BLAST_XMLFILE):
+                                        os.remove(BLAST_XMLFILE)
+                                except:
+                                    print('Unknown error during parsing of BLAST_XMLFILE {0}'.format(BLAST_XMLFILE))
+                                else:
+                                    break
                             else:
                                 # Check whether the HMTL file is younger than 24 hours
                                 age = round(time.time() - os.path.getmtime(BLAST_HTMLFILE))
                                 if age < 86400:
                                     print('{0} is younger than one day ({1} seconds old)'.format(BLAST_HTMLFILE, age))
                                     RID = extract_RID_from_html_file(BLAST_HTMLFILE)
-                                    if RID != '':
+                                    if RID is not None:
                                         print('RID: {0}'.format(RID))
                                         result = blast_formatter(RID, '5', BLAST_XMLFILE, False)
                                         print('blast_fomatter result:\n{0}'.format(result))
@@ -398,20 +413,26 @@ def run():
                                             print('XML:\n{0}'.format(result))
                                             parse_blast_result(protein, protein_data, taxon)
                                             break
-                                        else: raise Exception('BLAST_XMLFILE file has size 0.')
-                                    else: raise Exception('RID could not be extracted from BLAST_HTMLFILE')
+                                        else:
+                                            if os.path.isfile(BLAST_HTMLFILE):
+                                                os.remove(BLAST_HTMLFILE)
+                                            raise Exception('BLAST_XMLFILE file has size 0. Deleting BLAST_HTMLFILE file and requesting a new one...')
+                                    else:
+                                        if os.path.isfile(BLAST_HTMLFILE):
+                                            os.remove(BLAST_HTMLFILE)
+                                        raise Exception('RID could not be extracted from BLAST_HTMLFILE. Deleting BLAST_HTMLFILE and requesting a new one...')
                                 else:
                                     if os.path.isfile(BLAST_HTMLFILE):
                                         os.remove(BLAST_HTMLFILE)
                                     raise Exception('Need to get a new BLAST_HTMLFILE...')
                         else:
                             TIME_MULTIPLICATOR = 2
-                            SECONDS = int(round(taxon_data[3]**(1/9)*1000*TIME_MULTIPLICATOR, 0))
+                            SECONDS = int(round(int(taxon_data[3])**(1/9)*1000*TIME_MULTIPLICATOR, 0))
                             print('{0} does not exist or has size 0. Initiating blast. If no results are received within {1} seconds, the blast will be cancelled'.format(BLAST_HTMLFILE, SECONDS))
                             if blastp(protein, protein_data, taxon, taxon_data) == True:
-                                print('Blast was successful, trying to extract RID...')
+                                print('Blast response received, trying to extract RID...')
                                 RID = extract_RID_from_html_file(BLAST_HTMLFILE)
-                                if RID != '':
+                                if RID is not None:
                                     print('RID: {0}'.format(RID))
                                     result = blast_formatter(RID, '5', BLAST_XMLFILE, True)
                                     print('blast_fomatter result:\n{0}'.format(result))

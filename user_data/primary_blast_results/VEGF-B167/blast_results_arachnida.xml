@@ -2,11 +2,11 @@
 <!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
 <BlastOutput>
   <BlastOutput_program>blastp</BlastOutput_program>
-  <BlastOutput_version>BLASTP 2.6.0+</BlastOutput_version>
+  <BlastOutput_version>BLASTP 2.10.0+</BlastOutput_version>
   <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
   <BlastOutput_db>nr</BlastOutput_db>
   <BlastOutput_query-ID>NP_001230662.1</BlastOutput_query-ID>
-  <BlastOutput_query-def>vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens] &gt;ref|XP_001144738.2| vascular endothelial growth factor B isoform X2 [Pan troglodytes] &gt;gb|AAA91463.1| VEGF related factor isoform VRF167 precursor [Homo sapiens] &gt;gb|AAB06274.1| vascular endothelial growth factor B precursor [Homo sapiens] &gt;gb|PNI94119.1| VEGFB isoform 3 [Pan troglodytes]</BlastOutput_query-def>
+  <BlastOutput_query-def>vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens] &gt;ref|XP_001144738.2| vascular endothelial growth factor B isoform X2 [Pan troglodytes] &gt;ref|XP_034788766.1| vascular endothelial growth factor B isoform X2 [Pan paniscus] &gt;gb|AAA91463.1| VEGF related factor isoform VRF167 precursor [Homo sapiens] &gt;gb|AAB06274.1| vascular endothelial growth factor B precursor [Homo sapiens] &gt;gb|PNI94119.1| VEGFB isoform 3 [Pan troglodytes]</BlastOutput_query-def>
   <BlastOutput_query-len>188</BlastOutput_query-len>
   <BlastOutput_param>
     <Parameters>
@@ -21,7 +21,7 @@
 <Iteration>
   <Iteration_iter-num>1</Iteration_iter-num>
   <Iteration_query-ID>NP_001230662.1</Iteration_query-ID>
-  <Iteration_query-def>vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens] &gt;ref|XP_001144738.2| vascular endothelial growth factor B isoform X2 [Pan troglodytes] &gt;gb|AAA91463.1| VEGF related factor isoform VRF167 precursor [Homo sapiens] &gt;gb|AAB06274.1| vascular endothelial growth factor B precursor [Homo sapiens] &gt;gb|PNI94119.1| VEGFB isoform 3 [Pan troglodytes]</Iteration_query-def>
+  <Iteration_query-def>vascular endothelial growth factor B isoform VEGFB-167 precursor [Homo sapiens] &gt;ref|XP_001144738.2| vascular endothelial growth factor B isoform X2 [Pan troglodytes] &gt;ref|XP_034788766.1| vascular endothelial growth factor B isoform X2 [Pan paniscus] &gt;gb|AAA91463.1| VEGF related factor isoform VRF167 precursor [Homo sapiens] &gt;gb|AAB06274.1| vascular endothelial growth factor B precursor [Homo sapiens] &gt;gb|PNI94119.1| VEGFB isoform 3 [Pan troglodytes]</Iteration_query-def>
   <Iteration_query-len>188</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -35,7 +35,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>64.6994</Hsp_bit-score>
       <Hsp_score>156</Hsp_score>
-      <Hsp_evalue>2.21028e-11</Hsp_evalue>
+      <Hsp_evalue>2.35277e-11</Hsp_evalue>
       <Hsp_query-from>7</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>5</Hsp_hit-from>
@@ -63,7 +63,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>63.5438</Hsp_bit-score>
       <Hsp_score>153</Hsp_score>
-      <Hsp_evalue>5.65712e-11</Hsp_evalue>
+      <Hsp_evalue>6.02182e-11</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>50</Hsp_hit-from>
@@ -82,6 +82,34 @@
 </Hit>
 <Hit>
   <Hit_num>3</Hit_num>
+  <Hit_id>ref|XP_035223831.1|</Hit_id>
+  <Hit_def>vascular endothelial growth factor A-like [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035223831</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>5.63184e-09</Hsp_evalue>
+      <Hsp_query-from>68</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>LVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEEHSQ----------CECRPKKKD----SAVKPDSPRPLCPR------CTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKLRR</Hsp_qseq>
+      <Hsp_hseq>IWPICTRVRRCGGCCSSKLLHCVATRKSSITVKVIKARYPHPEAEMLELEGYENVKLEQHDRCACKCRQEEQDCTPKQKYQPGQCRCVCRNQHDASLCKQPEQFWDNKDCECKCRHQS--DC-STGSVFNVDKCKCEALDR</Hsp_hseq>
+      <Hsp_midline>+ P C  V+RCGGCC    L CV T +  + ++++  RYP  +   + LE +            C+CR +++D       +P   R +C        C Q  Q  D + C C+CR +S   C   G   N D C+C  L R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
   <Hit_id>dbj|GBM56522.1|</Hit_id>
   <Hit_def>hypothetical protein AVEN_140593_1 [Araneus ventricosus]</Hit_def>
   <Hit_accession>GBM56522</Hit_accession>
@@ -91,7 +119,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>57.3806</Hsp_bit-score>
       <Hsp_score>137</Hsp_score>
-      <Hsp_evalue>7.35921e-09</Hsp_evalue>
+      <Hsp_evalue>7.83364e-09</Hsp_evalue>
       <Hsp_query-from>5</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>43</Hsp_hit-from>
@@ -109,7 +137,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>4</Hit_num>
+  <Hit_num>5</Hit_num>
   <Hit_id>gb|KFM78688.1|</Hit_id>
   <Hit_def>Platelet-derived growth factor subunit A, partial [Stegodyphus mimosarum]</Hit_def>
   <Hit_accession>KFM78688</Hit_accession>
@@ -119,7 +147,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>57.3806</Hsp_bit-score>
       <Hsp_score>137</Hsp_score>
-      <Hsp_evalue>7.41729e-09</Hsp_evalue>
+      <Hsp_evalue>7.89546e-09</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>99</Hsp_hit-from>
@@ -137,7 +165,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>5</Hit_num>
+  <Hit_num>6</Hit_num>
   <Hit_id>gb|RWS09095.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like protein, partial [Dinothrombium tinctorium]</Hit_def>
   <Hit_accession>RWS09095</Hit_accession>
@@ -147,7 +175,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>56.225</Hsp_bit-score>
       <Hsp_score>134</Hsp_score>
-      <Hsp_evalue>7.58921e-09</Hsp_evalue>
+      <Hsp_evalue>8.07847e-09</Hsp_evalue>
       <Hsp_query-from>23</Hsp_query-from>
       <Hsp_query-to>182</Hsp_query-to>
       <Hsp_hit-from>28</Hsp_hit-from>
@@ -165,7 +193,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>6</Hit_num>
+  <Hit_num>7</Hit_num>
   <Hit_id>ref|XP_023229664.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023229664</Hit_accession>
@@ -175,7 +203,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>56.6102</Hsp_bit-score>
       <Hsp_score>135</Hsp_score>
-      <Hsp_evalue>1.14279e-08</Hsp_evalue>
+      <Hsp_evalue>1.21647e-08</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>108</Hsp_hit-from>
@@ -193,7 +221,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>7</Hit_num>
+  <Hit_num>8</Hit_num>
   <Hit_id>gb|RWS30020.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like protein [Leptotrombidium deliense]</Hit_def>
   <Hit_accession>RWS30020</Hit_accession>
@@ -203,7 +231,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>55.4546</Hsp_bit-score>
       <Hsp_score>132</Hsp_score>
-      <Hsp_evalue>1.48929e-08</Hsp_evalue>
+      <Hsp_evalue>1.5853e-08</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>188</Hsp_query-to>
       <Hsp_hit-from>27</Hsp_hit-from>
@@ -221,7 +249,35 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>8</Hit_num>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|XP_035223494.1|</Hit_id>
+  <Hit_def>platelet-derived growth factor subunit B-like [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035223494</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>2.27119e-08</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>264</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>VSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRY-PSSQL--GEM------SLEEHSQCECRPKKKDSAVKPDSP-------RPLCPR------CTQHHQRPDPRTCRCRCRRRSFLRCQGRGLELNPDTCRCRKL</Hsp_qseq>
+      <Hsp_hseq>TAFVDGY----CQPELRVVKLE-ELLMNSSVFIWPTCVRLRRCKGCCTSKRLSCHPTAVSIVNITIPFFTFTPSDTLRTFEMRGTRIFTLEQHDRCGCDCTELEKDCTPNVHEYRNQECRCVCKNLDQQVACQGYSKIWNNRNCSCECRHS--LTC-STGFYFNSETCRCEEI</Hsp_hseq>
+      <Hsp_midline> +++D Y    CQP   VV L  EL+   +  + P+CV ++RC GCC    L C PT    V + I    + PS  L   EM      +LE+H +C C   + +    P+         R +C        C  + +  + R C C CR    L C   G   N +TCRC ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
   <Hit_id>ref|XP_015928229.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A [Parasteatoda tepidariorum]</Hit_def>
   <Hit_accession>XP_015928229</Hit_accession>
@@ -231,7 +287,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>54.299</Hsp_bit-score>
       <Hsp_score>129</Hsp_score>
-      <Hsp_evalue>7.97013e-08</Hsp_evalue>
+      <Hsp_evalue>8.48395e-08</Hsp_evalue>
       <Hsp_query-from>5</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>43</Hsp_hit-from>
@@ -249,7 +305,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>9</Hit_num>
+  <Hit_num>11</Hit_num>
   <Hit_id>ref|XP_015786153.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X1 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015786153</Hit_accession>
@@ -259,7 +315,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>53.5286</Hsp_bit-score>
       <Hsp_score>127</Hsp_score>
-      <Hsp_evalue>1.29185e-07</Hsp_evalue>
+      <Hsp_evalue>1.37513e-07</Hsp_evalue>
       <Hsp_query-from>44</Hsp_query-from>
       <Hsp_query-to>183</Hsp_query-to>
       <Hsp_hit-from>97</Hsp_hit-from>
@@ -277,7 +333,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>10</Hit_num>
+  <Hit_num>12</Hit_num>
   <Hit_id>ref|XP_015786155.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X2 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015786155</Hit_accession>
@@ -287,7 +343,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>53.1434</Hsp_bit-score>
       <Hsp_score>126</Hsp_score>
-      <Hsp_evalue>1.37045e-07</Hsp_evalue>
+      <Hsp_evalue>1.4588e-07</Hsp_evalue>
       <Hsp_query-from>44</Hsp_query-from>
       <Hsp_query-to>183</Hsp_query-to>
       <Hsp_hit-from>79</Hsp_hit-from>
@@ -305,7 +361,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>11</Hit_num>
+  <Hit_num>13</Hit_num>
   <Hit_id>ref|XP_015915884.1|</Hit_id>
   <Hit_def>platelet-derived growth factor subunit A [Parasteatoda tepidariorum]</Hit_def>
   <Hit_accession>XP_015915884</Hit_accession>
@@ -315,7 +371,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>53.1434</Hsp_bit-score>
       <Hsp_score>126</Hsp_score>
-      <Hsp_evalue>1.65175e-07</Hsp_evalue>
+      <Hsp_evalue>1.75823e-07</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>105</Hsp_hit-from>
@@ -333,7 +389,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>12</Hit_num>
+  <Hit_num>14</Hit_num>
   <Hit_id>ref|XP_023239751.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X2 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023239751</Hit_accession>
@@ -343,7 +399,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>52.373</Hsp_bit-score>
       <Hsp_score>124</Hsp_score>
-      <Hsp_evalue>3.68118e-07</Hsp_evalue>
+      <Hsp_evalue>3.9185e-07</Hsp_evalue>
       <Hsp_query-from>37</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>56</Hsp_hit-from>
@@ -361,7 +417,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>13</Hit_num>
+  <Hit_num>15</Hit_num>
   <Hit_id>ref|XP_023239718.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-A-like isoform X1 [Centruroides sculpturatus] &gt;ref|XP_023239726.1| vascular endothelial growth factor A-A-like isoform X1 [Centruroides sculpturatus] &gt;ref|XP_023239734.1| vascular endothelial growth factor A-A-like isoform X1 [Centruroides sculpturatus] &gt;ref|XP_023239744.1| vascular endothelial growth factor A-A-like isoform X1 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023239718</Hit_accession>
@@ -371,7 +427,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>52.373</Hsp_bit-score>
       <Hsp_score>124</Hsp_score>
-      <Hsp_evalue>3.97692e-07</Hsp_evalue>
+      <Hsp_evalue>4.23331e-07</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>121</Hsp_hit-from>
@@ -389,7 +445,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>14</Hit_num>
+  <Hit_num>16</Hit_num>
   <Hit_id>ref|XP_015791094.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor D isoform X4 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015791094</Hit_accession>
@@ -399,7 +455,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>52.373</Hsp_bit-score>
       <Hsp_score>124</Hsp_score>
-      <Hsp_evalue>4.57483e-07</Hsp_evalue>
+      <Hsp_evalue>4.86976e-07</Hsp_evalue>
       <Hsp_query-from>32</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>144</Hsp_hit-from>
@@ -417,7 +473,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>15</Hit_num>
+  <Hit_num>17</Hit_num>
   <Hit_id>ref|XP_023229680.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X2 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023229680</Hit_accession>
@@ -427,7 +483,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>51.2174</Hsp_bit-score>
       <Hsp_score>121</Hsp_score>
-      <Hsp_evalue>6.184e-07</Hsp_evalue>
+      <Hsp_evalue>6.58267e-07</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>72</Hsp_hit-from>
@@ -445,7 +501,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>16</Hit_num>
+  <Hit_num>18</Hit_num>
   <Hit_id>ref|XP_023229679.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X1 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023229679</Hit_accession>
@@ -455,7 +511,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>51.2174</Hsp_bit-score>
       <Hsp_score>121</Hsp_score>
-      <Hsp_evalue>6.55408e-07</Hsp_evalue>
+      <Hsp_evalue>6.9766e-07</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>80</Hsp_hit-from>
@@ -473,7 +529,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>17</Hit_num>
+  <Hit_num>19</Hit_num>
   <Hit_id>ref|XP_015791086.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107367834 isoform X3 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015791086</Hit_accession>
@@ -483,7 +539,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>51.6026</Hsp_bit-score>
       <Hsp_score>122</Hsp_score>
-      <Hsp_evalue>6.94019e-07</Hsp_evalue>
+      <Hsp_evalue>7.38761e-07</Hsp_evalue>
       <Hsp_query-from>37</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>150</Hsp_hit-from>
@@ -501,7 +557,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>18</Hit_num>
+  <Hit_num>20</Hit_num>
   <Hit_id>ref|XP_023229681.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X3 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023229681</Hit_accession>
@@ -511,7 +567,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>50.447</Hsp_bit-score>
       <Hsp_score>119</Hsp_score>
-      <Hsp_evalue>1.11321e-06</Hsp_evalue>
+      <Hsp_evalue>1.18498e-06</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>46</Hsp_hit-from>
@@ -529,7 +585,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>19</Hit_num>
+  <Hit_num>21</Hit_num>
   <Hit_id>ref|XP_029842987.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC8035595 isoform X1 [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029842987</Hit_accession>
@@ -539,7 +595,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>51.2174</Hsp_bit-score>
       <Hsp_score>121</Hsp_score>
-      <Hsp_evalue>1.21569e-06</Hsp_evalue>
+      <Hsp_evalue>1.29407e-06</Hsp_evalue>
       <Hsp_query-from>11</Hsp_query-from>
       <Hsp_query-to>183</Hsp_query-to>
       <Hsp_hit-from>249</Hsp_hit-from>
@@ -557,7 +613,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>20</Hit_num>
+  <Hit_num>22</Hit_num>
   <Hit_id>ref|XP_029842988.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC8035595 isoform X2 [Ixodes scapularis] &gt;ref|XP_029842989.1| uncharacterized protein LOC8035595 isoform X2 [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029842988</Hit_accession>
@@ -567,7 +623,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>50.8322</Hsp_bit-score>
       <Hsp_score>120</Hsp_score>
-      <Hsp_evalue>1.2965e-06</Hsp_evalue>
+      <Hsp_evalue>1.38009e-06</Hsp_evalue>
       <Hsp_query-from>11</Hsp_query-from>
       <Hsp_query-to>185</Hsp_query-to>
       <Hsp_hit-from>102</Hsp_hit-from>
@@ -585,7 +641,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>21</Hit_num>
+  <Hit_num>23</Hit_num>
   <Hit_id>ref|XP_023229682.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X4 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023229682</Hit_accession>
@@ -595,7 +651,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>49.6766</Hsp_bit-score>
       <Hsp_score>117</Hsp_score>
-      <Hsp_evalue>1.33434e-06</Hsp_evalue>
+      <Hsp_evalue>1.42037e-06</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>13</Hsp_hit-from>
@@ -613,7 +669,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>22</Hit_num>
+  <Hit_num>24</Hit_num>
   <Hit_id>ref|XP_015791072.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107367834 isoform X1 [Tetranychus urticae] &gt;ref|XP_025016088.1| uncharacterized protein LOC107367834 isoform X1 [Tetranychus urticae] &gt;ref|XP_025016089.1| uncharacterized protein LOC107367834 isoform X1 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015791072</Hit_accession>
@@ -623,7 +679,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>50.0618</Hsp_bit-score>
       <Hsp_score>118</Hsp_score>
-      <Hsp_evalue>3.05558e-06</Hsp_evalue>
+      <Hsp_evalue>3.25257e-06</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>179</Hsp_hit-from>
@@ -641,7 +697,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>23</Hit_num>
+  <Hit_num>25</Hit_num>
   <Hit_id>ref|XP_015791078.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107367834 isoform X2 [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015791078</Hit_accession>
@@ -651,7 +707,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>49.6766</Hsp_bit-score>
       <Hsp_score>117</Hsp_score>
-      <Hsp_evalue>3.26066e-06</Hsp_evalue>
+      <Hsp_evalue>3.47086e-06</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>178</Hsp_hit-from>
@@ -669,7 +725,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>24</Hit_num>
+  <Hit_num>26</Hit_num>
   <Hit_id>gb|RWS27345.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor C-like protein [Leptotrombidium deliense]</Hit_def>
   <Hit_accession>RWS27345</Hit_accession>
@@ -679,7 +735,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>49.2914</Hsp_bit-score>
       <Hsp_score>116</Hsp_score>
-      <Hsp_evalue>3.80129e-06</Hsp_evalue>
+      <Hsp_evalue>4.04635e-06</Hsp_evalue>
       <Hsp_query-from>44</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>98</Hsp_hit-from>
@@ -697,7 +753,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>25</Hit_num>
+  <Hit_num>27</Hit_num>
   <Hit_id>ref|XP_015785865.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015785865</Hit_accession>
@@ -707,7 +763,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>47.3654</Hsp_bit-score>
       <Hsp_score>111</Hsp_score>
-      <Hsp_evalue>1.67148e-05</Hsp_evalue>
+      <Hsp_evalue>1.77924e-05</Hsp_evalue>
       <Hsp_query-from>2</Hsp_query-from>
       <Hsp_query-to>183</Hsp_query-to>
       <Hsp_hit-from>50</Hsp_hit-from>
@@ -725,7 +781,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>26</Hit_num>
+  <Hit_num>28</Hit_num>
   <Hit_id>gb|KFM69070.1|</Hit_id>
   <Hit_def>Vascular endothelial growth factor A, partial [Stegodyphus mimosarum]</Hit_def>
   <Hit_accession>KFM69070</Hit_accession>
@@ -735,7 +791,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>46.2098</Hsp_bit-score>
       <Hsp_score>108</Hsp_score>
-      <Hsp_evalue>1.72692e-05</Hsp_evalue>
+      <Hsp_evalue>1.83826e-05</Hsp_evalue>
       <Hsp_query-from>68</Hsp_query-from>
       <Hsp_query-to>186</Hsp_query-to>
       <Hsp_hit-from>7</Hsp_hit-from>
@@ -753,7 +809,35 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>27</Hit_num>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_035219653.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC118192746 [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035219653</Hit_accession>
+  <Hit_len>379</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>2.33751e-05</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>127</Hsp_query-to>
+      <Hsp_hit-from>167</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>KQLVPSCVTVQRC---GGCCPDDGLECVPTGQHQVRMQILMI--RYPSSQLGEMSLEEHSQCECRPK</Hsp_qseq>
+      <Hsp_hseq>KELLPRCTLLHRCTDAAGCCEDENLHCAPKAMQEVVLHFYVLGDDHRSSDVEKLWFVNHTECECQPK</Hsp_hseq>
+      <Hsp_midline>K+L+P C  + RC    GCC D+ L C P    +V +   ++   + SS + ++    H++CEC+PK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
   <Hit_id>gb|RWS26618.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor C-like protein [Leptotrombidium deliense]</Hit_def>
   <Hit_accession>RWS26618</Hit_accession>
@@ -763,7 +847,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.8246</Hsp_bit-score>
       <Hsp_score>107</Hsp_score>
-      <Hsp_evalue>2.34047e-05</Hsp_evalue>
+      <Hsp_evalue>2.49135e-05</Hsp_evalue>
       <Hsp_query-from>73</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>19</Hsp_hit-from>
@@ -781,7 +865,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>28</Hit_num>
+  <Hit_num>31</Hit_num>
   <Hit_id>dbj|GBM01361.1|</Hit_id>
   <Hit_def>hypothetical protein AVEN_135786_1 [Araneus ventricosus]</Hit_def>
   <Hit_accession>GBM01361</Hit_accession>
@@ -791,7 +875,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.4394</Hsp_bit-score>
       <Hsp_score>106</Hsp_score>
-      <Hsp_evalue>2.87482e-05</Hsp_evalue>
+      <Hsp_evalue>3.06016e-05</Hsp_evalue>
       <Hsp_query-from>70</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>70</Hsp_hit-from>
@@ -809,7 +893,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>29</Hit_num>
+  <Hit_num>32</Hit_num>
   <Hit_id>dbj|GBM01974.1|</Hit_id>
   <Hit_def>hypothetical protein AVEN_269575_1 [Araneus ventricosus]</Hit_def>
   <Hit_accession>GBM01974</Hit_accession>
@@ -819,7 +903,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.8246</Hsp_bit-score>
       <Hsp_score>107</Hsp_score>
-      <Hsp_evalue>5.28516e-05</Hsp_evalue>
+      <Hsp_evalue>5.62588e-05</Hsp_evalue>
       <Hsp_query-from>66</Hsp_query-from>
       <Hsp_query-to>128</Hsp_query-to>
       <Hsp_hit-from>24</Hsp_hit-from>
@@ -837,7 +921,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>30</Hit_num>
+  <Hit_num>33</Hit_num>
   <Hit_id>ref|XP_029845808.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor D-like [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029845808</Hit_accession>
@@ -847,7 +931,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.4394</Hsp_bit-score>
       <Hsp_score>106</Hsp_score>
-      <Hsp_evalue>7.03342e-05</Hsp_evalue>
+      <Hsp_evalue>7.48685e-05</Hsp_evalue>
       <Hsp_query-from>42</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>84</Hsp_hit-from>
@@ -865,7 +949,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>31</Hit_num>
+  <Hit_num>34</Hit_num>
   <Hit_id>ref|XP_029824743.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X2 [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029824743</Hit_accession>
@@ -875,7 +959,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.4394</Hsp_bit-score>
       <Hsp_score>106</Hsp_score>
-      <Hsp_evalue>7.67117e-05</Hsp_evalue>
+      <Hsp_evalue>8.16571e-05</Hsp_evalue>
       <Hsp_query-from>42</Hsp_query-from>
       <Hsp_query-to>184</Hsp_query-to>
       <Hsp_hit-from>84</Hsp_hit-from>
@@ -893,7 +977,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>32</Hit_num>
+  <Hit_num>35</Hit_num>
   <Hit_id>ref|XP_015906486.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107438671 [Parasteatoda tepidariorum]</Hit_def>
   <Hit_accession>XP_015906486</Hit_accession>
@@ -903,7 +987,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.8246</Hsp_bit-score>
       <Hsp_score>107</Hsp_score>
-      <Hsp_evalue>8.12858e-05</Hsp_evalue>
+      <Hsp_evalue>8.65261e-05</Hsp_evalue>
       <Hsp_query-from>4</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>125</Hsp_hit-from>
@@ -921,7 +1005,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>33</Hit_num>
+  <Hit_num>36</Hit_num>
   <Hit_id>ref|XP_015787663.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A [Tetranychus urticae]</Hit_def>
   <Hit_accession>XP_015787663</Hit_accession>
@@ -931,7 +1015,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.4394</Hsp_bit-score>
       <Hsp_score>106</Hsp_score>
-      <Hsp_evalue>8.13406e-05</Hsp_evalue>
+      <Hsp_evalue>8.65845e-05</Hsp_evalue>
       <Hsp_query-from>4</Hsp_query-from>
       <Hsp_query-to>183</Hsp_query-to>
       <Hsp_hit-from>52</Hsp_hit-from>
@@ -949,7 +1033,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>34</Hit_num>
+  <Hit_num>37</Hit_num>
   <Hit_id>ref|XP_023234785.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111633999 isoform X1 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023234785</Hit_accession>
@@ -959,7 +1043,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>45.0542</Hsp_bit-score>
       <Hsp_score>105</Hsp_score>
-      <Hsp_evalue>0.00011344</Hsp_evalue>
+      <Hsp_evalue>0.000120753</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>170</Hsp_query-to>
       <Hsp_hit-from>149</Hsp_hit-from>
@@ -977,7 +1061,35 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>35</Hit_num>
+  <Hit_num>38</Hit_num>
+  <Hit_id>ref|XP_035206341.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC118181333 isoform X2 [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035206341</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.00018058</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>LLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCG---GCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEE-----HSQCECRP</Hsp_qseq>
+      <Hsp_hseq>LLRKKYGPTGLKEARAKFGGVNRDLDDVRMANDHFLRIRNRARCRAPVAQVVRVKDYYPDPSREYLPRCTLLHRCSDTSGCCDSDAFHCVPSAMQEVTLHFYTLAVGKNGLSDSSIEKLLFVNHTACQCQP</Hsp_hseq>
+      <Hsp_midline>LLR+      L+ A A+      D    +     ++ +  RA C+     V    +     +++ +P C  + RC    GCC  D   CVP+   +V +    +    + L + S+E+     H+ C+C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
   <Hit_id>gb|KFM76063.1|</Hit_id>
   <Hit_def>Vascular endothelial growth factor A, partial [Stegodyphus mimosarum]</Hit_def>
   <Hit_accession>KFM76063</Hit_accession>
@@ -987,7 +1099,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>44.2838</Hsp_bit-score>
       <Hsp_score>103</Hsp_score>
-      <Hsp_evalue>0.000192811</Hsp_evalue>
+      <Hsp_evalue>0.000205241</Hsp_evalue>
       <Hsp_query-from>4</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>49</Hsp_hit-from>
@@ -1005,7 +1117,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>36</Hit_num>
+  <Hit_num>40</Hit_num>
   <Hit_id>ref|XP_029824742.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like isoform X1 [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029824742</Hit_accession>
@@ -1015,7 +1127,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>44.2838</Hsp_bit-score>
       <Hsp_score>103</Hsp_score>
-      <Hsp_evalue>0.000205382</Hsp_evalue>
+      <Hsp_evalue>0.000218623</Hsp_evalue>
       <Hsp_query-from>42</Hsp_query-from>
       <Hsp_query-to>187</Hsp_query-to>
       <Hsp_hit-from>84</Hsp_hit-from>
@@ -1033,7 +1145,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>37</Hit_num>
+  <Hit_num>41</Hit_num>
   <Hit_id>ref|XP_023237323.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111636334 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023237323</Hit_accession>
@@ -1043,7 +1155,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>44.2838</Hsp_bit-score>
       <Hsp_score>103</Hsp_score>
-      <Hsp_evalue>0.000224527</Hsp_evalue>
+      <Hsp_evalue>0.000239001</Hsp_evalue>
       <Hsp_query-from>49</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>124</Hsp_hit-from>
@@ -1061,7 +1173,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>38</Hit_num>
+  <Hit_num>42</Hit_num>
   <Hit_id>dbj|GBM77436.1|</Hit_id>
   <Hit_def>hypothetical protein AVEN_107820_1 [Araneus ventricosus]</Hit_def>
   <Hit_accession>GBM77436</Hit_accession>
@@ -1071,7 +1183,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>43.1282</Hsp_bit-score>
       <Hsp_score>100</Hsp_score>
-      <Hsp_evalue>0.000240819</Hsp_evalue>
+      <Hsp_evalue>0.000256344</Hsp_evalue>
       <Hsp_query-from>48</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>61</Hsp_hit-from>
@@ -1089,7 +1201,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>39</Hit_num>
+  <Hit_num>43</Hit_num>
   <Hit_id>ref|XP_023237492.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111633999 isoform X5 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023237492</Hit_accession>
@@ -1099,7 +1211,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>43.8986</Hsp_bit-score>
       <Hsp_score>102</Hsp_score>
-      <Hsp_evalue>0.000247364</Hsp_evalue>
+      <Hsp_evalue>0.000263311</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>168</Hsp_query-to>
       <Hsp_hit-from>91</Hsp_hit-from>
@@ -1117,7 +1229,35 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>40</Hit_num>
+  <Hit_num>44</Hit_num>
+  <Hit_id>ref|XP_035206340.1|</Hit_id>
+  <Hit_def>uncharacterized protein LOC118181333 isoform X1 [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035206340</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000445248</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>122</Hsp_hit-from>
+      <Hsp_hit-to>252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>131</Hsp_align-len>
+      <Hsp_qseq>LLRRLLLAALLQLAPAQAPVSQPDAPGHQRKVVSWIDVYTRATCQPREVVVPLTVELMGTVAKQLVPSCVTVQRCG---GCCPDDGLECVPTGQHQVRMQILMIRYPSSQLGEMSLEE-----HSQCECRP</Hsp_qseq>
+      <Hsp_hseq>LLRKKYGPTGLKEARAKFGGVNRDLDDVRMANDHFLRIRNRARCRAPVAQVVRVKDYYPDPSREYLPRCTLLHRCSDTSGCCDSDAFHCVPSAMQEVTLHFYTLAVGKNGLSDSSIEKLLFVNHTACQCQP</Hsp_hseq>
+      <Hsp_midline>LLR+      L+ A A+      D    +     ++ +  RA C+     V    +     +++ +P C  + RC    GCC  D   CVP+   +V +    +    + L + S+E+     H+ C+C+P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
   <Hit_id>gb|EEC09624.1|</Hit_id>
   <Hit_def>conserved hypothetical protein, partial [Ixodes scapularis]</Hit_def>
   <Hit_accession>EEC09624</Hit_accession>
@@ -1127,7 +1267,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>42.743</Hsp_bit-score>
       <Hsp_score>99</Hsp_score>
-      <Hsp_evalue>0.000461817</Hsp_evalue>
+      <Hsp_evalue>0.000491589</Hsp_evalue>
       <Hsp_query-from>59</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>3</Hsp_hit-from>
@@ -1145,7 +1285,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>41</Hit_num>
+  <Hit_num>46</Hit_num>
   <Hit_id>ref|XP_023235470.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111633999 isoform X2 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023235470</Hit_accession>
@@ -1155,7 +1295,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>43.1282</Hsp_bit-score>
       <Hsp_score>100</Hsp_score>
-      <Hsp_evalue>0.000498705</Hsp_evalue>
+      <Hsp_evalue>0.000530855</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>149</Hsp_hit-from>
@@ -1173,7 +1313,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>42</Hit_num>
+  <Hit_num>47</Hit_num>
   <Hit_id>gb|EEC04579.1|</Hit_id>
   <Hit_def>placenta growth factor, putative [Ixodes scapularis]</Hit_def>
   <Hit_accession>EEC04579</Hit_accession>
@@ -1183,7 +1323,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>41.9726</Hsp_bit-score>
       <Hsp_score>97</Hsp_score>
-      <Hsp_evalue>0.000608631</Hsp_evalue>
+      <Hsp_evalue>0.000647868</Hsp_evalue>
       <Hsp_query-from>48</Hsp_query-from>
       <Hsp_query-to>127</Hsp_query-to>
       <Hsp_hit-from>60</Hsp_hit-from>
@@ -1201,7 +1341,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>43</Hit_num>
+  <Hit_num>48</Hit_num>
   <Hit_id>ref|XP_023236810.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111633999 isoform X4 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023236810</Hit_accession>
@@ -1211,7 +1351,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>42.743</Hsp_bit-score>
       <Hsp_score>99</Hsp_score>
-      <Hsp_evalue>0.000646529</Hsp_evalue>
+      <Hsp_evalue>0.00068821</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>149</Hsp_hit-from>
@@ -1229,7 +1369,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>44</Hit_num>
+  <Hit_num>49</Hit_num>
   <Hit_id>ref|XP_023236110.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC111633999 isoform X3 [Centruroides sculpturatus]</Hit_def>
   <Hit_accession>XP_023236110</Hit_accession>
@@ -1239,7 +1379,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>42.743</Hsp_bit-score>
       <Hsp_score>99</Hsp_score>
-      <Hsp_evalue>0.000664397</Hsp_evalue>
+      <Hsp_evalue>0.000707229</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>149</Hsp_hit-from>
@@ -1257,7 +1397,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>45</Hit_num>
+  <Hit_num>50</Hit_num>
   <Hit_id>gb|KPM02305.1|</Hit_id>
   <Hit_def>platelet-derived growth factor subunit A-like protein [Sarcoptes scabiei]</Hit_def>
   <Hit_accession>KPM02305</Hit_accession>
@@ -1267,7 +1407,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>42.3578</Hsp_bit-score>
       <Hsp_score>98</Hsp_score>
-      <Hsp_evalue>0.00103397</Hsp_evalue>
+      <Hsp_evalue>0.00110062</Hsp_evalue>
       <Hsp_query-from>47</Hsp_query-from>
       <Hsp_query-to>152</Hsp_query-to>
       <Hsp_hit-from>94</Hsp_hit-from>
@@ -1285,7 +1425,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>46</Hit_num>
+  <Hit_num>51</Hit_num>
   <Hit_id>ref|XP_027195665.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor D-like [Dermatophagoides pteronyssinus]</Hit_def>
   <Hit_accession>XP_027195665</Hit_accession>
@@ -1295,7 +1435,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>41.9726</Hsp_bit-score>
       <Hsp_score>97</Hsp_score>
-      <Hsp_evalue>0.00146742</Hsp_evalue>
+      <Hsp_evalue>0.00156202</Hsp_evalue>
       <Hsp_query-from>35</Hsp_query-from>
       <Hsp_query-to>130</Hsp_query-to>
       <Hsp_hit-from>48</Hsp_hit-from>
@@ -1313,7 +1453,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>47</Hit_num>
+  <Hit_num>52</Hit_num>
   <Hit_id>ref|XP_015918685.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107448099 [Parasteatoda tepidariorum]</Hit_def>
   <Hit_accession>XP_015918685</Hit_accession>
@@ -1323,7 +1463,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>40.817</Hsp_bit-score>
       <Hsp_score>94</Hsp_score>
-      <Hsp_evalue>0.00161739</Hsp_evalue>
+      <Hsp_evalue>0.00172166</Hsp_evalue>
       <Hsp_query-from>48</Hsp_query-from>
       <Hsp_query-to>136</Hsp_query-to>
       <Hsp_hit-from>59</Hsp_hit-from>
@@ -1341,7 +1481,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>48</Hit_num>
+  <Hit_num>53</Hit_num>
   <Hit_id>gb|RWS09096.1|</Hit_id>
   <Hit_def>vascular endothelial growth factor A-like protein [Dinothrombium tinctorium]</Hit_def>
   <Hit_accession>RWS09096</Hit_accession>
@@ -1351,7 +1491,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>41.2022</Hsp_bit-score>
       <Hsp_score>95</Hsp_score>
-      <Hsp_evalue>0.00202593</Hsp_evalue>
+      <Hsp_evalue>0.00215653</Hsp_evalue>
       <Hsp_query-from>57</Hsp_query-from>
       <Hsp_query-to>182</Hsp_query-to>
       <Hsp_hit-from>25</Hsp_hit-from>
@@ -1369,7 +1509,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>49</Hit_num>
+  <Hit_num>54</Hit_num>
   <Hit_id>gb|KFM65261.1|</Hit_id>
   <Hit_def>Placenta growth factor, partial [Stegodyphus mimosarum]</Hit_def>
   <Hit_accession>KFM65261</Hit_accession>
@@ -1379,7 +1519,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>40.0466</Hsp_bit-score>
       <Hsp_score>92</Hsp_score>
-      <Hsp_evalue>0.00214485</Hsp_evalue>
+      <Hsp_evalue>0.00228313</Hsp_evalue>
       <Hsp_query-from>65</Hsp_query-from>
       <Hsp_query-to>126</Hsp_query-to>
       <Hsp_hit-from>60</Hsp_hit-from>
@@ -1397,7 +1537,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>50</Hit_num>
+  <Hit_num>55</Hit_num>
   <Hit_id>dbj|GBO26254.1|</Hit_id>
   <Hit_def>hypothetical protein AVEN_19755_1 [Araneus ventricosus]</Hit_def>
   <Hit_accession>GBO26254</Hit_accession>
@@ -1407,7 +1547,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>38.891</Hsp_bit-score>
       <Hsp_score>89</Hsp_score>
-      <Hsp_evalue>0.00319778</Hsp_evalue>
+      <Hsp_evalue>0.00340393</Hsp_evalue>
       <Hsp_query-from>45</Hsp_query-from>
       <Hsp_query-to>93</Hsp_query-to>
       <Hsp_hit-from>13</Hsp_hit-from>
@@ -1425,7 +1565,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>51</Hit_num>
+  <Hit_num>56</Hit_num>
   <Hit_id>gb|RWS29460.1|</Hit_id>
   <Hit_def>platelet-derived growth factor subunit A-like protein [Leptotrombidium deliense]</Hit_def>
   <Hit_accession>RWS29460</Hit_accession>
@@ -1435,7 +1575,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>38.5058</Hsp_bit-score>
       <Hsp_score>88</Hsp_score>
-      <Hsp_evalue>0.00836768</Hsp_evalue>
+      <Hsp_evalue>0.00890713</Hsp_evalue>
       <Hsp_query-from>63</Hsp_query-from>
       <Hsp_query-to>125</Hsp_query-to>
       <Hsp_hit-from>62</Hsp_hit-from>
@@ -1453,7 +1593,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>52</Hit_num>
+  <Hit_num>57</Hit_num>
   <Hit_id>ref|XP_029837116.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC8028215 [Ixodes scapularis]</Hit_def>
   <Hit_accession>XP_029837116</Hit_accession>
@@ -1463,7 +1603,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>38.1206</Hsp_bit-score>
       <Hsp_score>87</Hsp_score>
-      <Hsp_evalue>0.0105341</Hsp_evalue>
+      <Hsp_evalue>0.0112132</Hsp_evalue>
       <Hsp_query-from>41</Hsp_query-from>
       <Hsp_query-to>129</Hsp_query-to>
       <Hsp_hit-from>42</Hsp_hit-from>
@@ -1481,7 +1621,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>53</Hit_num>
+  <Hit_num>58</Hit_num>
   <Hit_id>gb|EEC04578.1|</Hit_id>
   <Hit_def>conserved hypothetical protein [Ixodes scapularis]</Hit_def>
   <Hit_accession>EEC04578</Hit_accession>
@@ -1491,7 +1631,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>36.5798</Hsp_bit-score>
       <Hsp_score>83</Hsp_score>
-      <Hsp_evalue>0.0142649</Hsp_evalue>
+      <Hsp_evalue>0.0151845</Hsp_evalue>
       <Hsp_query-from>64</Hsp_query-from>
       <Hsp_query-to>129</Hsp_query-to>
       <Hsp_hit-from>1</Hsp_hit-from>
@@ -1509,7 +1649,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>54</Hit_num>
+  <Hit_num>59</Hit_num>
   <Hit_id>ref|XP_015925895.1|</Hit_id>
   <Hit_def>uncharacterized protein LOC107453542 [Parasteatoda tepidariorum]</Hit_def>
   <Hit_accession>XP_015925895</Hit_accession>
@@ -1519,7 +1659,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>38.5058</Hsp_bit-score>
       <Hsp_score>88</Hsp_score>
-      <Hsp_evalue>0.0202579</Hsp_evalue>
+      <Hsp_evalue>0.0215639</Hsp_evalue>
       <Hsp_query-from>66</Hsp_query-from>
       <Hsp_query-to>127</Hsp_query-to>
       <Hsp_hit-from>159</Hsp_hit-from>
@@ -1537,7 +1677,63 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>55</Hit_num>
+  <Hit_num>60</Hit_num>
+  <Hit_id>ref|XP_035222429.1|</Hit_id>
+  <Hit_def>balbiani ring protein 3-like isoform X1 [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035222429</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0626616</Hsp_evalue>
+      <Hsp_query-from>69</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>126</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>VPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG--------EMSLEEHSQ--CECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRR-RSFLRCQGRGLELNPDTCRC</Hsp_qseq>
+      <Hsp_hseq>MPACVIVERCEGVCP-SSTECLPSAVENISVPVIHLNLVVTSAGSHVTPECSNIEVERHLKCGCSCAYEEKD--------------CNQ-NQVFNPSKCRCECKNSENAESCHKIGKFWDSTNCAC</Hsp_hseq>
+      <Hsp_midline>+P+CV V+RC G CP    EC+P+    + + ++ +    +  G         + +E H +  C C  ++KD              C Q +Q  +P  CRC C+   +   C   G   +   C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>ref|XP_035222435.1|</Hit_id>
+  <Hit_def>balbiani ring protein 3-like isoform X2 [Stegodyphus dumicola]</Hit_def>
+  <Hit_accession>XP_035222435</Hit_accession>
+  <Hit_len>273</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.965</Hsp_bit-score>
+      <Hsp_score>84</Hsp_score>
+      <Hsp_evalue>0.0659987</Hsp_evalue>
+      <Hsp_query-from>69</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>VPSCVTVQRCGGCCPDDGLECVPTGQHQVRMQILMIRYPSSQLG--------EMSLEEHSQ--CECRPKKKDSAVKPDSPRPLCPRCTQHHQRPDPRTCRCRCRR-RSFLRCQGRGLELNPDTCRC</Hsp_qseq>
+      <Hsp_hseq>MPACVIVERCEGVCP-SSTECLPSAVENISVPVIHLNLVVTSAGSHVTPECSNIEVERHLKCGCSCAYEEKD--------------CNQ-NQVFNPSKCRCECKNSENAESCHKIGKFWDSTNCAC</Hsp_hseq>
+      <Hsp_midline>+P+CV V+RC G CP    EC+P+    + + ++ +    +  G         + +E H +  C C  ++KD              C Q +Q  +P  CRC C+   +   C   G   +   C C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
   <Hit_id>gb|RWS10919.1|</Hit_id>
   <Hit_def>doublesex- and mab-3-related transcription factor 2-like protein [Dinothrombium tinctorium]</Hit_def>
   <Hit_accession>RWS10919</Hit_accession>
@@ -1547,7 +1743,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>36.1946</Hsp_bit-score>
       <Hsp_score>82</Hsp_score>
-      <Hsp_evalue>0.0838683</Hsp_evalue>
+      <Hsp_evalue>0.0892751</Hsp_evalue>
       <Hsp_query-from>59</Hsp_query-from>
       <Hsp_query-to>149</Hsp_query-to>
       <Hsp_hit-from>46</Hsp_hit-from>
@@ -1565,7 +1761,7 @@
   </Hit_hsps>
 </Hit>
 <Hit>
-  <Hit_num>56</Hit_num>
+  <Hit_num>63</Hit_num>
   <Hit_id>gb|KFM56503.1|</Hit_id>
   <Hit_def>hypothetical protein X975_19123, partial [Stegodyphus mimosarum]</Hit_def>
   <Hit_accession>KFM56503</Hit_accession>
@@ -1575,7 +1771,7 @@
       <Hsp_num>1</Hsp_num>
       <Hsp_bit-score>35.4242</Hsp_bit-score>
       <Hsp_score>80</Hsp_score>
-      <Hsp_evalue>0.0847368</Hsp_evalue>
+      <Hsp_evalue>0.0901995</Hsp_evalue>
       <Hsp_query-from>69</Hsp_query-from>
       <Hsp_query-to>124</Hsp_query-to>
       <Hsp_hit-from>65</Hsp_hit-from>
@@ -1595,10 +1791,10 @@
 </Iteration_hits>
   <Iteration_stat>
     <Statistics>
-      <Statistics_db-num>274599501</Statistics_db-num>
-      <Statistics_db-len>98774826349</Statistics_db-len>
+      <Statistics_db-num>302591001</Statistics_db-num>
+      <Statistics_db-len>109247231099</Statistics_db-len>
       <Statistics_hsp-len>111</Statistics_hsp-len>
-      <Statistics_eff-space>10263936683</Statistics_eff-space>
+      <Statistics_eff-space>11037688354</Statistics_eff-space>
       <Statistics_kappa>0.041</Statistics_kappa>
       <Statistics_lambda>0.267</Statistics_lambda>
       <Statistics_entropy>0.14</Statistics_entropy>
